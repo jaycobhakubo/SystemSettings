@@ -362,10 +362,12 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
-      
+            if (Common.IsAdmin)
+            {
                 nodeParent = new TreeNode("Kiosk - Sales ", 0, 1);
                 nodeParent.Tag = kioskSalesSettings1;
                 treeView1.Nodes.Add(nodeParent);
+            }
     
 
             //License File Settings

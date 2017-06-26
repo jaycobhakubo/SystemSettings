@@ -137,7 +137,7 @@ namespace GTI.Modules.SystemSettings.UI
             intTempVal = ParseInt(Common.GetSystemSetting(Setting.BallCallCameraChannel));  //RALLY DE9427
             //END FIX RALLY DE 3221
 
-            int index;
+            int index;//knc
                 switch (intTempVal)
                 {
                     case -1:
