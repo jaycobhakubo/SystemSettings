@@ -318,37 +318,37 @@
   <data name="&gt;&gt;chkbxIncludeCouponsButton.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="chkbxAutomaticBarcodedPaperSold.AutoSize" type="System.Boolean, mscorlib">
+  <data name="chkbxAllowBarcodedPaperSold.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="chkbxAutomaticBarcodedPaperSold.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chkbxAllowBarcodedPaperSold.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="chkbxAutomaticBarcodedPaperSold.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="chkbxAllowBarcodedPaperSold.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 128</value>
   </data>
-  <data name="chkbxAutomaticBarcodedPaperSold.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="chkbxAllowBarcodedPaperSold.Size" type="System.Drawing.Size, System.Drawing">
     <value>414, 26</value>
   </data>
-  <data name="chkbxAutomaticBarcodedPaperSold.TabIndex" type="System.Int32, mscorlib">
+  <data name="chkbxAllowBarcodedPaperSold.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="chkbxAutomaticBarcodedPaperSold.Text" xml:space="preserve">
+  <data name="chkbxAllowBarcodedPaperSold.Text" xml:space="preserve">
     <value>Allow barcoded paper to be sold at a simple kiosks</value>
   </data>
-  <data name="chkbxAutomaticBarcodedPaperSold.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="chkbxAllowBarcodedPaperSold.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;chkbxAutomaticBarcodedPaperSold.Name" xml:space="preserve">
-    <value>chkbxAutomaticBarcodedPaperSold</value>
+  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Name" xml:space="preserve">
+    <value>chkbxAllowBarcodedPaperSold</value>
   </data>
-  <data name="&gt;&gt;chkbxAutomaticBarcodedPaperSold.Type" xml:space="preserve">
+  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkbxAutomaticBarcodedPaperSold.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Parent" xml:space="preserve">
     <value>grpBxKioskSales</value>
   </data>
-  <data name="&gt;&gt;chkbxAutomaticBarcodedPaperSold.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">

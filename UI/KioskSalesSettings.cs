@@ -82,20 +82,9 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
 
-        //public override bool SaveSettings()
-        //{
-        //    Common.BeginWait();
-
-        //    bool bResult = SaveKioskSalesSettings();
-
-        //    Common.EndWait();
-
-        //    return bResult;
-        //}
-
         private bool LoadKioskSalesSettings()
         {
-            int result = 0;
+            //int result = 0;
             bool boolResult = false;
             bool saveFlag = false;
 
@@ -108,19 +97,19 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 chkbxAutomaticApplyCouponToSales.Checked = false;
-                saveFlag = true;
+                //saveFlag = true;
             }
 
             //360
             tempString = Common.GetSystemSetting(Setting.AllowBarcodedPaperToBeSoldAtSimpleKiosk);
             if (bool.TryParse(tempString, out boolResult))
             {
-                 chkbxAutomaticBarcodedPaperSold.Checked = boolResult;
+                 chkbxAllowBarcodedPaperSold.Checked = boolResult;
             }
             else
             {
-                chkbxAutomaticBarcodedPaperSold.Checked = false;
-                saveFlag = true;
+                chkbxAllowBarcodedPaperSold.Checked = false;
+                //saveFlag = true;
             }
 
             //361
@@ -132,26 +121,110 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 chkbxIncludeCouponsButton.Checked = false;
-                saveFlag = true;
+                //saveFlag = true;
             }
 
             tempString = Common.GetSystemSetting(Setting.KioskPeripheralsTicketPrinterName);
             txtbxKioskTicketPrinterName.Text = tempString;
-    
+        
+            tempString = Common.GetSystemSetting(Setting.KioskPeripheralsAcceptorComPort);
+            try//If theres any issue just set to 0
+            {
+                
+                int tempSelectedIndex = 0;
+                bool tempResult = int.TryParse(tempString, out tempSelectedIndex);
+
+                if (tempResult)//If the setting is not numeric set it  as  disable
+                {
+                    cboKioskBillAcceptorComPort.SelectedIndex = tempSelectedIndex;               
+                }
+                else
+                {
+                    cboKioskBillAcceptorComPort.SelectedIndex = 0;
+                    saveFlag = true;
+                }          
+            }
+            catch
+            {
+                cboKioskBillAcceptorComPort.SelectedIndex = 0;
+                saveFlag = true;
+            }
+
+            m_bModified = false;
+
+            if (saveFlag == true)
+            {
+                SaveKioskSalesSettings();//Fixed it now
+            }
+            
+                return true;
+        }
+
+        public override bool SaveSettings()
+        {
+            Common.BeginWait();
+
+            bool bResult = SaveKioskSalesSettings();
+
+            Common.EndWait();
+
+            return bResult;
+        }
+
+        private bool SaveKioskSalesSettings()
+        {
+            // Create a list of just these settings
+            List<SettingValue> arrSettings = new List<SettingValue>();
+            SettingValue setting = new SettingValue();
+            
+            setting.Id = (int)Setting.AutomaticallyApplyCouponsToSalesOnSimpleKiosks;
+            setting.Value = chkbxAutomaticApplyCouponToSales.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.AllowBarcodedPaperToBeSoldAtSimpleKiosk;
+            setting.Value = chkbxAllowBarcodedPaperSold.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.IncludeTheCouponsButtonOnTheHybridKiosk;
+            setting.Value = chkbxIncludeCouponsButton.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.AllowUseOfSimpleKioskWithoutPlayerCard;
+            setting.Value = chkbxAllowUseOfSimpleKiosk.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.KioskPeripheralsAcceptorComPort;
+            setting.Value = cboKioskBillAcceptorComPort.SelectedValue.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.KioskPeripheralsTicketPrinterName;
+            setting.Value = txtbxKioskTicketPrinterName.Text;
+            arrSettings.Add(setting);
+
+            if (!Common.SaveSystemSettings(arrSettings.ToArray()))
+            {
+                return false;
+            }
+
+            m_bModified = false;
+
+            return true;
+        }
 
 
-            //tempString = Common.GetSystemSetting(Setting.KioskPeripheralsTicketPrinterName);
-            //if (bool.TryParse(tempString, out boolResult))
-            //{
-            //    chkbxIncludeCouponsButton.Checked = boolResult;
-            //}
-            //else
-            //{
-            //    chkbxIncludeCouponsButton.Checked = false;
-            //    saveFlag = true;
-            //}
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveSettings();
+        }
 
-            return boolResult;
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            LoadSettings();
+        }
+
+        private void OnModified(object sender, EventArgs e)
+        {
+            m_bModified = true;
         }
 
     }

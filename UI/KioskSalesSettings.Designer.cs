@@ -35,7 +35,7 @@
             this.chkbxAutomaticApplyCouponToSales = new System.Windows.Forms.CheckBox();
             this.chkbxAllowUseOfSimpleKiosk = new System.Windows.Forms.CheckBox();
             this.chkbxIncludeCouponsButton = new System.Windows.Forms.CheckBox();
-            this.chkbxAutomaticBarcodedPaperSold = new System.Windows.Forms.CheckBox();
+            this.chkbxAllowBarcodedPaperSold = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cboKioskBillAcceptorComPort = new System.Windows.Forms.ComboBox();
             this.grpBxKioskSales = new System.Windows.Forms.GroupBox();
@@ -54,6 +54,7 @@
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
@@ -66,6 +67,7 @@
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblTicketPrinterName
             // 
@@ -90,11 +92,11 @@
             this.chkbxIncludeCouponsButton.Name = "chkbxIncludeCouponsButton";
             this.chkbxIncludeCouponsButton.UseVisualStyleBackColor = true;
             // 
-            // chkbxAutomaticBarcodedPaperSold
+            // chkbxAllowBarcodedPaperSold
             // 
-            resources.ApplyResources(this.chkbxAutomaticBarcodedPaperSold, "chkbxAutomaticBarcodedPaperSold");
-            this.chkbxAutomaticBarcodedPaperSold.Name = "chkbxAutomaticBarcodedPaperSold";
-            this.chkbxAutomaticBarcodedPaperSold.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chkbxAllowBarcodedPaperSold, "chkbxAllowBarcodedPaperSold");
+            this.chkbxAllowBarcodedPaperSold.Name = "chkbxAllowBarcodedPaperSold";
+            this.chkbxAllowBarcodedPaperSold.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -112,13 +114,14 @@
             resources.GetString("cboKioskBillAcceptorComPort.Items2"),
             resources.GetString("cboKioskBillAcceptorComPort.Items3")});
             this.cboKioskBillAcceptorComPort.Name = "cboKioskBillAcceptorComPort";
+            this.cboKioskBillAcceptorComPort.SelectedValueChanged += new System.EventHandler(this.OnModified);
             // 
             // grpBxKioskSales
             // 
             this.grpBxKioskSales.Controls.Add(this.txtbxKioskTicketPrinterName);
             this.grpBxKioskSales.Controls.Add(this.cboKioskBillAcceptorComPort);
             this.grpBxKioskSales.Controls.Add(this.label6);
-            this.grpBxKioskSales.Controls.Add(this.chkbxAutomaticBarcodedPaperSold);
+            this.grpBxKioskSales.Controls.Add(this.chkbxAllowBarcodedPaperSold);
             this.grpBxKioskSales.Controls.Add(this.chkbxIncludeCouponsButton);
             this.grpBxKioskSales.Controls.Add(this.chkbxAllowUseOfSimpleKiosk);
             this.grpBxKioskSales.Controls.Add(this.chkbxAutomaticApplyCouponToSales);
@@ -154,7 +157,7 @@
         private System.Windows.Forms.CheckBox chkbxAutomaticApplyCouponToSales;
         private System.Windows.Forms.CheckBox chkbxAllowUseOfSimpleKiosk;
         private System.Windows.Forms.CheckBox chkbxIncludeCouponsButton;
-        private System.Windows.Forms.CheckBox chkbxAutomaticBarcodedPaperSold;
+        private System.Windows.Forms.CheckBox chkbxAllowBarcodedPaperSold;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cboKioskBillAcceptorComPort;
         private System.Windows.Forms.GroupBox grpBxKioskSales;
