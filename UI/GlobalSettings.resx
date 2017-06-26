@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkShowCursor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkShowCursor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkShowCursor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 64</value>
+  </data>
+  <data name="chkShowCursor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 26</value>
+  </data>
+  <data name="chkShowCursor.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkShowCursor.Text" xml:space="preserve">
+    <value>Display Mouse Cursor</value>
+  </data>
+  <data name="&gt;&gt;chkShowCursor.Name" xml:space="preserve">
+    <value>chkShowCursor</value>
+  </data>
+  <data name="&gt;&gt;chkShowCursor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkShowCursor.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;chkShowCursor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkForceEnglish.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkForceEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 25</value>
+  </data>
+  <data name="chkForceEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 26</value>
+  </data>
+  <data name="chkForceEnglish.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkForceEnglish.Text" xml:space="preserve">
+    <value>Use English as Default Language</value>
+  </data>
+  <data name="&gt;&gt;chkForceEnglish.Name" xml:space="preserve">
+    <value>chkForceEnglish</value>
+  </data>
+  <data name="&gt;&gt;chkForceEnglish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkForceEnglish.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;chkForceEnglish.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 99</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 188</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="btnReset.ImageNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        Hz2IoxV0bDhqAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnReset.ImagePressed" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 590</value>
+  </data>
+  <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>&amp;Reset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.259, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="btnSave.ImageNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        Hz2IoxV0bDhqAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnSave.ImagePressed" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 590</value>
+  </data>
+  <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.259, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkCouponsTaxable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkCouponsTaxable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkCouponsTaxable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkCouponsTaxable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 433</value>
+  </data>
+  <data name="chkCouponsTaxable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="chkCouponsTaxable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 26</value>
+  </data>
+  <data name="chkCouponsTaxable.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chkCouponsTaxable.Text" xml:space="preserve">
+    <value>Apply Tax After Coupon</value>
+  </data>
+  <data name="&gt;&gt;chkCouponsTaxable.Name" xml:space="preserve">
+    <value>chkCouponsTaxable</value>
+  </data>
+  <data name="&gt;&gt;chkCouponsTaxable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCouponsTaxable.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkCouponsTaxable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkEnableCouponManagement.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkEnableCouponManagement.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkEnableCouponManagement.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkEnableCouponManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 397</value>
+  </data>
+  <data name="chkEnableCouponManagement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="chkEnableCouponManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 26</value>
+  </data>
+  <data name="chkEnableCouponManagement.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chkEnableCouponManagement.Text" xml:space="preserve">
+    <value>Enable Coupon Management</value>
+  </data>
+  <data name="&gt;&gt;chkEnableCouponManagement.Name" xml:space="preserve">
+    <value>chkEnableCouponManagement</value>
+  </data>
+  <data name="&gt;&gt;chkEnableCouponManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEnableCouponManagement.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkEnableCouponManagement.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkShareCreditSetting.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkShareCreditSetting.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkShareCreditSetting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkShareCreditSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 65</value>
+  </data>
+  <data name="chkShareCreditSetting.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="chkShareCreditSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>335, 26</value>
+  </data>
+  <data name="chkShareCreditSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkShareCreditSetting.Text" xml:space="preserve">
+    <value>Allow Credit Sharing Between Operators</value>
+  </data>
+  <data name="&gt;&gt;chkShareCreditSetting.Name" xml:space="preserve">
+    <value>chkShareCreditSetting</value>
+  </data>
+  <data name="&gt;&gt;chkShareCreditSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkShareCreditSetting.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkShareCreditSetting.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkSharePointsSetting.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSharePointsSetting.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkSharePointsSetting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkSharePointsSetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 27</value>
+  </data>
+  <data name="chkSharePointsSetting.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="chkSharePointsSetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>328, 26</value>
+  </data>
+  <data name="chkSharePointsSetting.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkSharePointsSetting.Text" xml:space="preserve">
+    <value>Allow Point Sharing Between Operators</value>
+  </data>
+  <data name="&gt;&gt;chkSharePointsSetting.Name" xml:space="preserve">
+    <value>chkSharePointsSetting</value>
+  </data>
+  <data name="&gt;&gt;chkSharePointsSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSharePointsSetting.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkSharePointsSetting.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkEnableLogging.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkEnableLogging.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 25</value>
+  </data>
+  <data name="chkEnableLogging.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 26</value>
+  </data>
+  <data name="chkEnableLogging.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkEnableLogging.Text" xml:space="preserve">
+    <value>Enable Logging</value>
+  </data>
+  <data name="&gt;&gt;chkEnableLogging.Name" xml:space="preserve">
+    <value>chkEnableLogging</value>
+  </data>
+  <data name="&gt;&gt;chkEnableLogging.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEnableLogging.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;chkEnableLogging.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cboLogLevel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cboLogLevel.Items" xml:space="preserve">
+    <value>0 - All</value>
+  </data>
+  <data name="cboLogLevel.Items1" xml:space="preserve">
+    <value>1 - SQL</value>
+  </data>
+  <data name="cboLogLevel.Items2" xml:space="preserve">
+    <value>2 - Message</value>
+  </data>
+  <data name="cboLogLevel.Items3" xml:space="preserve">
+    <value>3 - Debug</value>
+  </data>
+  <data name="cboLogLevel.Items4" xml:space="preserve">
+    <value>4 - Configuration</value>
+  </data>
+  <data name="cboLogLevel.Items5" xml:space="preserve">
+    <value>5 - Information</value>
+  </data>
+  <data name="cboLogLevel.Items6" xml:space="preserve">
+    <value>6 - Warning</value>
+  </data>
+  <data name="cboLogLevel.Items7" xml:space="preserve">
+    <value>7 - Severe</value>
+  </data>
+  <data name="cboLogLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 104</value>
+  </data>
+  <data name="cboLogLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 30</value>
+  </data>
+  <data name="cboLogLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cboLogLevel.Name" xml:space="preserve">
+    <value>cboLogLevel</value>
+  </data>
+  <data name="&gt;&gt;cboLogLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboLogLevel.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;cboLogLevel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numLogRecycleDays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numLogRecycleDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 64</value>
+  </data>
+  <data name="numLogRecycleDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 26</value>
+  </data>
+  <data name="numLogRecycleDays.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;numLogRecycleDays.Name" xml:space="preserve">
+    <value>numLogRecycleDays</value>
+  </data>
+  <data name="&gt;&gt;numLogRecycleDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numLogRecycleDays.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;numLogRecycleDays.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblLogRecycleDays.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblLogRecycleDays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="lblLogRecycleDays.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblLogRecycleDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 63</value>
+  </data>
+  <data name="lblLogRecycleDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="lblLogRecycleDays.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblLogRecycleDays.Text" xml:space="preserve">
+    <value>Log Recycle Days</value>
+  </data>
+  <data name="&gt;&gt;lblLogRecycleDays.Name" xml:space="preserve">
+    <value>lblLogRecycleDays</value>
+  </data>
+  <data name="&gt;&gt;lblLogRecycleDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLogRecycleDays.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;lblLogRecycleDays.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="numDownloadRecycleDays.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numDownloadRecycleDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 149</value>
+  </data>
+  <data name="numDownloadRecycleDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 26</value>
+  </data>
+  <data name="numDownloadRecycleDays.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;numDownloadRecycleDays.Name" xml:space="preserve">
+    <value>numDownloadRecycleDays</value>
+  </data>
+  <data name="&gt;&gt;numDownloadRecycleDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numDownloadRecycleDays.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;numDownloadRecycleDays.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblLogLevel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblLogLevel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="lblLogLevel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblLogLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 107</value>
+  </data>
+  <data name="lblLogLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 22</value>
+  </data>
+  <data name="lblLogLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblLogLevel.Text" xml:space="preserve">
+    <value>Log Level</value>
+  </data>
+  <data name="&gt;&gt;lblLogLevel.Name" xml:space="preserve">
+    <value>lblLogLevel</value>
+  </data>
+  <data name="&gt;&gt;lblLogLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLogLevel.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;lblLogLevel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 149</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 22</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Download Recycle Days</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBox6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>374, 99</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 188</value>
+  </data>
+  <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtClientRoot.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="txtClientRoot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 352</value>
+  </data>
+  <data name="txtClientRoot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 26</value>
+  </data>
+  <data name="txtClientRoot.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtClientRoot.Name" xml:space="preserve">
+    <value>txtClientRoot</value>
+  </data>
+  <data name="&gt;&gt;txtClientRoot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtClientRoot.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtClientRoot.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 352</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 22</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Client Root Directory</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtClientInstallDrive.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="txtClientInstallDrive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 307</value>
+  </data>
+  <data name="txtClientInstallDrive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 26</value>
+  </data>
+  <data name="txtClientInstallDrive.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtClientInstallDrive.Name" xml:space="preserve">
+    <value>txtClientInstallDrive</value>
+  </data>
+  <data name="&gt;&gt;txtClientInstallDrive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtClientInstallDrive.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtClientInstallDrive.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 307</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 22</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Client Install Drive</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 23</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 524</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Global Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GlobalSettings</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.10.0.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+</root>

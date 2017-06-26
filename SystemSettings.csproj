@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4E78223-403C-42FE-8A32-FB93D1E3DCC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTI.Modules.SystemSettings</RootNamespace>
+    <AssemblyName>GTISystemSettings</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>SystemSettings.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/GTISystemSettings/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\AllSettingsModel.cs" />
+    <Compile Include="Business\GetMachineModules.cs" />
+    <Compile Include="Business\SetRemoteDisplayConfigurations.cs" />
+    <Compile Include="Business\SetAccrualDisplayItems.cs" />
+    <Compile Include="Business\GetRemoteDisplayConfigurations.cs" />
+    <Compile Include="Business\GetMachineCapabilites.cs" />
+    <Compile Include="Business\DistributorFeesModel.cs" />
+    <Compile Include="Business\DistributorFeesPresenter.cs" />
+    <Compile Include="Business\GenericCBOItem.cs" />
+    <Compile Include="Business\GetAccrualDisplayItems.cs" />
+    <Compile Include="Business\GetConfigPhotoMessage.cs" />
+    <Compile Include="Business\GetMotifMessage.cs" />
+    <Compile Include="Business\GetOperators.cs" />
+    <Compile Include="Business\GetPhotoTypeMessage.cs" />
+    <Compile Include="Business\GetScenesMessage.cs" />
+    <Compile Include="Business\IGTIModule.cs" />
+    <Compile Include="Business\ListViewSorter.cs" />
+    <Compile Include="Business\ModuleManager.cs" />
+    <Compile Include="Business\ModuleSettings.cs" />
+    <Compile Include="Business\MotifItem.cs" />
+    <Compile Include="Business\OperatorManagementModel.cs" />
+    <Compile Include="Business\OperatorManagementPresenter.cs" />
+    <Compile Include="Business\PhotoTypeItem.cs" />
+    <Compile Include="Business\RemoveDistributorFeesMessage.cs" />
+    <Compile Include="Business\SceneItem.cs" />
+    <Compile Include="Business\SetConfigPhotoMessage.cs" />
+    <Compile Include="Business\SetDistributorFees.cs" />
+    <Compile Include="Business\SetMotifMessage.cs" />
+    <Compile Include="Business\SettingsModule.cs" />
+    <Compile Include="Business\Validator.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Models\MachineCapabilites.cs" />
+    <Compile Include="Models\RemoteDisplayConfiguration.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Data\GTIClient.cs" />
+    <Compile Include="Business\SetCurrentOperator.cs" />
+    <Compile Include="UI\AdminSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AdminSettings.Designer.cs">
+      <DependentUpon>AdminSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BingoSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\BingoSettings.Designer.cs">
+      <DependentUpon>BingoSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CallerSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CallerSettings.Designer.cs">
+      <DependentUpon>CallerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChannelDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ChannelDlg.Designer.cs">
+      <DependentUpon>ChannelDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChannelSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ChannelSettings.Designer.cs">
+      <DependentUpon>ChannelSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CharityDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CharityDlg.Designer.cs">
+      <DependentUpon>CharityDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CharitySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CharitySettings.Designer.cs">
+      <DependentUpon>CharitySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CompanySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CompanySettings.Designer.cs">
+      <DependentUpon>CompanySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AccrualSceneDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AccrualSceneDialog.Designer.cs">
+      <DependentUpon>AccrualSceneDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KioskSalesSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KioskSalesSettings.Designer.cs">
+      <DependentUpon>KioskSalesSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PointOfSalePrinterSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PointOfSalePrinterSettings.Designer.cs">
+      <DependentUpon>PointOfSalePrinterSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CrystalBallSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CrystalBallSettings.Designer.cs">
+      <DependentUpon>CrystalBallSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PaymentProcessingSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PaymentProcessingSettings.Designer.cs">
+      <DependentUpon>PaymentProcessingSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SecuritySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SecuritySettings.Designer.cs">
+      <DependentUpon>SecuritySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MoneyCenterSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MoneyCenterSettings.Designer.cs">
+      <DependentUpon>MoneyCenterSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DistributorFeesSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DistributorFeesSettings.Designer.cs">
+      <DependentUpon>DistributorFeesSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InventorySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\InventorySettings.Designer.cs">
+      <DependentUpon>InventorySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LicenseFileSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\LicenseFileSettings.Designer.cs">
+      <DependentUpon>LicenseFileSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MotifSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MotifSettings.Designer.cs">
+      <DependentUpon>MotifSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KioskSettings2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KioskSettings2.Designer.cs">
+      <DependentUpon>KioskSettings2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AudioSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\AudioSettings.Designer.cs">
+      <DependentUpon>AudioSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CrateModuleSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CrateModuleSettings.Designer.cs">
+      <DependentUpon>CrateModuleSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CreditSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CreditSettings.Designer.cs">
+      <DependentUpon>CreditSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CurrencySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CurrencySettings.Designer.cs">
+      <DependentUpon>CurrencySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GlobalSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\GlobalSettings.Designer.cs">
+      <DependentUpon>GlobalSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HallDisplaySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\HallDisplaySettings.Designer.cs">
+      <DependentUpon>HallDisplaySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KioskSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\KioskSettings.Designer.cs">
+      <DependentUpon>KioskSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LocationDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LocationDlg.Designer.cs">
+      <DependentUpon>LocationDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LocationSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\LocationSettings.Designer.cs">
+      <DependentUpon>LocationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MachineSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MachineSettings.Designer.cs">
+      <DependentUpon>MachineSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MachineSettingsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MachineSettingsDlg.Designer.cs">
+      <DependentUpon>MachineSettingsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MagCardSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MagCardSettings.Designer.cs">
+      <DependentUpon>MagCardSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\OperatorManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OperatorManagement.designer.cs">
+      <DependentUpon>OperatorManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OperatorSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\OperatorSettings.Designer.cs">
+      <DependentUpon>OperatorSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PlayerSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PlayerSettings.designer.cs">
+      <DependentUpon>PlayerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PlayModeSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PlayModeSettings.designer.cs">
+      <DependentUpon>PlayModeSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\POSSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\POSSettings.Designer.cs">
+      <DependentUpon>POSSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RaffleSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\RaffleSettings.Designer.cs">
+      <DependentUpon>RaffleSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReceiptSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ReceiptSettings.Designer.cs">
+      <DependentUpon>ReceiptSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SessionSummarySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SessionSummarySettings.Designer.cs">
+      <DependentUpon>SessionSummarySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TenderSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TenderSettings.Designer.cs">
+      <DependentUpon>TenderSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ThirdPartyInterfaceSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ThirdPartyInterfaceSettings.Designer.cs">
+      <DependentUpon>ThirdPartyInterfaceSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UnitMgmtSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UnitMgmtSettings.Designer.cs">
+      <DependentUpon>UnitMgmtSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ValidationSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ValidationSettings.Designer.cs">
+      <DependentUpon>ValidationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\VideoSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\VideoSettings.Designer.cs">
+      <DependentUpon>VideoSettings.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SystemSettings.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdminSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BingoSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BingoSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CallerSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CallerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChannelDlg.resx">
+      <DependentUpon>ChannelDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChannelSettings.resx">
+      <DependentUpon>ChannelSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CharityDlg.resx">
+      <DependentUpon>CharityDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CharitySettings.resx">
+      <DependentUpon>CharitySettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CompanySettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CompanySettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AccrualSceneDialog.resx">
+      <DependentUpon>AccrualSceneDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KioskSalesSettings.resx">
+      <DependentUpon>KioskSalesSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PointOfSalePrinterSettings.resx">
+      <DependentUpon>PointOfSalePrinterSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CrystalBallSettings.resx">
+      <DependentUpon>CrystalBallSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PaymentProcessingSettings.resx">
+      <DependentUpon>PaymentProcessingSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SecuritySettings.resx">
+      <DependentUpon>SecuritySettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MoneyCenterSettings.resx">
+      <DependentUpon>MoneyCenterSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DistributorFeesSettings.resx">
+      <DependentUpon>DistributorFeesSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InventorySettings.resx">
+      <DependentUpon>InventorySettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LicenseFileSettings.resx">
+      <DependentUpon>LicenseFileSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MotifSettings.resx">
+      <DependentUpon>MotifSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KioskSettings2.resx">
+      <DependentUpon>KioskSettings2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AudioSettings.resx">
+      <DependentUpon>AudioSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CrateModuleSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CrateModuleSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CreditSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreditSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CurrencySettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CurrencySettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GlobalSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GlobalSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HallDisplaySettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HallDisplaySettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\KioskSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KioskSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LocationDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LocationDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LocationSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LocationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MachineSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MachineSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MachineSettingsDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MachineSettingsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MagCardSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MagCardSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OperatorManagement.resx">
+      <DependentUpon>OperatorManagement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OperatorSettings.resx">
+      <DependentUpon>OperatorSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PlayerSettings.resx">
+      <DependentUpon>PlayerSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PlayModeSettings.resx">
+      <DependentUpon>PlayModeSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\POSSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>POSSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RaffleSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RaffleSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReceiptSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReceiptSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SessionSummarySettings.resx">
+      <DependentUpon>SessionSummarySettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SettingsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TenderSettings.resx">
+      <DependentUpon>TenderSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ThirdPartyInterfaceSettings.resx">
+      <DependentUpon>ThirdPartyInterfaceSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UnitMgmtSettings.af.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnitMgmtSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UnitMgmtSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnitMgmtSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ValidationSettings.resx">
+      <DependentUpon>ValidationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\VideoSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VideoSettings.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueButtonUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DLLs\GTIControls\GTIControls.csproj">
+      <Project>{A2B9C7C4-AE7E-48DC-B39C-C9442CF017F6}</Project>
+      <Name>GTIControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DLLs\ManagedEliteModule\ManagedEliteModule.csproj">
+      <Project>{308EF933-6B4E-48B2-9C54-85318FE50C63}</Project>
+      <Name>ManagedEliteModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowDown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowUp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbortDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YellowButtonUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YellowButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenButtonUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedButtonUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrangeButtonUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrangeButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PurpleButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PurpleButtonUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GradientPanel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

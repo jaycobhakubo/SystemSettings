@@ -1,0 +1,616 @@
+﻿namespace GTI.Modules.SystemSettings.UI
+{
+    partial class OperatorManagement
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OperatorManagement));
+            this.operatorDetailsGroupBox = new System.Windows.Forms.GroupBox();
+            this.m_chkUseAddress = new System.Windows.Forms.CheckBox();
+            this.operatorHallRentAmountTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.operatorModemTextBox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.operatorCashMethodIDCombo = new System.Windows.Forms.ComboBox();
+            this.cashMethodLabel = new System.Windows.Forms.Label();
+            this.operatorCodeTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.m_textBoxBillingAddress2 = new System.Windows.Forms.TextBox();
+            this.m_labelBillingAdress2 = new System.Windows.Forms.Label();
+            this.m_textBoxAddress2 = new System.Windows.Forms.TextBox();
+            this.address2Label = new System.Windows.Forms.Label();
+            this.operatorContactNameTextBox = new System.Windows.Forms.TextBox();
+            this.m_textBoxBillingAddressSate = new System.Windows.Forms.TextBox();
+            this.m_labelBillingState = new System.Windows.Forms.Label();
+            this.m_textBoxBillingAddressCity = new System.Windows.Forms.TextBox();
+            this.m_labelBillingCity = new System.Windows.Forms.Label();
+            this.m_textBoxZipCode = new System.Windows.Forms.TextBox();
+            this.m_textBoxCountry = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.operatorIsActiveCheckBox = new System.Windows.Forms.CheckBox();
+            this.operatorStatePercentTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.operatorTaxIDTextBox = new System.Windows.Forms.TextBox();
+            this.hallRentAmountLabel = new System.Windows.Forms.Label();
+            this.operatorProfitPercentTextBox = new System.Windows.Forms.TextBox();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.SSNlabel = new System.Windows.Forms.Label();
+            this.operatorPhoneTextBox = new System.Windows.Forms.TextBox();
+            this.fNamelabel = new System.Windows.Forms.Label();
+            this.m_textBoxBillingZipCode = new System.Windows.Forms.TextBox();
+            this.loginNumberLabel = new System.Windows.Forms.Label();
+            this.m_textBoxBillingAddressCountry = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.operatorNameTextBox = new System.Windows.Forms.TextBox();
+            this.m_labelBillingCountry = new System.Windows.Forms.Label();
+            this.lNamelabel = new System.Windows.Forms.Label();
+            this.operatorLicenseNumberTextBox = new System.Windows.Forms.TextBox();
+            this.address1label = new System.Windows.Forms.Label();
+            this.m_labelBillingZipCode = new System.Windows.Forms.Label();
+            this.m_textBoxAddress1 = new System.Windows.Forms.TextBox();
+            this.m_textBoxState = new System.Windows.Forms.TextBox();
+            this.m_labelBillingAdress1 = new System.Windows.Forms.Label();
+            this.statelabel = new System.Windows.Forms.Label();
+            this.m_textBoxbillingAddress1 = new System.Windows.Forms.TextBox();
+            this.m_textBoxCity = new System.Windows.Forms.TextBox();
+            this.citylabel = new System.Windows.Forms.Label();
+            this.imageButton1 = new GTI.Controls.ImageButton();
+            this.m_OperatorGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.gtiListView1 = new GTI.Controls.GTIListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.rdoInactiveRadioButton = new System.Windows.Forms.RadioButton();
+            this.rdoAllRadioButton = new System.Windows.Forms.RadioButton();
+            this.rdoActiveRadioButton = new System.Windows.Forms.RadioButton();
+            this.imageButton4 = new GTI.Controls.ImageButton();
+            this.imageButton5 = new GTI.Controls.ImageButton();
+            this.m_errorValidator = new System.Windows.Forms.ErrorProvider(this.components);
+            this.operatorDetailsGroupBox.SuspendLayout();
+            this.m_OperatorGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_errorValidator)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // operatorDetailsGroupBox
+            // 
+            this.operatorDetailsGroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.operatorDetailsGroupBox.Controls.Add(this.m_chkUseAddress);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorHallRentAmountTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorModemTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.label11);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorCashMethodIDCombo);
+            this.operatorDetailsGroupBox.Controls.Add(this.cashMethodLabel);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorCodeTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.label3);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxBillingAddress2);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_labelBillingAdress2);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxAddress2);
+            this.operatorDetailsGroupBox.Controls.Add(this.address2Label);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorContactNameTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxBillingAddressSate);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_labelBillingState);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxBillingAddressCity);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_labelBillingCity);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxZipCode);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxCountry);
+            this.operatorDetailsGroupBox.Controls.Add(this.label2);
+            this.operatorDetailsGroupBox.Controls.Add(this.label6);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorIsActiveCheckBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorStatePercentTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.label5);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorTaxIDTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.hallRentAmountLabel);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorProfitPercentTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.passwordLabel);
+            this.operatorDetailsGroupBox.Controls.Add(this.SSNlabel);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorPhoneTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.fNamelabel);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxBillingZipCode);
+            this.operatorDetailsGroupBox.Controls.Add(this.loginNumberLabel);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxBillingAddressCountry);
+            this.operatorDetailsGroupBox.Controls.Add(this.label1);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorNameTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_labelBillingCountry);
+            this.operatorDetailsGroupBox.Controls.Add(this.lNamelabel);
+            this.operatorDetailsGroupBox.Controls.Add(this.operatorLicenseNumberTextBox);
+            this.operatorDetailsGroupBox.Controls.Add(this.address1label);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_labelBillingZipCode);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxAddress1);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxState);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_labelBillingAdress1);
+            this.operatorDetailsGroupBox.Controls.Add(this.statelabel);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxbillingAddress1);
+            this.operatorDetailsGroupBox.Controls.Add(this.m_textBoxCity);
+            this.operatorDetailsGroupBox.Controls.Add(this.citylabel);
+            resources.ApplyResources(this.operatorDetailsGroupBox, "operatorDetailsGroupBox");
+            this.operatorDetailsGroupBox.Name = "operatorDetailsGroupBox";
+            this.operatorDetailsGroupBox.TabStop = false;
+            // 
+            // m_chkUseAddress
+            // 
+            resources.ApplyResources(this.m_chkUseAddress, "m_chkUseAddress");
+            this.m_chkUseAddress.Name = "m_chkUseAddress";
+            this.m_chkUseAddress.UseVisualStyleBackColor = true;
+            this.m_chkUseAddress.Click += new System.EventHandler(this.m_chkUseAddress_CheckedChanged);
+            // 
+            // operatorHallRentAmountTextBox
+            // 
+            resources.ApplyResources(this.operatorHallRentAmountTextBox, "operatorHallRentAmountTextBox");
+            this.operatorHallRentAmountTextBox.Name = "operatorHallRentAmountTextBox";
+            // 
+            // operatorModemTextBox
+            // 
+            resources.ApplyResources(this.operatorModemTextBox, "operatorModemTextBox");
+            this.operatorModemTextBox.Name = "operatorModemTextBox";
+            this.operatorModemTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // operatorCashMethodIDCombo
+            // 
+            this.operatorCashMethodIDCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.operatorCashMethodIDCombo, "operatorCashMethodIDCombo");
+            this.operatorCashMethodIDCombo.FormattingEnabled = true;
+            this.operatorCashMethodIDCombo.Items.AddRange(new object[] {
+            resources.GetString("operatorCashMethodIDCombo.Items"),
+            resources.GetString("operatorCashMethodIDCombo.Items1"),
+            resources.GetString("operatorCashMethodIDCombo.Items2")});
+            this.operatorCashMethodIDCombo.Name = "operatorCashMethodIDCombo";
+            this.operatorCashMethodIDCombo.SelectedIndexChanged += new System.EventHandler(this.operatorCashMethodIDCombo_SelectedIndexChanged);
+            this.operatorCashMethodIDCombo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.operatorCashMethodIDCombo_MouseClick);
+            // 
+            // cashMethodLabel
+            // 
+            resources.ApplyResources(this.cashMethodLabel, "cashMethodLabel");
+            this.cashMethodLabel.Name = "cashMethodLabel";
+            // 
+            // operatorCodeTextBox
+            // 
+            resources.ApplyResources(this.operatorCodeTextBox, "operatorCodeTextBox");
+            this.operatorCodeTextBox.Name = "operatorCodeTextBox";
+            this.operatorCodeTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // m_textBoxBillingAddress2
+            // 
+            resources.ApplyResources(this.m_textBoxBillingAddress2, "m_textBoxBillingAddress2");
+            this.m_textBoxBillingAddress2.Name = "m_textBoxBillingAddress2";
+            this.m_textBoxBillingAddress2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // m_labelBillingAdress2
+            // 
+            resources.ApplyResources(this.m_labelBillingAdress2, "m_labelBillingAdress2");
+            this.m_labelBillingAdress2.Name = "m_labelBillingAdress2";
+            // 
+            // m_textBoxAddress2
+            // 
+            resources.ApplyResources(this.m_textBoxAddress2, "m_textBoxAddress2");
+            this.m_textBoxAddress2.Name = "m_textBoxAddress2";
+            this.m_textBoxAddress2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxAddress2_KeyUp);
+            // 
+            // address2Label
+            // 
+            resources.ApplyResources(this.address2Label, "address2Label");
+            this.address2Label.Name = "address2Label";
+            // 
+            // operatorContactNameTextBox
+            // 
+            resources.ApplyResources(this.operatorContactNameTextBox, "operatorContactNameTextBox");
+            this.operatorContactNameTextBox.Name = "operatorContactNameTextBox";
+            this.operatorContactNameTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // m_textBoxBillingAddressSate
+            // 
+            resources.ApplyResources(this.m_textBoxBillingAddressSate, "m_textBoxBillingAddressSate");
+            this.m_textBoxBillingAddressSate.Name = "m_textBoxBillingAddressSate";
+            this.m_textBoxBillingAddressSate.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // m_labelBillingState
+            // 
+            resources.ApplyResources(this.m_labelBillingState, "m_labelBillingState");
+            this.m_labelBillingState.Name = "m_labelBillingState";
+            // 
+            // m_textBoxBillingAddressCity
+            // 
+            resources.ApplyResources(this.m_textBoxBillingAddressCity, "m_textBoxBillingAddressCity");
+            this.m_textBoxBillingAddressCity.Name = "m_textBoxBillingAddressCity";
+            this.m_textBoxBillingAddressCity.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // m_labelBillingCity
+            // 
+            resources.ApplyResources(this.m_labelBillingCity, "m_labelBillingCity");
+            this.m_labelBillingCity.Name = "m_labelBillingCity";
+            // 
+            // m_textBoxZipCode
+            // 
+            resources.ApplyResources(this.m_textBoxZipCode, "m_textBoxZipCode");
+            this.m_textBoxZipCode.Name = "m_textBoxZipCode";
+            this.m_textBoxZipCode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxZipCode_KeyUp);
+            // 
+            // m_textBoxCountry
+            // 
+            resources.ApplyResources(this.m_textBoxCountry, "m_textBoxCountry");
+            this.m_textBoxCountry.Name = "m_textBoxCountry";
+            this.m_textBoxCountry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxCountry_KeyUp);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // operatorIsActiveCheckBox
+            // 
+            resources.ApplyResources(this.operatorIsActiveCheckBox, "operatorIsActiveCheckBox");
+            this.operatorIsActiveCheckBox.Name = "operatorIsActiveCheckBox";
+            this.operatorIsActiveCheckBox.UseVisualStyleBackColor = true;
+            this.operatorIsActiveCheckBox.Click += new System.EventHandler(this.operatorIsActiveCheckBox_Click);
+            // 
+            // operatorStatePercentTextBox
+            // 
+            resources.ApplyResources(this.operatorStatePercentTextBox, "operatorStatePercentTextBox");
+            this.operatorStatePercentTextBox.Name = "operatorStatePercentTextBox";
+            this.operatorStatePercentTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PercentTextBox_KeyPress);
+            this.operatorStatePercentTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.PercentTextBox_Validating);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // operatorTaxIDTextBox
+            // 
+            resources.ApplyResources(this.operatorTaxIDTextBox, "operatorTaxIDTextBox");
+            this.operatorTaxIDTextBox.Name = "operatorTaxIDTextBox";
+            this.operatorTaxIDTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // hallRentAmountLabel
+            // 
+            resources.ApplyResources(this.hallRentAmountLabel, "hallRentAmountLabel");
+            this.hallRentAmountLabel.Name = "hallRentAmountLabel";
+            // 
+            // operatorProfitPercentTextBox
+            // 
+            resources.ApplyResources(this.operatorProfitPercentTextBox, "operatorProfitPercentTextBox");
+            this.operatorProfitPercentTextBox.Name = "operatorProfitPercentTextBox";
+            this.operatorProfitPercentTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PercentTextBox_KeyPress);
+            this.operatorProfitPercentTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.PercentTextBox_Validating);
+            // 
+            // passwordLabel
+            // 
+            resources.ApplyResources(this.passwordLabel, "passwordLabel");
+            this.passwordLabel.Name = "passwordLabel";
+            // 
+            // SSNlabel
+            // 
+            resources.ApplyResources(this.SSNlabel, "SSNlabel");
+            this.SSNlabel.Name = "SSNlabel";
+            // 
+            // operatorPhoneTextBox
+            // 
+            resources.ApplyResources(this.operatorPhoneTextBox, "operatorPhoneTextBox");
+            this.operatorPhoneTextBox.Name = "operatorPhoneTextBox";
+            this.operatorPhoneTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // fNamelabel
+            // 
+            resources.ApplyResources(this.fNamelabel, "fNamelabel");
+            this.fNamelabel.Name = "fNamelabel";
+            // 
+            // m_textBoxBillingZipCode
+            // 
+            resources.ApplyResources(this.m_textBoxBillingZipCode, "m_textBoxBillingZipCode");
+            this.m_textBoxBillingZipCode.Name = "m_textBoxBillingZipCode";
+            this.m_textBoxBillingZipCode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // loginNumberLabel
+            // 
+            resources.ApplyResources(this.loginNumberLabel, "loginNumberLabel");
+            this.loginNumberLabel.Name = "loginNumberLabel";
+            // 
+            // m_textBoxBillingAddressCountry
+            // 
+            resources.ApplyResources(this.m_textBoxBillingAddressCountry, "m_textBoxBillingAddressCountry");
+            this.m_textBoxBillingAddressCountry.Name = "m_textBoxBillingAddressCountry";
+            this.m_textBoxBillingAddressCountry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // operatorNameTextBox
+            // 
+            resources.ApplyResources(this.operatorNameTextBox, "operatorNameTextBox");
+            this.operatorNameTextBox.Name = "operatorNameTextBox";
+            this.operatorNameTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.operatorNameTextBox_KeyUp);
+            // 
+            // m_labelBillingCountry
+            // 
+            resources.ApplyResources(this.m_labelBillingCountry, "m_labelBillingCountry");
+            this.m_labelBillingCountry.Name = "m_labelBillingCountry";
+            // 
+            // lNamelabel
+            // 
+            resources.ApplyResources(this.lNamelabel, "lNamelabel");
+            this.lNamelabel.Name = "lNamelabel";
+            // 
+            // operatorLicenseNumberTextBox
+            // 
+            resources.ApplyResources(this.operatorLicenseNumberTextBox, "operatorLicenseNumberTextBox");
+            this.operatorLicenseNumberTextBox.Name = "operatorLicenseNumberTextBox";
+            this.operatorLicenseNumberTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // address1label
+            // 
+            resources.ApplyResources(this.address1label, "address1label");
+            this.address1label.Name = "address1label";
+            // 
+            // m_labelBillingZipCode
+            // 
+            resources.ApplyResources(this.m_labelBillingZipCode, "m_labelBillingZipCode");
+            this.m_labelBillingZipCode.Name = "m_labelBillingZipCode";
+            // 
+            // m_textBoxAddress1
+            // 
+            resources.ApplyResources(this.m_textBoxAddress1, "m_textBoxAddress1");
+            this.m_textBoxAddress1.Name = "m_textBoxAddress1";
+            this.m_textBoxAddress1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxAddress1_KeyUp);
+            // 
+            // m_textBoxState
+            // 
+            resources.ApplyResources(this.m_textBoxState, "m_textBoxState");
+            this.m_textBoxState.Name = "m_textBoxState";
+            this.m_textBoxState.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxState_KeyUp);
+            // 
+            // m_labelBillingAdress1
+            // 
+            resources.ApplyResources(this.m_labelBillingAdress1, "m_labelBillingAdress1");
+            this.m_labelBillingAdress1.Name = "m_labelBillingAdress1";
+            // 
+            // statelabel
+            // 
+            resources.ApplyResources(this.statelabel, "statelabel");
+            this.statelabel.Name = "statelabel";
+            // 
+            // m_textBoxbillingAddress1
+            // 
+            resources.ApplyResources(this.m_textBoxbillingAddress1, "m_textBoxbillingAddress1");
+            this.m_textBoxbillingAddress1.Name = "m_textBoxbillingAddress1";
+            this.m_textBoxbillingAddress1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            // 
+            // m_textBoxCity
+            // 
+            resources.ApplyResources(this.m_textBoxCity, "m_textBoxCity");
+            this.m_textBoxCity.Name = "m_textBoxCity";
+            this.m_textBoxCity.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxCity_KeyUp);
+            // 
+            // citylabel
+            // 
+            resources.ApplyResources(this.citylabel, "citylabel");
+            this.citylabel.Name = "citylabel";
+            // 
+            // imageButton1
+            // 
+            this.imageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.imageButton1.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.imageButton1, "imageButton1");
+            this.imageButton1.ForeColor = System.Drawing.Color.Black;
+            this.imageButton1.ImageNormal = ((System.Drawing.Image)(resources.GetObject("imageButton1.ImageNormal")));
+            this.imageButton1.ImagePressed = ((System.Drawing.Image)(resources.GetObject("imageButton1.ImagePressed")));
+            this.imageButton1.Name = "imageButton1";
+            this.imageButton1.UseVisualStyleBackColor = false;
+            this.imageButton1.Click += new System.EventHandler(this.imageButton1_Click);
+            // 
+            // m_OperatorGroupBox1
+            // 
+            this.m_OperatorGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.m_OperatorGroupBox1.Controls.Add(this.gtiListView1);
+            this.m_OperatorGroupBox1.Controls.Add(this.rdoInactiveRadioButton);
+            this.m_OperatorGroupBox1.Controls.Add(this.rdoAllRadioButton);
+            this.m_OperatorGroupBox1.Controls.Add(this.rdoActiveRadioButton);
+            resources.ApplyResources(this.m_OperatorGroupBox1, "m_OperatorGroupBox1");
+            this.m_OperatorGroupBox1.Name = "m_OperatorGroupBox1";
+            this.m_OperatorGroupBox1.TabStop = false;
+            // 
+            // gtiListView1
+            // 
+            this.gtiListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            resources.ApplyResources(this.gtiListView1, "gtiListView1");
+            this.gtiListView1.FullRowSelect = true;
+            this.gtiListView1.HideSelection = false;
+            this.gtiListView1.MultiSelect = false;
+            this.gtiListView1.Name = "gtiListView1";
+            this.gtiListView1.OwnerDraw = true;
+            this.gtiListView1.SortColumn = 0;
+            this.gtiListView1.UseCompatibleStateImageBehavior = false;
+            this.gtiListView1.View = System.Windows.Forms.View.Details;
+            this.gtiListView1.SelectedIndexChanged += new System.EventHandler(this.gtiListView1_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Tag = "alpha";
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Tag = "numeric";
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
+            // 
+            // rdoInactiveRadioButton
+            // 
+            resources.ApplyResources(this.rdoInactiveRadioButton, "rdoInactiveRadioButton");
+            this.rdoInactiveRadioButton.Name = "rdoInactiveRadioButton";
+            this.rdoInactiveRadioButton.TabStop = true;
+            this.rdoInactiveRadioButton.UseVisualStyleBackColor = true;
+            this.rdoInactiveRadioButton.Click += new System.EventHandler(this.rdoInactiveRadioButton_Click);
+            // 
+            // rdoAllRadioButton
+            // 
+            resources.ApplyResources(this.rdoAllRadioButton, "rdoAllRadioButton");
+            this.rdoAllRadioButton.Name = "rdoAllRadioButton";
+            this.rdoAllRadioButton.TabStop = true;
+            this.rdoAllRadioButton.UseVisualStyleBackColor = true;
+            this.rdoAllRadioButton.Click += new System.EventHandler(this.rdoAllRadioButton_Click);
+            // 
+            // rdoActiveRadioButton
+            // 
+            resources.ApplyResources(this.rdoActiveRadioButton, "rdoActiveRadioButton");
+            this.rdoActiveRadioButton.Name = "rdoActiveRadioButton";
+            this.rdoActiveRadioButton.TabStop = true;
+            this.rdoActiveRadioButton.UseVisualStyleBackColor = true;
+            this.rdoActiveRadioButton.Click += new System.EventHandler(this.rdoActiveRadioButton_Click);
+            // 
+            // imageButton4
+            // 
+            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
+            this.imageButton4.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.imageButton4, "imageButton4");
+            this.imageButton4.ForeColor = System.Drawing.Color.Black;
+            this.imageButton4.ImageNormal = ((System.Drawing.Image)(resources.GetObject("imageButton4.ImageNormal")));
+            this.imageButton4.ImagePressed = ((System.Drawing.Image)(resources.GetObject("imageButton4.ImagePressed")));
+            this.imageButton4.Name = "imageButton4";
+            this.imageButton4.UseVisualStyleBackColor = false;
+            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
+            this.imageButton4.Leave += new System.EventHandler(this.imageButton4_Leave);
+            // 
+            // imageButton5
+            // 
+            this.imageButton5.BackColor = System.Drawing.Color.Transparent;
+            this.imageButton5.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.imageButton5, "imageButton5");
+            this.imageButton5.ForeColor = System.Drawing.Color.Black;
+            this.imageButton5.ImageNormal = ((System.Drawing.Image)(resources.GetObject("imageButton5.ImageNormal")));
+            this.imageButton5.ImagePressed = ((System.Drawing.Image)(resources.GetObject("imageButton5.ImagePressed")));
+            this.imageButton5.Name = "imageButton5";
+            this.imageButton5.UseVisualStyleBackColor = false;
+            this.imageButton5.Click += new System.EventHandler(this.imageButton5_Click);
+            // 
+            // m_errorValidator
+            // 
+            this.m_errorValidator.ContainerControl = this;
+            // 
+            // OperatorManagement
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.imageButton5);
+            this.Controls.Add(this.imageButton4);
+            this.Controls.Add(this.m_OperatorGroupBox1);
+            this.Controls.Add(this.operatorDetailsGroupBox);
+            this.Controls.Add(this.imageButton1);
+            this.DoubleBuffered = true;
+            resources.ApplyResources(this, "$this");
+            this.MaximumSize = new System.Drawing.Size(762, 644);
+            this.Name = "OperatorManagement";
+            this.operatorDetailsGroupBox.ResumeLayout(false);
+            this.operatorDetailsGroupBox.PerformLayout();
+            this.m_OperatorGroupBox1.ResumeLayout(false);
+            this.m_OperatorGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_errorValidator)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox operatorDetailsGroupBox;
+        private System.Windows.Forms.TextBox operatorTaxIDTextBox;
+        private System.Windows.Forms.Label hallRentAmountLabel;
+        private System.Windows.Forms.TextBox operatorProfitPercentTextBox;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.Label SSNlabel;
+        private System.Windows.Forms.TextBox operatorPhoneTextBox;
+        private System.Windows.Forms.Label fNamelabel;
+        private System.Windows.Forms.TextBox m_textBoxBillingZipCode;
+        private System.Windows.Forms.Label loginNumberLabel;
+        private System.Windows.Forms.TextBox m_textBoxBillingAddressCountry;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox operatorNameTextBox;
+        private System.Windows.Forms.Label m_labelBillingCountry;
+        private System.Windows.Forms.Label lNamelabel;
+        private System.Windows.Forms.TextBox operatorLicenseNumberTextBox;
+        private System.Windows.Forms.Label address1label;
+        private System.Windows.Forms.Label m_labelBillingZipCode;
+        private System.Windows.Forms.TextBox m_textBoxAddress1;
+        private System.Windows.Forms.TextBox m_textBoxState;
+        private System.Windows.Forms.Label m_labelBillingAdress1;
+        private System.Windows.Forms.Label statelabel;
+        private System.Windows.Forms.TextBox m_textBoxbillingAddress1;
+        private System.Windows.Forms.TextBox m_textBoxCity;
+        private System.Windows.Forms.Label citylabel;
+        private GTI.Controls.ImageButton imageButton1;
+        private System.Windows.Forms.CheckBox operatorIsActiveCheckBox;
+        private System.Windows.Forms.TextBox operatorStatePercentTextBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox m_textBoxZipCode;
+        private System.Windows.Forms.TextBox m_textBoxCountry;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox m_textBoxBillingAddressSate;
+        private System.Windows.Forms.Label m_labelBillingState;
+        private System.Windows.Forms.TextBox m_textBoxBillingAddressCity;
+        private System.Windows.Forms.Label m_labelBillingCity;
+        private System.Windows.Forms.GroupBox m_OperatorGroupBox1;
+        private System.Windows.Forms.RadioButton rdoInactiveRadioButton;
+        private System.Windows.Forms.RadioButton rdoAllRadioButton;
+        private System.Windows.Forms.RadioButton rdoActiveRadioButton;
+        private System.Windows.Forms.TextBox operatorContactNameTextBox;
+        private GTI.Controls.ImageButton imageButton4;
+        private GTI.Controls.ImageButton imageButton5;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ErrorProvider m_errorValidator;
+        private System.Windows.Forms.TextBox m_textBoxBillingAddress2;
+        private System.Windows.Forms.Label m_labelBillingAdress2;
+        private System.Windows.Forms.TextBox m_textBoxAddress2;
+        private System.Windows.Forms.Label address2Label;
+        internal GTI.Controls.GTIListView gtiListView1;
+        private System.Windows.Forms.TextBox operatorCodeTextBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox operatorCashMethodIDCombo;
+        private System.Windows.Forms.Label cashMethodLabel;
+        private System.Windows.Forms.TextBox operatorModemTextBox;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MaskedTextBox operatorHallRentAmountTextBox;
+        private System.Windows.Forms.CheckBox m_chkUseAddress;
+    }
+}

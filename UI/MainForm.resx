@@ -1,0 +1,1999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.IsSplitterFixed" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="splitContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="treeView1.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>102, 0</value>
+  </metadata>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACC
+        CQAAAk1TRnQBSQFMAgEBAgEAAWQBAAFkAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wUAAaEBFAFfDQABoQEU
+        AV8tAAESAfcBEwFfBgABoQUAARIB9wETAV8GAAGhJAABhQGzAawBUwESAQoDAAGFAeoBoQQAAYUBswGs
+        AVMBEgEKAwABhQHqAaEkAAHqAbIBrAFTAVkBEgEKAaEBFAH3AewFAAHqAbIBrAFTAVkBEgEKAaEBFAH3
+        AewlAAGhAbMBrAFyAlkBEgG0AlkBZgUAAaEBswGsAXICWQESAbQCWQFmJgABkQKsBTgBeQGFBgABkQKs
+        BTgBeQGFJgAB6gGyAawBOAL7AjgB9wGhBgAB6gGyAawBOAL7AjgB9wGhJgABBAGyAVgE+wE4Aa4BCgYA
+        AQQBsgFYBPsBOAGuAQolAAFmAfcCOAT7ATgBWQFtAQoEAAFmAfcCOAT7ATgBWQFtAQoiAAGFAa4BdAFZ
+        AjgE+wI4AVkBbQEKAQABhQGuAXQBWQI4BPsCOAFZAW0BCiAAAYYBuwOzAbICrAFzAjgCcwFSAXoBbQGG
+        AbsDswGyAqwBcwI4AnMBUgF6AW0gAAShAoYBkQKsATgBWQGLAZEBbQFmAYUEoQKGAZECrAE4AVkBiwGR
+        AW0BZgGFJgABZgGyAawBWQF6AYUKAAFmAbIBrAFZAXoBhSoAAaEBswGsAewBHAGhCgABoQGzAawB7AEc
+        AaErAAGRAbIBswFtDAABkQGyAbMBbSwAAYYCEgGGDAABhgISAYYlAAFCAU0BPgcAAT4DAAEoAwABQAMA
+        ARADAAEBAQABAQUAAYAXAAP/AQAB8QH/AfEB/wQAAfAB/QHwAf0EAAHgAXEB4AFxBAAB4AEDAeABAwQA
+        AeABAwHgAQMEAAHwAQMB8AEDBAAB8AEDAfABAwQAAfABAwHwAQMEAAHgAQEB4AEBBAABgAEAAYAVAAH8
+        AQ8B/AEPBAAB/AEPAfwBDwQAAf4BHwH+AR8EAAH+AR8B/gEfBAAL
+</value>
+  </data>
+  <data name="treeView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 63</value>
+  </data>
+  <data name="treeView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="treeView1.SelectedImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 580</value>
+  </data>
+  <data name="treeView1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Name" xml:space="preserve">
+    <value>treeView1</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 28</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 30</value>
+  </data>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Current Operator</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="kioskSalesSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="kioskSalesSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="kioskSalesSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="kioskSalesSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;kioskSalesSettings1.Name" xml:space="preserve">
+    <value>kioskSalesSettings1</value>
+  </data>
+  <data name="&gt;&gt;kioskSalesSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.KioskSalesSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;kioskSalesSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;kioskSalesSettings1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="raffleSettings2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="raffleSettings2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="raffleSettings2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="raffleSettings2.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;raffleSettings2.Name" xml:space="preserve">
+    <value>raffleSettings2</value>
+  </data>
+  <data name="&gt;&gt;raffleSettings2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.RaffleSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;raffleSettings2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;raffleSettings2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="receiptSettings2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="receiptSettings2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="receiptSettings2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="receiptSettings2.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;receiptSettings2.Name" xml:space="preserve">
+    <value>receiptSettings2</value>
+  </data>
+  <data name="&gt;&gt;receiptSettings2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.ReceiptSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;receiptSettings2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;receiptSettings2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="securitySettings3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="securitySettings3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="securitySettings3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="securitySettings3.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;securitySettings3.Name" xml:space="preserve">
+    <value>securitySettings3</value>
+  </data>
+  <data name="&gt;&gt;securitySettings3.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;securitySettings3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;securitySettings3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="sessionSummarySettings5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="sessionSummarySettings5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 644</value>
+  </data>
+  <data name="sessionSummarySettings5.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings5.Name" xml:space="preserve">
+    <value>sessionSummarySettings5</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings5.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings5.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="sessionSummarySettings4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="sessionSummarySettings4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 644</value>
+  </data>
+  <data name="sessionSummarySettings4.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings4.Name" xml:space="preserve">
+    <value>sessionSummarySettings4</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings4.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings4.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="securitySettings2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="securitySettings2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="securitySettings2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="securitySettings2.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;securitySettings2.Name" xml:space="preserve">
+    <value>securitySettings2</value>
+  </data>
+  <data name="&gt;&gt;securitySettings2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;securitySettings2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;securitySettings2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="sessionSummarySettings3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="sessionSummarySettings3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 644</value>
+  </data>
+  <data name="sessionSummarySettings3.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings3.Name" xml:space="preserve">
+    <value>sessionSummarySettings3</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings3.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tenderSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="tenderSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tenderSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="tenderSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;tenderSettings1.Name" xml:space="preserve">
+    <value>tenderSettings1</value>
+  </data>
+  <data name="&gt;&gt;tenderSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.TenderSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;tenderSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tenderSettings1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings3.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings3.Name" xml:space="preserve">
+    <value>thirdPartyInterfaceSettings3</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings3.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings2.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings2.Name" xml:space="preserve">
+    <value>thirdPartyInterfaceSettings2</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="unitMgmtSettings2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="unitMgmtSettings2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="unitMgmtSettings2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="unitMgmtSettings2.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;unitMgmtSettings2.Name" xml:space="preserve">
+    <value>unitMgmtSettings2</value>
+  </data>
+  <data name="&gt;&gt;unitMgmtSettings2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.UnitMgmtSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;unitMgmtSettings2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;unitMgmtSettings2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="validationSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="validationSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="validationSettings1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="validationSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="validationSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;validationSettings1.Name" xml:space="preserve">
+    <value>validationSettings1</value>
+  </data>
+  <data name="&gt;&gt;validationSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.ValidationSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;validationSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;validationSettings1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="videoSettings2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="videoSettings2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="videoSettings2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="videoSettings2.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;videoSettings2.Name" xml:space="preserve">
+    <value>videoSettings2</value>
+  </data>
+  <data name="&gt;&gt;videoSettings2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.VideoSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;videoSettings2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;videoSettings2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="sessionSummarySettings2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="sessionSummarySettings2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 644</value>
+  </data>
+  <data name="sessionSummarySettings2.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings2.Name" xml:space="preserve">
+    <value>sessionSummarySettings2</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="sessionSummarySettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="sessionSummarySettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 644</value>
+  </data>
+  <data name="sessionSummarySettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings1.Name" xml:space="preserve">
+    <value>sessionSummarySettings1</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;sessionSummarySettings1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="pointOfSalePrinterSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="pointOfSalePrinterSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pointOfSalePrinterSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="pointOfSalePrinterSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pointOfSalePrinterSettings.Name" xml:space="preserve">
+    <value>pointOfSalePrinterSettings</value>
+  </data>
+  <data name="&gt;&gt;pointOfSalePrinterSettings.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;pointOfSalePrinterSettings.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;pointOfSalePrinterSettings.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="bingoSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="bingoSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="bingoSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bingoSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="bingoSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bingoSettings1.Name" xml:space="preserve">
+    <value>bingoSettings1</value>
+  </data>
+  <data name="&gt;&gt;bingoSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.BingoSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;bingoSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;bingoSettings1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="crystalBallSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="crystalBallSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="crystalBallSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="crystalBallSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;crystalBallSettings.Name" xml:space="preserve">
+    <value>crystalBallSettings</value>
+  </data>
+  <data name="&gt;&gt;crystalBallSettings.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.CrystalBallSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;crystalBallSettings.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;crystalBallSettings.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="audioSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="audioSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="audioSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="audioSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;audioSettings1.Name" xml:space="preserve">
+    <value>audioSettings1</value>
+  </data>
+  <data name="&gt;&gt;audioSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;audioSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;audioSettings1.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="crateModuleSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="crateModuleSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="crateModuleSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="crateModuleSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="crateModuleSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;crateModuleSettings1.Name" xml:space="preserve">
+    <value>crateModuleSettings1</value>
+  </data>
+  <data name="&gt;&gt;crateModuleSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.CrateModuleSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;crateModuleSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;crateModuleSettings1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="magCardSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="magCardSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="magCardSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="magCardSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="magCardSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;magCardSettings1.Name" xml:space="preserve">
+    <value>magCardSettings1</value>
+  </data>
+  <data name="&gt;&gt;magCardSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.MagCardSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;magCardSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;magCardSettings1.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="currencySettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="currencySettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="currencySettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="currencySettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="currencySettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;currencySettings1.Name" xml:space="preserve">
+    <value>currencySettings1</value>
+  </data>
+  <data name="&gt;&gt;currencySettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.CurrencySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;currencySettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;currencySettings1.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="motifSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="motifSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="motifSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="motifSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;motifSettings1.Name" xml:space="preserve">
+    <value>motifSettings1</value>
+  </data>
+  <data name="&gt;&gt;motifSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.MotifSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;motifSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;motifSettings1.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="globalSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="globalSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="globalSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="globalSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="globalSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;globalSettings1.Name" xml:space="preserve">
+    <value>globalSettings1</value>
+  </data>
+  <data name="&gt;&gt;globalSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.GlobalSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;globalSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;globalSettings1.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="locationSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="locationSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="locationSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="locationSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;locationSettings1.Name" xml:space="preserve">
+    <value>locationSettings1</value>
+  </data>
+  <data name="&gt;&gt;locationSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.LocationSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;locationSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;locationSettings1.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="charitySettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="charitySettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="charitySettings.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;charitySettings.Name" xml:space="preserve">
+    <value>charitySettings</value>
+  </data>
+  <data name="&gt;&gt;charitySettings.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.CharitySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;charitySettings.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;charitySettings.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="licenseFileSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="licenseFileSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="licenseFileSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="licenseFileSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;licenseFileSettings1.Name" xml:space="preserve">
+    <value>licenseFileSettings1</value>
+  </data>
+  <data name="&gt;&gt;licenseFileSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.LicenseFileSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;licenseFileSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;licenseFileSettings1.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="kioskAdvanced2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="kioskAdvanced2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="kioskAdvanced2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="kioskAdvanced2.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;kioskAdvanced2.Name" xml:space="preserve">
+    <value>kioskAdvanced2</value>
+  </data>
+  <data name="&gt;&gt;kioskAdvanced2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.KioskSettings2, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;kioskAdvanced2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;kioskAdvanced2.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="companySettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="companySettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="companySettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="companySettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="companySettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;companySettings1.Name" xml:space="preserve">
+    <value>companySettings1</value>
+  </data>
+  <data name="&gt;&gt;companySettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.CompanySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;companySettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;companySettings1.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="playModeSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="playModeSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playModeSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="playModeSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;playModeSettings1.Name" xml:space="preserve">
+    <value>playModeSettings1</value>
+  </data>
+  <data name="&gt;&gt;playModeSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playModeSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;playModeSettings1.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="playerSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="playerSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playerSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="playerSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;playerSettings1.Name" xml:space="preserve">
+    <value>playerSettings1</value>
+  </data>
+  <data name="&gt;&gt;playerSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playerSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;playerSettings1.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="securitySettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="securitySettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="securitySettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="securitySettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;securitySettings1.Name" xml:space="preserve">
+    <value>securitySettings1</value>
+  </data>
+  <data name="&gt;&gt;securitySettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;securitySettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;securitySettings1.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="moneyCenterSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="moneyCenterSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="moneyCenterSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="moneyCenterSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;moneyCenterSettings1.Name" xml:space="preserve">
+    <value>moneyCenterSettings1</value>
+  </data>
+  <data name="&gt;&gt;moneyCenterSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.MoneyCenterSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;moneyCenterSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;moneyCenterSettings1.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="inventorySettings1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="inventorySettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="inventorySettings1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="inventorySettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="inventorySettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;inventorySettings1.Name" xml:space="preserve">
+    <value>inventorySettings1</value>
+  </data>
+  <data name="&gt;&gt;inventorySettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.InventorySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;inventorySettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;inventorySettings1.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="distributorFeesSettings1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="distributorFeesSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="distributorFeesSettings1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="distributorFeesSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="distributorFeesSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;distributorFeesSettings1.Name" xml:space="preserve">
+    <value>distributorFeesSettings1</value>
+  </data>
+  <data name="&gt;&gt;distributorFeesSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.DistributorFeesSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;distributorFeesSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;distributorFeesSettings1.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="operatorSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="operatorSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="operatorSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;operatorSettings1.Name" xml:space="preserve">
+    <value>operatorSettings1</value>
+  </data>
+  <data name="&gt;&gt;operatorSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.OperatorSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;operatorSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;operatorSettings1.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="operatorManagement1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="operatorManagement1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="operatorManagement1.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="operatorManagement1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 644</value>
+  </data>
+  <data name="operatorManagement1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;operatorManagement1.Name" xml:space="preserve">
+    <value>operatorManagement1</value>
+  </data>
+  <data name="&gt;&gt;operatorManagement1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.OperatorManagement, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;operatorManagement1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;operatorManagement1.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="adminSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="adminSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="adminSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="adminSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="adminSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;adminSettings1.Name" xml:space="preserve">
+    <value>adminSettings1</value>
+  </data>
+  <data name="&gt;&gt;adminSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.AdminSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;adminSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;adminSettings1.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="raffleSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="raffleSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="raffleSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="raffleSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="raffleSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;raffleSettings1.Name" xml:space="preserve">
+    <value>raffleSettings1</value>
+  </data>
+  <data name="&gt;&gt;raffleSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.RaffleSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;raffleSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;raffleSettings1.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="videoSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="videoSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="videoSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="videoSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="videoSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;videoSettings1.Name" xml:space="preserve">
+    <value>videoSettings1</value>
+  </data>
+  <data name="&gt;&gt;videoSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.VideoSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;videoSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;videoSettings1.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="creditSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="creditSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="creditSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="creditSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="creditSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;creditSettings1.Name" xml:space="preserve">
+    <value>creditSettings1</value>
+  </data>
+  <data name="&gt;&gt;creditSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.CreditSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;creditSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;creditSettings1.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="machineSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="machineSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="machineSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="machineSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="machineSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;machineSettings1.Name" xml:space="preserve">
+    <value>machineSettings1</value>
+  </data>
+  <data name="&gt;&gt;machineSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.MachineSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;machineSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;machineSettings1.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="posSettings1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="posSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="posSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="posSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="posSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="posSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;posSettings1.Name" xml:space="preserve">
+    <value>posSettings1</value>
+  </data>
+  <data name="&gt;&gt;posSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.POSSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;posSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;posSettings1.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="receiptSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="receiptSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="receiptSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="receiptSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="receiptSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;receiptSettings1.Name" xml:space="preserve">
+    <value>receiptSettings1</value>
+  </data>
+  <data name="&gt;&gt;receiptSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.ReceiptSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;receiptSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;receiptSettings1.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="kioskSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="kioskSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="kioskSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="kioskSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="kioskSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;kioskSettings1.Name" xml:space="preserve">
+    <value>kioskSettings1</value>
+  </data>
+  <data name="&gt;&gt;kioskSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.KioskSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;kioskSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;kioskSettings1.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="hallDisplaySettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="hallDisplaySettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="hallDisplaySettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="hallDisplaySettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="hallDisplaySettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;hallDisplaySettings1.Name" xml:space="preserve">
+    <value>hallDisplaySettings1</value>
+  </data>
+  <data name="&gt;&gt;hallDisplaySettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.HallDisplaySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;hallDisplaySettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;hallDisplaySettings1.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="unitMgmtSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="unitMgmtSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="unitMgmtSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="unitMgmtSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="unitMgmtSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;unitMgmtSettings1.Name" xml:space="preserve">
+    <value>unitMgmtSettings1</value>
+  </data>
+  <data name="&gt;&gt;unitMgmtSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.UnitMgmtSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;unitMgmtSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;unitMgmtSettings1.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="callerSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="callerSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="callerSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="callerSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 674</value>
+  </data>
+  <data name="callerSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;callerSettings1.Name" xml:space="preserve">
+    <value>callerSettings1</value>
+  </data>
+  <data name="&gt;&gt;callerSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.CallerSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;callerSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;callerSettings1.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="thirdPartyInterfaceSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings1.Name" xml:space="preserve">
+    <value>thirdPartyInterfaceSettings1</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyInterfaceSettings1.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="channelSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="channelSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="channelSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;channelSettings1.Name" xml:space="preserve">
+    <value>channelSettings1</value>
+  </data>
+  <data name="&gt;&gt;channelSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.ChannelSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;channelSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;channelSettings1.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="tenderSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="tenderSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tenderSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="tenderSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;tenderSettings.Name" xml:space="preserve">
+    <value>tenderSettings</value>
+  </data>
+  <data name="&gt;&gt;tenderSettings.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.TenderSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;tenderSettings.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tenderSettings.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="paymentProcessingSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="paymentProcessingSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="paymentProcessingSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;paymentProcessingSettings.Name" xml:space="preserve">
+    <value>paymentProcessingSettings</value>
+  </data>
+  <data name="&gt;&gt;paymentProcessingSettings.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PaymentProcessingSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;paymentProcessingSettings.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;paymentProcessingSettings.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1018, 678</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>258</value>
+  </data>
+  <data name="splitContainer1.SplitterWidth" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <data name="menuStrip.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 26</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="fileMenu.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>ActiveBorder</value>
+  </data>
+  <data name="fileMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 26</value>
+  </data>
+  <data name="fileMenu.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 26</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;About ...</value>
+  </data>
+  <data name="helpMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 26</value>
+  </data>
+  <data name="helpMenu.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="menuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1018, 30</value>
+  </data>
+  <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="menuStrip.Text" xml:space="preserve">
+    <value>MenuStrip</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
+    <value>menuStrip</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>76</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1018, 678</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAMAEBAAAAEAIABoBAAANgAAACAgAAABACAAqBAAAJ4EAAAwMAAAAQAgAKglAABGFQAAKAAAABAA
+        AAAgAAAAAQAgAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAABsbQhAjJHx5Kiuq1S4tvv8uLsP/LS3C/y4u
+        wv8uLcL/Li7C/y4uwv8uLsL/Li3C/y0suv8rK6nVJCR8eRsbQhAjJHt9LzDJ/zIz3v8vL9T/Nzb5/zY2
+        +f82N/j/Njb4/zc2+P82Nfj/Ly/U/yUkYv8mJpX/MzTr/zAvyf8kI3t9KSqk1Tc40P97Z3b/SDpD/xgX
+        bP82NfX/NDb0/zQ29P81NPT/MzO8/5uSmP+2rq7/QUKs/zU09P8zMur/KSml1Swstf82NtX/tZGU///D
+        w/+Kc3T/HRyD/zQ18P80NPD/MzTv/4p8jv//5OT/Qj9j/zU08P8qKqD/JCOJ/ysrtP8sK7b/NDPs/0ZG
+        mf/mycr///Ly/0NDTP8qKb7/NDPr/zM06/+liZH//9LT/3Fpbv8qKEj/rZSX/zczcf8sLLX/Kyqx/zMy
+        5f8zM+b/REWZ/7O1uv/m3d7/MSo3/yssxf8oKaT/tY6O///HyP//39///uXm/8aurv8uLrX/Kyuy/yoq
+        rv8yMuD/MjLg/zIy4f80Nb7/qaeu/+jX2P89Mzf/TFBg/5Z7hP/BnZ//vaqu/6OYov9AQJ3/MjLh/yoq
+        rv8qKar/MTDc/zEw3P8wMNz/MTDc/zAxxf+jn5//op+7/xUmsv89SYD/Li1n/zIxy/8wMdv/MDHd/zAw
+        3P8pKan/KCim/y8v1/8vL9b/Li3M/ysrxP8lJZD/dnF7/5uj/f8PQPz/O13Q/zpIgP8ZGj//Li7Q/y8v
+        1v8vL9b/KCil/ycnov8uLtH/KCh2/2Zfaf9cWV//rq2q/7y7y/+NjMH/Q3D3/ypa9v8LGbj/N0ea/xsc
+        Pv8sK8j/Li7R/ycnov8nJ53/QkF//9Kurf//4OD///P0///+/v+VkZb/Mzd//7Cp1P+oqv//GETl/wcU
+        sv84SZ7/HB49/ykqvf8mJ53/Jiaa/66amv+ulZj/bmV8/9rDxf/99PT/Oztg/ywrx/9XWYn/3sPq/6ar
+        //8YReT/BxSy/zhGmP8cHWL/JSaa/yQlk/9hXHr/NDWi/ysrwv+WipL///f3/zQ0aP8sK8L/LCvC/0tQ
+        gf/fxOr/p6v//xtE6P8wT+D/LDBl/yUlk/83NIfYZ13C/2dgyv95cpL/3MrF/7asrf9PSa7/TknE/0pF
+        w/9JQ8H/ZmSH/9nF5/+Op///c43R/1lRl/9CPInaTUVvjIuBu/+bj87/oJKT/5mMkP9zZ7j/bmHF/21g
+        xP9qXsP/aFzD/2daw/96cov/j42U/3RpkP9hVaX/QzxpiTExShKBe5idk4y06WxjpP9fU5z/XVGb/2FU
+        m/9lWJz/ZFac/2FVm/9iVZv/XE+a/1hNl/9VSofeSUBnhxgYNBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAACAAAABAAAAAAQAgAAAA
+        AACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFxdoHRkZdnAcHIK3Hh6J6h8fjf8fH47/Hx+P/x8f
+        j/8fH4//Hx+P/x8fj/8fH4//Hx+P/x8fj/8fH4//Hx+P/x8fj/8fH4//Hx+P/x8fj/8fH4//Hx+P/x8f
+        j/8fH43/Hh6J6hwcgrcZGXZwFxdoHQAAAAAAAAAAAAAAABgYbDkdHYOwIiKd/yYmsf8pKb3/KirD/ysr
+        xf8rK8b/KyvG/ysrxv8rKsb/KyrG/ysrxv8rK8b/KyvG/ysrxv8rK8b/KyvG/ysrxv8rK8b/KyvG/ysq
+        xv8rKsb/KyvF/yoqwv8pKb3/Jiax/yIinf8dHYOwGBdsOQAAAAAXFmcdHByDsCQkpv8rK8b/Ly/a/zEx
+        4/8yMuf/MjLp/zMy6v8zMun/MjLp/zIy6v8yM+n/MzPp/zIz6v8zMun/MzLp/zIz6f8yM+n/MzPp/zIy
+        6f8zMun/MjLj/yssyv8sLMf/MjHh/zEx4/8vMNr/KyvG/yQkpv8cHYOwFxZnHRkZc3AiIpv/KyvE/zEx
+        4/80NfH/MDLg/ysrw/81NO//Njb6/zY2+v82Nvr/Njf5/zY3+f82Nvn/Njb5/zY2+f82Nvn/Njb5/zY2
+        +f82Nvn/Njb5/ykpvf8jI23/KypT/ygofP80Ne//NTX2/zQ08f8yMeP/KyvE/yIimv8ZGXNwHBt/tyUl
+        rv8uL9b/MzTv/zg5w/8/PGT/FhlK/xwcfv8rK8T/NDXx/zU2+P81Nvf/Njb3/zY19/82Nvj/NTb3/zY2
+        9/82Nvf/NTX3/zQ18f8vMJP/iICI/87Jyf/RxMP/VVKH/zU28P82Nvf/NTb2/zQz7/8uL9f/Jiau/xsc
+        frcdHIXqKCi4/zAw3P85OdD/inaE/+iztP+jgoX/PDpO/xEUTP8gH5H/MzPq/zU29f81NfX/NTb1/zU1
+        9v82NfX/NTX1/zU19f81NfX/OTmW/8a2t///8fH/9Ofn/2tpkP86Ot7/NjX1/zU29f82NfX/NDTy/zAw
+        3/8pKLn/HByF6h0dh/8pKLz/MDHg/zc40/+Ufor//7i5//+rrP/ssLH/lIGC/yIjRP8lJaz/NTX0/zU1
+        9P80NPT/NDX0/zU19P80NPT/NTX0/zg4yf+nlZv//+Dg///d3f9qY3L/LC3G/zU18/81NfT/NTX0/zQ0
+        8f8sK8r/Ly/W/ykovP8dHYf/HR2H/ykpvP8wMd//NTXy/0FCof/Wqqr//7S0//+ys///0tP/joGB/xQV
+        W/8wL9r/NTXx/zQ08P80NfH/NTTx/zQ18f80NfH/Skmb/+i/vv//ycn//tvb/1lWaf8pKb3/NTXx/zU0
+        8f8zM+v/ODd//y4sY/8tLdH/KSm8/x0dh/8dHYb/KSi7/y8w3v80NO//NTbf/3NujP//29z//8jJ///R
+        0P/s1NX/OztQ/x8fjf8zM+j/NDPu/zQ07v80NO//NDTu/zM07v9eW47/9cPE//+8vf//29z/h4CG/xUV
+        Yf8iIpv/Jyez/zg4fP/SsrP/Tkd0/y4u2f8pKbr/HR2G/x0dhP8oKbj/Ly/b/zMz6/80NOz/Ozux/66m
+        pv/87e3//+7v///3+P+rp6f/FBU+/yAglf8yMuT/NDPr/zMz7f80NOv/MzPr/01Lkf/svLz//7q6///M
+        zv/NtLb/ZGJq/z08Uf8/P1D/1bi5///T1P8/O3//Ly/a/ykouP8dHYT/HByD/ycptv8vLtj/MzPp/zIy
+        6f8zM+n/OTmx/2lqjf/Pzs7////////7+/+Rg4b/ExM+/x8fj/8wMeL/MjPp/zM06f8yMuX/QD57/+q3
+        t///uLn//L2+///U1f//5ub/89ra/+7Ozv//3d3/y6ur/ywtnv8vL9j/Jyi2/x0dg/8cHIL/Jyi1/y8u
+        1f8zMuf/MjLm/zMz5/8yM+X/NDPa/z09mv+joqj////////p6v+OeHv/FBY//x8gj/8yM+T/MTLj/zc3
+        f/+8np7//72+//6ztf//wsL//8zN///V1f//3d7//+bm/+/S0v9hXIL/MTHd/y8v1v8nKLP/HByC/xwc
+        gP8nJ7H/Li7S/zIy4/8yMuP/MjLj/zIy4v8yMuP/MjLj/zg4qf+cmaL////////n5v+VfoD/FRY+/x8f
+        jP81NHn/iHp1/3hbWP+6hIX//8HD/+e8vf/10tL//+Hi//jh4//UxMT/Y2CH/zU1yv8yMuP/Li7U/ycn
+        sf8cHID/HBx+/yYnsP8uLdD/MjHh/zEx4P8xMeD/MTHg/zEx4P8xMuH/MTLh/zk4qf+dmqH////////m
+        5/+QeoD/ICAo/1ZTU/9ke7b/TFNl/4hnZP++oKH/UVCJ/2VikP96dI3/ZGGL/0BAmv8zMtX/MjHg/zEx
+        4P8tLdD/Jiav/xwcfv8bHHz/Jiat/y0tzv8wMd3/MTHd/zEx3f8wMN7/MDHe/zEw3f8xMN3/MTDd/zY2
+        rf+amKP////////g3f99aWT/IyqH/xkqxP9Wdtf/YWBm/zQ0jf8xMd7/MTDd/zMy1P8xMdv/MDHf/zAw
+        3f8xMd7/MDDd/y0tzf8mJq3/HBx9/xsae/8lJqr/LS3L/zAw2v8wL9v/MC/a/zAw2/8wMNv/MDDa/zAw
+        2v8wMNv/MDDb/zAwnv+gm5r/0MzL/1htxv8LH8H/AACS/zNFuf8tMEX/HByA/x4diP8qKb7/MC/a/zAw
+        2v8wMNv/MC/a/zAw2/8wMNr/LS3K/yYmqv8bG3z/Ghp6/yUmqf8tLMn/MC/X/y8v2P8wL9f/MC/Y/y8v
+        1/8wL9f/MC/Y/y8w2P8uL87/PDt5/2djYP+Hjcn/OnD//ydX+P8GKN3/N2Hv/1ZkjP9VYHj/NDhL/xUV
+        Xv8pKbn/LzDX/y8w1/8wL9j/LzDX/y8w2P8tLMj/Jiap/xoaev8aGnj/JSWn/ywrx/8vL9X/Ly7V/y8v
+        1P8uLtX/LCzF/ykouv8sLMf/KyzH/zs6cv9yd3z/rqTM//nW//+iov//DkL//w9E//9Dc///V373/zNJ
+        0f9Wcsv/NzpL/xQVXf8oKLf/Li7U/y8v1f8vLtT/Li/V/ywsxv8kJaf/Ghp4/xoadv8kJKT/KyvD/y4u
+        0v8uLtL/KyrA/x0ddP8dHU//GBhF/xERUP89PWP/1NLP/4WJk/+On9z/89b//52b/v8ZTf//Nmf//0N3
+        //8XMc//AACK/xEfu/9Tcc//OzxM/xUUWv8nJ7P/Li7S/y4u0/8uLtL/KyvD/yQkpP8aGnb/Ghp1/yQj
+        ov8qKr//LS7P/yUln/9PTGz/qp6e/8u8vf/BuLn/jImL/9TR0f///f7/49PQ/4GGlf9nb4//SlKL/1R9
+        5P9Pfv//NGf//ydY9/8NHbr/AACK/xAfuv9Uc9L/OjxM/xUTWv8nJ7P/Li3P/y4tz/8qK8D/JCSi/xoa
+        df8aGnT/IyOf/ysruf8tLqX/gXaC//HLy//60ND//Nra///s7P//+Pj///b2//ju7v//+fn/p56g/zU1
+        mP81NaP/doe8/9TC//+joP//Mmn//ypc+/8NH7v/AACK/xAfvf9Tc9X/PD5O/xUTVv8mJqr/LS3L/yoq
+        vP8jI5//Ghp0/xkZcf8iIp3/NjeR/2Zhgf/uxMT/8769//PExP/50dH/+dvc//jk4v/67Oz//vX1/6aj
+        pv8sLYT/LCzJ/zY3n/+DjbX/99X////W/v+goP//Lmb//ypd+/8NHrr/AACK/w8duv9Tc9b/Oj5N/xMT
+        VP8mJq//Kiq7/yIinP8ZGnH/GRhv/yIim/9eWH3/uJ+f//7Nzf+xl5b/m4qS/8awsP/ozs7/+uHi//vq
+        6f/89PT/U1Nk/yYmq/8sLMf/LCvF/zs8iv+AjL//89D////W//+bnv//MGf//ypd+/8NHrn/AACK/xAf
+        vP9UdNj/Oz1O/xkZbf8nKbX/IiKb/xkYb/8ZGG7/IiKY/4V3kv/avLz/tp+g/zk6iv8wMKn/NDWT/3x0
+        hP/95eT/+ubm///6+v96eIj/JSWk/ywsxP8sK8T/LCvE/zg6if+Cjb//79D////W//+dnv7/L2f//ypd
+        +v8NH7v/AACK/xIhvf9ZdMT/JiZP/yUmp/8iIpn/GRhu/xgYbf8iIpf/c2mA/4x/f/87PI//KyvB/ysr
+        wf8rK8H/TkyG/+/X2P/95OX///j5/3Fvhf8oKLD/KyvB/ysrwf8rK8H/KyvB/zg6iP9/irz/89D////W
+        //+dnv//MGj//yte+/8NH7j/AAGY/0Vo6v8/Rm3/JSWn/yIil/8YGG3/Fxhq/yAgk/8xMZT/NDWc/ysr
+        vv8qKr7/Kiu+/yorv/81Nn3/28PE///p6f/36+v/PT1w/yoqvv8rK7//Kiu+/yorvv8rK77/Kiu+/zc5
+        h/+Cjb3/8dH////V//+bnv//M2j//ypb+v8fSO3/Un7//0JIeP8oKK//ISGT/xcYav8WFmbqRD6Y/3Fl
+        vP9xZsn/a2LK/2dfyP9jXcn/X1mn/5mMkv/33tz///Lw/62oqf9QTKn/TUjE/0tGwv9KRMP/SUTD/0dD
+        wv9IQsD/R0LC/1JOj/+Plb3/9dX////c//+eov//T3n//2SM//+FneX/XVaF/1tSt/9JQpr/JyRs6xgX
+        YbhfVJf/kX+9/5CAyv+JfM7/g3jN/4R6tv+3qqf//Orn//Xh3f+2rKr/bWak/2FYxv9eVsX/W1PE/1hR
+        xP9XT8P/Vk7D/1VMwf9UTcL/VUzC/11Xkv+bnbv/59X+/7a9//+Ep///lq3r/4J/lv9uY7j/bWG0/1pQ
+        lf8qJma8HhxZc3pqkv+Kd67/jnu+/4t5xv+Fdcj/joGZ/7amn/+sn6D/in+U/3Ror/9sYMT/aF3E/2Zb
+        w/9jWMP/YlfC/2BWwv9gVcL/YFTB/19Uwf9eU8H/XVPB/2lfm/+CgJX/kJWx/5OUqP+Ado7/b2Kx/21e
+        tf9oWaP/WE2H/yEfWnQaGU0eSkBvvYVzm/+WhbP/q5vJ/62dzf+fjq//mYmX/49+l/+Ec6f/fmy5/3tq
+        uf96abn/eWi5/3lpuf95Z7j/dma4/3VluP90ZLj/dmW4/3ZluP91ZLj/eGez/4Fxl/+LfZL/jH2R/39u
+        n/90Y6//bl6h/2RWjv85Mmq5GhlNHgAAAAAWFU46Rz9vvYZ3nP/Dus//2NHg/7iryP+gjbT/l3+r/5R8
+        qv+Qeqj/kHmn/5R8qP+Wfan/l36o/5mAqf+Zf6n/l36p/5V9qP+Ufaj/knuo/5J6qP+Odqf/i3Sm/4x0
+        pv+Jc6T/g26g/3lml/9oWIj/OzNpuRYVTjoAAAAAAAAAAAAAAAAREUodGxlWcjw5cMBkX4zwY12M/1RM
+        f/9NQ3j/TkN3/05Ddv9QRHb/VUh3/1ZJeP9XSnj/WUt4/1lMef9YSnj/VUh3/1NHd/9SRnf/UUV2/05D
+        dv9MQXX/Sj90/0Y8cv88NGztMStkvR4cVnMREUodAAAAAAAAAADAAAADgAAAAQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABwAAAAygAAAAwAAAAYAAAAAEA
+        IAAAAAAAgCUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhp4ChwcglYeHoqXHx+RzSAg
+        lfEhIZj/ISGZ/yEhmf8hIZr/ISGa/yEhmv8hIZr/ISGa/yEhmv8hIZr/ISGa/yEhmv8hIZr/ISGa/yEh
+        mv8hIZr/ISKa/yEhmv8hIZr/ISGa/yEhmv8hIZr/ISGa/yEhmv8hIZr/ISGa/yEhmv8hIZr/ISGZ/yEh
+        mP8gIJXxHx+RzR4eipccHIJWGhp4CgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbG35FHh+MqyEi
+        mv8kJKb/Jiau/ycntP8nKLf/KCi5/ygouv8pKbv/KSm7/ykpu/8pKbv/KSi7/ykpu/8pKbv/KSi7/ykp
+        u/8pKbv/KSm7/ykpu/8pKbv/KSm7/ykpu/8pKbv/KSm7/ykpu/8pKbv/KSm7/ykpu/8pKbv/KSi7/ykp
+        u/8oKLr/KCi5/ygot/8nJ7T/Jiau/yQkpv8iIpr/Hx+MqxsbfkUAAAAAAAAAAAAAAAAAAAAAAAAAABwc
+        gFkgIJPVJCOl/ycntf8qKsH/LCzK/y0tz/8uLtL/LS7T/y4u1f8uLtX/Li7V/y4u1f8uLtX/Li7V/y4u
+        1f8uLtX/Li7V/y4u1f8uLtX/Li7V/y4u1f8uLtX/Li7V/y4u1f8uLtX/Li7V/y4u1f8uLtX/Li7V/y4u
+        1f8uLtX/Li7V/y4u1f8tLtT/Li7R/y4u0/8tLc//KyzK/yoqwf8nJ7X/JCSl/yAgk9UcHIBZAAAAAAAA
+        AAAAAAAAGxt+RSAgktUlJaf/KSi8/y0szf8vL9j/MDDg/zEx4/8yMub/MjLm/zIy6P8zMuf/MzLo/zIy
+        5/8yMuj/MjLo/zIz6P8yM+j/MzPn/zMz6P8yM+j/MjLo/zMy5/8zMuf/MjPo/zIy5/8yM+f/MjLo/zMz
+        5/8zM+f/MjLn/zIy6P8zM+f/MTLj/y8v2/8vL9f/MDDb/zEx5v8xMeT/MDHg/y4u2P8tLMz/KSm7/yUl
+        p/8gIJLVGxt+RQAAAAAaGnYKHh6MqyMkpP8pKbv/Li7Q/zEw3/8zM+j/MzTu/zQ18v80NPD/NDT0/zY1
+        9f82NvX/NjX0/zU19f82NfT/NTb0/zU29P81NvT/Njb1/zY29P81NvT/NTX1/zY19f82NfX/NTb0/zU1
+        9f81NvX/NTX0/zY29f82NvX/NTX1/zU28v8uLs//IySi/x4eiP8gII//KyvH/zQ08v80NPH/MzTu/zIy
+        6f8xMN//Li7Q/ykpu/8kI6T/Hh+MqxoadgocHH9WISGY/ycns/8sLcr/MDHe/zMz6/82NfL/NTb1/y4v
+        0v8jI6H/LCzN/zY19P82N/n/NTb6/zY2+v83Nvj/Njf4/zY3+P82Nvj/Njf5/zY1+P82Nvn/Njb5/zY2
+        +f81Nvn/Njb4/zY2+f82Nvn/Njb4/zY2+f82Nvn/MzPq/yMjkf8hIlb/KitG/y0tRv8xMWD/LS/M/zY2
+        +P82Nvf/NTX1/zU18/80M+v/MTHe/ywtyv8nJ7P/ISGY/xscf1YdHoeXIySj/yoqvv8uLtX/MjLm/zU1
+        8v82Nvb/MDGM/yYpVv8SElL/GBhs/yIinP8uLtT/NDX1/zU2+P82Nvj/Njb4/zY2+P82Nvj/Njb4/zY1
+        +P82Nvn/NjX4/zY2+P81Nvj/Njb4/zY2+P82Nvj/Njb4/zY2+P8wMNL/MTJn/3RwcP+tpaX/zsDA/9TD
+        wv95c3P/OTq6/zY1+P82Nvj/Njb3/zY29v81NfL/MjLm/y4u1f8qKr7/JCSj/x0eh5cfH4zNJCSq/ysr
+        xf8vMNv/MjPq/zQ18P86O6D/hHJy/6GIif9GRlP/HB9E/xISUv8YGG//IyOi/y8w2/82Nvb/NTb2/zU2
+        9/82Nvf/Njb2/zY19v82Nvf/Njb2/zU29/82Nvb/Njb3/zY29/81Nfb/Njb3/zAxwf9SUGf/wbS1//zn
+        5///8vL///f3/6mfnv9FRY//Nzjs/zU29v82Nvb/NTb2/zU29f81NPT/MzLs/y8w3f8rK8X/JSWr/x4f
+        jM0gH5DxJiav/ywsyv8wMN7/NDTr/z0+tP+Dc3P/9rq6//+5uv/epqf/jnt7/z0/Tf8YG0b/EhJU/xwc
+        gf8vL9r/NTb1/zU29v81Nfb/NTb0/zU29f81NfX/NTX1/zY19v81NfX/NTb2/zU19v81NfX/NTTg/1FP
+        ZP/bxsf//+fo///g4f//6ur/oZiY/zs7g/83N/P/NjX2/zU19f81NvX/Njb1/zU29f81NfX/MzPs/zAw
+        3v8tLMr/Jyav/x8fkPEfH5H/Jiax/ywsy/8wMN//MzPs/zo7wv9/cXX//r6///+lpv//pab//7O0/9ao
+        qP+Ddnf/NDZJ/xQUT/8jI6D/NDTv/zU19P81NfT/NTXz/zU19P81NfT/NTX0/zU19P81NfT/NTX0/zU1
+        9P81NfT/REWL/72pqP//39///dLS//3e3/+hlpb/KSpj/zQ07/81NfT/NTX0/zU19P81NfT/NTT0/zU1
+        9P8yMuT/Li/Y/zAw3f8sLMv/Jiax/x8fkf8gH5L/Jyey/ywsy/8wMd7/MzPr/zU18v9AQ4b/vZqa//+4
+        uP/8oaP//qam//+2t///ycv/uKGi/y4wRP8XF2j/LCzH/zU18v81NfL/NDXy/zU08v80NfL/NTTy/zU1
+        8v80NPL/NTTy/zU18v85ONP/cmpv//zS0v//ycn//c3O//zb3P9oZGX/Gxx5/zIy6v81NfL/NTXy/zU1
+        8v81NfL/NDTy/ywswP8gIH7/Jiav/zAw2/8sLMv/Jyay/x8gkv8fH5H/Jyax/ywsy/8wMd3/NDTq/zU0
+        8f84OdX/ZWFt//PCwv//uLj//K+w//yzs///v8D//tXV/3x1df8WFkT/Hx6M/zMz5v81NfH/NDTx/zQ0
+        8P80NfH/NDTw/zU08f80NfH/NDTx/zQ18f87Paf/qZST///Pz//8v7///MfI///h4f+Rior/Ghta/y4u
+        0/81NfD/NTTx/zU08P80NPD/LCyw/11YY/9MSVH/JSaq/zAx3P8sLMv/Jiax/x8fkf8gH5H/Jiaw/yws
+        yf8wMNz/MzPp/zQ07/80NO//PT+U/6ybm///19j//MLD//zCw//8xsb//9nZ/9bBwf86Okj/FRVc/ycn
+        tf80NO//NDTv/zQ07v80NO//NDPv/zQ07/80NO7/NDTv/zM07v9BQo3/wqem///Iyf/8ubr//MPD///e
+        3v+ypqb/HyBJ/x4ei/8lJaj/KSm7/y8v2P8oKab/X1pn/963t/9nXWb/Jyey/zAv2/8sLMn/Jiaw/yAg
+        kf8gIJD/Jiav/ywryP8vMNr/MzPn/zQz7f8zNO7/Njbf/1hYbP/t2Nn//+Xl//3W1v/81tb//dvc///t
+        7f+WkJH/Ghw//xgXbf8pKLn/MzTt/zQz7f80M+7/MzTt/zQz7v80NO3/NDPt/zMz7f9CRIv/xKio///H
+        x//8trf//L6////W1//SvLz/LS9A/xMURP8SEkv/FBRd/xobW/9gXWP/48PD///S0/9jW2j/LCzG/y8w
+        2f8sLMj/Jiav/x8fkP8fH47/Jiau/ysrx/8vL9n/MjLl/zMz6v8zM+v/MzPs/zs7sP95d3f/39bW///2
+        9f//7e7//Ojo///z8//l39//UE9U/xMURf8XF2n/Jye2/zM06f8zM+v/MzPs/zMz6/80NOz/MzPq/zMz
+        7P85OqH/rZWV///Hx//8trX//Lu8//7Ky//zz9D/qJyc/4V/f/9jYGX/PD1K/2FeX//lxsf//9TW/+/C
+        wv9PTGb/MDDb/y8v2P8rK8f/Jiau/yAfj/8fH43/Jiat/ysrxf8vLtf/MTHk/zIz6f8zM+n/MzPq/zMz
+        6v85OrP/T09t/52bm//r6en///////739///////08bG/01IUf8SFEX/FhZn/ycnsf8zM+f/MzPq/zMz
+        6f8zM+r/MzPp/zIz6v8mKJr/h3l5///Dw//9tLb//Li5//zCwv/+0NH//+Lj///n5//54OD/4MrK/+vM
+        zP//09P//8/Q/8mpqf8yM3b/MjLj/y8v1v8qK8X/Jiat/x8fjv8eHo3/JSar/ysrxP8uLtb/MjHi/zMy
+        6P8yM+f/MjLn/zMz6P8yM+j/NDXc/zs7m/9aW27/ubi4//////////////n5/9SwsP9LSFH/ERRF/xYW
+        Zv8mJ7H/MzLn/zIz5/8yM+j/MjLo/ygpsv9YVmr/27Oz//69vf/8srT//Le3//y/wP/8ycn//NHR//zX
+        1//+29z//97e///W1v//0ND//NXV/3tydP8tLbb/MTLi/y8v1v8rK8T/JSar/x4ejf8eHov/JSaq/ysr
+        wv8uLtT/MjHg/zMy5v8yM+X/MjLl/zMz5v8yM+b/MjPm/zMy5v81NdL/Pz91/6iiov///v7///b1///f
+        4P/Vr7D/TEpS/xIURf8WFmT/Jyav/zIz5v8yM+b/KSqm/11ZZf/EpaX/9Lq6//+2t//8s7T//Le4//3A
+        wP/8x8j//M/P//zU1P/81tf//NfX///b2///4+P/pJSU/z9Ahv8yMub/MTLg/y8v1P8rKsL/JSaq/x4e
+        i/8eHor/JSWo/yoqwP8uLtH/MDHd/zEy5P8yMeT/MjLk/zEx5P8yMeP/MjHj/zIy4/8yMuT/MzPe/z8/
+        dv+jnZ3////////19f//4N//17Gy/1FNVf8SFEP/FhZj/ygntf8pKaj/YV5n/6ePjf9/YmL/kmpq/+ak
+        pf/+uLn//8TF///P0P//19f//9ra///d3v//4+X//+rr//bf3/+akJD/QUJ7/zIz3P8yMuT/MTHe/y4u
+        0v8pKb//JSSn/x4ei/8eHon/JCWn/yoqv/8uLdD/MDDc/zEx4v8yMeL/MjLi/zEx4f8yMeL/MjHi/zIx
+        4f8yMuL/MjLi/zIz3P8+PoD/oZqa///+/v//9fX//9/f/9qzs/9STlX/FRdF/xERR/9FQ03/fnRx/1xe
+        af9KQD7/Uzw8/5xycv//xsf/y6mq/4+Agf/FsbH/4svL/+fS0f/Wx8f/rqOj/2dkbf87PJX/MzPe/zEy
+        4v8yMeH/MTHc/y4u0P8pKb//JCSn/x4eif8eHof/JCWl/ykqvf8uLc//MTHb/zEy4P8yMeD/MTHf/zEx
+        4f8xMeD/MTHg/zEx4P8xMuD/MTLg/zEx4f8yMtr/Pz94/6Gam////v7///X1///f4P/asrP/UU1S/yUm
+        Jv9SS0H/WGOJ/2uT8P9dbY7/Sz44/598ff/GqKj/UlJt/zo8nf9FRoX/Tk1y/1JSbv9HR3r/PD2P/zY2
+        xP8xMeD/MjHg/zEx3/8xMeH/MDDa/y0tzv8pKb3/JCSm/x4eiP8dHof/JCSk/ykpuv8tLMz/MDDY/zAx
+        3v8wMN7/MTHe/zEx3v8xMN3/MDHd/zAw3/8xMd3/MTDe/zEw3v8wMN7/MjHa/z09gf+gmpr///7+///2
+        9v//4uP/vZeX/1JKQf9MVoD/Fh6t/yc+z/9nk///XW2R/3RoY/9QT3D/MjLF/zEx3f8xMd7/MjHZ/zMz
+        1f8xMd7/MDHf/zEw3v8wMd7/MTDd/zEx3v8wMN7/Ly/Y/ywszP8pKbr/JCSk/x4dhv8eHYb/JCSi/ykp
+        uv8sLMr/LzDW/zAx3P8wMNz/MTDc/zEw3P8wMNz/MDDc/zAx3f8xMNz/MDDc/zAx3P8wMNz/MDDd/zAw
+        2/89PYP/npiY///9/v///Pv/0q6k/2hhhv8MF6r/AACW/wAAk/8pQND/YHSl/y8vN/8mJ6P/Li7R/ywr
+        xP8vL9n/MDDc/zEw3P8wMNz/MTDd/zAx3P8wMNz/MDDc/zEw3P8wMNz/MDDW/y0tyv8pKbr/JCSi/x4e
+        hv8dHIT/IySh/ykpuP8sLMn/Ly7U/zAv2v8wMNr/MC/a/zAw2v8wL9r/MDDa/zAw2v8wMNr/MDDa/zAw
+        2v8vMNr/MDDa/zAw2f8wMNj/MjJZ/6CYmP/g2M//dYCn/zVi7/8ePt7/AQKY/wAAkv8cMMb/UVtz/xkX
+        Pv8WFmT/FhZm/xcXZ/8jIp3/Ly7W/zAw2v8wMNr/MDDa/zAv2v8wL9r/MDDa/zAw2v8wMNr/Ly/U/yws
+        yf8oKbj/JCSh/x0chP8cHIT/IySg/ykotv8rK8j/Ly7T/zAv2P8vL9j/Ly/Y/zAv2P8vL9j/MC/Y/y8v
+        2P8vL9j/MC/Y/zAv2P8wL9j/LzDY/y8w2P8pKZj/Yl9t/1tYUv96gaL/R3Tw/zRn//8yZf//GDfX/wIa
+        x/8tYP//WHK6/0E/SP9CQkr/RkdQ/xoZPv8UFFr/IyKe/y4u1f8wMNj/LzDY/zAv2P8wL9j/LzDY/y8v
+        2P8vMNj/Ly/S/ywrx/8pKbb/JCSg/xwcg/8cHIL/IyOe/ygotf8rK8X/Ly7R/zAv1v8vL9b/Ly/W/y8v
+        1v8vL9b/Ly/W/y8v1v8vL9b/Ly/W/y8v1v8vL9b/Ly/W/yYmk/9sam7/gHp2/3F2kP/dwvf/p6b//zZr
+        //8zY///DUD//wo+//8uXf//WYX//3aY4v9ridn/aYnb/1VaZf8bGjz/FBRa/yIim/8uLtL/Ly/W/y8v
+        1v8vL9b/Ly/V/y8v1v8vL9b/Li7R/ysrxf8oKLX/IyOe/xwcgv8cHIL/IyOc/ygntP8rKsP/Li7P/y8v
+        1P8uLtT/Ly7U/y8v1f8uLtT/LCzK/ykpuf8mJ6//Jyau/yoqvP8tLtL/JSWP/2xqbv97eXj/a3qX/+fJ
+        +///0////9L+/6Oi//8PQf//AzX//x5Q//88a///VYP//0hy9v8NFq//IjnP/1+G5v9SV2P/Ghg8/xMT
+        WP8hIZb/LS3Q/y8v1f8vL9T/Ly7U/y4v1P8vL9T/Li7P/yorw/8oKLT/IiOc/xwcgf8cHH//IiKa/ycn
+        sf8qKsL/LS3O/y4u0/8uLtH/Li7R/y4tzv8kI6L/GBhv/xMTVv8REU7/EhJU/xYWZv8eHmL/bWxx/+fj
+        4v9ycHD/bovB/7i////9zP///9f//5SR//8MQP//IVH//zlp//9Jef//O2r7/wcRrf8AAJD/AACU/xwz
+        zf9agef/VFlm/x4bO/8TE1X/ISGU/y0tzf8uLtH/Li7T/y4u0v8uLtH/LS3O/yoqwv8nKLH/IiKa/xwc
+        f/8cHH7/IiGa/ycnr/8qKr//LC3L/y0u0P8uLtD/KyrE/x8gcP8yM0z/UlFW/19dYf9XV1z/OjpI/x8f
+        N/9qamr/6ejo///8+//Ux8X/YWBi/2mLxv+4vf//q5zT/ztm5v89bv//RHL//0Z3//87bP//LF7+/xc3
+        2P8AApn/AACW/wAAk/8cM87/W4Ln/1ZaZv8dGzv/ExNW/yEglP8tLcz/Li7R/y4u0P8tLtH/LCzM/yop
+        wP8nJ6//IiKa/xwcfv8cHH3/IiGY/yYmrv8pKb7/LC3J/y0uzv8oKa//OTld/4mAgf/Lurr/6tTU//Pg
+        4f/x4+T/29LS/6qlpf/m4uL///r6//Xr6//67Oz/1MPA/21tcv9WYnX/REVk/0xOa/9mhNL/WIj//014
+        //85av//MmT//y9j//8ZOdv/AAKZ/wAAlv8AAJT/HTbS/1uC6f9VWmf/HRs6/xMTVf8gIJP/LSzK/y0t
+        zv8uLc7/LS3K/ykqvv8mJq7/IiKY/xwcff8cHH3/IiGW/yYmrP8pKbz/LCzI/ykpr/9NTGL/w66u//bR
+        0f/2z8//9NDR//bZ2P/74+P///Dw///5+f//9PT/+O/v//Xs7P/z6Oj///P1/6eenf9AP2T/Ly/G/zc2
+        of9gcJL/d5r//93A//+jof//M2j//zNl//8wY///GTrb/wABmf8AAJX/AACU/x010f9ag+z/V11q/x0b
+        Of8SElP/IB+O/ywsxv8uLcz/LS3I/ykqvf8mJqz/IiGW/xwcff8cG3v/ICGV/yYmqv8pKbr/LS2+/0pL
+        a//Fra3/9cnJ/+e3t//nuLj/68HC//DMzP/019j/9+Hh//no5//67O3/+O7u//ju7v//9/b/tLCw/0RF
+        bf8wMMH/LS3K/z4+gf90iLb/6Mv////S/v//0f7/paP+/zVp//8zZP//L2P//xk73P8BApn/AACW/wAA
+        lP8cM8//WYHs/1dda/8dHDn/ERJQ/x8fi/8rLMT/KyzF/ykpuv8mJqr/ICCV/xwce/8cG3n/ICCU/yUl
+        qf8oKLj/NziO/5WHh//0ycn/5LOz/+y6uf/wwsL/8MfH//HNzf/01NX/993d//jl5P/56er/+e3t//3z
+        8/+0sK//NTVT/yoqt/8sLMn/LC3I/zs7kv9kco3/s7j6//3O////zv7//9L+/6Wi//8yZ///M2X//zBj
+        //8ZOtv/AAKY/wAAlv8AAJP/GzPP/1qD7f9VXGr/Hhw5/xISUP8gIJL/KyzC/ygpuf8lJan/ICGU/xsb
+        ef8bG3j/ICCS/yUlp/8oKLb/TE1n/9e3t//vv7//7b+//8Smpf/Cqan/4cTE//PV1f/83t7/+N3d//jh
+        4v/55+j/++7u//nx8f9ramr/Ghlk/ysrwv8sLMj/LCzG/ywsxf88O4T/WGuJ/6uz+v/9z////87+///S
+        /v+dnv//MWf//zRl//8vY///GDja/wABlv8AAJb/AACU/xw20f9ag+7/V15u/x4cN/8VFV//Jier/ygp
+        t/8lJaf/ICCS/xsbeP8bGnf/ICCR/yQlpv8oKLX/bGZu//LLy//5zM3/tJ2d/0dIY/9AQXX/U1Jr/2tm
+        b/+Wi4v/8dnZ//rh4v/55eT/+erq///6+v+bmJj/HBxd/ysrv/8sLMX/KyzF/ywrxf8sK8X/OjqI/1Zq
+        iP+psfr//s7////O/v//0/7/nZ7//zNo//8zZf//MGT//xk52f8AApn/AACV/wAAlP8dNdL/Xobv/1Zc
+        Z/8YF0D/ICCO/ygosv8kJab/ICCR/xsad/8bGnb/ICCQ/yUkpP8oKLP/fHJ6///b3P+1oKH/RUZm/y8v
+        tf8sK8T/LCzB/y8wrv9ERGP/2sfH//7l5f/44+L/+ejo///5+f+xra3/IiNl/ywsw/8rK8P/LCvE/yss
+        w/8sK8T/LCzD/zo5iP9XaYb/qLD3//zP////z/7//9H+/6Gg/v81af//NGX//zBk//8ZO9z/AQOZ/wAA
+        lv8AAJP/JkDX/2aEzv84N0L/HB2B/ycnrv8kJKX/ICCR/xsbdv8aGnX/ICCO/yQkov8nKLL/fXN3/7qi
+        ov9FRmj/Ly+z/ysrwf8rK8H/KyvB/ysrwv86O4L/vq+v///m5v/33t//+Obm///4+P+rp6b/JCR1/ysr
+        wv8rK8H/KyvB/ysrwf8rK8H/KyvB/ysrwf87Oof/VmiF/6qw9//9z////87+///S/v+ioP//MWf//zRm
+        //8wZP//GTvb/wECmP8AAI3/CBGr/1iC9P9TWWf/Hx9//ygosf8kJKP/ICCP/xoadf8ZGnP/Hx+N/yQj
+        of8mJrD/T05m/0hHav8uLbb/KyvA/yoqwP8rKsD/KivA/yorwP80NZX/npOU///l5v/33N3/+eXl///3
+        9/+LiIj/JCOO/yoqwP8rK8H/KivA/yorwP8qK8D/KivA/ysrwP8qK8D/OjmH/1Vmg/+rsvj//9D////O
+        /v//0f7/nJ7//zJo//80Zf//MGT//xk73f8IFLH/HTzd/1aE//9bZoL/IiOM/ycnsP8kI6H/ICCN/xka
+        c/8ZGXL/Hh6K/yMjnv8nJq7/LS2v/ywtuP8rK77/Kiq+/ysqvv8qK77/Kiq+/yoqvv8qK5T/enR2//3e
+        3//329v//+rr/+rh4f9JSmD/KCi1/yoqvv8qK77/Kiu//ysqvv8rK77/Kiq+/yoqvv8qKr7/Kyq//zk4
+        h/9WZ4H/rLL3//7P////zv7//9L+/52e//81aP//NWb//y5h//8oW///Nmb//16I/v9XX3f/KCie/yYm
+        r/8jJJ7/Hh6K/xkacv8YGG/xHh6H/yIim/8mJqr/KCi1/yoqu/8qKr3/Kiq9/yoqvP8qKr3/Kiq8/ykp
+        of9CQlj/wKur//rY2P/43Nv///Ly/5WRkf8xMYf/Kiq8/yoqvP8qKrz/Kiq9/yoqvf8qKr3/Kiq9/ykq
+        vP8qKrz/Kiq9/yoqvP85OIf/VWaA/6iv9P/9z////87+///S/v+ZnP7/N2r//zdn//82Z///THr//26Q
+        5/9ERVz/Jiar/yYmq/8iIpv/Hh6H/xgYb/EYF2vNIB+D/1lQpv+Ker7/mIfK/5aHz/+Wh9L/kIPR/46B
+        z/+KfdD/h3zA/4+Ghv/aysP//eXj//zl4f//8O7/yb64/3pyi/9oXsb/ZFvH/2Nbxv9hWMX/X1fG/11V
+        xv9cU8X/W1PF/1tTxP9aUcP/WlDC/1lRw/9aUcT/ZFuU/3uAjf+9v/X//tn////b/v/mzP7/dpP//3WS
+        //+Cnv//mrX//5WYp/97b5z/dWnD/3Rnuv9nW6n/OTSK/xgYa80WFmWXMi6B/4V0rP+sl8L/vKXO/8Or
+        1f/Aqtj/uqfY/7Wk1/+yoc7/u66k/+vc0///8u///ezo//Li3P/Gu67/l4uY/4h7yf+Ddsz/fnHL/3xv
+        yv95bMn/dmrI/3RnyP9zZsf/cWXH/3Fkx/9vYsb/b2LG/25ixv9tYMX/bV/F/3dpmv+Ki4//xcPu/+3Z
+        ///BxP//nLT//6a8//+wwvr/p6m4/5SGlP+Tgcn/kX/E/4p5uf95a6n/TESK/xYWZZcaGGBXSECA/3tr
+        oP+RfbP/rJTD/7KZy/+zm87/rJbP/6yW0P+vnaj/xbWe/93Mv//TxLT/w7Si/6WXjv+ThKb/innJ/4d3
+        yf+Dc8n/gHHI/35vyP97bcf/emvG/3hpx/94acb/dmfG/3Zmxf91ZcX/c2XF/3Vmxf9zZcX/c2TF/3Nk
+        xf99bqD/jYSA/5+isP+nsdD/rrfW/6yvvv+glpD/kH6Q/4l2wv+LdsD/iHO4/3ppqv9oW5v/SUCB/xUV
+        X1Y8NV8MU0h4u2RXjv98a6L/loG0/6mQwP+wlcX/tZrJ/7OZyv+ymrv/spuh/62XnP+qlZ7/pI+w/52H
+        w/+Zg8b/mIHG/5aAxv+TfsX/knzE/5B7xf+OesP/jXnE/4t4w/+Ld8P/inbD/4h1wv+JdML/iXXC/4t2
+        wv+JdcP/h3PD/4l0w/+Md8P/kny4/5uFmv+fipD/oIqQ/52Ik/+Ygq3/knzB/495vv+Ldbj/gG2s/21e
+        nP9dUIv/SUB0uBMTVgoAAAABUEVoVWFVhOBwZJf/kIGw/66dw/+8qcv/u6TK/7mexv+3nMX/t5nD/7ia
+        xP+3mcP/tJfD/7GVw/+uk8L/q5HB/6qRwf+pj8H/qY7A/6iNwP+njsD/p43A/6WLwP+ki8D/oom//6GI
+        v/+giL//oIe//6GIv/+gh7//oYe//5+Fvv+hiL//ooi//6OJv/+kib//povA/6CGvf+ehbz/l3+5/413
+        sv+Dbqv/cmGd/15Rjf9ZTH7fV0ttVwAAAAAAAAAAAAAAAnRqiXlyaZTkm5S2/8vF2f/b1eT/zsPZ/7+t
+        yv+4osL/uZy7/7yevP/Aob3/waG8/8Cgu/+7nrv/u5u5/7mauf+7nLr/u5y6/72cuv+8nLr/vp+6/76e
+        uv+9nbn/u5y5/72cuv+6m7r/tpe5/7aYuf+0lrf/tJa3/7SVuP+vkrf/rI+3/6qOtv+ni7X/pYq0/6SJ
+        s/+aga//kHmr/4Fso/9zYpn/X1GK/1dKfN9fUXFwAAAABQAAAAAAAAAAAAAAAAAAAAVIRHNSaGOPwo2J
+        sP+1sMv/s6zI/6OXuv+djrH/mYWp/6WOrf+ulK//tJmu/7WYrf+2l6v/t5eq/7eXqv+4mKv/u5qr/7yb
+        rP+7mqv/upqr/72crP+/nqz/vJus/7qaq/+7mqv/tpaq/7SVqv+xk6n/rY+o/6mMp/+kiKb/nIKk/5d+
+        o/+TeqL/jXaf/4Zxnf96Z5j/cF+T/2JUi/9VSYH/ST9xuEs/ZlMAAAACAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAATEJjDUZCdWRXVYerVFCF2EpEgPRIQX//SkJ+/1FIgf9WS4L/XFCD/11Qgv9eUIL/X1CB/2NT
+        gv9jU4L/ZFSC/2RUgv9jVIL/ZFWD/2ZWg/9pWIT/ZlWD/2ZWg/9iVIL/YFGB/1xOgP9ZTH//V0p//1JG
+        ff9RRH3/TEF8/0g9ev9GPHr/Qjl4/zw1dv86MnLzOTFv0z42a6JGPWdkf2lrEgAAAAIAAAAAAAAAAAAA
+        AADwAAAAAA8AAOAAAAAABwAAwAAAAAADAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAB
+        AADAAAAAAAMAAOAAAAAABwAA8AAAAAAPAAA=
+</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>System Settings -- FortuNet, Inc.</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fileMenu.Name" xml:space="preserve">
+    <value>fileMenu</value>
+  </data>
+  <data name="&gt;&gt;fileMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;helpMenu.Name" xml:space="preserve">
+    <value>helpMenu</value>
+  </data>
+  <data name="&gt;&gt;helpMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>GTI.Modules.Shared.GradientForm, ManagedEliteModule, Version=1.3.42.771, Culture=neutral, PublicKeyToken=f7ab3ec26b04c7cf</value>
+  </data>
+</root>

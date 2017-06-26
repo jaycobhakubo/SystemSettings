@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="salesTaxLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="salesTaxLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="salesTaxLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="salesTaxLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="salesTaxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>511, 160</value>
+  </data>
+  <data name="salesTaxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 22</value>
+  </data>
+  <data name="salesTaxLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="salesTaxLabel.Text" xml:space="preserve">
+    <value>Sales Tax %</value>
+  </data>
+  <data name="&gt;&gt;salesTaxLabel.Name" xml:space="preserve">
+    <value>salesTaxLabel</value>
+  </data>
+  <data name="&gt;&gt;salesTaxLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;salesTaxLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;salesTaxLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="btnReset.ImageNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        Hz2IoxV0bDhqAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnReset.ImagePressed" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 611</value>
+  </data>
+  <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>&amp;Reset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTwoMenuPagesPerPOSPage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTwoMenuPagesPerPOSPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 255</value>
+  </data>
+  <data name="chkTwoMenuPagesPerPOSPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 26</value>
+  </data>
+  <data name="chkTwoMenuPagesPerPOSPage.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="chkTwoMenuPagesPerPOSPage.Text" xml:space="preserve">
+    <value>Two menu pages per POS page</value>
+  </data>
+  <data name="chkTwoMenuPagesPerPOSPage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkTwoMenuPagesPerPOSPage.Name" xml:space="preserve">
+    <value>chkTwoMenuPagesPerPOSPage</value>
+  </data>
+  <data name="&gt;&gt;chkTwoMenuPagesPerPOSPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkTwoMenuPagesPerPOSPage.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkTwoMenuPagesPerPOSPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkWidescreen.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkWidescreen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 230</value>
+  </data>
+  <data name="chkWidescreen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 26</value>
+  </data>
+  <data name="chkWidescreen.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="chkWidescreen.Text" xml:space="preserve">
+    <value>Allow widescreen POS</value>
+  </data>
+  <data name="chkWidescreen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkWidescreen.Name" xml:space="preserve">
+    <value>chkWidescreen</value>
+  </data>
+  <data name="&gt;&gt;chkWidescreen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkWidescreen.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkWidescreen.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 508</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 22</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Selling barcoded paper which has already been sold</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbResellAuditedItem.Items" xml:space="preserve">
+    <value>Disallow</value>
+  </data>
+  <data name="cmbResellAuditedItem.Items1" xml:space="preserve">
+    <value>Allow</value>
+  </data>
+  <data name="cmbResellAuditedItem.Items2" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="cmbResellAuditedItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 505</value>
+  </data>
+  <data name="cmbResellAuditedItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="cmbResellAuditedItem.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cmbResellAuditedItem.Name" xml:space="preserve">
+    <value>cmbResellAuditedItem</value>
+  </data>
+  <data name="&gt;&gt;cmbResellAuditedItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbResellAuditedItem.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cmbResellAuditedItem.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkPrintRegisterClosingOnCloseBank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintRegisterClosingOnCloseBank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 180</value>
+  </data>
+  <data name="chkPrintRegisterClosingOnCloseBank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 25</value>
+  </data>
+  <data name="chkPrintRegisterClosingOnCloseBank.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkPrintRegisterClosingOnCloseBank.Text" xml:space="preserve">
+    <value>Print register closing on bank close</value>
+  </data>
+  <data name="chkPrintRegisterClosingOnCloseBank.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkPrintRegisterClosingOnCloseBank.Name" xml:space="preserve">
+    <value>chkPrintRegisterClosingOnCloseBank</value>
+  </data>
+  <data name="&gt;&gt;chkPrintRegisterClosingOnCloseBank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintRegisterClosingOnCloseBank.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintRegisterClosingOnCloseBank.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkEnableRegisterClosingReport.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkEnableRegisterClosingReport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 155</value>
+  </data>
+  <data name="chkEnableRegisterClosingReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 25</value>
+  </data>
+  <data name="chkEnableRegisterClosingReport.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkEnableRegisterClosingReport.Text" xml:space="preserve">
+    <value>Enable register closing report</value>
+  </data>
+  <data name="chkEnableRegisterClosingReport.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkEnableRegisterClosingReport.Name" xml:space="preserve">
+    <value>chkEnableRegisterClosingReport</value>
+  </data>
+  <data name="&gt;&gt;chkEnableRegisterClosingReport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEnableRegisterClosingReport.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkEnableRegisterClosingReport.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chkPromptForPlayerCreation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkPromptForPlayerCreation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPromptForPlayerCreation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 205</value>
+  </data>
+  <data name="chkPromptForPlayerCreation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 25</value>
+  </data>
+  <data name="chkPromptForPlayerCreation.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chkPromptForPlayerCreation.Text" xml:space="preserve">
+    <value>Allow player creation for new cards</value>
+  </data>
+  <data name="chkPromptForPlayerCreation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkPromptForPlayerCreation.Name" xml:space="preserve">
+    <value>chkPromptForPlayerCreation</value>
+  </data>
+  <data name="&gt;&gt;chkPromptForPlayerCreation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPromptForPlayerCreation.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkPromptForPlayerCreation.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chkPrintCloseBankReceipt.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="chkPrintCloseBankReceipt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintCloseBankReceipt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 280</value>
+  </data>
+  <data name="chkPrintCloseBankReceipt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 25</value>
+  </data>
+  <data name="chkPrintCloseBankReceipt.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="chkPrintCloseBankReceipt.Text" xml:space="preserve">
+    <value>Print Close Bank Receipts</value>
+  </data>
+  <data name="chkPrintCloseBankReceipt.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCloseBankReceipt.Name" xml:space="preserve">
+    <value>chkPrintCloseBankReceipt</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCloseBankReceipt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCloseBankReceipt.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCloseBankReceipt.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkAllowPrintQuantitySales.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkAllowPrintQuantitySales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAllowPrintQuantitySales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 255</value>
+  </data>
+  <data name="chkAllowPrintQuantitySales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 25</value>
+  </data>
+  <data name="chkAllowPrintQuantitySales.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chkAllowPrintQuantitySales.Text" xml:space="preserve">
+    <value>Print Quantity Sales Receipts</value>
+  </data>
+  <data name="chkAllowPrintQuantitySales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkAllowPrintQuantitySales.Name" xml:space="preserve">
+    <value>chkAllowPrintQuantitySales</value>
+  </data>
+  <data name="&gt;&gt;chkAllowPrintQuantitySales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAllowPrintQuantitySales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkAllowPrintQuantitySales.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkUseToggleButtonForUnitSelection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseToggleButtonForUnitSelection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 480</value>
+  </data>
+  <data name="chkUseToggleButtonForUnitSelection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 25</value>
+  </data>
+  <data name="chkUseToggleButtonForUnitSelection.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="chkUseToggleButtonForUnitSelection.Text" xml:space="preserve">
+    <value>Select electronic unit with toggle button</value>
+  </data>
+  <data name="chkUseToggleButtonForUnitSelection.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkUseToggleButtonForUnitSelection.Name" xml:space="preserve">
+    <value>chkUseToggleButtonForUnitSelection</value>
+  </data>
+  <data name="&gt;&gt;chkUseToggleButtonForUnitSelection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseToggleButtonForUnitSelection.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkUseToggleButtonForUnitSelection.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="m_playWithPaperEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_playWithPaperEnabled.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 608</value>
+  </data>
+  <data name="m_playWithPaperEnabled.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 25</value>
+  </data>
+  <data name="m_playWithPaperEnabled.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="m_playWithPaperEnabled.Text" xml:space="preserve">
+    <value>* Disabled due to play with paper enabled</value>
+  </data>
+  <data name="&gt;&gt;m_playWithPaperEnabled.Name" xml:space="preserve">
+    <value>m_playWithPaperEnabled</value>
+  </data>
+  <data name="&gt;&gt;m_playWithPaperEnabled.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_playWithPaperEnabled.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;m_playWithPaperEnabled.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="chkRemoveDiscountsFromRepeatSales.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="chkRemoveDiscountsFromRepeatSales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkRemoveDiscountsFromRepeatSales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 455</value>
+  </data>
+  <data name="chkRemoveDiscountsFromRepeatSales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 25</value>
+  </data>
+  <data name="chkRemoveDiscountsFromRepeatSales.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="chkRemoveDiscountsFromRepeatSales.Text" xml:space="preserve">
+    <value>Remove discounts from repeat sales</value>
+  </data>
+  <data name="chkRemoveDiscountsFromRepeatSales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkRemoveDiscountsFromRepeatSales.Name" xml:space="preserve">
+    <value>chkRemoveDiscountsFromRepeatSales</value>
+  </data>
+  <data name="&gt;&gt;chkRemoveDiscountsFromRepeatSales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkRemoveDiscountsFromRepeatSales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkRemoveDiscountsFromRepeatSales.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkRemovePaperFromRepeatSale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkRemovePaperFromRepeatSale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 430</value>
+  </data>
+  <data name="chkRemovePaperFromRepeatSale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 25</value>
+  </data>
+  <data name="chkRemovePaperFromRepeatSale.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="chkRemovePaperFromRepeatSale.Text" xml:space="preserve">
+    <value>Remove barcoded paper from repeat sales</value>
+  </data>
+  <data name="chkRemovePaperFromRepeatSale.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkRemovePaperFromRepeatSale.Name" xml:space="preserve">
+    <value>chkRemovePaperFromRepeatSale</value>
+  </data>
+  <data name="&gt;&gt;chkRemovePaperFromRepeatSale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkRemovePaperFromRepeatSale.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkRemovePaperFromRepeatSale.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="chkRemoveCouponsPackageOnRepeatSale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkRemoveCouponsPackageOnRepeatSale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 405</value>
+  </data>
+  <data name="chkRemoveCouponsPackageOnRepeatSale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 25</value>
+  </data>
+  <data name="chkRemoveCouponsPackageOnRepeatSale.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="chkRemoveCouponsPackageOnRepeatSale.Text" xml:space="preserve">
+    <value>Remove coupons' packages from repeat sales</value>
+  </data>
+  <data name="chkRemoveCouponsPackageOnRepeatSale.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkRemoveCouponsPackageOnRepeatSale.Name" xml:space="preserve">
+    <value>chkRemoveCouponsPackageOnRepeatSale</value>
+  </data>
+  <data name="&gt;&gt;chkRemoveCouponsPackageOnRepeatSale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkRemoveCouponsPackageOnRepeatSale.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkRemoveCouponsPackageOnRepeatSale.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="chkReturnToPageOne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkReturnToPageOne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 380</value>
+  </data>
+  <data name="chkReturnToPageOne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 25</value>
+  </data>
+  <data name="chkReturnToPageOne.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="chkReturnToPageOne.Text" xml:space="preserve">
+    <value>Return to page one after sale</value>
+  </data>
+  <data name="chkReturnToPageOne.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkReturnToPageOne.Name" xml:space="preserve">
+    <value>chkReturnToPageOne</value>
+  </data>
+  <data name="&gt;&gt;chkReturnToPageOne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkReturnToPageOne.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkReturnToPageOne.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="chkShowPaperUsageAtLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkShowPaperUsageAtLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 558</value>
+  </data>
+  <data name="chkShowPaperUsageAtLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 25</value>
+  </data>
+  <data name="chkShowPaperUsageAtLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="chkShowPaperUsageAtLogin.Text" xml:space="preserve">
+    <value>Show Paper Usage at login</value>
+  </data>
+  <data name="chkShowPaperUsageAtLogin.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkShowPaperUsageAtLogin.Name" xml:space="preserve">
+    <value>chkShowPaperUsageAtLogin</value>
+  </data>
+  <data name="&gt;&gt;chkShowPaperUsageAtLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkShowPaperUsageAtLogin.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkShowPaperUsageAtLogin.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="chkEnablePaperUsage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkEnablePaperUsage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 533</value>
+  </data>
+  <data name="chkEnablePaperUsage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 25</value>
+  </data>
+  <data name="chkEnablePaperUsage.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="chkEnablePaperUsage.Text" xml:space="preserve">
+    <value>Enable Paper Usage</value>
+  </data>
+  <data name="chkEnablePaperUsage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkEnablePaperUsage.Name" xml:space="preserve">
+    <value>chkEnablePaperUsage</value>
+  </data>
+  <data name="&gt;&gt;chkEnablePaperUsage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEnablePaperUsage.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkEnablePaperUsage.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="chkbxEnableValidation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxEnableValidation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 105</value>
+  </data>
+  <data name="chkbxEnableValidation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 25</value>
+  </data>
+  <data name="chkbxEnableValidation.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkbxEnableValidation.Text" xml:space="preserve">
+    <value>Enable Validation</value>
+  </data>
+  <data name="chkbxEnableValidation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkbxEnableValidation.Name" xml:space="preserve">
+    <value>chkbxEnableValidation</value>
+  </data>
+  <data name="&gt;&gt;chkbxEnableValidation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxEnableValidation.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkbxEnableValidation.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="chkProductCardCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkProductCardCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 355</value>
+  </data>
+  <data name="chkProductCardCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 25</value>
+  </data>
+  <data name="chkProductCardCount.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="chkProductCardCount.Text" xml:space="preserve">
+    <value>Check card count when adding products</value>
+  </data>
+  <data name="chkProductCardCount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkProductCardCount.Name" xml:space="preserve">
+    <value>chkProductCardCount</value>
+  </data>
+  <data name="&gt;&gt;chkProductCardCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkProductCardCount.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkProductCardCount.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txtCashDrawerEjectCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="txtCashDrawerEjectCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 114</value>
+  </data>
+  <data name="txtCashDrawerEjectCode.MaxLength" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="txtCashDrawerEjectCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 26</value>
+  </data>
+  <data name="txtCashDrawerEjectCode.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;txtCashDrawerEjectCode.Name" xml:space="preserve">
+    <value>txtCashDrawerEjectCode</value>
+  </data>
+  <data name="&gt;&gt;txtCashDrawerEjectCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCashDrawerEjectCode.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txtCashDrawerEjectCode.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="numSalesTax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numSalesTax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 156</value>
+  </data>
+  <data name="numSalesTax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 26</value>
+  </data>
+  <data name="numSalesTax.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;numSalesTax.Name" xml:space="preserve">
+    <value>numSalesTax</value>
+  </data>
+  <data name="&gt;&gt;numSalesTax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numSalesTax.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;numSalesTax.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="chkEnableActiveSession.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkEnableActiveSession.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 583</value>
+  </data>
+  <data name="chkEnableActiveSession.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 25</value>
+  </data>
+  <data name="chkEnableActiveSession.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="chkEnableActiveSession.Text" xml:space="preserve">
+    <value>Enable Active Sales Session</value>
+  </data>
+  <data name="&gt;&gt;chkEnableActiveSession.Name" xml:space="preserve">
+    <value>chkEnableActiveSession</value>
+  </data>
+  <data name="&gt;&gt;chkEnableActiveSession.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEnableActiveSession.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkEnableActiveSession.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 78</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 22</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Register Sales Receipt</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 114</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 22</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Cash Drawer Eject Code</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="chkEnableRegisterSalesReport.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkEnableRegisterSalesReport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 130</value>
+  </data>
+  <data name="chkEnableRegisterSalesReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 25</value>
+  </data>
+  <data name="chkEnableRegisterSalesReport.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="chkEnableRegisterSalesReport.Text" xml:space="preserve">
+    <value>Enable register sales report</value>
+  </data>
+  <data name="chkEnableRegisterSalesReport.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkEnableRegisterSalesReport.Name" xml:space="preserve">
+    <value>chkEnableRegisterSalesReport</value>
+  </data>
+  <data name="&gt;&gt;chkEnableRegisterSalesReport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEnableRegisterSalesReport.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkEnableRegisterSalesReport.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lstRegisterReceipt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="lstRegisterReceipt.Items" xml:space="preserve">
+    <value>Print by product</value>
+  </data>
+  <data name="lstRegisterReceipt.Items1" xml:space="preserve">
+    <value>Print by package</value>
+  </data>
+  <data name="lstRegisterReceipt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 75</value>
+  </data>
+  <data name="lstRegisterReceipt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 30</value>
+  </data>
+  <data name="lstRegisterReceipt.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;lstRegisterReceipt.Name" xml:space="preserve">
+    <value>lstRegisterReceipt</value>
+  </data>
+  <data name="&gt;&gt;lstRegisterReceipt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstRegisterReceipt.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lstRegisterReceipt.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="chkUseExchangeRateOnSale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseExchangeRateOnSale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 305</value>
+  </data>
+  <data name="chkUseExchangeRateOnSale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 25</value>
+  </data>
+  <data name="chkUseExchangeRateOnSale.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="chkUseExchangeRateOnSale.Text" xml:space="preserve">
+    <value>Use exchange rate on sale</value>
+  </data>
+  <data name="chkUseExchangeRateOnSale.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkUseExchangeRateOnSale.Name" xml:space="preserve">
+    <value>chkUseExchangeRateOnSale</value>
+  </data>
+  <data name="&gt;&gt;chkUseExchangeRateOnSale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseExchangeRateOnSale.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkUseExchangeRateOnSale.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="minSaleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="minSaleLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="minSaleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minSaleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 4</value>
+  </data>
+  <data name="minSaleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="minSaleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="minSaleLabel.Text" xml:space="preserve">
+    <value>Minimum sale</value>
+  </data>
+  <data name="&gt;&gt;minSaleLabel.Name" xml:space="preserve">
+    <value>minSaleLabel</value>
+  </data>
+  <data name="&gt;&gt;minSaleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minSaleLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;minSaleLabel.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="numCBBQuantitySales.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numCBBQuantitySales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 188</value>
+  </data>
+  <data name="numCBBQuantitySales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 26</value>
+  </data>
+  <data name="numCBBQuantitySales.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;numCBBQuantitySales.Name" xml:space="preserve">
+    <value>numCBBQuantitySales</value>
+  </data>
+  <data name="&gt;&gt;numCBBQuantitySales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numCBBQuantitySales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;numCBBQuantitySales.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="m_lblMaximumQuantitySales.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_lblMaximumQuantitySales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_lblMaximumQuantitySales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 190</value>
+  </data>
+  <data name="m_lblMaximumQuantitySales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="m_lblMaximumQuantitySales.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="m_lblMaximumQuantitySales.Text" xml:space="preserve">
+    <value>Maximum Quantity Sales per Player</value>
+  </data>
+  <data name="m_lblMaximumQuantitySales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;m_lblMaximumQuantitySales.Name" xml:space="preserve">
+    <value>m_lblMaximumQuantitySales</value>
+  </data>
+  <data name="&gt;&gt;m_lblMaximumQuantitySales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_lblMaximumQuantitySales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;m_lblMaximumQuantitySales.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="cboMinumSales.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cboMinumSales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 1</value>
+  </data>
+  <data name="cboMinumSales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 30</value>
+  </data>
+  <data name="cboMinumSales.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;cboMinumSales.Name" xml:space="preserve">
+    <value>cboMinumSales</value>
+  </data>
+  <data name="&gt;&gt;cboMinumSales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboMinumSales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cboMinumSales.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="lstTenderModes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="lstTenderModes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 37</value>
+  </data>
+  <data name="lstTenderModes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 30</value>
+  </data>
+  <data name="lstTenderModes.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;lstTenderModes.Name" xml:space="preserve">
+    <value>lstTenderModes</value>
+  </data>
+  <data name="&gt;&gt;lstTenderModes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstTenderModes.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lstTenderModes.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="chkAllowQuantitySales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAllowQuantitySales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 230</value>
+  </data>
+  <data name="chkAllowQuantitySales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 25</value>
+  </data>
+  <data name="chkAllowQuantitySales.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chkAllowQuantitySales.Text" xml:space="preserve">
+    <value>Allow Quantity Sales</value>
+  </data>
+  <data name="chkAllowQuantitySales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkAllowQuantitySales.Name" xml:space="preserve">
+    <value>chkAllowQuantitySales</value>
+  </data>
+  <data name="&gt;&gt;chkAllowQuantitySales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAllowQuantitySales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkAllowQuantitySales.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="tenderModeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tenderModeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="tenderModeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tenderModeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 40</value>
+  </data>
+  <data name="tenderModeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 22</value>
+  </data>
+  <data name="tenderModeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="tenderModeLabel.Text" xml:space="preserve">
+    <value>Tender Mode</value>
+  </data>
+  <data name="&gt;&gt;tenderModeLabel.Name" xml:space="preserve">
+    <value>tenderModeLabel</value>
+  </data>
+  <data name="&gt;&gt;tenderModeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tenderModeLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;tenderModeLabel.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="chkSellFixedUnits.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkSellFixedUnits.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkSellFixedUnits.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 30</value>
+  </data>
+  <data name="chkSellFixedUnits.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 25</value>
+  </data>
+  <data name="chkSellFixedUnits.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkSellFixedUnits.Text" xml:space="preserve">
+    <value>Sell Electronics</value>
+  </data>
+  <data name="&gt;&gt;chkSellFixedUnits.Name" xml:space="preserve">
+    <value>chkSellFixedUnits</value>
+  </data>
+  <data name="&gt;&gt;chkSellFixedUnits.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSellFixedUnits.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkSellFixedUnits.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="chkAllowNoSale.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkAllowNoSale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAllowNoSale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="chkAllowNoSale.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkAllowNoSale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 25</value>
+  </data>
+  <data name="chkAllowNoSale.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkAllowNoSale.Text" xml:space="preserve">
+    <value>Allow No Sale</value>
+  </data>
+  <data name="chkAllowNoSale.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkAllowNoSale.Name" xml:space="preserve">
+    <value>chkAllowNoSale</value>
+  </data>
+  <data name="&gt;&gt;chkAllowNoSale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAllowNoSale.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkAllowNoSale.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="chkAllowReturns.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkAllowReturns.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAllowReturns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 55</value>
+  </data>
+  <data name="chkAllowReturns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkAllowReturns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 25</value>
+  </data>
+  <data name="chkAllowReturns.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkAllowReturns.Text" xml:space="preserve">
+    <value>Allow Returns</value>
+  </data>
+  <data name="chkAllowReturns.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkAllowReturns.Name" xml:space="preserve">
+    <value>chkAllowReturns</value>
+  </data>
+  <data name="&gt;&gt;chkAllowReturns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAllowReturns.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkAllowReturns.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="chkbxAutoIssue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkbxAutoIssue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxAutoIssue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 80</value>
+  </data>
+  <data name="chkbxAutoIssue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 25</value>
+  </data>
+  <data name="chkbxAutoIssue.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chkbxAutoIssue.Text" xml:space="preserve">
+    <value>Auto Issue Bank</value>
+  </data>
+  <data name="chkbxAutoIssue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkbxAutoIssue.Name" xml:space="preserve">
+    <value>chkbxAutoIssue</value>
+  </data>
+  <data name="&gt;&gt;chkbxAutoIssue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxAutoIssue.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkbxAutoIssue.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="chkLongDescriptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkLongDescriptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 330</value>
+  </data>
+  <data name="chkLongDescriptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 25</value>
+  </data>
+  <data name="chkLongDescriptions.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="chkLongDescriptions.Text" xml:space="preserve">
+    <value>Use long descriptions on POS screen</value>
+  </data>
+  <data name="chkLongDescriptions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkLongDescriptions.Name" xml:space="preserve">
+    <value>chkLongDescriptions</value>
+  </data>
+  <data name="&gt;&gt;chkLongDescriptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkLongDescriptions.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkLongDescriptions.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 25</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>716, 571</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 3</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>728, 602</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>POS Functionality Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="btnSave.ImageNormal" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        Hz2IoxV0bDhqAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnSave.ImagePressed" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 611</value>
+  </data>
+  <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>POSSettings</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+</root>
