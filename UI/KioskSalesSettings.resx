@@ -384,18 +384,6 @@
   <data name="cboKioskBillAcceptorComPort.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
-  <data name="cboKioskBillAcceptorComPort.Items" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="cboKioskBillAcceptorComPort.Items1" xml:space="preserve">
-    <value>Electronic Only</value>
-  </data>
-  <data name="cboKioskBillAcceptorComPort.Items2" xml:space="preserve">
-    <value>Paper Only</value>
-  </data>
-  <data name="cboKioskBillAcceptorComPort.Items3" xml:space="preserve">
-    <value>Both</value>
-  </data>
   <data name="cboKioskBillAcceptorComPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>280, 248</value>
   </data>

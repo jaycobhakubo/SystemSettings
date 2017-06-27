@@ -108,11 +108,6 @@
             this.cboKioskBillAcceptorComPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.cboKioskBillAcceptorComPort, "cboKioskBillAcceptorComPort");
             this.cboKioskBillAcceptorComPort.FormattingEnabled = true;
-            this.cboKioskBillAcceptorComPort.Items.AddRange(new object[] {
-            resources.GetString("cboKioskBillAcceptorComPort.Items"),
-            resources.GetString("cboKioskBillAcceptorComPort.Items1"),
-            resources.GetString("cboKioskBillAcceptorComPort.Items2"),
-            resources.GetString("cboKioskBillAcceptorComPort.Items3")});
             this.cboKioskBillAcceptorComPort.Name = "cboKioskBillAcceptorComPort";
             this.cboKioskBillAcceptorComPort.SelectedValueChanged += new System.EventHandler(this.OnModified);
             // 

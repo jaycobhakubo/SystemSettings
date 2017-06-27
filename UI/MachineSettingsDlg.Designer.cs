@@ -81,9 +81,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpbxKioskSales = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbxKioskTicketPrinterName = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboKioskBillAcceptorComPort = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.grpPOS = new System.Windows.Forms.GroupBox();
             this.numCBBScannerPort = new System.Windows.Forms.NumericUpDown();
@@ -842,9 +842,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpbxKioskSales.BackColor = System.Drawing.Color.Transparent;
             this.grpbxKioskSales.Controls.Add(this.checkBox1);
             this.grpbxKioskSales.Controls.Add(this.checkBox2);
-            this.grpbxKioskSales.Controls.Add(this.textBox1);
+            this.grpbxKioskSales.Controls.Add(this.txtbxKioskTicketPrinterName);
             this.grpbxKioskSales.Controls.Add(this.label33);
-            this.grpbxKioskSales.Controls.Add(this.comboBox1);
+            this.grpbxKioskSales.Controls.Add(this.cboKioskBillAcceptorComPort);
             this.grpbxKioskSales.Controls.Add(this.label34);
             this.grpbxKioskSales.Location = new System.Drawing.Point(8, 484);
             this.grpbxKioskSales.Name = "grpbxKioskSales";
@@ -879,14 +879,14 @@ namespace GTI.Modules.SystemSettings.UI
             this.checkBox2.Text = "Use Default";
             this.checkBox2.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtbxKioskTicketPrinterName
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.textBox1.Location = new System.Drawing.Point(258, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 26);
-            this.textBox1.TabIndex = 45;
+            this.txtbxKioskTicketPrinterName.Enabled = false;
+            this.txtbxKioskTicketPrinterName.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.txtbxKioskTicketPrinterName.Location = new System.Drawing.Point(258, 58);
+            this.txtbxKioskTicketPrinterName.Name = "txtbxKioskTicketPrinterName";
+            this.txtbxKioskTicketPrinterName.Size = new System.Drawing.Size(205, 26);
+            this.txtbxKioskTicketPrinterName.TabIndex = 45;
             // 
             // label33
             // 
@@ -898,21 +898,21 @@ namespace GTI.Modules.SystemSettings.UI
             this.label33.TabIndex = 44;
             this.label33.Text = "Kiosk Ticket Printer Name";
             // 
-            // comboBox1
+            // cboKioskBillAcceptorComPort
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Enabled = false;
-            this.comboBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboKioskBillAcceptorComPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboKioskBillAcceptorComPort.Enabled = false;
+            this.cboKioskBillAcceptorComPort.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.cboKioskBillAcceptorComPort.FormattingEnabled = true;
+            this.cboKioskBillAcceptorComPort.Items.AddRange(new object[] {
             "None",
             "Electronic Only",
             "Paper Only",
             "Both"});
-            this.comboBox1.Location = new System.Drawing.Point(259, 22);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(204, 30);
-            this.comboBox1.TabIndex = 43;
+            this.cboKioskBillAcceptorComPort.Location = new System.Drawing.Point(259, 22);
+            this.cboKioskBillAcceptorComPort.Name = "cboKioskBillAcceptorComPort";
+            this.cboKioskBillAcceptorComPort.Size = new System.Drawing.Size(204, 30);
+            this.cboKioskBillAcceptorComPort.TabIndex = 43;
             // 
             // label34
             // 
@@ -957,7 +957,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpPOS.Controls.Add(this.chkReceiptPrinter);
             this.grpPOS.Location = new System.Drawing.Point(8, 8);
             this.grpPOS.Name = "grpPOS";
-            this.grpPOS.Size = new System.Drawing.Size(672, 477);
+            this.grpPOS.Size = new System.Drawing.Size(672, 473);
             this.grpPOS.TabIndex = 0;
             this.grpPOS.TabStop = false;
             this.grpPOS.Text = "POS";
@@ -2173,9 +2173,9 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.GroupBox grpbxKioskSales;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbxKioskTicketPrinterName;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboKioskBillAcceptorComPort;
         private System.Windows.Forms.Label label34;
         
 	}

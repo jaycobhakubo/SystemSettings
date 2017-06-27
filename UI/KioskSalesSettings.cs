@@ -9,17 +9,23 @@ namespace GTI.Modules.SystemSettings.UI
 {
     public partial class KioskSalesSettings : SettingsControl
     {
-        bool m_bModified = false;
+
+        #region Member
+        private bool m_bModified = false;
         private TreeNode m_TreeNodeParent;
         private List<Business.GenericCBOItem> lstComPortKioskBillAcceptor = new List<Business.GenericCBOItem>();
-      //  private const int RF_DISABLED_INDEX = 0;
+        #endregion
 
+        #region Constructor
         public KioskSalesSettings()
         {
             m_TreeNodeParent = null;
             InitializeComponent();
             SetComboboxComPort();
         }
+        #endregion
+
+        #region Methos
 
         private void SetComboboxComPort()
         {
@@ -43,7 +49,6 @@ namespace GTI.Modules.SystemSettings.UI
             cboKioskBillAcceptorComPort.DataSource = lstComPortKioskBillAcceptor;
             cboKioskBillAcceptorComPort.DisplayMember = "CBODisplayMember";
             cboKioskBillAcceptorComPort.ValueMember = "CBOValueMember";
-
         }
 
         public void SetTreeNode(TreeNode parent)
@@ -146,10 +151,10 @@ namespace GTI.Modules.SystemSettings.UI
             if (saveFlag == true)
             {
                 SaveKioskSalesSettings();//Fixed it now
-            }
-            
+            }           
                 return true;
         }
+        #endregion
 
         public override bool SaveSettings()
         {

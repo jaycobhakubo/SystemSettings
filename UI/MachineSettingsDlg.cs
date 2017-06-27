@@ -306,6 +306,32 @@ namespace GTI.Modules.SystemSettings.UI
             return moduleIds;
         }
 
+        private void SetComboboxComPort()
+        {
+            var lstComPortKioskBillAcceptor = new List<Business.GenericCBOItem>();
+            for (int i = 0; i < 14; i++)
+            {
+                Business.GenericCBOItem cboItem = new Business.GenericCBOItem();
+                cboItem.CBOValueMember = i;
+                switch (i)
+                {
+                    case 0:
+                        cboItem.CBODisplayMember = "Disabled";
+                        break;
+                    default:
+                        cboItem.CBODisplayMember = "COM" + i.ToString();
+                        break;
+                }
+
+                lstComPortKioskBillAcceptor.Add(cboItem);
+            }
+            cboKioskBillAcceptorComPort.Items.Clear();
+            cboKioskBillAcceptorComPort.DataSource = lstComPortKioskBillAcceptor;
+            cboKioskBillAcceptorComPort.DisplayMember = "CBODisplayMember";
+            cboKioskBillAcceptorComPort.ValueMember = "CBOValueMember";
+        }
+
+
         private void FillControls()
         {
             // Decide which controls we are going to show for this device type
@@ -337,18 +363,45 @@ namespace GTI.Modules.SystemSettings.UI
                 || (m_nDeviceId == Device.BuyAgainKiosk.Id)
                 || (m_nDeviceId == Device.SimplePOSKiosk.Id)
                 || (m_nDeviceId == Device.HybridKiosk.Id));
-    
-            t_isKioskSalesActive = false;
+
+            t_isKioskSalesActive = true;
+            grpbxKioskSales.Visible = t_isKioskSalesActive;
             if (t_isKioskSalesActive)
             {
                 grpPOS.Size = new System.Drawing.Size(672, 477);
+                SetComboboxComPort();
+                string tempString = Common.GetSystemSetting(Setting.KioskPeripheralsAcceptorComPort);
+                try//If theres any issue just set to 0
+                {
+
+                    int tempSelectedIndex = 0;
+                    bool tempResult = int.TryParse(tempString, out tempSelectedIndex);
+
+                    if (tempResult)//If the setting is not numeric set it  as  disable
+                    {
+                        cboKioskBillAcceptorComPort.SelectedIndex = tempSelectedIndex;
+                    }
+                    else
+                    {
+                        cboKioskBillAcceptorComPort.SelectedIndex = 0;
+                      //  saveFlag = true;
+                    }
+                }
+                catch
+                {
+                    cboKioskBillAcceptorComPort.SelectedIndex = 0;
+                   // saveFlag = true;
+                }
+
+                tempString = Common.GetSystemSetting(Setting.KioskPeripheralsTicketPrinterName);
+                txtbxKioskTicketPrinterName.Text = tempString;
                
             }
             else
             {
                 grpPOS.Size = new System.Drawing.Size(672, 566);
             }
-            grpbxKioskSales.Visible = t_isKioskSalesActive;
+            
             grpPOS.Visible = IsPOSVisible;
 
             if (IsPOSVisible == false)
