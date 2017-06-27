@@ -160,6 +160,12 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtPaymentProcessorPort = new System.Windows.Forms.TextBox();
             this.txtPaymentProcessorAddress = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.tpVideo.SuspendLayout();
             this.grpVideo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numColorDepth)).BeginInit();
@@ -831,6 +837,12 @@ namespace GTI.Modules.SystemSettings.UI
             // grpPOS
             // 
             this.grpPOS.BackColor = System.Drawing.Color.Transparent;
+            this.grpPOS.Controls.Add(this.checkBox1);
+            this.grpPOS.Controls.Add(this.checkBox2);
+            this.grpPOS.Controls.Add(this.textBox1);
+            this.grpPOS.Controls.Add(this.label33);
+            this.grpPOS.Controls.Add(this.comboBox1);
+            this.grpPOS.Controls.Add(this.label34);
             this.grpPOS.Controls.Add(this.numCBBScannerPort);
             this.grpPOS.Controls.Add(this.chkCbbScannerPort);
             this.grpPOS.Controls.Add(this.label29);
@@ -860,7 +872,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpPOS.Controls.Add(this.chkReceiptPrinter);
             this.grpPOS.Location = new System.Drawing.Point(6, 8);
             this.grpPOS.Name = "grpPOS";
-            this.grpPOS.Size = new System.Drawing.Size(661, 490);
+            this.grpPOS.Size = new System.Drawing.Size(661, 568);
             this.grpPOS.TabIndex = 0;
             this.grpPOS.TabStop = false;
             this.grpPOS.Text = "POS";
@@ -881,7 +893,7 @@ namespace GTI.Modules.SystemSettings.UI
             0,
             0});
             this.numCBBScannerPort.Name = "numCBBScannerPort";
-            this.numCBBScannerPort.Size = new System.Drawing.Size(214, 26);
+            this.numCBBScannerPort.Size = new System.Drawing.Size(268, 26);
             this.numCBBScannerPort.TabIndex = 27;
             this.numCBBScannerPort.Value = new decimal(new int[] {
             1,
@@ -927,7 +939,7 @@ namespace GTI.Modules.SystemSettings.UI
             "Chatsworth ACP-200"});
             this.cboCbbScannerType.Location = new System.Drawing.Point(195, 283);
             this.cboCbbScannerType.Name = "cboCbbScannerType";
-            this.cboCbbScannerType.Size = new System.Drawing.Size(260, 30);
+            this.cboCbbScannerType.Size = new System.Drawing.Size(268, 30);
             this.cboCbbScannerType.TabIndex = 22;
             // 
             // label28
@@ -994,7 +1006,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtCardTrack.Location = new System.Drawing.Point(195, 451);
             this.txtCardTrack.MaxLength = 2;
             this.txtCardTrack.Name = "txtCardTrack";
-            this.txtCardTrack.Size = new System.Drawing.Size(214, 26);
+            this.txtCardTrack.Size = new System.Drawing.Size(268, 26);
             this.txtCardTrack.TabIndex = 17;
             // 
             // lblCardTrack
@@ -1015,7 +1027,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtCardReaderPort.Location = new System.Drawing.Point(195, 419);
             this.txtCardReaderPort.MaxLength = 5;
             this.txtCardReaderPort.Name = "txtCardReaderPort";
-            this.txtCardReaderPort.Size = new System.Drawing.Size(214, 26);
+            this.txtCardReaderPort.Size = new System.Drawing.Size(268, 26);
             this.txtCardReaderPort.TabIndex = 15;
             // 
             // lblCardReaderPort
@@ -1035,7 +1047,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtCardReaderIPAddress.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCardReaderIPAddress.Location = new System.Drawing.Point(195, 387);
             this.txtCardReaderIPAddress.Name = "txtCardReaderIPAddress";
-            this.txtCardReaderIPAddress.Size = new System.Drawing.Size(214, 26);
+            this.txtCardReaderIPAddress.Size = new System.Drawing.Size(268, 26);
             this.txtCardReaderIPAddress.TabIndex = 13;
             // 
             // lblCardReaderAddress
@@ -1060,7 +1072,7 @@ namespace GTI.Modules.SystemSettings.UI
             "True"});
             this.cboMagCardReaderMode.Location = new System.Drawing.Point(195, 351);
             this.cboMagCardReaderMode.Name = "cboMagCardReaderMode";
-            this.cboMagCardReaderMode.Size = new System.Drawing.Size(260, 30);
+            this.cboMagCardReaderMode.Size = new System.Drawing.Size(268, 30);
             this.cboMagCardReaderMode.TabIndex = 10;
             this.cboMagCardReaderMode.SelectedIndexChanged += new System.EventHandler(this.cboMagCardReaderMode_SelectedIndexChanged_1);
             // 
@@ -1095,7 +1107,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtCashDrawerEjectCode.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCashDrawerEjectCode.Location = new System.Drawing.Point(195, 89);
             this.txtCashDrawerEjectCode.Name = "txtCashDrawerEjectCode";
-            this.txtCashDrawerEjectCode.Size = new System.Drawing.Size(214, 26);
+            this.txtCashDrawerEjectCode.Size = new System.Drawing.Size(268, 26);
             this.txtCashDrawerEjectCode.TabIndex = 7;
             // 
             // chkCashDrawerEjectCode
@@ -1123,7 +1135,7 @@ namespace GTI.Modules.SystemSettings.UI
             "True"});
             this.cboSellElectronics.Location = new System.Drawing.Point(195, 53);
             this.cboSellElectronics.Name = "cboSellElectronics";
-            this.cboSellElectronics.Size = new System.Drawing.Size(214, 30);
+            this.cboSellElectronics.Size = new System.Drawing.Size(268, 30);
             this.cboSellElectronics.TabIndex = 4;
             // 
             // label7
@@ -1168,7 +1180,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtReceiptPrinter.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReceiptPrinter.Location = new System.Drawing.Point(195, 21);
             this.txtReceiptPrinter.Name = "txtReceiptPrinter";
-            this.txtReceiptPrinter.Size = new System.Drawing.Size(214, 26);
+            this.txtReceiptPrinter.Size = new System.Drawing.Size(268, 26);
             this.txtReceiptPrinter.TabIndex = 1;
             this.txtReceiptPrinter.TextChanged += new System.EventHandler(this.txtReceiptPrinter_TextChanged);
             // 
@@ -1881,6 +1893,78 @@ namespace GTI.Modules.SystemSettings.UI
             this.label30.TabIndex = 0;
             this.label30.Text = "Processor Address";
             // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.textBox1.Location = new System.Drawing.Point(259, 531);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(205, 26);
+            this.textBox1.TabIndex = 39;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label33.Location = new System.Drawing.Point(19, 531);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(209, 22);
+            this.label33.TabIndex = 38;
+            this.label33.Text = "Kiosk Ticket Printer Name";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Enabled = false;
+            this.comboBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "None",
+            "Electronic Only",
+            "Paper Only",
+            "Both"});
+            this.comboBox1.Location = new System.Drawing.Point(260, 495);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(204, 30);
+            this.comboBox1.TabIndex = 37;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.label34.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label34.Location = new System.Drawing.Point(19, 503);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(230, 22);
+            this.label34.TabIndex = 36;
+            this.label34.Text = "Kiosk Bill Acceptor Com Port";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(488, 497);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(114, 26);
+            this.checkBox1.TabIndex = 41;
+            this.checkBox1.Text = "Use Default";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Checked = true;
+            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox2.Location = new System.Drawing.Point(488, 530);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(114, 26);
+            this.checkBox2.TabIndex = 40;
+            this.checkBox2.Text = "Use Default";
+            this.checkBox2.UseVisualStyleBackColor = false;
+            // 
             // MachineSettingsDlg
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2071,6 +2155,12 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox checkPaymentProcessorAddress;
         private System.Windows.Forms.CheckBox checkPaymentProcessorEnabled;
         private System.Windows.Forms.CheckBox chkPaymentProcessingEnabled;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
         
 	}
 }
