@@ -321,7 +321,7 @@ namespace GTI.Modules.SystemSettings.UI
                 SetRemoteDisplayTab();
             }
             // TTP 50339
-            bool IsPOSVisible = (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(1))
+            bool IsPOSVisible = (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(1)) 
                 || (m_nDeviceId == Device.POS.Id)
                 || (m_nDeviceId == Device.POSPortable.Id)
                 || (m_nDeviceId == Device.AdvancedPOSKiosk.Id)
@@ -332,6 +332,23 @@ namespace GTI.Modules.SystemSettings.UI
             // Rally 	DE2837 Allow the caller to configure reciept printer
             //   || (m_nDeviceId == Device.Caller.Id);
 
+            bool t_isKioskSalesActive =    //Show only this setting only if one of the kiosk is being used.
+             ((m_nDeviceId == Device.AdvancedPOSKiosk.Id)
+                || (m_nDeviceId == Device.BuyAgainKiosk.Id)
+                || (m_nDeviceId == Device.SimplePOSKiosk.Id)
+                || (m_nDeviceId == Device.HybridKiosk.Id));
+    
+            t_isKioskSalesActive = false;
+            if (t_isKioskSalesActive)
+            {
+                grpPOS.Size = new System.Drawing.Size(672, 477);
+               
+            }
+            else
+            {
+                grpPOS.Size = new System.Drawing.Size(672, 566);
+            }
+            grpbxKioskSales.Visible = t_isKioskSalesActive;
             grpPOS.Visible = IsPOSVisible;
 
             if (IsPOSVisible == false)
@@ -2143,6 +2160,7 @@ namespace GTI.Modules.SystemSettings.UI
                 txtPaymentProcessorPort.Enabled = true;
             }
         }
+
 
     }//class
 }
