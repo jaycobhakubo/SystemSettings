@@ -11,4 +11,7 @@
     <StartAction>Program</StartAction>
     <StartProgram>D:\GameTech\Common\EliteMCP.exe</StartProgram>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
 </Project>

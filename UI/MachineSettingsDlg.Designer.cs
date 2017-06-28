@@ -79,8 +79,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkUseVirtualFlashboardCamera = new System.Windows.Forms.CheckBox();
             this.tpPOS = new System.Windows.Forms.TabPage();
             this.grpbxKioskSales = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkbxBillAcceptor = new System.Windows.Forms.CheckBox();
+            this.chkbxTicketPrinter = new System.Windows.Forms.CheckBox();
             this.txtbxKioskTicketPrinterName = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.cboKioskBillAcceptorComPort = new System.Windows.Forms.ComboBox();
@@ -464,7 +464,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.chkReceiptPrinter_CheckedChanged);
             // 
             // tpHallDisplay
             // 
@@ -840,8 +840,8 @@ namespace GTI.Modules.SystemSettings.UI
             // grpbxKioskSales
             // 
             this.grpbxKioskSales.BackColor = System.Drawing.Color.Transparent;
-            this.grpbxKioskSales.Controls.Add(this.checkBox1);
-            this.grpbxKioskSales.Controls.Add(this.checkBox2);
+            this.grpbxKioskSales.Controls.Add(this.chkbxBillAcceptor);
+            this.grpbxKioskSales.Controls.Add(this.chkbxTicketPrinter);
             this.grpbxKioskSales.Controls.Add(this.txtbxKioskTicketPrinterName);
             this.grpbxKioskSales.Controls.Add(this.label33);
             this.grpbxKioskSales.Controls.Add(this.cboKioskBillAcceptorComPort);
@@ -853,39 +853,41 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpbxKioskSales.TabStop = false;
             this.grpbxKioskSales.Text = "Kiosk - Sales";
             // 
-            // checkBox1
+            // chkbxBillAcceptor
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(488, 24);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(114, 26);
-            this.checkBox1.TabIndex = 47;
-            this.checkBox1.Text = "Use Default";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.chkbxBillAcceptor.AutoSize = true;
+            this.chkbxBillAcceptor.BackColor = System.Drawing.Color.Transparent;
+            this.chkbxBillAcceptor.Checked = true;
+            this.chkbxBillAcceptor.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkbxBillAcceptor.Location = new System.Drawing.Point(488, 24);
+            this.chkbxBillAcceptor.Name = "chkbxBillAcceptor";
+            this.chkbxBillAcceptor.Size = new System.Drawing.Size(114, 26);
+            this.chkbxBillAcceptor.TabIndex = 47;
+            this.chkbxBillAcceptor.Text = "Use Default";
+            this.chkbxBillAcceptor.UseVisualStyleBackColor = false;
+            this.chkbxBillAcceptor.CheckedChanged += new System.EventHandler(this.chkbxBillAcceptor_CheckedChanged);
             // 
-            // checkBox2
+            // chkbxTicketPrinter
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(488, 57);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(114, 26);
-            this.checkBox2.TabIndex = 46;
-            this.checkBox2.Text = "Use Default";
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.chkbxTicketPrinter.AutoSize = true;
+            this.chkbxTicketPrinter.BackColor = System.Drawing.Color.Transparent;
+            this.chkbxTicketPrinter.Checked = true;
+            this.chkbxTicketPrinter.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkbxTicketPrinter.Location = new System.Drawing.Point(488, 57);
+            this.chkbxTicketPrinter.Name = "chkbxTicketPrinter";
+            this.chkbxTicketPrinter.Size = new System.Drawing.Size(114, 26);
+            this.chkbxTicketPrinter.TabIndex = 46;
+            this.chkbxTicketPrinter.Text = "Use Default";
+            this.chkbxTicketPrinter.UseVisualStyleBackColor = false;
+            this.chkbxTicketPrinter.CheckedChanged += new System.EventHandler(this.chkbxTicketPrinter_CheckedChanged);
             // 
             // txtbxKioskTicketPrinterName
             // 
             this.txtbxKioskTicketPrinterName.Enabled = false;
             this.txtbxKioskTicketPrinterName.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.txtbxKioskTicketPrinterName.Location = new System.Drawing.Point(258, 58);
+            this.txtbxKioskTicketPrinterName.Location = new System.Drawing.Point(195, 58);
             this.txtbxKioskTicketPrinterName.Name = "txtbxKioskTicketPrinterName";
-            this.txtbxKioskTicketPrinterName.Size = new System.Drawing.Size(205, 26);
+            this.txtbxKioskTicketPrinterName.Size = new System.Drawing.Size(268, 26);
             this.txtbxKioskTicketPrinterName.TabIndex = 45;
             // 
             // label33
@@ -894,9 +896,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label33.Location = new System.Drawing.Point(15, 58);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(209, 22);
+            this.label33.Size = new System.Drawing.Size(115, 22);
             this.label33.TabIndex = 44;
-            this.label33.Text = "Kiosk Ticket Printer Name";
+            this.label33.Text = "Ticket Printer";
             // 
             // cboKioskBillAcceptorComPort
             // 
@@ -909,9 +911,9 @@ namespace GTI.Modules.SystemSettings.UI
             "Electronic Only",
             "Paper Only",
             "Both"});
-            this.cboKioskBillAcceptorComPort.Location = new System.Drawing.Point(259, 22);
+            this.cboKioskBillAcceptorComPort.Location = new System.Drawing.Point(195, 22);
             this.cboKioskBillAcceptorComPort.Name = "cboKioskBillAcceptorComPort";
-            this.cboKioskBillAcceptorComPort.Size = new System.Drawing.Size(204, 30);
+            this.cboKioskBillAcceptorComPort.Size = new System.Drawing.Size(268, 30);
             this.cboKioskBillAcceptorComPort.TabIndex = 43;
             // 
             // label34
@@ -921,9 +923,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.label34.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label34.Location = new System.Drawing.Point(15, 30);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(230, 22);
+            this.label34.Size = new System.Drawing.Size(145, 22);
             this.label34.TabIndex = 42;
-            this.label34.Text = "Kiosk Bill Acceptor Com Port";
+            this.label34.Text = "Bill Acceptor Port";
             // 
             // grpPOS
             // 
@@ -2171,8 +2173,8 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox checkPaymentProcessorEnabled;
         private System.Windows.Forms.CheckBox chkPaymentProcessingEnabled;
         private System.Windows.Forms.GroupBox grpbxKioskSales;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkbxBillAcceptor;
+        private System.Windows.Forms.CheckBox chkbxTicketPrinter;
         private System.Windows.Forms.TextBox txtbxKioskTicketPrinterName;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox cboKioskBillAcceptorComPort;

@@ -94,6 +94,7 @@ namespace GTI.Modules.SystemSettings.UI
             lvAllowableScenes.MultiSelect = false;
             lvAllowableScenes.HideSelection = false;
 
+            LoadComboboxComPort();
             LoadLists();
 
             m_arrMachines = arrMachines;
@@ -306,7 +307,7 @@ namespace GTI.Modules.SystemSettings.UI
             return moduleIds;
         }
 
-        private void SetComboboxComPort()
+        private void LoadComboboxComPort()
         {
             var lstComPortKioskBillAcceptor = new List<Business.GenericCBOItem>();
             for (int i = 0; i < 14; i++)
@@ -369,7 +370,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (t_isKioskSalesActive)
             {
                 grpPOS.Size = new System.Drawing.Size(672, 477);
-                SetComboboxComPort();
+               
                 string tempString = Common.GetSystemSetting(Setting.KioskPeripheralsAcceptorComPort);
                 try//If theres any issue just set to 0
                 {
@@ -1018,63 +1019,13 @@ namespace GTI.Modules.SystemSettings.UI
             this.Close();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            // PDTS 1064
-            // Validate
-            if (!MagCardSettings.ValidateMagCardInput(cboMagCardReaderMode.SelectedIndex + 1, txtCardReaderPort.Text, txtCardTrack.Text))
-            {
-                return;
-            }
-
-            Common.BeginWait();
-            bool bSuccess = SaveMachineSettings();
-            Common.EndWait();
-
-            if (!bSuccess)
-            {
-                return;
-            }
-
-            // Close the dialog
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
-
         private bool SaveMachineSettings()
         {
             // Gather up the settings we are going to set (we only need ID and VALUE for this msg)
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
 
-            //RALLY DE12883: Unchecking defaults for both global and receipt printer
-            //Additionally fixed saving to allow for multiple tabs information to be saved properly and not overwritten or deleted unintentionally
-
-            //SettingValue cbbScannerTypeValue = new SettingValue
-            //{
-            //    Id = (int)Setting.CbbScannerType,
-            //    //index 0 = None
-            //    //index 1 = PDI VMR-138
-            //    //index 2 = Chatsworth ACP-100
-            //    //index 3 = Chatsworth ACP-200
-            //    Value = cboCbbScannerType.SelectedIndex.ToString()
-            //};
-
-            //// Send a message to the server to save machine settigs
-            //SetMachineSettingsExMessage msg = new SetMachineSettingsExMessage(new[] { Common.MachineId }, new[] { cbbScannerTypeValue });
-
-            //try
-            //{
-            //    msg.Send();
-            //}
-            //catch (Exception e)
-            //{
-            //    MessageForm.Show(this, string.Format(Resources.UpdMachineSettingsFailed, e));
-            //    return false;
-            //}
-
-            // General Settings
-            // Client Install Drive
+            // General Settings   // Client Install Drive         
             if (!chkClientInstallDrive.Checked)
             {
                 s.Id = (int)Setting.ClientInstallDrive;
@@ -1351,6 +1302,20 @@ namespace GTI.Modules.SystemSettings.UI
                 arrSettings.Add(s);
             }
 
+            if (!chkbxBillAcceptor.Checked)
+            {
+                s.Id = (int)Setting.KioskPeripheralsAcceptorComPort;
+                s.Value = cboKioskBillAcceptorComPort.SelectedValue.ToString();
+                arrSettings.Add(s);
+            }
+
+            if (!chkbxTicketPrinter.Checked)
+            {
+                s.Id = (int)Setting.KioskPeripheralsTicketPrinterName;
+                s.Value = txtbxKioskTicketPrinterName.Text;
+                arrSettings.Add(s);
+            }
+           
             // Create an array of machine ids
             List<Int32> arrMachineIds = new List<Int32>();
             int nCount = m_arrMachines.Length;
@@ -1766,6 +1731,7 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+      
         private bool LoadScenes()
         {
             int intReturnVal = GetScenes();
@@ -2133,9 +2099,27 @@ namespace GTI.Modules.SystemSettings.UI
             if (chkShowPayoutAmountDefault.Checked)
             {
                 chkShowPayoutAmounts.Checked = Common.ParseBool(Common.GetOpSetting(Setting.ShowPayoutAmount));  //RALLY DE9427
-
             }
         }
+
+        private void chkbxTicketPrinter_CheckedChanged(object sender, EventArgs e)
+        {
+            txtbxKioskTicketPrinterName.Enabled = !chkbxTicketPrinter.Checked;
+        }
+
+        private void chkbxBillAcceptor_CheckedChanged(object sender, EventArgs e)
+        {
+            cboKioskBillAcceptorComPort.Enabled = !chkbxBillAcceptor.Checked;
+        }
+
+        //private void chkSellElectronics_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    cboSellElectronics.Enabled = !chkSellElectronics.Checked;
+        //    if (chkSellElectronics.Checked)
+        //    {
+        //        cboSellElectronics.SelectedIndex = Common.GetOpSetting(Setting.SellElectronics).Equals(bool.TrueString) ? 1 : 0;
+        //    }
+        //}
 
         //END RALLY US1897
         //END RALLY US1594
@@ -2214,6 +2198,9 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+ 
+
+     
 
     }//class
 }
