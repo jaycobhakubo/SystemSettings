@@ -464,7 +464,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.chkReceiptPrinter_CheckedChanged);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tpHallDisplay
             // 

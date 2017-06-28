@@ -335,8 +335,9 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void FillControls()
         {
-            // Decide which controls we are going to show for this device type
-            bool IsHallDisplayVisible = (m_nDeviceId == Device.RemoteDisplay.Id || (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(10)));
+
+            bool IsHallDisplayVisible = (m_nDeviceId == Device.RemoteDisplay.Id || (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(10)));     // Decide which controls we are going to show for this device type
+            SettingValue s;      // Fill in the settings
 
             grpHallDisplay.Visible = IsHallDisplayVisible;
             if (IsHallDisplayVisible == false)
@@ -364,19 +365,31 @@ namespace GTI.Modules.SystemSettings.UI
                 || (m_nDeviceId == Device.BuyAgainKiosk.Id)
                 || (m_nDeviceId == Device.SimplePOSKiosk.Id)
                 || (m_nDeviceId == Device.HybridKiosk.Id));
-
-            t_isKioskSalesActive = true;
+                
             grpbxKioskSales.Visible = t_isKioskSalesActive;
             if (t_isKioskSalesActive)
             {
                 grpPOS.Size = new System.Drawing.Size(672, 477);
-               
-                string tempString = Common.GetSystemSetting(Setting.KioskPeripheralsAcceptorComPort);
+                string tempString = "";
+                int tempSelectedIndex = 0;
+                bool tempResult = false;
+
+                //kiosk sales - com port
+                if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.KioskPeripheralsAcceptorComPort, out s))
+                {
+                    chkbxBillAcceptor.Checked = false;
+                    tempString = s.Value;
+                }
+                else
+                {
+                    chkbxBillAcceptor.Checked = true;
+                    tempString = Common.GetSystemSetting(Setting.KioskPeripheralsAcceptorComPort);                  
+                }
+
+
                 try//If theres any issue just set to 0
                 {
-
-                    int tempSelectedIndex = 0;
-                    bool tempResult = int.TryParse(tempString, out tempSelectedIndex);
+                    tempResult = int.TryParse(tempString, out tempSelectedIndex);
 
                     if (tempResult)//If the setting is not numeric set it  as  disable
                     {
@@ -385,18 +398,29 @@ namespace GTI.Modules.SystemSettings.UI
                     else
                     {
                         cboKioskBillAcceptorComPort.SelectedIndex = 0;
-                      //  saveFlag = true;
+                        //  saveFlag = true;
                     }
                 }
                 catch
                 {
                     cboKioskBillAcceptorComPort.SelectedIndex = 0;
-                   // saveFlag = true;
-                }
+                    // saveFlag = true;
+                }                  
 
-                tempString = Common.GetSystemSetting(Setting.KioskPeripheralsTicketPrinterName);
-                txtbxKioskTicketPrinterName.Text = tempString;
-               
+
+                //Kiosk - sales (printer name)
+                if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.KioskPeripheralsTicketPrinterName, out s))
+                {
+                    chkbxTicketPrinter.Checked = false;
+                    txtbxKioskTicketPrinterName.Text = s.Value;
+
+                }
+                else
+                {
+                    chkbxTicketPrinter.Checked = true;
+                    tempString = Common.GetSystemSetting(Setting.KioskPeripheralsTicketPrinterName);
+                    txtbxKioskTicketPrinterName.Text = tempString;
+                }
             }
             else
             {
@@ -440,8 +464,7 @@ namespace GTI.Modules.SystemSettings.UI
                 tabMachineDialog.TabPages.Remove(tpFixedBase);
             }
 
-            // Fill in the settings
-            SettingValue s;
+          
 
             // Client Install Drive
             if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.ClientInstallDrive, out s))
@@ -1018,6 +1041,30 @@ namespace GTI.Modules.SystemSettings.UI
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            // PDTS 1064
+            // Validate
+            if (!MagCardSettings.ValidateMagCardInput(cboMagCardReaderMode.SelectedIndex + 1, txtCardReaderPort.Text, txtCardTrack.Text))
+            {
+                return;
+            }
+
+            Common.BeginWait();
+            bool bSuccess = SaveMachineSettings();
+            Common.EndWait();
+
+            if (!bSuccess)
+            {
+                return;
+            }
+
+            // Close the dialog
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
 
         private bool SaveMachineSettings()
         {
