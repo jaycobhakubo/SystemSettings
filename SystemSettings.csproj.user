@@ -4,7 +4,7 @@
     <StartAction>Program</StartAction>
     <StartProgram>D:\GameTech\Common\EliteMCP.exe</StartProgram>
     <StartWorkingDirectory>D:\GameTech\Common\</StartWorkingDirectory>
-    <StartArguments>-runonce -guid={C7103876-A9F9-4b66-9F3D-E150ACB466E5} -server=gtiserver -windows</StartArguments>
+    <StartArguments>-runonce -guid={C7103876-A9F9-4b66-9F3D-E150ACB466E5} -server=10.0.11.107 -windows</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartArguments>-window -runonce -guid={EFC4903C-8AA7-46b9-9BCF-0D0D6FDD5A3A} -server=gtiserver</StartArguments>

@@ -84,8 +84,7 @@
             this.cboCbbScannerType.Items.AddRange(new object[] {
             resources.GetString("cboCbbScannerType.Items"),
             resources.GetString("cboCbbScannerType.Items1"),
-            resources.GetString("cboCbbScannerType.Items2"),
-            resources.GetString("cboCbbScannerType.Items3")});
+            resources.GetString("cboCbbScannerType.Items2")});
             this.cboCbbScannerType.Name = "cboCbbScannerType";
             this.cboCbbScannerType.SelectedIndexChanged += new System.EventHandler(this.OnModified);
             // 

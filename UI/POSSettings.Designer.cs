@@ -33,8 +33,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.chkTwoMenuPagesPerPOSPage = new System.Windows.Forms.CheckBox();
-            this.chkWidescreen = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbResellAuditedItem = new System.Windows.Forms.ComboBox();
             this.chkPrintRegisterClosingOnCloseBank = new System.Windows.Forms.CheckBox();
@@ -111,8 +109,6 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.chkTwoMenuPagesPerPOSPage);
-            this.panel1.Controls.Add(this.chkWidescreen);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.cmbResellAuditedItem);
             this.panel1.Controls.Add(this.chkPrintRegisterClosingOnCloseBank);
@@ -152,20 +148,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.panel1.Controls.Add(this.chkbxAutoIssue);
             this.panel1.Controls.Add(this.chkLongDescriptions);
             this.panel1.Name = "panel1";
-            // 
-            // chkTwoMenuPagesPerPOSPage
-            // 
-            resources.ApplyResources(this.chkTwoMenuPagesPerPOSPage, "chkTwoMenuPagesPerPOSPage");
-            this.chkTwoMenuPagesPerPOSPage.Name = "chkTwoMenuPagesPerPOSPage";
-            this.chkTwoMenuPagesPerPOSPage.UseVisualStyleBackColor = true;
-            this.chkTwoMenuPagesPerPOSPage.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // chkWidescreen
-            // 
-            resources.ApplyResources(this.chkWidescreen, "chkWidescreen");
-            this.chkWidescreen.Name = "chkWidescreen";
-            this.chkWidescreen.UseVisualStyleBackColor = true;
-            this.chkWidescreen.CheckedChanged += new System.EventHandler(this.chkWidescreen_CheckedChanged);
             // 
             // label2
             // 
@@ -513,7 +495,5 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkLongDescriptions;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbResellAuditedItem;
-        private System.Windows.Forms.CheckBox chkTwoMenuPagesPerPOSPage;
-        private System.Windows.Forms.CheckBox chkWidescreen;
 	}
 }

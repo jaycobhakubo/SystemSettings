@@ -85,7 +85,7 @@ namespace GTI.Modules.SystemSettings.UI
                 chkEnableCBBFavorites.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.EnableCBBFavorites)); // US2418
 
                 //Common.GetOpSettingValue(Setting.CbbScannerType, out tempSettingValue);
-                cboCbbScannerType.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CbbScannerType)) + 1; // US2418
+                cboCbbScannerType.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CbbScannerType)); // US2418
             }
             else
             {
@@ -111,7 +111,7 @@ namespace GTI.Modules.SystemSettings.UI
             SettingValue cbbScannerType = new SettingValue
             {
                 Id = (int)Setting.CbbScannerType,
-                Value = (cboCbbScannerType.SelectedIndex - 1).ToString()
+                Value = cboCbbScannerType.SelectedIndex.ToString()
             };
 
             //US2418 

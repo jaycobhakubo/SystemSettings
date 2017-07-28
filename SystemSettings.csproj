@@ -167,12 +167,6 @@
     <Compile Include="UI\AccrualSceneDialog.Designer.cs">
       <DependentUpon>AccrualSceneDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\KioskSalesSettings.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\KioskSalesSettings.Designer.cs">
-      <DependentUpon>KioskSalesSettings.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\PointOfSalePrinterSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -437,9 +431,6 @@
       <DependentUpon>AccrualSceneDialog.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\KioskSalesSettings.resx">
-      <DependentUpon>KioskSalesSettings.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\PointOfSalePrinterSettings.resx">
       <DependentUpon>PointOfSalePrinterSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -664,9 +655,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GradientPanel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MyRef\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

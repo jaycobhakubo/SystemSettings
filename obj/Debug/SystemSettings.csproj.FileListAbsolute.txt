@@ -62,4 +62,3 @@ D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTISystemSet
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.SessionSummarySettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.CrystalBallSettings.resources
-D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.KioskSalesSettings.resources

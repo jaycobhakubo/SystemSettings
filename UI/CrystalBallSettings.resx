@@ -196,15 +196,12 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="cboCbbScannerType.Items" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="cboCbbScannerType.Items1" xml:space="preserve">
     <value>PDI VMR-138</value>
   </data>
-  <data name="cboCbbScannerType.Items2" xml:space="preserve">
+  <data name="cboCbbScannerType.Items1" xml:space="preserve">
     <value>Chatsworth ACP-100</value>
   </data>
-  <data name="cboCbbScannerType.Items3" xml:space="preserve">
+  <data name="cboCbbScannerType.Items2" xml:space="preserve">
     <value>Chatsworth ACP-200</value>
   </data>
   <data name="cboCbbScannerType.Location" type="System.Drawing.Point, System.Drawing">
@@ -598,7 +595,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.614, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -700,7 +697,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.614, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -721,6 +718,6 @@
     <value>CrystalBallSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.11.3.3, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>
