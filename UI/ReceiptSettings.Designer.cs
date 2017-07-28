@@ -169,21 +169,18 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtDisclaimer3.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.txtDisclaimer3, "txtDisclaimer3");
             this.txtDisclaimer3.Name = "txtDisclaimer3";
-            this.txtDisclaimer3.ReadOnly = true;
             // 
             // txtDisclaimer2
             // 
             this.txtDisclaimer2.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.txtDisclaimer2, "txtDisclaimer2");
             this.txtDisclaimer2.Name = "txtDisclaimer2";
-            this.txtDisclaimer2.ReadOnly = true;
             // 
             // txtDisclaimer1
             // 
             this.txtDisclaimer1.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.txtDisclaimer1, "txtDisclaimer1");
             this.txtDisclaimer1.Name = "txtDisclaimer1";
-            this.txtDisclaimer1.ReadOnly = true;
             // 
             // txtFooter1
             // 
