@@ -117,124 +117,115 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="label9.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lbl_mDisclaimerLine1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbl_mDisclaimerLine1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lbl_mDisclaimerLine1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lbl_mDisclaimerLine1.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 361</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lbl_mDisclaimerLine1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbl_mDisclaimerLine1.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 22</value>
   </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbl_mDisclaimerLine1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
+  <data name="lbl_mDisclaimerLine1.Text" xml:space="preserve">
     <value>Disclaimer Line1</value>
   </data>
-  <data name="label9.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;lbl_mDisclaimerLine1.Name" xml:space="preserve">
+    <value>lbl_mDisclaimerLine1</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine1.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="label8.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lbl_mDisclaimerLine2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbl_mDisclaimerLine2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lbl_mDisclaimerLine2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lbl_mDisclaimerLine2.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 417</value>
   </data>
-  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lbl_mDisclaimerLine2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbl_mDisclaimerLine2.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 22</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbl_mDisclaimerLine2.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
+  <data name="lbl_mDisclaimerLine2.Text" xml:space="preserve">
     <value>Disclaimer Line2</value>
   </data>
-  <data name="label8.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;lbl_mDisclaimerLine2.Name" xml:space="preserve">
+    <value>lbl_mDisclaimerLine2</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine2.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="label4.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lbl_mDisclaimerLine3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lbl_mDisclaimerLine3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lbl_mDisclaimerLine3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lbl_mDisclaimerLine3.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 473</value>
   </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lbl_mDisclaimerLine3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lbl_mDisclaimerLine3.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 22</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbl_mDisclaimerLine3.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="lbl_mDisclaimerLine3.Text" xml:space="preserve">
     <value>Disclaimer Line3</value>
   </data>
-  <data name="label4.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;lbl_mDisclaimerLine3.Name" xml:space="preserve">
+    <value>lbl_mDisclaimerLine3</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine3.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbl_mDisclaimerLine3.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -468,9 +459,6 @@
   <data name="txtDisclaimer3.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="txtDisclaimer3.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;txtDisclaimer3.Name" xml:space="preserve">
     <value>txtDisclaimer3</value>
   </data>
@@ -498,9 +486,6 @@
   <data name="txtDisclaimer2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="txtDisclaimer2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;txtDisclaimer2.Name" xml:space="preserve">
     <value>txtDisclaimer2</value>
   </data>
@@ -527,9 +512,6 @@
   </data>
   <data name="txtDisclaimer1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="txtDisclaimer1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;txtDisclaimer1.Name" xml:space="preserve">
     <value>txtDisclaimer1</value>
@@ -850,7 +832,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.542, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -952,7 +934,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.542, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1610,6 +1592,6 @@
     <value>ReceiptSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.11.2.10, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>
