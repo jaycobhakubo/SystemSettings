@@ -155,7 +155,7 @@
             this.chkPaymentProcessingEnabled.TabIndex = 0;
             this.chkPaymentProcessingEnabled.Text = "Payment Processor Enabled";
             this.chkPaymentProcessingEnabled.UseVisualStyleBackColor = true;
-            this.chkPaymentProcessingEnabled.CheckedChanged += new System.EventHandler(this.OnModified);
+            this.chkPaymentProcessingEnabled.CheckedChanged += new System.EventHandler(this.chkPaymentProcessingEnabledChecked);
             // 
             // label17
             // 
