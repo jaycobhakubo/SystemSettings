@@ -28,10 +28,10 @@ namespace GTI.Modules.SystemSettings.UI
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.Windows.Forms.Label lbl_mDisclaimerLine1;
+            System.Windows.Forms.Label label9;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReceiptSettings));
-            System.Windows.Forms.Label lbl_mDisclaimerLine2;
-            System.Windows.Forms.Label lbl_mDisclaimerLine3;
+            System.Windows.Forms.Label label8;
+            System.Windows.Forms.Label label4;
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
@@ -51,7 +51,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chkPrintOperatorInfo = new System.Windows.Forms.CheckBox();
             this.chkCompactPaperInfo = new System.Windows.Forms.CheckBox();
             this.chkSortReceipt = new System.Windows.Forms.CheckBox();
             this.numVoidSignatureLines = new System.Windows.Forms.NumericUpDown();
@@ -74,9 +73,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkPrintPointInfo = new System.Windows.Forms.CheckBox();
             this.chkPrintFacesToGlobalPrinter = new System.Windows.Forms.CheckBox();
             this.chkPrintNonelecReceipts = new System.Windows.Forms.CheckBox();
-            lbl_mDisclaimerLine1 = new System.Windows.Forms.Label();
-            lbl_mDisclaimerLine2 = new System.Windows.Forms.Label();
-            lbl_mDisclaimerLine3 = new System.Windows.Forms.Label();
+            this.chkPrintOperatorInfo = new System.Windows.Forms.CheckBox();
+            label9 = new System.Windows.Forms.Label();
+            label8 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -91,23 +91,23 @@ namespace GTI.Modules.SystemSettings.UI
             ((System.ComponentModel.ISupportInitialize)(this.numCopies)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbl_mDisclaimerLine1
+            // label9
             // 
-            resources.ApplyResources(lbl_mDisclaimerLine1, "lbl_mDisclaimerLine1");
-            lbl_mDisclaimerLine1.BackColor = System.Drawing.Color.Transparent;
-            lbl_mDisclaimerLine1.Name = "lbl_mDisclaimerLine1";
+            resources.ApplyResources(label9, "label9");
+            label9.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            label9.Name = "label9";
             // 
-            // lbl_mDisclaimerLine2
+            // label8
             // 
-            resources.ApplyResources(lbl_mDisclaimerLine2, "lbl_mDisclaimerLine2");
-            lbl_mDisclaimerLine2.BackColor = System.Drawing.Color.Transparent;
-            lbl_mDisclaimerLine2.Name = "lbl_mDisclaimerLine2";
+            resources.ApplyResources(label8, "label8");
+            label8.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            label8.Name = "label8";
             // 
-            // lbl_mDisclaimerLine3
+            // label4
             // 
-            resources.ApplyResources(lbl_mDisclaimerLine3, "lbl_mDisclaimerLine3");
-            lbl_mDisclaimerLine3.BackColor = System.Drawing.Color.Transparent;
-            lbl_mDisclaimerLine3.Name = "lbl_mDisclaimerLine3";
+            resources.ApplyResources(label4, "label4");
+            label4.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            label4.Name = "label4";
             // 
             // label1
             // 
@@ -145,9 +145,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox4.Controls.Add(this.txtDisclaimer3);
             this.groupBox4.Controls.Add(this.txtDisclaimer2);
             this.groupBox4.Controls.Add(this.txtDisclaimer1);
-            this.groupBox4.Controls.Add(lbl_mDisclaimerLine1);
-            this.groupBox4.Controls.Add(lbl_mDisclaimerLine2);
-            this.groupBox4.Controls.Add(lbl_mDisclaimerLine3);
+            this.groupBox4.Controls.Add(label9);
+            this.groupBox4.Controls.Add(label8);
+            this.groupBox4.Controls.Add(label4);
             this.groupBox4.Controls.Add(this.txtFooter1);
             this.groupBox4.Controls.Add(label1);
             this.groupBox4.Controls.Add(this.txtFooter2);
@@ -166,21 +166,24 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // txtDisclaimer3
             // 
-            this.txtDisclaimer3.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDisclaimer3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             resources.ApplyResources(this.txtDisclaimer3, "txtDisclaimer3");
             this.txtDisclaimer3.Name = "txtDisclaimer3";
+            this.txtDisclaimer3.ReadOnly = true;
             // 
             // txtDisclaimer2
             // 
-            this.txtDisclaimer2.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDisclaimer2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             resources.ApplyResources(this.txtDisclaimer2, "txtDisclaimer2");
             this.txtDisclaimer2.Name = "txtDisclaimer2";
+            this.txtDisclaimer2.ReadOnly = true;
             // 
             // txtDisclaimer1
             // 
-            this.txtDisclaimer1.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDisclaimer1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             resources.ApplyResources(this.txtDisclaimer1, "txtDisclaimer1");
             this.txtDisclaimer1.Name = "txtDisclaimer1";
+            this.txtDisclaimer1.ReadOnly = true;
             // 
             // txtFooter1
             // 
@@ -273,12 +276,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            // 
-            // chkPrintOperatorInfo
-            // 
-            resources.ApplyResources(this.chkPrintOperatorInfo, "chkPrintOperatorInfo");
-            this.chkPrintOperatorInfo.Name = "chkPrintOperatorInfo";
-            this.chkPrintOperatorInfo.UseVisualStyleBackColor = true;
             // 
             // chkCompactPaperInfo
             // 
@@ -468,6 +465,12 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkPrintNonelecReceipts.Name = "chkPrintNonelecReceipts";
             this.chkPrintNonelecReceipts.UseVisualStyleBackColor = false;
             this.chkPrintNonelecReceipts.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkPrintOperatorInfo
+            // 
+            resources.ApplyResources(this.chkPrintOperatorInfo, "chkPrintOperatorInfo");
+            this.chkPrintOperatorInfo.Name = "chkPrintOperatorInfo";
+            this.chkPrintOperatorInfo.UseVisualStyleBackColor = true;
             // 
             // ReceiptSettings
             // 

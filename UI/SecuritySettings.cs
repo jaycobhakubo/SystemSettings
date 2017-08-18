@@ -219,6 +219,18 @@ namespace GTI.Modules.SystemSettings.UI
             }
             //END RALLY TA 10508
 
+            //US5294
+            tempString = Common.GetSystemSetting(Setting.InactiveAutoLogout);
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkAutoLogout.Checked = boolResult;
+            }
+            else
+            {
+                chkAutoLogout.Checked = false;
+                saveFlag = true;
+            }
+
             numPinExpireDays.Enabled = Common.GetSettingEnabled(Setting.PinExpireDays);
             if (numPinExpireDays.Enabled == false)//RALLY DE 6754 pin expire days was not set correctly
             {
@@ -228,6 +240,8 @@ namespace GTI.Modules.SystemSettings.UI
 
             // Set the flag
             m_bModified = false;
+
+            chkScreenSaverEnabled_CheckedChanged(null, new EventArgs()); // force update of UI
 
             if (saveFlag == true)
             {
@@ -299,6 +313,11 @@ namespace GTI.Modules.SystemSettings.UI
             arrSettings.Add(s);
             //END RALLY TA 10508
 
+            //US5294
+            s.Id = (int)Setting.InactiveAutoLogout;
+            s.Value = chkAutoLogout.Checked.ToString();
+            arrSettings.Add(s);
+
             // Update the server
             if (!Common.SaveSystemSettings(arrSettings.ToArray()))
             {
@@ -351,11 +370,15 @@ namespace GTI.Modules.SystemSettings.UI
             m_bModified = true;
         }
 
-       
-
-      
         //END RALLY DE9445
 
-        //END RALLY US1572
+        private void chkScreenSaverEnabled_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkScreenSaverEnabled.Checked)
+                chkAutoLogout.Enabled = true;
+            else
+                chkAutoLogout.Enabled = false;
+        }
+
     } // end class
 } // end namespace

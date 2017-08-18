@@ -31,6 +31,7 @@ namespace GTI.Modules.SystemSettings.UI
             System.Windows.Forms.Label maxLoginLimitLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SecuritySettings));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkAutoLogout = new System.Windows.Forms.CheckBox();
             this.chkUseNumericKeypad = new System.Windows.Forms.CheckBox();
             this.numScreenSaverWait = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,6 +68,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkAutoLogout);
             this.groupBox1.Controls.Add(this.chkUseNumericKeypad);
             this.groupBox1.Controls.Add(this.numScreenSaverWait);
             this.groupBox1.Controls.Add(this.label5);
@@ -87,6 +89,12 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // chkAutoLogout
+            // 
+            resources.ApplyResources(this.chkAutoLogout, "chkAutoLogout");
+            this.chkAutoLogout.Name = "chkAutoLogout";
+            this.chkAutoLogout.UseVisualStyleBackColor = true;
             // 
             // chkUseNumericKeypad
             // 
@@ -126,6 +134,7 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.chkScreenSaverEnabled, "chkScreenSaverEnabled");
             this.chkScreenSaverEnabled.Name = "chkScreenSaverEnabled";
             this.chkScreenSaverEnabled.UseVisualStyleBackColor = true;
+            this.chkScreenSaverEnabled.CheckedChanged += new System.EventHandler(this.chkScreenSaverEnabled_CheckedChanged);
             this.chkScreenSaverEnabled.Click += new System.EventHandler(this.OnModified);
             // 
             // numMaxLoginLimit
@@ -245,6 +254,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
+            this.btnReset.RepeatRate = 150;
+            this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -256,6 +267,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
+            this.btnSave.RepeatRate = 150;
+            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -302,5 +315,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.NumericUpDown numScreenSaverWait;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox chkUseNumericKeypad;
+        private System.Windows.Forms.CheckBox chkAutoLogout;
 	}
 }

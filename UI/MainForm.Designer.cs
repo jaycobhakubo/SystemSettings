@@ -67,6 +67,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.hallDisplaySettings1 = new GTI.Modules.SystemSettings.UI.HallDisplaySettings();
             this.unitMgmtSettings1 = new GTI.Modules.SystemSettings.UI.UnitMgmtSettings();
             this.callerSettings1 = new GTI.Modules.SystemSettings.UI.CallerSettings();
+            this.blowerSettings = new GTI.Modules.SystemSettings.UI.BlowerSettings();
             this.thirdPartyInterfaceSettings1 = new GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings();
             this.channelSettings1 = new GTI.Modules.SystemSettings.UI.ChannelSettings();
             this.tenderSettings = new GTI.Modules.SystemSettings.UI.TenderSettings();
@@ -134,6 +135,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.splitContainer1.Panel2.Controls.Add(this.hallDisplaySettings1);
             this.splitContainer1.Panel2.Controls.Add(this.unitMgmtSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.callerSettings1);
+            this.splitContainer1.Panel2.Controls.Add(this.blowerSettings);
             this.splitContainer1.Panel2.Controls.Add(this.thirdPartyInterfaceSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.channelSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.tenderSettings);
@@ -344,6 +346,11 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.callerSettings1, "callerSettings1");
             this.callerSettings1.Name = "callerSettings1";
             // 
+            // blowerSettings
+            // 
+            resources.ApplyResources(this.blowerSettings, "blowerSettings");
+            this.blowerSettings.Name = "blowerSettings";
+            // 
             // thirdPartyInterfaceSettings1
             // 
             this.thirdPartyInterfaceSettings1.BackColor = System.Drawing.Color.Transparent;
@@ -484,6 +491,7 @@ namespace GTI.Modules.SystemSettings.UI
         private ChannelSettings channelSettings1;
         private TenderSettings tenderSettings;
         private PaymentProcessingSettings paymentProcessingSettings;
+        private BlowerSettings blowerSettings;
         private SessionSummarySettings sessionSummarySettings1;
         private CrystalBallSettings crystalBallSettings;
         private BingoSettings bingoSettings1;

@@ -101,6 +101,11 @@ namespace GTI.Modules.SystemSettings.UI
 
             chkPrintRegisterClosingOnCloseBank.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.PrintRegisterClosingOnBankClose));
 
+            chkWidescreen.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.AllowWidescreenPOS));
+            
+            chkTwoMenuPagesPerPOSPage.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.WidescreenPOSHasTwoMenuPagesPerPage));
+            chkTwoMenuPagesPerPOSPage.Enabled = chkWidescreen.Checked;
+
             //END RALLY US1650
             //START RALLY US1658 Use Exchange rate on sale
             chkUseExchangeRateOnSale.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.UseExchangeRateOnSale));  //RALLY DE9427
@@ -424,6 +429,14 @@ namespace GTI.Modules.SystemSettings.UI
             s.Value = chkAllowQuantitySales.Checked.ToString();
             arrSettings.Add(s);
 
+            s.Id = (int)Setting.AllowWidescreenPOS;
+            s.Value = chkWidescreen.Checked.ToString();
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.WidescreenPOSHasTwoMenuPagesPerPage;
+            s.Value = chkTwoMenuPagesPerPOSPage.Checked.ToString();
+            arrSettings.Add(s);
+
             //US2828
             s.Id = (int)Setting.EnableActiveSalesSession;
             s.Value = chkEnableActiveSession.Checked.ToString();
@@ -662,9 +675,17 @@ namespace GTI.Modules.SystemSettings.UI
             chkShowPaperUsageAtLogin.Enabled = chkEnablePaperUsage.Checked;
 
             if (!chkEnablePaperUsage.Checked)
-            {
                 chkShowPaperUsageAtLogin.Checked = false;
-            }
+
+            OnModified(sender, e);
+        }
+
+        private void chkWidescreen_CheckedChanged(object sender, EventArgs e)
+        {
+            chkTwoMenuPagesPerPOSPage.Enabled = chkWidescreen.Checked;
+
+            if (!chkWidescreen.Checked)
+                chkTwoMenuPagesPerPOSPage.Checked = false;
 
             OnModified(sender, e);
         }

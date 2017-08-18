@@ -125,6 +125,12 @@
     <Compile Include="UI\BingoSettings.Designer.cs">
       <DependentUpon>BingoSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\BlowerSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\BlowerSettings.Designer.cs">
+      <DependentUpon>BlowerSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\CallerSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -405,6 +411,9 @@
       <SubType>Designer</SubType>
       <DependentUpon>BingoSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\BlowerSettings.resx">
+      <DependentUpon>BlowerSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\CallerSettings.resx">
       <SubType>Designer</SubType>
       <DependentUpon>CallerSettings.cs</DependentUpon>
@@ -436,6 +445,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CrystalBallSettings.resx">
       <DependentUpon>CrystalBallSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PaymentProcessingSettings.resx">
       <DependentUpon>PaymentProcessingSettings.cs</DependentUpon>

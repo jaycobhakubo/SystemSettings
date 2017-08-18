@@ -163,17 +163,30 @@ namespace GTI.Modules.SystemSettings.UI
             if (m_AnticipationType == 1)
             {
                 rdChangeBallColor.Checked = true;
+                label7.Enabled = false;
+                numMinColorCircleTime.Enabled = false;
             }
             else if (m_AnticipationType == 2)
             {
                 rdNextBallOnly.Checked = true;
+                label7.Enabled = false;
+                numMinColorCircleTime.Enabled = false;
+            }
+            else if (m_AnticipationType == 0)
+            {
+                rdChangeBGColor.Checked = true;
+                label7.Enabled = false;
+                numMinColorCircleTime.Enabled = false;
             }
             else
             {
-                rdChangeBGColor.Checked = true;
+                rdCycleMode.Checked = true;
+                label7.Enabled = true;
+                numMinColorCircleTime.Enabled = true;
             }
 
             numMinBallCallTime.Value = ParseInt(Common.GetSystemSetting(Setting.BallImageMinDisplayTime));//US4727
+            numMinColorCircleTime.Value = ParseInt(Common.GetSystemSetting(Setting.ColorCircleMinDisplayTime));//US5289
 
             Common.GetOpSettingValue(Setting.AllowableSceneIDs, out tempSettingValue);
             m_AllowableScenes = tempSettingValue.Value.ToString();
@@ -255,12 +268,18 @@ namespace GTI.Modules.SystemSettings.UI
             s.Value = numMinBallCallTime.Value.ToString();
             arrSettings.Add(s);//US4727
 
+            s.Id = (int)Setting.ColorCircleMinDisplayTime;
+            s.Value = numMinColorCircleTime.Value.ToString();
+            arrSettings.Add(s);//US5289
+
             if (rdChangeBallColor.Checked)
                 m_AnticipationType = 1;
             else if (rdNextBallOnly.Checked)
                 m_AnticipationType = 2;
-            else
+            else if (rdChangeBGColor.Checked)
                 m_AnticipationType = 0;
+            else
+                m_AnticipationType = 3;
             s.Id = (int)Setting.DisplayNextBall;
             s.Value = m_AnticipationType.ToString();
             arrSettings.Add(s); //US4727
@@ -592,6 +611,12 @@ namespace GTI.Modules.SystemSettings.UI
         private void btnReset_Leave(object sender, EventArgs e)
         {
             chkShowWinnersOnly.Focus();
+        }
+
+        private void rdCycleMode_CheckedChanged(object sender, EventArgs e)
+        {
+            numMinColorCircleTime.Enabled = rdCycleMode.Checked;
+            label7.Enabled = rdCycleMode.Checked;
         }
 
     } // end class

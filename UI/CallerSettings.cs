@@ -39,8 +39,8 @@ namespace GTI.Modules.SystemSettings.UI
         private List<Business.GenericCBOItem> lstFBInterfacePort = new List<Business.GenericCBOItem>();
         private List<Business.GenericCBOItem> lstFBInterfaceType = new List<Business.GenericCBOItem>();
         private List<Business.GenericCBOItem> lstRFTransmitterType = new List<Business.GenericCBOItem>();   // US4490
-        private List<Business.GenericCBOItem> lstScanner1Ports = new List<Business.GenericCBOItem>();       // US4468
-        private List<Business.GenericCBOItem> lstScanner2Ports = new List<Business.GenericCBOItem>();
+        //private List<Business.GenericCBOItem> lstScanner1Ports = new List<Business.GenericCBOItem>();       // US4468
+        //private List<Business.GenericCBOItem> lstScanner2Ports = new List<Business.GenericCBOItem>();
         private List<Business.GenericCBOItem> lstFbNumDisplayTypes = new List<Business.GenericCBOItem>();   // US4487
         private List<Control> listBoxControls = null; // all the list box controls on the UI
         private bool m_RNGBallCalls; //RALLY DE 6616
@@ -156,11 +156,11 @@ namespace GTI.Modules.SystemSettings.UI
 
             //RALLY TA 9092 cool down timer setting
             Common.GetOpSettingValue(Setting.CoolDownTimer, out tempSettingValue);
-            
+
             //RALLY DE 6616 cool down timer setting dependant on RNG ball calls enabled
             numCoolDownTimer.Enabled = ParseBool(Common.GetLicenseSettingValue(LicenseSetting.EnableBingoRNG)) ||     //RALLY DE9427
                 ParseBool(Common.GetSystemSetting(Setting.BlowerEnabled));
-           
+
             //END RALLY DE 6616
             int cooldownTimer;
             if (int.TryParse(tempSettingValue.Value, out cooldownTimer) && cooldownTimer <= numCoolDownTimer.Maximum &&
@@ -172,6 +172,10 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 numCoolDownTimer.Value = numCoolDownTimer.Minimum;
             }
+
+            // US5249 Allow user to enable or disable a cooldown timer sound
+            Common.GetOpSettingValue(Setting.PlayCooldownTimerSound, out tempSettingValue);
+            chkPlayCooldownTimerSound.Checked = ParseBool(tempSettingValue.Value);
             
             //Rally 2560 -- Allow Card Verification Status override
             Common.GetOpSettingValue(Setting.AllowCardStatusOverride, out tempSettingValue);
@@ -328,44 +332,6 @@ namespace GTI.Modules.SystemSettings.UI
             value = Common.GetOpSetting(Setting.FlashboardNumericDisplayMode, true);
             cboFbNumDisplay.SelectedIndex = (int)ConvertToFlashboardDisplayMode(value); 
 
-            // START RALLY US4468 get blower scanner COM ports
-            value = Common.GetOpSetting(Setting.BlowerScanner1Port, true);
-            
-            try
-            {
-                cboItem = FindItemByValue(Convert.ToInt32(value), "cboScanner1Port");
-                if (cboItem != null)
-                {
-                    cboScanner1Port.SelectedIndex = cboScanner1Port.Items.IndexOf(cboItem);
-                }
-                else
-                {
-                    cboScanner1Port.SelectedIndex = -1;
-                }
-            }
-            catch
-            {
-                cboScanner1Port.SelectedIndex = -1;
-            }
-
-            value = Common.GetOpSetting(Setting.BlowerScanner2Port, true);
-            
-            try
-            {
-                cboItem = FindItemByValue(Convert.ToInt32(value), "cboScanner2Port");
-                if (cboItem != null)
-                {
-                    cboScanner2Port.SelectedIndex = cboScanner2Port.Items.IndexOf(cboItem);
-                }
-                else
-                {
-                    cboScanner2Port.SelectedIndex = -1;
-                }
-            }
-            catch
-            {
-                cboScanner2Port.SelectedIndex = -1;
-            }
             // END RALLY US4468
 
             value = Common.GetOpSetting(Setting.LEDFlashboardEnabled, true);// RALLY US4487
@@ -408,6 +374,22 @@ namespace GTI.Modules.SystemSettings.UI
                 numGameStateBroadcastDelay.Visible = false;
                 lblGameStateBroadcastDelay.Visible = false;
                 lblGameStateBroadcastDelayMs.Visible = false;
+            }
+
+            value = Common.GetSystemSetting(Setting.EnableRNGBallCalls);
+            try
+            {
+                chkEnableRNGBallCalls.Checked = ParseBool(value);
+            }
+            catch
+            {
+                chkEnableRNGBallCalls.Checked = false;
+            }
+
+            staticValue = Common.GetLicenseSettingValue(LicenseSetting.EnableBingoRNG);
+            if (bool.TryParse(staticValue, out boolResult))
+            {
+                chkEnableRNGBallCalls.Visible = boolResult;
             }
 
             // US4793
@@ -512,7 +494,8 @@ namespace GTI.Modules.SystemSettings.UI
             arrSettings.Add(s);
 
             // US4468 get blower barcode scanner
-            Business.GenericCBOItem cboScanner1Item = (Business.GenericCBOItem)cboScanner1Port.SelectedItem;
+            // Moved to Blower Settings
+            /*Business.GenericCBOItem cboScanner1Item = (Business.GenericCBOItem)cboScanner1Port.SelectedItem;
             s.Id = (int)Setting.BlowerScanner1Port;
             s.Value = cboScanner1Item.CBOValueMember.ToString();
             arrSettings.Add(s);
@@ -520,7 +503,7 @@ namespace GTI.Modules.SystemSettings.UI
             Business.GenericCBOItem cboScanner2Item = (Business.GenericCBOItem)cboScanner2Port.SelectedItem;
             s.Id = (int)Setting.BlowerScanner2Port;
             s.Value = cboScanner2Item.CBOValueMember.ToString();
-            arrSettings.Add(s);
+            arrSettings.Add(s);*/
 
             s.Id = (int)Setting.LEDFlashboardEnabled;
             s.Value = chkEnableLedFB.Checked.ToString();
@@ -555,6 +538,14 @@ namespace GTI.Modules.SystemSettings.UI
             
             s.Id = (int)Setting.BonusBallRange;
             s.Value = String.Join(",",extraBonusBalls);
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.PlayCooldownTimerSound;
+            s.Value = chkPlayCooldownTimerSound.Checked.ToString();
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.EnableRNGBallCalls;
+            s.Value = chkEnableRNGBallCalls.Checked.ToString();
             arrSettings.Add(s);
 
             // Update the server
@@ -703,6 +694,7 @@ namespace GTI.Modules.SystemSettings.UI
             cboFbNumDisplay.ValueMember = "CBOValueMember";
 
             // RALLY US4468 blower COM ports
+            /* Moved to Blower Settings
             for (int l = 1; l < 14; l++)
             {
                 Business.GenericCBOItem cboItem = new Business.GenericCBOItem();
@@ -711,6 +703,7 @@ namespace GTI.Modules.SystemSettings.UI
                 lstScanner1Ports.Add(cboItem);
                 lstScanner2Ports.Add(cboItem);
             }
+            
             cboScanner1Port.Items.Clear();
             cboScanner1Port.DataSource = lstScanner1Ports;
             cboScanner1Port.DisplayMember = "CBODisplayMember";
@@ -721,7 +714,7 @@ namespace GTI.Modules.SystemSettings.UI
             cboScanner2Port.DisplayMember = "CBODisplayMember";
             cboScanner2Port.ValueMember = "CBOValueMember";
             if (cboScanner2Port.SelectedIndex == cboScanner1Port.SelectedIndex)
-                ++cboScanner2Port.SelectedIndex;
+                ++cboScanner2Port.SelectedIndex;*/
         }
 
         private Business.GenericCBOItem FindItemByValue(int selectedVal, string strCBOName)
@@ -842,8 +835,8 @@ namespace GTI.Modules.SystemSettings.UI
             if(sender != null)
                 m_bModified = true;
             tbBlowerAddress.Enabled = chkEnableBlower.Checked;
-            cboScanner1Port.Enabled = chkEnableBlower.Checked;
-            cboScanner2Port.Enabled = chkEnableBlower.Checked;
+            //cboScanner1Port.Enabled = chkEnableBlower.Checked;
+            //cboScanner2Port.Enabled = chkEnableBlower.Checked;
 
             //DE12893
             if (!numCoolDownTimer.Enabled && chkEnableBlower.Checked)

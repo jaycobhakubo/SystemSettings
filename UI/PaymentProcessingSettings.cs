@@ -275,8 +275,6 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-    
-
         private void cmbProcessor_SelectedIndexChanged(object sender, EventArgs e)
         {
             ProcessingFor ourProcessor = (ProcessingFor)cmbProcessor.SelectedIndex; //GetTheProcessor();
@@ -343,31 +341,6 @@ namespace GTI.Modules.SystemSettings.UI
             m_Modified = true;
         }
 
-        private void DisableControls(bool IsEnable)
-        {
-            if (IsEnable == false)
-            {
-                cmbProcessor.Enabled = false;
-                panelMain.Enabled = false;
-            }
-            else
-            {
-                if (cmbProcessor.Enabled != true)
-                {
-                    cmbProcessor.Enabled = true;
-                    panelMain.Enabled = true;
-                }
-               
-            }
-        }
-
-
         #endregion
-
-        private void chkPaymentProcessingEnabledChecked(object sender, EventArgs e)
-        {
-            m_Modified = true;
-            DisableControls(m_Modified);
-        }
     }
 }

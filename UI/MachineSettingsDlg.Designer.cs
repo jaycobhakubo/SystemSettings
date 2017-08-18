@@ -51,27 +51,20 @@ namespace GTI.Modules.SystemSettings.UI
             this.tpHallDisplay = new System.Windows.Forms.TabPage();
             this.grpHallDisplay = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkMinCircleTimeDefault = new System.Windows.Forms.CheckBox();
+            this.numMinColorCircleTime = new System.Windows.Forms.NumericUpDown();
+            this.label32 = new System.Windows.Forms.Label();
             this.chkMinBallTimeDefault = new System.Windows.Forms.CheckBox();
             this.numMinBallCallTime = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rdCycleMode = new System.Windows.Forms.RadioButton();
             this.chkAnticipationDefault = new System.Windows.Forms.CheckBox();
             this.rdChangeBallColor = new System.Windows.Forms.RadioButton();
             this.rdNextBallOnly = new System.Windows.Forms.RadioButton();
             this.rdChangeBGColor = new System.Windows.Forms.RadioButton();
             this.chkShowPayoutAmountDefault = new System.Windows.Forms.CheckBox();
             this.chkShowPayoutAmounts = new System.Windows.Forms.CheckBox();
-            this.groupAdaptorSettings = new System.Windows.Forms.GroupBox();
-            this.buttonSetAccruals = new GTI.Controls.ImageButton();
-            this.cboVideoSettings = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cboDefaultScene = new System.Windows.Forms.ComboBox();
-            this.lvAllowableScenes = new System.Windows.Forms.ListView();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.chkIsActive = new System.Windows.Forms.CheckBox();
-            this.cboVideoAdapter = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.chkScreenSaverTimeout = new System.Windows.Forms.CheckBox();
             this.chkUseVirtualDefault = new System.Windows.Forms.CheckBox();
             this.ScreenSaverTimeoutLabel = new System.Windows.Forms.Label();
@@ -131,6 +124,18 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkCrateServer = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtGlobalPrinter = new System.Windows.Forms.TextBox();
+            this.tpHallDisplay2 = new System.Windows.Forms.TabPage();
+            this.groupAdaptorSettings = new System.Windows.Forms.GroupBox();
+            this.cboVideoAdapter = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.buttonSetAccruals = new GTI.Controls.ImageButton();
+            this.cboVideoSettings = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cboDefaultScene = new System.Windows.Forms.ComboBox();
+            this.lvAllowableScenes = new System.Windows.Forms.ListView();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.chkIsActive = new System.Windows.Forms.CheckBox();
             this.tpCaller = new System.Windows.Forms.TabPage();
             this.grpCaller = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
@@ -170,9 +175,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.tpHallDisplay.SuspendLayout();
             this.grpHallDisplay.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinColorCircleTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinBallCallTime)).BeginInit();
             this.groupBox2.SuspendLayout();
-            this.groupAdaptorSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numScreenSaverTimeout)).BeginInit();
             this.tpPOS.SuspendLayout();
             this.grpPOS.SuspendLayout();
@@ -180,6 +185,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.tabMachineDialog.SuspendLayout();
             this.tabPageGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numReceiptCopies)).BeginInit();
+            this.tpHallDisplay2.SuspendLayout();
+            this.groupAdaptorSettings.SuspendLayout();
             this.tpCaller.SuspendLayout();
             this.grpCaller.SuspendLayout();
             this.tpFixedBase.SuspendLayout();
@@ -462,12 +469,12 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             this.tpHallDisplay.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.tpHallDisplay.Controls.Add(this.grpHallDisplay);
-            this.tpHallDisplay.Location = new System.Drawing.Point(4, 22);
+            this.tpHallDisplay.Location = new System.Drawing.Point(4, 31);
             this.tpHallDisplay.Name = "tpHallDisplay";
             this.tpHallDisplay.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHallDisplay.Size = new System.Drawing.Size(688, 594);
+            this.tpHallDisplay.Size = new System.Drawing.Size(688, 585);
             this.tpHallDisplay.TabIndex = 1;
-            this.tpHallDisplay.Text = "Remote Display";
+            this.tpHallDisplay.Text = "Remote Display (1)";
             this.tpHallDisplay.UseVisualStyleBackColor = true;
             // 
             // grpHallDisplay
@@ -476,9 +483,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpHallDisplay.Controls.Add(this.groupBox1);
             this.grpHallDisplay.Controls.Add(this.chkShowPayoutAmountDefault);
             this.grpHallDisplay.Controls.Add(this.chkShowPayoutAmounts);
-            this.grpHallDisplay.Controls.Add(this.groupAdaptorSettings);
-            this.grpHallDisplay.Controls.Add(this.cboVideoAdapter);
-            this.grpHallDisplay.Controls.Add(this.label8);
             this.grpHallDisplay.Controls.Add(this.chkScreenSaverTimeout);
             this.grpHallDisplay.Controls.Add(this.chkUseVirtualDefault);
             this.grpHallDisplay.Controls.Add(this.ScreenSaverTimeoutLabel);
@@ -493,16 +497,50 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkMinCircleTimeDefault);
+            this.groupBox1.Controls.Add(this.numMinColorCircleTime);
+            this.groupBox1.Controls.Add(this.label32);
             this.groupBox1.Controls.Add(this.chkMinBallTimeDefault);
             this.groupBox1.Controls.Add(this.numMinBallCallTime);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Location = new System.Drawing.Point(6, 157);
+            this.groupBox1.Location = new System.Drawing.Point(6, 120);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(664, 157);
+            this.groupBox1.Size = new System.Drawing.Size(664, 222);
             this.groupBox1.TabIndex = 48;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Virtual Ball Scene Settings";
+            // 
+            // chkMinCircleTimeDefault
+            // 
+            this.chkMinCircleTimeDefault.AutoSize = true;
+            this.chkMinCircleTimeDefault.Checked = true;
+            this.chkMinCircleTimeDefault.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkMinCircleTimeDefault.Location = new System.Drawing.Point(505, 63);
+            this.chkMinCircleTimeDefault.Name = "chkMinCircleTimeDefault";
+            this.chkMinCircleTimeDefault.Size = new System.Drawing.Size(114, 26);
+            this.chkMinCircleTimeDefault.TabIndex = 6;
+            this.chkMinCircleTimeDefault.Text = "Use Default";
+            this.chkMinCircleTimeDefault.UseVisualStyleBackColor = true;
+            this.chkMinCircleTimeDefault.CheckedChanged += new System.EventHandler(this.chkMinCircleTimeDefault_CheckedChanged);
+            // 
+            // numMinColorCircleTime
+            // 
+            this.numMinColorCircleTime.Enabled = false;
+            this.numMinColorCircleTime.Location = new System.Drawing.Point(505, 32);
+            this.numMinColorCircleTime.Name = "numMinColorCircleTime";
+            this.numMinColorCircleTime.Size = new System.Drawing.Size(120, 26);
+            this.numMinColorCircleTime.TabIndex = 5;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Enabled = false;
+            this.label32.Location = new System.Drawing.Point(342, 34);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(157, 22);
+            this.label32.TabIndex = 4;
+            this.label32.Text = "Second Phase Delay";
             // 
             // chkMinBallTimeDefault
             // 
@@ -510,7 +548,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkMinBallTimeDefault.BackColor = System.Drawing.Color.Transparent;
             this.chkMinBallTimeDefault.Checked = true;
             this.chkMinBallTimeDefault.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkMinBallTimeDefault.Location = new System.Drawing.Point(465, 32);
+            this.chkMinBallTimeDefault.Location = new System.Drawing.Point(149, 63);
             this.chkMinBallTimeDefault.Name = "chkMinBallTimeDefault";
             this.chkMinBallTimeDefault.Size = new System.Drawing.Size(114, 26);
             this.chkMinBallTimeDefault.TabIndex = 3;
@@ -520,7 +558,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // numMinBallCallTime
             // 
-            this.numMinBallCallTime.Location = new System.Drawing.Point(332, 32);
+            this.numMinBallCallTime.Location = new System.Drawing.Point(149, 31);
             this.numMinBallCallTime.Name = "numMinBallCallTime";
             this.numMinBallCallTime.Size = new System.Drawing.Size(120, 26);
             this.numMinBallCallTime.TabIndex = 2;
@@ -530,22 +568,35 @@ namespace GTI.Modules.SystemSettings.UI
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(6, 34);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(319, 22);
+            this.label23.Size = new System.Drawing.Size(137, 22);
             this.label23.TabIndex = 1;
-            this.label23.Text = "Display Ball Call Minimum Time (seconds)";
+            this.label23.Text = "First Phase Delay";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.rdCycleMode);
             this.groupBox2.Controls.Add(this.chkAnticipationDefault);
             this.groupBox2.Controls.Add(this.rdChangeBallColor);
             this.groupBox2.Controls.Add(this.rdNextBallOnly);
             this.groupBox2.Controls.Add(this.rdChangeBGColor);
-            this.groupBox2.Location = new System.Drawing.Point(7, 59);
+            this.groupBox2.Location = new System.Drawing.Point(7, 95);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(651, 92);
+            this.groupBox2.Size = new System.Drawing.Size(651, 121);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Anticipation Display Type";
+            // 
+            // rdCycleMode
+            // 
+            this.rdCycleMode.AutoSize = true;
+            this.rdCycleMode.Location = new System.Drawing.Point(458, 58);
+            this.rdCycleMode.Name = "rdCycleMode";
+            this.rdCycleMode.Size = new System.Drawing.Size(132, 26);
+            this.rdCycleMode.TabIndex = 4;
+            this.rdCycleMode.TabStop = true;
+            this.rdCycleMode.Text = "Cycle Displays";
+            this.rdCycleMode.UseVisualStyleBackColor = true;
+            this.rdCycleMode.CheckedChanged += new System.EventHandler(this.rdCycleMode_CheckedChanged);
             // 
             // chkAnticipationDefault
             // 
@@ -553,7 +604,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkAnticipationDefault.BackColor = System.Drawing.Color.Transparent;
             this.chkAnticipationDefault.Checked = true;
             this.chkAnticipationDefault.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkAnticipationDefault.Location = new System.Drawing.Point(458, 61);
+            this.chkAnticipationDefault.Location = new System.Drawing.Point(275, 89);
             this.chkAnticipationDefault.Name = "chkAnticipationDefault";
             this.chkAnticipationDefault.Size = new System.Drawing.Size(114, 26);
             this.chkAnticipationDefault.TabIndex = 3;
@@ -618,141 +669,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkShowPayoutAmounts.TabIndex = 46;
             this.chkShowPayoutAmounts.Text = "Show Payout Amount";
             this.chkShowPayoutAmounts.UseVisualStyleBackColor = true;
-            // 
-            // groupAdaptorSettings
-            // 
-            this.groupAdaptorSettings.Controls.Add(this.buttonSetAccruals);
-            this.groupAdaptorSettings.Controls.Add(this.cboVideoSettings);
-            this.groupAdaptorSettings.Controls.Add(this.label9);
-            this.groupAdaptorSettings.Controls.Add(this.cboDefaultScene);
-            this.groupAdaptorSettings.Controls.Add(this.lvAllowableScenes);
-            this.groupAdaptorSettings.Controls.Add(this.label20);
-            this.groupAdaptorSettings.Controls.Add(this.label21);
-            this.groupAdaptorSettings.Controls.Add(this.chkIsActive);
-            this.groupAdaptorSettings.Location = new System.Drawing.Point(6, 320);
-            this.groupAdaptorSettings.Name = "groupAdaptorSettings";
-            this.groupAdaptorSettings.Size = new System.Drawing.Size(658, 251);
-            this.groupAdaptorSettings.TabIndex = 45;
-            this.groupAdaptorSettings.TabStop = false;
-            this.groupAdaptorSettings.Text = "Adapter Settings";
-            // 
-            // buttonSetAccruals
-            // 
-            this.buttonSetAccruals.BackColor = System.Drawing.Color.Transparent;
-            this.buttonSetAccruals.FocusColor = System.Drawing.Color.Black;
-            this.buttonSetAccruals.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
-            this.buttonSetAccruals.ImageNormal = ((System.Drawing.Image)(resources.GetObject("buttonSetAccruals.ImageNormal")));
-            this.buttonSetAccruals.ImagePressed = ((System.Drawing.Image)(resources.GetObject("buttonSetAccruals.ImagePressed")));
-            this.buttonSetAccruals.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonSetAccruals.Location = new System.Drawing.Point(376, 214);
-            this.buttonSetAccruals.MinimumSize = new System.Drawing.Size(30, 30);
-            this.buttonSetAccruals.Name = "buttonSetAccruals";
-            this.buttonSetAccruals.RepeatRate = 150;
-            this.buttonSetAccruals.RepeatWhenHeldFor = 750;
-            this.buttonSetAccruals.Size = new System.Drawing.Size(121, 30);
-            this.buttonSetAccruals.TabIndex = 4;
-            this.buttonSetAccruals.Text = "Set Progressives";
-            this.buttonSetAccruals.UseVisualStyleBackColor = false;
-            this.buttonSetAccruals.Click += new System.EventHandler(this.buttonSetAccruals_Click);
-            // 
-            // cboVideoSettings
-            // 
-            this.cboVideoSettings.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboVideoSettings.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.cboVideoSettings.FormattingEnabled = true;
-            this.cboVideoSettings.Location = new System.Drawing.Point(376, 167);
-            this.cboVideoSettings.Name = "cboVideoSettings";
-            this.cboVideoSettings.Size = new System.Drawing.Size(253, 30);
-            this.cboVideoSettings.TabIndex = 44;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(375, 142);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(116, 22);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "Video settings";
-            // 
-            // cboDefaultScene
-            // 
-            this.cboDefaultScene.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDefaultScene.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.cboDefaultScene.FormattingEnabled = true;
-            this.cboDefaultScene.Location = new System.Drawing.Point(376, 107);
-            this.cboDefaultScene.Name = "cboDefaultScene";
-            this.cboDefaultScene.Size = new System.Drawing.Size(253, 30);
-            this.cboDefaultScene.TabIndex = 38;
-            // 
-            // lvAllowableScenes
-            // 
-            this.lvAllowableScenes.CheckBoxes = true;
-            this.lvAllowableScenes.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.lvAllowableScenes.FullRowSelect = true;
-            this.lvAllowableScenes.Location = new System.Drawing.Point(21, 51);
-            this.lvAllowableScenes.MultiSelect = false;
-            this.lvAllowableScenes.Name = "lvAllowableScenes";
-            this.lvAllowableScenes.Size = new System.Drawing.Size(326, 194);
-            this.lvAllowableScenes.TabIndex = 37;
-            this.lvAllowableScenes.UseCompatibleStateImageBehavior = false;
-            this.lvAllowableScenes.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvAllowableScenes_ColumnClick);
-            this.lvAllowableScenes.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.lvAllowableScenes_ItemChecked);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label20.Location = new System.Drawing.Point(21, 22);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(61, 22);
-            this.label20.TabIndex = 36;
-            this.label20.Text = "Scenes";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(375, 80);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(111, 22);
-            this.label21.TabIndex = 35;
-            this.label21.Text = "Default scene";
-            // 
-            // chkIsActive
-            // 
-            this.chkIsActive.AutoSize = true;
-            this.chkIsActive.BackColor = System.Drawing.Color.Transparent;
-            this.chkIsActive.Checked = true;
-            this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkIsActive.Location = new System.Drawing.Point(376, 51);
-            this.chkIsActive.Name = "chkIsActive";
-            this.chkIsActive.Size = new System.Drawing.Size(77, 26);
-            this.chkIsActive.TabIndex = 34;
-            this.chkIsActive.Text = "Active";
-            this.chkIsActive.UseVisualStyleBackColor = false;
-            this.chkIsActive.CheckedChanged += new System.EventHandler(this.chkDisplayScenes_CheckedChanged_1);
-            // 
-            // cboVideoAdapter
-            // 
-            this.cboVideoAdapter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboVideoAdapter.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.cboVideoAdapter.FormattingEnabled = true;
-            this.cboVideoAdapter.Location = new System.Drawing.Point(131, 121);
-            this.cboVideoAdapter.Name = "cboVideoAdapter";
-            this.cboVideoAdapter.Size = new System.Drawing.Size(236, 30);
-            this.cboVideoAdapter.TabIndex = 42;
-            this.cboVideoAdapter.SelectedIndexChanged += new System.EventHandler(this.cboVideoAdapter_SelectedIndexChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(9, 124);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 22);
-            this.label8.TabIndex = 41;
-            this.label8.Text = "Video adapter";
             // 
             // chkScreenSaverTimeout
             // 
@@ -820,10 +736,10 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             this.tpPOS.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.tpPOS.Controls.Add(this.grpPOS);
-            this.tpPOS.Location = new System.Drawing.Point(4, 31);
+            this.tpPOS.Location = new System.Drawing.Point(4, 22);
             this.tpPOS.Name = "tpPOS";
             this.tpPOS.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPOS.Size = new System.Drawing.Size(688, 585);
+            this.tpPOS.Size = new System.Drawing.Size(688, 594);
             this.tpPOS.TabIndex = 0;
             this.tpPOS.Text = "POS";
             this.tpPOS.UseVisualStyleBackColor = true;
@@ -921,6 +837,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.cboCbbScannerType.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCbbScannerType.FormattingEnabled = true;
             this.cboCbbScannerType.Items.AddRange(new object[] {
+            "None",
             "PDI VMR-138",
             "Chatsworth ACP-100",
             "Chatsworth ACP-200"});
@@ -1201,6 +1118,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.tabMachineDialog.Controls.Add(this.tabPageGeneral);
             this.tabMachineDialog.Controls.Add(this.tpPOS);
             this.tabMachineDialog.Controls.Add(this.tpHallDisplay);
+            this.tabMachineDialog.Controls.Add(this.tpHallDisplay2);
             this.tabMachineDialog.Controls.Add(this.tpVideo);
             this.tabMachineDialog.Controls.Add(this.tpCaller);
             this.tabMachineDialog.Controls.Add(this.tpFixedBase);
@@ -1533,6 +1451,152 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtGlobalPrinter.Size = new System.Drawing.Size(214, 26);
             this.txtGlobalPrinter.TabIndex = 7;
             // 
+            // tpHallDisplay2
+            // 
+            this.tpHallDisplay2.Controls.Add(this.groupAdaptorSettings);
+            this.tpHallDisplay2.Location = new System.Drawing.Point(4, 22);
+            this.tpHallDisplay2.Name = "tpHallDisplay2";
+            this.tpHallDisplay2.Padding = new System.Windows.Forms.Padding(3);
+            this.tpHallDisplay2.Size = new System.Drawing.Size(688, 594);
+            this.tpHallDisplay2.TabIndex = 7;
+            this.tpHallDisplay2.Text = "Remote Display (2)";
+            this.tpHallDisplay2.UseVisualStyleBackColor = true;
+            // 
+            // groupAdaptorSettings
+            // 
+            this.groupAdaptorSettings.Controls.Add(this.cboVideoAdapter);
+            this.groupAdaptorSettings.Controls.Add(this.label8);
+            this.groupAdaptorSettings.Controls.Add(this.buttonSetAccruals);
+            this.groupAdaptorSettings.Controls.Add(this.cboVideoSettings);
+            this.groupAdaptorSettings.Controls.Add(this.label9);
+            this.groupAdaptorSettings.Controls.Add(this.cboDefaultScene);
+            this.groupAdaptorSettings.Controls.Add(this.lvAllowableScenes);
+            this.groupAdaptorSettings.Controls.Add(this.label20);
+            this.groupAdaptorSettings.Controls.Add(this.label21);
+            this.groupAdaptorSettings.Controls.Add(this.chkIsActive);
+            this.groupAdaptorSettings.Location = new System.Drawing.Point(15, 6);
+            this.groupAdaptorSettings.Name = "groupAdaptorSettings";
+            this.groupAdaptorSettings.Size = new System.Drawing.Size(658, 573);
+            this.groupAdaptorSettings.TabIndex = 46;
+            this.groupAdaptorSettings.TabStop = false;
+            this.groupAdaptorSettings.Text = "Adapter Settings";
+            // 
+            // cboVideoAdapter
+            // 
+            this.cboVideoAdapter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoAdapter.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.cboVideoAdapter.FormattingEnabled = true;
+            this.cboVideoAdapter.Location = new System.Drawing.Point(266, 35);
+            this.cboVideoAdapter.Name = "cboVideoAdapter";
+            this.cboVideoAdapter.Size = new System.Drawing.Size(236, 30);
+            this.cboVideoAdapter.TabIndex = 46;
+            this.cboVideoAdapter.SelectedIndexChanged += new System.EventHandler(this.cboVideoAdapter_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label8.Location = new System.Drawing.Point(144, 38);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 22);
+            this.label8.TabIndex = 45;
+            this.label8.Text = "Video adapter";
+            // 
+            // buttonSetAccruals
+            // 
+            this.buttonSetAccruals.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSetAccruals.FocusColor = System.Drawing.Color.Black;
+            this.buttonSetAccruals.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonSetAccruals.ImageNormal = ((System.Drawing.Image)(resources.GetObject("buttonSetAccruals.ImageNormal")));
+            this.buttonSetAccruals.ImagePressed = ((System.Drawing.Image)(resources.GetObject("buttonSetAccruals.ImagePressed")));
+            this.buttonSetAccruals.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.buttonSetAccruals.Location = new System.Drawing.Point(376, 265);
+            this.buttonSetAccruals.MinimumSize = new System.Drawing.Size(30, 30);
+            this.buttonSetAccruals.Name = "buttonSetAccruals";
+            this.buttonSetAccruals.RepeatRate = 150;
+            this.buttonSetAccruals.RepeatWhenHeldFor = 750;
+            this.buttonSetAccruals.Size = new System.Drawing.Size(121, 30);
+            this.buttonSetAccruals.TabIndex = 4;
+            this.buttonSetAccruals.Text = "Set Progressives";
+            this.buttonSetAccruals.UseVisualStyleBackColor = false;
+            // 
+            // cboVideoSettings
+            // 
+            this.cboVideoSettings.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVideoSettings.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.cboVideoSettings.FormattingEnabled = true;
+            this.cboVideoSettings.Location = new System.Drawing.Point(376, 218);
+            this.cboVideoSettings.Name = "cboVideoSettings";
+            this.cboVideoSettings.Size = new System.Drawing.Size(253, 30);
+            this.cboVideoSettings.TabIndex = 44;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label9.Location = new System.Drawing.Point(375, 193);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(116, 22);
+            this.label9.TabIndex = 43;
+            this.label9.Text = "Video settings";
+            // 
+            // cboDefaultScene
+            // 
+            this.cboDefaultScene.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDefaultScene.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.cboDefaultScene.FormattingEnabled = true;
+            this.cboDefaultScene.Location = new System.Drawing.Point(376, 158);
+            this.cboDefaultScene.Name = "cboDefaultScene";
+            this.cboDefaultScene.Size = new System.Drawing.Size(253, 30);
+            this.cboDefaultScene.TabIndex = 38;
+            // 
+            // lvAllowableScenes
+            // 
+            this.lvAllowableScenes.CheckBoxes = true;
+            this.lvAllowableScenes.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.lvAllowableScenes.FullRowSelect = true;
+            this.lvAllowableScenes.Location = new System.Drawing.Point(21, 102);
+            this.lvAllowableScenes.MultiSelect = false;
+            this.lvAllowableScenes.Name = "lvAllowableScenes";
+            this.lvAllowableScenes.Size = new System.Drawing.Size(326, 465);
+            this.lvAllowableScenes.TabIndex = 37;
+            this.lvAllowableScenes.UseCompatibleStateImageBehavior = false;
+            this.lvAllowableScenes.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvAllowableScenes_ColumnClick);
+            this.lvAllowableScenes.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.lvAllowableScenes_ItemChecked);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label20.Location = new System.Drawing.Point(21, 73);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(61, 22);
+            this.label20.TabIndex = 36;
+            this.label20.Text = "Scenes";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label21.Location = new System.Drawing.Point(375, 131);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(111, 22);
+            this.label21.TabIndex = 35;
+            this.label21.Text = "Default scene";
+            // 
+            // chkIsActive
+            // 
+            this.chkIsActive.AutoSize = true;
+            this.chkIsActive.BackColor = System.Drawing.Color.Transparent;
+            this.chkIsActive.Checked = true;
+            this.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkIsActive.Location = new System.Drawing.Point(376, 102);
+            this.chkIsActive.Name = "chkIsActive";
+            this.chkIsActive.Size = new System.Drawing.Size(77, 26);
+            this.chkIsActive.TabIndex = 34;
+            this.chkIsActive.Text = "Active";
+            this.chkIsActive.UseVisualStyleBackColor = false;
+            // 
             // tpCaller
             // 
             this.tpCaller.BackColor = System.Drawing.SystemColors.InactiveBorder;
@@ -1769,10 +1833,10 @@ namespace GTI.Modules.SystemSettings.UI
             // tpPaymentProcessing
             // 
             this.tpPaymentProcessing.Controls.Add(this.grpPaymentProcessing);
-            this.tpPaymentProcessing.Location = new System.Drawing.Point(4, 31);
+            this.tpPaymentProcessing.Location = new System.Drawing.Point(4, 22);
             this.tpPaymentProcessing.Name = "tpPaymentProcessing";
             this.tpPaymentProcessing.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPaymentProcessing.Size = new System.Drawing.Size(688, 585);
+            this.tpPaymentProcessing.Size = new System.Drawing.Size(688, 594);
             this.tpPaymentProcessing.TabIndex = 6;
             this.tpPaymentProcessing.Text = "Payment Processing";
             this.tpPaymentProcessing.UseVisualStyleBackColor = true;
@@ -1910,11 +1974,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpHallDisplay.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinColorCircleTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinBallCallTime)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupAdaptorSettings.ResumeLayout(false);
-            this.groupAdaptorSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numScreenSaverTimeout)).EndInit();
             this.tpPOS.ResumeLayout(false);
             this.grpPOS.ResumeLayout(false);
@@ -1924,6 +1987,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.tabPageGeneral.ResumeLayout(false);
             this.tabPageGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numReceiptCopies)).EndInit();
+            this.tpHallDisplay2.ResumeLayout(false);
+            this.groupAdaptorSettings.ResumeLayout(false);
+            this.groupAdaptorSettings.PerformLayout();
             this.tpCaller.ResumeLayout(false);
             this.grpCaller.ResumeLayout(false);
             this.grpCaller.PerformLayout();
@@ -1955,11 +2021,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.GroupBox grpHallDisplay;
         private System.Windows.Forms.CheckBox chkScreenSaverTimeout;
         private System.Windows.Forms.CheckBox chkUseVirtualDefault;
-        private System.Windows.Forms.ComboBox cboDefaultScene;
-        private System.Windows.Forms.ListView lvAllowableScenes;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.CheckBox chkIsActive;
         private System.Windows.Forms.Label ScreenSaverTimeoutLabel;
         private System.Windows.Forms.NumericUpDown numScreenSaverTimeout;
         private System.Windows.Forms.CheckBox chkUseVirtualFlashboardCamera;
@@ -2015,12 +2076,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtGlobalPrinter;
         private System.Windows.Forms.TabPage tpVideo;
-        private System.Windows.Forms.ComboBox cboVideoAdapter;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cboVideoSettings;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.GroupBox groupAdaptorSettings;
-        private Controls.ImageButton buttonSetAccruals;
         private System.Windows.Forms.CheckBox chkShowPayoutAmountDefault;
         private System.Windows.Forms.CheckBox chkShowPayoutAmounts;
         private System.Windows.Forms.TabPage tpCaller;
@@ -2070,6 +2125,22 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox checkPaymentProcessorAddress;
         private System.Windows.Forms.CheckBox checkPaymentProcessorEnabled;
         private System.Windows.Forms.CheckBox chkPaymentProcessingEnabled;
+        private System.Windows.Forms.TabPage tpHallDisplay2;
+        private System.Windows.Forms.GroupBox groupAdaptorSettings;
+        private Controls.ImageButton buttonSetAccruals;
+        private System.Windows.Forms.ComboBox cboVideoSettings;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cboDefaultScene;
+        private System.Windows.Forms.ListView lvAllowableScenes;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.CheckBox chkIsActive;
+        private System.Windows.Forms.ComboBox cboVideoAdapter;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox chkMinCircleTimeDefault;
+        private System.Windows.Forms.NumericUpDown numMinColorCircleTime;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.RadioButton rdCycleMode;
         
 	}
 }

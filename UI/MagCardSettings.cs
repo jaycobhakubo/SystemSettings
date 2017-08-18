@@ -22,7 +22,9 @@ namespace GTI.Modules.SystemSettings.UI
 		{
 			InitializeComponent();
             LoadLists(); // PDTS 1064
-			AddEventHandlers();
+
+            btnShiftFilterDown.Enabled = false;
+            btnShiftFilterUp.Enabled = false;
 
             if (!Common.IsAdmin)
             {
@@ -136,13 +138,6 @@ namespace GTI.Modules.SystemSettings.UI
         {
             m_bModified = true;
         }
-        
-		private void AddEventHandlers()
-		{
-			cbEndCard.TextChanged += new EventHandler(Validate);
-			cbStartCard.TextChanged += new EventHandler(Validate);
-			lstFilters.SelectedIndexChanged += new EventHandler(lstFilters_SelectedIndexChanged);
-		}
 
 		private void Validate(object sender, EventArgs e)
 		{
@@ -156,18 +151,28 @@ namespace GTI.Modules.SystemSettings.UI
 				btnAccept.Enabled = false;
 				btnTest.Enabled = false;
 			}
+
+            OnModified(sender, e);
 		}
 
 		private void lstFilters_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (lstFilters.SelectedItems.Count > 0)
-			{
-				btnDelete.Enabled = true;
-			}
-			else
-			{
-				btnDelete.Enabled = false;
-			}
+            if (lstFilters.SelectedItems.Count > 0)
+            {
+                btnDelete.Enabled = true;
+                btnCopyFilterToLab.Enabled = true;
+
+                if (lstFilters.Items.Count > 1)
+                {
+                    btnShiftFilterDown.Enabled = true;
+                    btnShiftFilterUp.Enabled = true;
+                }
+            }
+            else
+            {
+                if(lstFilters.Items.Count == 0)
+                    btnDelete.Enabled = false;
+            }
 		}
 
 		private bool LoadMagCardSettings()
@@ -481,6 +486,13 @@ namespace GTI.Modules.SystemSettings.UI
 
 		private void btnDelete_Click(object sender, EventArgs e)
 		{
+            if (lstFilters.SelectedItems.Count == 0)
+            {
+                btnDelete.Enabled = false;
+                btnCopyFilterToLab.Enabled = false;
+                return;
+            }
+
             int index = lstFilters.SelectedItems[0].Index;
 
             if (index < 0)
@@ -497,10 +509,19 @@ namespace GTI.Modules.SystemSettings.UI
 
                 lstFilters.Items[index].Focused = true;
                 lstFilters.Items[index].Selected = true;
+
+                if (lstFilters.Items.Count == 1)
+                {
+                    btnShiftFilterDown.Enabled = false;
+                    btnShiftFilterUp.Enabled = false;
+                }
             }
             else
             {
                 btnCopyFilterToLab.Enabled = false;
+                btnDelete.Enabled = false;
+                btnShiftFilterDown.Enabled = false;
+                btnShiftFilterUp.Enabled = false;
             }
 
             // Set the modified flag
@@ -527,7 +548,7 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 lstFilters.Items.Add(cbFilter.Text);
                 m_bModified = true;
-                btnCopyFilterToLab.Enabled = true;
+                lstFilters.Items[lstFilters.Items.Count - 1].Selected = true;
             }
 		}
 
@@ -575,10 +596,17 @@ namespace GTI.Modules.SystemSettings.UI
                         }
                         else
                         {
-                            if(magForm.MatchedFilter > 0 && settings.MSRFilters[magForm.MatchedFilter-1].ToLower().Contains("(?#ignore"))
+                            if (magForm.MatchedFilter > 0 && settings.MSRFilters[magForm.MatchedFilter - 1].ToLower().Contains("(?#ignore"))
+                            {
                                 GTI.Modules.Shared.MessageForm.Show("The card matches a filter to be ignored.", "Ignored", MessageFormTypes.OK);
+                            }
                             else
-                                GTI.Modules.Shared.MessageForm.Show("The card was read but no account number was found.", "No Account Number", MessageFormTypes.OK);
+                            {
+                                if(lstFilters.Items.Count > 0)
+                                    GTI.Modules.Shared.MessageForm.Show("The card does not match any filters.", "No Match", MessageFormTypes.OK);
+                                else
+                                    GTI.Modules.Shared.MessageForm.Show("The card does not match the format for ISO track 1 or ISO track 2.", "No Match", MessageFormTypes.OK);
+                            }
                         }
                     }
                     else
@@ -642,6 +670,10 @@ namespace GTI.Modules.SystemSettings.UI
 		private void btnReset_Click(object sender, EventArgs e)
 		{
 			LoadSettings();
+            btnDelete.Enabled = false;
+            btnCopyFilterToLab.Enabled = false;
+            btnShiftFilterDown.Enabled = false;
+            btnShiftFilterUp.Enabled = false;
 		}
 
         // PDTS 1064
@@ -940,15 +972,11 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnAnalyze_Click(object sender, EventArgs e)
         {
-            bool analyzeFromScratch = false;
-
             if (lstFilters.Items.Count > 0 && GTI.Modules.Shared.MessageForm.Show("You can analyze cards from scratch or using the curently defined settings.\n\nDo you want to start from scratch and replace the current settings?", "Clear Settings?", MessageFormTypes.YesNo_DefNO) == DialogResult.Yes)
             {
                 lstFilters.Items.Clear();
                 cbStartCard.Text = "";
                 cbEndCard.Text = "";
-
-                analyzeFromScratch = true;
             }
 
             MagCardForm magForm = new MagCardForm();
@@ -1149,6 +1177,23 @@ namespace GTI.Modules.SystemSettings.UI
 
             txtCardDigits.Focus();
             txtCardDigits.Select(0, -1);
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (!cbStartCard.ContainsFocus && !cbEndCard.ContainsFocus && !cbFilter.ContainsFocus)
+            {
+                if (keyData == Keys.T || keyData == Keys.D || keyData == Keys.Z ||
+                    keyData == Keys.W || keyData == Keys.A || keyData == Keys.F ||
+                    keyData == Keys.S || keyData == Keys.R || 
+                    keyData == (Keys.T | Keys.Shift) || keyData == (Keys.D | Keys.Shift) || keyData == (Keys.Z | Keys.Shift) ||
+                    keyData == (Keys.W | Keys.Shift) || keyData == (Keys.A | Keys.Shift) || keyData == (Keys.F | Keys.Shift) ||
+                    keyData == (Keys.S | Keys.Shift) || keyData == (Keys.R | Keys.Shift) ||
+                    keyData == Keys.Space || keyData == Keys.Enter || keyData == Keys.Return || keyData == (Keys.LButton|Keys.MButton|Keys.Back)) 
+                    return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     } // end class
 } // end namespace

@@ -98,6 +98,10 @@ namespace GTI.Modules.SystemSettings.UI
             callerSettings1.Hide();
             callerSettings1.Enabled = false;
 
+            blowerSettings.LoadSettings();
+            blowerSettings.Hide();
+            blowerSettings.Enabled = false;
+
             posSettings1.LoadSettings();
             posSettings1.Hide();
             posSettings1.Enabled = false;
@@ -313,8 +317,15 @@ namespace GTI.Modules.SystemSettings.UI
            // {
                 nodeParent = new TreeNode("Caller", 0, 1);
                 nodeParent.Tag = callerSettings1;
-                treeView1.Nodes.Add(nodeParent);
             //}
+
+            //US5335
+            if (Common.IsAdmin)
+            {
+                nodeChild = nodeParent.Nodes.Add("Blower Settings");
+                nodeChild.Tag = blowerSettings;
+            }
+            treeView1.Nodes.Add(nodeParent);
 
             //TA11876 Adding support for Charities
             nodeParent = new TreeNode("Charities", 0, 1);

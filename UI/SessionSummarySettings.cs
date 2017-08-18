@@ -28,6 +28,7 @@ namespace GTI.Modules.SystemSettings.UI
         #region MEMBER VARIABLE
 
         private bool m_bModified = false;
+        private List<Business.GenericCBOItem> m_UIModes = new List<Business.GenericCBOItem>();
 
         #endregion
 
@@ -36,6 +37,7 @@ namespace GTI.Modules.SystemSettings.UI
         public SessionSummarySettings()
         {
             InitializeComponent();
+            PopCombos();
         }
 
         #endregion
@@ -101,6 +103,18 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.SessionSummaryBankUsePreviousClose, out tempSettingValue);
             chkbxSetBankToEndBank.Checked = ParseBool(tempSettingValue.Value);
 
+            // US5345
+            Common.GetOpSettingValue(Setting.SessionSummaryViewMode, out tempSettingValue);
+            int viewMode = 0;
+            Int32.TryParse(tempSettingValue.Value, out viewMode);
+            foreach (Business.GenericCBOItem member in cboUIDisplayMode.Items)
+            {
+                if (member.CBOValueMember == viewMode)
+                {
+                    cboUIDisplayMode.SelectedItem = member;
+                    break;
+                }
+            }
 
             // Set the flag
             m_bModified = false;
@@ -120,6 +134,14 @@ namespace GTI.Modules.SystemSettings.UI
             s.Value = chkbxSetBankToEndBank.Checked.ToString();
             arrSettings.Add(s);
 
+            if (cboUIDisplayMode.SelectedItem != null)
+            {
+                Business.GenericCBOItem displayMode = (Business.GenericCBOItem)cboUIDisplayMode.SelectedItem;
+                s.Id = (int)Setting.SessionSummaryViewMode;
+                s.Value = displayMode.CBOValueMember.ToString();
+                arrSettings.Add(s);
+            }
+
             // Update the server
             if (!Common.SaveSystemSettings(arrSettings.ToArray()))
             {
@@ -130,6 +152,27 @@ namespace GTI.Modules.SystemSettings.UI
             m_bModified = false;
 
             return true;
+        }
+        
+        /// <summary>
+        /// Populates the combo boxes for the UI
+        /// </summary>
+        private void PopCombos()
+        {
+            // US5345
+            m_UIModes.Clear();
+            foreach (SessionSummaryViewModes value in Enum.GetValues(typeof(SessionSummaryViewModes)))
+            {
+                Business.GenericCBOItem cboItem = new Business.GenericCBOItem();
+                cboItem.CBOValueMember = (int)value;
+                cboItem.CBODisplayMember = EnumToString.GetDescription(value);
+
+                m_UIModes.Add(cboItem);
+            }
+            cboUIDisplayMode.Items.Clear();
+            cboUIDisplayMode.DataSource = m_UIModes;
+            cboUIDisplayMode.DisplayMember = "CBODisplayMember";
+            cboUIDisplayMode.ValueMember = "CBOValueMember";
         }
 
         #endregion

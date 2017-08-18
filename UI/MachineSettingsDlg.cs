@@ -207,6 +207,24 @@ namespace GTI.Modules.SystemSettings.UI
                         MessageForm.Show(this, string.Format(Resources.GetMachineSettingsFailed, e));
                     }
 
+                    //DE13621
+                    if (m_remoteDisplayConfigurations.Count != m_GetMachineCapabilitiesMsg.MachineCapabilitesList.Count)
+                    {//if there are more valid configurations than there are available adapters (such as if a video adapter connection gets loose)
+                        //ensure the correct configurations are disabled and saved to the server
+                        List<int> adapterNums = new List<int>();
+                        for (int i = 0; i < m_GetMachineCapabilitiesMsg.MachineCapabilitesList.Count; i++) //create list of valid adapter numbers
+                            adapterNums.Add(m_GetMachineCapabilitiesMsg.MachineCapabilitesList[i].AdapterNumber);
+
+                        foreach (RemoteDisplayConfiguration rdConfig in m_remoteDisplayConfigurations) //check each configuration's adapter number
+                        {
+                            if (!adapterNums.Contains(rdConfig.AdaptorID))
+                            { //set rdConfig.AdaptorEnabled to false, send message to server
+                                rdConfig.AdaptorEnabled = false;
+                                SaveRemoteDisplayConfigurations();
+                            }
+                        }
+                    }
+
                     PopulateAccrualDisplayItems();
 
                     string licenseResult = Common.GetLicenseSettingValue(LicenseSetting.AccrualEnabled);
@@ -315,6 +333,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (IsHallDisplayVisible == false)
             {
                 tabMachineDialog.TabPages.Remove(tpHallDisplay);
+                tabMachineDialog.TabPages.Remove(tpHallDisplay2);
             }
             else
             {
@@ -324,6 +343,10 @@ namespace GTI.Modules.SystemSettings.UI
             bool IsPOSVisible = (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(1))
                 || (m_nDeviceId == Device.POS.Id)
                 || (m_nDeviceId == Device.POSPortable.Id)
+                || (m_nDeviceId == Device.AdvancedPOSKiosk.Id)
+                || (m_nDeviceId == Device.BuyAgainKiosk.Id)
+                || (m_nDeviceId == Device.SimplePOSKiosk.Id)
+                || (m_nDeviceId == Device.HybridKiosk.Id)
                 || (m_nDeviceId == Device.POSManagement.Id);
             // Rally 	DE2837 Allow the caller to configure reciept printer
             //   || (m_nDeviceId == Device.Caller.Id);
@@ -572,13 +595,13 @@ namespace GTI.Modules.SystemSettings.UI
                 int scannerType;
                 if (int.TryParse(s.Value, out scannerType))
                 {
-                    cboCbbScannerType.SelectedIndex = scannerType;
+                    cboCbbScannerType.SelectedIndex = scannerType + 1;
                 }
             }
             else
             {
                 chkCbbScannerType.Checked = true;
-                cboCbbScannerType.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CbbScannerType));
+                cboCbbScannerType.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CbbScannerType))+1;
             }
 
             //US4511: Support Chatsworth CBB scanner
@@ -852,19 +875,36 @@ namespace GTI.Modules.SystemSettings.UI
                 if (m_AnticipationType == 1)
                 {
                     rdChangeBallColor.Checked = true;
+                    label32.Enabled = false;
+                    numMinColorCircleTime.Enabled = false;
+                    chkMinCircleTimeDefault.Enabled = false;
                 }
                 else if (m_AnticipationType == 2)
                 {
                     rdNextBallOnly.Checked = true;
+                    label32.Enabled = false;
+                    numMinColorCircleTime.Enabled = false;
+                    chkMinCircleTimeDefault.Enabled = false;
+                }
+                else if (m_AnticipationType == 0)
+                {
+                    rdChangeBGColor.Checked = true;
+                    label32.Enabled = false;
+                    numMinColorCircleTime.Enabled = false;
+                    chkMinCircleTimeDefault.Enabled = false;
                 }
                 else
                 {
-                    rdChangeBGColor.Checked = true;
+                    rdCycleMode.Checked = true;
+                    label32.Enabled = true;
+                    numMinColorCircleTime.Enabled = true;
+                    chkMinCircleTimeDefault.Enabled = true;
                 }
 
                 rdChangeBallColor.Enabled = true;
                 rdNextBallOnly.Enabled = true;
                 rdChangeBGColor.Enabled = true;
+                rdCycleMode.Enabled = true;
             }
 
             else
@@ -875,19 +915,36 @@ namespace GTI.Modules.SystemSettings.UI
                 if (m_AnticipationType == 1)
                 {
                     rdChangeBallColor.Checked = true;
+                    label32.Enabled = false;
+                    numMinColorCircleTime.Enabled = false;
+                    chkMinCircleTimeDefault.Enabled = false;
                 }
                 else if (m_AnticipationType == 2)
                 {
                     rdNextBallOnly.Checked = true;
+                    label32.Enabled = false;
+                    numMinColorCircleTime.Enabled = false;
+                    chkMinCircleTimeDefault.Enabled = false;
+                }
+                else if (m_AnticipationType == 0)
+                {
+                    rdChangeBGColor.Checked = true;
+                    label32.Enabled = false;
+                    numMinColorCircleTime.Enabled = false;
+                    chkMinCircleTimeDefault.Enabled = false;
                 }
                 else
                 {
-                    rdChangeBGColor.Checked = true;
+                    rdCycleMode.Checked = true;
+                    label32.Enabled = true;
+                    numMinColorCircleTime.Enabled = true;
+                    chkMinCircleTimeDefault.Enabled = true;
                 }
 
                 rdChangeBallColor.Enabled = false;
                 rdNextBallOnly.Enabled = false;
                 rdChangeBGColor.Enabled = false;
+                rdCycleMode.Enabled = false;
             }
 
             if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.BallImageMinDisplayTime, out s))//US4727
@@ -903,6 +960,22 @@ namespace GTI.Modules.SystemSettings.UI
                 numMinBallCallTime.Value = Convert.ToInt32(Common.GetSystemSetting(Setting.BallImageMinDisplayTime));
                 numMinBallCallTime.Enabled = false;
                 label23.Enabled = false;
+            }
+
+            if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.ColorCircleMinDisplayTime, out s))
+            {
+                chkMinCircleTimeDefault.Checked = false;
+                numMinColorCircleTime.Value = Convert.ToInt32(s.Value);
+                numMinColorCircleTime.Enabled = rdCycleMode.Checked;
+                label32.Enabled = rdCycleMode.Checked;
+                
+            }
+            else
+            {
+                chkMinCircleTimeDefault.Checked = true;
+                numMinColorCircleTime.Value = Convert.ToInt32(Common.GetSystemSetting(Setting.ColorCircleMinDisplayTime));
+                numMinColorCircleTime.Enabled = false;
+                label32.Enabled = false;
             }
 
             cboVideoAdapter.Items.AddRange(m_GetMachineCapabilitiesMsg.MachineCapabilitesList.ToArray());
@@ -979,9 +1052,10 @@ namespace GTI.Modules.SystemSettings.UI
             //SettingValue cbbScannerTypeValue = new SettingValue
             //{
             //    Id = (int)Setting.CbbScannerType,
-            //    //index 0 = PDI VMR-138
-            //    //index 1 = Chatsworth ACP-100
-            //    //index 2 = Chatsworth ACP-200
+            //    //index 0 = None
+            //    //index 1 = PDI VMR-138
+            //    //index 2 = Chatsworth ACP-100
+            //    //index 3 = Chatsworth ACP-200
             //    Value = cboCbbScannerType.SelectedIndex.ToString()
             //};
 
@@ -1092,7 +1166,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (!chkCbbScannerType.Checked)
             {
                 s.Id = (int)Setting.CbbScannerType;
-                s.Value = cboCbbScannerType.SelectedIndex.ToString();
+                s.Value = (cboCbbScannerType.SelectedIndex - 1).ToString();
                 arrSettings.Add(s);
             }
 
@@ -1188,6 +1262,13 @@ namespace GTI.Modules.SystemSettings.UI
                 s.Id = (int)Setting.BallImageMinDisplayTime;
                 s.Value = numMinBallCallTime.Value.ToString();
                 arrSettings.Add(s);//US4727
+            }
+
+            if (!chkMinCircleTimeDefault.Checked)
+            {
+                s.Id = (int)Setting.ColorCircleMinDisplayTime;
+                s.Value = numMinColorCircleTime.Value.ToString();
+                arrSettings.Add(s);
             }
 
             if (!chkAnticipationDefault.Checked)
@@ -1653,6 +1734,7 @@ namespace GTI.Modules.SystemSettings.UI
             rdChangeBallColor.Enabled = !chkAnticipationDefault.Checked;
             rdChangeBGColor.Enabled = !chkAnticipationDefault.Checked;
             rdNextBallOnly.Enabled = !chkAnticipationDefault.Checked;
+            rdCycleMode.Enabled = !chkAnticipationDefault.Checked;
 
             if (chkAnticipationDefault.Checked)
             {
@@ -1666,9 +1748,13 @@ namespace GTI.Modules.SystemSettings.UI
                 {
                     rdNextBallOnly.Checked = true;
                 }
-                else
+                else if (m_AnticipationType == 0)
                 {
                     rdChangeBGColor.Checked = true;
+                }
+                else
+                {
+                    rdCycleMode.Checked = true;
                 }
             }
         }
@@ -1919,7 +2005,7 @@ namespace GTI.Modules.SystemSettings.UI
             LoadScenes();
             PopCboDefaultScene();
 
-            if (cboVideoSettings.Items.Count > 0)
+            if (cboVideoSettings.Items.Count > 0) 
             {
                 cboVideoSettings.SelectedItem = remoteDisplayConfiguration.Resolution;
             }
@@ -2136,6 +2222,24 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 txtPaymentProcessorPort.Enabled = true;
+            }
+        }
+
+        private void rdCycleMode_CheckedChanged(object sender, EventArgs e)
+        {
+            chkMinCircleTimeDefault.Enabled = rdCycleMode.Checked;
+            numMinColorCircleTime.Enabled = rdCycleMode.Checked && !chkMinCircleTimeDefault.Checked;
+            label32.Enabled = rdCycleMode.Checked && !chkMinCircleTimeDefault.Checked;
+        }
+
+        private void chkMinCircleTimeDefault_CheckedChanged(object sender, EventArgs e)
+        {
+            numMinColorCircleTime.Enabled = !chkMinCircleTimeDefault.Checked && rdCycleMode.Checked;
+
+            label32.Enabled = !chkMinCircleTimeDefault.Checked && rdCycleMode.Checked;
+            if (chkMinCircleTimeDefault.Checked)
+            {
+                numMinColorCircleTime.Value = Common.ParseInt(Common.GetSystemSetting(Setting.ColorCircleMinDisplayTime));
             }
         }
 

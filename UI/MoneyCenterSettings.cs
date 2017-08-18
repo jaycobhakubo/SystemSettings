@@ -121,7 +121,11 @@ namespace GTI.Modules.SystemSettings.UI
             //US5107: System Settings: Set number of payout signature lines on the payout receipt
             Common.GetOpSettingValue(Setting.PayoutReceiptSignatureLineCount, out tempSettingValue);
             numPayoutSignatureLines.Text = tempSettingValue.Value;
-            
+
+            //DE13632
+            Common.GetOpSettingValue(Setting.BankCloseReceiptSignatureLineCount, out tempSettingValue);
+            numBankCloseSignatureLines.Value = Convert.ToDecimal(tempSettingValue.Value);
+
             //START RALLY US1906
             try
             {
@@ -149,7 +153,6 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 Common.GetOpSettingValue(Setting.NumberOfBankCloseReceipts, out tempSettingValue);
                 numBankCloseCopies.Value = Convert.ToDecimal(tempSettingValue.Value);
-
             }
             catch
             {
@@ -342,6 +345,9 @@ namespace GTI.Modules.SystemSettings.UI
 
             //US5107: Operator Settings: Set number of payout signature lines on the payout receipt
             Common.SetOpSettingValue(Setting.PayoutReceiptSignatureLineCount, numPayoutSignatureLines.Value.ToString(CultureInfo.InvariantCulture));
+
+            //DE13632: Operator Settings: Set number of bank close signature lines on the receipt
+            Common.SetOpSettingValue(Setting.BankCloseReceiptSignatureLineCount, numBankCloseSignatureLines.Value.ToString(CultureInfo.InvariantCulture));
 
             //START RALLY US1572
             // Create a list of just these settings

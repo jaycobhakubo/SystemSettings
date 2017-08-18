@@ -35,6 +35,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.textBoxMinPrizeWinAmount = new GTI.Controls.TextBoxNumeric();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.numBankCloseSignatureLines = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.chkPrintZeroAmount = new System.Windows.Forms.CheckBox();
             this.numBankCloseCopies = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,6 +74,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numBankCloseSignatureLines)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBankCloseCopies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBankDropCopies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBankIssueCopies)).BeginInit();
@@ -118,6 +121,8 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.numBankCloseSignatureLines);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.chkPrintZeroAmount);
             this.groupBox2.Controls.Add(this.numBankCloseCopies);
             this.groupBox2.Controls.Add(this.label2);
@@ -128,6 +133,22 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // numBankCloseSignatureLines
+            // 
+            resources.ApplyResources(this.numBankCloseSignatureLines, "numBankCloseSignatureLines");
+            this.numBankCloseSignatureLines.Name = "numBankCloseSignatureLines";
+            this.numBankCloseSignatureLines.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numBankCloseSignatureLines.ValueChanged += new System.EventHandler(this.OnModified);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
             // 
             // chkPrintZeroAmount
             // 
@@ -423,6 +444,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox6.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numBankCloseSignatureLines)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBankCloseCopies)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBankDropCopies)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBankIssueCopies)).EndInit();
@@ -481,5 +503,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkPrintWordValue;
         private System.Windows.Forms.NumericUpDown numPayoutSignatureLines;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown numBankCloseSignatureLines;
+        private System.Windows.Forms.Label label5;
 	}
 }

@@ -154,7 +154,37 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;maxLoginLimitLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
+  </data>
+  <data name="chkAutoLogout.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAutoLogout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAutoLogout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 398</value>
+  </data>
+  <data name="chkAutoLogout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 26</value>
+  </data>
+  <data name="chkAutoLogout.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="chkAutoLogout.Text" xml:space="preserve">
+    <value>Automatically log out when screen saver displays</value>
+  </data>
+  <data name="&gt;&gt;chkAutoLogout.Name" xml:space="preserve">
+    <value>chkAutoLogout</value>
+  </data>
+  <data name="&gt;&gt;chkAutoLogout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAutoLogout.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkAutoLogout.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="chkUseNumericKeypad.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -163,7 +193,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkUseNumericKeypad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 430</value>
+    <value>83, 462</value>
   </data>
   <data name="chkUseNumericKeypad.Size" type="System.Drawing.Size, System.Drawing">
     <value>258, 26</value>
@@ -184,7 +214,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkUseNumericKeypad.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="numScreenSaverWait.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -208,7 +238,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numScreenSaverWait.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -235,7 +265,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chkScreenSaverEnabled.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -262,7 +292,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkScreenSaverEnabled.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="numMaxLoginLimit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -286,7 +316,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numMaxLoginLimit.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chkUsePasswordComplexity.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -295,7 +325,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkUsePasswordComplexity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 398</value>
+    <value>83, 430</value>
   </data>
   <data name="chkUsePasswordComplexity.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 26</value>
@@ -316,7 +346,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkUsePasswordComplexity.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="numPinExpireDays.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -340,7 +370,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numPinExpireDays.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="pinExpireDaysLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -370,7 +400,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;pinExpireDaysLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="numPasswordLockOutAttempts.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -394,7 +424,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numPasswordLockOutAttempts.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -424,7 +454,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="numPreviousPasswordReuse.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -448,7 +478,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numPreviousPasswordReuse.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -478,7 +508,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="numAutomaticUnlockTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -502,7 +532,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numAutomaticUnlockTime.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -532,7 +562,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="numMinimumPasswordLength.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -556,7 +586,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numMinimumPasswordLength.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -586,7 +616,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -640,7 +670,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.388, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.836, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -673,7 +703,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.388, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.836, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -694,6 +724,6 @@
     <value>SecuritySettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.11.0.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

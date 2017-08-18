@@ -30,13 +30,6 @@ namespace GTI.Modules.SystemSettings.UI
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MagCardSettings));
-            this.btnReset = new GTI.Controls.ImageButton();
-            this.btnSave = new GTI.Controls.ImageButton();
-            this.magneticCardGroupBox = new System.Windows.Forms.GroupBox();
-            this.gbSources = new System.Windows.Forms.GroupBox();
-            this.groupBoxTCPInput = new System.Windows.Forms.GroupBox();
-            this.lblReaderAddress = new System.Windows.Forms.Label();
-            this.txtReaderTrack = new System.Windows.Forms.TextBox();
             this.contextMenuStripForText = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Undo = new System.Windows.Forms.ToolStripMenuItem();
             this.Separator = new System.Windows.Forms.ToolStripSeparator();
@@ -44,6 +37,13 @@ namespace GTI.Modules.SystemSettings.UI
             this.Copy = new System.Windows.Forms.ToolStripMenuItem();
             this.Paste = new System.Windows.Forms.ToolStripMenuItem();
             this.Delete = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStripForReadOnlyText = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuClear = new System.Windows.Forms.ToolStripMenuItem();
+            this.magneticCardGroupBox = new System.Windows.Forms.GroupBox();
+            this.gbSources = new System.Windows.Forms.GroupBox();
+            this.groupBoxTCPInput = new System.Windows.Forms.GroupBox();
+            this.lblReaderAddress = new System.Windows.Forms.Label();
+            this.txtReaderTrack = new System.Windows.Forms.TextBox();
             this.txtReaderIPAddress = new System.Windows.Forms.TextBox();
             this.lblCardTrack = new System.Windows.Forms.Label();
             this.lblReaderPort = new System.Windows.Forms.Label();
@@ -63,8 +63,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtFilterResult = new System.Windows.Forms.TextBox();
-            this.contextMenuStripForReadOnlyText = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuClear = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAccept = new GTI.Controls.ImageButton();
             this.cbFilter = new System.Windows.Forms.ComboBox();
@@ -81,85 +79,17 @@ namespace GTI.Modules.SystemSettings.UI
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnTest = new GTI.Controls.ImageButton();
             this.btnDelete = new GTI.Controls.ImageButton();
+            this.btnReset = new GTI.Controls.ImageButton();
+            this.btnSave = new GTI.Controls.ImageButton();
+            this.contextMenuStripForText.SuspendLayout();
+            this.contextMenuStripForReadOnlyText.SuspendLayout();
             this.magneticCardGroupBox.SuspendLayout();
             this.gbSources.SuspendLayout();
             this.groupBoxTCPInput.SuspendLayout();
-            this.contextMenuStripForText.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.gbCardLab.SuspendLayout();
-            this.contextMenuStripForReadOnlyText.SuspendLayout();
             this.gbFilters.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnReset, "btnReset");
-            this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // magneticCardGroupBox
-            // 
-            this.magneticCardGroupBox.BackColor = System.Drawing.Color.Transparent;
-            this.magneticCardGroupBox.Controls.Add(this.gbSources);
-            this.magneticCardGroupBox.Controls.Add(this.gbCardLab);
-            this.magneticCardGroupBox.Controls.Add(this.gbFilters);
-            resources.ApplyResources(this.magneticCardGroupBox, "magneticCardGroupBox");
-            this.magneticCardGroupBox.Name = "magneticCardGroupBox";
-            this.magneticCardGroupBox.TabStop = false;
-            // 
-            // gbSources
-            // 
-            this.gbSources.Controls.Add(this.groupBoxTCPInput);
-            this.gbSources.Controls.Add(this.groupBox4);
-            this.gbSources.Controls.Add(this.cboMagCardReaderMode);
-            resources.ApplyResources(this.gbSources, "gbSources");
-            this.gbSources.Name = "gbSources";
-            this.gbSources.TabStop = false;
-            // 
-            // groupBoxTCPInput
-            // 
-            this.groupBoxTCPInput.Controls.Add(this.lblReaderAddress);
-            this.groupBoxTCPInput.Controls.Add(this.txtReaderTrack);
-            this.groupBoxTCPInput.Controls.Add(this.txtReaderIPAddress);
-            this.groupBoxTCPInput.Controls.Add(this.lblCardTrack);
-            this.groupBoxTCPInput.Controls.Add(this.lblReaderPort);
-            this.groupBoxTCPInput.Controls.Add(this.txtReaderPort);
-            resources.ApplyResources(this.groupBoxTCPInput, "groupBoxTCPInput");
-            this.groupBoxTCPInput.Name = "groupBoxTCPInput";
-            this.groupBoxTCPInput.TabStop = false;
-            // 
-            // lblReaderAddress
-            // 
-            resources.ApplyResources(this.lblReaderAddress, "lblReaderAddress");
-            this.lblReaderAddress.Name = "lblReaderAddress";
-            // 
-            // txtReaderTrack
-            // 
-            this.txtReaderTrack.ContextMenuStrip = this.contextMenuStripForText;
-            resources.ApplyResources(this.txtReaderTrack, "txtReaderTrack");
-            this.txtReaderTrack.Name = "txtReaderTrack";
-            this.txtReaderTrack.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // contextMenuStripForText
             // 
@@ -205,6 +135,62 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             this.Delete.Name = "Delete";
             resources.ApplyResources(this.Delete, "Delete");
+            // 
+            // contextMenuStripForReadOnlyText
+            // 
+            this.contextMenuStripForReadOnlyText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuClear});
+            this.contextMenuStripForReadOnlyText.Name = "contextMenuStripFilterResults";
+            resources.ApplyResources(this.contextMenuStripForReadOnlyText, "contextMenuStripForReadOnlyText");
+            this.contextMenuStripForReadOnlyText.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip_ItemClicked);
+            // 
+            // toolStripMenuClear
+            // 
+            this.toolStripMenuClear.Name = "toolStripMenuClear";
+            resources.ApplyResources(this.toolStripMenuClear, "toolStripMenuClear");
+            // 
+            // magneticCardGroupBox
+            // 
+            this.magneticCardGroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.magneticCardGroupBox.Controls.Add(this.gbSources);
+            this.magneticCardGroupBox.Controls.Add(this.gbCardLab);
+            this.magneticCardGroupBox.Controls.Add(this.gbFilters);
+            resources.ApplyResources(this.magneticCardGroupBox, "magneticCardGroupBox");
+            this.magneticCardGroupBox.Name = "magneticCardGroupBox";
+            this.magneticCardGroupBox.TabStop = false;
+            // 
+            // gbSources
+            // 
+            this.gbSources.Controls.Add(this.groupBoxTCPInput);
+            this.gbSources.Controls.Add(this.groupBox4);
+            this.gbSources.Controls.Add(this.cboMagCardReaderMode);
+            resources.ApplyResources(this.gbSources, "gbSources");
+            this.gbSources.Name = "gbSources";
+            this.gbSources.TabStop = false;
+            // 
+            // groupBoxTCPInput
+            // 
+            this.groupBoxTCPInput.Controls.Add(this.lblReaderAddress);
+            this.groupBoxTCPInput.Controls.Add(this.txtReaderTrack);
+            this.groupBoxTCPInput.Controls.Add(this.txtReaderIPAddress);
+            this.groupBoxTCPInput.Controls.Add(this.lblCardTrack);
+            this.groupBoxTCPInput.Controls.Add(this.lblReaderPort);
+            this.groupBoxTCPInput.Controls.Add(this.txtReaderPort);
+            resources.ApplyResources(this.groupBoxTCPInput, "groupBoxTCPInput");
+            this.groupBoxTCPInput.Name = "groupBoxTCPInput";
+            this.groupBoxTCPInput.TabStop = false;
+            // 
+            // lblReaderAddress
+            // 
+            resources.ApplyResources(this.lblReaderAddress, "lblReaderAddress");
+            this.lblReaderAddress.Name = "lblReaderAddress";
+            // 
+            // txtReaderTrack
+            // 
+            this.txtReaderTrack.ContextMenuStrip = this.contextMenuStripForText;
+            resources.ApplyResources(this.txtReaderTrack, "txtReaderTrack");
+            this.txtReaderTrack.Name = "txtReaderTrack";
+            this.txtReaderTrack.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // txtReaderIPAddress
             // 
@@ -252,7 +238,7 @@ namespace GTI.Modules.SystemSettings.UI
             resources.GetString("cbStartCard.Items")});
             this.cbStartCard.Name = "cbStartCard";
             this.cbStartCard.SelectedIndexChanged += new System.EventHandler(this.cbStartCard_SelectedIndexChanged);
-            this.cbStartCard.TextChanged += new System.EventHandler(this.OnModified);
+            this.cbStartCard.TextChanged += new System.EventHandler(this.Validate);
             // 
             // label7
             // 
@@ -273,7 +259,7 @@ namespace GTI.Modules.SystemSettings.UI
             resources.GetString("cbEndCard.Items")});
             this.cbEndCard.Name = "cbEndCard";
             this.cbEndCard.SelectedIndexChanged += new System.EventHandler(this.cbEndCard_SelectedIndexChanged);
-            this.cbEndCard.TextChanged += new System.EventHandler(this.OnModified);
+            this.cbEndCard.TextChanged += new System.EventHandler(this.Validate);
             // 
             // label5
             // 
@@ -358,19 +344,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.txtFilterResult, "txtFilterResult");
             this.txtFilterResult.Name = "txtFilterResult";
             this.txtFilterResult.ReadOnly = true;
-            // 
-            // contextMenuStripForReadOnlyText
-            // 
-            this.contextMenuStripForReadOnlyText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuClear});
-            this.contextMenuStripForReadOnlyText.Name = "contextMenuStripFilterResults";
-            resources.ApplyResources(this.contextMenuStripForReadOnlyText, "contextMenuStripForReadOnlyText");
-            this.contextMenuStripForReadOnlyText.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip_ItemClicked);
-            // 
-            // toolStripMenuClear
-            // 
-            this.toolStripMenuClear.Name = "toolStripMenuClear";
-            resources.ApplyResources(this.toolStripMenuClear, "toolStripMenuClear");
             // 
             // label1
             // 
@@ -457,8 +430,8 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // btnCopyFilterToLab
             // 
-            this.btnCopyFilterToLab.FocusColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.btnCopyFilterToLab, "btnCopyFilterToLab");
+            this.btnCopyFilterToLab.FocusColor = System.Drawing.Color.Black;
             this.btnCopyFilterToLab.ForeColor = System.Drawing.Color.Black;
             this.btnCopyFilterToLab.ImageIcon = global::GTI.Modules.SystemSettings.Properties.Resources.ArrowRight;
             this.btnCopyFilterToLab.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
@@ -472,11 +445,11 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // btnShiftFilterDown
             // 
+            resources.ApplyResources(this.btnShiftFilterDown, "btnShiftFilterDown");
             this.btnShiftFilterDown.FocusColor = System.Drawing.Color.Black;
             this.btnShiftFilterDown.ImageIcon = global::GTI.Modules.SystemSettings.Properties.Resources.ArrowDown;
             this.btnShiftFilterDown.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnShiftFilterDown.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            resources.ApplyResources(this.btnShiftFilterDown, "btnShiftFilterDown");
             this.btnShiftFilterDown.Name = "btnShiftFilterDown";
             this.btnShiftFilterDown.RepeatRate = 150;
             this.btnShiftFilterDown.RepeatWhenHeldFor = 750;
@@ -484,11 +457,11 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // btnShiftFilterUp
             // 
+            resources.ApplyResources(this.btnShiftFilterUp, "btnShiftFilterUp");
             this.btnShiftFilterUp.FocusColor = System.Drawing.Color.Black;
             this.btnShiftFilterUp.ImageIcon = global::GTI.Modules.SystemSettings.Properties.Resources.ArrowUp;
             this.btnShiftFilterUp.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnShiftFilterUp.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            resources.ApplyResources(this.btnShiftFilterUp, "btnShiftFilterUp");
             this.btnShiftFilterUp.Name = "btnShiftFilterUp";
             this.btnShiftFilterUp.RepeatRate = 150;
             this.btnShiftFilterUp.RepeatWhenHeldFor = 750;
@@ -512,8 +485,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.lstFilters.HideSelection = false;
             this.lstFilters.MultiSelect = false;
             this.lstFilters.Name = "lstFilters";
+            this.lstFilters.ShowGroups = false;
             this.lstFilters.UseCompatibleStateImageBehavior = false;
             this.lstFilters.View = System.Windows.Forms.View.Details;
+            this.lstFilters.SelectedIndexChanged += new System.EventHandler(this.lstFilters_SelectedIndexChanged);
             // 
             // columnHeader4
             // 
@@ -545,6 +520,33 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
+            this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.RepeatRate = 150;
+            this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
+            this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.RepeatRate = 150;
+            this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // MagCardSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -554,16 +556,16 @@ namespace GTI.Modules.SystemSettings.UI
             this.DoubleBuffered = true;
             resources.ApplyResources(this, "$this");
             this.Name = "MagCardSettings";
+            this.contextMenuStripForText.ResumeLayout(false);
+            this.contextMenuStripForReadOnlyText.ResumeLayout(false);
             this.magneticCardGroupBox.ResumeLayout(false);
             this.gbSources.ResumeLayout(false);
             this.groupBoxTCPInput.ResumeLayout(false);
             this.groupBoxTCPInput.PerformLayout();
-            this.contextMenuStripForText.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.gbCardLab.ResumeLayout(false);
             this.gbCardLab.PerformLayout();
-            this.contextMenuStripForReadOnlyText.ResumeLayout(false);
             this.gbFilters.ResumeLayout(false);
             this.gbFilters.PerformLayout();
             this.ResumeLayout(false);

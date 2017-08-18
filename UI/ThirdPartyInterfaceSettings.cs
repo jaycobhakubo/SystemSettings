@@ -173,6 +173,7 @@ namespace GTI.Modules.SystemSettings.UI
         {
             SettingValue tempSettingValue;
             int tempInt;
+            bool internalInterface = false;
 
             Common.GetOpSettingValue(Setting.ThirdPartyPlayerInterfaceID, out tempSettingValue);
             if (Int32.TryParse(tempSettingValue.Value, out tempInt))
@@ -188,6 +189,8 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 cbInterface.SelectedIndex = GetIndexForInterface(InterfaceFor.InternalEdgeTracking);
             }
+
+            internalInterface = cbInterface.SelectedIndex == GetIndexForInterface(InterfaceFor.InternalEdgeTracking);
 
             Common.GetOpSettingValue(Setting.ThirdPartyTimeout, out tempSettingValue);
             if(Int32.TryParse(tempSettingValue.Value, out tempInt))
@@ -342,17 +345,37 @@ namespace GTI.Modules.SystemSettings.UI
 
             cbPointsTransferAsDollarsForRedemptions_CheckedChanged(null, new EventArgs());
 
-            Common.GetOpSettingValue(Setting.ThirdPartyPlayerSyncMode, out tempSettingValue);
-            if (Int32.TryParse(tempSettingValue.Value, out tempInt))
+            if (internalInterface)
             {
-                if (tempInt >= 0 && tempInt < cbxPlayerSyncMode.Items.Count) //in range, use it
-                    cbxPlayerSyncMode.SelectedIndex = tempInt;
-                else //default to real-time
+                lblPlayerSyncMode.Text = "Player points mode:";
+                cbxPlayerSyncMode.Items.Clear();
+                cbxPlayerSyncMode.Items.AddRange(new string[] { "Use points in database", "Use points in database & update export table" });
+
+                Common.GetOpSettingValue(Setting.AddInternalPlayerTrackingToPlayerClubPointsTable, out tempSettingValue);
+
+                if (tempSettingValue.Value[0] == 'T' || tempSettingValue.Value[0] == 't')
+                    cbxPlayerSyncMode.SelectedIndex = 1;
+                else
                     cbxPlayerSyncMode.SelectedIndex = 0;
             }
             else
             {
-                cbxPlayerSyncMode.SelectedIndex = 0;
+                lblPlayerSyncMode.Text = "Player sync mode:";
+                cbxPlayerSyncMode.Items.Clear();
+                cbxPlayerSyncMode.Items.AddRange(new string[] { "Real-time", "PIN verification & points", "PIN verification, points, & updating", "Disconnected" });
+
+                Common.GetOpSettingValue(Setting.ThirdPartyPlayerSyncMode, out tempSettingValue);
+                if (Int32.TryParse(tempSettingValue.Value, out tempInt))
+                {
+                    if (tempInt >= 0 && tempInt < 4) //in range, use it
+                        cbxPlayerSyncMode.SelectedIndex = tempInt;
+                    else //default to real-time
+                        cbxPlayerSyncMode.SelectedIndex = 0;
+                }
+                else
+                {
+                    cbxPlayerSyncMode.SelectedIndex = 0;
+                }
             }
 
             //set the initial labels for point/points
@@ -458,9 +481,26 @@ namespace GTI.Modules.SystemSettings.UI
             s.Value = (cbPointsTransferAsDollarsForSales.Checked).ToString();
             tpiSettings.Add(s);
 
-            s.Id = (int)Setting.ThirdPartyPlayerSyncMode;
-            s.Value = cbxPlayerSyncMode.SelectedIndex.ToString();
-            tpiSettings.Add(s);
+            if (lblPlayerSyncMode.Text == "Player sync mode:") //not internal
+            {
+                s.Id = (int)Setting.ThirdPartyPlayerSyncMode;
+                s.Value = cbxPlayerSyncMode.SelectedIndex.ToString(); //0=real-time, 1=when needed, when needed & post
+                tpiSettings.Add(s);
+
+                s.Id = (int)Setting.AddInternalPlayerTrackingToPlayerClubPointsTable;
+                s.Value = false.ToString();
+                tpiSettings.Add(s);
+            }
+            else //internal tracking
+            {
+                s.Id = (int)Setting.ThirdPartyPlayerSyncMode;
+                s.Value = "0"; //real-time
+                tpiSettings.Add(s);
+
+                s.Id = (int)Setting.AddInternalPlayerTrackingToPlayerClubPointsTable;
+                s.Value = (cbxPlayerSyncMode.SelectedIndex == 1).ToString(); //use table?
+                tpiSettings.Add(s);
+            }
 
             // Update the server
             if (!Common.SaveSystemSettings(tpiSettings.ToArray()))
@@ -515,17 +555,28 @@ namespace GTI.Modules.SystemSettings.UI
 
             cbExternalRating.Enabled = false;
             lblPlayerSyncMode.Visible = true;
+
+            cbxPlayerSyncMode.Items.Clear();
+
+            if (ourInterface != InterfaceFor.InternalEdgeTracking)
+            {
+                lblPlayerSyncMode.Text = "Player sync mode:";
+                cbxPlayerSyncMode.Items.AddRange(new string[] { "Real-time", "PIN verification & points", "PIN verification, points, & updating", "Disconnected" });
+            }
+            else
+            {
+                lblPlayerSyncMode.Text = "Player points mode:";
+                cbxPlayerSyncMode.Items.AddRange(new string[] { "Use points in database", "Use points in database & update export table" });
+            }
+
             cbxPlayerSyncMode.Visible = true;
-            cbxPlayerSyncMode.SelectedIndex = 0; //real-time
+            cbxPlayerSyncMode.SelectedIndex = 0; //real-time or use points in database
             cbxPlayerSyncMode.Enabled = Common.IsAdmin;
 
             switch (ourInterface)
             {
                 case InterfaceFor.InternalEdgeTracking:
                 {
-                    lblPlayerSyncMode.Visible = false;
-                    cbxPlayerSyncMode.Visible = false;
-
                     gbOasis10.Visible = false;
 
                     gbPIN.Visible = false;

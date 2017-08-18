@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
+using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 using GTI.Modules.Shared;
@@ -26,6 +27,7 @@ namespace GTI.Modules.SystemSettings.UI
 
 		// Members
 		bool m_bModified = false;
+	    private int m_originalMaxCardLimit;
 
 		public BingoSettings()
 		{
@@ -70,7 +72,19 @@ namespace GTI.Modules.SystemSettings.UI
 		}
 
 		public override bool SaveSettings()
-		{
+        {
+            //US5287: adding a confirmation prompt to change max card limit
+            if (m_originalMaxCardLimit != numMaxCardLimit.Value)
+            {
+                var dialogResults = MessageForm.Show("Changing the max card limit may override the session card limit. Do you want to continue?", "Max Card Limit", MessageFormTypes.YesNo);
+
+                if (dialogResults == DialogResult.No)
+                {
+                    numMaxCardLimit.Value = m_originalMaxCardLimit;
+                    return false;
+                }
+            }
+
 			Common.BeginWait();
 
 			bool bResult = SaveBingoSettings();
@@ -205,7 +219,6 @@ namespace GTI.Modules.SystemSettings.UI
                 numMaxCardLimit.Enabled = false;
                 m_labelMaxCardLimit.Enabled = false;
             }
-
             else
             {
                 string value;
@@ -224,12 +237,12 @@ namespace GTI.Modules.SystemSettings.UI
                 }
             }
 
-            numMaxCardLimit.Value = Convert.ToInt32(tempSettingValue.Value);
+            m_originalMaxCardLimit = Convert.ToInt32(tempSettingValue.Value);
+		    numMaxCardLimit.Value = m_originalMaxCardLimit;
             try
             {
                 numMaxCardLimit.Value = ParseDecimal(tempSettingValue.Value);
             }
-
             catch (Exception /*e*/)
             {
                 MessageForm.Show(string.Format(Resources.ErrorLicenseFile,"Max Card Limit",numMaxCardLimit.Maximum), Resources.ErrorLicenseFileHeader);
@@ -238,12 +251,12 @@ namespace GTI.Modules.SystemSettings.UI
             }
 
             //START RALLY TA 6095 -- Hide CBB games 
-                if(Common.CBBEnabled == false)
-                {
-                    lblCBBGame.Visible = false;
-                    lblCBBGamePost.Visible = false;
-                    txtLockCBBGames.Visible = false;
-                }
+            if (Common.CBBEnabled == false)
+            {
+                lblCBBGame.Visible = false;
+                lblCBBGamePost.Visible = false;
+                txtLockCBBGames.Visible = false;
+            }
             //END RALLY TA 6095
             
             chkSequentialGames.Checked = ParseBool(Common.GetSystemSetting(Setting.UseLinearGameNumbering)); // US4804
@@ -273,11 +286,13 @@ namespace GTI.Modules.SystemSettings.UI
                 Common.SetOpSettingValue(Setting.MaxBetValue, (numMaxBet.Value).ToString()); //convert back to penny
             }
 
-            if (numMaxCardLimit.Enabled == true)
+            if (numMaxCardLimit.Enabled)
             {
-                Common.SetOpSettingValue(Setting.MaxCardLimit, numMaxCardLimit.Value.ToString());
+                Common.SetOpSettingValue(Setting.MaxCardLimit,
+                    numMaxCardLimit.Value.ToString(CultureInfo.InvariantCulture));
+
+                m_originalMaxCardLimit = Convert.ToInt32(numMaxCardLimit.Value);
             }
-           
 
             Common.SetOpSettingValue(Setting.CBBAutoLock, txtLockCBBGames.Text.ToString());
 
@@ -287,10 +302,10 @@ namespace GTI.Modules.SystemSettings.UI
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
 
-            if (txtVoidLockGames.Enabled == true)
+            if (txtVoidLockGames.Enabled)
             {
                 s.Id = (int)Setting.VoidLockAtGameCount;
-                s.Value = txtVoidLockGames.Text.ToString();
+                s.Value = txtVoidLockGames.Text;
                 arrSettings.Add(s);
                 
 //                Common.GetSystemSetting(Setting.VoidLockAtGameCount, txtVoidLockGames.Text.ToString());
@@ -348,7 +363,7 @@ namespace GTI.Modules.SystemSettings.UI
 		}
 
 		private void btnSave_Click(object sender, EventArgs e)
-		{
+        {
 			SaveSettings();
 		}
 

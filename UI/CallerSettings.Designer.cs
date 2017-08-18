@@ -42,16 +42,15 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkExtraBonus2 = new System.Windows.Forms.CheckBox();
             this.chkExtraBonus1 = new System.Windows.Forms.CheckBox();
             this.grpBlower = new System.Windows.Forms.GroupBox();
+            this.chkPlayCooldownTimerSound = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.cboScanner2Port = new System.Windows.Forms.ComboBox();
             this.tbBlowerAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.chkEnableBlower = new System.Windows.Forms.CheckBox();
-            this.cboScanner1Port = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.numCoolDownTimer = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.grpCaller = new System.Windows.Forms.GroupBox();
+            this.chkEnableRNGBallCalls = new System.Windows.Forms.CheckBox();
             this.lblGameStateBroadcastDelayMs = new System.Windows.Forms.Label();
             this.numGameStateBroadcastDelay = new System.Windows.Forms.NumericUpDown();
             this.lblGameStateBroadcastDelay = new System.Windows.Forms.Label();
@@ -141,31 +140,27 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // grpBlower
             // 
+            this.grpBlower.Controls.Add(this.chkPlayCooldownTimerSound);
             this.grpBlower.Controls.Add(this.label11);
-            this.grpBlower.Controls.Add(this.cboScanner2Port);
             this.grpBlower.Controls.Add(this.tbBlowerAddress);
             this.grpBlower.Controls.Add(this.label5);
             this.grpBlower.Controls.Add(this.chkEnableBlower);
-            this.grpBlower.Controls.Add(this.cboScanner1Port);
-            this.grpBlower.Controls.Add(this.label6);
             this.grpBlower.Controls.Add(this.numCoolDownTimer);
             this.grpBlower.Controls.Add(this.label4);
             resources.ApplyResources(this.grpBlower, "grpBlower");
             this.grpBlower.Name = "grpBlower";
             this.grpBlower.TabStop = false;
             // 
+            // chkPlayCooldownTimerSound
+            // 
+            resources.ApplyResources(this.chkPlayCooldownTimerSound, "chkPlayCooldownTimerSound");
+            this.chkPlayCooldownTimerSound.Name = "chkPlayCooldownTimerSound";
+            this.chkPlayCooldownTimerSound.UseVisualStyleBackColor = true;
+            // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            // 
-            // cboScanner2Port
-            // 
-            this.cboScanner2Port.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboScanner2Port, "cboScanner2Port");
-            this.cboScanner2Port.FormattingEnabled = true;
-            this.cboScanner2Port.Name = "cboScanner2Port";
-            this.cboScanner2Port.SelectedValueChanged += new System.EventHandler(this.OnModified);
             // 
             // tbBlowerAddress
             // 
@@ -186,19 +181,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkEnableBlower.UseVisualStyleBackColor = true;
             this.chkEnableBlower.CheckedChanged += new System.EventHandler(this.chkEnableBlower_CheckedChanged);
             // 
-            // cboScanner1Port
-            // 
-            this.cboScanner1Port.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboScanner1Port, "cboScanner1Port");
-            this.cboScanner1Port.FormattingEnabled = true;
-            this.cboScanner1Port.Name = "cboScanner1Port";
-            this.cboScanner1Port.SelectedValueChanged += new System.EventHandler(this.OnModified);
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
             // numCoolDownTimer
             // 
             resources.ApplyResources(this.numCoolDownTimer, "numCoolDownTimer");
@@ -217,6 +199,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // grpCaller
             // 
+            this.grpCaller.Controls.Add(this.chkEnableRNGBallCalls);
             this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelayMs);
             this.grpCaller.Controls.Add(this.numGameStateBroadcastDelay);
             this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelay);
@@ -234,6 +217,12 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.grpCaller, "grpCaller");
             this.grpCaller.Name = "grpCaller";
             this.grpCaller.TabStop = false;
+            // 
+            // chkEnableRNGBallCalls
+            // 
+            resources.ApplyResources(this.chkEnableRNGBallCalls, "chkEnableRNGBallCalls");
+            this.chkEnableRNGBallCalls.Name = "chkEnableRNGBallCalls";
+            this.chkEnableRNGBallCalls.UseVisualStyleBackColor = true;
             // 
             // lblGameStateBroadcastDelayMs
             // 
@@ -518,9 +507,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.GroupBox grpBlower;
         private System.Windows.Forms.CheckBox chkEnableBlower;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cboScanner1Port;
-        private System.Windows.Forms.ComboBox cboScanner2Port;
         private System.Windows.Forms.TextBox tbBlowerAddress;
         private System.Windows.Forms.CheckBox chkDisplayWinnerCount;
         private System.Windows.Forms.ComboBox cboRFTransType;
@@ -544,5 +530,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.Label lblGameStateBroadcastDelayMs;
         private System.Windows.Forms.NumericUpDown numGameStateBroadcastDelay;
         private System.Windows.Forms.Label lblGameStateBroadcastDelay;
+        private System.Windows.Forms.CheckBox chkEnableRNGBallCalls;
+        private System.Windows.Forms.CheckBox chkPlayCooldownTimerSound;
 	}
 }

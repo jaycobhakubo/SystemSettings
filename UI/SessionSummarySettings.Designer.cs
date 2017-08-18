@@ -33,6 +33,8 @@
             this.chkbxSetBankToEndBank = new System.Windows.Forms.CheckBox();
             this.btnSave = new GTI.Controls.ImageButton();
             this.btnReset = new GTI.Controls.ImageButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cboUIDisplayMode = new System.Windows.Forms.ComboBox();
             this.grpbxSessionSettings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,6 +42,8 @@
             // 
             this.grpbxSessionSettings.AccessibleRole = System.Windows.Forms.AccessibleRole.PageTabList;
             this.grpbxSessionSettings.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxSessionSettings.Controls.Add(this.label7);
+            this.grpbxSessionSettings.Controls.Add(this.cboUIDisplayMode);
             this.grpbxSessionSettings.Controls.Add(this.chkbxSetBankToEndBank);
             resources.ApplyResources(this.grpbxSessionSettings, "grpbxSessionSettings");
             this.grpbxSessionSettings.Name = "grpbxSessionSettings";
@@ -79,6 +83,18 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // cboUIDisplayMode
+            // 
+            this.cboUIDisplayMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboUIDisplayMode, "cboUIDisplayMode");
+            this.cboUIDisplayMode.FormattingEnabled = true;
+            this.cboUIDisplayMode.Name = "cboUIDisplayMode";
+            // 
             // SessionSummarySettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -100,6 +116,8 @@
         private Controls.ImageButton btnSave;
         private Controls.ImageButton btnReset;
         private System.Windows.Forms.CheckBox chkbxSetBankToEndBank;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cboUIDisplayMode;
 
     }
 }

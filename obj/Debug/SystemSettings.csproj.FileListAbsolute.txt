@@ -13,6 +13,7 @@ D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\SystemSettin
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.Properties.Resources.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.AdminSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.BingoSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.BlowerSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.CallerSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.ChannelDlg.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.ChannelSettings.resources
@@ -20,6 +21,8 @@ D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.CharitySettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.CompanySettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.AccrualSceneDialog.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.CrystalBallSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.PaymentProcessingSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.SecuritySettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.MoneyCenterSettings.resources
@@ -48,6 +51,7 @@ D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.POSSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.RaffleSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.ReceiptSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.SessionSummarySettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.SettingsControl.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.TenderSettings.resources
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings.resources
@@ -59,6 +63,3 @@ D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\SystemSettin
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\af\GTISystemSettings.resources.dll
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTISystemSettings.dll
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTISystemSettings.pdb
-D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.SessionSummarySettings.resources
-D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings.resources
-D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Debug\GTI.Modules.SystemSettings.UI.CrystalBallSettings.resources

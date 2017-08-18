@@ -46,8 +46,11 @@ namespace GTI.Modules.SystemSettings.UI
             this.numWinnerPollInterval = new System.Windows.Forms.NumericUpDown();
             this.chkShowWinnerInfo = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.numMinColorCircleTime = new System.Windows.Forms.NumericUpDown();
             this.numMinBallCallTime = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdCycleMode = new System.Windows.Forms.RadioButton();
             this.rdChangeBallColor = new System.Windows.Forms.RadioButton();
             this.rdNextBallOnly = new System.Windows.Forms.RadioButton();
             this.rdChangeBGColor = new System.Windows.Forms.RadioButton();
@@ -68,6 +71,7 @@ namespace GTI.Modules.SystemSettings.UI
             ((System.ComponentModel.ISupportInitialize)(this.numPreviousWinnerDisplayInterval)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWinnerPollInterval)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinColorCircleTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinBallCallTime)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.grpSceneInfo.SuspendLayout();
@@ -202,12 +206,24 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.numMinColorCircleTime);
             this.groupBox2.Controls.Add(this.numMinBallCallTime);
             this.groupBox2.Controls.Add(this.groupBox1);
             this.groupBox2.Controls.Add(this.label6);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // numMinColorCircleTime
+            // 
+            resources.ApplyResources(this.numMinColorCircleTime, "numMinColorCircleTime");
+            this.numMinColorCircleTime.Name = "numMinColorCircleTime";
             // 
             // numMinBallCallTime
             // 
@@ -217,6 +233,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rdCycleMode);
             this.groupBox1.Controls.Add(this.rdChangeBallColor);
             this.groupBox1.Controls.Add(this.rdNextBallOnly);
             this.groupBox1.Controls.Add(this.rdChangeBGColor);
@@ -224,11 +241,17 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // rdCycleMode
+            // 
+            resources.ApplyResources(this.rdCycleMode, "rdCycleMode");
+            this.rdCycleMode.Name = "rdCycleMode";
+            this.rdCycleMode.UseVisualStyleBackColor = true;
+            this.rdCycleMode.CheckedChanged += new System.EventHandler(this.rdCycleMode_CheckedChanged);
+            // 
             // rdChangeBallColor
             // 
             resources.ApplyResources(this.rdChangeBallColor, "rdChangeBallColor");
             this.rdChangeBallColor.Name = "rdChangeBallColor";
-            this.rdChangeBallColor.TabStop = true;
             this.rdChangeBallColor.UseVisualStyleBackColor = true;
             this.rdChangeBallColor.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
@@ -236,7 +259,6 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.rdNextBallOnly, "rdNextBallOnly");
             this.rdNextBallOnly.Name = "rdNextBallOnly";
-            this.rdNextBallOnly.TabStop = true;
             this.rdNextBallOnly.UseVisualStyleBackColor = true;
             this.rdNextBallOnly.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
@@ -244,7 +266,6 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.rdChangeBGColor, "rdChangeBGColor");
             this.rdChangeBGColor.Name = "rdChangeBGColor";
-            this.rdChangeBGColor.TabStop = true;
             this.rdChangeBGColor.UseVisualStyleBackColor = true;
             this.rdChangeBGColor.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
@@ -261,6 +282,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
             this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
             this.btnReset.Name = "btnReset";
+            this.btnReset.RepeatRate = 150;
+            this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -273,6 +296,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
             this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
             this.btnSave.Name = "btnSave";
+            this.btnSave.RepeatRate = 150;
+            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -334,6 +359,7 @@ namespace GTI.Modules.SystemSettings.UI
             ((System.ComponentModel.ISupportInitialize)(this.numWinnerPollInterval)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMinColorCircleTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinBallCallTime)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -372,5 +398,8 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.RadioButton rdChangeBGColor;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rdChangeBallColor;
+        private System.Windows.Forms.RadioButton rdCycleMode;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown numMinColorCircleTime;
 	}
 }

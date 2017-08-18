@@ -118,7 +118,8 @@
             this.cbxPlayerSyncMode.Items.AddRange(new object[] {
             resources.GetString("cbxPlayerSyncMode.Items"),
             resources.GetString("cbxPlayerSyncMode.Items1"),
-            resources.GetString("cbxPlayerSyncMode.Items2")});
+            resources.GetString("cbxPlayerSyncMode.Items2"),
+            resources.GetString("cbxPlayerSyncMode.Items3")});
             this.cbxPlayerSyncMode.Name = "cbxPlayerSyncMode";
             // 
             // gbFNET
@@ -508,6 +509,8 @@
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
+            this.btnReset.RepeatRate = 150;
+            this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -519,6 +522,8 @@
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
+            this.btnSave.RepeatRate = 150;
+            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
