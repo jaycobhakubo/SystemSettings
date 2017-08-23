@@ -148,6 +148,8 @@
             // chkPaymentProcessingEnabled
             // 
             this.chkPaymentProcessingEnabled.AutoSize = true;
+            this.chkPaymentProcessingEnabled.Checked = true;
+            this.chkPaymentProcessingEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkPaymentProcessingEnabled.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.chkPaymentProcessingEnabled.Location = new System.Drawing.Point(18, 28);
             this.chkPaymentProcessingEnabled.Name = "chkPaymentProcessingEnabled";
@@ -156,6 +158,7 @@
             this.chkPaymentProcessingEnabled.Text = "Payment Processor Enabled";
             this.chkPaymentProcessingEnabled.UseVisualStyleBackColor = true;
             this.chkPaymentProcessingEnabled.CheckedChanged += new System.EventHandler(this.OnModified);
+            this.chkPaymentProcessingEnabled.CheckStateChanged += new System.EventHandler(this.chkPaymentProcessingEnabled_CheckStateChanged);
             // 
             // label17
             // 

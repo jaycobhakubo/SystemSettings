@@ -342,5 +342,20 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         #endregion
+
+        private void chkPaymentProcessingEnabled_CheckStateChanged(object sender, EventArgs e)
+        {
+            DisabledControlsIfPaymentProcessingIsDisabled(chkPaymentProcessingEnabled.Checked);
+        }
+
+           
+        private bool m_CurrentPaymentProcessorStatus = false;
+
+        private void DisabledControlsIfPaymentProcessingIsDisabled(bool Action)
+        {
+            label17.Enabled = Action;
+            cmbProcessor.Enabled = Action;
+            panelMain.Enabled = Action;
+        }
     }
 }

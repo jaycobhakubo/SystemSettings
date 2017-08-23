@@ -55,3 +55,11 @@ D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\af\GTISyst
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTISystemSettings.dll
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTISystemSettings.pdb
 D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.ValidationSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.BlowerSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.ChannelDlg.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.ChannelSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.CrystalBallSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.PaymentProcessingSettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.SessionSummarySettings.resources
+D:\fortunet\gti-gametech\Dev\ClientModules\SystemSettings\obj\Release\GTI.Modules.SystemSettings.UI.TenderSettings.resources
