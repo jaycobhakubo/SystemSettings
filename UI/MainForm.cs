@@ -649,12 +649,12 @@ namespace GTI.Modules.SystemSettings.UI
 			Application.DoEvents();
 		}
 
-		private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)//knc
+		private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)
 		{
 			// Prompt to save if modified
 			if (m_activeControl != null)
 			{
-				if (m_activeControl.IsModified())//knc
+				if (m_activeControl.IsModified())
 				{
 					DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
 					this.Refresh();
