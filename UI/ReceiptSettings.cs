@@ -177,7 +177,16 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.ReceiptFooterLine3, out tempSettingValue);
             txtFooter3.Text = tempSettingValue.Value;
 
-            
+            Common.GetOpSettingValue(Setting.DisclaimerLine1, out tempSettingValue);
+            txtDisclaimer1.Text = tempSettingValue.Value;
+
+            Common.GetOpSettingValue(Setting.DisclaimerLine2, out tempSettingValue);
+            txtDisclaimer2.Text = tempSettingValue.Value;
+
+            Common.GetOpSettingValue(Setting.DisclaimerLine3, out tempSettingValue);
+            txtDisclaimer3.Text = tempSettingValue.Value;
+
+
             //DE 4240 4054
             chkPrintCardFaces.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.PrintCardFaces)); //RALLY DE9427 //RALLY DE 4240
 		    
@@ -312,6 +321,10 @@ namespace GTI.Modules.SystemSettings.UI
             Common.SetOpSettingValue(Setting.ReceiptFooterLine1, txtFooter1.Text);
             Common.SetOpSettingValue(Setting.ReceiptFooterLine2, txtFooter2.Text);
             Common.SetOpSettingValue(Setting.ReceiptFooterLine3, txtFooter3.Text);
+
+            Common.SetOpSettingValue(Setting.DisclaimerLine1, txtDisclaimer1.Text);
+            Common.SetOpSettingValue(Setting.DisclaimerLine2, txtDisclaimer2.Text);
+            Common.SetOpSettingValue(Setting.DisclaimerLine3, txtDisclaimer3.Text);
 
             //RALLY US2139
             Common.SetOpSettingValue(Setting.PrintPointsRedeemed, chkPrintPlayerPointsRedeemed.Checked.ToString());
