@@ -43,14 +43,12 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkExtraBonus1 = new System.Windows.Forms.CheckBox();
             this.grpBlower = new System.Windows.Forms.GroupBox();
             this.chkPlayCooldownTimerSound = new System.Windows.Forms.CheckBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.tbBlowerAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.chkEnableBlower = new System.Windows.Forms.CheckBox();
-            this.numCoolDownTimer = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
             this.grpCaller = new System.Windows.Forms.GroupBox();
             this.chkEnableRNGBallCalls = new System.Windows.Forms.CheckBox();
+            this.lbl_sec = new System.Windows.Forms.Label();
             this.lblGameStateBroadcastDelayMs = new System.Windows.Forms.Label();
             this.numGameStateBroadcastDelay = new System.Windows.Forms.NumericUpDown();
             this.lblGameStateBroadcastDelay = new System.Windows.Forms.Label();
@@ -58,6 +56,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkEnableLedFB = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cboFbNumDisplay = new System.Windows.Forms.ComboBox();
+            this.numCoolDownTimer = new System.Windows.Forms.NumericUpDown();
             this.grpRF = new System.Windows.Forms.GroupBox();
             this.rfDelayMsLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,6 +65,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.label8 = new System.Windows.Forms.Label();
             this.rfDelayLabel = new System.Windows.Forms.Label();
             this.cboRFTransType = new System.Windows.Forms.ComboBox();
+            this.lbl_coolDownTimer = new System.Windows.Forms.Label();
             this.grpFBI = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -83,10 +83,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave = new GTI.Controls.ImageButton();
             this.grpExtraBalls.SuspendLayout();
             this.grpBlower.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCoolDownTimer)).BeginInit();
             this.grpCaller.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numGameStateBroadcastDelay)).BeginInit();
             this.grpFlashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numCoolDownTimer)).BeginInit();
             this.grpRF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRfPacketSleep)).BeginInit();
             this.grpFBI.SuspendLayout();
@@ -141,12 +141,9 @@ namespace GTI.Modules.SystemSettings.UI
             // grpBlower
             // 
             this.grpBlower.Controls.Add(this.chkPlayCooldownTimerSound);
-            this.grpBlower.Controls.Add(this.label11);
             this.grpBlower.Controls.Add(this.tbBlowerAddress);
             this.grpBlower.Controls.Add(this.label5);
             this.grpBlower.Controls.Add(this.chkEnableBlower);
-            this.grpBlower.Controls.Add(this.numCoolDownTimer);
-            this.grpBlower.Controls.Add(this.label4);
             resources.ApplyResources(this.grpBlower, "grpBlower");
             this.grpBlower.Name = "grpBlower";
             this.grpBlower.TabStop = false;
@@ -156,11 +153,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.chkPlayCooldownTimerSound, "chkPlayCooldownTimerSound");
             this.chkPlayCooldownTimerSound.Name = "chkPlayCooldownTimerSound";
             this.chkPlayCooldownTimerSound.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
             // 
             // tbBlowerAddress
             // 
@@ -181,30 +173,17 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkEnableBlower.UseVisualStyleBackColor = true;
             this.chkEnableBlower.CheckedChanged += new System.EventHandler(this.chkEnableBlower_CheckedChanged);
             // 
-            // numCoolDownTimer
-            // 
-            resources.ApplyResources(this.numCoolDownTimer, "numCoolDownTimer");
-            this.numCoolDownTimer.Maximum = new decimal(new int[] {
-            120,
-            0,
-            0,
-            0});
-            this.numCoolDownTimer.Name = "numCoolDownTimer";
-            this.numCoolDownTimer.ValueChanged += new System.EventHandler(this.OnModified);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
             // grpCaller
             // 
             this.grpCaller.Controls.Add(this.chkEnableRNGBallCalls);
+            this.grpCaller.Controls.Add(this.lbl_sec);
             this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelayMs);
             this.grpCaller.Controls.Add(this.numGameStateBroadcastDelay);
             this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelay);
             this.grpCaller.Controls.Add(this.grpFlashboard);
+            this.grpCaller.Controls.Add(this.numCoolDownTimer);
             this.grpCaller.Controls.Add(this.grpRF);
+            this.grpCaller.Controls.Add(this.lbl_coolDownTimer);
             this.grpCaller.Controls.Add(this.grpFBI);
             this.grpCaller.Controls.Add(this.chkDisplayWinnerCount);
             this.grpCaller.Controls.Add(this.chkAllowManualWildCalls);
@@ -223,6 +202,12 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.chkEnableRNGBallCalls, "chkEnableRNGBallCalls");
             this.chkEnableRNGBallCalls.Name = "chkEnableRNGBallCalls";
             this.chkEnableRNGBallCalls.UseVisualStyleBackColor = true;
+            this.chkEnableRNGBallCalls.CheckedChanged += new System.EventHandler(this.chkEnableRNGBallCalls_CheckedChanged);
+            // 
+            // lbl_sec
+            // 
+            resources.ApplyResources(this.lbl_sec, "lbl_sec");
+            this.lbl_sec.Name = "lbl_sec";
             // 
             // lblGameStateBroadcastDelayMs
             // 
@@ -272,6 +257,17 @@ namespace GTI.Modules.SystemSettings.UI
             this.cboFbNumDisplay.FormattingEnabled = true;
             this.cboFbNumDisplay.Name = "cboFbNumDisplay";
             this.cboFbNumDisplay.SelectedValueChanged += new System.EventHandler(this.OnModified);
+            // 
+            // numCoolDownTimer
+            // 
+            resources.ApplyResources(this.numCoolDownTimer, "numCoolDownTimer");
+            this.numCoolDownTimer.Maximum = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
+            this.numCoolDownTimer.Name = "numCoolDownTimer";
+            this.numCoolDownTimer.ValueChanged += new System.EventHandler(this.OnModified);
             // 
             // grpRF
             // 
@@ -333,6 +329,11 @@ namespace GTI.Modules.SystemSettings.UI
             this.cboRFTransType.FormattingEnabled = true;
             this.cboRFTransType.Name = "cboRFTransType";
             this.cboRFTransType.SelectedValueChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lbl_coolDownTimer
+            // 
+            resources.ApplyResources(this.lbl_coolDownTimer, "lbl_coolDownTimer");
+            this.lbl_coolDownTimer.Name = "lbl_coolDownTimer";
             // 
             // grpFBI
             // 
@@ -469,12 +470,12 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpExtraBalls.PerformLayout();
             this.grpBlower.ResumeLayout(false);
             this.grpBlower.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCoolDownTimer)).EndInit();
             this.grpCaller.ResumeLayout(false);
             this.grpCaller.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numGameStateBroadcastDelay)).EndInit();
             this.grpFlashboard.ResumeLayout(false);
             this.grpFlashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numCoolDownTimer)).EndInit();
             this.grpRF.ResumeLayout(false);
             this.grpRF.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRfPacketSleep)).EndInit();
@@ -502,7 +503,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkPrintBallCalls;
         private System.Windows.Forms.CheckBox chkEnableOneTouchVerify;
         private System.Windows.Forms.NumericUpDown numCoolDownTimer;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_coolDownTimer;
         private System.Windows.Forms.CheckBox chkAllowManualWildCalls;
         private System.Windows.Forms.GroupBox grpBlower;
         private System.Windows.Forms.CheckBox chkEnableBlower;
@@ -524,7 +525,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkExtraBonus1;
         private System.Windows.Forms.GroupBox grpRF;
         private System.Windows.Forms.GroupBox grpFBI;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbl_sec;
         private System.Windows.Forms.GroupBox grpFlashboard;
         private System.Windows.Forms.Label rfDelayMsLabel;
         private System.Windows.Forms.Label lblGameStateBroadcastDelayMs;

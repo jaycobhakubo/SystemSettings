@@ -117,7 +117,95 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;chkExtraBonus5.Name" xml:space="preserve">
+    <value>chkExtraBonus5</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus5.Parent" xml:space="preserve">
+    <value>grpExtraBalls</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus4.Name" xml:space="preserve">
+    <value>chkExtraBonus4</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus4.Parent" xml:space="preserve">
+    <value>grpExtraBalls</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus3.Name" xml:space="preserve">
+    <value>chkExtraBonus3</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus3.Parent" xml:space="preserve">
+    <value>grpExtraBalls</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus2.Name" xml:space="preserve">
+    <value>chkExtraBonus2</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus2.Parent" xml:space="preserve">
+    <value>grpExtraBalls</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus1.Name" xml:space="preserve">
+    <value>chkExtraBonus1</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus1.Parent" xml:space="preserve">
+    <value>grpExtraBalls</value>
+  </data>
+  <data name="&gt;&gt;chkExtraBonus1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="grpExtraBalls.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="grpExtraBalls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 537</value>
+  </data>
+  <data name="grpExtraBalls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>723, 64</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="grpExtraBalls.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="grpExtraBalls.Text" xml:space="preserve">
+    <value>Extra Balls</value>
+  </data>
+  <data name="&gt;&gt;grpExtraBalls.Name" xml:space="preserve">
+    <value>grpExtraBalls</value>
+  </data>
+  <data name="&gt;&gt;grpExtraBalls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpExtraBalls.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpExtraBalls.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="chkExtraBonus5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -125,7 +213,6 @@
   <data name="chkExtraBonus5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="chkExtraBonus5.Location" type="System.Drawing.Point, System.Drawing">
     <value>358, 25</value>
   </data>
@@ -270,32 +357,80 @@
   <data name="&gt;&gt;chkExtraBonus1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="grpExtraBalls.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
+  <data name="&gt;&gt;chkPlayCooldownTimerSound.Name" xml:space="preserve">
+    <value>chkPlayCooldownTimerSound</value>
   </data>
-  <data name="grpExtraBalls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 537</value>
+  <data name="&gt;&gt;chkPlayCooldownTimerSound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="grpExtraBalls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>723, 64</value>
+  <data name="&gt;&gt;chkPlayCooldownTimerSound.Parent" xml:space="preserve">
+    <value>grpBlower</value>
   </data>
-  <data name="grpExtraBalls.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;chkPlayCooldownTimerSound.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbBlowerAddress.Name" xml:space="preserve">
+    <value>tbBlowerAddress</value>
+  </data>
+  <data name="&gt;&gt;tbBlowerAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbBlowerAddress.Parent" xml:space="preserve">
+    <value>grpBlower</value>
+  </data>
+  <data name="&gt;&gt;tbBlowerAddress.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpBlower</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="grpExtraBalls.Text" xml:space="preserve">
-    <value>Extra Balls</value>
+  <data name="&gt;&gt;chkEnableBlower.Name" xml:space="preserve">
+    <value>chkEnableBlower</value>
   </data>
-  <data name="&gt;&gt;grpExtraBalls.Name" xml:space="preserve">
-    <value>grpExtraBalls</value>
+  <data name="&gt;&gt;chkEnableBlower.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;grpExtraBalls.Type" xml:space="preserve">
+  <data name="&gt;&gt;chkEnableBlower.Parent" xml:space="preserve">
+    <value>grpBlower</value>
+  </data>
+  <data name="&gt;&gt;chkEnableBlower.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grpBlower.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="grpBlower.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 424</value>
+  </data>
+  <data name="grpBlower.Size" type="System.Drawing.Size, System.Drawing">
+    <value>723, 104</value>
+  </data>
+  <data name="grpBlower.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="grpBlower.Text" xml:space="preserve">
+    <value>Blower Settings</value>
+  </data>
+  <data name="&gt;&gt;grpBlower.Name" xml:space="preserve">
+    <value>grpBlower</value>
+  </data>
+  <data name="&gt;&gt;grpBlower.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;grpExtraBalls.Parent" xml:space="preserve">
+  <data name="&gt;&gt;grpBlower.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;grpExtraBalls.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;grpBlower.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="chkPlayCooldownTimerSound.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -304,7 +439,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkPlayCooldownTimerSound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 91</value>
+    <value>6, 64</value>
   </data>
   <data name="chkPlayCooldownTimerSound.Size" type="System.Drawing.Size, System.Drawing">
     <value>352, 26</value>
@@ -326,33 +461,6 @@
   </data>
   <data name="&gt;&gt;chkPlayCooldownTimerSound.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 61</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 22</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>second(s)</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>grpBlower</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="tbBlowerAddress.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -379,7 +487,7 @@
     <value>grpBlower</value>
   </data>
   <data name="&gt;&gt;tbBlowerAddress.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -388,7 +496,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 27</value>
+    <value>376, 32</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 22</value>
@@ -412,7 +520,7 @@
     <value>grpBlower</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="chkEnableBlower.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -445,94 +553,16 @@
     <value>grpBlower</value>
   </data>
   <data name="&gt;&gt;chkEnableBlower.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="numCoolDownTimer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="numCoolDownTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 59</value>
-  </data>
-  <data name="numCoolDownTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 26</value>
-  </data>
-  <data name="numCoolDownTimer.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;numCoolDownTimer.Name" xml:space="preserve">
-    <value>numCoolDownTimer</value>
-  </data>
-  <data name="&gt;&gt;numCoolDownTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numCoolDownTimer.Parent" xml:space="preserve">
-    <value>grpBlower</value>
-  </data>
-  <data name="&gt;&gt;numCoolDownTimer.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 61</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Cool down timer</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>grpBlower</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="grpBlower.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="grpBlower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 396</value>
-  </data>
-  <data name="grpBlower.Size" type="System.Drawing.Size, System.Drawing">
-    <value>723, 135</value>
-  </data>
-  <data name="grpBlower.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="grpBlower.Text" xml:space="preserve">
-    <value>Blower Settings</value>
-  </data>
-  <data name="&gt;&gt;grpBlower.Name" xml:space="preserve">
-    <value>grpBlower</value>
-  </data>
-  <data name="&gt;&gt;grpBlower.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpBlower.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpBlower.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="chkEnableRNGBallCalls.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkEnableRNGBallCalls.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkEnableRNGBallCalls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 281</value>
+    <value>6, 316</value>
   </data>
   <data name="chkEnableRNGBallCalls.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 26</value>
@@ -555,14 +585,41 @@
   <data name="&gt;&gt;chkEnableRNGBallCalls.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lblGameStateBroadcastDelayMs.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lbl_sec.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_sec.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 348</value>
+  </data>
+  <data name="lbl_sec.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 24</value>
+  </data>
+  <data name="lbl_sec.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_sec.Text" xml:space="preserve">
+    <value>sec</value>
+  </data>
+  <data name="lbl_sec.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lbl_sec.Name" xml:space="preserve">
+    <value>lbl_sec</value>
+  </data>
+  <data name="&gt;&gt;lbl_sec.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_sec.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;lbl_sec.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lblGameStateBroadcastDelayMs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblGameStateBroadcastDelayMs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>309, 311</value>
+    <value>309, 288</value>
   </data>
   <data name="lblGameStateBroadcastDelayMs.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 22</value>
@@ -572,6 +629,9 @@
   </data>
   <data name="lblGameStateBroadcastDelayMs.Text" xml:space="preserve">
     <value>ms</value>
+  </data>
+  <data name="lblGameStateBroadcastDelayMs.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
   </data>
   <data name="&gt;&gt;lblGameStateBroadcastDelayMs.Name" xml:space="preserve">
     <value>lblGameStateBroadcastDelayMs</value>
@@ -583,16 +643,16 @@
     <value>grpCaller</value>
   </data>
   <data name="&gt;&gt;lblGameStateBroadcastDelayMs.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="numGameStateBroadcastDelay.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numGameStateBroadcastDelay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 309</value>
+    <value>236, 280</value>
   </data>
   <data name="numGameStateBroadcastDelay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 26</value>
+    <value>68, 26</value>
   </data>
   <data name="numGameStateBroadcastDelay.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -607,7 +667,7 @@
     <value>grpCaller</value>
   </data>
   <data name="&gt;&gt;numGameStateBroadcastDelay.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="lblGameStateBroadcastDelay.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -616,7 +676,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblGameStateBroadcastDelay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 309</value>
+    <value>8, 284</value>
   </data>
   <data name="lblGameStateBroadcastDelay.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 22</value>
@@ -637,7 +697,571 @@
     <value>grpCaller</value>
   </data>
   <data name="&gt;&gt;lblGameStateBroadcastDelay.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;chkEnableLedFB.Name" xml:space="preserve">
+    <value>chkEnableLedFB</value>
+  </data>
+  <data name="&gt;&gt;chkEnableLedFB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEnableLedFB.Parent" xml:space="preserve">
+    <value>grpFlashboard</value>
+  </data>
+  <data name="&gt;&gt;chkEnableLedFB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>grpFlashboard</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboFbNumDisplay.Name" xml:space="preserve">
+    <value>cboFbNumDisplay</value>
+  </data>
+  <data name="&gt;&gt;cboFbNumDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboFbNumDisplay.Parent" xml:space="preserve">
+    <value>grpFlashboard</value>
+  </data>
+  <data name="&gt;&gt;cboFbNumDisplay.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grpFlashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 25</value>
+  </data>
+  <data name="grpFlashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 93</value>
+  </data>
+  <data name="grpFlashboard.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="grpFlashboard.Text" xml:space="preserve">
+    <value>FortuNet Flashboard</value>
+  </data>
+  <data name="&gt;&gt;grpFlashboard.Name" xml:space="preserve">
+    <value>grpFlashboard</value>
+  </data>
+  <data name="&gt;&gt;grpFlashboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpFlashboard.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;grpFlashboard.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="numCoolDownTimer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="numCoolDownTimer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numCoolDownTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 348</value>
+  </data>
+  <data name="numCoolDownTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 26</value>
+  </data>
+  <data name="numCoolDownTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;numCoolDownTimer.Name" xml:space="preserve">
+    <value>numCoolDownTimer</value>
+  </data>
+  <data name="&gt;&gt;numCoolDownTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numCoolDownTimer.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;numCoolDownTimer.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;rfDelayMsLabel.Name" xml:space="preserve">
+    <value>rfDelayMsLabel</value>
+  </data>
+  <data name="&gt;&gt;rfDelayMsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rfDelayMsLabel.Parent" xml:space="preserve">
+    <value>grpRF</value>
+  </data>
+  <data name="&gt;&gt;rfDelayMsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>grpRF</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboRFSerialPort.Name" xml:space="preserve">
+    <value>cboRFSerialPort</value>
+  </data>
+  <data name="&gt;&gt;cboRFSerialPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboRFSerialPort.Parent" xml:space="preserve">
+    <value>grpRF</value>
+  </data>
+  <data name="&gt;&gt;cboRFSerialPort.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;numRfPacketSleep.Name" xml:space="preserve">
+    <value>numRfPacketSleep</value>
+  </data>
+  <data name="&gt;&gt;numRfPacketSleep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numRfPacketSleep.Parent" xml:space="preserve">
+    <value>grpRF</value>
+  </data>
+  <data name="&gt;&gt;numRfPacketSleep.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>grpRF</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;rfDelayLabel.Name" xml:space="preserve">
+    <value>rfDelayLabel</value>
+  </data>
+  <data name="&gt;&gt;rfDelayLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rfDelayLabel.Parent" xml:space="preserve">
+    <value>grpRF</value>
+  </data>
+  <data name="&gt;&gt;rfDelayLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cboRFTransType.Name" xml:space="preserve">
+    <value>cboRFTransType</value>
+  </data>
+  <data name="&gt;&gt;cboRFTransType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboRFTransType.Parent" xml:space="preserve">
+    <value>grpRF</value>
+  </data>
+  <data name="&gt;&gt;cboRFTransType.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="grpRF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 124</value>
+  </data>
+  <data name="grpRF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 131</value>
+  </data>
+  <data name="grpRF.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="grpRF.Text" xml:space="preserve">
+    <value>RF</value>
+  </data>
+  <data name="&gt;&gt;grpRF.Name" xml:space="preserve">
+    <value>grpRF</value>
+  </data>
+  <data name="&gt;&gt;grpRF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpRF.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;grpRF.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbl_coolDownTimer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_coolDownTimer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_coolDownTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 352</value>
+  </data>
+  <data name="lbl_coolDownTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="lbl_coolDownTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbl_coolDownTimer.Text" xml:space="preserve">
+    <value>Cool down timer</value>
+  </data>
+  <data name="&gt;&gt;lbl_coolDownTimer.Name" xml:space="preserve">
+    <value>lbl_coolDownTimer</value>
+  </data>
+  <data name="&gt;&gt;lbl_coolDownTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_coolDownTimer.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;lbl_coolDownTimer.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>grpFBI</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>grpFBI</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboFBInterfacePort.Name" xml:space="preserve">
+    <value>cboFBInterfacePort</value>
+  </data>
+  <data name="&gt;&gt;cboFBInterfacePort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboFBInterfacePort.Parent" xml:space="preserve">
+    <value>grpFBI</value>
+  </data>
+  <data name="&gt;&gt;cboFBInterfacePort.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cboFBInterfaceType.Name" xml:space="preserve">
+    <value>cboFBInterfaceType</value>
+  </data>
+  <data name="&gt;&gt;cboFBInterfaceType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboFBInterfaceType.Parent" xml:space="preserve">
+    <value>grpFBI</value>
+  </data>
+  <data name="&gt;&gt;cboFBInterfaceType.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grpFBI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 261</value>
+  </data>
+  <data name="grpFBI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 100</value>
+  </data>
+  <data name="grpFBI.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="grpFBI.Text" xml:space="preserve">
+    <value>FBI Box</value>
+  </data>
+  <data name="&gt;&gt;grpFBI.Name" xml:space="preserve">
+    <value>grpFBI</value>
+  </data>
+  <data name="&gt;&gt;grpFBI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpFBI.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;grpFBI.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="chkDisplayWinnerCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkDisplayWinnerCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkDisplayWinnerCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 121</value>
+  </data>
+  <data name="chkDisplayWinnerCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 26</value>
+  </data>
+  <data name="chkDisplayWinnerCount.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chkDisplayWinnerCount.Text" xml:space="preserve">
+    <value>Display Winner Count</value>
+  </data>
+  <data name="&gt;&gt;chkDisplayWinnerCount.Name" xml:space="preserve">
+    <value>chkDisplayWinnerCount</value>
+  </data>
+  <data name="&gt;&gt;chkDisplayWinnerCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkDisplayWinnerCount.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;chkDisplayWinnerCount.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="chkAllowManualWildCalls.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAllowManualWildCalls.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAllowManualWildCalls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 153</value>
+  </data>
+  <data name="chkAllowManualWildCalls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 26</value>
+  </data>
+  <data name="chkAllowManualWildCalls.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkAllowManualWildCalls.Text" xml:space="preserve">
+    <value>Allow manual wild calls</value>
+  </data>
+  <data name="&gt;&gt;chkAllowManualWildCalls.Name" xml:space="preserve">
+    <value>chkAllowManualWildCalls</value>
+  </data>
+  <data name="&gt;&gt;chkAllowManualWildCalls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAllowManualWildCalls.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;chkAllowManualWildCalls.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkEnableOneTouchVerify.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkEnableOneTouchVerify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkEnableOneTouchVerify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="chkEnableOneTouchVerify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 26</value>
+  </data>
+  <data name="chkEnableOneTouchVerify.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkEnableOneTouchVerify.Text" xml:space="preserve">
+    <value>One touch verify</value>
+  </data>
+  <data name="&gt;&gt;chkEnableOneTouchVerify.Name" xml:space="preserve">
+    <value>chkEnableOneTouchVerify</value>
+  </data>
+  <data name="&gt;&gt;chkEnableOneTouchVerify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkEnableOneTouchVerify.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;chkEnableOneTouchVerify.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="chkPrintBallCalls.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkPrintBallCalls.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintBallCalls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 89</value>
+  </data>
+  <data name="chkPrintBallCalls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 26</value>
+  </data>
+  <data name="chkPrintBallCalls.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkPrintBallCalls.Text" xml:space="preserve">
+    <value>Print ball calls on winner receipt</value>
+  </data>
+  <data name="&gt;&gt;chkPrintBallCalls.Name" xml:space="preserve">
+    <value>chkPrintBallCalls</value>
+  </data>
+  <data name="&gt;&gt;chkPrintBallCalls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintBallCalls.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;chkPrintBallCalls.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="chkCardStatusOverride.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkCardStatusOverride.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkCardStatusOverride.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 185</value>
+  </data>
+  <data name="chkCardStatusOverride.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 26</value>
+  </data>
+  <data name="chkCardStatusOverride.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkCardStatusOverride.Text" xml:space="preserve">
+    <value>Allow card verification status override</value>
+  </data>
+  <data name="&gt;&gt;chkCardStatusOverride.Name" xml:space="preserve">
+    <value>chkCardStatusOverride</value>
+  </data>
+  <data name="&gt;&gt;chkCardStatusOverride.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCardStatusOverride.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;chkCardStatusOverride.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="chkAllowPlayTypeToggle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAllowPlayTypeToggle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAllowPlayTypeToggle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 249</value>
+  </data>
+  <data name="chkAllowPlayTypeToggle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 26</value>
+  </data>
+  <data name="chkAllowPlayTypeToggle.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkAllowPlayTypeToggle.Text" xml:space="preserve">
+    <value>Allow Bingo - Lotto Toggle</value>
+  </data>
+  <data name="&gt;&gt;chkAllowPlayTypeToggle.Name" xml:space="preserve">
+    <value>chkAllowPlayTypeToggle</value>
+  </data>
+  <data name="&gt;&gt;chkAllowPlayTypeToggle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAllowPlayTypeToggle.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;chkAllowPlayTypeToggle.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="chkPrintWinners.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkPrintWinners.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintWinners.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 57</value>
+  </data>
+  <data name="chkPrintWinners.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 26</value>
+  </data>
+  <data name="chkPrintWinners.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkPrintWinners.Text" xml:space="preserve">
+    <value>Print winning cards</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWinners.Name" xml:space="preserve">
+    <value>chkPrintWinners</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWinners.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWinners.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWinners.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="chkAllowAutoGameAdvance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAllowAutoGameAdvance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAllowAutoGameAdvance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 217</value>
+  </data>
+  <data name="chkAllowAutoGameAdvance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="chkAllowAutoGameAdvance.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="chkAllowAutoGameAdvance.Text" xml:space="preserve">
+    <value>Allow auto game advance</value>
+  </data>
+  <data name="&gt;&gt;chkAllowAutoGameAdvance.Name" xml:space="preserve">
+    <value>chkAllowAutoGameAdvance</value>
+  </data>
+  <data name="&gt;&gt;chkAllowAutoGameAdvance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkAllowAutoGameAdvance.Parent" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;chkAllowAutoGameAdvance.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="grpCaller.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="grpCaller.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 12</value>
+  </data>
+  <data name="grpCaller.Size" type="System.Drawing.Size, System.Drawing">
+    <value>723, 396</value>
+  </data>
+  <data name="grpCaller.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpCaller.Text" xml:space="preserve">
+    <value>Caller Settings</value>
+  </data>
+  <data name="&gt;&gt;grpCaller.Name" xml:space="preserve">
+    <value>grpCaller</value>
+  </data>
+  <data name="&gt;&gt;grpCaller.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpCaller.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpCaller.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="chkEnableLedFB.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -729,32 +1353,11 @@
   <data name="&gt;&gt;cboFbNumDisplay.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="grpFlashboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 25</value>
-  </data>
-  <data name="grpFlashboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 93</value>
-  </data>
-  <data name="grpFlashboard.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="grpFlashboard.Text" xml:space="preserve">
-    <value>FortuNet Flashboard</value>
-  </data>
-  <data name="&gt;&gt;grpFlashboard.Name" xml:space="preserve">
-    <value>grpFlashboard</value>
-  </data>
-  <data name="&gt;&gt;grpFlashboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpFlashboard.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;grpFlashboard.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="rfDelayMsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="rfDelayMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="rfDelayMsLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>273, 97</value>
@@ -838,10 +1441,10 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numRfPacketSleep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 95</value>
+    <value>208, 96</value>
   </data>
   <data name="numRfPacketSleep.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 26</value>
+    <value>64, 26</value>
   </data>
   <data name="numRfPacketSleep.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -941,30 +1544,6 @@
   </data>
   <data name="&gt;&gt;cboRFTransType.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="grpRF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 124</value>
-  </data>
-  <data name="grpRF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 131</value>
-  </data>
-  <data name="grpRF.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="grpRF.Text" xml:space="preserve">
-    <value>RF</value>
-  </data>
-  <data name="&gt;&gt;grpRF.Name" xml:space="preserve">
-    <value>grpRF</value>
-  </data>
-  <data name="&gt;&gt;grpRF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpRF.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;grpRF.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1074,297 +1653,6 @@
   <data name="&gt;&gt;cboFBInterfaceType.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="grpFBI.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 261</value>
-  </data>
-  <data name="grpFBI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 100</value>
-  </data>
-  <data name="grpFBI.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="grpFBI.Text" xml:space="preserve">
-    <value>FBI Box</value>
-  </data>
-  <data name="&gt;&gt;grpFBI.Name" xml:space="preserve">
-    <value>grpFBI</value>
-  </data>
-  <data name="&gt;&gt;grpFBI.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpFBI.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;grpFBI.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="chkDisplayWinnerCount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkDisplayWinnerCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkDisplayWinnerCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 121</value>
-  </data>
-  <data name="chkDisplayWinnerCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 26</value>
-  </data>
-  <data name="chkDisplayWinnerCount.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="chkDisplayWinnerCount.Text" xml:space="preserve">
-    <value>Display Winner Count</value>
-  </data>
-  <data name="&gt;&gt;chkDisplayWinnerCount.Name" xml:space="preserve">
-    <value>chkDisplayWinnerCount</value>
-  </data>
-  <data name="&gt;&gt;chkDisplayWinnerCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkDisplayWinnerCount.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;chkDisplayWinnerCount.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chkAllowManualWildCalls.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkAllowManualWildCalls.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkAllowManualWildCalls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 153</value>
-  </data>
-  <data name="chkAllowManualWildCalls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 26</value>
-  </data>
-  <data name="chkAllowManualWildCalls.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chkAllowManualWildCalls.Text" xml:space="preserve">
-    <value>Allow manual wild calls</value>
-  </data>
-  <data name="&gt;&gt;chkAllowManualWildCalls.Name" xml:space="preserve">
-    <value>chkAllowManualWildCalls</value>
-  </data>
-  <data name="&gt;&gt;chkAllowManualWildCalls.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkAllowManualWildCalls.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;chkAllowManualWildCalls.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="chkEnableOneTouchVerify.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkEnableOneTouchVerify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkEnableOneTouchVerify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 25</value>
-  </data>
-  <data name="chkEnableOneTouchVerify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 26</value>
-  </data>
-  <data name="chkEnableOneTouchVerify.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkEnableOneTouchVerify.Text" xml:space="preserve">
-    <value>One touch verify</value>
-  </data>
-  <data name="&gt;&gt;chkEnableOneTouchVerify.Name" xml:space="preserve">
-    <value>chkEnableOneTouchVerify</value>
-  </data>
-  <data name="&gt;&gt;chkEnableOneTouchVerify.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkEnableOneTouchVerify.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;chkEnableOneTouchVerify.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="chkPrintBallCalls.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkPrintBallCalls.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintBallCalls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 89</value>
-  </data>
-  <data name="chkPrintBallCalls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 26</value>
-  </data>
-  <data name="chkPrintBallCalls.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chkPrintBallCalls.Text" xml:space="preserve">
-    <value>Print ball calls on winner receipt</value>
-  </data>
-  <data name="&gt;&gt;chkPrintBallCalls.Name" xml:space="preserve">
-    <value>chkPrintBallCalls</value>
-  </data>
-  <data name="&gt;&gt;chkPrintBallCalls.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintBallCalls.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;chkPrintBallCalls.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="chkCardStatusOverride.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkCardStatusOverride.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkCardStatusOverride.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 185</value>
-  </data>
-  <data name="chkCardStatusOverride.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 26</value>
-  </data>
-  <data name="chkCardStatusOverride.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="chkCardStatusOverride.Text" xml:space="preserve">
-    <value>Allow card verification status override</value>
-  </data>
-  <data name="&gt;&gt;chkCardStatusOverride.Name" xml:space="preserve">
-    <value>chkCardStatusOverride</value>
-  </data>
-  <data name="&gt;&gt;chkCardStatusOverride.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkCardStatusOverride.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;chkCardStatusOverride.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="chkAllowPlayTypeToggle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkAllowPlayTypeToggle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkAllowPlayTypeToggle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 249</value>
-  </data>
-  <data name="chkAllowPlayTypeToggle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 26</value>
-  </data>
-  <data name="chkAllowPlayTypeToggle.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="chkAllowPlayTypeToggle.Text" xml:space="preserve">
-    <value>Allow Bingo - Lotto Toggle</value>
-  </data>
-  <data name="&gt;&gt;chkAllowPlayTypeToggle.Name" xml:space="preserve">
-    <value>chkAllowPlayTypeToggle</value>
-  </data>
-  <data name="&gt;&gt;chkAllowPlayTypeToggle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkAllowPlayTypeToggle.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;chkAllowPlayTypeToggle.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="chkPrintWinners.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkPrintWinners.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintWinners.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 57</value>
-  </data>
-  <data name="chkPrintWinners.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 26</value>
-  </data>
-  <data name="chkPrintWinners.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chkPrintWinners.Text" xml:space="preserve">
-    <value>Print winning cards</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinners.Name" xml:space="preserve">
-    <value>chkPrintWinners</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinners.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinners.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinners.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="chkAllowAutoGameAdvance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkAllowAutoGameAdvance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkAllowAutoGameAdvance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 217</value>
-  </data>
-  <data name="chkAllowAutoGameAdvance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="chkAllowAutoGameAdvance.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="chkAllowAutoGameAdvance.Text" xml:space="preserve">
-    <value>Allow auto game advance</value>
-  </data>
-  <data name="&gt;&gt;chkAllowAutoGameAdvance.Name" xml:space="preserve">
-    <value>chkAllowAutoGameAdvance</value>
-  </data>
-  <data name="&gt;&gt;chkAllowAutoGameAdvance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkAllowAutoGameAdvance.Parent" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;chkAllowAutoGameAdvance.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="grpCaller.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="grpCaller.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 12</value>
-  </data>
-  <data name="grpCaller.Size" type="System.Drawing.Size, System.Drawing">
-    <value>723, 378</value>
-  </data>
-  <data name="grpCaller.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="grpCaller.Text" xml:space="preserve">
-    <value>Caller Settings</value>
-  </data>
-  <data name="&gt;&gt;grpCaller.Name" xml:space="preserve">
-    <value>grpCaller</value>
-  </data>
-  <data name="&gt;&gt;grpCaller.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpCaller.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpCaller.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
   </data>
@@ -1390,7 +1678,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1423,7 +1711,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1444,6 +1732,6 @@
     <value>CallerSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.8, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

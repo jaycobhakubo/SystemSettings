@@ -390,6 +390,10 @@ namespace GTI.Modules.SystemSettings.UI
             if (bool.TryParse(staticValue, out boolResult))
             {
                 chkEnableRNGBallCalls.Visible = boolResult;
+                lbl_coolDownTimer.Visible = boolResult;
+                numCoolDownTimer.Visible = boolResult;
+                numCoolDownTimer.Enabled = chkEnableRNGBallCalls.Checked;
+                lbl_sec.Visible = boolResult;
             }
 
             // US4793
@@ -839,14 +843,7 @@ namespace GTI.Modules.SystemSettings.UI
             //cboScanner2Port.Enabled = chkEnableBlower.Checked;
 
             //DE12893
-            if (!numCoolDownTimer.Enabled && chkEnableBlower.Checked)
-            {
-                numCoolDownTimer.Enabled = true;
-            }
-            else if (!chkEnableBlower.Checked && !ParseBool(Common.GetLicenseSettingValue(LicenseSetting.EnableBingoRNG)) && numCoolDownTimer.Enabled)
-            {
-                numCoolDownTimer.Enabled = false;
-            }
+           
         }
 
         private void tbBlowerAddress_OnKeyPress(object sender, KeyPressEventArgs e)
@@ -907,6 +904,14 @@ namespace GTI.Modules.SystemSettings.UI
         }
         
         #endregion // Private Routines
+
+        private void chkEnableRNGBallCalls_CheckedChanged(object sender, EventArgs e)
+        {
+            m_bModified = true;
+            numCoolDownTimer.Enabled = chkEnableRNGBallCalls.Checked;
+        }
+
+       
 
 	} // end class
 } // end namespace
