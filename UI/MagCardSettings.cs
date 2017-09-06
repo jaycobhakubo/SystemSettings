@@ -972,7 +972,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnAnalyze_Click(object sender, EventArgs e)
         {
-            if (lstFilters.Items.Count > 0 && GTI.Modules.Shared.MessageForm.Show("You can analyze cards from scratch or using the curently defined settings.\n\nDo you want to start from scratch and replace the current settings?", "Clear Settings?", MessageFormTypes.YesNo_DefNO) == DialogResult.Yes)
+            if (GTI.Modules.Shared.MessageForm.ShowCustomTwoButton(this, new NormalDisplayMode(), "You can analyze cards from scratch or using the curently defined settings.\n\nDo you want to start from scratch and replace the current settings?", "Clear Settings?", false, 2, "Start from scratch", "Keep settings", 0) == 1)
             {
                 lstFilters.Items.Clear();
                 cbStartCard.Text = "";
@@ -992,6 +992,7 @@ namespace GTI.Modules.SystemSettings.UI
             StringBuilder sb = new StringBuilder();
 
             magForm.AnalyzingCards = true;
+            magForm.AtLeastOneCardToAnalyze = false;
             magForm.ClearCardButtonVisible = false;
 
             txtCardDigits.Clear();
@@ -1014,6 +1015,7 @@ namespace GTI.Modules.SystemSettings.UI
                     string cardData = magForm.MagCardNumber;
 
                     swipeNumber++;
+                    magForm.AtLeastOneCardToAnalyze = true;
 
                     if (cardData.Length > 2) //we at least have a start and stop
                     {

@@ -33,6 +33,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkScanningStartsNewSale = new System.Windows.Forms.CheckBox();
+            this.chkShowQuantityOnButtons = new System.Windows.Forms.CheckBox();
             this.chkTwoMenuPagesPerPOSPage = new System.Windows.Forms.CheckBox();
             this.chkWidescreen = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -95,6 +97,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.Name = "btnReset";
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -111,6 +114,8 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.chkScanningStartsNewSale);
+            this.panel1.Controls.Add(this.chkShowQuantityOnButtons);
             this.panel1.Controls.Add(this.chkTwoMenuPagesPerPOSPage);
             this.panel1.Controls.Add(this.chkWidescreen);
             this.panel1.Controls.Add(this.label2);
@@ -152,6 +157,20 @@ namespace GTI.Modules.SystemSettings.UI
             this.panel1.Controls.Add(this.chkbxAutoIssue);
             this.panel1.Controls.Add(this.chkLongDescriptions);
             this.panel1.Name = "panel1";
+            // 
+            // chkScanningStartsNewSale
+            // 
+            resources.ApplyResources(this.chkScanningStartsNewSale, "chkScanningStartsNewSale");
+            this.chkScanningStartsNewSale.Name = "chkScanningStartsNewSale";
+            this.chkScanningStartsNewSale.UseVisualStyleBackColor = true;
+            this.chkScanningStartsNewSale.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkShowQuantityOnButtons
+            // 
+            resources.ApplyResources(this.chkShowQuantityOnButtons, "chkShowQuantityOnButtons");
+            this.chkShowQuantityOnButtons.Name = "chkShowQuantityOnButtons";
+            this.chkShowQuantityOnButtons.UseVisualStyleBackColor = true;
+            this.chkShowQuantityOnButtons.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkTwoMenuPagesPerPOSPage
             // 
@@ -449,6 +468,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.Name = "btnSave";
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -515,5 +535,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.ComboBox cmbResellAuditedItem;
         private System.Windows.Forms.CheckBox chkTwoMenuPagesPerPOSPage;
         private System.Windows.Forms.CheckBox chkWidescreen;
+        private System.Windows.Forms.CheckBox chkShowQuantityOnButtons;
+        private System.Windows.Forms.CheckBox chkScanningStartsNewSale;
 	}
 }

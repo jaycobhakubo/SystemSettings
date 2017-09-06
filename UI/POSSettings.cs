@@ -99,6 +99,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             chkEnableRegisterClosingReport.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.EnableRegisterClosingReport));
 
+            chkShowQuantityOnButtons.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ShowQuantitiesOnMenuButtons));
+
+            chkScanningStartsNewSale.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ScannedReceiptsStartNewSale));
+
             chkPrintRegisterClosingOnCloseBank.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.PrintRegisterClosingOnBankClose));
 
             chkWidescreen.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.AllowWidescreenPOS));
@@ -417,7 +421,6 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool SavePosSettings()
         {
-
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
 
@@ -427,6 +430,14 @@ namespace GTI.Modules.SystemSettings.UI
 
             s.Id = (int) Setting.AllowQuantitySale;
             s.Value = chkAllowQuantitySales.Checked.ToString();
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.ShowQuantitiesOnMenuButtons;
+            s.Value = chkShowQuantityOnButtons.Checked.ToString();
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.ScannedReceiptsStartNewSale;
+            s.Value = chkScanningStartsNewSale.Checked.ToString();
             arrSettings.Add(s);
 
             s.Id = (int)Setting.AllowWidescreenPOS;

@@ -51,6 +51,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkPrintAccount = new System.Windows.Forms.CheckBox();
             this.chkPrintOperatorInfo = new System.Windows.Forms.CheckBox();
             this.chkCompactPaperInfo = new System.Windows.Forms.CheckBox();
             this.chkSortReceipt = new System.Windows.Forms.CheckBox();
@@ -228,6 +229,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.Name = "btnReset";
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -242,11 +244,13 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.Name = "btnSave";
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkPrintAccount);
             this.groupBox1.Controls.Add(this.chkPrintOperatorInfo);
             this.groupBox1.Controls.Add(this.chkCompactPaperInfo);
             this.groupBox1.Controls.Add(this.chkSortReceipt);
@@ -273,6 +277,13 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // chkPrintAccount
+            // 
+            resources.ApplyResources(this.chkPrintAccount, "chkPrintAccount");
+            this.chkPrintAccount.Name = "chkPrintAccount";
+            this.chkPrintAccount.UseVisualStyleBackColor = true;
+            this.chkPrintAccount.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkPrintOperatorInfo
             // 
@@ -308,6 +319,7 @@ namespace GTI.Modules.SystemSettings.UI
             0,
             0,
             0});
+            this.numVoidSignatureLines.ValueChanged += new System.EventHandler(this.numVoidSignatureLines_ValueChanged);
             // 
             // chkPrintVoidSignatureLines
             // 
@@ -529,5 +541,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkSortReceipt;
         private System.Windows.Forms.CheckBox chkCompactPaperInfo;
         private System.Windows.Forms.CheckBox chkPrintOperatorInfo;
+        private System.Windows.Forms.CheckBox chkPrintAccount;
 	}
 }

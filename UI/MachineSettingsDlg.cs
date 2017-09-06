@@ -94,6 +94,7 @@ namespace GTI.Modules.SystemSettings.UI
             lvAllowableScenes.MultiSelect = false;
             lvAllowableScenes.HideSelection = false;
 
+            LoadComboboxComPort();
             LoadLists();
 
             m_arrMachines = arrMachines;
@@ -324,10 +325,37 @@ namespace GTI.Modules.SystemSettings.UI
             return moduleIds;
         }
 
+        private void LoadComboboxComPort()
+        {
+            var lstComPortKioskBillAcceptor = new List<Business.GenericCBOItem>();
+            for (int i = 0; i < 14; i++)
+            {
+                Business.GenericCBOItem cboItem = new Business.GenericCBOItem();
+                cboItem.CBOValueMember = i;
+                switch (i)
+                {
+                    case 0:
+                        cboItem.CBODisplayMember = "Disabled";
+                        break;
+                    default:
+                        cboItem.CBODisplayMember = "COM" + i.ToString();
+                        break;
+                }
+
+                lstComPortKioskBillAcceptor.Add(cboItem);
+            }
+            cboKioskBillAcceptorComPort.Items.Clear();
+            cboKioskBillAcceptorComPort.DataSource = lstComPortKioskBillAcceptor;
+            cboKioskBillAcceptorComPort.DisplayMember = "CBODisplayMember";
+            cboKioskBillAcceptorComPort.ValueMember = "CBOValueMember";
+        }
+
+
         private void FillControls()
         {
-            // Decide which controls we are going to show for this device type
-            bool IsHallDisplayVisible = (m_nDeviceId == Device.RemoteDisplay.Id || (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(10)));
+
+            bool IsHallDisplayVisible = (m_nDeviceId == Device.RemoteDisplay.Id || (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(10)));     // Decide which controls we are going to show for this device type
+            SettingValue s;      // Fill in the settings
 
             grpHallDisplay.Visible = IsHallDisplayVisible;
             if (IsHallDisplayVisible == false)
@@ -340,7 +368,7 @@ namespace GTI.Modules.SystemSettings.UI
                 SetRemoteDisplayTab();
             }
             // TTP 50339
-            bool IsPOSVisible = (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(1))
+            bool IsPOSVisible = (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(1)) 
                 || (m_nDeviceId == Device.POS.Id)
                 || (m_nDeviceId == Device.POSPortable.Id)
                 || (m_nDeviceId == Device.AdvancedPOSKiosk.Id)
@@ -351,6 +379,73 @@ namespace GTI.Modules.SystemSettings.UI
             // Rally 	DE2837 Allow the caller to configure reciept printer
             //   || (m_nDeviceId == Device.Caller.Id);
 
+            bool t_isKioskSalesActive =    //Show only this setting only if one of the kiosk is being used.
+             ((m_nDeviceId == Device.AdvancedPOSKiosk.Id)
+                || (m_nDeviceId == Device.BuyAgainKiosk.Id)
+                || (m_nDeviceId == Device.SimplePOSKiosk.Id)
+                || (m_nDeviceId == Device.HybridKiosk.Id));
+                
+            grpbxKioskSales.Visible = t_isKioskSalesActive;
+            if (t_isKioskSalesActive)
+            {
+                grpPOS.Size = new System.Drawing.Size(672, 477);
+                string tempString = "";
+                int tempSelectedIndex = 0;
+                bool tempResult = false;
+
+                //kiosk sales - com port
+                if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.KioskPeripheralsAcceptorComPort, out s))
+                {
+                    chkbxBillAcceptor.Checked = false;
+                    tempString = s.Value;
+                }
+                else
+                {
+                    chkbxBillAcceptor.Checked = true;
+                    tempString = Common.GetSystemSetting(Setting.KioskPeripheralsAcceptorComPort);                  
+                }
+
+
+                try//If theres any issue just set to 0
+                {
+                    tempResult = int.TryParse(tempString, out tempSelectedIndex);
+
+                    if (tempResult)//If the setting is not numeric set it  as  disable
+                    {
+                        cboKioskBillAcceptorComPort.SelectedIndex = tempSelectedIndex;
+                    }
+                    else
+                    {
+                        cboKioskBillAcceptorComPort.SelectedIndex = 0;
+                        //  saveFlag = true;
+                    }
+                }
+                catch
+                {
+                    cboKioskBillAcceptorComPort.SelectedIndex = 0;
+                    // saveFlag = true;
+                }                  
+
+
+                //Kiosk - sales (printer name)
+                if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.KioskPeripheralsTicketPrinterName, out s))
+                {
+                    chkbxTicketPrinter.Checked = false;
+                    txtbxKioskTicketPrinterName.Text = s.Value;
+
+                }
+                else
+                {
+                    chkbxTicketPrinter.Checked = true;
+                    tempString = Common.GetSystemSetting(Setting.KioskPeripheralsTicketPrinterName);
+                    txtbxKioskTicketPrinterName.Text = tempString;
+                }
+            }
+            else
+            {
+                grpPOS.Size = new System.Drawing.Size(672, 566);
+            }
+            
             grpPOS.Visible = IsPOSVisible;
 
             if (IsPOSVisible == false)
@@ -388,8 +483,7 @@ namespace GTI.Modules.SystemSettings.UI
                 tabMachineDialog.TabPages.Remove(tpFixedBase);
             }
 
-            // Fill in the settings
-            SettingValue s;
+          
 
             // Client Install Drive
             if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.ClientInstallDrive, out s))
@@ -1040,40 +1134,14 @@ namespace GTI.Modules.SystemSettings.UI
             this.Close();
         }
 
+
         private bool SaveMachineSettings()
         {
             // Gather up the settings we are going to set (we only need ID and VALUE for this msg)
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
 
-            //RALLY DE12883: Unchecking defaults for both global and receipt printer
-            //Additionally fixed saving to allow for multiple tabs information to be saved properly and not overwritten or deleted unintentionally
-
-            //SettingValue cbbScannerTypeValue = new SettingValue
-            //{
-            //    Id = (int)Setting.CbbScannerType,
-            //    //index 0 = None
-            //    //index 1 = PDI VMR-138
-            //    //index 2 = Chatsworth ACP-100
-            //    //index 3 = Chatsworth ACP-200
-            //    Value = cboCbbScannerType.SelectedIndex.ToString()
-            //};
-
-            //// Send a message to the server to save machine settigs
-            //SetMachineSettingsExMessage msg = new SetMachineSettingsExMessage(new[] { Common.MachineId }, new[] { cbbScannerTypeValue });
-
-            //try
-            //{
-            //    msg.Send();
-            //}
-            //catch (Exception e)
-            //{
-            //    MessageForm.Show(this, string.Format(Resources.UpdMachineSettingsFailed, e));
-            //    return false;
-            //}
-
-            // General Settings
-            // Client Install Drive
+            // General Settings   // Client Install Drive         
             if (!chkClientInstallDrive.Checked)
             {
                 s.Id = (int)Setting.ClientInstallDrive;
@@ -1357,6 +1425,20 @@ namespace GTI.Modules.SystemSettings.UI
                 arrSettings.Add(s);
             }
 
+            if (!chkbxBillAcceptor.Checked)
+            {
+                s.Id = (int)Setting.KioskPeripheralsAcceptorComPort;
+                s.Value = cboKioskBillAcceptorComPort.SelectedValue.ToString();
+                arrSettings.Add(s);
+            }
+
+            if (!chkbxTicketPrinter.Checked)
+            {
+                s.Id = (int)Setting.KioskPeripheralsTicketPrinterName;
+                s.Value = txtbxKioskTicketPrinterName.Text;
+                arrSettings.Add(s);
+            }
+           
             // Create an array of machine ids
             List<Int32> arrMachineIds = new List<Int32>();
             int nCount = m_arrMachines.Length;
@@ -1777,6 +1859,7 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+      
         private bool LoadScenes()
         {
             int intReturnVal = GetScenes();
@@ -2144,9 +2227,27 @@ namespace GTI.Modules.SystemSettings.UI
             if (chkShowPayoutAmountDefault.Checked)
             {
                 chkShowPayoutAmounts.Checked = Common.ParseBool(Common.GetOpSetting(Setting.ShowPayoutAmount));  //RALLY DE9427
-
             }
         }
+
+        private void chkbxTicketPrinter_CheckedChanged(object sender, EventArgs e)
+        {
+            txtbxKioskTicketPrinterName.Enabled = !chkbxTicketPrinter.Checked;
+        }
+
+        private void chkbxBillAcceptor_CheckedChanged(object sender, EventArgs e)
+        {
+            cboKioskBillAcceptorComPort.Enabled = !chkbxBillAcceptor.Checked;
+        }
+
+        //private void chkSellElectronics_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    cboSellElectronics.Enabled = !chkSellElectronics.Checked;
+        //    if (chkSellElectronics.Checked)
+        //    {
+        //        cboSellElectronics.SelectedIndex = Common.GetOpSetting(Setting.SellElectronics).Equals(bool.TrueString) ? 1 : 0;
+        //    }
+        //}
 
         //END RALLY US1897
         //END RALLY US1594
@@ -2242,6 +2343,10 @@ namespace GTI.Modules.SystemSettings.UI
                 numMinColorCircleTime.Value = Common.ParseInt(Common.GetSystemSetting(Setting.ColorCircleMinDisplayTime));
             }
         }
+
+ 
+
+     
 
     }//class
 }

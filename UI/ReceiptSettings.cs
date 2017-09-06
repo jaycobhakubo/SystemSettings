@@ -87,6 +87,9 @@ namespace GTI.Modules.SystemSettings.UI
             string globalSettingValue;
             chkPrintFacesToGlobalPrinter.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.PrintFacesToGlobalPrinter)); //RALLY DE9427 //RALLY DE 4075
 
+            Common.GetOpSettingValue(Setting.PrintPlayerIdentityAsAccountNumber, out tempSettingValue);
+            chkPrintAccount.Checked = Common.ParseBool(tempSettingValue.Value);
+
             Common.GetOpSettingValue(Setting.PrintReceiptSortedByPackageType, out tempSettingValue);
             chkSortReceipt.Checked = Common.ParseBool(tempSettingValue.Value);
 
@@ -277,8 +280,10 @@ namespace GTI.Modules.SystemSettings.UI
             //END RALLY TA 4250
 
 			// Update the operator global settings
-			
-			Common.SetOpSettingValue(Setting.PrintPointInfo, chkPrintPointInfo.Checked.ToString());
+
+            Common.SetOpSettingValue(Setting.PrintPointInfo, chkPrintPointInfo.Checked.ToString());
+
+            Common.SetOpSettingValue(Setting.PrintPlayerIdentityAsAccountNumber, chkPrintAccount.Checked.ToString());
 
             Common.SetOpSettingValue(Setting.PrintReceiptSortedByPackageType, chkSortReceipt.Checked.ToString());
             
@@ -409,6 +414,11 @@ namespace GTI.Modules.SystemSettings.UI
             m_bModified = true;
 
             numVoidSignatureLines.Enabled = chkPrintVoidSignatureLines.Checked;
+        }
+
+        private void numVoidSignatureLines_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 	} // end class
 } // end namespace

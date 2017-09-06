@@ -243,6 +243,9 @@ namespace GTI.Modules.SystemSettings.UI
             pointOfSalePrinterSettings.Hide();
             pointOfSalePrinterSettings.Enabled = false;
 
+            kioskSalesSettings1.LoadSettings();
+            kioskSalesSettings1.Hide();
+            kioskSalesSettings1.Enabled = false;
 
             //END RALLY DE9656
 
@@ -369,6 +372,19 @@ namespace GTI.Modules.SystemSettings.UI
                 nodeParent.Tag = kioskSettings1;
                 treeView1.Nodes.Add(nodeParent);
             }
+
+
+            if (Common.GetDeviceCount(Device.AdvancedPOSKiosk) > 0 ||
+                Common.GetDeviceCount(Device.BuyAgainKiosk) > 0 ||
+                Common.GetDeviceCount(Device.SimplePOSKiosk) > 0 ||
+                Common.GetDeviceCount(Device.HybridKiosk) > 0
+               )
+          {
+                nodeParent = new TreeNode("POS Kiosk", 0, 1);
+                nodeParent.Tag = kioskSalesSettings1;
+                treeView1.Nodes.Add(nodeParent);
+          }
+    
 
             //License File Settings
             nodeParent = new TreeNode("License File Settings", 0, 1);

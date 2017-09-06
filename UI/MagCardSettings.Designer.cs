@@ -309,6 +309,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnAnalyze.Name = "btnAnalyze";
             this.btnAnalyze.RepeatRate = 150;
             this.btnAnalyze.RepeatWhenHeldFor = 750;
+            this.btnAnalyze.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnAnalyze.Click += new System.EventHandler(this.btnAnalyze_Click);
             // 
             // lblISOTracksFound
@@ -325,6 +326,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnApplyFilter.Name = "btnApplyFilter";
             this.btnApplyFilter.RepeatRate = 150;
             this.btnApplyFilter.RepeatWhenHeldFor = 750;
+            this.btnApplyFilter.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnApplyFilter.Click += new System.EventHandler(this.btnApplyFilter_Click);
             // 
             // label9
@@ -360,6 +362,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.RepeatRate = 150;
             this.btnAccept.RepeatWhenHeldFor = 750;
+            this.btnAccept.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnAccept.UseVisualStyleBackColor = false;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
@@ -378,7 +381,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.GetString("cbFilter.Items5"),
             resources.GetString("cbFilter.Items6"),
             resources.GetString("cbFilter.Items7"),
-            resources.GetString("cbFilter.Items8")});
+            resources.GetString("cbFilter.Items8"),
+            resources.GetString("cbFilter.Items9")});
             this.cbFilter.Name = "cbFilter";
             this.cbFilter.SelectedIndexChanged += new System.EventHandler(this.cbFilter_SelectedIndexChanged);
             this.cbFilter.TextUpdate += new System.EventHandler(this.cbFilter_TextUpdate);
@@ -399,6 +403,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSwipeCard.Name = "btnSwipeCard";
             this.btnSwipeCard.RepeatRate = 150;
             this.btnSwipeCard.RepeatWhenHeldFor = 750;
+            this.btnSwipeCard.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSwipeCard.UseVisualStyleBackColor = false;
             this.btnSwipeCard.Click += new System.EventHandler(this.btnSwipeCard_Click);
             // 
@@ -440,6 +445,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnCopyFilterToLab.Name = "btnCopyFilterToLab";
             this.btnCopyFilterToLab.RepeatRate = 150;
             this.btnCopyFilterToLab.RepeatWhenHeldFor = 750;
+            this.btnCopyFilterToLab.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnCopyFilterToLab.UseVisualStyleBackColor = false;
             this.btnCopyFilterToLab.Click += new System.EventHandler(this.btnCopyFilterToLab_Click);
             // 
@@ -453,6 +459,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnShiftFilterDown.Name = "btnShiftFilterDown";
             this.btnShiftFilterDown.RepeatRate = 150;
             this.btnShiftFilterDown.RepeatWhenHeldFor = 750;
+            this.btnShiftFilterDown.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnShiftFilterDown.Click += new System.EventHandler(this.btnShiftFilterDown_Click);
             // 
             // btnShiftFilterUp
@@ -465,6 +472,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnShiftFilterUp.Name = "btnShiftFilterUp";
             this.btnShiftFilterUp.RepeatRate = 150;
             this.btnShiftFilterUp.RepeatWhenHeldFor = 750;
+            this.btnShiftFilterUp.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnShiftFilterUp.Click += new System.EventHandler(this.btnShiftFilterUp_Click);
             // 
             // label8
@@ -504,6 +512,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnTest.Name = "btnTest";
             this.btnTest.RepeatRate = 150;
             this.btnTest.RepeatWhenHeldFor = 750;
+            this.btnTest.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnTest.UseVisualStyleBackColor = false;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
@@ -517,6 +526,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.RepeatRate = 150;
             this.btnDelete.RepeatWhenHeldFor = 750;
+            this.btnDelete.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -530,6 +540,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.Name = "btnReset";
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -544,6 +555,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.Name = "btnSave";
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
