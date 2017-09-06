@@ -453,6 +453,9 @@
   <data name="txtDisclaimer3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
+  <data name="txtDisclaimer3.MaxLength" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
   <data name="txtDisclaimer3.Size" type="System.Drawing.Size, System.Drawing">
     <value>283, 26</value>
   </data>
@@ -480,6 +483,9 @@
   <data name="txtDisclaimer2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
+  <data name="txtDisclaimer2.MaxLength" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
   <data name="txtDisclaimer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>283, 26</value>
   </data>
@@ -506,6 +512,9 @@
   </data>
   <data name="txtDisclaimer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
+  </data>
+  <data name="txtDisclaimer1.MaxLength" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
   <data name="txtDisclaimer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>283, 26</value>
@@ -832,7 +841,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.844, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -934,7 +943,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.844, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1619,6 +1628,6 @@
     <value>ReceiptSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.8, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>
