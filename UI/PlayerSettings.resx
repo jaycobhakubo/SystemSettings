@@ -937,13 +937,13 @@
     <value>506, 400</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
+    <value>35, 22</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>secc</value>
+    <value>sec</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
