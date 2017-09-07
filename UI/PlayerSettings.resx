@@ -126,7 +126,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>396, 548</value>
+    <value>368, 560</value>
   </data>
   <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -160,7 +160,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 548</value>
+    <value>220, 560</value>
   </data>
   <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -223,7 +223,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCrateRebootThresholdSeconds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 452</value>
+    <value>506, 440</value>
   </data>
   <data name="lblCrateRebootThresholdSeconds.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 22</value>
@@ -233,6 +233,9 @@
   </data>
   <data name="lblCrateRebootThresholdSeconds.Text" xml:space="preserve">
     <value>sec</value>
+  </data>
+  <data name="lblCrateRebootThresholdSeconds.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;lblCrateRebootThresholdSeconds.Name" xml:space="preserve">
     <value>lblCrateRebootThresholdSeconds</value>
@@ -253,7 +256,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCrateRebootThreshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 452</value>
+    <value>21, 440</value>
   </data>
   <data name="lblCrateRebootThreshold.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 22</value>
@@ -263,6 +266,9 @@
   </data>
   <data name="lblCrateRebootThreshold.Text" xml:space="preserve">
     <value>Upper Threshold for Crate Reboot</value>
+  </data>
+  <data name="lblCrateRebootThreshold.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;lblCrateRebootThreshold.Name" xml:space="preserve">
     <value>lblCrateRebootThreshold</value>
@@ -280,13 +286,16 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtRebootTimeThreshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 452</value>
+    <value>405, 440</value>
   </data>
   <data name="txtRebootTimeThreshold.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
   </data>
   <data name="txtRebootTimeThreshold.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
+  </data>
+  <data name="txtRebootTimeThreshold.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;txtRebootTimeThreshold.Name" xml:space="preserve">
     <value>txtRebootTimeThreshold</value>
@@ -571,7 +580,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 317</value>
+    <value>21, 305</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 22</value>
@@ -598,7 +607,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtPlayerPINLength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 317</value>
+    <value>405, 305</value>
   </data>
   <data name="txtPlayerPINLength.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -739,7 +748,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 419</value>
+    <value>506, 407</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 22</value>
@@ -769,7 +778,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 419</value>
+    <value>21, 407</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>351, 22</value>
@@ -796,7 +805,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtWirelessNetworkConnectionLossThreshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 419</value>
+    <value>405, 407</value>
   </data>
   <data name="txtWirelessNetworkConnectionLossThreshold.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -823,7 +832,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 386</value>
+    <value>506, 374</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 22</value>
@@ -853,7 +862,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 385</value>
+    <value>21, 373</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>333, 22</value>
@@ -880,7 +889,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtWiredNetworkConnectionLossThreshold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 385</value>
+    <value>405, 373</value>
   </data>
   <data name="txtWiredNetworkConnectionLossThreshold.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -934,7 +943,7 @@
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 353</value>
+    <value>506, 341</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 22</value>
@@ -961,7 +970,7 @@
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 351</value>
+    <value>21, 339</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>226, 22</value>
@@ -988,7 +997,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtPlayWinAnimationDuration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 351</value>
+    <value>405, 339</value>
   </data>
   <data name="txtPlayWinAnimationDuration.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -1012,10 +1021,10 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>12, 40</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>728, 352</value>
+    <value>728, 496</value>
   </data>
   <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1042,7 +1051,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="m_tabPageAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 445</value>
+    <value>750, 609</value>
   </data>
   <data name="m_tabPageAll.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1062,86 +1071,182 @@
   <data name="&gt;&gt;m_tabPageAll.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="m_tabPageFixedBase.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
   </data>
-  <data name="tabPage4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="m_tabPageFixedBase.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 613</value>
+  <data name="m_tabPageFixedBase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 609</value>
   </data>
-  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+  <data name="m_tabPageFixedBase.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="tabPage4.Text" xml:space="preserve">
+  <data name="m_tabPageFixedBase.Text" xml:space="preserve">
     <value>Fixed Base</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
+  <data name="&gt;&gt;m_tabPageFixedBase.Name" xml:space="preserve">
+    <value>m_tabPageFixedBase</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageFixedBase.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageFixedBase.Parent" xml:space="preserve">
     <value>m_tabCtrlPlayerSettings</value>
   </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageFixedBase.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="m_tabPageTedE.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
   </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="m_tabPageTedE.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 613</value>
+  <data name="m_tabPageTedE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 609</value>
   </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+  <data name="m_tabPageTedE.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Fixed Base</value>
+  <data name="m_tabPageTedE.Text" xml:space="preserve">
+    <value>TedE</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;m_tabPageTedE.Name" xml:space="preserve">
+    <value>m_tabPageTedE</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTedE.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTedE.Parent" xml:space="preserve">
     <value>m_tabCtrlPlayerSettings</value>
   </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTedE.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="m_tabPageTracker.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
   </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="m_tabPageTracker.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 613</value>
+  <data name="m_tabPageTracker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 609</value>
   </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+  <data name="m_tabPageTracker.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Fixed Base</value>
+  <data name="m_tabPageTracker.Text" xml:space="preserve">
+    <value>Tracker</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;m_tabPageTracker.Name" xml:space="preserve">
+    <value>m_tabPageTracker</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTracker.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTracker.Parent" xml:space="preserve">
     <value>m_tabCtrlPlayerSettings</value>
   </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTracker.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="checkBox16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 16</value>
+  </data>
+  <data name="checkBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 26</value>
+  </data>
+  <data name="checkBox16.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="checkBox16.Text" xml:space="preserve">
+    <value>Use Default</value>
+  </data>
+  <data name="&gt;&gt;checkBox16.Name" xml:space="preserve">
+    <value>checkBox16</value>
+  </data>
+  <data name="&gt;&gt;checkBox16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox16.Parent" xml:space="preserve">
+    <value>m_tabPageTraveler</value>
+  </data>
+  <data name="&gt;&gt;checkBox16.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="imageButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="imageButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="imageButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 560</value>
+  </data>
+  <data name="imageButton1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="imageButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="imageButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="imageButton1.Text" xml:space="preserve">
+    <value>&amp;Reset</value>
+  </data>
+  <data name="&gt;&gt;imageButton1.Name" xml:space="preserve">
+    <value>imageButton1</value>
+  </data>
+  <data name="&gt;&gt;imageButton1.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;imageButton1.Parent" xml:space="preserve">
+    <value>m_tabPageTraveler</value>
+  </data>
+  <data name="&gt;&gt;imageButton1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="imageButton2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="imageButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="imageButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 560</value>
+  </data>
+  <data name="imageButton2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="imageButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="imageButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="imageButton2.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;imageButton2.Name" xml:space="preserve">
+    <value>imageButton2</value>
+  </data>
+  <data name="&gt;&gt;imageButton2.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;imageButton2.Parent" xml:space="preserve">
+    <value>m_tabPageTraveler</value>
+  </data>
+  <data name="&gt;&gt;imageButton2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1180,7 +1285,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 499</value>
+    <value>506, 440</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 22</value>
@@ -1190,6 +1295,9 @@
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>sec</value>
+  </data>
+  <data name="label8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -1210,7 +1318,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 499</value>
+    <value>21, 440</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 22</value>
@@ -1220,6 +1328,9 @@
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Upper Threshold for Crate Reboot</value>
+  </data>
+  <data name="label9.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -1237,13 +1348,16 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 499</value>
+    <value>405, 440</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
+  </data>
+  <data name="textBox1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
     <value>textBox1</value>
@@ -1534,7 +1648,7 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 364</value>
+    <value>21, 305</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 22</value>
@@ -1561,7 +1675,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 364</value>
+    <value>405, 305</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -1708,7 +1822,7 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 466</value>
+    <value>506, 407</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 22</value>
@@ -1738,7 +1852,7 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 466</value>
+    <value>21, 407</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>351, 22</value>
@@ -1765,7 +1879,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 466</value>
+    <value>405, 407</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -1792,7 +1906,7 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 433</value>
+    <value>506, 374</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 22</value>
@@ -1822,7 +1936,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 432</value>
+    <value>21, 373</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>333, 22</value>
@@ -1849,7 +1963,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 432</value>
+    <value>405, 373</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -1906,7 +2020,7 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 400</value>
+    <value>506, 341</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 22</value>
@@ -1936,7 +2050,7 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 398</value>
+    <value>21, 339</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>226, 22</value>
@@ -1963,7 +2077,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 398</value>
+    <value>405, 339</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -1983,14 +2097,17 @@
   <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
+  <data name="groupBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 86</value>
+    <value>12, 40</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>660, 436</value>
+    <value>728, 496</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2005,36 +2122,36 @@
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>m_tabPageFixedBase</value>
+    <value>m_tabPageTraveler</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
-  <data name="m_tabPageFixedBase.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="m_tabPageTraveler.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
   </data>
-  <data name="m_tabPageFixedBase.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="m_tabPageTraveler.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="m_tabPageFixedBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 613</value>
+  <data name="m_tabPageTraveler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 609</value>
   </data>
-  <data name="m_tabPageFixedBase.TabIndex" type="System.Int32, mscorlib">
+  <data name="m_tabPageTraveler.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="m_tabPageFixedBase.Text" xml:space="preserve">
-    <value>Fixed Base</value>
+  <data name="m_tabPageTraveler.Text" xml:space="preserve">
+    <value>Traveler</value>
   </data>
-  <data name="&gt;&gt;m_tabPageFixedBase.Name" xml:space="preserve">
-    <value>m_tabPageFixedBase</value>
+  <data name="&gt;&gt;m_tabPageTraveler.Name" xml:space="preserve">
+    <value>m_tabPageTraveler</value>
   </data>
-  <data name="&gt;&gt;m_tabPageFixedBase.Type" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTraveler.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;m_tabPageFixedBase.Parent" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTraveler.Parent" xml:space="preserve">
     <value>m_tabCtrlPlayerSettings</value>
   </data>
-  <data name="&gt;&gt;m_tabPageFixedBase.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;m_tabPageTraveler.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="m_tabCtrlPlayerSettings.Font" type="System.Drawing.Font, System.Drawing">
@@ -2044,7 +2161,7 @@
     <value>0, 0</value>
   </data>
   <data name="m_tabCtrlPlayerSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 480</value>
+    <value>758, 644</value>
   </data>
   <data name="m_tabCtrlPlayerSettings.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
