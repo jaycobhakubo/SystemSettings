@@ -98,10 +98,12 @@ namespace GTI.Modules.SystemSettings.UI
             SettingValue tempSettingValue;
             bool saveFlag = false;
 
-
             // DE13417
             Common.GetOpSettingValue(Setting.SessionSummaryBankUsePreviousClose, out tempSettingValue);
             chkbxSetBankToEndBank.Checked = ParseBool(tempSettingValue.Value);
+
+            Common.GetOpSettingValue(Setting.SessionSummaryBankActualCash, out tempSettingValue);
+            chkbxSetEndingBankToActualCash.Checked = ParseBool(tempSettingValue.Value);
 
             // US5345
             Common.GetOpSettingValue(Setting.SessionSummaryViewMode, out tempSettingValue);

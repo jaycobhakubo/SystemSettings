@@ -30,11 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SessionSummarySettings));
             this.grpbxSessionSettings = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cboUIDisplayMode = new System.Windows.Forms.ComboBox();
             this.chkbxSetBankToEndBank = new System.Windows.Forms.CheckBox();
             this.btnSave = new GTI.Controls.ImageButton();
             this.btnReset = new GTI.Controls.ImageButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cboUIDisplayMode = new System.Windows.Forms.ComboBox();
+            this.chkbxSetEndingBankToActualCash = new System.Windows.Forms.CheckBox();
             this.grpbxSessionSettings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,12 +43,25 @@
             // 
             this.grpbxSessionSettings.AccessibleRole = System.Windows.Forms.AccessibleRole.PageTabList;
             this.grpbxSessionSettings.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxSessionSettings.Controls.Add(this.chkbxSetEndingBankToActualCash);
             this.grpbxSessionSettings.Controls.Add(this.label7);
             this.grpbxSessionSettings.Controls.Add(this.cboUIDisplayMode);
             this.grpbxSessionSettings.Controls.Add(this.chkbxSetBankToEndBank);
             resources.ApplyResources(this.grpbxSessionSettings, "grpbxSessionSettings");
             this.grpbxSessionSettings.Name = "grpbxSessionSettings";
             this.grpbxSessionSettings.TabStop = false;
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // cboUIDisplayMode
+            // 
+            this.cboUIDisplayMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboUIDisplayMode, "cboUIDisplayMode");
+            this.cboUIDisplayMode.FormattingEnabled = true;
+            this.cboUIDisplayMode.Name = "cboUIDisplayMode";
             // 
             // chkbxSetBankToEndBank
             // 
@@ -67,6 +81,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -80,20 +95,17 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // label7
+            // chkbxSetEndingBankToActualCash
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // cboUIDisplayMode
-            // 
-            this.cboUIDisplayMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboUIDisplayMode, "cboUIDisplayMode");
-            this.cboUIDisplayMode.FormattingEnabled = true;
-            this.cboUIDisplayMode.Name = "cboUIDisplayMode";
+            resources.ApplyResources(this.chkbxSetEndingBankToActualCash, "chkbxSetEndingBankToActualCash");
+            this.chkbxSetEndingBankToActualCash.Name = "chkbxSetEndingBankToActualCash";
+            this.chkbxSetEndingBankToActualCash.Tag = "209";
+            this.chkbxSetEndingBankToActualCash.UseVisualStyleBackColor = true;
+            this.chkbxSetEndingBankToActualCash.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // SessionSummarySettings
             // 
@@ -118,6 +130,7 @@
         private System.Windows.Forms.CheckBox chkbxSetBankToEndBank;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cboUIDisplayMode;
+        private System.Windows.Forms.CheckBox chkbxSetEndingBankToActualCash;
 
     }
 }
