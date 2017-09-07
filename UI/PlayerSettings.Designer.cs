@@ -63,13 +63,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtPlayWinAnimationDuration = new System.Windows.Forms.TextBox();
             this.m_tabCtrlPlayerSettings = new System.Windows.Forms.TabControl();
             this.m_tabPageAll = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.m_tabPageFixedBase = new System.Windows.Forms.TabPage();
-            this.m_tabPageTedE = new System.Windows.Forms.TabPage();
-            this.m_tabPageTracker = new System.Windows.Forms.TabPage();
-            this.m_tabPageTraveler = new System.Windows.Forms.TabPage();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.imageButton1 = new GTI.Controls.ImageButton();
-            this.imageButton2 = new GTI.Controls.ImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -103,7 +100,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox5.SuspendLayout();
             this.m_tabCtrlPlayerSettings.SuspendLayout();
             this.m_tabPageAll.SuspendLayout();
-            this.m_tabPageTraveler.SuspendLayout();
+            this.m_tabPageFixedBase.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -357,10 +354,10 @@ namespace GTI.Modules.SystemSettings.UI
             // m_tabCtrlPlayerSettings
             // 
             this.m_tabCtrlPlayerSettings.Controls.Add(this.m_tabPageAll);
+            this.m_tabCtrlPlayerSettings.Controls.Add(this.tabPage4);
+            this.m_tabCtrlPlayerSettings.Controls.Add(this.tabPage3);
+            this.m_tabCtrlPlayerSettings.Controls.Add(this.tabPage1);
             this.m_tabCtrlPlayerSettings.Controls.Add(this.m_tabPageFixedBase);
-            this.m_tabCtrlPlayerSettings.Controls.Add(this.m_tabPageTedE);
-            this.m_tabCtrlPlayerSettings.Controls.Add(this.m_tabPageTracker);
-            this.m_tabCtrlPlayerSettings.Controls.Add(this.m_tabPageTraveler);
             resources.ApplyResources(this.m_tabCtrlPlayerSettings, "m_tabCtrlPlayerSettings");
             this.m_tabCtrlPlayerSettings.Name = "m_tabCtrlPlayerSettings";
             this.m_tabCtrlPlayerSettings.SelectedIndex = 0;
@@ -368,76 +365,37 @@ namespace GTI.Modules.SystemSettings.UI
             // m_tabPageAll
             // 
             this.m_tabPageAll.BackColor = System.Drawing.SystemColors.Control;
-            this.m_tabPageAll.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.Untitled_1;
             this.m_tabPageAll.Controls.Add(this.groupBox5);
             this.m_tabPageAll.Controls.Add(this.btnReset);
             this.m_tabPageAll.Controls.Add(this.btnSave);
             resources.ApplyResources(this.m_tabPageAll, "m_tabPageAll");
             this.m_tabPageAll.Name = "m_tabPageAll";
             // 
+            // tabPage4
+            // 
+            resources.ApplyResources(this.tabPage4, "tabPage4");
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage1
+            // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // m_tabPageFixedBase
             // 
+            this.m_tabPageFixedBase.BackColor = System.Drawing.SystemColors.Control;
+            this.m_tabPageFixedBase.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
+            this.m_tabPageFixedBase.Controls.Add(this.groupBox1);
             resources.ApplyResources(this.m_tabPageFixedBase, "m_tabPageFixedBase");
             this.m_tabPageFixedBase.Name = "m_tabPageFixedBase";
-            this.m_tabPageFixedBase.UseVisualStyleBackColor = true;
-            // 
-            // m_tabPageTedE
-            // 
-            resources.ApplyResources(this.m_tabPageTedE, "m_tabPageTedE");
-            this.m_tabPageTedE.Name = "m_tabPageTedE";
-            this.m_tabPageTedE.UseVisualStyleBackColor = true;
-            // 
-            // m_tabPageTracker
-            // 
-            resources.ApplyResources(this.m_tabPageTracker, "m_tabPageTracker");
-            this.m_tabPageTracker.Name = "m_tabPageTracker";
-            this.m_tabPageTracker.UseVisualStyleBackColor = true;
-            // 
-            // m_tabPageTraveler
-            // 
-            this.m_tabPageTraveler.BackColor = System.Drawing.SystemColors.Control;
-            this.m_tabPageTraveler.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.Untitled_1;
-            this.m_tabPageTraveler.Controls.Add(this.checkBox16);
-            this.m_tabPageTraveler.Controls.Add(this.imageButton1);
-            this.m_tabPageTraveler.Controls.Add(this.imageButton2);
-            this.m_tabPageTraveler.Controls.Add(this.groupBox1);
-            resources.ApplyResources(this.m_tabPageTraveler, "m_tabPageTraveler");
-            this.m_tabPageTraveler.Name = "m_tabPageTraveler";
-            // 
-            // checkBox16
-            // 
-            resources.ApplyResources(this.checkBox16, "checkBox16");
-            this.checkBox16.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox16.Checked = true;
-            this.checkBox16.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.UseVisualStyleBackColor = false;
-            // 
-            // imageButton1
-            // 
-            this.imageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton1.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.imageButton1, "imageButton1");
-            this.imageButton1.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.imageButton1.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.imageButton1.Name = "imageButton1";
-            this.imageButton1.RepeatRate = 150;
-            this.imageButton1.RepeatWhenHeldFor = 750;
-            this.imageButton1.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.imageButton1.UseVisualStyleBackColor = false;
-            // 
-            // imageButton2
-            // 
-            this.imageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton2.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.imageButton2, "imageButton2");
-            this.imageButton2.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.imageButton2.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.imageButton2.Name = "imageButton2";
-            this.imageButton2.RepeatRate = 150;
-            this.imageButton2.RepeatWhenHeldFor = 750;
-            this.imageButton2.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.imageButton2.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -646,8 +604,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox5.PerformLayout();
             this.m_tabCtrlPlayerSettings.ResumeLayout(false);
             this.m_tabPageAll.ResumeLayout(false);
-            this.m_tabPageTraveler.ResumeLayout(false);
-            this.m_tabPageTraveler.PerformLayout();
+            this.m_tabPageFixedBase.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -690,10 +647,10 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkBoxResetRadioOnWifiInterruptions;
         private System.Windows.Forms.TabControl m_tabCtrlPlayerSettings;
         private System.Windows.Forms.TabPage m_tabPageAll;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage m_tabPageFixedBase;
-        private System.Windows.Forms.TabPage m_tabPageTedE;
-        private System.Windows.Forms.TabPage m_tabPageTracker;
-        private System.Windows.Forms.TabPage m_tabPageTraveler;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label8;
@@ -724,8 +681,5 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private Controls.ImageButton imageButton1;
-        private Controls.ImageButton imageButton2;
 	}
 }

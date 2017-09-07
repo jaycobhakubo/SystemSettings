@@ -677,8 +677,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyRef\TextFile1.txt" />
-    <None Include="Resources\Untitled-1.png" />
-    <None Include="Resources\Gradient2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
