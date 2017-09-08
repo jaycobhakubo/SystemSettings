@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerDeviceSettings));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabCtrl_PlayerSettingDevice = new System.Windows.Forms.TabControl();
+            this.tabPg_FixedBased = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
+            this.tabCtrl_PlayerSettingDevice.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabCtrl_PlayerSettingDevice
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
+            this.tabCtrl_PlayerSettingDevice.Controls.Add(this.tabPg_FixedBased);
+            this.tabCtrl_PlayerSettingDevice.Controls.Add(this.tabPage2);
+            resources.ApplyResources(this.tabCtrl_PlayerSettingDevice, "tabCtrl_PlayerSettingDevice");
+            this.tabCtrl_PlayerSettingDevice.Name = "tabCtrl_PlayerSettingDevice";
+            this.tabCtrl_PlayerSettingDevice.SelectedIndex = 0;
             // 
-            // tabPage1
+            // tabPg_FixedBased
             // 
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.tabPg_FixedBased, "tabPg_FixedBased");
+            this.tabPg_FixedBased.Name = "tabPg_FixedBased";
+            this.tabPg_FixedBased.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -59,17 +59,17 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabCtrl_PlayerSettingDevice);
             this.Name = "PlayerDeviceSettings";
-            this.tabControl1.ResumeLayout(false);
+            this.tabCtrl_PlayerSettingDevice.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabCtrl_PlayerSettingDevice;
+        private System.Windows.Forms.TabPage tabPg_FixedBased;
         private System.Windows.Forms.TabPage tabPage2;
     }
 }
