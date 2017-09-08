@@ -173,6 +173,12 @@
     <Compile Include="UI\AccrualSceneDialog.Designer.cs">
       <DependentUpon>AccrualSceneDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\PlayerDeviceSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PlayerDeviceSettings.Designer.cs">
+      <DependentUpon>PlayerDeviceSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\POSKioskSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -445,6 +451,9 @@
     <EmbeddedResource Include="UI\AccrualSceneDialog.resx">
       <DependentUpon>AccrualSceneDialog.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PlayerDeviceSettings.resx">
+      <DependentUpon>PlayerDeviceSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\POSKioskSettings.resx">
       <DependentUpon>POSKioskSettings.cs</DependentUpon>
