@@ -35,6 +35,21 @@ namespace GTI.Modules.SystemSettings.UI
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
+            this.raffleSettings2 = new GTI.Modules.SystemSettings.UI.RaffleSettings();
+            this.receiptSettings2 = new GTI.Modules.SystemSettings.UI.ReceiptSettings();
+            this.securitySettings3 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
+            this.sessionSummarySettings5 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
+            this.sessionSummarySettings4 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
+            this.securitySettings2 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
+            this.sessionSummarySettings3 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
+            this.tenderSettings1 = new GTI.Modules.SystemSettings.UI.TenderSettings();
+            this.thirdPartyInterfaceSettings3 = new GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings();
+            this.thirdPartyInterfaceSettings2 = new GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings();
+            this.unitMgmtSettings2 = new GTI.Modules.SystemSettings.UI.UnitMgmtSettings();
+            this.validationSettings1 = new GTI.Modules.SystemSettings.UI.ValidationSettings();
+            this.videoSettings2 = new GTI.Modules.SystemSettings.UI.VideoSettings();
+            this.sessionSummarySettings2 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
             this.sessionSummarySettings1 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
             this.pointOfSalePrinterSettings = new GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings();
             this.bingoSettings1 = new GTI.Modules.SystemSettings.UI.BingoSettings();
@@ -79,21 +94,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
-            this.sessionSummarySettings2 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
-            this.videoSettings2 = new GTI.Modules.SystemSettings.UI.VideoSettings();
-            this.validationSettings1 = new GTI.Modules.SystemSettings.UI.ValidationSettings();
-            this.unitMgmtSettings2 = new GTI.Modules.SystemSettings.UI.UnitMgmtSettings();
-            this.thirdPartyInterfaceSettings2 = new GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings();
-            this.thirdPartyInterfaceSettings3 = new GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings();
-            this.tenderSettings1 = new GTI.Modules.SystemSettings.UI.TenderSettings();
-            this.sessionSummarySettings3 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
-            this.securitySettings2 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
-            this.sessionSummarySettings4 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
-            this.sessionSummarySettings5 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
-            this.securitySettings3 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
-            this.receiptSettings2 = new GTI.Modules.SystemSettings.UI.ReceiptSettings();
-            this.raffleSettings2 = new GTI.Modules.SystemSettings.UI.RaffleSettings();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -116,6 +116,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.playerSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.kioskSalesSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.raffleSettings2);
             this.splitContainer1.Panel2.Controls.Add(this.receiptSettings2);
@@ -147,7 +148,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.splitContainer1.Panel2.Controls.Add(this.kioskAdvanced2);
             this.splitContainer1.Panel2.Controls.Add(this.companySettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playModeSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.playerSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.securitySettings1);
             this.splitContainer1.Panel2.Controls.Add(this.moneyCenterSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.inventorySettings1);
@@ -201,6 +201,81 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            // 
+            // kioskSalesSettings1
+            // 
+            resources.ApplyResources(this.kioskSalesSettings1, "kioskSalesSettings1");
+            this.kioskSalesSettings1.Name = "kioskSalesSettings1";
+            // 
+            // raffleSettings2
+            // 
+            resources.ApplyResources(this.raffleSettings2, "raffleSettings2");
+            this.raffleSettings2.Name = "raffleSettings2";
+            // 
+            // receiptSettings2
+            // 
+            resources.ApplyResources(this.receiptSettings2, "receiptSettings2");
+            this.receiptSettings2.Name = "receiptSettings2";
+            // 
+            // securitySettings3
+            // 
+            resources.ApplyResources(this.securitySettings3, "securitySettings3");
+            this.securitySettings3.Name = "securitySettings3";
+            // 
+            // sessionSummarySettings5
+            // 
+            resources.ApplyResources(this.sessionSummarySettings5, "sessionSummarySettings5");
+            this.sessionSummarySettings5.Name = "sessionSummarySettings5";
+            // 
+            // sessionSummarySettings4
+            // 
+            resources.ApplyResources(this.sessionSummarySettings4, "sessionSummarySettings4");
+            this.sessionSummarySettings4.Name = "sessionSummarySettings4";
+            // 
+            // securitySettings2
+            // 
+            resources.ApplyResources(this.securitySettings2, "securitySettings2");
+            this.securitySettings2.Name = "securitySettings2";
+            // 
+            // sessionSummarySettings3
+            // 
+            resources.ApplyResources(this.sessionSummarySettings3, "sessionSummarySettings3");
+            this.sessionSummarySettings3.Name = "sessionSummarySettings3";
+            // 
+            // tenderSettings1
+            // 
+            resources.ApplyResources(this.tenderSettings1, "tenderSettings1");
+            this.tenderSettings1.Name = "tenderSettings1";
+            // 
+            // thirdPartyInterfaceSettings3
+            // 
+            resources.ApplyResources(this.thirdPartyInterfaceSettings3, "thirdPartyInterfaceSettings3");
+            this.thirdPartyInterfaceSettings3.Name = "thirdPartyInterfaceSettings3";
+            // 
+            // thirdPartyInterfaceSettings2
+            // 
+            resources.ApplyResources(this.thirdPartyInterfaceSettings2, "thirdPartyInterfaceSettings2");
+            this.thirdPartyInterfaceSettings2.Name = "thirdPartyInterfaceSettings2";
+            // 
+            // unitMgmtSettings2
+            // 
+            resources.ApplyResources(this.unitMgmtSettings2, "unitMgmtSettings2");
+            this.unitMgmtSettings2.Name = "unitMgmtSettings2";
+            // 
+            // validationSettings1
+            // 
+            resources.ApplyResources(this.validationSettings1, "validationSettings1");
+            this.validationSettings1.Name = "validationSettings1";
+            // 
+            // videoSettings2
+            // 
+            resources.ApplyResources(this.videoSettings2, "videoSettings2");
+            this.videoSettings2.Name = "videoSettings2";
+            // 
+            // sessionSummarySettings2
+            // 
+            resources.ApplyResources(this.sessionSummarySettings2, "sessionSummarySettings2");
+            this.sessionSummarySettings2.Name = "sessionSummarySettings2";
             // 
             // sessionSummarySettings1
             // 
@@ -448,81 +523,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // kioskSalesSettings1
-            // 
-            resources.ApplyResources(this.kioskSalesSettings1, "kioskSalesSettings1");
-            this.kioskSalesSettings1.Name = "kioskSalesSettings1";
-            // 
-            // sessionSummarySettings2
-            // 
-            resources.ApplyResources(this.sessionSummarySettings2, "sessionSummarySettings2");
-            this.sessionSummarySettings2.Name = "sessionSummarySettings2";
-            // 
-            // videoSettings2
-            // 
-            resources.ApplyResources(this.videoSettings2, "videoSettings2");
-            this.videoSettings2.Name = "videoSettings2";
-            // 
-            // validationSettings1
-            // 
-            resources.ApplyResources(this.validationSettings1, "validationSettings1");
-            this.validationSettings1.Name = "validationSettings1";
-            // 
-            // unitMgmtSettings2
-            // 
-            resources.ApplyResources(this.unitMgmtSettings2, "unitMgmtSettings2");
-            this.unitMgmtSettings2.Name = "unitMgmtSettings2";
-            // 
-            // thirdPartyInterfaceSettings2
-            // 
-            resources.ApplyResources(this.thirdPartyInterfaceSettings2, "thirdPartyInterfaceSettings2");
-            this.thirdPartyInterfaceSettings2.Name = "thirdPartyInterfaceSettings2";
-            // 
-            // thirdPartyInterfaceSettings3
-            // 
-            resources.ApplyResources(this.thirdPartyInterfaceSettings3, "thirdPartyInterfaceSettings3");
-            this.thirdPartyInterfaceSettings3.Name = "thirdPartyInterfaceSettings3";
-            // 
-            // tenderSettings1
-            // 
-            resources.ApplyResources(this.tenderSettings1, "tenderSettings1");
-            this.tenderSettings1.Name = "tenderSettings1";
-            // 
-            // sessionSummarySettings3
-            // 
-            resources.ApplyResources(this.sessionSummarySettings3, "sessionSummarySettings3");
-            this.sessionSummarySettings3.Name = "sessionSummarySettings3";
-            // 
-            // securitySettings2
-            // 
-            resources.ApplyResources(this.securitySettings2, "securitySettings2");
-            this.securitySettings2.Name = "securitySettings2";
-            // 
-            // sessionSummarySettings4
-            // 
-            resources.ApplyResources(this.sessionSummarySettings4, "sessionSummarySettings4");
-            this.sessionSummarySettings4.Name = "sessionSummarySettings4";
-            // 
-            // sessionSummarySettings5
-            // 
-            resources.ApplyResources(this.sessionSummarySettings5, "sessionSummarySettings5");
-            this.sessionSummarySettings5.Name = "sessionSummarySettings5";
-            // 
-            // securitySettings3
-            // 
-            resources.ApplyResources(this.securitySettings3, "securitySettings3");
-            this.securitySettings3.Name = "securitySettings3";
-            // 
-            // receiptSettings2
-            // 
-            resources.ApplyResources(this.receiptSettings2, "receiptSettings2");
-            this.receiptSettings2.Name = "receiptSettings2";
-            // 
-            // raffleSettings2
-            // 
-            resources.ApplyResources(this.raffleSettings2, "raffleSettings2");
-            this.raffleSettings2.Name = "raffleSettings2";
             // 
             // MainForm
             // 

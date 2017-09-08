@@ -31,29 +31,39 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerDeviceSettings));
             this.tabCtrl_PlayerSettingDevice = new System.Windows.Forms.TabControl();
             this.tabPg_FixedBased = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPg_TedE = new System.Windows.Forms.TabPage();
+            this.playerSettings1 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.tabCtrl_PlayerSettingDevice.SuspendLayout();
+            this.tabPg_FixedBased.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCtrl_PlayerSettingDevice
             // 
             this.tabCtrl_PlayerSettingDevice.Controls.Add(this.tabPg_FixedBased);
-            this.tabCtrl_PlayerSettingDevice.Controls.Add(this.tabPage2);
+            this.tabCtrl_PlayerSettingDevice.Controls.Add(this.tabPg_TedE);
             resources.ApplyResources(this.tabCtrl_PlayerSettingDevice, "tabCtrl_PlayerSettingDevice");
             this.tabCtrl_PlayerSettingDevice.Name = "tabCtrl_PlayerSettingDevice";
             this.tabCtrl_PlayerSettingDevice.SelectedIndex = 0;
             // 
             // tabPg_FixedBased
             // 
+            this.tabPg_FixedBased.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPg_FixedBased.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
+            this.tabPg_FixedBased.Controls.Add(this.playerSettings1);
             resources.ApplyResources(this.tabPg_FixedBased, "tabPg_FixedBased");
             this.tabPg_FixedBased.Name = "tabPg_FixedBased";
-            this.tabPg_FixedBased.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPg_TedE
             // 
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPg_TedE.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPg_TedE.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
+            resources.ApplyResources(this.tabPg_TedE, "tabPg_TedE");
+            this.tabPg_TedE.Name = "tabPg_TedE";
+            // 
+            // playerSettings1
+            // 
+            resources.ApplyResources(this.playerSettings1, "playerSettings1");
+            this.playerSettings1.Name = "playerSettings1";
             // 
             // PlayerDeviceSettings
             // 
@@ -62,6 +72,7 @@
             this.Controls.Add(this.tabCtrl_PlayerSettingDevice);
             this.Name = "PlayerDeviceSettings";
             this.tabCtrl_PlayerSettingDevice.ResumeLayout(false);
+            this.tabPg_FixedBased.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -70,6 +81,7 @@
 
         private System.Windows.Forms.TabControl tabCtrl_PlayerSettingDevice;
         private System.Windows.Forms.TabPage tabPg_FixedBased;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPg_TedE;
+        private PlayerSettings playerSettings1;
     }
 }

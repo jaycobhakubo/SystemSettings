@@ -143,7 +143,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACC
-        CQAAAk1TRnQBSQFMAgEBAgEAAWQBAAFkAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBAgEAAWwBAAFsAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -279,6 +279,30 @@
   <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="playerSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="playerSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playerSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="playerSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;playerSettings1.Name" xml:space="preserve">
+    <value>playerSettings1</value>
+  </data>
+  <data name="&gt;&gt;playerSettings1.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playerSettings1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;playerSettings1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="kioskSalesSettings1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
@@ -295,13 +319,13 @@
     <value>kioskSalesSettings1</value>
   </data>
   <data name="&gt;&gt;kioskSalesSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.KioskSalesSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.POSKioskSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;kioskSalesSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;kioskSalesSettings1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="raffleSettings2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -319,13 +343,13 @@
     <value>raffleSettings2</value>
   </data>
   <data name="&gt;&gt;raffleSettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.RaffleSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.RaffleSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;raffleSettings2.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;raffleSettings2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="receiptSettings2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -343,13 +367,13 @@
     <value>receiptSettings2</value>
   </data>
   <data name="&gt;&gt;receiptSettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.ReceiptSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.ReceiptSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;receiptSettings2.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;receiptSettings2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="securitySettings3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -367,13 +391,13 @@
     <value>securitySettings3</value>
   </data>
   <data name="&gt;&gt;securitySettings3.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;securitySettings3.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;securitySettings3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="sessionSummarySettings5.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -388,13 +412,13 @@
     <value>sessionSummarySettings5</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings5.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings5.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="sessionSummarySettings4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -409,13 +433,13 @@
     <value>sessionSummarySettings4</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings4.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings4.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="securitySettings2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -433,13 +457,13 @@
     <value>securitySettings2</value>
   </data>
   <data name="&gt;&gt;securitySettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;securitySettings2.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;securitySettings2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="sessionSummarySettings3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -454,13 +478,13 @@
     <value>sessionSummarySettings3</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings3.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings3.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="tenderSettings1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -478,13 +502,13 @@
     <value>tenderSettings1</value>
   </data>
   <data name="&gt;&gt;tenderSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.TenderSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.TenderSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;tenderSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;tenderSettings1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="thirdPartyInterfaceSettings3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -502,13 +526,13 @@
     <value>thirdPartyInterfaceSettings3</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings3.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings3.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="thirdPartyInterfaceSettings2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -526,13 +550,13 @@
     <value>thirdPartyInterfaceSettings2</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings2.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="unitMgmtSettings2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -550,13 +574,13 @@
     <value>unitMgmtSettings2</value>
   </data>
   <data name="&gt;&gt;unitMgmtSettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.UnitMgmtSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.UnitMgmtSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;unitMgmtSettings2.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;unitMgmtSettings2.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="validationSettings1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -577,13 +601,13 @@
     <value>validationSettings1</value>
   </data>
   <data name="&gt;&gt;validationSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.ValidationSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.ValidationSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;validationSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;validationSettings1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="videoSettings2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -601,13 +625,13 @@
     <value>videoSettings2</value>
   </data>
   <data name="&gt;&gt;videoSettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.VideoSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.VideoSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;videoSettings2.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;videoSettings2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="sessionSummarySettings2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -622,13 +646,13 @@
     <value>sessionSummarySettings2</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings2.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings2.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="sessionSummarySettings1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -643,13 +667,13 @@
     <value>sessionSummarySettings1</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SessionSummarySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;sessionSummarySettings1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="pointOfSalePrinterSettings.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -667,13 +691,13 @@
     <value>pointOfSalePrinterSettings</value>
   </data>
   <data name="&gt;&gt;pointOfSalePrinterSettings.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;pointOfSalePrinterSettings.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;pointOfSalePrinterSettings.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="bingoSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -694,13 +718,13 @@
     <value>bingoSettings1</value>
   </data>
   <data name="&gt;&gt;bingoSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.BingoSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.BingoSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;bingoSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;bingoSettings1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="crystalBallSettings.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -718,13 +742,13 @@
     <value>crystalBallSettings</value>
   </data>
   <data name="&gt;&gt;crystalBallSettings.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.CrystalBallSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.CrystalBallSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;crystalBallSettings.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;crystalBallSettings.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="audioSettings1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -742,13 +766,13 @@
     <value>audioSettings1</value>
   </data>
   <data name="&gt;&gt;audioSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;audioSettings1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="crateModuleSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -769,13 +793,13 @@
     <value>crateModuleSettings1</value>
   </data>
   <data name="&gt;&gt;crateModuleSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.CrateModuleSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.CrateModuleSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;crateModuleSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;crateModuleSettings1.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="magCardSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -796,13 +820,13 @@
     <value>magCardSettings1</value>
   </data>
   <data name="&gt;&gt;magCardSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.MagCardSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.MagCardSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;magCardSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;magCardSettings1.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="currencySettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -823,13 +847,13 @@
     <value>currencySettings1</value>
   </data>
   <data name="&gt;&gt;currencySettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.CurrencySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.CurrencySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;currencySettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;currencySettings1.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="motifSettings1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -847,13 +871,13 @@
     <value>motifSettings1</value>
   </data>
   <data name="&gt;&gt;motifSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.MotifSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.MotifSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;motifSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;motifSettings1.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="globalSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -874,13 +898,13 @@
     <value>globalSettings1</value>
   </data>
   <data name="&gt;&gt;globalSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.GlobalSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.GlobalSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;globalSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;globalSettings1.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="locationSettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -898,13 +922,13 @@
     <value>locationSettings1</value>
   </data>
   <data name="&gt;&gt;locationSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.LocationSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.LocationSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;locationSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;locationSettings1.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="charitySettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -919,13 +943,13 @@
     <value>charitySettings</value>
   </data>
   <data name="&gt;&gt;charitySettings.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.CharitySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.CharitySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;charitySettings.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;charitySettings.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="licenseFileSettings1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -943,13 +967,13 @@
     <value>licenseFileSettings1</value>
   </data>
   <data name="&gt;&gt;licenseFileSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.LicenseFileSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.LicenseFileSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;licenseFileSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;licenseFileSettings1.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="kioskAdvanced2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -967,13 +991,13 @@
     <value>kioskAdvanced2</value>
   </data>
   <data name="&gt;&gt;kioskAdvanced2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.KioskSettings2, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.KioskSettings2, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;kioskAdvanced2.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;kioskAdvanced2.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="companySettings1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -994,13 +1018,13 @@
     <value>companySettings1</value>
   </data>
   <data name="&gt;&gt;companySettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.CompanySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.CompanySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;companySettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;companySettings1.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="playModeSettings1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1018,36 +1042,12 @@
     <value>playModeSettings1</value>
   </data>
   <data name="&gt;&gt;playModeSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;playModeSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;playModeSettings1.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="playerSettings1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="playerSettings1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="playerSettings1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
-  </data>
-  <data name="playerSettings1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;playerSettings1.Name" xml:space="preserve">
-    <value>playerSettings1</value>
-  </data>
-  <data name="&gt;&gt;playerSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
-  </data>
-  <data name="&gt;&gt;playerSettings1.Parent" xml:space="preserve">
-    <value>splitContainer1.Panel2</value>
-  </data>
-  <data name="&gt;&gt;playerSettings1.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
   <data name="securitySettings1.Font" type="System.Drawing.Font, System.Drawing">
@@ -1066,7 +1066,7 @@
     <value>securitySettings1</value>
   </data>
   <data name="&gt;&gt;securitySettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SecuritySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;securitySettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1090,7 +1090,7 @@
     <value>moneyCenterSettings1</value>
   </data>
   <data name="&gt;&gt;moneyCenterSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.MoneyCenterSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.MoneyCenterSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;moneyCenterSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1117,7 +1117,7 @@
     <value>inventorySettings1</value>
   </data>
   <data name="&gt;&gt;inventorySettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.InventorySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.InventorySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;inventorySettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1144,7 +1144,7 @@
     <value>distributorFeesSettings1</value>
   </data>
   <data name="&gt;&gt;distributorFeesSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.DistributorFeesSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.DistributorFeesSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;distributorFeesSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1165,7 +1165,7 @@
     <value>operatorSettings1</value>
   </data>
   <data name="&gt;&gt;operatorSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.OperatorSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.OperatorSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;operatorSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1192,7 +1192,7 @@
     <value>operatorManagement1</value>
   </data>
   <data name="&gt;&gt;operatorManagement1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.OperatorManagement, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.OperatorManagement, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;operatorManagement1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1219,7 +1219,7 @@
     <value>adminSettings1</value>
   </data>
   <data name="&gt;&gt;adminSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AdminSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AdminSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;adminSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1246,7 +1246,7 @@
     <value>raffleSettings1</value>
   </data>
   <data name="&gt;&gt;raffleSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.RaffleSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.RaffleSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;raffleSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1273,7 +1273,7 @@
     <value>videoSettings1</value>
   </data>
   <data name="&gt;&gt;videoSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.VideoSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.VideoSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;videoSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1300,7 +1300,7 @@
     <value>creditSettings1</value>
   </data>
   <data name="&gt;&gt;creditSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.CreditSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.CreditSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;creditSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1327,7 +1327,7 @@
     <value>machineSettings1</value>
   </data>
   <data name="&gt;&gt;machineSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.MachineSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.MachineSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;machineSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1357,7 +1357,7 @@
     <value>posSettings1</value>
   </data>
   <data name="&gt;&gt;posSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.POSSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.POSSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;posSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1384,7 +1384,7 @@
     <value>receiptSettings1</value>
   </data>
   <data name="&gt;&gt;receiptSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.ReceiptSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.ReceiptSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;receiptSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1411,7 +1411,7 @@
     <value>kioskSettings1</value>
   </data>
   <data name="&gt;&gt;kioskSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.KioskSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.KioskSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;kioskSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1438,7 +1438,7 @@
     <value>hallDisplaySettings1</value>
   </data>
   <data name="&gt;&gt;hallDisplaySettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.HallDisplaySettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.HallDisplaySettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;hallDisplaySettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1465,7 +1465,7 @@
     <value>unitMgmtSettings1</value>
   </data>
   <data name="&gt;&gt;unitMgmtSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.UnitMgmtSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.UnitMgmtSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;unitMgmtSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1492,13 +1492,37 @@
     <value>callerSettings1</value>
   </data>
   <data name="&gt;&gt;callerSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.CallerSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.CallerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;callerSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;callerSettings1.ZOrder" xml:space="preserve">
     <value>48</value>
+  </data>
+  <data name="blowerSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="blowerSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="blowerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="blowerSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;blowerSettings.Name" xml:space="preserve">
+    <value>blowerSettings</value>
+  </data>
+  <data name="&gt;&gt;blowerSettings.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.BlowerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;blowerSettings.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;blowerSettings.ZOrder" xml:space="preserve">
+    <value>49</value>
   </data>
   <data name="thirdPartyInterfaceSettings1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -1516,13 +1540,13 @@
     <value>thirdPartyInterfaceSettings1</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.ThirdPartyInterfaceSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;thirdPartyInterfaceSettings1.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>50</value>
   </data>
   <data name="channelSettings1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1537,13 +1561,13 @@
     <value>channelSettings1</value>
   </data>
   <data name="&gt;&gt;channelSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.ChannelSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.ChannelSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;channelSettings1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;channelSettings1.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>51</value>
   </data>
   <data name="tenderSettings.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1561,13 +1585,13 @@
     <value>tenderSettings</value>
   </data>
   <data name="&gt;&gt;tenderSettings.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.TenderSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.TenderSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;tenderSettings.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;tenderSettings.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>52</value>
   </data>
   <data name="paymentProcessingSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1582,13 +1606,13 @@
     <value>paymentProcessingSettings</value>
   </data>
   <data name="&gt;&gt;paymentProcessingSettings.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PaymentProcessingSettings, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PaymentProcessingSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;paymentProcessingSettings.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;paymentProcessingSettings.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>53</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -1994,6 +2018,6 @@
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.Shared.GradientForm, ManagedEliteModule, Version=1.3.42.771, Culture=neutral, PublicKeyToken=f7ab3ec26b04c7cf</value>
+    <value>GTI.Modules.Shared.GradientForm, ManagedEliteModule, Version=1.3.42.852, Culture=neutral, PublicKeyToken=f7ab3ec26b04c7cf</value>
   </data>
 </root>
