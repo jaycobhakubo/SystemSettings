@@ -129,7 +129,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="lbl_mDisclaimerLine1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 361</value>
+    <value>11, 325</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lbl_mDisclaimerLine1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -154,7 +154,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lbl_mDisclaimerLine1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="lbl_mDisclaimerLine2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -166,7 +166,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="lbl_mDisclaimerLine2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 417</value>
+    <value>11, 375</value>
   </data>
   <data name="lbl_mDisclaimerLine2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -190,7 +190,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lbl_mDisclaimerLine2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="lbl_mDisclaimerLine3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -202,7 +202,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="lbl_mDisclaimerLine3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 473</value>
+    <value>11, 425</value>
   </data>
   <data name="lbl_mDisclaimerLine3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -226,7 +226,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lbl_mDisclaimerLine3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -238,7 +238,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 193</value>
+    <value>11, 175</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -262,7 +262,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <metadata name="label2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -274,7 +274,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 249</value>
+    <value>11, 225</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -298,7 +298,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <metadata name="label3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -310,7 +310,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 305</value>
+    <value>11, 275</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -334,7 +334,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <metadata name="receiptLine1Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -370,7 +370,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;receiptLine1Label.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <metadata name="receiptLine2Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -382,7 +382,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="receiptLine2Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 81</value>
+    <value>11, 75</value>
   </data>
   <data name="receiptLine2Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -406,7 +406,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;receiptLine2Label.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <metadata name="receiptLine3Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -418,7 +418,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="receiptLine3Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 137</value>
+    <value>11, 125</value>
   </data>
   <data name="receiptLine3Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -442,13 +442,157 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;receiptLine3Label.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
+  </data>
+  <data name="txtIncompleteSale2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 63</value>
+  </data>
+  <data name="txtIncompleteSale2.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="txtIncompleteSale2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 26</value>
+  </data>
+  <data name="txtIncompleteSale2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="txtIncompleteSale2.Text" xml:space="preserve">
+    <value>**TRANSACTION**</value>
+  </data>
+  <data name="txtIncompleteSale2.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtIncompleteSale2.Name" xml:space="preserve">
+    <value>txtIncompleteSale2</value>
+  </data>
+  <data name="&gt;&gt;txtIncompleteSale2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtIncompleteSale2.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtIncompleteSale2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtIncompleteSale1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 27</value>
+  </data>
+  <data name="txtIncompleteSale1.MaxLength" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="txtIncompleteSale1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 26</value>
+  </data>
+  <data name="txtIncompleteSale1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txtIncompleteSale1.Text" xml:space="preserve">
+    <value>**INCOMPLETE**</value>
+  </data>
+  <data name="txtIncompleteSale1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtIncompleteSale1.Name" xml:space="preserve">
+    <value>txtIncompleteSale1</value>
+  </data>
+  <data name="&gt;&gt;txtIncompleteSale1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtIncompleteSale1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtIncompleteSale1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 63</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 22</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Line 2:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 30</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 22</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Line 1:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 480</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 97</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Incomplete Transaction</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="txtDisclaimer3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtDisclaimer3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 499</value>
+    <value>11, 446</value>
   </data>
   <data name="txtDisclaimer3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -472,13 +616,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtDisclaimer3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="txtDisclaimer2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtDisclaimer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 443</value>
+    <value>11, 396</value>
   </data>
   <data name="txtDisclaimer2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -502,13 +646,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtDisclaimer2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="txtDisclaimer1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtDisclaimer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 387</value>
+    <value>11, 346</value>
   </data>
   <data name="txtDisclaimer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -532,13 +676,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtDisclaimer1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="txtFooter1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtFooter1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 219</value>
+    <value>11, 196</value>
   </data>
   <data name="txtFooter1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -562,13 +706,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtFooter1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="txtFooter2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtFooter2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 275</value>
+    <value>11, 246</value>
   </data>
   <data name="txtFooter2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -592,13 +736,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtFooter2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="txtFooter3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtFooter3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 331</value>
+    <value>11, 296</value>
   </data>
   <data name="txtFooter3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -622,13 +766,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtFooter3.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="txtHeader1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtHeader1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 51</value>
+    <value>11, 46</value>
   </data>
   <data name="txtHeader1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -652,13 +796,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtHeader1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="txtHeader2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtHeader2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 107</value>
+    <value>11, 96</value>
   </data>
   <data name="txtHeader2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -682,13 +826,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtHeader2.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="txtHeader3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtHeader3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 163</value>
+    <value>11, 146</value>
   </data>
   <data name="txtHeader3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -712,7 +856,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;txtHeader3.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -951,11 +1095,38 @@
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="chkPrintIncompleteTransactionReceipts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 370</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 60</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.Text" xml:space="preserve">
+    <value>Print receipt for Incomplete Transactions not tendered with credit/debit cards</value>
+  </data>
+  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Name" xml:space="preserve">
+    <value>chkPrintIncompleteTransactionReceipts</value>
+  </data>
+  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="chkPrintAccount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkPrintAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 124</value>
+    <value>17, 111</value>
   </data>
   <data name="chkPrintAccount.Size" type="System.Drawing.Size, System.Drawing">
     <value>373, 26</value>
@@ -976,13 +1147,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintAccount.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="chkPrintOperatorInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkPrintOperatorInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 32</value>
+    <value>17, 19</value>
   </data>
   <data name="chkPrintOperatorInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 26</value>
@@ -1003,10 +1174,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintOperatorInfo.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="chkCompactPaperInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 171</value>
+    <value>17, 158</value>
   </data>
   <data name="chkCompactPaperInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 26</value>
@@ -1027,10 +1198,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkCompactPaperInfo.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chkSortReceipt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 55</value>
+    <value>17, 42</value>
   </data>
   <data name="chkSortReceipt.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 26</value>
@@ -1051,13 +1222,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkSortReceipt.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="numVoidSignatureLines.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numVoidSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 306</value>
+    <value>246, 293</value>
   </data>
   <data name="numVoidSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
@@ -1075,13 +1246,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numVoidSignatureLines.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chkPrintVoidSignatureLines.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkPrintVoidSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 308</value>
+    <value>17, 295</value>
   </data>
   <data name="chkPrintVoidSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 24</value>
@@ -1102,19 +1273,19 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintVoidSignatureLines.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="m_lblPrintCardRanges.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="m_lblPrintCardRanges.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 416</value>
+    <value>13, 434</value>
   </data>
   <data name="m_lblPrintCardRanges.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 22</value>
   </data>
   <data name="m_lblPrintCardRanges.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="m_lblPrintCardRanges.Text" xml:space="preserve">
     <value>Print card ranges</value>
@@ -1129,19 +1300,19 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;m_lblPrintCardRanges.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="m_cboPrintCardRanges.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="m_cboPrintCardRanges.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 413</value>
+    <value>163, 431</value>
   </data>
   <data name="m_cboPrintCardRanges.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 30</value>
   </data>
   <data name="m_cboPrintCardRanges.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;m_cboPrintCardRanges.Name" xml:space="preserve">
     <value>m_cboPrintCardRanges</value>
@@ -1153,16 +1324,16 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;m_cboPrintCardRanges.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="m_lblPlayWithPaperDependency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 445</value>
+    <value>31, 463</value>
   </data>
   <data name="m_lblPlayWithPaperDependency.Size" type="System.Drawing.Size, System.Drawing">
     <value>360, 22</value>
   </data>
   <data name="m_lblPlayWithPaperDependency.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="m_lblPlayWithPaperDependency.Text" xml:space="preserve">
     <value>* Disabled due to play with paper enabled</value>
@@ -1180,10 +1351,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;m_lblPlayWithPaperDependency.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="chkMultipleRecieptVoiding.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 262</value>
+    <value>17, 249</value>
   </data>
   <data name="chkMultipleRecieptVoiding.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 26</value>
@@ -1204,13 +1375,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkMultipleRecieptVoiding.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="chkPrintProductNames.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkPrintProductNames.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 78</value>
+    <value>17, 65</value>
   </data>
   <data name="chkPrintProductNames.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 26</value>
@@ -1231,19 +1402,19 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintProductNames.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="numPayoutCopies.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numPayoutCopies.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 544</value>
+    <value>247, 562</value>
   </data>
   <data name="numPayoutCopies.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
   </data>
   <data name="numPayoutCopies.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="&gt;&gt;numPayoutCopies.Name" xml:space="preserve">
     <value>numPayoutCopies</value>
@@ -1255,7 +1426,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numPayoutCopies.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1264,13 +1435,13 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 545</value>
+    <value>14, 563</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 22</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Number of payout copies</value>
@@ -1285,10 +1456,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="chkPrintStaffFirstNameOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 194</value>
+    <value>17, 181</value>
   </data>
   <data name="chkPrintStaffFirstNameOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 26</value>
@@ -1309,19 +1480,19 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintStaffFirstNameOnly.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="numCardFacePointSize.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numCardFacePointSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 511</value>
+    <value>247, 529</value>
   </data>
   <data name="numCardFacePointSize.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
   </data>
   <data name="numCardFacePointSize.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="&gt;&gt;numCardFacePointSize.Name" xml:space="preserve">
     <value>numCardFacePointSize</value>
@@ -1333,7 +1504,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numCardFacePointSize.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1342,13 +1513,13 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 511</value>
+    <value>14, 529</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 22</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Card face point size</value>
@@ -1363,19 +1534,19 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="numCopies.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numCopies.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 477</value>
+    <value>247, 495</value>
   </data>
   <data name="numCopies.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
   </data>
   <data name="numCopies.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;numCopies.Name" xml:space="preserve">
     <value>numCopies</value>
@@ -1387,19 +1558,19 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;numCopies.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 477</value>
+    <value>14, 495</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 22</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Number of copies</value>
@@ -1414,7 +1585,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="chkPrintPlayerPointsRedeemed.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -1423,13 +1594,13 @@
     <value>NoControl</value>
   </data>
   <data name="chkPrintPlayerPointsRedeemed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 329</value>
+    <value>17, 320</value>
   </data>
   <data name="chkPrintPlayerPointsRedeemed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="chkPrintPlayerPointsRedeemed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 68</value>
+    <value>374, 59</value>
   </data>
   <data name="chkPrintPlayerPointsRedeemed.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1448,13 +1619,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="chkPrintCardFaces.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkPrintCardFaces.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 286</value>
+    <value>17, 273</value>
   </data>
   <data name="chkPrintCardFaces.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 24</value>
@@ -1475,13 +1646,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintCardFaces.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="chkPrintSignatureLine.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkPrintSignatureLine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 217</value>
+    <value>17, 204</value>
   </data>
   <data name="chkPrintSignatureLine.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 26</value>
@@ -1502,13 +1673,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintSignatureLine.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="chkPrintPointInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkPrintPointInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 101</value>
+    <value>17, 88</value>
   </data>
   <data name="chkPrintPointInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>373, 26</value>
@@ -1529,10 +1700,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintPointInfo.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="chkPrintFacesToGlobalPrinter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 241</value>
+    <value>17, 227</value>
   </data>
   <data name="chkPrintFacesToGlobalPrinter.Size" type="System.Drawing.Size, System.Drawing">
     <value>374, 24</value>
@@ -1553,7 +1724,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="chkPrintNonelecReceipts.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -1562,7 +1733,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkPrintNonelecReceipts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 147</value>
+    <value>17, 134</value>
   </data>
   <data name="chkPrintNonelecReceipts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1586,7 +1757,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkPrintNonelecReceipts.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>

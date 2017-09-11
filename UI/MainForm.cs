@@ -246,6 +246,16 @@ namespace GTI.Modules.SystemSettings.UI
             kioskSalesSettings1.LoadSettings();
             kioskSalesSettings1.Hide();
             kioskSalesSettings1.Enabled = false;
+            
+            //US5340
+            ledFlashboardSettings.LoadSettings();
+            ledFlashboardSettings.Hide();
+            ledFlashboardSettings.Enabled = false;
+
+            protocolAdapterSettings.LoadSettings();
+            protocolAdapterSettings.Hide();
+            protocolAdapterSettings.Enabled = false;
+
 
             //END RALLY DE9656
 
@@ -553,6 +563,21 @@ namespace GTI.Modules.SystemSettings.UI
             nodeParent = new TreeNode("Session Summary", 0, 1);
             nodeParent.Tag = sessionSummarySettings1;
             treeView1.Nodes.Add(nodeParent);
+
+            //US5340
+            if (Common.IsAdmin)
+            {
+                nodeParent = new TreeNode("LED Flashboard Settings", 0, 1);
+                nodeParent.Tag = ledFlashboardSettings;
+                treeView1.Nodes.Add(nodeParent);
+            }
+
+            if (Common.IsAdmin)
+            {
+                nodeParent = new TreeNode("Protocol Adapter Settings", 0, 1);
+                nodeParent.Tag = protocolAdapterSettings;
+                treeView1.Nodes.Add(nodeParent);
+            }
 
             //SORT by alphabetical order
             treeView1.Sort();

@@ -953,7 +953,10 @@ desired information.</value>
     <value>(?#South Point)^[^%]*%6001(?&lt;T1&gt;)(?&lt;N&gt;\d{9})?(???&lt;T&gt;(L0))</value>
   </data>
   <data name="cbFilter.Items9" xml:space="preserve">
-    <value>(?#Cannery)^[^;]*;(014[\d]{15})?</value>
+    <value>(?#Cannery East)^[^;]*;(014059[\d]{12})?</value>
+  </data>
+  <data name="cbFilter.Items10" xml:space="preserve">
+    <value>(?#Cannery North)^[^;]*;(014121[\d]{12})?</value>
   </data>
   <data name="cbFilter.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 84</value>

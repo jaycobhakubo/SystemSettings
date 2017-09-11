@@ -144,7 +144,30 @@ namespace GTI.Modules.SystemSettings
                 (int)Setting.ThirdPartyPlayerInterfaceNeedPINForRedemptionVoid,
 	            (int)Setting.EnableValidation,
     	        (int)Setting.ProductValidationCardCount,
-        	    (int)Setting.MaxValidationPerTransaction
+        	    (int)Setting.MaxValidationPerTransaction,
+                (int)Setting.ProtocolAdapterEnabled,
+                (int)Setting.ProtocolAdapterStreamIdx,
+                (int)Setting.ProtocolAdapterSendFreq,
+                (int)Setting.ProtocolAdapterCommPort,
+                (int)Setting.LEDAdapterEnabled,
+                (int)Setting.LEDAdapterStreamIdx,
+                (int)Setting.LEDAdapterSendFreq,
+                (int)Setting.LEDBingoFlashOff,
+                (int)Setting.LEDBingoFlashOn,
+                (int)Setting.LEDBingoNormal,
+                (int)Setting.LEDCountSign,
+                (int)Setting.LEDCallColorOff,
+                (int)Setting.LEDCallColor,
+                (int)Setting.LEDCallFlashOn,
+                (int)Setting.LEDCallFlashOff,
+                (int)Setting.LEDHotball,
+                (int)Setting.LEDHotballCall,
+                (int)Setting.LEDHotballFlashOn,
+                (int)Setting.LEDHotballFlashOff,
+                (int)Setting.LEDGameSign,
+                (int)Setting.LEDLastCallSign,
+                (int)Setting.LEDPatternOff,
+                (int)Setting.LEDPatternOn
             };
         }
 

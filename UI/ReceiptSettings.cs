@@ -87,6 +87,15 @@ namespace GTI.Modules.SystemSettings.UI
             string globalSettingValue;
             chkPrintFacesToGlobalPrinter.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.PrintFacesToGlobalPrinter)); //RALLY DE9427 //RALLY DE 4075
 
+            Common.GetOpSettingValue(Setting.PrintIncompleteTransactionReceipt, out tempSettingValue);
+            chkPrintIncompleteTransactionReceipts.Checked = Common.ParseBool(tempSettingValue.Value);
+
+            Common.GetOpSettingValue(Setting.IncompleteTransactionReceiptText1, out tempSettingValue);
+            txtIncompleteSale1.Text = tempSettingValue.Value;
+
+            Common.GetOpSettingValue(Setting.IncompleteTransactionReceiptText2, out tempSettingValue);
+            txtIncompleteSale2.Text = tempSettingValue.Value;
+
             Common.GetOpSettingValue(Setting.PrintPlayerIdentityAsAccountNumber, out tempSettingValue);
             chkPrintAccount.Checked = Common.ParseBool(tempSettingValue.Value);
 
@@ -282,6 +291,12 @@ namespace GTI.Modules.SystemSettings.UI
 			// Update the operator global settings
 
             Common.SetOpSettingValue(Setting.PrintPointInfo, chkPrintPointInfo.Checked.ToString());
+
+            Common.SetOpSettingValue(Setting.PrintIncompleteTransactionReceipt, chkPrintIncompleteTransactionReceipts.Checked.ToString());
+
+            Common.SetOpSettingValue(Setting.IncompleteTransactionReceiptText1, txtIncompleteSale1.Text);
+            
+            Common.SetOpSettingValue(Setting.IncompleteTransactionReceiptText2, txtIncompleteSale2.Text);
 
             Common.SetOpSettingValue(Setting.PrintPlayerIdentityAsAccountNumber, chkPrintAccount.Checked.ToString());
 
