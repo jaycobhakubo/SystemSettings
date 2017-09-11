@@ -11,7 +11,7 @@ namespace GTI.Modules.SystemSettings.UI
 {
     public partial class PlayerDeviceSettings : SettingsControl
     {
-        public PlayerDeviceSettings()
+        public PlayerDeviceSettings() //a
         {
             InitializeComponent();
         }
