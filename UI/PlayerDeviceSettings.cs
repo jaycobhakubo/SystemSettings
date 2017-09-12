@@ -48,37 +48,26 @@ namespace GTI.Modules.SystemSettings.UI
 
                     if (tempID == Device.Traveler.Id)
                     {
-                        playerSettings2 = new PlayerSettings();
-                        playerSettings2.Dock = DockStyle.Fill;
-                        tabPg_Traveler = new TabPage();
-                        tabPg_Traveler.Controls.Add(playerSettings2);
-
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tabPg_Traveler);
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Traveler"));
                     }
                     else if (tempID == Device.Tracker.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tabPg_Tracker);
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Tracker"));
                     }
                     else if (tempID == Device.Explorer.Id)//RALLY TA 7728 Changed MINI to EXPLORER
-                    {
-                        tabPg_Explorer2 = new TabPage();
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tabPg_Explorer2);
+                    {                  
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Explorer"));
                     }
                     else if (tempID == Device.Fixed.Id)
                     {
-
-
                         tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Fixed Base"));
                     }
                     else if (tempID == Device.Traveler2.Id) // Rally US765
                     {
-                        tabPg_TravelerII = new TabPage();
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tabPg_TravelerII);
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Traveler2"));
                     }
-                    //TA12156
                     else if (tempID == Device.Tablet.Id)
                     {
-
                         tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Ted-E"));
                     }
                 }
