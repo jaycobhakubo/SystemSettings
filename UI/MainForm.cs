@@ -432,6 +432,12 @@ namespace GTI.Modules.SystemSettings.UI
 
             //Player Unit Settings
             // Rally DE 2390 = Player Settings Settings Simplification 
+            nodeParent = new TreeNode("Player Device Settings", 0, 1);
+            nodeParent.Tag = playerDeviceSettings1;
+            treeView1.Nodes.Add(nodeParent);
+
+            //Player Unit Settings
+            // Rally DE 2390 = Player Settings Settings Simplification 
             nodeParent = new TreeNode("Player Unit Settings", 0, 1);
             nodeParent.Tag = playerSettings1;
 
@@ -619,7 +625,7 @@ namespace GTI.Modules.SystemSettings.UI
         }
         //END RALLY DE 6756
 
-		private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+		private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)//knc
         {
             //START FIX RALLY DE2661 -- this needs to be done before the new control 
             //is displayed
@@ -665,7 +671,7 @@ namespace GTI.Modules.SystemSettings.UI
 			Application.DoEvents();
 		}
 
-		private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)
+		private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)//knc
 		{
 			// Prompt to save if modified
 			if (m_activeControl != null)

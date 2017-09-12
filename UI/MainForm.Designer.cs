@@ -35,6 +35,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.playerSettings1 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
             this.raffleSettings2 = new GTI.Modules.SystemSettings.UI.RaffleSettings();
             this.receiptSettings2 = new GTI.Modules.SystemSettings.UI.ReceiptSettings();
@@ -66,7 +67,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.kioskAdvanced2 = new GTI.Modules.SystemSettings.UI.KioskSettings2();
             this.companySettings1 = new GTI.Modules.SystemSettings.UI.CompanySettings();
             this.playModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayModeSettings();
-            this.playerSettings1 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.securitySettings1 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
             this.moneyCenterSettings1 = new GTI.Modules.SystemSettings.UI.MoneyCenterSettings();
             this.inventorySettings1 = new GTI.Modules.SystemSettings.UI.InventorySettings();
@@ -94,6 +94,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -116,6 +117,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.kioskSalesSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.raffleSettings2);
@@ -201,6 +203,11 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            // 
+            // playerSettings1
+            // 
+            resources.ApplyResources(this.playerSettings1, "playerSettings1");
+            this.playerSettings1.Name = "playerSettings1";
             // 
             // kioskSalesSettings1
             // 
@@ -362,11 +369,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.playModeSettings1, "playModeSettings1");
             this.playModeSettings1.Name = "playModeSettings1";
             // 
-            // playerSettings1
-            // 
-            resources.ApplyResources(this.playerSettings1, "playerSettings1");
-            this.playerSettings1.Name = "playerSettings1";
-            // 
             // securitySettings1
             // 
             resources.ApplyResources(this.securitySettings1, "securitySettings1");
@@ -524,6 +526,11 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // playerDeviceSettings1
+            // 
+            resources.ApplyResources(this.playerDeviceSettings1, "playerDeviceSettings1");
+            this.playerDeviceSettings1.Name = "playerDeviceSettings1";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -616,5 +623,6 @@ namespace GTI.Modules.SystemSettings.UI
         private VideoSettings videoSettings2;
         private SessionSummarySettings sessionSummarySettings2;
         private POSKioskSettings kioskSalesSettings1;
+        private PlayerDeviceSettings playerDeviceSettings1;
 	}
 }

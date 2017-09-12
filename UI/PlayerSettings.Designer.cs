@@ -29,8 +29,6 @@ namespace GTI.Modules.SystemSettings.UI
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerSettings));
-            this.btnReset = new GTI.Controls.ImageButton();
-            this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.chkBoxResetRadioOnWifiInterruptions = new System.Windows.Forms.CheckBox();
             this.lblCrateRebootThresholdSeconds = new System.Windows.Forms.Label();
@@ -61,41 +59,15 @@ namespace GTI.Modules.SystemSettings.UI
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPlayWinAnimationDuration = new System.Windows.Forms.TextBox();
+            this.btnReset = new GTI.Controls.ImageButton();
+            this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnReset, "btnReset");
-            this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
-            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
-            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.groupBox5.Controls.Add(this.chkBoxResetRadioOnWifiInterruptions);
             this.groupBox5.Controls.Add(this.lblCrateRebootThresholdSeconds);
             this.groupBox5.Controls.Add(this.lblCrateRebootThreshold);
@@ -310,6 +282,35 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtPlayWinAnimationDuration.Name = "txtPlayWinAnimationDuration";
             this.txtPlayWinAnimationDuration.TextChanged += new System.EventHandler(this.OnModified);
             this.txtPlayWinAnimationDuration.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeric_KeyPress);
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
+            this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.RepeatRate = 150;
+            this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
+            this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.RepeatRate = 150;
+            this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // PlayerSettings
             // 
