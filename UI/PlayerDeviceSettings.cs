@@ -25,7 +25,6 @@ namespace GTI.Modules.SystemSettings.UI
         public PlayerDeviceSettings()
         {
             InitializeComponent();
-            tabCtrl_PlayerSettingDevice.TabPages.Clear();
         }
 
 
@@ -79,7 +78,7 @@ namespace GTI.Modules.SystemSettings.UI
        
             PlayerSettings y = new PlayerSettings();
             y.Dock = DockStyle.Fill;
-
+            y.LoadSettings();
             var x = new TabPage();
             x.Text = DeviceName;
            x.BackColor = Color.Transparent;
