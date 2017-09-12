@@ -36,19 +36,19 @@
             this.playerSettings1 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.tabPg_TedE = new System.Windows.Forms.TabPage();
             this.playerSettings3 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
-            this.tabPg_TravelerII = new System.Windows.Forms.TabPage();
-            this.playerSettings6 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.tabPg_Tracker = new System.Windows.Forms.TabPage();
             this.playerSettings4 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.tabPg_Traveler = new System.Windows.Forms.TabPage();
             this.playerSettings2 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
+            this.tabPg_TravelerII = new System.Windows.Forms.TabPage();
+            this.playerSettings6 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.tabCtrl_PlayerSettingDevice.SuspendLayout();
             this.tabPg_Explorer2.SuspendLayout();
             this.tabPg_FixedBased.SuspendLayout();
             this.tabPg_TedE.SuspendLayout();
-            this.tabPg_TravelerII.SuspendLayout();
             this.tabPg_Tracker.SuspendLayout();
             this.tabPg_Traveler.SuspendLayout();
+            this.tabPg_TravelerII.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCtrl_PlayerSettingDevice
@@ -65,11 +65,12 @@
             // 
             // tabPg_Explorer2
             // 
-            this.tabPg_Explorer2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPg_Explorer2.BackColor = System.Drawing.Color.Transparent;
             this.tabPg_Explorer2.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.tabPg_Explorer2.Controls.Add(this.playerSettings5);
             resources.ApplyResources(this.tabPg_Explorer2, "tabPg_Explorer2");
             this.tabPg_Explorer2.Name = "tabPg_Explorer2";
+            this.tabPg_Explorer2.UseVisualStyleBackColor = true;
             // 
             // playerSettings5
             // 
@@ -105,20 +106,6 @@
             resources.ApplyResources(this.playerSettings3, "playerSettings3");
             this.playerSettings3.Name = "playerSettings3";
             // 
-            // tabPg_TravelerII
-            // 
-            this.tabPg_TravelerII.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPg_TravelerII.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
-            this.tabPg_TravelerII.Controls.Add(this.playerSettings6);
-            resources.ApplyResources(this.tabPg_TravelerII, "tabPg_TravelerII");
-            this.tabPg_TravelerII.Name = "tabPg_TravelerII";
-            // 
-            // playerSettings6
-            // 
-            this.playerSettings6.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
-            resources.ApplyResources(this.playerSettings6, "playerSettings6");
-            this.playerSettings6.Name = "playerSettings6";
-            // 
             // tabPg_Tracker
             // 
             this.tabPg_Tracker.BackColor = System.Drawing.SystemColors.Control;
@@ -147,6 +134,20 @@
             resources.ApplyResources(this.playerSettings2, "playerSettings2");
             this.playerSettings2.Name = "playerSettings2";
             // 
+            // tabPg_TravelerII
+            // 
+            this.tabPg_TravelerII.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPg_TravelerII.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
+            this.tabPg_TravelerII.Controls.Add(this.playerSettings6);
+            resources.ApplyResources(this.tabPg_TravelerII, "tabPg_TravelerII");
+            this.tabPg_TravelerII.Name = "tabPg_TravelerII";
+            // 
+            // playerSettings6
+            // 
+            this.playerSettings6.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
+            resources.ApplyResources(this.playerSettings6, "playerSettings6");
+            this.playerSettings6.Name = "playerSettings6";
+            // 
             // PlayerDeviceSettings
             // 
             resources.ApplyResources(this, "$this");
@@ -158,9 +159,9 @@
             this.tabPg_Explorer2.ResumeLayout(false);
             this.tabPg_FixedBased.ResumeLayout(false);
             this.tabPg_TedE.ResumeLayout(false);
-            this.tabPg_TravelerII.ResumeLayout(false);
             this.tabPg_Tracker.ResumeLayout(false);
             this.tabPg_Traveler.ResumeLayout(false);
+            this.tabPg_TravelerII.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

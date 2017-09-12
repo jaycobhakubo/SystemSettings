@@ -30,8 +30,6 @@ namespace GTI.Modules.SystemSettings.UI
             kioskAdvanced2.SetKoiskSettings2Controller(this.GetCurrentOperator, this.SetCurrentOperator);
             licenseFileSettings1.SetLicenseFileSettingsController();
 
-            m_devices = GetDeviceList();
-
             //if it is the admin
             if(Common.IsAdmin)
             {
@@ -45,39 +43,9 @@ namespace GTI.Modules.SystemSettings.UI
                                             Common.OperatorName);
                 m_currentOperator = Common.OperatorId;
                 LoadSettings();
-            }
-
-    
+            }   
 		}
 
-        //
-
-        private Device[] m_devices;
-        private Device[] GetDeviceList()
-        {
-            // Get device types
-            GetDeviceTypeDataMessage msg = new GetDeviceTypeDataMessage();//knc_1
-            try
-            {
-                msg.Send();
-            }
-            catch (Exception ex)
-            {
-                MessageForm.Show(this, string.Format(Properties.Resources.GetDeviceTypesFailed, ex.Message));
-         //       return false;
-            }
-
-            // Check return code
-            if (msg.ServerReturnCode != GTIServerReturnCode.Success)
-            {
-                MessageForm.Show(this, string.Format(Properties.Resources.GetDeviceTypesFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)));
-
-           //     return false;
-            }
-
-            var x = msg.Devices;
-            return  x;
-        }
 
         internal void LoadComboBox()
         {
@@ -120,7 +88,6 @@ namespace GTI.Modules.SystemSettings.UI
             charitySettings.Hide();
             charitySettings.Enabled = false;
 
-            unitMgmtSettings1.m_devices = m_devices;
             unitMgmtSettings1.LoadSettings();//knc
             unitMgmtSettings1.Hide();
             unitMgmtSettings1.Enabled = false;
@@ -281,6 +248,10 @@ namespace GTI.Modules.SystemSettings.UI
             kioskSalesSettings1.LoadSettings();
             kioskSalesSettings1.Hide();
             kioskSalesSettings1.Enabled = false;
+
+            playerDeviceSettings1.LoadSettings();
+            playerDeviceSettings1.Hide();
+            playerDeviceSettings1.Enabled = false;
 
             //END RALLY DE9656
 
