@@ -29,6 +29,7 @@ namespace GTI.Modules.SystemSettings.UI
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerSettings));
+            this.chkbxUseDefault = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.chkBoxResetRadioOnWifiInterruptions = new System.Windows.Forms.CheckBox();
             this.lblCrateRebootThresholdSeconds = new System.Windows.Forms.Label();
@@ -63,6 +64,14 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // chkbxUseDefault
+            // 
+            resources.ApplyResources(this.chkbxUseDefault, "chkbxUseDefault");
+            this.chkbxUseDefault.BackColor = System.Drawing.Color.Transparent;
+            this.chkbxUseDefault.Name = "chkbxUseDefault";
+            this.chkbxUseDefault.UseVisualStyleBackColor = false;
+            this.chkbxUseDefault.CheckedChanged += new System.EventHandler(this.chkbxUseDefault_CheckedChanged);
             // 
             // groupBox5
             // 
@@ -315,6 +324,7 @@ namespace GTI.Modules.SystemSettings.UI
             // PlayerSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.chkbxUseDefault);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
@@ -324,6 +334,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
@@ -361,5 +372,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.Label lblCrateRebootThreshold;
         private System.Windows.Forms.TextBox txtRebootTimeThreshold;
         private System.Windows.Forms.CheckBox chkBoxResetRadioOnWifiInterruptions;
+        private System.Windows.Forms.CheckBox chkbxUseDefault;
 	}
 }

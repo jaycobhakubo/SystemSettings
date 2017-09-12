@@ -84,6 +84,8 @@ namespace GTI.Modules.SystemSettings.UI
             }
             //END RALLY DE 9171
 
+          
+
             // Fill in the operator global settings            
             SettingValue tempSettingValue;
 
@@ -238,7 +240,7 @@ namespace GTI.Modules.SystemSettings.UI
 
                 chkBoxResetRadioOnWifiInterruptions.Visible = false;
             }
-
+            chkbxUseDefault.Checked = true;
             // Set the flag
             m_bModified = false;
 
@@ -407,6 +409,18 @@ namespace GTI.Modules.SystemSettings.UI
             if (result < 4)
             {
                 txtPlayerPINLength.Text = 4.ToString();
+            }
+        }
+
+        private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbxUseDefault.Checked == true)
+            {
+                groupBox5.Enabled = false;
+            }
+            else
+            {
+                groupBox5.Enabled = true;
             }
         }
     } // end class

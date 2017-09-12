@@ -118,14 +118,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkbxUseDefault.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkbxUseDefault.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkbxUseDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxUseDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>626, 15</value>
+  </data>
+  <data name="chkbxUseDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 26</value>
+  </data>
+  <data name="chkbxUseDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chkbxUseDefault.Text" xml:space="preserve">
+    <value>Use Default</value>
+  </data>
+  <data name="&gt;&gt;chkbxUseDefault.Name" xml:space="preserve">
+    <value>chkbxUseDefault</value>
+  </data>
+  <data name="&gt;&gt;chkbxUseDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxUseDefault.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkbxUseDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="chkBoxResetRadioOnWifiInterruptions.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="chkBoxResetRadioOnWifiInterruptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="chkBoxResetRadioOnWifiInterruptions.Location" type="System.Drawing.Point, System.Drawing">
     <value>394, 236</value>
   </data>
@@ -964,10 +997,10 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 3</value>
+    <value>10, 51</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>728, 545</value>
+    <value>728, 497</value>
   </data>
   <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -985,7 +1018,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
@@ -1018,7 +1051,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
@@ -1051,7 +1084,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
