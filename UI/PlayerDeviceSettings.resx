@@ -117,6 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="playerSettings5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="playerSettings5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playerSettings5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="playerSettings5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;playerSettings5.Name" xml:space="preserve">
     <value>playerSettings5</value>
   </data>
@@ -129,7 +143,6 @@
   <data name="&gt;&gt;playerSettings5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tabPg_Explorer2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
   </data>
@@ -140,7 +153,6 @@
   <data name="tabPg_Explorer2.Size" type="System.Drawing.Size, System.Drawing">
     <value>754, 609</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabPg_Explorer2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -157,6 +169,18 @@
     <value>tabCtrl_PlayerSettingDevice</value>
   </data>
   <data name="&gt;&gt;tabPg_Explorer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="playerSettings1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="playerSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playerSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="playerSettings1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;playerSettings1.Name" xml:space="preserve">
@@ -193,6 +217,18 @@
     <value>tabCtrl_PlayerSettingDevice</value>
   </data>
   <data name="&gt;&gt;tabPg_FixedBased.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="playerSettings3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="playerSettings3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playerSettings3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="playerSettings3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;playerSettings3.Name" xml:space="preserve">
@@ -233,6 +269,108 @@
   </data>
   <data name="&gt;&gt;tabPg_TedE.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="playerSettings4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="playerSettings4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playerSettings4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="playerSettings4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;playerSettings4.Name" xml:space="preserve">
+    <value>playerSettings4</value>
+  </data>
+  <data name="&gt;&gt;playerSettings4.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playerSettings4.Parent" xml:space="preserve">
+    <value>tabPg_Tracker</value>
+  </data>
+  <data name="&gt;&gt;playerSettings4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPg_Tracker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tabPg_Tracker.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPg_Tracker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="tabPg_Tracker.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPg_Tracker.Text" xml:space="preserve">
+    <value>Tracker</value>
+  </data>
+  <data name="&gt;&gt;tabPg_Tracker.Name" xml:space="preserve">
+    <value>tabPg_Tracker</value>
+  </data>
+  <data name="&gt;&gt;tabPg_Tracker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPg_Tracker.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayerSettingDevice</value>
+  </data>
+  <data name="&gt;&gt;tabPg_Tracker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="playerSettings2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="playerSettings2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playerSettings2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="playerSettings2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;playerSettings2.Name" xml:space="preserve">
+    <value>playerSettings2</value>
+  </data>
+  <data name="&gt;&gt;playerSettings2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playerSettings2.Parent" xml:space="preserve">
+    <value>tabPg_Traveler</value>
+  </data>
+  <data name="&gt;&gt;playerSettings2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPg_Traveler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tabPg_Traveler.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPg_Traveler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="tabPg_Traveler.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPg_Traveler.Text" xml:space="preserve">
+    <value>Traveler</value>
+  </data>
+  <data name="&gt;&gt;tabPg_Traveler.Name" xml:space="preserve">
+    <value>tabPg_Traveler</value>
+  </data>
+  <data name="&gt;&gt;tabPg_Traveler.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPg_Traveler.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayerSettingDevice</value>
+  </data>
+  <data name="&gt;&gt;tabPg_Traveler.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="playerSettings6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -283,84 +421,6 @@
     <value>tabCtrl_PlayerSettingDevice</value>
   </data>
   <data name="&gt;&gt;tabPg_TravelerII.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;playerSettings4.Name" xml:space="preserve">
-    <value>playerSettings4</value>
-  </data>
-  <data name="&gt;&gt;playerSettings4.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
-  </data>
-  <data name="&gt;&gt;playerSettings4.Parent" xml:space="preserve">
-    <value>tabPg_Tracker</value>
-  </data>
-  <data name="&gt;&gt;playerSettings4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPg_Tracker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tabPg_Tracker.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPg_Tracker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tabPg_Tracker.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabPg_Tracker.Text" xml:space="preserve">
-    <value>Tracker</value>
-  </data>
-  <data name="&gt;&gt;tabPg_Tracker.Name" xml:space="preserve">
-    <value>tabPg_Tracker</value>
-  </data>
-  <data name="&gt;&gt;tabPg_Tracker.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPg_Tracker.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayerSettingDevice</value>
-  </data>
-  <data name="&gt;&gt;tabPg_Tracker.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;playerSettings2.Name" xml:space="preserve">
-    <value>playerSettings2</value>
-  </data>
-  <data name="&gt;&gt;playerSettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
-  </data>
-  <data name="&gt;&gt;playerSettings2.Parent" xml:space="preserve">
-    <value>tabPg_Traveler</value>
-  </data>
-  <data name="&gt;&gt;playerSettings2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPg_Traveler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tabPg_Traveler.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPg_Traveler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tabPg_Traveler.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPg_Traveler.Text" xml:space="preserve">
-    <value>Traveler</value>
-  </data>
-  <data name="&gt;&gt;tabPg_Traveler.Name" xml:space="preserve">
-    <value>tabPg_Traveler</value>
-  </data>
-  <data name="&gt;&gt;tabPg_Traveler.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPg_Traveler.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayerSettingDevice</value>
-  </data>
-  <data name="&gt;&gt;tabPg_Traveler.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="tabCtrl_PlayerSettingDevice.Location" type="System.Drawing.Point, System.Drawing">
@@ -382,126 +442,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tabCtrl_PlayerSettingDevice.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="playerSettings5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="playerSettings5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="playerSettings5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="playerSettings5.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;playerSettings5.Name" xml:space="preserve">
-    <value>playerSettings5</value>
-  </data>
-  <data name="&gt;&gt;playerSettings5.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
-  </data>
-  <data name="&gt;&gt;playerSettings5.Parent" xml:space="preserve">
-    <value>tabPg_Explorer2</value>
-  </data>
-  <data name="&gt;&gt;playerSettings5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="playerSettings1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="playerSettings1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="playerSettings1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="playerSettings1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;playerSettings1.Name" xml:space="preserve">
-    <value>playerSettings1</value>
-  </data>
-  <data name="&gt;&gt;playerSettings1.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
-  </data>
-  <data name="&gt;&gt;playerSettings1.Parent" xml:space="preserve">
-    <value>tabPg_FixedBased</value>
-  </data>
-  <data name="&gt;&gt;playerSettings1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="playerSettings4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="playerSettings4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="playerSettings4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="playerSettings4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;playerSettings4.Name" xml:space="preserve">
-    <value>playerSettings4</value>
-  </data>
-  <data name="&gt;&gt;playerSettings4.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
-  </data>
-  <data name="&gt;&gt;playerSettings4.Parent" xml:space="preserve">
-    <value>tabPg_Tracker</value>
-  </data>
-  <data name="&gt;&gt;playerSettings4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="playerSettings2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="playerSettings2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="playerSettings2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="playerSettings2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;playerSettings2.Name" xml:space="preserve">
-    <value>playerSettings2</value>
-  </data>
-  <data name="&gt;&gt;playerSettings2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
-  </data>
-  <data name="&gt;&gt;playerSettings2.Parent" xml:space="preserve">
-    <value>tabPg_Traveler</value>
-  </data>
-  <data name="&gt;&gt;playerSettings2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="playerSettings3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="playerSettings3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="playerSettings3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="playerSettings3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;playerSettings3.Name" xml:space="preserve">
-    <value>playerSettings3</value>
-  </data>
-  <data name="&gt;&gt;playerSettings3.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
-  </data>
-  <data name="&gt;&gt;playerSettings3.Parent" xml:space="preserve">
-    <value>tabPg_TedE</value>
-  </data>
-  <data name="&gt;&gt;playerSettings3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
