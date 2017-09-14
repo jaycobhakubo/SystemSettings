@@ -254,6 +254,8 @@ namespace GTI.Modules.SystemSettings.UI
             playerDeviceSettings1.Hide();
             playerDeviceSettings1.Enabled = false;
 
+            
+
             //END RALLY DE9656
 
             CreateNodes();
@@ -441,7 +443,7 @@ namespace GTI.Modules.SystemSettings.UI
             nodeParent.Tag = playerDeviceSettings1;
   
             nodeChild = nodeParent.Nodes.Add("Audio Settings");
-            nodeChild.Tag = audioSettings1;
+            nodeChild.Tag = 
 
             nodeChild = nodeParent.Nodes.Add("Play Mode Settings");
             nodeChild.Tag = playModeSettings1;

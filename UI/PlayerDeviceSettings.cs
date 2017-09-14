@@ -7,12 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-//using System;
-//using System.Reflection;
-//using System.Windows.Forms;
 using GTI.Modules.Shared;
-//using GTI.Modules.SystemSettings.Properties;
-//using GTI.Modules.SystemSettings.Business;
 using GTI.Modules.SystemSettings.Data;
 
 

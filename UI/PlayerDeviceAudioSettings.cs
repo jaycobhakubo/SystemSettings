@@ -43,30 +43,43 @@ namespace GTI.Modules.SystemSettings.UI
 
                     if (tempID == Device.Traveler.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Traveler"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Traveler"));
                     }
                     else if (tempID == Device.Tracker.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Tracker"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Tracker"));
                     }
                     else if (tempID == Device.Explorer.Id)//RALLY TA 7728 Changed MINI to EXPLORER
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Explorer"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Explorer"));
                     }
                     else if (tempID == Device.Fixed.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Fixed Base"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Fixed Base"));
                     }
                     else if (tempID == Device.Traveler2.Id) // Rally US765
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Traveler2"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Traveler2"));
                     }
                     else if (tempID == Device.Tablet.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Ted-E"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Ted-E"));
                     }
                 }
             }
+        }
+
+        private TabPage tbPageInit(string DeviceName)
+        {
+            PlayerSettings y = new PlayerSettings();
+            y.Dock = DockStyle.Fill;
+            y.LoadSettings();
+            var x = new TabPage();
+            x.Text = DeviceName;
+            x.BackColor = Color.Transparent;
+            x.BackgroundImage = Properties.Resources.GradientFull;
+            x.Controls.Add(y);
+            return x;
         }
     }
 }
