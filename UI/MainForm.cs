@@ -249,6 +249,7 @@ namespace GTI.Modules.SystemSettings.UI
             kioskSalesSettings1.Hide();
             kioskSalesSettings1.Enabled = false;
 
+            playerDeviceSettings1.Devices = unitMgmtSettings1.Devices;
             playerDeviceSettings1.LoadSettings();
             playerDeviceSettings1.Hide();
             playerDeviceSettings1.Enabled = false;
@@ -436,10 +437,15 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
-            //Player Unit Settings
-            // Rally DE 2390 = Player Settings Settings Simplification 
             nodeParent = new TreeNode("Player Device Settings", 0, 1);
             nodeParent.Tag = playerDeviceSettings1;
+  
+            nodeChild = nodeParent.Nodes.Add("Audio Settings");
+            nodeChild.Tag = audioSettings1;
+
+            nodeChild = nodeParent.Nodes.Add("Play Mode Settings");
+            nodeChild.Tag = playModeSettings1;
+
             treeView1.Nodes.Add(nodeParent);
 
             //Player Unit Settings

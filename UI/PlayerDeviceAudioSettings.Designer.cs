@@ -1,6 +1,6 @@
 ﻿namespace GTI.Modules.SystemSettings.UI
 {
-    partial class PlayerDeviceSettings
+    partial class PlayerDeviceAudioSettings
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,30 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerDeviceSettings));
-            this.tabCtrl_PlayerSettingDevice = new System.Windows.Forms.TabControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerDeviceAudioSettings));
+            this.tabCtrl_AudioDevice = new System.Windows.Forms.TabControl();
             this.SuspendLayout();
             // 
-            // tabCtrl_PlayerSettingDevice
+            // tabCtrl_AudioDevice
             // 
-            resources.ApplyResources(this.tabCtrl_PlayerSettingDevice, "tabCtrl_PlayerSettingDevice");
-            this.tabCtrl_PlayerSettingDevice.Name = "tabCtrl_PlayerSettingDevice";
-            this.tabCtrl_PlayerSettingDevice.SelectedIndex = 0;
+            resources.ApplyResources(this.tabCtrl_AudioDevice, "tabCtrl_AudioDevice");
+            this.tabCtrl_AudioDevice.Name = "tabCtrl_AudioDevice";
+            this.tabCtrl_AudioDevice.SelectedIndex = 0;
             // 
-            // PlayerDeviceSettings
+            // PlayerDeviceAudioSettings
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
-            this.Controls.Add(this.tabCtrl_PlayerSettingDevice);
             resources.ApplyResources(this, "$this");
-            this.Name = "PlayerDeviceSettings";
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tabCtrl_AudioDevice);
+            this.DoubleBuffered = true;
+            this.Name = "PlayerDeviceAudioSettings";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabCtrl_PlayerSettingDevice;
-
+        private System.Windows.Forms.TabControl tabCtrl_AudioDevice;
     }
 }

@@ -36,6 +36,12 @@ namespace GTI.Modules.SystemSettings.UI
         private int m_POSDefaultDevice;
         private bool m_bRipPacks;
 
+        private Device[] m_devices;
+        public Device[] Devices
+        {
+            get { return m_devices; }
+        }
+
         #endregion
 
         public UnitMgmtSettings()
@@ -391,6 +397,7 @@ namespace GTI.Modules.SystemSettings.UI
 
              //Get device types
             GetDeviceTypeDataMessage msg = new GetDeviceTypeDataMessage();//knc_1
+           
             try
             {
                 msg.Send();
@@ -408,7 +415,9 @@ namespace GTI.Modules.SystemSettings.UI
                 return false;
             }
 
-			// Add rows for all of the possible device types 
+            m_devices = msg.Devices;
+
+            // Add rows for all of the possible device types 
 			if (gridDeviceFees.Rows.Count == 0)
 			{
 				gridDeviceFees.Rows.Add(NUM_DEVICES);
