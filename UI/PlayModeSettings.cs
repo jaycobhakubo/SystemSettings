@@ -278,6 +278,7 @@ namespace GTI.Modules.SystemSettings.UI
 			// Set the flag
 			m_bModified = false;
 
+            chkbxUseDefault.Checked = true;
 			return true;
 		}
 
@@ -668,6 +669,18 @@ namespace GTI.Modules.SystemSettings.UI
         private void btnReset_Leave(object sender, EventArgs e)
         {
             m_rdoButtonAuto.Focus();
+        }
+
+        private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbxUseDefault.Checked == true)
+            {
+                groupBox5.Enabled = false;
+            }
+            else
+            {
+                groupBox5.Enabled = true;
+            }
         }
 
         //FIX: RALLY DE2390 Updated Play Modes End:

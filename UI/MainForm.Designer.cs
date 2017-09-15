@@ -35,6 +35,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.playerDeviceAudioSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceAudioSettings();
             this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
             this.playerSettings1 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
@@ -95,7 +96,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.playerDeviceAudioSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceAudioSettings();
+            this.playerDevicePlayModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDevicePlayModeSettings();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -118,6 +119,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.playerDevicePlayModeSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerDeviceAudioSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerSettings1);
@@ -205,6 +207,12 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            // 
+            // playerDeviceAudioSettings1
+            // 
+            this.playerDeviceAudioSettings1.Devices = null;
+            resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
+            this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
             // 
             // playerDeviceSettings1
             // 
@@ -534,11 +542,11 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // playerDeviceAudioSettings1
+            // playerDevicePlayModeSettings1
             // 
-            this.playerDeviceAudioSettings1.Devices = null;
-            resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
-            this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
+            this.playerDevicePlayModeSettings1.Devices = null;
+            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
+            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
             // 
             // MainForm
             // 
@@ -634,5 +642,6 @@ namespace GTI.Modules.SystemSettings.UI
         private POSKioskSettings kioskSalesSettings1;
         private PlayerDeviceSettings playerDeviceSettings1;
         private PlayerDeviceAudioSettings playerDeviceAudioSettings1;
+        private PlayerDevicePlayModeSettings playerDevicePlayModeSettings1;
 	}
 }

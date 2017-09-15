@@ -29,6 +29,7 @@ namespace GTI.Modules.SystemSettings.UI
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayModeSettings));
+            this.chkbxUseDefault = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.m_cboPlayDaubLocation = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -49,9 +50,18 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // chkbxUseDefault
+            // 
+            resources.ApplyResources(this.chkbxUseDefault, "chkbxUseDefault");
+            this.chkbxUseDefault.BackColor = System.Drawing.Color.Transparent;
+            this.chkbxUseDefault.Name = "chkbxUseDefault";
+            this.chkbxUseDefault.UseVisualStyleBackColor = false;
+            this.chkbxUseDefault.CheckedChanged += new System.EventHandler(this.chkbxUseDefault_CheckedChanged);
+            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.groupBox5.Controls.Add(this.m_cboPlayDaubLocation);
             this.groupBox5.Controls.Add(this.groupBox2);
             this.groupBox5.Controls.Add(this.groupBox1);
@@ -172,6 +182,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.Name = "btnReset";
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -186,12 +197,14 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.Name = "btnSave";
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // PlayModeSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.chkbxUseDefault);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
@@ -205,6 +218,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
@@ -225,5 +239,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox m_chkAllowPreCallErrors;
         private System.Windows.Forms.CheckBox m_chkAllowPreDaubing;
         private System.Windows.Forms.CheckBox m_chkAllowCatchUp;
+        private System.Windows.Forms.CheckBox chkbxUseDefault;
 	}
 }

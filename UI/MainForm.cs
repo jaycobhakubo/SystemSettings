@@ -259,6 +259,11 @@ namespace GTI.Modules.SystemSettings.UI
             playerDeviceAudioSettings1.Hide();
             playerDeviceAudioSettings1.Enabled = false;
 
+            playerDevicePlayModeSettings1.Devices = unitMgmtSettings1.Devices;
+            playerDevicePlayModeSettings1.LoadSettings();
+            playerDevicePlayModeSettings1.Hide();
+            playerDevicePlayModeSettings1.Enabled = false;
+
             //END RALLY DE9656
 
             CreateNodes();
@@ -442,14 +447,14 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
-            nodeParent = new TreeNode("Player Device Settings", 0, 1);
+            nodeParent = new TreeNode("Player Unit Settings", 0, 1);
             nodeParent.Tag = playerDeviceSettings1;
   
             nodeChild = nodeParent.Nodes.Add("Audio Settings");
             nodeChild.Tag = playerDeviceAudioSettings1;
 
-            //nodeChild = nodeParent.Nodes.Add("Play Mode Settings");
-            //nodeChild.Tag = playModeSettings1;
+            nodeChild = nodeParent.Nodes.Add("Play Mode Settings");
+            nodeChild.Tag = playerDevicePlayModeSettings1;
 
             treeView1.Nodes.Add(nodeParent);
 

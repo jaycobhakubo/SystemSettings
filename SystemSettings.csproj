@@ -179,6 +179,12 @@
     <Compile Include="UI\PlayerDeviceAudioSettings.Designer.cs">
       <DependentUpon>PlayerDeviceAudioSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\PlayerDevicePlayModeSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PlayerDevicePlayModeSettings.Designer.cs">
+      <DependentUpon>PlayerDevicePlayModeSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\PlayerDeviceSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -460,6 +466,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PlayerDeviceAudioSettings.resx">
       <DependentUpon>PlayerDeviceAudioSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PlayerDevicePlayModeSettings.resx">
+      <DependentUpon>PlayerDevicePlayModeSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PlayerDeviceSettings.resx">
       <DependentUpon>PlayerDeviceSettings.cs</DependentUpon>

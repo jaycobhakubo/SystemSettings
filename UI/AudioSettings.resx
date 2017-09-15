@@ -397,7 +397,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkPlayAllSoundEnabled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 44</value>
+    <value>24, 44</value>
   </data>
   <data name="chkPlayAllSoundEnabled.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 26</value>
