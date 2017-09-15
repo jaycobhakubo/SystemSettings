@@ -117,74 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkbxUseDefault.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 10pt, style=Bold</value>
+  <data name="chkbxUseDefault.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chkbxUseDefault.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 590</value>
+  <data name="chkbxUseDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>625, 15</value>
   </data>
-  <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
+  <data name="chkbxUseDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 26</value>
   </data>
-  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 30</value>
+  <data name="chkbxUseDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="chkbxUseDefault.Text" xml:space="preserve">
+    <value>Use Default</value>
   </data>
-  <data name="btnReset.Text" xml:space="preserve">
-    <value>&amp;Reset</value>
+  <data name="&gt;&gt;chkbxUseDefault.Name" xml:space="preserve">
+    <value>chkbxUseDefault</value>
   </data>
-  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
-    <value>btnReset</value>
+  <data name="&gt;&gt;chkbxUseDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
-  </data>
-  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkbxUseDefault.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 10pt, style=Bold</value>
-  </data>
-  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 590</value>
-  </data>
-  <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 30</value>
-  </data>
-  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>&amp;Save</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
-    <value>btnSave</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;chkbxUseDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="MaxTVVolumeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -193,7 +160,7 @@
     <value>NoControl</value>
   </data>
   <data name="MaxTVVolumeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>244, 384</value>
+    <value>24, 248</value>
   </data>
   <data name="MaxTVVolumeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 22</value>
@@ -226,7 +193,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numMaxTVVolume.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 382</value>
+    <value>188, 244</value>
   </data>
   <data name="numMaxTVVolume.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -252,8 +219,11 @@
   <data name="maxVolumeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="maxVolumeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="maxVolumeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>244, 334</value>
+    <value>20, 212</value>
   </data>
   <data name="maxVolumeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 22</value>
@@ -280,7 +250,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numMaxGameVolume.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 332</value>
+    <value>188, 204</value>
   </data>
   <data name="numMaxGameVolume.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 26</value>
@@ -303,8 +273,11 @@
   <data name="chkPlayKeyClickEnabled.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkPlayKeyClickEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkPlayKeyClickEnabled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 284</value>
+    <value>24, 172</value>
   </data>
   <data name="chkPlayKeyClickEnabled.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 26</value>
@@ -330,8 +303,11 @@
   <data name="chkPlayBallCallSoundEnabled.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkPlayBallCallSoundEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkPlayBallCallSoundEnabled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 234</value>
+    <value>24, 140</value>
   </data>
   <data name="chkPlayBallCallSoundEnabled.Size" type="System.Drawing.Size, System.Drawing">
     <value>173, 26</value>
@@ -357,8 +333,11 @@
   <data name="chkPlayWinningSoundEnabled.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkPlayWinningSoundEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkPlayWinningSoundEnabled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 184</value>
+    <value>24, 108</value>
   </data>
   <data name="chkPlayWinningSoundEnabled.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 26</value>
@@ -384,8 +363,11 @@
   <data name="chkPlayModeOneAwaySound.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkPlayModeOneAwaySound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkPlayModeOneAwaySound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 134</value>
+    <value>24, 76</value>
   </data>
   <data name="chkPlayModeOneAwaySound.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 26</value>
@@ -411,8 +393,11 @@
   <data name="chkPlayAllSoundEnabled.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="chkPlayAllSoundEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="chkPlayAllSoundEnabled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 84</value>
+    <value>25, 44</value>
   </data>
   <data name="chkPlayAllSoundEnabled.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 26</value>
@@ -439,10 +424,10 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 27</value>
+    <value>10, 51</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>728, 516</value>
+    <value>728, 497</value>
   </data>
   <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -460,7 +445,73 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="btnReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 568</value>
+  </data>
+  <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>&amp;Reset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 568</value>
+  </data>
+  <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -475,6 +526,6 @@
     <value>AudioSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.10.0.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

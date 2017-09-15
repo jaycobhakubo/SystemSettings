@@ -29,8 +29,7 @@ namespace GTI.Modules.SystemSettings.UI
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AudioSettings));
-            this.btnReset = new GTI.Controls.ImageButton();
-            this.btnSave = new GTI.Controls.ImageButton();
+            this.chkbxUseDefault = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.MaxTVVolumeLabel = new System.Windows.Forms.Label();
             this.numMaxTVVolume = new System.Windows.Forms.NumericUpDown();
@@ -41,37 +40,25 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkPlayWinningSoundEnabled = new System.Windows.Forms.CheckBox();
             this.chkPlayModeOneAwaySound = new System.Windows.Forms.CheckBox();
             this.chkPlayAllSoundEnabled = new System.Windows.Forms.CheckBox();
+            this.btnReset = new GTI.Controls.ImageButton();
+            this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTVVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxGameVolume)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnReset
+            // chkbxUseDefault
             // 
-            this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnReset, "btnReset");
-            this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            resources.ApplyResources(this.chkbxUseDefault, "chkbxUseDefault");
+            this.chkbxUseDefault.BackColor = System.Drawing.Color.Transparent;
+            this.chkbxUseDefault.Name = "chkbxUseDefault";
+            this.chkbxUseDefault.UseVisualStyleBackColor = false;
+            this.chkbxUseDefault.CheckedChanged += new System.EventHandler(this.chkbxUseDefault_CheckedChanged);
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.groupBox5.Controls.Add(this.MaxTVVolumeLabel);
             this.groupBox5.Controls.Add(this.numMaxTVVolume);
             this.groupBox5.Controls.Add(this.maxVolumeLabel);
@@ -164,9 +151,39 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkPlayAllSoundEnabled.UseVisualStyleBackColor = true;
             this.chkPlayAllSoundEnabled.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
+            this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.RepeatRate = 150;
+            this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
+            this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.RepeatRate = 150;
+            this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // AudioSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.chkbxUseDefault);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
@@ -178,6 +195,7 @@ namespace GTI.Modules.SystemSettings.UI
             ((System.ComponentModel.ISupportInitialize)(this.numMaxTVVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxGameVolume)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 
@@ -195,5 +213,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.NumericUpDown numMaxGameVolume;
         private System.Windows.Forms.Label MaxTVVolumeLabel;
         private System.Windows.Forms.NumericUpDown numMaxTVVolume;
+        private System.Windows.Forms.CheckBox chkbxUseDefault;
 	}
 }

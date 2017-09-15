@@ -11,7 +11,7 @@ using GTI.Modules.SystemSettings.Data;
 
 namespace GTI.Modules.SystemSettings.UI
 {
-    public partial class PlayerDeviceAudioSettings : UserControl
+    public partial class PlayerDeviceAudioSettings : SettingsControl
     {
         private Device[] m_devices;
         public Device[] Devices
@@ -71,7 +71,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private TabPage tbPageInit(string DeviceName)
         {
-            PlayerSettings y = new PlayerSettings();
+            AudioSettings y = new AudioSettings();
             y.Dock = DockStyle.Fill;
             y.LoadSettings();
             var x = new TabPage();

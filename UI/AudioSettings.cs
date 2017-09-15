@@ -185,7 +185,7 @@ namespace GTI.Modules.SystemSettings.UI
             //FIX END RALLY DE 2645 added all audio settings to global variable
             // Set the flag
 			m_bModified = false;
-
+            chkbxUseDefault.Checked = true;
 			return true;
 		}
 
@@ -282,6 +282,19 @@ namespace GTI.Modules.SystemSettings.UI
         private void btnReset_Leave(object sender, EventArgs e)
         {
             chkPlayAllSoundEnabled.Focus();
+        }
+
+        private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbxUseDefault.Checked == true)
+            {
+                groupBox5.Enabled = false;
+            }
+            else
+            {
+                groupBox5.Enabled = true;
+            }
+        
         }
 
         

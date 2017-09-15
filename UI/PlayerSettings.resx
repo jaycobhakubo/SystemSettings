@@ -1027,7 +1027,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 564</value>
+    <value>395, 568</value>
   </data>
   <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -1060,7 +1060,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 564</value>
+    <value>246, 568</value>
   </data>
   <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -1093,7 +1093,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 609</value>
+    <value>762, 644</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PlayerSettings</value>
