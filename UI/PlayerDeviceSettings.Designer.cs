@@ -37,6 +37,7 @@
             resources.ApplyResources(this.tabCtrl_PlayerSettingDevice, "tabCtrl_PlayerSettingDevice");
             this.tabCtrl_PlayerSettingDevice.Name = "tabCtrl_PlayerSettingDevice";
             this.tabCtrl_PlayerSettingDevice.SelectedIndex = 0;
+            this.tabCtrl_PlayerSettingDevice.SelectedIndexChanged += new System.EventHandler(this.tabCtrl_PlayerSettingDevice_SelectedIndexChanged);
             // 
             // PlayerDeviceSettings
             // 

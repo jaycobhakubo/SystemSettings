@@ -159,7 +159,7 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
-        private bool LoadMachineSettings()
+        private bool LoadMachineSettings()//knc
         {
             // If this a multi-select, we will start with all default settings
             if (m_arrMachines.Length == 1)

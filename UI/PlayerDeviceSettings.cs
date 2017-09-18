@@ -76,19 +76,24 @@ namespace GTI.Modules.SystemSettings.UI
         private TabPage tbPageInit(string DeviceName)
         {
        
-            PlayerSettings y = new PlayerSettings();
-            y.Dock = DockStyle.Fill;
-            y.LoadSettings();
             var x = new TabPage();
             x.Text = DeviceName;
-           x.BackColor = Color.Transparent;
-            x.BackgroundImage = Properties.Resources.GradientFull;
+            x.Name = DeviceName;
+            x.Tag = DeviceName;
 
-            x.Controls.Add(y);
+            if (tabCtrl_PlayerSettingDevice.TabPages.Count == 0)
+            {
+                x.BackColor = Color.Transparent;
+                x.BackgroundImage = Properties.Resources.GradientFull;
+                PlayerSettings y = new PlayerSettings();
+                y.Dock = DockStyle.Fill;
+                y.LoadSettings();
+                x.Controls.Add(y);
+            }
             return x;
         }
 
-   
+
         private Device[] GetDeviceList()
         {
             // Get device types
@@ -107,13 +112,22 @@ namespace GTI.Modules.SystemSettings.UI
             if (msg.ServerReturnCode != GTIServerReturnCode.Success)
             {
                 MessageForm.Show(this, string.Format(Properties.Resources.GetDeviceTypesFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)));
-
                 //     return false;
             }
-
             var x = msg.Devices;
             return x;
         }
 
+        private void tabCtrl_PlayerSettingDevice_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var tabCrtrl = (TabControl)sender;
+            TabPage x = tabCrtrl.SelectedTab;
+            x.BackColor = Color.Transparent;
+            x.BackgroundImage = Properties.Resources.GradientFull;
+            PlayerSettings y = new PlayerSettings();
+            y.Dock = DockStyle.Fill;
+            y.LoadSettings();
+            x.Controls.Add(y);
+        }
     }
 }

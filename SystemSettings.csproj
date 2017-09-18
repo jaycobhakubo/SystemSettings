@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\AllSettingsModel.cs" />
+    <Compile Include="Business\GetDeviceSettings.cs" />
     <Compile Include="Business\GetMachineModules.cs" />
     <Compile Include="Business\SetRemoteDisplayConfigurations.cs" />
     <Compile Include="Business\SetAccrualDisplayItems.cs" />

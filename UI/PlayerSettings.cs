@@ -18,7 +18,7 @@ using System.Windows.Forms;
 using GTI.Modules.Shared;
 using System.Collections.Generic;
 using GTI.Modules.SystemSettings.Properties;
-
+using GTI.Modules.SystemSettings.Business;
 
 namespace GTI.Modules.SystemSettings.UI
 {
@@ -83,11 +83,17 @@ namespace GTI.Modules.SystemSettings.UI
                 return false;
             }
             //END RALLY DE 9171
-
-          
-
             // Fill in the operator global settings            
             SettingValue tempSettingValue;
+
+            //Get the device setting if set if not then get the operator settings.
+            GetDeviceSettings x = new GetDeviceSettings(0, 0);
+            x.Send();
+           SettingValue[] z  = x.DeviceSettingList;
+            if (z.Length != 0)
+            {
+                int i = 0;
+            }
 
             Common.GetOpSettingValue(Setting.VIPRequiresPIN, out tempSettingValue);
             chkPlayerPIN.Checked = Common.ParseBool(tempSettingValue.Value);  //RALLY DE9427
