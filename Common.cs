@@ -657,6 +657,41 @@ namespace GTI.Modules.SystemSettings
             //RALLY DE10419 use hardware acceleration should be a global setting
 	    }
 
+
+        public static bool SaveDeviceSettings(int DeviceId, SettingValue[] arrSettings)
+        {
+            SetDeviceSettings msg = new SetDeviceSettings(DeviceId, arrSettings);
+
+            try
+            {
+                msg.Send();
+
+                if (msg.ServerReturnCode != GTIServerReturnCode.Success)
+                {
+                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdSystemSettingsFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)), Properties.Resources.ModuleName);
+                    return false;
+                }
+
+                //DEFECT RALLY DE 4008 START -- global settings not updated in operator settings table
+                //foreach (SettingValue settingValue in arrSettings)
+                //{
+                //    Setting tempSetting = (Setting)Enum.ToObject(typeof(Setting), settingValue.Id);
+                //    SetOpSettingValue(tempSetting, settingValue.Value);
+                //    //START RALLY US1572
+                //    SetSystemSettingValue(tempSetting, settingValue.Value);
+                //    //END RALLY US1572
+                //}
+                //END DEFECT RALLY DE 4008
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdSystemSettingsFailed, e), Properties.Resources.ModuleName);
+                return false;
+            }
+        }
+
+
 	    public static bool SaveSystemSettings( SettingValue[] arrSettings )
 		{
 			SetSystemSettingsMessage msg = new SetSystemSettingsMessage(arrSettings);

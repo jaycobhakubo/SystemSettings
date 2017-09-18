@@ -47,45 +47,47 @@ namespace GTI.Modules.SystemSettings.UI
 
                     if (tempID == Device.Traveler.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Traveler"));
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Traveler", (tempID)));
                     }
                     else if (tempID == Device.Tracker.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Tracker"));
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Tracker", (tempID)));
                     }
                     else if (tempID == Device.Explorer.Id)//RALLY TA 7728 Changed MINI to EXPLORER
-                    {                  
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Explorer"));
+                    {
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Explorer", (tempID)));
                     }
                     else if (tempID == Device.Fixed.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Fixed Base"));
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Fixed Base", (tempID)));
                     }
                     else if (tempID == Device.Traveler2.Id) // Rally US765
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Traveler2"));
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Traveler2", (tempID)));
                     }
                     else if (tempID == Device.Tablet.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Ted-E"));
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbPageInit("Ted-E", (tempID)));
                     }
                 }
             }
         }
+        
 
-        private TabPage tbPageInit(string DeviceName)
+        private TabPage tbPageInit(string DeviceName, int DeviceId)
         {
        
             var x = new TabPage();
             x.Text = DeviceName;
             x.Name = DeviceName;
-            x.Tag = DeviceName;
+            x.Tag = DeviceId;
 
             if (tabCtrl_PlayerSettingDevice.TabPages.Count == 0)
             {
                 x.BackColor = Color.Transparent;
                 x.BackgroundImage = Properties.Resources.GradientFull;
                 PlayerSettings y = new PlayerSettings();
+                y.DeviceId = DeviceId;
                 y.Dock = DockStyle.Fill;
                 y.LoadSettings();
                 x.Controls.Add(y);
@@ -125,6 +127,7 @@ namespace GTI.Modules.SystemSettings.UI
             x.BackColor = Color.Transparent;
             x.BackgroundImage = Properties.Resources.GradientFull;
             PlayerSettings y = new PlayerSettings();
+            y.DeviceId = (int)x.Tag;
             y.Dock = DockStyle.Fill;
             y.LoadSettings();
             x.Controls.Add(y);

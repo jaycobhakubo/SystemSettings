@@ -319,14 +319,14 @@ namespace GTI.Modules.SystemSettings.UI
             }
 
             // Update the server
-            if (!Common.SaveSystemSettings(arrSettings.ToArray()))
+            if (!Common.SaveSystemSettings(arrSettings.ToArray()))//knc
             {
                 return false;
             }
-
             //END RALLY TA 9171
 
-
+            Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray());
+            
             // Save the operator settings
             if (!Common.SaveOperatorSettings())
             {
@@ -429,5 +429,7 @@ namespace GTI.Modules.SystemSettings.UI
                 groupBox5.Enabled = true;
             }
         }
+
+        public int DeviceId { get; set; }
     } // end class
 } // end namespace
