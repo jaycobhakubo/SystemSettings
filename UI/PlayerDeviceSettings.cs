@@ -126,7 +126,7 @@ namespace GTI.Modules.SystemSettings.UI
             TabPage x = tabCrtrl.SelectedTab;
             x.BackColor = Color.Transparent;
             x.BackgroundImage = Properties.Resources.GradientFull;
-            PlayerSettings y = new PlayerSettings();
+            PlayerSettings y = new PlayerSettings();           
             y.DeviceId = (int)x.Tag;
             y.Dock = DockStyle.Fill;
             y.LoadSettings();

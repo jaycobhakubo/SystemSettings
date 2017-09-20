@@ -24,8 +24,7 @@ namespace GTI.Modules.SystemSettings.UI
 {
     public partial class PlayerSettings : SettingsControl
     {
-        private const int PlayerPinMaxLength = 2;
-        // Members
+        private const int PlayerPinMaxLength = 2; // Members      
         bool m_bModified = false;
 
         public PlayerSettings()
@@ -35,6 +34,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         // Public Methods
         #region Public Methods
+
         public override bool IsModified()
         {
             return m_bModified;
@@ -48,24 +48,17 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
-
             bool bResult = LoadPlayerSettings();
-
-
             this.ResumeLayout(true);
             Common.EndWait();
-
             return bResult;
         }
 
         public override bool SaveSettings()
         {
             Common.BeginWait();
-
             bool bResult = SavePlayerSettings();
-
             Common.EndWait();
-
             return bResult;
         }
 
@@ -76,24 +69,34 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool LoadPlayerSettings()
         {
-
-            //START RALLY DE 9171
-            if (Common.GetSystemSettings() == false)
+            if (Common.GetSystemSettings() == false)         //START RALLY DE 9171
             {
                 return false;
             }
-            //END RALLY DE 9171
-            // Fill in the operator global settings            
-            SettingValue tempSettingValue;
-
-            //Get the device setting if set if not then get the operator settings.
-            GetDeviceSettings x = new GetDeviceSettings(0, 0);
+          
+            GetDeviceSettings x = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
             x.Send();
-           SettingValue[] z  = x.DeviceSettingList;
-            if (z.Length != 0)
+            SettingValue[] z  = x.DeviceSettingList;
+
+            if (z.Length == 0)//if zero then default is set
             {
-                int i = 0;
+                chkbxUseDefault.Checked = true;
+                SetValueToDefault();
             }
+            else
+            {
+                chkbxUseDefault.Checked = false;
+            }
+            
+            // Set the flag
+            m_bModified = false;
+
+            return true;
+        }
+
+        private bool SetValueToDefault()
+        {
+            SettingValue tempSettingValue;            //END RALLY DE 9171 // Fill in the operator global settings   
 
             Common.GetOpSettingValue(Setting.VIPRequiresPIN, out tempSettingValue);
             chkPlayerPIN.Checked = Common.ParseBool(tempSettingValue.Value);  //RALLY DE9427
@@ -246,9 +249,6 @@ namespace GTI.Modules.SystemSettings.UI
 
                 chkBoxResetRadioOnWifiInterruptions.Visible = false;
             }
-            chkbxUseDefault.Checked = true;
-            // Set the flag
-            m_bModified = false;
 
             return true;
         }
