@@ -231,14 +231,14 @@ namespace GTI.Modules.SystemSettings.UI
             GetDeviceSettings DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
             DeviceSettingmsg.Send();
 
-            if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
-            {
-                chkbxUseDefault.Checked = true;
-            }
-            else
-            {
-                chkbxUseDefault.Checked = false;
-            }
+            //if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+            //{
+            //    chkbxUseDefault.Checked = true;
+            //}
+            //else
+            //{
+            //    chkbxUseDefault.Checked = false;
+            //}
 
             SettingValue tempSettingValue;            //END RALLY DE 9171 // Fill in the operator global settings   
 
@@ -530,18 +530,21 @@ namespace GTI.Modules.SystemSettings.UI
        
         private bool SavePlayerSettings()
         {
-            Common.SetOpSettingValue(Setting.VIPRequiresPIN, chkPlayerPIN.Checked.ToString());
-            Common.SetOpSettingValue(Setting.PlayWinAnimationDuration, txtPlayWinAnimationDuration.Text.ToString());
-            Common.SetOpSettingValue(Setting.EnablePeekMode, chkPeekMode.Checked.ToString());//US1998
-            Common.SetOpSettingValue(Setting.EnableAutoModeButton, chkAutoModeOn.Checked.ToString());
-            Common.SetOpSettingValue(Setting.EnableLockScreenButton, chkLockScreenOn.Checked.ToString());
-            Common.SetOpSettingValue(Setting.DisplayVerifiedCard, chkDisplayVerifiedCard.Checked.ToString()); //US4010
-            Common.SetOpSettingValue(Setting.DisplayFunGamesOnLogin, chkDisplayFunGamesOnLogin.Checked.ToString()); //US4526
-            Common.SetOpSettingValue(Setting.PatternShadingEnabled, chkBingoPatternShading.Checked.ToString()); //US4538
-            Common.SetOpSettingValue(Setting.AllowFunMultiplayerGames, chkEnableMultiplayerOnFunGames.Checked.ToString()); //US4611
-            Common.SetOpSettingValue(Setting.TVWithoutPurchase, chkTVwoPurchase.Checked.ToString()); //US3860
-            Common.SetOpSettingValue(Setting.ClearWinnersScreen, chkClearWinnersScreen.Checked.ToString()); //US4716
-            //START RALLY TA 9171 loss threshold setting values
+            //if (chkbxUseDefault.Checked == true)
+            //{
+                Common.SetOpSettingValue(Setting.VIPRequiresPIN, chkPlayerPIN.Checked.ToString());
+                Common.SetOpSettingValue(Setting.PlayWinAnimationDuration, txtPlayWinAnimationDuration.Text.ToString());
+                Common.SetOpSettingValue(Setting.EnablePeekMode, chkPeekMode.Checked.ToString());//US1998
+                Common.SetOpSettingValue(Setting.EnableAutoModeButton, chkAutoModeOn.Checked.ToString());
+                Common.SetOpSettingValue(Setting.EnableLockScreenButton, chkLockScreenOn.Checked.ToString());
+                Common.SetOpSettingValue(Setting.DisplayVerifiedCard, chkDisplayVerifiedCard.Checked.ToString()); //US4010
+                Common.SetOpSettingValue(Setting.DisplayFunGamesOnLogin, chkDisplayFunGamesOnLogin.Checked.ToString()); //US4526
+                Common.SetOpSettingValue(Setting.PatternShadingEnabled, chkBingoPatternShading.Checked.ToString()); //US4538
+                Common.SetOpSettingValue(Setting.AllowFunMultiplayerGames, chkEnableMultiplayerOnFunGames.Checked.ToString()); //US4611
+                Common.SetOpSettingValue(Setting.TVWithoutPurchase, chkTVwoPurchase.Checked.ToString()); //US3860
+                Common.SetOpSettingValue(Setting.ClearWinnersScreen, chkClearWinnersScreen.Checked.ToString()); //US4716
+                //START RALLY TA 9171 loss threshold setting values
+            //}
 
             // Create a list of just these settings
             List<SettingValue> arrSettings = new List<SettingValue>();
