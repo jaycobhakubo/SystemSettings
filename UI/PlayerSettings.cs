@@ -690,8 +690,8 @@ namespace GTI.Modules.SystemSettings.UI
             //if null or invalid number then default back to 4
             if (!success)
             {
-                //DE12732
-                txtPlayerPINLength.Text = 4.ToString();
+
+                txtPlayerPINLength.Text = 4.ToString(); //DE12732
                 return;
             }
 
