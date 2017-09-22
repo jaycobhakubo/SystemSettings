@@ -203,7 +203,6 @@ namespace GTI.Modules.SystemSettings.UI
             //FIX END RALLY DE 2645 added all audio settings to global variable
             // Set the flag
             m_bModified = false;
-            chkbxUseDefault.Checked = true;
 
             return true;
         }
@@ -230,47 +229,124 @@ namespace GTI.Modules.SystemSettings.UI
 		private bool SavePlayerSettings()
 		{
 			// Update the operator global settings
-            
+            List<SettingValue> arrSettings = new List<SettingValue>();
+            SettingValue s = new SettingValue();
+
             //license file
-            if(chkPlayAllSoundEnabled.Tag.ToString() == "Enabled" || m_needsSave)
+            if (chkPlayAllSoundEnabled.Tag.ToString() == "Enabled" || m_needsSave)
             {
-                Common.SetOpSettingValue(Setting.PlayAllSoundEnabled, chkPlayAllSoundEnabled.Checked.ToString());
+                if (chkbxUseDefault.Checked == true)
+                {
+                    Common.SetOpSettingValue(Setting.PlayAllSoundEnabled, chkPlayAllSoundEnabled.Checked.ToString());
+                }
+                else
+                {
+                    s.Id = (int)Setting.PlayAllSoundEnabled;
+                    s.Value = chkPlayAllSoundEnabled.Checked.ToString();
+                    arrSettings.Add(s);
+                }
             }
 
             //license file
             if (chkPlayModeOneAwaySound.Tag.ToString() == "Enabled" || m_needsSave)
-            {
-                Common.SetOpSettingValue(Setting.PlayModeOneAwaySound, chkPlayModeOneAwaySound.Checked.ToString());
+            {              
+                 if (chkbxUseDefault.Checked == true)
+                {
+                  Common.SetOpSettingValue(Setting.PlayModeOneAwaySound, chkPlayModeOneAwaySound.Checked.ToString());
+                }
+                else
+                {
+                    s.Id = (int)Setting.PlayModeOneAwaySound;
+                    s.Value = chkPlayModeOneAwaySound.Checked.ToString();
+                    arrSettings.Add(s);
+                }
             }
 
             //license file
             if (chkPlayWinningSoundEnabled.Tag.ToString() == "Enabled" || m_needsSave)
             {
-                Common.SetOpSettingValue(Setting.PlayWinningSoundEnabled, chkPlayWinningSoundEnabled.Checked.ToString());
+                if (chkbxUseDefault.Checked == true)
+                {
+                    Common.SetOpSettingValue(Setting.PlayWinningSoundEnabled, chkPlayWinningSoundEnabled.Checked.ToString());
+                }
+                else
+                {
+                    s.Id = (int)Setting.PlayWinningSoundEnabled;
+                    s.Value = chkPlayWinningSoundEnabled.Checked.ToString();
+                    arrSettings.Add(s);
+                }       
             }
 
             //license file
             if (chkPlayBallCallSoundEnabled.Tag.ToString() == "Enabled" || m_needsSave)
             {
-                Common.SetOpSettingValue(Setting.PlayBallCallSoundEnabled, chkPlayBallCallSoundEnabled.Checked.ToString());
+                if (chkbxUseDefault.Checked == true)
+                {
+                    Common.SetOpSettingValue(Setting.PlayBallCallSoundEnabled, chkPlayBallCallSoundEnabled.Checked.ToString());
+                }
+                else
+                {
+                    s.Id = (int)Setting.PlayBallCallSoundEnabled;
+                    s.Value = chkPlayBallCallSoundEnabled.Checked.ToString();
+                    arrSettings.Add(s);
+                }  
+               
             }
 
             //license file
             if (chkPlayKeyClickEnabled.Tag.ToString() == "Enabled" || m_needsSave)
             {
-                Common.SetOpSettingValue(Setting.PlayKeyClickEnabled, chkPlayKeyClickEnabled.Checked.ToString());
+                if (chkbxUseDefault.Checked == true)
+                {
+                    Common.SetOpSettingValue(Setting.PlayKeyClickEnabled, chkPlayKeyClickEnabled.Checked.ToString());
+                }
+                else
+                {
+                    s.Id = (int)Setting.PlayKeyClickEnabled;
+                    s.Value = chkPlayKeyClickEnabled.Checked.ToString();
+                    arrSettings.Add(s);
+                }  
+              
             }
 
-            Common.SetOpSettingValue(Setting.MaxVolume, numMaxGameVolume.Value.ToString());
+            if (chkbxUseDefault.Checked == true)
+            {
+                Common.SetOpSettingValue(Setting.MaxVolume, numMaxGameVolume.Value.ToString());
+            }
+            else
+            {
+                s.Id = (int)Setting.MaxVolume;
+                s.Value = numMaxGameVolume.Value.ToString();
+                arrSettings.Add(s);
+            }  
+           
 		    //RALLY 
-            Common.SetOpSettingValue(Setting.MaxtvVolume, numMaxTVVolume.Value.ToString());
-			
 
-			// Save the operator settings
-			if (!Common.SaveOperatorSettings())
-			{
-				return false;
-			}
+            if (chkbxUseDefault.Checked == true)
+            {
+                Common.SetOpSettingValue(Setting.MaxtvVolume, numMaxTVVolume.Value.ToString());
+            }
+            else
+            {
+                s.Id = (int)Setting.MaxtvVolume;
+                s.Value = numMaxTVVolume.Value.ToString();
+                arrSettings.Add(s);
+            }
+
+            if (chkbxUseDefault.Checked == true)
+            {
+                // Save the operator settings
+                if (!Common.SaveOperatorSettings())
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray());
+            }
+
+		
 
 			// Set the flag
 			m_bModified = false;
