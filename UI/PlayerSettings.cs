@@ -225,21 +225,10 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
+        GetDeviceSettings DeviceSettingmsg;
         private bool SetUIValue()
         {
-            string settingValue = "";
-            GetDeviceSettings DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
-            DeviceSettingmsg.Send();
-
-            //if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
-            //{
-            //    chkbxUseDefault.Checked = true;
-            //}
-            //else
-            //{
-            //    chkbxUseDefault.Checked = false;
-            //}
-
+            string settingValue = "";          
             SettingValue tempSettingValue;            //END RALLY DE 9171 // Fill in the operator global settings   
 
 
@@ -517,6 +506,19 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool LoadPlayerSettings()
         {
+
+            DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
+            DeviceSettingmsg.Send();
+
+            if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+            {
+                chkbxUseDefault.Checked = true;
+            }
+            else
+            {
+                chkbxUseDefault.Checked = false;
+            }
+
             if (Common.GetSystemSettings() == false)         //START RALLY DE 9171
             {
                 return false;

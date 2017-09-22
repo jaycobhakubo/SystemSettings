@@ -37,6 +37,7 @@
             resources.ApplyResources(this.tabCtrl_AudioDevice, "tabCtrl_AudioDevice");
             this.tabCtrl_AudioDevice.Name = "tabCtrl_AudioDevice";
             this.tabCtrl_AudioDevice.SelectedIndex = 0;
+            this.tabCtrl_AudioDevice.SelectedIndexChanged += new System.EventHandler(this.tabCtrl_AudioDevice_SelectedIndexChanged);
             // 
             // PlayerDeviceAudioSettings
             // 

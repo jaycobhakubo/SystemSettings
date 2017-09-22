@@ -31,7 +31,10 @@ namespace GTI.Modules.SystemSettings.UI
         public override bool LoadSettings()
         {
            // m_devices = GetDeviceList();
+            Common.BeginWait();
+            this.SuspendLayout();
             LoadTab();
+            Common.EndWait();
             return true;
         }
 
@@ -124,13 +127,16 @@ namespace GTI.Modules.SystemSettings.UI
         {
             var tabCrtrl = (TabControl)sender;
             TabPage x = tabCrtrl.SelectedTab;
-            x.BackColor = Color.Transparent;
-            x.BackgroundImage = Properties.Resources.GradientFull;
-            PlayerSettings y = new PlayerSettings();           
-            y.DeviceId = (int)x.Tag;
-            y.Dock = DockStyle.Fill;
-            y.LoadSettings();
-            x.Controls.Add(y);
+            if (x.Controls.Count == 0)
+            {
+                x.BackColor = Color.Transparent;
+                x.BackgroundImage = Properties.Resources.GradientFull;
+                PlayerSettings y = new PlayerSettings();
+                y.DeviceId = (int)x.Tag;
+                y.Dock = DockStyle.Fill;
+                y.LoadSettings();
+                x.Controls.Add(y);
+            }
         }
     }
 }

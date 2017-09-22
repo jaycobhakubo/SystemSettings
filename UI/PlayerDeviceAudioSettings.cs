@@ -43,43 +43,66 @@ namespace GTI.Modules.SystemSettings.UI
 
                     if (tempID == Device.Traveler.Id)
                     {
-                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Traveler"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Traveler", (tempID)));
                     }
                     else if (tempID == Device.Tracker.Id)
                     {
-                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Tracker"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Tracker", (tempID)));
                     }
                     else if (tempID == Device.Explorer.Id)//RALLY TA 7728 Changed MINI to EXPLORER
                     {
-                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Explorer"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Explorer", (tempID)));
                     }
                     else if (tempID == Device.Fixed.Id)
                     {
-                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Fixed Base"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Fixed Base", (tempID)));
                     }
                     else if (tempID == Device.Traveler2.Id) // Rally US765
                     {
-                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Traveler2"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Traveler2", (tempID)));
                     }
                     else if (tempID == Device.Tablet.Id)
                     {
-                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Ted-E"));
+                        tabCtrl_AudioDevice.TabPages.Add(tbPageInit("Ted-E", (tempID)));
                     }
                 }
             }
         }
 
-        private TabPage tbPageInit(string DeviceName)
+        private TabPage tbPageInit(string DeviceName, int DeviceId)
         {
-            AudioSettings y = new AudioSettings();
-            y.Dock = DockStyle.Fill;
-            y.LoadSettings();
             var x = new TabPage();
             x.Text = DeviceName;
-            x.BackColor = Color.Transparent;
-            x.BackgroundImage = Properties.Resources.GradientFull;
-            x.Controls.Add(y);
+            x.Name = DeviceName;
+            x.Tag = DeviceId;
+
+            if (tabCtrl_AudioDevice.TabPages.Count == 0)
+            {
+                x.BackColor = Color.Transparent;
+                x.BackgroundImage = Properties.Resources.GradientFull;                
+                AudioSettings y = new AudioSettings();
+                y.DeviceId = DeviceId;
+                y.Dock = DockStyle.Fill;
+                y.LoadSettings();
+                x.Controls.Add(y);
+            }
             return x;
+        }
+
+        private void tabCtrl_AudioDevice_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var tabCrtrl = (TabControl)sender;
+            TabPage x = tabCrtrl.SelectedTab;
+            if (x.Controls.Count == 0)
+            {
+                x.BackColor = Color.Transparent;
+                x.BackgroundImage = Properties.Resources.GradientFull;
+                AudioSettings y = new AudioSettings();
+                y.DeviceId = (int)x.Tag;
+                y.Dock = DockStyle.Fill;
+                y.LoadSettings();
+                x.Controls.Add(y);
+            }
         }
     }
 }
