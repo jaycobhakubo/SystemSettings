@@ -532,8 +532,11 @@ namespace GTI.Modules.SystemSettings.UI
        
         private bool SavePlayerSettings()
         {
-            //if (chkbxUseDefault.Checked == true)
-            //{
+            List<SettingValue> arrSettings = new List<SettingValue>();
+            SettingValue s = new SettingValue();
+
+            if (chkbxUseDefault.Checked == true)
+            {
                 Common.SetOpSettingValue(Setting.VIPRequiresPIN, chkPlayerPIN.Checked.ToString());
                 Common.SetOpSettingValue(Setting.PlayWinAnimationDuration, txtPlayWinAnimationDuration.Text.ToString());
                 Common.SetOpSettingValue(Setting.EnablePeekMode, chkPeekMode.Checked.ToString());//US1998
@@ -546,11 +549,57 @@ namespace GTI.Modules.SystemSettings.UI
                 Common.SetOpSettingValue(Setting.TVWithoutPurchase, chkTVwoPurchase.Checked.ToString()); //US3860
                 Common.SetOpSettingValue(Setting.ClearWinnersScreen, chkClearWinnersScreen.Checked.ToString()); //US4716
                 //START RALLY TA 9171 loss threshold setting values
-            //}
+            }
+            else
+            {
+                s.Id = (int)Setting.VIPRequiresPIN;
+                s.Value = chkPlayerPIN.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.PlayWinAnimationDuration;
+                s.Value = txtPlayWinAnimationDuration.Text.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.EnablePeekMode;
+                s.Value = chkPeekMode.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.EnableAutoModeButton;
+                s.Value = chkAutoModeOn.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.EnableLockScreenButton;
+                s.Value = chkLockScreenOn.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.DisplayVerifiedCard;
+                s.Value = chkDisplayVerifiedCard.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.DisplayFunGamesOnLogin;
+                s.Value = chkDisplayFunGamesOnLogin.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.PatternShadingEnabled;
+                s.Value = chkBingoPatternShading.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.AllowFunMultiplayerGames;
+                s.Value = chkEnableMultiplayerOnFunGames.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.TVWithoutPurchase;
+                s.Value = chkTVwoPurchase.Checked.ToString();
+                arrSettings.Add(s);
+
+                s.Id = (int)Setting.ClearWinnersScreen;
+                s.Value = chkClearWinnersScreen.Checked.ToString();
+                arrSettings.Add(s);
+
+            }
 
             // Create a list of just these settings
-            List<SettingValue> arrSettings = new List<SettingValue>();
-            SettingValue s = new SettingValue();
+        
 
             s.Id = (int)Setting.WiredNetworkLossThreshold;
             s.Value = txtWiredNetworkConnectionLossThreshold.Text;
@@ -642,6 +691,8 @@ namespace GTI.Modules.SystemSettings.UI
 
         #endregion //Private Routines
 
+        #region Event
+
         private void txtNumeric_KeyPress(object sender, KeyPressEventArgs e)
         {
             //only allow numbers to be entered into the text box 
@@ -718,6 +769,12 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+        #endregion
+
+        #region Properties
+
         public int DeviceId { get; set; }
+
+        #endregion
     } // end class
 } // end namespace
