@@ -26,6 +26,7 @@ namespace GTI.Modules.SystemSettings.UI
     {
         private const int PlayerPinMaxLength = 2; // Members      
         bool m_bModified = false;
+        GetDeviceSettings DeviceSettingmsg;
 
         public PlayerSettings()
         {
@@ -225,7 +226,7 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-        GetDeviceSettings DeviceSettingmsg;
+
         private bool SetUIValue()
         {
             string settingValue = "";          

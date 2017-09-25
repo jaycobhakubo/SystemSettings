@@ -28,8 +28,11 @@ namespace GTI.Modules.SystemSettings.UI
 
         public override bool LoadSettings()
         {
+            Common.BeginWait();
+            this.SuspendLayout();
             // m_devices = GetDeviceList();
             LoadTab();
+            Common.EndWait();
             return true;
         }
 
@@ -44,42 +47,49 @@ namespace GTI.Modules.SystemSettings.UI
 
                     if (tempID == Device.Traveler.Id)
                     {
-                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Traveler"));
+                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Traveler", (tempID)));
                     }
                     else if (tempID == Device.Tracker.Id)
                     {
-                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Tracker"));
+                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Tracker", (tempID)));
                     }
                     else if (tempID == Device.Explorer.Id)//RALLY TA 7728 Changed MINI to EXPLORER
                     {
-                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Explorer"));
+                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Explorer", (tempID)));
                     }
                     else if (tempID == Device.Fixed.Id)
                     {
-                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Fixed Base"));
+                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Fixed Base", (tempID)));
                     }
                     else if (tempID == Device.Traveler2.Id) // Rally US765
                     {
-                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Traveler2"));
+                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Traveler2", (tempID)));
                     }
                     else if (tempID == Device.Tablet.Id)
                     {
-                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Ted-E"));
+                        tabCtrl_PlayMode.TabPages.Add(tbPageInit("Ted-E", (tempID)));
                     }
                 }
             }
         }
 
-        private TabPage tbPageInit(string DeviceName)
+        private TabPage tbPageInit(string DeviceName, int DeviceId)
         {
-            PlayModeSettings y = new PlayModeSettings();
-            y.Dock = DockStyle.Fill;
-            y.LoadSettings();
             var x = new TabPage();
             x.Text = DeviceName;
-            x.BackColor = Color.Transparent;
-            x.BackgroundImage = Properties.Resources.GradientFull;
-            x.Controls.Add(y);
+            x.Name = DeviceName;
+            x.Tag = DeviceId;
+
+            if (tabCtrl_PlayMode.TabPages.Count == 0)
+            {
+                x.BackColor = Color.Transparent;
+                x.BackgroundImage = Properties.Resources.GradientFull;
+                PlayModeSettings y = new PlayModeSettings();
+                y.DeviceId = DeviceId;
+                y.Dock = DockStyle.Fill;
+                y.LoadSettings();
+                x.Controls.Add(y);
+            }
             return x;
         }
     }

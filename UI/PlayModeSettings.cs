@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using GTI.Modules.Shared;
+using GTI.Modules.SystemSettings.Properties;
+using GTI.Modules.SystemSettings.Business;
 
 namespace GTI.Modules.SystemSettings.UI
 {
@@ -17,6 +19,7 @@ namespace GTI.Modules.SystemSettings.UI
 	    public List<CheckableSetting> m_settingList;
         public List<CheckBox> m_checkBoxList;
 	    private int m_playMode;
+        GetDeviceSettings DeviceSettingmsg;
         //FIX: RALLY DE2390 Updated Play Modes Start:
         /// <summary>
         /// Initializes the PlayModeSettings Control
@@ -43,26 +46,18 @@ namespace GTI.Modules.SystemSettings.UI
 		public override bool LoadSettings()
 		{
 			Common.BeginWait();
-
 			SuspendLayout();
-
 			bool bResult = LoadPlayerSettings();
-
-
 			ResumeLayout(true);
 			Common.EndWait();
-
 			return bResult;
 		}
         
 		public override bool SaveSettings()
 		{
 			Common.BeginWait();
-
 			bool bResult = SavePlayerSettings();
-
 			Common.EndWait();
-
 			return bResult;
 		}
 
@@ -82,7 +77,7 @@ namespace GTI.Modules.SystemSettings.UI
             foreach(CheckableSetting setting in m_settingList)
             {
                 CheckBox currentCheckBox =
-                        m_checkBoxList.Find(i => ((CheckableSetting)i.Tag).settingName == setting.settingName);
+                m_checkBoxList.Find(i => ((CheckableSetting)i.Tag).settingName == setting.settingName);
                 currentCheckBox.Visible = true;
                 currentCheckBox.Checked = setting.value.Value.Equals(bool.TrueString);
                 currentCheckBox.Enabled = false;
@@ -121,21 +116,25 @@ namespace GTI.Modules.SystemSettings.UI
             return newSetting;
         }
 
-		private bool LoadPlayerSettings()
-		{
+        private bool SetUIValue()
+        {
+            bool licenseValue;
+            // Fill in the operator global settings            
+            SettingValue tempSettingValue = new SettingValue();
+            m_settingList.Clear();
 
-		    bool licenseValue;
-		    // Fill in the operator global settings            
-		    SettingValue tempSettingValue = new SettingValue();
-		    m_settingList.Clear();
+            //Get the play Mode
+            //the play mode comes from the operator settings
 
-		    //Get the play Mode
-		    //the play mode comes from the operator settings
 
-            Common.GetOpSettingValue(Setting.RFMode, out tempSettingValue);
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            {
+                Common.GetOpSettingValue(Setting.RFMode, out tempSettingValue);
+            }
+         
             licenseValue = Common.GetSettingEnabled(Setting.RFMode);
 
-            
+
             if (licenseValue == false)
             {
                 m_rdoButtonAuto.Enabled = false;
@@ -146,7 +145,10 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 string value;
+
                 byte minMax = Common.GetSettingMinMax(Setting.RFMode, out value);
+              
+                
                 if (value != null)
                 {
                     if (minMax == 1)
@@ -179,66 +181,66 @@ namespace GTI.Modules.SystemSettings.UI
                 }
             }
             //END RALLY DE 6624
-        
-		    m_playMode = ParseInt(tempSettingValue.Value);
-		    
+
+            m_playMode = ParseInt(tempSettingValue.Value);
+
             m_cboPlayDaubLocation.Visible = true;
-		    m_daubLocationTextBox.Visible = true;
-		    
+            m_daubLocationTextBox.Visible = true;
+
             m_cboPlayDaubLocation.Enabled = false;
-		    m_daubLocationTextBox.Enabled = false;
+            m_daubLocationTextBox.Enabled = false;
 
             //lists to define in what playmode type to show the checkable settings
             //1 = Auto, 2 = semiAuto, 3 = Manual
-            List<int> semiAuto = new List<int>(){2};
-            List<int> semiAutoManual = new List<int>(){2,3};
-           
+            List<int> semiAuto = new List<int>() { 2 };
+            List<int> semiAutoManual = new List<int>() { 2, 3 };
 
-		    Common.GetOpSettingValue(Setting.PlayModeCatchUpEnabled, out tempSettingValue);
-		    //license file
+
+            Common.GetOpSettingValue(Setting.PlayModeCatchUpEnabled, out tempSettingValue);
+            //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeCatchUpEnabled);
-            m_chkAllowCatchUp.Tag =AddSettingToList(Setting.PlayModeCatchUpEnabled, tempSettingValue, "Allow Daub Catch Up", semiAuto,licenseValue);
-		    
-		    Common.GetOpSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue);
-		    //license file
+            m_chkAllowCatchUp.Tag = AddSettingToList(Setting.PlayModeCatchUpEnabled, tempSettingValue, "Allow Daub Catch Up", semiAuto, licenseValue);
+
+            Common.GetOpSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue);
+            //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);
             m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);
 
-		    Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
+            Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubErrorsEnabled);
-            m_chkAllowPreCallErrors.Tag = AddSettingToList(Setting.PlayModePreDaubErrorsEnabled, tempSettingValue, "Allow Pre Call Daub Errors", semiAuto,licenseValue);
+            m_chkAllowPreCallErrors.Tag = AddSettingToList(Setting.PlayModePreDaubErrorsEnabled, tempSettingValue, "Allow Pre Call Daub Errors", semiAuto, licenseValue);
 
-           
+
 
             //START FIX RALLY DE2849 -- removed combo box dependancy on allow pre daub
-            
+
             //END FIX RALLY DE2849 -- removed combo box dependancy on allow pre daub
-            
-            
-		    Common.GetOpSettingValue(Setting.PlayModeDaubOnImageEnabled, out tempSettingValue);
+
+
+            Common.GetOpSettingValue(Setting.PlayModeDaubOnImageEnabled, out tempSettingValue);
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeDaubOnImageEnabled);
-		    m_chkAllowDaubOnImage.Tag = AddSettingToList(Setting.PlayModeDaubOnImageEnabled, tempSettingValue, "Allow Daub on Ball Image", semiAutoManual,licenseValue);
+            m_chkAllowDaubOnImage.Tag = AddSettingToList(Setting.PlayModeDaubOnImageEnabled, tempSettingValue, "Allow Daub on Ball Image", semiAutoManual, licenseValue);
             ((CheckableSetting)m_chkAllowDaubOnImage.Tag).isGreyed = false;
-            
+
             Common.GetOpSettingValue(Setting.PlayModeGreenDaubEnabled, out tempSettingValue);
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeGreenDaubEnabled);
             //RALLY START DE 6346 Deleted
             //m_chkAllowGreenButtonDaub.Tag = AddSettingToList(Setting.PlayModeGreenDaubEnabled, tempSettingValue, "Allow Green Button Daub", semiAuto,licenseValue);
-		    //((CheckableSetting) m_chkAllowGreenButtonDaub.Tag).isGreyed = false;
+            //((CheckableSetting) m_chkAllowGreenButtonDaub.Tag).isGreyed = false;
             //RALLY DE 6346 END
             Common.GetOpSettingValue(Setting.PlayDaubLocation, out tempSettingValue);
-		    //license file
+            //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayDaubLocation);
-            
+
             m_cboPlayDaubLocation.SelectedIndex = Math.Min(3, Math.Max(0, ParseInt(tempSettingValue.Value) - 1));
             m_cboPlayDaubLocation.Tag = licenseValue.ToString();
-            
+
             //START DE2849
             //START FIX RALLY DE2661 -- changed the update based on play mode
             if (((CheckableSetting)m_chkAllowCatchUp.Tag).value.Value == "False" &&
-                 m_playMode == 2 && ((CheckableSetting)m_chkAllowPreDaubing.Tag).value.Value == "False" && 
+                 m_playMode == 2 && ((CheckableSetting)m_chkAllowPreDaubing.Tag).value.Value == "False" &&
                  m_cboPlayDaubLocation.Tag.ToString() == "True")//RALLY DE 5485 Added play mode location dependancy on allow pre daub checkbox
             {
                 m_daubLocationTextBox.Enabled = true;
@@ -247,7 +249,7 @@ namespace GTI.Modules.SystemSettings.UI
             //END DE2661
             //END DE2849
             if (m_cboPlayDaubLocation.Tag.ToString() == "False" &&
-                m_cboPlayDaubLocation.SelectedIndex <2)
+                m_cboPlayDaubLocation.SelectedIndex < 2)
             {
                 m_chkAllowPreDaubing.Enabled = false;
                 m_chkAllowPreCallErrors.Enabled = false;
@@ -271,14 +273,32 @@ namespace GTI.Modules.SystemSettings.UI
                 m_rdoButtonManual.Checked = true;
             }
             //END FIX RALLY DE2661
-            
-            OnModified(m_cboPlayDaubLocation,new EventArgs());
 
-		    DisplayCheckableSettings();
+            OnModified(m_cboPlayDaubLocation, new EventArgs());
+
+            DisplayCheckableSettings();
+
+            return true;
+        }
+
+		private bool LoadPlayerSettings()
+		{
+
+            DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
+            DeviceSettingmsg.Send();
+
+            if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+            {
+                chkbxUseDefault.Checked = true;
+            }
+            else
+            {
+                chkbxUseDefault.Checked = false;
+            }
+
+            SetUIValue();
 			// Set the flag
 			m_bModified = false;
-
-            chkbxUseDefault.Checked = true;
 			return true;
 		}
 
@@ -683,6 +703,12 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+        #region Properties
+
+        public int DeviceId { get; set; }
+
+        #endregion
+
         //FIX: RALLY DE2390 Updated Play Modes End:
     } // end class
     
@@ -697,4 +723,6 @@ namespace GTI.Modules.SystemSettings.UI
         public bool licenseEnabled;
         
     }
+
+
 } // end namespace

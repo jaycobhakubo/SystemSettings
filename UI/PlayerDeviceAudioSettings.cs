@@ -28,7 +28,10 @@ namespace GTI.Modules.SystemSettings.UI
         public override bool LoadSettings()
         {
             // m_devices = GetDeviceList();
+            Common.BeginWait();
+            this.SuspendLayout();
             LoadTab();
+            Common.EndWait();
             return true;
         }
 
