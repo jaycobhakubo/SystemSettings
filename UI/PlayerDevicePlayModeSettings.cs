@@ -92,5 +92,21 @@ namespace GTI.Modules.SystemSettings.UI
             }
             return x;
         }
+
+        private void tabCtrl_PlayMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var tabCrtrl = (TabControl)sender;
+            TabPage x = tabCrtrl.SelectedTab;
+            if (x.Controls.Count == 0)
+            {
+                x.BackColor = Color.Transparent;
+                x.BackgroundImage = Properties.Resources.GradientFull;
+                PlayModeSettings y = new PlayModeSettings();
+                y.DeviceId = (int)x.Tag;
+                y.Dock = DockStyle.Fill;
+                y.LoadSettings();
+                x.Controls.Add(y);
+            }
+        }
     }
 }

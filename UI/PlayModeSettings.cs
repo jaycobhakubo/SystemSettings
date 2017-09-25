@@ -29,7 +29,7 @@ namespace GTI.Modules.SystemSettings.UI
 			InitializeComponent();
             m_settingList = new List<CheckableSetting>();
             m_checkBoxList = new List<CheckBox>{m_chkAllowCatchUp,m_chkAllowDaubOnImage, //RALLY DE 6346 remove green button daub 
-                m_chkAllowPreCallErrors,m_chkAllowPreDaubing};//RALLY DE 6346 remove green button daub 
+            m_chkAllowPreCallErrors,m_chkAllowPreDaubing};//RALLY DE 6346 remove green button daub 
 		}
 
 		// Public Methods
@@ -126,14 +126,11 @@ namespace GTI.Modules.SystemSettings.UI
             //Get the play Mode
             //the play mode comes from the operator settings
 
-
-            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))//1
             {
                 Common.GetOpSettingValue(Setting.RFMode, out tempSettingValue);
-            }
-         
+            }        
             licenseValue = Common.GetSettingEnabled(Setting.RFMode);
-
 
             if (licenseValue == false)
             {
@@ -145,10 +142,8 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 string value;
-
                 byte minMax = Common.GetSettingMinMax(Setting.RFMode, out value);
-              
-                
+                            
                 if (value != null)
                 {
                     if (minMax == 1)
@@ -195,18 +190,29 @@ namespace GTI.Modules.SystemSettings.UI
             List<int> semiAuto = new List<int>() { 2 };
             List<int> semiAutoManual = new List<int>() { 2, 3 };
 
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            {
+                Common.GetOpSettingValue(Setting.PlayModeCatchUpEnabled, out tempSettingValue);
+            }      
 
-            Common.GetOpSettingValue(Setting.PlayModeCatchUpEnabled, out tempSettingValue);
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeCatchUpEnabled);
             m_chkAllowCatchUp.Tag = AddSettingToList(Setting.PlayModeCatchUpEnabled, tempSettingValue, "Allow Daub Catch Up", semiAuto, licenseValue);
 
-            Common.GetOpSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue);
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            {
+                Common.GetOpSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue);
+            }      
+          
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);
             m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);
 
-            Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            {
+                Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
+            }    
+           
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubErrorsEnabled);
             m_chkAllowPreCallErrors.Tag = AddSettingToList(Setting.PlayModePreDaubErrorsEnabled, tempSettingValue, "Allow Pre Call Daub Errors", semiAuto, licenseValue);
@@ -218,19 +224,31 @@ namespace GTI.Modules.SystemSettings.UI
             //END FIX RALLY DE2849 -- removed combo box dependancy on allow pre daub
 
 
-            Common.GetOpSettingValue(Setting.PlayModeDaubOnImageEnabled, out tempSettingValue);
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            {
+                Common.GetOpSettingValue(Setting.PlayModeDaubOnImageEnabled, out tempSettingValue);
+            }   
+          
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeDaubOnImageEnabled);
             m_chkAllowDaubOnImage.Tag = AddSettingToList(Setting.PlayModeDaubOnImageEnabled, tempSettingValue, "Allow Daub on Ball Image", semiAutoManual, licenseValue);
             ((CheckableSetting)m_chkAllowDaubOnImage.Tag).isGreyed = false;
 
-            Common.GetOpSettingValue(Setting.PlayModeGreenDaubEnabled, out tempSettingValue);
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            {
+                Common.GetOpSettingValue(Setting.PlayModeGreenDaubEnabled, out tempSettingValue);
+            }   
+
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeGreenDaubEnabled);
             //RALLY START DE 6346 Deleted
             //m_chkAllowGreenButtonDaub.Tag = AddSettingToList(Setting.PlayModeGreenDaubEnabled, tempSettingValue, "Allow Green Button Daub", semiAuto,licenseValue);
             //((CheckableSetting) m_chkAllowGreenButtonDaub.Tag).isGreyed = false;
             //RALLY DE 6346 END
-            Common.GetOpSettingValue(Setting.PlayDaubLocation, out tempSettingValue);
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            {
+                Common.GetOpSettingValue(Setting.PlayDaubLocation, out tempSettingValue);
+            }   
+           
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayDaubLocation);
 
@@ -272,10 +290,9 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 m_rdoButtonManual.Checked = true;
             }
+
             //END FIX RALLY DE2661
-
             OnModified(m_cboPlayDaubLocation, new EventArgs());
-
             DisplayCheckableSettings();
 
             return true;
@@ -283,7 +300,6 @@ namespace GTI.Modules.SystemSettings.UI
 
 		private bool LoadPlayerSettings()
 		{
-
             DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
             DeviceSettingmsg.Send();
 
@@ -306,25 +322,63 @@ namespace GTI.Modules.SystemSettings.UI
 		{
 			// Update the operator global settings
 
+            List<SettingValue> arrSettings = new List<SettingValue>();
+            SettingValue s = new SettingValue();
+
             //Save the play mode
-            Common.SetOpSettingValue(Setting.RFMode, m_playMode.ToString());
-                     
+            if (chkbxUseDefault.Checked == true)
+            {
+                Common.SetOpSettingValue(Setting.RFMode, m_playMode.ToString());
+            }
+            else
+            {
+                s.Id = (int)Setting.RFMode;
+                s.Value = m_playMode.ToString();
+                arrSettings.Add(s);
+            }
+
             //save all the checkable settings
             foreach (CheckableSetting setting in m_settingList)
             {
-                Common.SetOpSettingValue(setting.settingId, setting.value.Value);
+                if (chkbxUseDefault.Checked == true)
+                {
+                    Common.SetOpSettingValue(setting.settingId, setting.value.Value);
+                }
+                else
+                {
+                    s.Id = (int)setting.settingId;
+                    s.Value = setting.value.Value;
+                    arrSettings.Add(s);
+                }
+               
+            }
+
+            if (chkbxUseDefault.Checked == true)
+            {
+                Common.SetOpSettingValue(Setting.PlayDaubLocation, Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1));
+            }
+            else
+            {
+                s.Id = (int)Setting.PlayDaubLocation;
+                s.Value = Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1);
+                arrSettings.Add(s);
             }
 
             //save the unique settings that are not checkable
-            Common.SetOpSettingValue(Setting.PlayDaubLocation, Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1));
+        
             
-		   
-
-			// Save the operator settings
-			if (!Common.SaveOperatorSettings())
-			{
-				return false;
-			}
+		    if (chkbxUseDefault.Checked == true)
+            {
+                // Save the operator settings
+                if (!Common.SaveOperatorSettings())
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray());
+            }		
 
 			// Set the flag
 			m_bModified = false;

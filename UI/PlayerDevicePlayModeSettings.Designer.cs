@@ -37,6 +37,7 @@
             resources.ApplyResources(this.tabCtrl_PlayMode, "tabCtrl_PlayMode");
             this.tabCtrl_PlayMode.Name = "tabCtrl_PlayMode";
             this.tabCtrl_PlayMode.SelectedIndex = 0;
+            this.tabCtrl_PlayMode.SelectedIndexChanged += new System.EventHandler(this.tabCtrl_PlayMode_SelectedIndexChanged);
             // 
             // PlayerDevicePlayModeSettings
             // 
