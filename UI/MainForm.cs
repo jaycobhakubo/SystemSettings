@@ -447,7 +447,7 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
-            nodeParent = new TreeNode("Player Unit Settings", 0, 1);
+            nodeParent = new TreeNode("Device", 0, 1);
             nodeParent.Tag = playerDeviceSettings1;
   
             nodeChild = nodeParent.Nodes.Add("Audio Settings");
