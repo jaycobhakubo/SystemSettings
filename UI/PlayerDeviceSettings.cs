@@ -33,7 +33,7 @@ namespace GTI.Modules.SystemSettings.UI
            // m_devices = GetDeviceList();
             Common.BeginWait();
             this.SuspendLayout();
-            LoadTab();
+            //LoadTab();
             Common.EndWait();
             return true;
         }
@@ -125,18 +125,18 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void tabCtrl_PlayerSettingDevice_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var tabCrtrl = (TabControl)sender;
-            TabPage x = tabCrtrl.SelectedTab;
-            if (x.Controls.Count == 0)
-            {
-                x.BackColor = Color.Transparent;
-                x.BackgroundImage = Properties.Resources.GradientFull;
-                PlayerSettings y = new PlayerSettings();
-                y.DeviceId = (int)x.Tag;
-                y.Dock = DockStyle.Fill;
-                y.LoadSettings();
-                x.Controls.Add(y);
-            }
+            //var tabCrtrl = (TabControl)sender;
+            //TabPage x = tabCrtrl.SelectedTab;
+            //if (x.Controls.Count == 0)
+            //{
+            //    x.BackColor = Color.Transparent;
+            //    x.BackgroundImage = Properties.Resources.GradientFull;
+            //    PlayerSettings y = new PlayerSettings();
+            //    y.DeviceId = (int)x.Tag;
+            //    y.Dock = DockStyle.Fill;
+            //    y.LoadSettings();
+            //    x.Controls.Add(y);
+            //}
         }
     }
 }

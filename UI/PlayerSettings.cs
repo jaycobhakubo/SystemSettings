@@ -49,10 +49,10 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
-            bool bResult = LoadPlayerSettings();
+            //bool bResult = LoadPlayerSettings();
             this.ResumeLayout(true);
             Common.EndWait();
-            return bResult;
+            return true;
         }
 
         public override bool SaveSettings()
