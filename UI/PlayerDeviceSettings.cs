@@ -134,7 +134,7 @@ namespace GTI.Modules.SystemSettings.UI
         private Device[] GetDeviceList()
         {
             // Get device types
-            GetDeviceTypeDataMessage msg = new GetDeviceTypeDataMessage();//knc_1
+            GetDeviceTypeDataMessage msg = new GetDeviceTypeDataMessage();
             try
             {
                 msg.Send();

@@ -141,18 +141,22 @@ namespace GTI.Modules.SystemSettings.UI
             
 
             //US4187 
-            if (bool.Parse(Common.GetLicenseSettingValue(LicenseSetting.NDSalesMode)))
-            {
-                //if not enabled then enable
-                if (!chkPlayerPIN.Checked)
+                if (bool.Parse(Common.GetLicenseSettingValue(LicenseSetting.NDSalesMode)))
                 {
-                    chkPlayerPIN.Checked = true;
-                    SavePlayerSettings();
-                }
+                    //if not enabled then enable
+                    if (!chkPlayerPIN.Checked)
+                    {
+                        chkPlayerPIN.Checked = true;
+                        SavePlayerSettings();
+                    }
 
-                //do not allow user to modify. Always enabled
-                chkPlayerPIN.Enabled = false;
-            }
+                    //do not allow user to modify. Always enabled
+                    chkPlayerPIN.Enabled = false;
+                }
+                else
+                { 
+                
+                }
 
             //US4539
             settingValue = Common.GetSystemSetting(Setting.LogoutPacksOnSessionEnd);
@@ -544,7 +548,7 @@ namespace GTI.Modules.SystemSettings.UI
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
 
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 Common.SetOpSettingValue(Setting.VIPRequiresPIN, chkPlayerPIN.Checked.ToString());
                 Common.SetOpSettingValue(Setting.PlayWinAnimationDuration, txtPlayWinAnimationDuration.Text.ToString());
@@ -656,7 +660,7 @@ namespace GTI.Modules.SystemSettings.UI
                 arrSettings.Add(s);
             }
 
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 // Update the server
                 if (!Common.SaveSystemSettings(arrSettings.ToArray()))//knc
