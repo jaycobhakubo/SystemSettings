@@ -49,7 +49,7 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
-            //bool bResult = LoadPlayerSettings();
+            bool bResult = LoadPlayerSettings();
             this.ResumeLayout(true);
             Common.EndWait();
             return true;
@@ -507,25 +507,33 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool LoadPlayerSettings()
         {
-
-            DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
-            DeviceSettingmsg.Send();
-
-            if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+            if (DeviceId != 0)
             {
-                chkbxUseDefault.Checked = true;
+                DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
+                DeviceSettingmsg.Send();
+
+                if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+                {
+                    chkbxUseDefault.Checked = true;
+                }
+                else
+                {
+                    chkbxUseDefault.Checked = false;
+                }
+
+                if (Common.GetSystemSettings() == false)         //START RALLY DE 9171
+                {
+                    return false;
+                }
+
+                SetUIValue();
             }
             else
             {
-                chkbxUseDefault.Checked = false;
+                SetValueToDefault();
             }
+            
 
-            if (Common.GetSystemSettings() == false)         //START RALLY DE 9171
-            {
-                return false;
-            }
-
-            SetUIValue();
             m_bModified = false;
             return true;
         }
