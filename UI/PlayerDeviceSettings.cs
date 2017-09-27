@@ -16,11 +16,9 @@ namespace GTI.Modules.SystemSettings.UI
     public partial class PlayerDeviceSettings : SettingsControl
     {
         private Device[] m_devices;
-        public Device[] Devices 
-        { 
-            get {return m_devices;}
-            set { m_devices = value; }
-        }
+        private PlayerSettings selectedPlayerSettings;
+
+
 
         public PlayerDeviceSettings()
         {
@@ -30,7 +28,6 @@ namespace GTI.Modules.SystemSettings.UI
 
         public override bool LoadSettings()
         {
-           // m_devices = GetDeviceList();
             Common.BeginWait();
             this.SuspendLayout();
             LoadTab();
@@ -39,7 +36,7 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-        private PlayerSettings selectedPlayerSettings;
+      
 
         private void LoadDefaultTab()
         {
@@ -201,6 +198,12 @@ namespace GTI.Modules.SystemSettings.UI
             TabPage x = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(x.Tag);
             SetSelectedDevice(DeviceId);                                   
+        }
+
+        public Device[] Devices
+        {
+            get { return m_devices; }
+            set { m_devices = value; }
         }
     }
 }

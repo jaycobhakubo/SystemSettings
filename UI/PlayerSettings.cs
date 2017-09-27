@@ -73,6 +73,9 @@ namespace GTI.Modules.SystemSettings.UI
             SettingValue tempSettingValue;            //END RALLY DE 9171 // Fill in the operator global settings   
             string settingValue = "";
 
+            Common.GetOpSettingValue(Setting.VIPRequiresPIN, out tempSettingValue);
+            chkPlayerPIN.Checked = Common.ParseBool(tempSettingValue.Value);  //RALLY DE9427
+
             Common.GetOpSettingValue(Setting.PlayWinAnimationDuration, out tempSettingValue);
             txtPlayWinAnimationDuration.Text = tempSettingValue.Value.ToString();
 
@@ -406,15 +409,11 @@ namespace GTI.Modules.SystemSettings.UI
                 {
                     chkLogoutPackSessionClose.Checked = false;
                 }
-
-
-          
-
+        
             //US5123
                 if (!DeviceSettingmsg.TryGetSettingValue(Setting.DisplayProgressiveOnPlayerUnit, out tempSettingValue))
                 {
                     settingValue = Common.GetSystemSetting(Setting.DisplayProgressiveOnPlayerUnit);
-
                 }
                 else
                 {

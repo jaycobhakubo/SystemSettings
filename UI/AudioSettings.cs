@@ -18,10 +18,8 @@ namespace GTI.Modules.SystemSettings.UI
 		public AudioSettings()
 		{
 			InitializeComponent();
-            //FIX START RALLY DE 2645 added all audio settings to global variable
-            audioCheckBoxList = new List<CheckBox>{chkPlayBallCallSoundEnabled,
-                chkPlayKeyClickEnabled,chkPlayModeOneAwaySound,chkPlayWinningSoundEnabled};
-            //FIX END RALLY DE 2645 added all audio settings to global variable
+            audioCheckBoxList = new List<CheckBox>{chkPlayBallCallSoundEnabled,  //FIX START RALLY DE 2645 added all audio settings to global variable
+            chkPlayKeyClickEnabled,chkPlayModeOneAwaySound,chkPlayWinningSoundEnabled};            //FIX END RALLY DE 2645 added all audio settings to global variable
             InitializeTagsForCheckboxes();
         }
 
@@ -311,19 +309,28 @@ namespace GTI.Modules.SystemSettings.UI
 
 		private bool LoadAudioSettings()
 		{
-            DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
-            DeviceSettingmsg.Send();
-
-            if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+            if (DeviceId != 0)
             {
-                chkbxUseDefault.Checked = true;
+                DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
+                DeviceSettingmsg.Send();
+
+                if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+                {
+                    chkbxUseDefault.Checked = true;
+                }
+                else
+                {
+                    chkbxUseDefault.Checked = false;
+                }
+
+                SetUIValue();
             }
             else
             {
-                chkbxUseDefault.Checked = false;
+                SetValueToDefault();
+                if (chkbxUseDefault.Checked != false) { chkbxUseDefault.Checked = false; }
+                chkbxUseDefault.Visible = false;
             }
-
-            SetUIValue();
 			m_bModified = false;     
 			return true;
 		}
