@@ -181,7 +181,7 @@
     <value>0, 0</value>
   </data>
   <data name="plyrSettingFixedBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="plyrSettingFixedBase.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -199,10 +199,10 @@
     <value>0</value>
   </data>
   <data name="tbpgFixedBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
+    <value>4, 22</value>
   </data>
   <data name="tbpgFixedBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="tbpgFixedBase.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -232,7 +232,7 @@
     <value>0, 0</value>
   </data>
   <data name="plyrSettingExplorer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="plyrSettingExplorer2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -250,10 +250,10 @@
     <value>0</value>
   </data>
   <data name="tbpgExplorer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
+    <value>4, 22</value>
   </data>
   <data name="tbpgExplorer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="tbpgExplorer2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -283,7 +283,7 @@
     <value>0, 0</value>
   </data>
   <data name="plyrSettingTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="plyrSettingTedE.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -301,10 +301,10 @@
     <value>0</value>
   </data>
   <data name="tbpgTedE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
+    <value>4, 22</value>
   </data>
   <data name="tbpgTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="tbpgTedE.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -334,7 +334,7 @@
     <value>0, 0</value>
   </data>
   <data name="plyrSettingTracker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="plyrSettingTracker.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -352,10 +352,10 @@
     <value>0</value>
   </data>
   <data name="tbpgTracker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
+    <value>4, 22</value>
   </data>
   <data name="tbpgTracker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="tbpgTracker.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -385,7 +385,7 @@
     <value>0, 0</value>
   </data>
   <data name="plyeSettingTraveler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="plyeSettingTraveler.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -403,10 +403,10 @@
     <value>0</value>
   </data>
   <data name="tbpgTraveler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
+    <value>4, 22</value>
   </data>
   <data name="tbpgTraveler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>192, 74</value>
   </data>
   <data name="tbpgTraveler.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

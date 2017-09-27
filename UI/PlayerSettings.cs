@@ -534,6 +534,8 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 SetValueToDefault();
+                if (chkbxUseDefault.Checked != false) { chkbxUseDefault.Checked = false; }
+                chkbxUseDefault.Visible = false;
             }
             
 

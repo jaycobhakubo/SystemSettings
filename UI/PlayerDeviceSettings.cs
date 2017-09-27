@@ -18,13 +18,10 @@ namespace GTI.Modules.SystemSettings.UI
         private Device[] m_devices;
         private PlayerSettings selectedPlayerSettings;
 
-
-
         public PlayerDeviceSettings()
         {
             InitializeComponent();
         }
-
 
         public override bool LoadSettings()
         {
@@ -35,9 +32,7 @@ namespace GTI.Modules.SystemSettings.UI
             Common.EndWait();
             return true;
         }
-
       
-
         private void LoadDefaultTab()
         {
             selectedPlayerSettings = plyrSettingDefault;
@@ -188,7 +183,6 @@ namespace GTI.Modules.SystemSettings.UI
             {
             selectedPlayerSettings = plyrSettingTedE;
             }
-
             return selectedPlayerSettings;
         }
 

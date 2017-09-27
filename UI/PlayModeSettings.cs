@@ -116,6 +116,158 @@ namespace GTI.Modules.SystemSettings.UI
             return newSetting;
         }
 
+        private bool SetValueToDefault()
+        {
+            SettingValue tempSettingValue;            //END RALLY DE 9171 // Fill in the operator global settings   
+
+            bool licenseValue;
+            // Fill in the operator global settings            
+            m_settingList.Clear();
+
+            //Get the play Mode
+            //the play mode comes from the operator settings        
+            Common.GetOpSettingValue(Setting.RFMode, out tempSettingValue);        
+            licenseValue = Common.GetSettingEnabled(Setting.RFMode);
+
+            if (licenseValue == false)
+            {
+                m_rdoButtonAuto.Enabled = false;
+                m_rdoButtonManual.Enabled = false;
+                m_rdoButtonSemiAuto.Enabled = false;
+            }
+            //START RALLY DE 6624
+            else
+            {
+                string value;
+                byte minMax = Common.GetSettingMinMax(Setting.RFMode, out value);
+
+                if (value != null)
+                {
+                    if (minMax == 1)
+                    {
+                        int minimum = Convert.ToInt32(value);
+                        //complete auto dont disable anything
+                        if (minimum == 1)
+                        {
+                            m_rdoButtonAuto.Enabled = true;
+                            m_rdoButtonManual.Enabled = true;
+                            m_rdoButtonSemiAuto.Enabled = true;
+                        }
+                        //semi auto disable auto
+                        else if (minimum == 2)
+                        {
+                            m_rdoButtonAuto.Enabled = false;
+                            m_rdoButtonManual.Enabled = true;
+                            m_rdoButtonSemiAuto.Enabled = true;
+                        }
+                        //manual disable auto and semi-auto and manual since you can't select anything else
+                        else if (minimum == 3)
+                        {
+                            m_rdoButtonAuto.Enabled = false;
+                            m_rdoButtonManual.Enabled = false;
+                            m_rdoButtonSemiAuto.Enabled = false;
+                        }
+
+                    }
+
+                }
+            }
+            //END RALLY DE 6624
+
+            m_playMode = ParseInt(tempSettingValue.Value);
+
+            m_cboPlayDaubLocation.Visible = true;
+            m_daubLocationTextBox.Visible = true;
+
+            m_cboPlayDaubLocation.Enabled = false;
+            m_daubLocationTextBox.Enabled = false;
+
+            //lists to define in what playmode type to show the checkable settings
+            //1 = Auto, 2 = semiAuto, 3 = Manual
+            List<int> semiAuto = new List<int>() { 2 };
+            List<int> semiAutoManual = new List<int>() { 2, 3 };
+            Common.GetOpSettingValue(Setting.PlayModeCatchUpEnabled, out tempSettingValue);
+            //license file
+            licenseValue = Common.GetSettingEnabled(Setting.PlayModeCatchUpEnabled);
+            m_chkAllowCatchUp.Tag = AddSettingToList(Setting.PlayModeCatchUpEnabled, tempSettingValue, "Allow Daub Catch Up", semiAuto, licenseValue);
+            Common.GetOpSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue);
+
+            //license file
+            licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);
+            m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);
+            Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
+           
+            //license file
+            licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubErrorsEnabled);
+            m_chkAllowPreCallErrors.Tag = AddSettingToList(Setting.PlayModePreDaubErrorsEnabled, tempSettingValue, "Allow Pre Call Daub Errors", semiAuto, licenseValue);
+
+            Common.GetOpSettingValue(Setting.PlayModeDaubOnImageEnabled, out tempSettingValue);
+
+            //license file
+            licenseValue = Common.GetSettingEnabled(Setting.PlayModeDaubOnImageEnabled);
+            m_chkAllowDaubOnImage.Tag = AddSettingToList(Setting.PlayModeDaubOnImageEnabled, tempSettingValue, "Allow Daub on Ball Image", semiAutoManual, licenseValue);
+            ((CheckableSetting)m_chkAllowDaubOnImage.Tag).isGreyed = false;
+
+            Common.GetOpSettingValue(Setting.PlayModeGreenDaubEnabled, out tempSettingValue);
+            licenseValue = Common.GetSettingEnabled(Setting.PlayModeGreenDaubEnabled);
+            //RALLY START DE 6346 Deleted
+            //m_chkAllowGreenButtonDaub.Tag = AddSettingToList(Setting.PlayModeGreenDaubEnabled, tempSettingValue, "Allow Green Button Daub", semiAuto,licenseValue);
+            //((CheckableSetting) m_chkAllowGreenButtonDaub.Tag).isGreyed = false;
+            //RALLY DE 6346 END
+            Common.GetOpSettingValue(Setting.PlayDaubLocation, out tempSettingValue);     
+            //license file
+            licenseValue = Common.GetSettingEnabled(Setting.PlayDaubLocation);
+
+            m_cboPlayDaubLocation.SelectedIndex = Math.Min(3, Math.Max(0, ParseInt(tempSettingValue.Value) - 1));
+            m_cboPlayDaubLocation.Tag = licenseValue.ToString();
+
+            //START DE2849
+            //START FIX RALLY DE2661 -- changed the update based on play mode
+            if (((CheckableSetting)m_chkAllowCatchUp.Tag).value.Value == "False" &&
+                 m_playMode == 2 && ((CheckableSetting)m_chkAllowPreDaubing.Tag).value.Value == "False" &&
+                 m_cboPlayDaubLocation.Tag.ToString() == "True")//RALLY DE 5485 Added play mode location dependancy on allow pre daub checkbox
+            {
+                m_daubLocationTextBox.Enabled = true;
+                m_cboPlayDaubLocation.Enabled = true;
+            }
+            //END DE2661
+            //END DE2849
+            if (m_cboPlayDaubLocation.Tag.ToString() == "False" &&
+                m_cboPlayDaubLocation.SelectedIndex < 2)
+            {
+                m_chkAllowPreDaubing.Enabled = false;
+                m_chkAllowPreCallErrors.Enabled = false;
+                ((CheckableSetting)m_chkAllowPreDaubing.Tag).licenseEnabled = false;
+                ((CheckableSetting)m_chkAllowPreCallErrors.Tag).licenseEnabled = false;
+            }
+            //START FIX RALLY DE2661 -- this needs to be done after the new control 
+            //is displayed
+            if (m_playMode == 1)
+            {
+                m_rdoButtonAuto.Checked = true;
+            }
+
+            else if (m_playMode == 2)
+            {
+                m_rdoButtonSemiAuto.Checked = true;
+            }
+
+            else
+            {
+                m_rdoButtonManual.Checked = true;
+            }
+
+            //END FIX RALLY DE2661
+            OnModified(m_cboPlayDaubLocation, new EventArgs());
+            DisplayCheckableSettings();
+
+
+
+            m_bModified = false;
+            return true;
+        }
+
+
         private bool SetUIValue()
         {
             bool licenseValue;
@@ -300,19 +452,30 @@ namespace GTI.Modules.SystemSettings.UI
 
 		private bool LoadPlayerSettings()
 		{
-            DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
-            DeviceSettingmsg.Send();
-
-            if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+            if (DeviceId != 0)
             {
-                chkbxUseDefault.Checked = true;
+                DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
+                DeviceSettingmsg.Send();
+
+                if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+                {
+                    chkbxUseDefault.Checked = true;
+                }
+                else
+                {
+                    chkbxUseDefault.Checked = false;
+                }
+                SetUIValue();
             }
             else
             {
-                chkbxUseDefault.Checked = false;
+                SetValueToDefault();
+                if (chkbxUseDefault.Checked != false) { chkbxUseDefault.Checked = false; }
+                chkbxUseDefault.Visible = false;
             }
+           
 
-            SetUIValue();
+           
 			// Set the flag
 			m_bModified = false;
 			return true;
