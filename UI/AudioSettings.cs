@@ -321,13 +321,18 @@ namespace GTI.Modules.SystemSettings.UI
                     return false;
                 }
            
-
                 x = SetUIValue();
                 
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0 || x == false)//if zero then default is set
-                {        
-                    SetValueToDefault();
-                    if (chkbxUseDefault.Checked != true) { chkbxUseDefault.Checked = true; }
+                {                         
+                    if (chkbxUseDefault.Checked != true)
+                    {
+                        chkbxUseDefault.Checked = true;
+                    }
+                    else
+                    {
+                        SetValueToDefault();
+                    }
                 }
                 else
                 {
@@ -340,6 +345,7 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked != false) { chkbxUseDefault.Checked = false; }
                 chkbxUseDefault.Visible = false;
             }
+
 			m_bModified = false;     
 			return true;
 		}

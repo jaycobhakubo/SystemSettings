@@ -515,6 +515,7 @@ namespace GTI.Modules.SystemSettings.UI
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
 
+
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
                 {
                     chkbxUseDefault.Checked = true;
@@ -529,7 +530,7 @@ namespace GTI.Modules.SystemSettings.UI
                     return false;
                 }
 
-                SetUIValue();
+        
             }
             else
             {
