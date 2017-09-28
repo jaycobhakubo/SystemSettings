@@ -347,13 +347,10 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true)
                 {
                     Common.SetOpSettingValue(Setting.PlayAllSoundEnabled, chkPlayAllSoundEnabled.Checked.ToString());
-                }
-                else
-                {
+                }             
                     s.Id = (int)Setting.PlayAllSoundEnabled;
                     s.Value = chkPlayAllSoundEnabled.Checked.ToString();
-                    arrSettings.Add(s);
-                }
+                    arrSettings.Add(s);     
             }
 
             //license file
@@ -362,13 +359,10 @@ namespace GTI.Modules.SystemSettings.UI
                  if (chkbxUseDefault.Checked == true)
                 {
                   Common.SetOpSettingValue(Setting.PlayModeOneAwaySound, chkPlayModeOneAwaySound.Checked.ToString());
-                }
-                else
-                {
+                }           
                     s.Id = (int)Setting.PlayModeOneAwaySound;
                     s.Value = chkPlayModeOneAwaySound.Checked.ToString();
-                    arrSettings.Add(s);
-                }
+                    arrSettings.Add(s);       
             }
 
             //license file
@@ -377,13 +371,10 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true)
                 {
                     Common.SetOpSettingValue(Setting.PlayWinningSoundEnabled, chkPlayWinningSoundEnabled.Checked.ToString());
-                }
-                else
-                {
+                }         
                     s.Id = (int)Setting.PlayWinningSoundEnabled;
                     s.Value = chkPlayWinningSoundEnabled.Checked.ToString();
-                    arrSettings.Add(s);
-                }       
+                    arrSettings.Add(s);               
             }
 
             //license file
@@ -392,14 +383,10 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true)
                 {
                     Common.SetOpSettingValue(Setting.PlayBallCallSoundEnabled, chkPlayBallCallSoundEnabled.Checked.ToString());
-                }
-                else
-                {
+                }         
                     s.Id = (int)Setting.PlayBallCallSoundEnabled;
                     s.Value = chkPlayBallCallSoundEnabled.Checked.ToString();
-                    arrSettings.Add(s);
-                }  
-               
+                    arrSettings.Add(s);                      
             }
 
             //license file
@@ -408,39 +395,31 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true)
                 {
                     Common.SetOpSettingValue(Setting.PlayKeyClickEnabled, chkPlayKeyClickEnabled.Checked.ToString());
-                }
-                else
-                {
+                }         
                     s.Id = (int)Setting.PlayKeyClickEnabled;
                     s.Value = chkPlayKeyClickEnabled.Checked.ToString();
-                    arrSettings.Add(s);
-                }  
-              
+                    arrSettings.Add(s);                       
             }
 
             if (chkbxUseDefault.Checked == true)
             {
                 Common.SetOpSettingValue(Setting.MaxVolume, numMaxGameVolume.Value.ToString());
-            }
-            else
-            {
+            }          
                 s.Id = (int)Setting.MaxVolume;
                 s.Value = numMaxGameVolume.Value.ToString();
                 arrSettings.Add(s);
-            }  
+         
            
 		    //RALLY 
 
             if (chkbxUseDefault.Checked == true)
             {
                 Common.SetOpSettingValue(Setting.MaxtvVolume, numMaxTVVolume.Value.ToString());
-            }
-            else
-            {
+            }   
                 s.Id = (int)Setting.MaxtvVolume;
                 s.Value = numMaxTVVolume.Value.ToString();
                 arrSettings.Add(s);
-            }
+        
 
             if (chkbxUseDefault.Checked == true)
             {
@@ -449,10 +428,11 @@ namespace GTI.Modules.SystemSettings.UI
                 {
                     return false;
                 }
+                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 1);
             }
             else
             {
-                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray());
+                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 0);
             }
 
 		

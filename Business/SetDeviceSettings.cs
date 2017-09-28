@@ -11,12 +11,14 @@ namespace GTI.Modules.SystemSettings.Business
     {
         private SettingValue[] mSettings;
         private int m_DeviceId;
+        private byte m_isDelete;
 
-        public SetDeviceSettings(int DeviceId, SettingValue[] settings)
+        public SetDeviceSettings(int DeviceId, SettingValue[] settings, byte IsDelete)
         {
             m_id = 18244;
 			mSettings = settings;
             m_DeviceId = DeviceId;
+            m_isDelete = IsDelete;
         }
 
         #region Member Methods
@@ -31,11 +33,12 @@ namespace GTI.Modules.SystemSettings.Business
 
 
             requestWriter.Write(m_DeviceId);
+            requestWriter.Write(m_isDelete);
             // Settings count
             requestWriter.Write((ushort)mSettings.Length);
             for (int iSetting = 0; iSetting < mSettings.Length; iSetting++)
             {
-                requestWriter.Write(mSettings[iSetting].Id);
+                requestWriter.Write(mSettings[iSetting].Id);            
                 requestWriter.Write((ushort)mSettings[iSetting].Value.Length);
                 if (mSettings[iSetting].Value.Length > 0)
                 {

@@ -564,8 +564,8 @@ namespace GTI.Modules.SystemSettings.UI
                 Common.SetOpSettingValue(Setting.ClearWinnersScreen, chkClearWinnersScreen.Checked.ToString()); //US4716
                 //START RALLY TA 9171 loss threshold setting values
             }
-            else
-            {
+         
+            
                 s.Id = (int)Setting.VIPRequiresPIN;
                 s.Value = chkPlayerPIN.Checked.ToString();
                 arrSettings.Add(s);
@@ -610,7 +610,7 @@ namespace GTI.Modules.SystemSettings.UI
                 s.Value = chkClearWinnersScreen.Checked.ToString();
                 arrSettings.Add(s);
 
-            }
+          
 
             // Create a list of just these settings
         
@@ -673,11 +673,13 @@ namespace GTI.Modules.SystemSettings.UI
                 {
                     return false;
                 }
+
+                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 1);//delete
             }
             else
             {
                 //END RALLY TA 9171
-                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray());
+                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 0);//add
             }
 
         

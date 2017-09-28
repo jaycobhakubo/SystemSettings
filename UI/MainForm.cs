@@ -88,7 +88,7 @@ namespace GTI.Modules.SystemSettings.UI
             charitySettings.Hide();
             charitySettings.Enabled = false;
 
-            unitMgmtSettings1.LoadSettings();//knc
+            unitMgmtSettings1.LoadSettings();
             unitMgmtSettings1.Hide();
             unitMgmtSettings1.Enabled = false;
 
@@ -447,7 +447,7 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
-            nodeParent = new TreeNode("Device", 0, 1);
+            nodeParent = new TreeNode("Player Unit Settings", 0, 1);
             nodeParent.Tag = playerDeviceSettings1;
   
             nodeChild = nodeParent.Nodes.Add("Audio Settings");

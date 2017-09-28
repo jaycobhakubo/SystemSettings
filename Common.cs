@@ -658,9 +658,9 @@ namespace GTI.Modules.SystemSettings
 	    }
 
 
-        public static bool SaveDeviceSettings(int DeviceId, SettingValue[] arrSettings)
+        public static bool SaveDeviceSettings(int DeviceId, SettingValue[] arrSettings, byte isDelete)
         {
-            SetDeviceSettings msg = new SetDeviceSettings(DeviceId, arrSettings);
+            SetDeviceSettings msg = new SetDeviceSettings(DeviceId, arrSettings, isDelete);
 
             try
             {
@@ -862,7 +862,7 @@ namespace GTI.Modules.SystemSettings
         }
 
 
-	    public static string GetSystemSetting(Setting s)
+	    public static string GetSystemSetting(Setting s)//knc
 		{
 			int nCount = m_GetSystemSettingsMessage.Settings.Length;
 			for (int i = 0; i < nCount; i++)

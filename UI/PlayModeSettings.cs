@@ -493,12 +493,11 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 Common.SetOpSettingValue(Setting.RFMode, m_playMode.ToString());
             }
-            else
-            {
+       
                 s.Id = (int)Setting.RFMode;
                 s.Value = m_playMode.ToString();
                 arrSettings.Add(s);
-            }
+       
 
             //save all the checkable settings
             foreach (CheckableSetting setting in m_settingList)
@@ -506,26 +505,19 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true)
                 {
                     Common.SetOpSettingValue(setting.settingId, setting.value.Value);
-                }
-                else
-                {
+                }        
                     s.Id = (int)setting.settingId;
                     s.Value = setting.value.Value;
-                    arrSettings.Add(s);
-                }
-               
+                    arrSettings.Add(s);                            
             }
 
             if (chkbxUseDefault.Checked == true)
             {
                 Common.SetOpSettingValue(Setting.PlayDaubLocation, Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1));
             }
-            else
-            {
                 s.Id = (int)Setting.PlayDaubLocation;
                 s.Value = Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1);
                 arrSettings.Add(s);
-            }
 
             //save the unique settings that are not checkable
         
@@ -537,10 +529,11 @@ namespace GTI.Modules.SystemSettings.UI
                 {
                     return false;
                 }
+                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 1);
             }
             else
             {
-                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray());
+                Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 0);
             }		
 
 			// Set the flag
