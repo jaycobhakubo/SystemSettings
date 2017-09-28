@@ -76,7 +76,6 @@ namespace GTI.Modules.SystemSettings.UI
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.groupBox5.Controls.Add(this.chkBoxResetRadioOnWifiInterruptions);
             this.groupBox5.Controls.Add(this.lblCrateRebootThresholdSeconds);
             this.groupBox5.Controls.Add(this.lblCrateRebootThreshold);
@@ -324,6 +323,7 @@ namespace GTI.Modules.SystemSettings.UI
             // PlayerSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.Controls.Add(this.chkbxUseDefault);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnReset);

@@ -78,7 +78,6 @@
             // 
             // playModeSettingsDefault
             // 
-            this.playModeSettingsDefault.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.playModeSettingsDefault.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsDefault, "playModeSettingsDefault");
             this.playModeSettingsDefault.Name = "playModeSettingsDefault";
@@ -93,7 +92,6 @@
             // 
             // playModeSettingsFixedBase
             // 
-            this.playModeSettingsFixedBase.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.playModeSettingsFixedBase.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsFixedBase, "playModeSettingsFixedBase");
             this.playModeSettingsFixedBase.Name = "playModeSettingsFixedBase";
@@ -108,7 +106,6 @@
             // 
             // playModeSettingsExplorer2
             // 
-            this.playModeSettingsExplorer2.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.playModeSettingsExplorer2.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsExplorer2, "playModeSettingsExplorer2");
             this.playModeSettingsExplorer2.Name = "playModeSettingsExplorer2";
@@ -123,7 +120,6 @@
             // 
             // playModeSettingsTedE
             // 
-            this.playModeSettingsTedE.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.playModeSettingsTedE.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTedE, "playModeSettingsTedE");
             this.playModeSettingsTedE.Name = "playModeSettingsTedE";
@@ -138,7 +134,6 @@
             // 
             // playModeSettingsTracker
             // 
-            this.playModeSettingsTracker.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.playModeSettingsTracker.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTracker, "playModeSettingsTracker");
             this.playModeSettingsTracker.Name = "playModeSettingsTracker";
@@ -153,7 +148,6 @@
             // 
             // playModeSettingsTraveler
             // 
-            this.playModeSettingsTraveler.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.playModeSettingsTraveler.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTraveler, "playModeSettingsTraveler");
             this.playModeSettingsTraveler.Name = "playModeSettingsTraveler";
@@ -168,7 +162,6 @@
             // 
             // playModeSettingsTraveler2
             // 
-            this.playModeSettingsTraveler2.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.playModeSettingsTraveler2.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTraveler2, "playModeSettingsTraveler2");
             this.playModeSettingsTraveler2.Name = "playModeSettingsTraveler2";

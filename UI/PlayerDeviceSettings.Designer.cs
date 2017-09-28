@@ -79,7 +79,6 @@
             // 
             // plyrSettingDefault
             // 
-            this.plyrSettingDefault.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.plyrSettingDefault.DeviceId = 0;
             resources.ApplyResources(this.plyrSettingDefault, "plyrSettingDefault");
             this.plyrSettingDefault.Name = "plyrSettingDefault";
@@ -94,7 +93,6 @@
             // 
             // plyrSettingFixedBase
             // 
-            this.plyrSettingFixedBase.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.plyrSettingFixedBase.DeviceId = 0;
             resources.ApplyResources(this.plyrSettingFixedBase, "plyrSettingFixedBase");
             this.plyrSettingFixedBase.Name = "plyrSettingFixedBase";
@@ -109,7 +107,6 @@
             // 
             // plyrSettingExplorer2
             // 
-            this.plyrSettingExplorer2.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.plyrSettingExplorer2.DeviceId = 0;
             resources.ApplyResources(this.plyrSettingExplorer2, "plyrSettingExplorer2");
             this.plyrSettingExplorer2.Name = "plyrSettingExplorer2";
@@ -124,7 +121,6 @@
             // 
             // plyrSettingTedE
             // 
-            this.plyrSettingTedE.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.plyrSettingTedE.DeviceId = 0;
             resources.ApplyResources(this.plyrSettingTedE, "plyrSettingTedE");
             this.plyrSettingTedE.Name = "plyrSettingTedE";
@@ -139,7 +135,6 @@
             // 
             // plyrSettingTracker
             // 
-            this.plyrSettingTracker.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.plyrSettingTracker.DeviceId = 0;
             resources.ApplyResources(this.plyrSettingTracker, "plyrSettingTracker");
             this.plyrSettingTracker.Name = "plyrSettingTracker";
@@ -154,7 +149,6 @@
             // 
             // plyeSettingTraveler
             // 
-            this.plyeSettingTraveler.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.plyeSettingTraveler.DeviceId = 0;
             resources.ApplyResources(this.plyeSettingTraveler, "plyeSettingTraveler");
             this.plyeSettingTraveler.Name = "plyeSettingTraveler";
@@ -169,7 +163,6 @@
             // 
             // plyrSettingTraveler2
             // 
-            this.plyrSettingTraveler2.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.plyrSettingTraveler2.DeviceId = 0;
             resources.ApplyResources(this.plyrSettingTraveler2, "plyrSettingTraveler2");
             this.plyrSettingTraveler2.Name = "plyrSettingTraveler2";
