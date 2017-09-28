@@ -129,7 +129,7 @@ namespace GTI.Modules.SystemSettings.UI
 		private bool LoadCallerSettings()
 		{
             //FIX START RALLY DE 3174 get the global settings
-            if (!Common.GetSystemSettings())
+            if (!Common.GetSystemSettings())//knc
             {
                 return false;
             }

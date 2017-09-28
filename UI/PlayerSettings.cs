@@ -26,7 +26,7 @@ namespace GTI.Modules.SystemSettings.UI
     {
         private const int PlayerPinMaxLength = 2; // Members      
         bool m_bModified = false;
-        GetDeviceSettings DeviceSettingmsg;
+        GetDeviceSettingsMessage DeviceSettingmsg;
 
         public PlayerSettings()
         {
@@ -512,7 +512,7 @@ namespace GTI.Modules.SystemSettings.UI
         {
             if (DeviceId != 0)
             {
-                DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
+                DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
 
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set

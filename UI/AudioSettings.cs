@@ -13,7 +13,7 @@ namespace GTI.Modules.SystemSettings.UI
 		bool m_bModified = false;
         bool m_needsSave = false;
 	    private List<CheckBox> audioCheckBoxList;//FIX RALLY DE 2645 added all audio settings to global variable
-        GetDeviceSettings DeviceSettingmsg;
+        GetDeviceSettingsMessage DeviceSettingmsg;
 
 		public AudioSettings()
 		{
@@ -186,7 +186,8 @@ namespace GTI.Modules.SystemSettings.UI
      
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue))
             {
-                Common.GetOpSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue);
+                Common.GetOpSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue);           
+                    return false;             
             }
             chkPlayAllSoundEnabled.Checked = ParseBool(tempSettingValue.Value); //RALLY DE9427
             chkPlayAllSoundEnabled.Enabled = Common.GetSettingEnabled(Setting.PlayAllSoundEnabled); //license file
@@ -309,22 +310,30 @@ namespace GTI.Modules.SystemSettings.UI
 
 		private bool LoadAudioSettings()
 		{
+            bool x = false;
             if (DeviceId != 0)
             {
-                DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
+                DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
-
-                if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+                if (DeviceSettingmsg.ReturnCode != 0)
                 {
-                    chkbxUseDefault.Checked = true;
+                 //   MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetSystemSettingsFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
+                    return false;
+                }
+           
+
+                x = SetUIValue();
+                
+                if (DeviceSettingmsg.DeviceSettingList.Length == 0 || x == false)//if zero then default is set
+                {        
+                    SetValueToDefault();
+                    if (chkbxUseDefault.Checked != true) { chkbxUseDefault.Checked = true; }
                 }
                 else
                 {
                     chkbxUseDefault.Checked = false;
-                }
-
-                SetUIValue();
-            }
+                }          
+            }   
             else
             {
                 SetValueToDefault();

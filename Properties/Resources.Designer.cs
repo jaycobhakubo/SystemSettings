@@ -561,6 +561,15 @@ namespace GTI.Modules.SystemSettings.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Failed to retrieve device settings from the server.  Reason: {0}.
+        /// </summary>
+        internal static string GetDeviceSettingsFailed {
+            get {
+                return ResourceManager.GetString("GetDeviceSettingsFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Failed to retrieve device information from the server.  Reason: {0}.
         /// </summary>
         internal static string GetDeviceTypesFailed {

@@ -157,13 +157,13 @@ namespace GTI.Modules.SystemSettings.UI
             raffleSettings1.Hide();
             raffleSettings1.Enabled = false;
 
-            audioSettings1.LoadSettings();
-            audioSettings1.Hide();
-            audioSettings1.Enabled = false;
+            //audioSettings1.LoadSettings();
+            //audioSettings1.Hide();
+            //audioSettings1.Enabled = false;
 
-            playModeSettings1.LoadSettings();
-            playModeSettings1.Hide();
-            playModeSettings1.Enabled = false;
+            //playModeSettings1.LoadSettings();
+            //playModeSettings1.Hide();
+            //playModeSettings1.Enabled = false;
 
             motifSettings1.LoadSettings();
             motifSettings1.Hide();
@@ -173,9 +173,9 @@ namespace GTI.Modules.SystemSettings.UI
             adminSettings1.Hide();
             adminSettings1.Enabled = false;
 
-            playerSettings1.LoadSettings();
-            playerSettings1.Hide();
-            playerSettings1.Enabled = false;
+            //playerSettings1.LoadSettings();
+            //playerSettings1.Hide();
+            //playerSettings1.Enabled = false;
 
             operatorManagement1.LoadSettings();
             operatorManagement1.Hide();
@@ -267,7 +267,6 @@ namespace GTI.Modules.SystemSettings.UI
             //END RALLY DE9656
 
             CreateNodes();
-
             ResumeLayout();
         }
 
@@ -460,19 +459,19 @@ namespace GTI.Modules.SystemSettings.UI
 
             //Player Unit Settings
             // Rally DE 2390 = Player Settings Settings Simplification 
-            nodeParent = new TreeNode("Player Unit Settings", 0, 1);
-            nodeParent.Tag = playerSettings1;
+            //nodeParent = new TreeNode("Player Unit Settings", 0, 1);
+            //nodeParent.Tag = playerSettings1;
 
             // Rally DE 2390 = Player Settings Settings Simplification 
-            nodeChild = nodeParent.Nodes.Add("Audio Settings");
-            nodeChild.Tag = audioSettings1;
+            //nodeChild = nodeParent.Nodes.Add("Audio Settings");
+            //nodeChild.Tag = audioSettings1;
 
             // Rally DE 2390 = Player Settings Settings Simplification 
-            nodeChild = nodeParent.Nodes.Add("Play Mode Settings");
-            nodeChild.Tag = playModeSettings1;
+            //nodeChild = nodeParent.Nodes.Add("Play Mode Settings");
+            //nodeChild.Tag = playModeSettings1;
 
 
-            treeView1.Nodes.Add(nodeParent);
+            //treeView1.Nodes.Add(nodeParent);
 
             // POS
             // TTP 50358

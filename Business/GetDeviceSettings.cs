@@ -9,7 +9,7 @@ using System.IO;
 
 namespace GTI.Modules.SystemSettings.Business
 {
-    class GetDeviceSettings : ServerMessage
+    class GetDeviceSettingsMessage : ServerMessage
     {
         private const int MinResponseMessageLength = 6;
         private int mDeviceId;
@@ -17,7 +17,7 @@ namespace GTI.Modules.SystemSettings.Business
         private SettingValue[] m_DeviceSettingList;
 
 
-        public GetDeviceSettings(int DeviceId, int GlobalSettingId)
+        public GetDeviceSettingsMessage(int DeviceId, int GlobalSettingId)
         {
             mDeviceId = DeviceId;
             mGlobalSettingId = GlobalSettingId;
@@ -34,10 +34,13 @@ namespace GTI.Modules.SystemSettings.Business
             requestWriter.Close();
         }
 
+        public int ReturnCode { get; set;}
         protected override void UnpackResponse()
         {
             MemoryStream responseStream = new MemoryStream(m_responsePayload);
             BinaryReader responseReader = new BinaryReader(responseStream, Encoding.Unicode);
+            ReturnCode = responseReader.ReadInt32();
+
 
             if (responseStream.Length < MinResponseMessageLength)
                 throw new MessageWrongSizeException(m_strMessageName);
@@ -55,6 +58,7 @@ namespace GTI.Modules.SystemSettings.Business
                     m_DeviceSettingList[i].Id = responseReader.ReadInt32();
                     m_DeviceSettingList[i].Category = responseReader.ReadInt32();
                     wStringLen = responseReader.ReadInt16();
+                    //if ()
                     m_DeviceSettingList[i].Value = new string(responseReader.ReadChars(wStringLen));
                 }
             }
@@ -86,6 +90,14 @@ namespace GTI.Modules.SystemSettings.Business
         }
 
         public SettingValue[] DeviceSettingList
+        {
+            get
+            {
+                return m_DeviceSettingList;
+            }
+        }
+
+        public SettingValue[] DeviceSettingPlayerSettingsList
         {
             get
             {

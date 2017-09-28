@@ -490,4 +490,7 @@
   <data name="GradientFull" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GradientFull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GetDeviceSettingsFailed" xml:space="preserve">
+    <value>Failed to retrieve device settings from the server.  Reason: {0}</value>
+  </data>
 </root>

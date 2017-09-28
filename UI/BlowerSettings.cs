@@ -119,7 +119,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool LoadBlowerSettings()
         {
-            if (!Common.GetSystemSettings())
+            if (!Common.GetSystemSettings())//knc
             {
                 return false;
             }

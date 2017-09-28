@@ -19,7 +19,7 @@ namespace GTI.Modules.SystemSettings.UI
 	    public List<CheckableSetting> m_settingList;
         public List<CheckBox> m_checkBoxList;
 	    private int m_playMode;
-        GetDeviceSettings DeviceSettingmsg;
+        GetDeviceSettingsMessage DeviceSettingmsg;
         //FIX: RALLY DE2390 Updated Play Modes Start:
         /// <summary>
         /// Initializes the PlayModeSettings Control
@@ -454,7 +454,7 @@ namespace GTI.Modules.SystemSettings.UI
 		{
             if (DeviceId != 0)
             {
-                DeviceSettingmsg = new GetDeviceSettings(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
+                DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
 
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set

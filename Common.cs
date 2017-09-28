@@ -174,6 +174,7 @@ namespace GTI.Modules.SystemSettings
 		public static GetSettingsMessage m_GetSystemSettingsMessage;
 	    public static GetLicenseFileSettingsMessage m_GetLicenseFileMessage;
 	    public static GetHallSettingsMessage m_GetHallSettingsMessage;
+        public static GetDeviceSettingsMessage m_GetDeviceSettingsMessage;
 
         public static bool MultipleCharites
         {
@@ -294,11 +295,17 @@ namespace GTI.Modules.SystemSettings
 				}
 
 				// Get the global settings
-				if (!GetSystemSettings())
+				if (!GetSystemSettings())//knc
 				{
 					return false;
 				}
 
+                if (!GetDeviceSettings())
+                {
+                    return false;
+                }
+              
+  
                 if (! GetLicenseFile())
                 {
                     return false;
@@ -406,7 +413,35 @@ namespace GTI.Modules.SystemSettings
             }
         }
 
-		public static bool GetSystemSettings()
+        public static bool GetDeviceSettings()
+        {
+            if (m_GetDeviceSettingsMessage != null)
+            {
+                return true;
+            }
+
+            m_GetDeviceSettingsMessage = new GetDeviceSettingsMessage(0, 0);
+
+            try
+            {
+                m_GetDeviceSettingsMessage.Send();
+
+                if (m_GetDeviceSettingsMessage.ReturnCode != 0)
+                {
+                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetDeviceSettingsFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetDeviceSettingsFailed, e));
+                return false;
+            }             
+        }
+
+		public static bool GetSystemSettings()//knc
 		{
 		    if (m_GetSystemSettingsMessage != null)
 		    {
@@ -872,7 +907,6 @@ namespace GTI.Modules.SystemSettings
 					return m_GetSystemSettingsMessage.Settings[i].Value;
 				}
 			}
-
 			// Setting not found
 			return "";
 		}
@@ -995,7 +1029,7 @@ namespace GTI.Modules.SystemSettings
             }
         }
         
-		public static bool SetSystemSettingValue(Setting s, string strValue)
+		public static bool SetSystemSettingValue(Setting s, string strValue)//knc
 		{
 			int nCount = m_GetSystemSettingsMessage.Settings.Length;
 			for (int i = 0; i < nCount; i++)

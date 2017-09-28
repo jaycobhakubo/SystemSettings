@@ -35,9 +35,14 @@ namespace GTI.Modules.SystemSettings.UI
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playerDevicePlayModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDevicePlayModeSettings();
             this.playerDeviceAudioSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceAudioSettings();
             this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
-            this.playerSettings1 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
             this.raffleSettings2 = new GTI.Modules.SystemSettings.UI.RaffleSettings();
             this.receiptSettings2 = new GTI.Modules.SystemSettings.UI.ReceiptSettings();
@@ -57,7 +62,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.pointOfSalePrinterSettings = new GTI.Modules.SystemSettings.UI.PointOfSalePrinterSettings();
             this.bingoSettings1 = new GTI.Modules.SystemSettings.UI.BingoSettings();
             this.crystalBallSettings = new GTI.Modules.SystemSettings.UI.CrystalBallSettings();
-            this.audioSettings1 = new GTI.Modules.SystemSettings.UI.AudioSettings();
             this.crateModuleSettings1 = new GTI.Modules.SystemSettings.UI.CrateModuleSettings();
             this.magCardSettings1 = new GTI.Modules.SystemSettings.UI.MagCardSettings();
             this.currencySettings1 = new GTI.Modules.SystemSettings.UI.CurrencySettings();
@@ -68,7 +72,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.licenseFileSettings1 = new GTI.Modules.SystemSettings.UI.LicenseFileSettings();
             this.kioskAdvanced2 = new GTI.Modules.SystemSettings.UI.KioskSettings2();
             this.companySettings1 = new GTI.Modules.SystemSettings.UI.CompanySettings();
-            this.playModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayModeSettings();
             this.securitySettings1 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
             this.moneyCenterSettings1 = new GTI.Modules.SystemSettings.UI.MoneyCenterSettings();
             this.inventorySettings1 = new GTI.Modules.SystemSettings.UI.InventorySettings();
@@ -91,12 +94,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.channelSettings1 = new GTI.Modules.SystemSettings.UI.ChannelSettings();
             this.tenderSettings = new GTI.Modules.SystemSettings.UI.TenderSettings();
             this.paymentProcessingSettings = new GTI.Modules.SystemSettings.UI.PaymentProcessingSettings();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.playerDevicePlayModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDevicePlayModeSettings();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -122,7 +119,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.splitContainer1.Panel2.Controls.Add(this.playerDevicePlayModeSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerDeviceAudioSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.playerSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.kioskSalesSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.raffleSettings2);
             this.splitContainer1.Panel2.Controls.Add(this.receiptSettings2);
@@ -142,7 +138,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.splitContainer1.Panel2.Controls.Add(this.pointOfSalePrinterSettings);
             this.splitContainer1.Panel2.Controls.Add(this.bingoSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.crystalBallSettings);
-            this.splitContainer1.Panel2.Controls.Add(this.audioSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.crateModuleSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.magCardSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.currencySettings1);
@@ -153,7 +148,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.splitContainer1.Panel2.Controls.Add(this.licenseFileSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.kioskAdvanced2);
             this.splitContainer1.Panel2.Controls.Add(this.companySettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.playModeSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.securitySettings1);
             this.splitContainer1.Panel2.Controls.Add(this.moneyCenterSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.inventorySettings1);
@@ -208,6 +202,48 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // menuStrip
+            // 
+            this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(222)))), ((int)(((byte)(237)))));
+            resources.ApplyResources(this.menuStrip, "menuStrip");
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileMenu,
+            this.helpMenu});
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.TabStop = true;
+            // 
+            // fileMenu
+            // 
+            this.fileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            resources.ApplyResources(this.fileMenu, "fileMenu");
+            this.fileMenu.Name = "fileMenu";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // helpMenu
+            // 
+            this.helpMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpMenu.Name = "helpMenu";
+            resources.ApplyResources(this.helpMenu, "helpMenu");
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // playerDevicePlayModeSettings1
+            // 
+            this.playerDevicePlayModeSettings1.Devices = null;
+            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
+            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
+            // 
             // playerDeviceAudioSettings1
             // 
             this.playerDeviceAudioSettings1.Devices = null;
@@ -219,11 +255,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.playerDeviceSettings1, "playerDeviceSettings1");
             this.playerDeviceSettings1.Devices = null;
             this.playerDeviceSettings1.Name = "playerDeviceSettings1";
-            // 
-            // playerSettings1
-            // 
-            resources.ApplyResources(this.playerSettings1, "playerSettings1");
-            this.playerSettings1.Name = "playerSettings1";
             // 
             // kioskSalesSettings1
             // 
@@ -320,11 +351,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.crystalBallSettings, "crystalBallSettings");
             this.crystalBallSettings.Name = "crystalBallSettings";
             // 
-            // audioSettings1
-            // 
-            resources.ApplyResources(this.audioSettings1, "audioSettings1");
-            this.audioSettings1.Name = "audioSettings1";
-            // 
             // crateModuleSettings1
             // 
             resources.ApplyResources(this.crateModuleSettings1, "crateModuleSettings1");
@@ -379,11 +405,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.companySettings1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.companySettings1, "companySettings1");
             this.companySettings1.Name = "companySettings1";
-            // 
-            // playModeSettings1
-            // 
-            resources.ApplyResources(this.playModeSettings1, "playModeSettings1");
-            this.playModeSettings1.Name = "playModeSettings1";
             // 
             // securitySettings1
             // 
@@ -506,48 +527,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.paymentProcessingSettings, "paymentProcessingSettings");
             this.paymentProcessingSettings.Name = "paymentProcessingSettings";
             // 
-            // menuStrip
-            // 
-            this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(222)))), ((int)(((byte)(237)))));
-            resources.ApplyResources(this.menuStrip, "menuStrip");
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileMenu,
-            this.helpMenu});
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.TabStop = true;
-            // 
-            // fileMenu
-            // 
-            this.fileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem});
-            resources.ApplyResources(this.fileMenu, "fileMenu");
-            this.fileMenu.Name = "fileMenu";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // helpMenu
-            // 
-            this.helpMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpMenu.Name = "helpMenu";
-            resources.ApplyResources(this.helpMenu, "helpMenu");
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // playerDevicePlayModeSettings1
-            // 
-            this.playerDevicePlayModeSettings1.Devices = null;
-            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
-            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -594,17 +573,14 @@ namespace GTI.Modules.SystemSettings.UI
 		private CallerSettings callerSettings1;
 		private CrateModuleSettings crateModuleSettings1;
 		private MagCardSettings magCardSettings1;
-	    private CurrencySettings currencySettings1;
-        private AudioSettings audioSettings1;
+        private CurrencySettings currencySettings1;
         private MotifSettings motifSettings1;
 		private GlobalSettings globalSettings1;
 		private MachineSettings machineSettings1;
 		private CreditSettings creditSettings1;
 		private VideoSettings videoSettings1;
 		private RaffleSettings raffleSettings1;
-		private AdminSettings adminSettings1;
-	    private PlayModeSettings playModeSettings1;
-	    private PlayerSettings playerSettings1;
+        private AdminSettings adminSettings1;
         private OperatorManagement operatorManagement1;
         private OperatorSettings operatorSettings1;
         private System.Windows.Forms.Label label1;
