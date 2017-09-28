@@ -243,6 +243,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.VIPRequiresPIN, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.VIPRequiresPIN, out tempSettingValue);
+                return false;
             }        
             chkPlayerPIN.Checked = Common.ParseBool(tempSettingValue.Value);  //RALLY DE9427
             
@@ -515,22 +516,24 @@ namespace GTI.Modules.SystemSettings.UI
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
 
+               var x = SetUIValue();
 
-                if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+                if (DeviceSettingmsg.DeviceSettingList.Length == 0 || x == false)//if zero then default is set
                 {
-                    chkbxUseDefault.Checked = true;
+                    if (chkbxUseDefault.Checked != true)
+                    {
+                        chkbxUseDefault.Checked = true;
+                    }
+                    else
+                    {
+                        SetValueToDefault();
+                    }
                 }
                 else
                 {
                     chkbxUseDefault.Checked = false;
-                }
+                }          
 
-                if (Common.GetSystemSettings() == false)         //START RALLY DE 9171
-                {
-                    return false;
-                }
-
-        
             }
             else
             {

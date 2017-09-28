@@ -100,7 +100,7 @@ namespace GTI.Modules.SystemSettings.UI
                 }
             }
         }
-
+        //knc
         private CheckableSetting AddSettingToList(Setting settingId, SettingValue value, string name, List<int> playMode, bool licenseEnabled)
         {
             CheckableSetting newSetting = new CheckableSetting();
@@ -273,7 +273,7 @@ namespace GTI.Modules.SystemSettings.UI
             bool licenseValue;
             // Fill in the operator global settings            
             SettingValue tempSettingValue = new SettingValue();
-            m_settingList.Clear();
+
 
             //Get the play Mode
             //the play mode comes from the operator settings
@@ -281,7 +281,9 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))//1
             {
                 Common.GetOpSettingValue(Setting.RFMode, out tempSettingValue);
-            }        
+                return false;
+            }
+            m_settingList.Clear();
             licenseValue = Common.GetSettingEnabled(Setting.RFMode);
 
             if (licenseValue == false)
@@ -457,15 +459,23 @@ namespace GTI.Modules.SystemSettings.UI
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
 
-                if (DeviceSettingmsg.DeviceSettingList.Length == 0)//if zero then default is set
+                var x = SetUIValue();
+
+                if (DeviceSettingmsg.DeviceSettingList.Length == 0 || x == false)//if zero then default is set
                 {
-                    chkbxUseDefault.Checked = true;
+                    if (chkbxUseDefault.Checked != true)
+                    {
+                        chkbxUseDefault.Checked = true;
+                    }
+                    else
+                    {
+                        SetValueToDefault();
+                    }
                 }
                 else
                 {
                     chkbxUseDefault.Checked = false;
-                }
-                SetUIValue();
+                }          
             }
             else
             {
@@ -906,10 +916,12 @@ namespace GTI.Modules.SystemSettings.UI
             if (chkbxUseDefault.Checked == true)
             {
                 groupBox5.Enabled = false;
+                SetValueToDefault();
             }
             else
             {
                 groupBox5.Enabled = true;
+                SetUIValue();
             }
         }
 
