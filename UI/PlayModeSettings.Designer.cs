@@ -203,7 +203,7 @@ namespace GTI.Modules.SystemSettings.UI
             // PlayModeSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.chkbxUseDefault);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnReset);

@@ -28,7 +28,8 @@ namespace GTI.Modules.SystemSettings.UI
             Common.BeginWait();
             this.SuspendLayout();
             LoadTab();
-            LoadDefaultTab();          
+            LoadDefaultTab();
+            this.ResumeLayout(true);
             Common.EndWait();
             return true;
         }

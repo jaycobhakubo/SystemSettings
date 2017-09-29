@@ -20,16 +20,22 @@ namespace GTI.Modules.SystemSettings.UI
         public PlayerDevicePlayModeSettings()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.DoubleBuffer, true);
         }
 
         public override bool LoadSettings()
         {
+      
             Common.BeginWait();
             this.SuspendLayout();
             LoadTab();
-            LoadDefaultTab();          
+            LoadDefaultTab();
+            this.ResumeLayout(true);
             Common.EndWait();
             return true;
+        
         }
 
         private void LoadDefaultTab()

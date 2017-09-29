@@ -27,6 +27,9 @@ namespace GTI.Modules.SystemSettings.UI
         public PlayModeSettings()
 		{
 			InitializeComponent();
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.DoubleBuffer, true);
             m_settingList = new List<CheckableSetting>();
             m_checkBoxList = new List<CheckBox>{m_chkAllowCatchUp,m_chkAllowDaubOnImage, //RALLY DE 6346 remove green button daub 
             m_chkAllowPreCallErrors,m_chkAllowPreDaubing};//RALLY DE 6346 remove green button daub 

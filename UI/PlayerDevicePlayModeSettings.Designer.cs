@@ -78,6 +78,7 @@
             // 
             // playModeSettingsDefault
             // 
+            this.playModeSettingsDefault.BackColor = System.Drawing.Color.Transparent;
             this.playModeSettingsDefault.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsDefault, "playModeSettingsDefault");
             this.playModeSettingsDefault.Name = "playModeSettingsDefault";
@@ -92,6 +93,7 @@
             // 
             // playModeSettingsFixedBase
             // 
+            this.playModeSettingsFixedBase.BackColor = System.Drawing.Color.Transparent;
             this.playModeSettingsFixedBase.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsFixedBase, "playModeSettingsFixedBase");
             this.playModeSettingsFixedBase.Name = "playModeSettingsFixedBase";
@@ -106,6 +108,7 @@
             // 
             // playModeSettingsExplorer2
             // 
+            this.playModeSettingsExplorer2.BackColor = System.Drawing.SystemColors.Control;
             this.playModeSettingsExplorer2.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsExplorer2, "playModeSettingsExplorer2");
             this.playModeSettingsExplorer2.Name = "playModeSettingsExplorer2";
@@ -120,6 +123,7 @@
             // 
             // playModeSettingsTedE
             // 
+            this.playModeSettingsTedE.BackColor = System.Drawing.Color.Transparent;
             this.playModeSettingsTedE.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTedE, "playModeSettingsTedE");
             this.playModeSettingsTedE.Name = "playModeSettingsTedE";
@@ -134,6 +138,7 @@
             // 
             // playModeSettingsTracker
             // 
+            this.playModeSettingsTracker.BackColor = System.Drawing.SystemColors.Control;
             this.playModeSettingsTracker.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTracker, "playModeSettingsTracker");
             this.playModeSettingsTracker.Name = "playModeSettingsTracker";
@@ -148,6 +153,7 @@
             // 
             // playModeSettingsTraveler
             // 
+            this.playModeSettingsTraveler.BackColor = System.Drawing.SystemColors.Control;
             this.playModeSettingsTraveler.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTraveler, "playModeSettingsTraveler");
             this.playModeSettingsTraveler.Name = "playModeSettingsTraveler";
@@ -162,6 +168,7 @@
             // 
             // playModeSettingsTraveler2
             // 
+            this.playModeSettingsTraveler2.BackColor = System.Drawing.SystemColors.Control;
             this.playModeSettingsTraveler2.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTraveler2, "playModeSettingsTraveler2");
             this.playModeSettingsTraveler2.Name = "playModeSettingsTraveler2";
@@ -170,6 +177,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tabCtrl_PlayMode);
             this.DoubleBuffered = true;
             this.Name = "PlayerDevicePlayModeSettings";
