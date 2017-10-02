@@ -502,7 +502,7 @@ namespace GTI.Modules.SystemSettings.UI
             SettingValue s = new SettingValue();
 
             //Save the play mode
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 Common.SetOpSettingValue(Setting.RFMode, m_playMode.ToString());
             }
@@ -515,7 +515,7 @@ namespace GTI.Modules.SystemSettings.UI
             //save all the checkable settings
             foreach (CheckableSetting setting in m_settingList)
             {
-                if (chkbxUseDefault.Checked == true)
+                if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(setting.settingId, setting.value.Value);
                 }        
@@ -524,7 +524,7 @@ namespace GTI.Modules.SystemSettings.UI
                     arrSettings.Add(s);                            
             }
 
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 Common.SetOpSettingValue(Setting.PlayDaubLocation, Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1));
             }
@@ -535,7 +535,7 @@ namespace GTI.Modules.SystemSettings.UI
             //save the unique settings that are not checkable
         
             
-		    if (chkbxUseDefault.Checked == true)
+		    if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 // Save the operator settings
                 if (!Common.SaveOperatorSettings())
@@ -916,7 +916,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 groupBox5.Enabled = false;
                 SetValueToDefault();

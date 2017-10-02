@@ -325,6 +325,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull;
             this.Controls.Add(this.chkbxUseDefault);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnReset);

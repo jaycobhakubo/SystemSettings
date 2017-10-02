@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerDeviceSettings));
             this.tabCtrl_PlayerSettingDevice = new System.Windows.Forms.TabControl();
             this.tbpgDefault = new System.Windows.Forms.TabPage();
-            this.tbpgFixedBase = new System.Windows.Forms.TabPage();
-            this.tbpgExplorer2 = new System.Windows.Forms.TabPage();
-            this.tbpgTedE = new System.Windows.Forms.TabPage();
-            this.tbpgTracker = new System.Windows.Forms.TabPage();
-            this.tbpgTraveler = new System.Windows.Forms.TabPage();
-            this.tbpgTraveler2 = new System.Windows.Forms.TabPage();
             this.plyrSettingDefault = new GTI.Modules.SystemSettings.UI.PlayerSettings();
+            this.tbpgFixedBase = new System.Windows.Forms.TabPage();
             this.plyrSettingFixedBase = new GTI.Modules.SystemSettings.UI.PlayerSettings();
+            this.tbpgExplorer2 = new System.Windows.Forms.TabPage();
             this.plyrSettingExplorer2 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
+            this.tbpgTedE = new System.Windows.Forms.TabPage();
             this.plyrSettingTedE = new GTI.Modules.SystemSettings.UI.PlayerSettings();
+            this.tbpgTracker = new System.Windows.Forms.TabPage();
             this.plyrSettingTracker = new GTI.Modules.SystemSettings.UI.PlayerSettings();
+            this.tbpgTraveler = new System.Windows.Forms.TabPage();
             this.plyeSettingTraveler = new GTI.Modules.SystemSettings.UI.PlayerSettings();
+            this.tbpgTraveler2 = new System.Windows.Forms.TabPage();
             this.plyrSettingTraveler2 = new GTI.Modules.SystemSettings.UI.PlayerSettings();
             this.tabCtrl_PlayerSettingDevice.SuspendLayout();
             this.tbpgDefault.SuspendLayout();
@@ -66,7 +66,7 @@
             resources.ApplyResources(this.tabCtrl_PlayerSettingDevice, "tabCtrl_PlayerSettingDevice");
             this.tabCtrl_PlayerSettingDevice.Name = "tabCtrl_PlayerSettingDevice";
             this.tabCtrl_PlayerSettingDevice.SelectedIndex = 0;
-            this.tabCtrl_PlayerSettingDevice.Tag = "0";
+            this.tabCtrl_PlayerSettingDevice.Tag = "";
             this.tabCtrl_PlayerSettingDevice.SelectedIndexChanged += new System.EventHandler(this.tabCtrl_PlayerSettingDevice_SelectedIndexChanged);
             // 
             // tbpgDefault
@@ -77,6 +77,14 @@
             this.tbpgDefault.Name = "tbpgDefault";
             this.tbpgDefault.Tag = "0";
             // 
+            // plyrSettingDefault
+            // 
+            this.plyrSettingDefault.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.plyrSettingDefault.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.plyrSettingDefault, "plyrSettingDefault");
+            this.plyrSettingDefault.DeviceId = 0;
+            this.plyrSettingDefault.Name = "plyrSettingDefault";
+            // 
             // tbpgFixedBase
             // 
             this.tbpgFixedBase.BackColor = System.Drawing.SystemColors.Control;
@@ -84,6 +92,14 @@
             resources.ApplyResources(this.tbpgFixedBase, "tbpgFixedBase");
             this.tbpgFixedBase.Name = "tbpgFixedBase";
             this.tbpgFixedBase.Tag = "3";
+            // 
+            // plyrSettingFixedBase
+            // 
+            this.plyrSettingFixedBase.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.plyrSettingFixedBase.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.plyrSettingFixedBase, "plyrSettingFixedBase");
+            this.plyrSettingFixedBase.DeviceId = 0;
+            this.plyrSettingFixedBase.Name = "plyrSettingFixedBase";
             // 
             // tbpgExplorer2
             // 
@@ -93,6 +109,14 @@
             this.tbpgExplorer2.Tag = "4";
             this.tbpgExplorer2.UseVisualStyleBackColor = true;
             // 
+            // plyrSettingExplorer2
+            // 
+            this.plyrSettingExplorer2.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.plyrSettingExplorer2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.plyrSettingExplorer2, "plyrSettingExplorer2");
+            this.plyrSettingExplorer2.DeviceId = 0;
+            this.plyrSettingExplorer2.Name = "plyrSettingExplorer2";
+            // 
             // tbpgTedE
             // 
             this.tbpgTedE.Controls.Add(this.plyrSettingTedE);
@@ -100,6 +124,14 @@
             this.tbpgTedE.Name = "tbpgTedE";
             this.tbpgTedE.Tag = "17";
             this.tbpgTedE.UseVisualStyleBackColor = true;
+            // 
+            // plyrSettingTedE
+            // 
+            this.plyrSettingTedE.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.plyrSettingTedE.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.plyrSettingTedE, "plyrSettingTedE");
+            this.plyrSettingTedE.DeviceId = 0;
+            this.plyrSettingTedE.Name = "plyrSettingTedE";
             // 
             // tbpgTracker
             // 
@@ -109,6 +141,14 @@
             this.tbpgTracker.Tag = "2";
             this.tbpgTracker.UseVisualStyleBackColor = true;
             // 
+            // plyrSettingTracker
+            // 
+            this.plyrSettingTracker.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.plyrSettingTracker.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.plyrSettingTracker, "plyrSettingTracker");
+            this.plyrSettingTracker.DeviceId = 0;
+            this.plyrSettingTracker.Name = "plyrSettingTracker";
+            // 
             // tbpgTraveler
             // 
             this.tbpgTraveler.Controls.Add(this.plyeSettingTraveler);
@@ -116,6 +156,14 @@
             this.tbpgTraveler.Name = "tbpgTraveler";
             this.tbpgTraveler.Tag = "1";
             this.tbpgTraveler.UseVisualStyleBackColor = true;
+            // 
+            // plyeSettingTraveler
+            // 
+            this.plyeSettingTraveler.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.plyeSettingTraveler.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.plyeSettingTraveler, "plyeSettingTraveler");
+            this.plyeSettingTraveler.DeviceId = 0;
+            this.plyeSettingTraveler.Name = "plyeSettingTraveler";
             // 
             // tbpgTraveler2
             // 
@@ -125,70 +173,23 @@
             this.tbpgTraveler2.Tag = "14";
             this.tbpgTraveler2.UseVisualStyleBackColor = true;
             // 
-            // plyrSettingDefault
-            // 
-            this.plyrSettingDefault.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.plyrSettingDefault.BackColor = System.Drawing.Color.Transparent;
-            this.plyrSettingDefault.DeviceId = 0;
-            resources.ApplyResources(this.plyrSettingDefault, "plyrSettingDefault");
-            this.plyrSettingDefault.Name = "plyrSettingDefault";
-            // 
-            // plyrSettingFixedBase
-            // 
-            this.plyrSettingFixedBase.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.plyrSettingFixedBase.BackColor = System.Drawing.Color.Transparent;
-            this.plyrSettingFixedBase.DeviceId = 0;
-            resources.ApplyResources(this.plyrSettingFixedBase, "plyrSettingFixedBase");
-            this.plyrSettingFixedBase.Name = "plyrSettingFixedBase";
-            // 
-            // plyrSettingExplorer2
-            // 
-            this.plyrSettingExplorer2.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.plyrSettingExplorer2.BackColor = System.Drawing.Color.Transparent;
-            this.plyrSettingExplorer2.DeviceId = 0;
-            resources.ApplyResources(this.plyrSettingExplorer2, "plyrSettingExplorer2");
-            this.plyrSettingExplorer2.Name = "plyrSettingExplorer2";
-            // 
-            // plyrSettingTedE
-            // 
-            this.plyrSettingTedE.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.plyrSettingTedE.BackColor = System.Drawing.SystemColors.Control;
-            this.plyrSettingTedE.DeviceId = 0;
-            resources.ApplyResources(this.plyrSettingTedE, "plyrSettingTedE");
-            this.plyrSettingTedE.Name = "plyrSettingTedE";
-            // 
-            // plyrSettingTracker
-            // 
-            this.plyrSettingTracker.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.plyrSettingTracker.BackColor = System.Drawing.Color.Transparent;
-            this.plyrSettingTracker.DeviceId = 0;
-            resources.ApplyResources(this.plyrSettingTracker, "plyrSettingTracker");
-            this.plyrSettingTracker.Name = "plyrSettingTracker";
-            // 
-            // plyeSettingTraveler
-            // 
-            this.plyeSettingTraveler.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.plyeSettingTraveler.BackColor = System.Drawing.Color.Transparent;
-            this.plyeSettingTraveler.DeviceId = 0;
-            resources.ApplyResources(this.plyeSettingTraveler, "plyeSettingTraveler");
-            this.plyeSettingTraveler.Name = "plyeSettingTraveler";
-            // 
             // plyrSettingTraveler2
             // 
             this.plyrSettingTraveler2.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.plyrSettingTraveler2.BackColor = System.Drawing.Color.Transparent;
-            this.plyrSettingTraveler2.DeviceId = 0;
             resources.ApplyResources(this.plyrSettingTraveler2, "plyrSettingTraveler2");
+            this.plyrSettingTraveler2.DeviceId = 0;
             this.plyrSettingTraveler2.Name = "plyrSettingTraveler2";
             // 
             // PlayerDeviceSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.tabCtrl_PlayerSettingDevice);
             resources.ApplyResources(this, "$this");
             this.Name = "PlayerDeviceSettings";
+            this.Tag = "PlayerDevice";
             this.tabCtrl_PlayerSettingDevice.ResumeLayout(false);
             this.tbpgDefault.ResumeLayout(false);
             this.tbpgFixedBase.ResumeLayout(false);

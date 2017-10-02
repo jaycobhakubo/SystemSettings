@@ -116,11 +116,11 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerDevicePlayModeSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerDeviceAudioSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.kioskSalesSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.raffleSettings2);
+            this.splitContainer1.Panel2.Controls.Add(this.kioskSalesSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.receiptSettings2);
             this.splitContainer1.Panel2.Controls.Add(this.securitySettings3);
             this.splitContainer1.Panel2.Controls.Add(this.sessionSummarySettings5);
@@ -240,20 +240,24 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // playerDevicePlayModeSettings1
             // 
+            this.playerDevicePlayModeSettings1.BackColor = System.Drawing.SystemColors.Control;
             this.playerDevicePlayModeSettings1.Devices = null;
             resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
             this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
             // 
             // playerDeviceAudioSettings1
             // 
+            this.playerDeviceAudioSettings1.BackColor = System.Drawing.SystemColors.Control;
             this.playerDeviceAudioSettings1.Devices = null;
             resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
             this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
             // 
             // playerDeviceSettings1
             // 
-            resources.ApplyResources(this.playerDeviceSettings1, "playerDeviceSettings1");
+            this.playerDeviceSettings1.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.playerDeviceSettings1.BackColor = System.Drawing.SystemColors.Control;
             this.playerDeviceSettings1.Devices = null;
+            resources.ApplyResources(this.playerDeviceSettings1, "playerDeviceSettings1");
             this.playerDeviceSettings1.Name = "playerDeviceSettings1";
             // 
             // kioskSalesSettings1

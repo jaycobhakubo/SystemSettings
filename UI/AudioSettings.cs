@@ -56,7 +56,9 @@ namespace GTI.Modules.SystemSettings.UI
 		public override bool SaveSettings()
 		{
 			Common.BeginWait();
+            this.SuspendLayout();
 			bool bResult = SavePlayerSettings();
+            this.ResumeLayout(true);
 			Common.EndWait();
 			return bResult;
 		}
@@ -359,7 +361,7 @@ namespace GTI.Modules.SystemSettings.UI
             //license file
             if (chkPlayAllSoundEnabled.Tag.ToString() == "Enabled" || m_needsSave)
             {
-                if (chkbxUseDefault.Checked == true)
+                if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(Setting.PlayAllSoundEnabled, chkPlayAllSoundEnabled.Checked.ToString());
                 }             
@@ -371,7 +373,7 @@ namespace GTI.Modules.SystemSettings.UI
             //license file
             if (chkPlayModeOneAwaySound.Tag.ToString() == "Enabled" || m_needsSave)
             {              
-                 if (chkbxUseDefault.Checked == true)
+                 if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                   Common.SetOpSettingValue(Setting.PlayModeOneAwaySound, chkPlayModeOneAwaySound.Checked.ToString());
                 }           
@@ -383,7 +385,7 @@ namespace GTI.Modules.SystemSettings.UI
             //license file
             if (chkPlayWinningSoundEnabled.Tag.ToString() == "Enabled" || m_needsSave)
             {
-                if (chkbxUseDefault.Checked == true)
+                if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(Setting.PlayWinningSoundEnabled, chkPlayWinningSoundEnabled.Checked.ToString());
                 }         
@@ -395,7 +397,7 @@ namespace GTI.Modules.SystemSettings.UI
             //license file
             if (chkPlayBallCallSoundEnabled.Tag.ToString() == "Enabled" || m_needsSave)
             {
-                if (chkbxUseDefault.Checked == true)
+                if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(Setting.PlayBallCallSoundEnabled, chkPlayBallCallSoundEnabled.Checked.ToString());
                 }         
@@ -407,7 +409,7 @@ namespace GTI.Modules.SystemSettings.UI
             //license file
             if (chkPlayKeyClickEnabled.Tag.ToString() == "Enabled" || m_needsSave)
             {
-                if (chkbxUseDefault.Checked == true)
+                if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(Setting.PlayKeyClickEnabled, chkPlayKeyClickEnabled.Checked.ToString());
                 }         
@@ -416,7 +418,7 @@ namespace GTI.Modules.SystemSettings.UI
                     arrSettings.Add(s);                       
             }
 
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 Common.SetOpSettingValue(Setting.MaxVolume, numMaxGameVolume.Value.ToString());
             }          
@@ -427,7 +429,7 @@ namespace GTI.Modules.SystemSettings.UI
            
 		    //RALLY 
 
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 Common.SetOpSettingValue(Setting.MaxtvVolume, numMaxTVVolume.Value.ToString());
             }   
@@ -436,7 +438,7 @@ namespace GTI.Modules.SystemSettings.UI
                 arrSettings.Add(s);
         
 
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 // Save the operator settings
                 if (!Common.SaveOperatorSettings())
@@ -503,7 +505,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkbxUseDefault.Checked == true)
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 groupBox5.Enabled = false;
                 SetValueToDefault();

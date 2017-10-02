@@ -70,17 +70,17 @@
             // 
             // tbpgDefault
             // 
+            this.tbpgDefault.BackColor = System.Drawing.SystemColors.Control;
             this.tbpgDefault.Controls.Add(this.playModeSettingsDefault);
             resources.ApplyResources(this.tbpgDefault, "tbpgDefault");
             this.tbpgDefault.Name = "tbpgDefault";
             this.tbpgDefault.Tag = "0";
-            this.tbpgDefault.UseVisualStyleBackColor = true;
             // 
             // playModeSettingsDefault
             // 
-            this.playModeSettingsDefault.BackColor = System.Drawing.Color.Transparent;
-            this.playModeSettingsDefault.DeviceId = 0;
+            this.playModeSettingsDefault.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.playModeSettingsDefault, "playModeSettingsDefault");
+            this.playModeSettingsDefault.DeviceId = 0;
             this.playModeSettingsDefault.Name = "playModeSettingsDefault";
             // 
             // tbpgFixedBase
@@ -93,94 +93,95 @@
             // 
             // playModeSettingsFixedBase
             // 
-            this.playModeSettingsFixedBase.BackColor = System.Drawing.Color.Transparent;
-            this.playModeSettingsFixedBase.DeviceId = 0;
+            this.playModeSettingsFixedBase.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.playModeSettingsFixedBase, "playModeSettingsFixedBase");
+            this.playModeSettingsFixedBase.DeviceId = 0;
             this.playModeSettingsFixedBase.Name = "playModeSettingsFixedBase";
             // 
             // tbpgExplorer2
             // 
+            this.tbpgExplorer2.BackColor = System.Drawing.SystemColors.Control;
             this.tbpgExplorer2.Controls.Add(this.playModeSettingsExplorer2);
             resources.ApplyResources(this.tbpgExplorer2, "tbpgExplorer2");
             this.tbpgExplorer2.Name = "tbpgExplorer2";
             this.tbpgExplorer2.Tag = "4";
-            this.tbpgExplorer2.UseVisualStyleBackColor = true;
             // 
             // playModeSettingsExplorer2
             // 
             this.playModeSettingsExplorer2.BackColor = System.Drawing.SystemColors.Control;
-            this.playModeSettingsExplorer2.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsExplorer2, "playModeSettingsExplorer2");
+            this.playModeSettingsExplorer2.DeviceId = 0;
             this.playModeSettingsExplorer2.Name = "playModeSettingsExplorer2";
             // 
             // tbpgTedE
             // 
+            this.tbpgTedE.BackColor = System.Drawing.SystemColors.Control;
             this.tbpgTedE.Controls.Add(this.playModeSettingsTedE);
             resources.ApplyResources(this.tbpgTedE, "tbpgTedE");
             this.tbpgTedE.Name = "tbpgTedE";
             this.tbpgTedE.Tag = "17";
-            this.tbpgTedE.UseVisualStyleBackColor = true;
             // 
             // playModeSettingsTedE
             // 
-            this.playModeSettingsTedE.BackColor = System.Drawing.Color.Transparent;
-            this.playModeSettingsTedE.DeviceId = 0;
+            this.playModeSettingsTedE.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.playModeSettingsTedE, "playModeSettingsTedE");
+            this.playModeSettingsTedE.DeviceId = 0;
             this.playModeSettingsTedE.Name = "playModeSettingsTedE";
             // 
             // tbpgTracker
             // 
+            this.tbpgTracker.BackColor = System.Drawing.SystemColors.Control;
             this.tbpgTracker.Controls.Add(this.playModeSettingsTracker);
             resources.ApplyResources(this.tbpgTracker, "tbpgTracker");
             this.tbpgTracker.Name = "tbpgTracker";
             this.tbpgTracker.Tag = "2";
-            this.tbpgTracker.UseVisualStyleBackColor = true;
             // 
             // playModeSettingsTracker
             // 
             this.playModeSettingsTracker.BackColor = System.Drawing.SystemColors.Control;
-            this.playModeSettingsTracker.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTracker, "playModeSettingsTracker");
+            this.playModeSettingsTracker.DeviceId = 0;
             this.playModeSettingsTracker.Name = "playModeSettingsTracker";
             // 
             // tbpgTraveler
             // 
+            this.tbpgTraveler.BackColor = System.Drawing.SystemColors.Control;
             this.tbpgTraveler.Controls.Add(this.playModeSettingsTraveler);
             resources.ApplyResources(this.tbpgTraveler, "tbpgTraveler");
             this.tbpgTraveler.Name = "tbpgTraveler";
             this.tbpgTraveler.Tag = "1";
-            this.tbpgTraveler.UseVisualStyleBackColor = true;
             // 
             // playModeSettingsTraveler
             // 
             this.playModeSettingsTraveler.BackColor = System.Drawing.SystemColors.Control;
-            this.playModeSettingsTraveler.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTraveler, "playModeSettingsTraveler");
+            this.playModeSettingsTraveler.DeviceId = 0;
             this.playModeSettingsTraveler.Name = "playModeSettingsTraveler";
             // 
             // tbpgTraveler2
             // 
+            this.tbpgTraveler2.BackColor = System.Drawing.SystemColors.Control;
             this.tbpgTraveler2.Controls.Add(this.playModeSettingsTraveler2);
             resources.ApplyResources(this.tbpgTraveler2, "tbpgTraveler2");
             this.tbpgTraveler2.Name = "tbpgTraveler2";
             this.tbpgTraveler2.Tag = "14";
-            this.tbpgTraveler2.UseVisualStyleBackColor = true;
             // 
             // playModeSettingsTraveler2
             // 
             this.playModeSettingsTraveler2.BackColor = System.Drawing.SystemColors.Control;
-            this.playModeSettingsTraveler2.DeviceId = 0;
             resources.ApplyResources(this.playModeSettingsTraveler2, "playModeSettingsTraveler2");
+            this.playModeSettingsTraveler2.DeviceId = 0;
             this.playModeSettingsTraveler2.Name = "playModeSettingsTraveler2";
             // 
             // PlayerDevicePlayModeSettings
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.tabCtrl_PlayMode);
             this.DoubleBuffered = true;
             this.Name = "PlayerDevicePlayModeSettings";
+            this.Tag = "PlayerDevice";
             this.tabCtrl_PlayMode.ResumeLayout(false);
             this.tbpgDefault.ResumeLayout(false);
             this.tbpgFixedBase.ResumeLayout(false);

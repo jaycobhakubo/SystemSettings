@@ -251,8 +251,8 @@ namespace GTI.Modules.SystemSettings.UI
 
             playerDeviceSettings1.Devices = unitMgmtSettings1.Devices;
             playerDeviceSettings1.LoadSettings();
-            playerDeviceSettings1.Hide();
-            playerDeviceSettings1.Enabled = false;
+            //playerDeviceSettings1.Hide();
+            //playerDeviceSettings1.Enabled = false;
 
             playerDeviceAudioSettings1.Devices = unitMgmtSettings1.Devices;
             playerDeviceAudioSettings1.LoadSettings();
@@ -658,19 +658,36 @@ namespace GTI.Modules.SystemSettings.UI
             }
             //END FIX RALLY DE2661
 
-            if(m_activeControl != null)
+            if (m_activeControl != null)
             {
-                m_activeControl.Enabled = false;
-                m_activeControl.Hide();
-                m_activeControl.Visible = false;
+
+                //m_activeControl.Enabled = false;
+                //m_activeControl.Hide();
+                //m_activeControl.Visible = false;
+                m_activeControl.SendToBack();
             }
+
+          
+
 			// Get the selected node and display its panel
+        
 			m_previousControl = m_activeControl;
 			m_activeControl = (SettingsControl)(treeView1.SelectedNode.Tag);
 			m_activeControl.OnActivate(treeView1.SelectedNode);
-		    m_activeControl.Enabled = true;
-            m_activeControl.Show();
-		    m_activeControl.Visible = true;
+
+            //if (m_activeControl.Tag != "PlayerDevice")//Skip Player Device Setting too much flickering going on.
+            //{
+            //if (m_activeControl.Enabled != true)
+            //{
+            m_activeControl.Enabled = true;
+            //}
+                m_activeControl.Show();
+              
+            //if (m_activeControl.Visible != true)
+            //{
+                m_activeControl.Visible = true; 
+                //}
+		 
             m_activeControl.BringToFront();
 			m_activeControl.Update();
             treeView1.SelectedNode = e.Node;

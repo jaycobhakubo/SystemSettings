@@ -58,7 +58,9 @@ namespace GTI.Modules.SystemSettings.UI
         public override bool SaveSettings()
         {
             Common.BeginWait();
+            this.SuspendLayout();
             bool bResult = SavePlayerSettings();
+            this.ResumeLayout(true);
             Common.EndWait();
             return bResult;
         }
@@ -232,7 +234,6 @@ namespace GTI.Modules.SystemSettings.UI
             m_bModified = false;
             return true;
         }
-
 
         private bool SetUIValue()
         {
@@ -515,10 +516,9 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
+               var tResult = SetUIValue();
 
-               var x = SetUIValue();
-
-                if (DeviceSettingmsg.DeviceSettingList.Length == 0 || x == false)//if zero then default is set
+               if (DeviceSettingmsg.DeviceSettingList.Length == 0 || tResult == false)//if zero then default is set
                 {
                     if (chkbxUseDefault.Checked != true)
                     {
@@ -540,9 +540,7 @@ namespace GTI.Modules.SystemSettings.UI
                 SetValueToDefault();
                 if (chkbxUseDefault.Checked != false) { chkbxUseDefault.Checked = false; }
                 chkbxUseDefault.Visible = false;
-            }
-            
-
+            }          
             m_bModified = false;
             return true;
         }
@@ -550,7 +548,7 @@ namespace GTI.Modules.SystemSettings.UI
        
         private bool SavePlayerSettings()
         {
-            List<SettingValue> arrSettings = new List<SettingValue>();
+            List<SettingValue> arrSettings = new List<SettingValue>();//knc
             SettingValue s = new SettingValue();
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
@@ -686,7 +684,8 @@ namespace GTI.Modules.SystemSettings.UI
                 Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 0);//add
             }
 
-        
+            DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  
+            DeviceSettingmsg.Send();
 
             // Set the flag
             m_bModified = false;
@@ -777,7 +776,11 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkbxUseDefault.Checked == true)
+            Common.BeginWait();
+            this.SuspendLayout();
+
+
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 groupBox5.Enabled = false;
                 SetValueToDefault();
@@ -787,6 +790,10 @@ namespace GTI.Modules.SystemSettings.UI
                 groupBox5.Enabled = true;
                 SetUIValue();
             }
+
+
+            this.ResumeLayout(true);
+            Common.EndWait();
         }
 
         #endregion

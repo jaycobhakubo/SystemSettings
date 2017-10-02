@@ -51,7 +51,7 @@ namespace GTI.Modules.SystemSettings.UI
             tabCtrl_PlayMode.TabPages.Clear();
             tabCtrl_PlayMode.TabPages.Add(tbpgDefault);
 
-            for (int iDevice = 0; iDevice < m_devices.Length; iDevice++)//knc
+            for (int iDevice = 0; iDevice < m_devices.Length; iDevice++)
             {
                 if (m_devices[iDevice].LoginConnectionType == DeviceLoginConnectionType.Player)
                 {
@@ -61,104 +61,77 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         tabCtrl_PlayMode.TabPages.Add(tbpgTraveler);
                         playModeSettingsTraveler.DeviceId = Device.Traveler.Id;                    
-                        playModeSettingsTraveler.LoadSettings();
-                        //tabCtrl_PlayMode.TabPages.Add(tbPageInit("Traveler", (tempID)));
+                        playModeSettingsTraveler.LoadSettings();                 
                     }
                     else if (tempID == Device.Tracker.Id)
                     {
                         tabCtrl_PlayMode.TabPages.Add(tbpgTracker);
                         playModeSettingsTracker.DeviceId = Device.Tracker.Id;
-                        playModeSettingsTracker.LoadSettings();
-                       // tabCtrl_PlayMode.TabPages.Add(tbPageInit("Tracker", (tempID)));
+                        playModeSettingsTracker.LoadSettings();                    
                     }
                     else if (tempID == Device.Explorer.Id)//RALLY TA 7728 Changed MINI to EXPLORER
                     {
                         tabCtrl_PlayMode.TabPages.Add(tbpgExplorer2);
                         playModeSettingsExplorer2.DeviceId = Device.Explorer.Id;
                         playModeSettingsExplorer2.LoadSettings();
-                        //tabCtrl_PlayMode.TabPages.Add(tbPageInit("Explorer", (tempID)));
                     }
                     else if (tempID == Device.Fixed.Id)
                     {
                         tabCtrl_PlayMode.TabPages.Add(tbpgFixedBase);
                         playModeSettingsFixedBase.DeviceId = Device.Fixed.Id;
-                        playModeSettingsFixedBase.LoadSettings();
-                        //tabCtrl_PlayMode.TabPages.Add(tbPageInit("Fixed Base", (tempID)));
+                        playModeSettingsFixedBase.LoadSettings();                   
                     }
                     else if (tempID == Device.Traveler2.Id) // Rally US765
                     {
                         tabCtrl_PlayMode.TabPages.Add(tbpgTraveler2);
                         playModeSettingsTraveler2.DeviceId = Device.Traveler2.Id;
-                        playModeSettingsTraveler2.LoadSettings();
-                        //tabCtrl_PlayMode.TabPages.Add(tbPageInit("Traveler2", (tempID)));
+                        playModeSettingsTraveler2.LoadSettings();                    
                     }
                     else if (tempID == Device.Tablet.Id)
                     {
                         tabCtrl_PlayMode.TabPages.Add(tbpgTedE);
                         playModeSettingsTedE.DeviceId = Device.Tablet.Id;
-                        playModeSettingsTedE.LoadSettings();
-                        //tabCtrl_PlayMode.TabPages.Add(tbPageInit("Ted-E", (tempID)));
+                        playModeSettingsTedE.LoadSettings();                     
                     }
                 }
             }
         }
 
-        private TabPage tbPageInit(string DeviceName, int DeviceId)
-        {
-            var x = new TabPage();
-            x.Text = DeviceName;
-            x.Name = DeviceName;
-            x.Tag = DeviceId;
-
-            if (tabCtrl_PlayMode.TabPages.Count == 0)
-            {
-                x.BackColor = Color.Transparent;
-                x.BackgroundImage = Properties.Resources.GradientFull;
-                PlayModeSettings y = new PlayModeSettings();
-                y.DeviceId = DeviceId;
-                y.Dock = DockStyle.Fill;
-                y.LoadSettings();
-                x.Controls.Add(y);
-            }
-            return x;
-        }
-
-
         private PlayModeSettings SetSelectedDevice(int deviceId)
         {
             if (deviceId == 0)
             {
-            selectedPlayModeSettings = playModeSettingsDefault;
+                selectedPlayModeSettings = playModeSettingsDefault;
             }
             else
             if (deviceId == Device.Traveler.Id)
             {
-            selectedPlayModeSettings = playModeSettingsTraveler;
+                selectedPlayModeSettings = playModeSettingsTraveler;
             }
             else
             if (deviceId == Device.Tracker.Id)
             {
-            selectedPlayModeSettings = playModeSettingsTracker;
+                selectedPlayModeSettings = playModeSettingsTracker;
             }
             else
             if (deviceId == Device.Fixed.Id)
             {
-            selectedPlayModeSettings = playModeSettingsFixedBase;
+                selectedPlayModeSettings = playModeSettingsFixedBase;
             }
             else
             if (deviceId == Device.Explorer.Id)
             {
-            selectedPlayModeSettings = playModeSettingsExplorer2;
+                selectedPlayModeSettings = playModeSettingsExplorer2;
             }
             else
             if (deviceId == Device.Traveler2.Id)
             {
-            selectedPlayModeSettings = playModeSettingsTraveler2;
+                selectedPlayModeSettings = playModeSettingsTraveler2;
             }
             else
             if (deviceId == Device.Tablet.Id)
             {
-            selectedPlayModeSettings = playModeSettingsTedE;
+                selectedPlayModeSettings = playModeSettingsTedE;
             }
             return selectedPlayModeSettings;
         }
@@ -166,8 +139,8 @@ namespace GTI.Modules.SystemSettings.UI
         private void tabCtrl_PlayMode_SelectedIndexChanged(object sender, EventArgs e)
         {
             var tabCrtrl = (TabControl)sender;
-            TabPage x = tabCrtrl.SelectedTab;
-            int DeviceId = Convert.ToInt32(x.Tag);
+            TabPage tTablPageSelected = tabCrtrl.SelectedTab;
+            int DeviceId = Convert.ToInt32(tTablPageSelected.Tag);
             SetSelectedDevice(DeviceId);       
         }
 
