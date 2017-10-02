@@ -103,7 +103,7 @@ namespace GTI.Modules.SystemSettings.UI
                 }
             }
         }
-        //knc
+        
         private CheckableSetting AddSettingToList(Setting settingId, SettingValue value, string name, List<int> playMode, bool licenseEnabled)
         {
             CheckableSetting newSetting = new CheckableSetting();

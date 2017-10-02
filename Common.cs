@@ -295,17 +295,12 @@ namespace GTI.Modules.SystemSettings
 				}
 
 				// Get the global settings
-				if (!GetSystemSettings())//knc
+				if (!GetSystemSettings())
 				{
 					return false;
 				}
 
-                if (!GetDeviceSettings())
-                {
-                    return false;
-                }
-              
-  
+               
                 if (! GetLicenseFile())
                 {
                     return false;
@@ -441,7 +436,7 @@ namespace GTI.Modules.SystemSettings
             }             
         }
 
-		public static bool GetSystemSettings()//knc
+		public static bool GetSystemSettings()
 		{
 		    if (m_GetSystemSettingsMessage != null)
 		    {
@@ -897,7 +892,7 @@ namespace GTI.Modules.SystemSettings
         }
 
 
-	    public static string GetSystemSetting(Setting s)//knc
+	    public static string GetSystemSetting(Setting s)
 		{
 			int nCount = m_GetSystemSettingsMessage.Settings.Length;
 			for (int i = 0; i < nCount; i++)
@@ -1029,7 +1024,7 @@ namespace GTI.Modules.SystemSettings
             }
         }
         
-		public static bool SetSystemSettingValue(Setting s, string strValue)//knc
+		public static bool SetSystemSettingValue(Setting s, string strValue)
 		{
 			int nCount = m_GetSystemSettingsMessage.Settings.Length;
 			for (int i = 0; i < nCount; i++)

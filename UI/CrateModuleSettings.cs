@@ -68,7 +68,7 @@ namespace GTI.Modules.SystemSettings.UI
             // Fill in the operator global settings
 		    
             //START RALLY DE 6614
-            if (Common.GetSystemSettings() == false)//knc
+            if (Common.GetSystemSettings() == false)
             {
                 return false;
             }

@@ -21,6 +21,11 @@ namespace GTI.Modules.SystemSettings.UI
         public PlayerDeviceSettings()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.DoubleBuffer, true);
+
         }
 
         public override void OnActivate(object o)

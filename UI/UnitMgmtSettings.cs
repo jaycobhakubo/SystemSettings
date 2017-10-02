@@ -65,7 +65,7 @@ namespace GTI.Modules.SystemSettings.UI
 			Common.BeginWait();
 			this.SuspendLayout();
 
-			bool bResult = LoadUnitMgmtSettings();//knc
+			bool bResult = LoadUnitMgmtSettings();
 
 			this.ResumeLayout(true);
 			Common.EndWait();
@@ -96,7 +96,7 @@ namespace GTI.Modules.SystemSettings.UI
 		#region Private Routines
         
        
-		private bool LoadUnitMgmtSettings()//knc
+		private bool LoadUnitMgmtSettings()
 		{
 
 			// Get the valid device types
@@ -430,7 +430,7 @@ namespace GTI.Modules.SystemSettings.UI
            
 			// Determine which device types are valid for this operator
 			int tempID;
-            for (int iDevice = 0; iDevice < msg.Devices.Length; iDevice++)//knc
+            for (int iDevice = 0; iDevice < msg.Devices.Length; iDevice++)
 			{
                 if (msg.Devices[iDevice].LoginConnectionType == DeviceLoginConnectionType.Player)
 				{

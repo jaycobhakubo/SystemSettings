@@ -31,37 +31,46 @@ namespace GTI.Modules.SystemSettings.UI
         public PlayerSettings()
         {
             InitializeComponent();
+
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.DoubleBuffer, true);
         }
 
         // Public Methods
         #region Public Methods
 
-        public override bool IsModified()
+        public  bool IsModified()
+      //  public override bool IsModified()
         {
             return m_bModified;
         }
 
-        public override void OnActivate(object o)
+        //public override void OnActivate(object o)
+        public void OnActivate(object o)
         {
         }
 
-        public override bool LoadSettings()
+        //public override bool LoadSettings()
+        public bool LoadSettings()
         {
-            Common.BeginWait();
-            this.SuspendLayout();
+            //Common.BeginWait();
+            //this.SuspendLayout();
             bool bResult = LoadPlayerSettings();
-            this.ResumeLayout(true);
-            Common.EndWait();
+            //this.ResumeLayout(true);
+            //Common.EndWait();
             return true;
         }
 
-        public override bool SaveSettings()
+        //public override bool SaveSettings()
+        public bool SaveSettings()
         {
-            Common.BeginWait();
-            this.SuspendLayout();
+            //Common.BeginWait();
+            //this.SuspendLayout();
             bool bResult = SavePlayerSettings();
-            this.ResumeLayout(true);
-            Common.EndWait();
+            //this.ResumeLayout(true);
+            //Common.EndWait();
             return bResult;
         }
 
@@ -548,7 +557,7 @@ namespace GTI.Modules.SystemSettings.UI
        
         private bool SavePlayerSettings()
         {
-            List<SettingValue> arrSettings = new List<SettingValue>();//knc
+            List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
@@ -666,7 +675,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 // Update the server
-                if (!Common.SaveSystemSettings(arrSettings.ToArray()))//knc
+                if (!Common.SaveSystemSettings(arrSettings.ToArray()))
                 {
                     return false;
                 }

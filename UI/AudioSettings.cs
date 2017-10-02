@@ -312,20 +312,19 @@ namespace GTI.Modules.SystemSettings.UI
 
 		private bool LoadAudioSettings()
 		{
-            bool x = false;
+            bool tResult = false;
             if (DeviceId != 0)
             {
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
                 if (DeviceSettingmsg.ReturnCode != 0)
                 {
-                 //   MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetSystemSettingsFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
                     return false;
                 }
-           
-                x = SetUIValue();
-                
-                if (DeviceSettingmsg.DeviceSettingList.Length == 0 || x == false)//if zero then default is set
+
+                tResult = SetUIValue();
+
+                if (DeviceSettingmsg.DeviceSettingList.Length == 0 || tResult == false)//if zero then default is set
                 {                         
                     if (chkbxUseDefault.Checked != true)
                     {
@@ -451,12 +450,8 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 0);
             }
-
-		
-
 			// Set the flag
 			m_bModified = false;
-
 			return true;
 		}
 
@@ -471,8 +466,7 @@ namespace GTI.Modules.SystemSettings.UI
 		}
 
 		private void OnModified(object sender, EventArgs e)
-		{
-            
+		{            
 			m_bModified = true;
 		}
 

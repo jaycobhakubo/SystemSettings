@@ -646,7 +646,7 @@ namespace GTI.Modules.SystemSettings.UI
         }
         //END RALLY DE 6756
 
-		private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)//knc
+		private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             //START FIX RALLY DE2661 -- this needs to be done before the new control 
             //is displayed
@@ -660,34 +660,21 @@ namespace GTI.Modules.SystemSettings.UI
 
             if (m_activeControl != null)
             {
-
                 //m_activeControl.Enabled = false;
                 //m_activeControl.Hide();
                 //m_activeControl.Visible = false;
                 m_activeControl.SendToBack();
             }
-
           
 
 			// Get the selected node and display its panel
         
 			m_previousControl = m_activeControl;
 			m_activeControl = (SettingsControl)(treeView1.SelectedNode.Tag);
-			m_activeControl.OnActivate(treeView1.SelectedNode);
-
-            //if (m_activeControl.Tag != "PlayerDevice")//Skip Player Device Setting too much flickering going on.
-            //{
-            //if (m_activeControl.Enabled != true)
-            //{
-            m_activeControl.Enabled = true;
-            //}
-                m_activeControl.Show();
-              
-            //if (m_activeControl.Visible != true)
-            //{
-                m_activeControl.Visible = true; 
-                //}
-		 
+			m_activeControl.OnActivate(treeView1.SelectedNode);  
+            if (m_activeControl.Enabled != true)    m_activeControl.Enabled = true;
+            m_activeControl.Show();
+            if (m_activeControl.Visible != true) m_activeControl.Visible = true; 		 
             m_activeControl.BringToFront();
 			m_activeControl.Update();
             treeView1.SelectedNode = e.Node;
@@ -709,7 +696,7 @@ namespace GTI.Modules.SystemSettings.UI
 			Application.DoEvents();
 		}
 
-		private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)//knc
+		private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)
 		{
 			// Prompt to save if modified
 			if (m_activeControl != null)
