@@ -36,6 +36,11 @@ namespace GTI.Modules.SystemSettings.UI
             SetStyle(ControlStyles.UserPaint, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             SetStyle(ControlStyles.DoubleBuffer, true);
+
+            this.SuspendLayout();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.DoubleBuffered = true;
+            this.ResumeLayout(false);
         }
 
         // Public Methods
@@ -55,22 +60,22 @@ namespace GTI.Modules.SystemSettings.UI
         //public override bool LoadSettings()
         public bool LoadSettings()
         {
-            //Common.BeginWait();
-            //this.SuspendLayout();
+            Common.BeginWait();
+            this.SuspendLayout();
             bool bResult = LoadPlayerSettings();
-            //this.ResumeLayout(true);
-            //Common.EndWait();
+            this.ResumeLayout(true);
+            Common.EndWait();
             return true;
         }
 
         //public override bool SaveSettings()
         public bool SaveSettings()
         {
-            //Common.BeginWait();
-            //this.SuspendLayout();
+            Common.BeginWait();
+            this.SuspendLayout();
             bool bResult = SavePlayerSettings();
-            //this.ResumeLayout(true);
-            //Common.EndWait();
+            this.ResumeLayout(true);
+            Common.EndWait();
             return bResult;
         }
 

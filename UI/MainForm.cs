@@ -646,6 +646,8 @@ namespace GTI.Modules.SystemSettings.UI
         }
         //END RALLY DE 6756
 
+        private bool m_UserControlOpen = false;
+
 		private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             //START FIX RALLY DE2661 -- this needs to be done before the new control 
@@ -663,7 +665,7 @@ namespace GTI.Modules.SystemSettings.UI
                 //m_activeControl.Enabled = false;
                 //m_activeControl.Hide();
                 //m_activeControl.Visible = false;
-                m_activeControl.SendToBack();
+                m_activeControl.SendToBack();             
             }
           
 
@@ -672,9 +674,26 @@ namespace GTI.Modules.SystemSettings.UI
 			m_previousControl = m_activeControl;
 			m_activeControl = (SettingsControl)(treeView1.SelectedNode.Tag);
 			m_activeControl.OnActivate(treeView1.SelectedNode);  
+
+
             if (m_activeControl.Enabled != true)    m_activeControl.Enabled = true;
-            m_activeControl.Show();
-            if (m_activeControl.Visible != true) m_activeControl.Visible = true; 		 
+
+            if (m_activeControl.Tag != null && m_activeControl.Tag.ToString() == "PlayerDevice")
+            {
+                if (m_UserControlOpen == false)
+                {
+                    m_activeControl.Show();
+                    m_UserControlOpen = true;
+                }                                                    
+            }
+            else
+            {
+                m_activeControl.Show();
+            }
+          
+            if (m_activeControl.Visible != true) m_activeControl.Visible = true; 	
+	 
+
             m_activeControl.BringToFront();
 			m_activeControl.Update();
             treeView1.SelectedNode = e.Node;

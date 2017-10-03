@@ -167,6 +167,7 @@
             this.Controls.Add(this.tabCtrl_AudioDevice);
             this.DoubleBuffered = true;
             this.Name = "PlayerDeviceAudioSettings";
+            this.Tag = "PlayerDevice";
             this.tabCtrl_AudioDevice.ResumeLayout(false);
             this.tbpgDefault.ResumeLayout(false);
             this.tbpgFixedBase.ResumeLayout(false);

@@ -161,10 +161,16 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void tabCtrl_PlayerSettingDevice_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Common.BeginWait();
+            this.SuspendLayout();
             var tabCrtrl = (TabControl)sender;
             TabPage tTabPage = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTabPage.Tag);
-            SetSelectedDevice(DeviceId);                                   
+            SetSelectedDevice(DeviceId);             
+            this.ResumeLayout(true);
+            Common.EndWait();
+
+                                 
         }
 
         public Device[] Devices
