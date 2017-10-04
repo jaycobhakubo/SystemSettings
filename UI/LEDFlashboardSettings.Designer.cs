@@ -65,7 +65,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtPrimarySendFreq = new System.Windows.Forms.TextBox();
+            this.txtPrimarySendFreq = new System.Windows.Forms.NumericUpDown();
             this.cbobxPrimaryStreamSubIdx = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -105,7 +105,7 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txtSecondarySendFreq = new System.Windows.Forms.TextBox();
+            this.txtSecondarySendFreq = new System.Windows.Forms.NumericUpDown();
             this.cbobxSecondaryStreamSubIdx = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -145,7 +145,7 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.txtTertiarySendFreq = new System.Windows.Forms.TextBox();
+            this.txtTertiarySendFreq = new System.Windows.Forms.NumericUpDown();
             this.cbobxTertiaryStreamSubIdx = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -157,12 +157,15 @@
             this.tabPage1.SuspendLayout();
             this.primaryLEDGroupbox.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPrimarySendFreq)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.secondaryLEDGroupbox.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSecondarySendFreq)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tertiaryLEDGroupbox.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTertiarySendFreq)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -189,6 +192,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
             this.tabPage1.Controls.Add(this.primaryLEDGroupbox);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
@@ -197,10 +202,10 @@
             this.tabPage1.Size = new System.Drawing.Size(698, 484);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Primary Stream";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // primaryLEDGroupbox
             // 
+            this.primaryLEDGroupbox.BackColor = System.Drawing.Color.Transparent;
             this.primaryLEDGroupbox.Controls.Add(this.btnPPatternOn);
             this.primaryLEDGroupbox.Controls.Add(this.btnPLastCallSign);
             this.primaryLEDGroupbox.Controls.Add(this.btnPHotballFlashOff);
@@ -546,6 +551,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.txtPrimarySendFreq);
             this.groupBox2.Controls.Add(this.cbobxPrimaryStreamSubIdx);
             this.groupBox2.Controls.Add(this.label2);
@@ -560,18 +566,28 @@
             // 
             // txtPrimarySendFreq
             // 
-            this.txtPrimarySendFreq.Location = new System.Drawing.Point(358, 106);
+            this.txtPrimarySendFreq.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.txtPrimarySendFreq.Location = new System.Drawing.Point(358, 107);
+            this.txtPrimarySendFreq.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.txtPrimarySendFreq.Name = "txtPrimarySendFreq";
             this.txtPrimarySendFreq.Size = new System.Drawing.Size(279, 26);
-            this.txtPrimarySendFreq.TabIndex = 4;
+            this.txtPrimarySendFreq.TabIndex = 5;
+            this.txtPrimarySendFreq.ValueChanged += new System.EventHandler(this.numericUpDowns_ValueChanged);
+            this.txtPrimarySendFreq.LostFocus += new System.EventHandler(this.numericUpDowns_LostFocus);
             // 
             // cbobxPrimaryStreamSubIdx
             // 
+            this.cbobxPrimaryStreamSubIdx.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.cbobxPrimaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxPrimaryStreamSubIdx.Location = new System.Drawing.Point(358, 64);
             this.cbobxPrimaryStreamSubIdx.Name = "cbobxPrimaryStreamSubIdx";
             this.cbobxPrimaryStreamSubIdx.Size = new System.Drawing.Size(279, 30);
             this.cbobxPrimaryStreamSubIdx.TabIndex = 3;
+            this.cbobxPrimaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -600,10 +616,12 @@
             this.chkPrimaryEnableAdapter.TabIndex = 0;
             this.chkPrimaryEnableAdapter.Text = "Enable Adapter";
             this.chkPrimaryEnableAdapter.UseVisualStyleBackColor = true;
-            this.chkPrimaryEnableAdapter.CheckedChanged += new System.EventHandler(chkPrimaryEnableAdapter_CheckedChanged);
+            this.chkPrimaryEnableAdapter.CheckedChanged += new System.EventHandler(this.chkPrimaryEnableAdapter_CheckedChanged);
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
             this.tabPage2.Controls.Add(this.secondaryLEDGroupbox);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
@@ -612,10 +630,10 @@
             this.tabPage2.Size = new System.Drawing.Size(698, 484);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Secondary Stream";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // secondaryLEDGroupbox
             // 
+            this.secondaryLEDGroupbox.BackColor = System.Drawing.Color.Transparent;
             this.secondaryLEDGroupbox.Controls.Add(this.btnSPatternOn);
             this.secondaryLEDGroupbox.Controls.Add(this.btnSLastCallSign);
             this.secondaryLEDGroupbox.Controls.Add(this.btnSHotballFlashOff);
@@ -961,6 +979,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.txtSecondarySendFreq);
             this.groupBox4.Controls.Add(this.cbobxSecondaryStreamSubIdx);
             this.groupBox4.Controls.Add(this.label19);
@@ -975,18 +994,28 @@
             // 
             // txtSecondarySendFreq
             // 
-            this.txtSecondarySendFreq.Location = new System.Drawing.Point(358, 106);
+            this.txtSecondarySendFreq.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.txtSecondarySendFreq.Location = new System.Drawing.Point(358, 107);
+            this.txtSecondarySendFreq.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.txtSecondarySendFreq.Name = "txtSecondarySendFreq";
             this.txtSecondarySendFreq.Size = new System.Drawing.Size(279, 26);
-            this.txtSecondarySendFreq.TabIndex = 4;
+            this.txtSecondarySendFreq.TabIndex = 5;
+            this.txtSecondarySendFreq.ValueChanged += new System.EventHandler(this.numericUpDowns_ValueChanged);
+            this.txtSecondarySendFreq.LostFocus += new System.EventHandler(this.numericUpDowns_LostFocus);
             // 
             // cbobxSecondaryStreamSubIdx
             // 
+            this.cbobxSecondaryStreamSubIdx.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.cbobxSecondaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxSecondaryStreamSubIdx.Location = new System.Drawing.Point(358, 64);
             this.cbobxSecondaryStreamSubIdx.Name = "cbobxSecondaryStreamSubIdx";
             this.cbobxSecondaryStreamSubIdx.Size = new System.Drawing.Size(279, 30);
             this.cbobxSecondaryStreamSubIdx.TabIndex = 3;
+            this.cbobxSecondaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label19
             // 
@@ -1015,10 +1044,12 @@
             this.chkSecondaryEnableAdapter.TabIndex = 0;
             this.chkSecondaryEnableAdapter.Text = "Enable Adapter";
             this.chkSecondaryEnableAdapter.UseVisualStyleBackColor = true;
-            this.chkSecondaryEnableAdapter.CheckedChanged += new System.EventHandler(chkSecondaryEnableAdapter_CheckedChanged);
+            this.chkSecondaryEnableAdapter.CheckedChanged += new System.EventHandler(this.chkSecondaryEnableAdapter_CheckedChanged);
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage3.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
             this.tabPage3.Controls.Add(this.tertiaryLEDGroupbox);
             this.tabPage3.Controls.Add(this.groupBox5);
             this.tabPage3.Location = new System.Drawing.Point(4, 31);
@@ -1026,10 +1057,10 @@
             this.tabPage3.Size = new System.Drawing.Size(698, 484);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Tertiary Stream";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tertiaryLEDGroupbox
             // 
+            this.tertiaryLEDGroupbox.BackColor = System.Drawing.Color.Transparent;
             this.tertiaryLEDGroupbox.Controls.Add(this.btnTPatternOn);
             this.tertiaryLEDGroupbox.Controls.Add(this.btnTLastCallSign);
             this.tertiaryLEDGroupbox.Controls.Add(this.btnTHotballFlashOff);
@@ -1375,6 +1406,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.Controls.Add(this.txtTertiarySendFreq);
             this.groupBox5.Controls.Add(this.cbobxTertiaryStreamSubIdx);
             this.groupBox5.Controls.Add(this.label21);
@@ -1389,18 +1421,28 @@
             // 
             // txtTertiarySendFreq
             // 
-            this.txtTertiarySendFreq.Location = new System.Drawing.Point(358, 106);
+            this.txtTertiarySendFreq.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.txtTertiarySendFreq.Location = new System.Drawing.Point(358, 107);
+            this.txtTertiarySendFreq.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.txtTertiarySendFreq.Name = "txtTertiarySendFreq";
             this.txtTertiarySendFreq.Size = new System.Drawing.Size(279, 26);
-            this.txtTertiarySendFreq.TabIndex = 4;
+            this.txtTertiarySendFreq.TabIndex = 5;
+            this.txtTertiarySendFreq.ValueChanged += new System.EventHandler(this.numericUpDowns_ValueChanged);
+            this.txtTertiarySendFreq.LostFocus += new System.EventHandler(this.numericUpDowns_LostFocus);
             // 
             // cbobxTertiaryStreamSubIdx
             // 
+            this.cbobxTertiaryStreamSubIdx.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.cbobxTertiaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxTertiaryStreamSubIdx.Location = new System.Drawing.Point(358, 64);
             this.cbobxTertiaryStreamSubIdx.Name = "cbobxTertiaryStreamSubIdx";
             this.cbobxTertiaryStreamSubIdx.Size = new System.Drawing.Size(279, 30);
             this.cbobxTertiaryStreamSubIdx.TabIndex = 3;
+            this.cbobxTertiaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label21
             // 
@@ -1429,7 +1471,7 @@
             this.chkTertiaryEnableAdapter.TabIndex = 0;
             this.chkTertiaryEnableAdapter.Text = "Enable Adapter";
             this.chkTertiaryEnableAdapter.UseVisualStyleBackColor = true;
-            this.chkTertiaryEnableAdapter.CheckedChanged += new System.EventHandler(chkTertiaryEnableAdapter_CheckedChanged);
+            this.chkTertiaryEnableAdapter.CheckedChanged += new System.EventHandler(this.chkTertiaryEnableAdapter_CheckedChanged);
             // 
             // btnReset
             // 
@@ -1445,6 +1487,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.Size = new System.Drawing.Size(121, 30);
             this.btnReset.TabIndex = 21;
             this.btnReset.Text = "&Reset";
@@ -1465,6 +1508,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.Size = new System.Drawing.Size(121, 30);
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "&Save";
@@ -1474,6 +1518,7 @@
             // LEDFlashboardSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
@@ -1487,16 +1532,19 @@
             this.primaryLEDGroupbox.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPrimarySendFreq)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.secondaryLEDGroupbox.ResumeLayout(false);
             this.secondaryLEDGroupbox.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSecondarySendFreq)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tertiaryLEDGroupbox.ResumeLayout(false);
             this.tertiaryLEDGroupbox.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTertiarySendFreq)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1512,7 +1560,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox primaryLEDGroupbox;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtPrimarySendFreq;
         private System.Windows.Forms.ComboBox cbobxPrimaryStreamSubIdx;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -1583,7 +1630,6 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox txtSecondarySendFreq;
         private System.Windows.Forms.ComboBox cbobxSecondaryStreamSubIdx;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
@@ -1622,10 +1668,12 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox txtTertiarySendFreq;
         private System.Windows.Forms.ComboBox cbobxTertiaryStreamSubIdx;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.CheckBox chkTertiaryEnableAdapter;
+        private System.Windows.Forms.NumericUpDown txtPrimarySendFreq;
+        private System.Windows.Forms.NumericUpDown txtSecondarySendFreq;
+        private System.Windows.Forms.NumericUpDown txtTertiarySendFreq;
     }
 }

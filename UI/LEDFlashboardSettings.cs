@@ -50,6 +50,13 @@ namespace GTI.Modules.SystemSettings.UI
                 return false;
             }
 
+            if (string.IsNullOrWhiteSpace(txtPrimarySendFreq.Text) || string.IsNullOrWhiteSpace(txtSecondarySendFreq.Text)
+                || string.IsNullOrWhiteSpace(txtTertiarySendFreq.Text))
+            {
+                MessageBox.Show("All fields must have a value. Unable to save.", "Save Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
             Business.GenericCBOItem priCBO, secCBO, terCBO;
@@ -603,6 +610,7 @@ namespace GTI.Modules.SystemSettings.UI
         private void colorButton_Click(System.Object sender, System.EventArgs e)
         {
             setNewButtonColor((Button)sender);
+            m_bModified = true;
         }
 
         private void OnModified(object sender, EventArgs e)
@@ -713,6 +721,21 @@ namespace GTI.Modules.SystemSettings.UI
                 }
             }
             return objReturn;
+        }
+
+        private void numericUpDowns_ValueChanged(object sender, EventArgs e)
+        {
+            m_bModified = true;
+        }
+
+        private void StreamSubIdx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            m_bModified = true;
+        }
+
+        private void numericUpDowns_LostFocus(object sender, EventArgs e)
+        {
+            m_bModified = true;
         }
     }
 }

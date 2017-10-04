@@ -774,6 +774,24 @@
   <data name="&gt;&gt;label16.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="gtiListView1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="gtiListView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 113</value>
+  </data>
+  <data name="gtiListView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 98</value>
+  </data>
+  <data name="gtiListView1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;gtiListView1.Name" xml:space="preserve">
+    <value>gtiListView1</value>
+  </data>
+  <data name="&gt;&gt;gtiListView1.Type" xml:space="preserve">
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
   <data name="columnHeader21.Text" xml:space="preserve">
     <value>Tier Level</value>
   </data>
@@ -798,23 +816,23 @@
   <data name="columnHeader24.Width" type="System.Int32, mscorlib">
     <value>92</value>
   </data>
-  <data name="gtiListView1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="gtiListView2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <data name="gtiListView1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="gtiListView2.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 113</value>
   </data>
-  <data name="gtiListView1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="gtiListView2.Size" type="System.Drawing.Size, System.Drawing">
     <value>412, 98</value>
   </data>
-  <data name="gtiListView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="gtiListView2.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;gtiListView1.Name" xml:space="preserve">
-    <value>gtiListView1</value>
+  <data name="&gt;&gt;gtiListView2.Name" xml:space="preserve">
+    <value>gtiListView2</value>
   </data>
-  <data name="&gt;&gt;gtiListView1.Type" xml:space="preserve">
-    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  <data name="&gt;&gt;gtiListView2.Type" xml:space="preserve">
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="columnHeader25.Text" xml:space="preserve">
     <value>Tier Level</value>
@@ -839,24 +857,6 @@
   </data>
   <data name="columnHeader28.Width" type="System.Int32, mscorlib">
     <value>92</value>
-  </data>
-  <data name="gtiListView2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="gtiListView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 113</value>
-  </data>
-  <data name="gtiListView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 98</value>
-  </data>
-  <data name="gtiListView2.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;gtiListView2.Name" xml:space="preserve">
-    <value>gtiListView2</value>
-  </data>
-  <data name="&gt;&gt;gtiListView2.Type" xml:space="preserve">
-    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="m_labelCurrencyInventoryFixedBase.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1096,7 +1096,7 @@
     <value>m_removeButtonFixedBase</value>
   </data>
   <data name="&gt;&gt;m_removeButtonFixedBase.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_removeButtonFixedBase.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1129,7 +1129,7 @@
     <value>m_AddButtonFixedBase</value>
   </data>
   <data name="&gt;&gt;m_AddButtonFixedBase.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_AddButtonFixedBase.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1177,7 +1177,7 @@
     <value>m_gtiListViewFixedBase</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewFixedBase.Type" xml:space="preserve">
-    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewFixedBase.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1654,7 +1654,7 @@
     <value>m_removeButtonTraveler</value>
   </data>
   <data name="&gt;&gt;m_removeButtonTraveler.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_removeButtonTraveler.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -1687,37 +1687,13 @@
     <value>m_AddButtonTraveler</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTraveler.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTraveler.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTraveler.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Tier Level</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="columnHeader7.Text" xml:space="preserve">
-    <value>End</value>
-  </data>
-  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="columnHeader8.Text" xml:space="preserve">
-    <value>Fee</value>
-  </data>
-  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
-    <value>92</value>
   </data>
   <data name="m_gtiListViewTraveler.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1735,7 +1711,7 @@
     <value>m_gtiListViewTraveler</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewTraveler.Type" xml:space="preserve">
-    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewTraveler.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -2212,7 +2188,7 @@
     <value>m_removeButtonTraveler2</value>
   </data>
   <data name="&gt;&gt;m_removeButtonTraveler2.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_removeButtonTraveler2.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -2245,37 +2221,13 @@
     <value>m_AddButtonTraveler2</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTraveler2.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTraveler2.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTraveler2.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="columnHeader9.Text" xml:space="preserve">
-    <value>Tier Level</value>
-  </data>
-  <data name="columnHeader9.Width" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="columnHeader10.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="columnHeader10.Width" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="columnHeader11.Text" xml:space="preserve">
-    <value>End</value>
-  </data>
-  <data name="columnHeader11.Width" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="columnHeader12.Text" xml:space="preserve">
-    <value>Fee</value>
-  </data>
-  <data name="columnHeader12.Width" type="System.Int32, mscorlib">
-    <value>92</value>
   </data>
   <data name="m_gtiListViewTraveler2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -2293,7 +2245,7 @@
     <value>m_gtiListViewTraveler2</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewTraveler2.Type" xml:space="preserve">
-    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewTraveler2.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -2770,7 +2722,7 @@
     <value>m_removeButtonTracker</value>
   </data>
   <data name="&gt;&gt;m_removeButtonTracker.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_removeButtonTracker.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -2803,37 +2755,13 @@
     <value>m_AddButtonTracker</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTracker.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTracker.Parent" xml:space="preserve">
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTracker.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="columnHeader13.Text" xml:space="preserve">
-    <value>Tier Level</value>
-  </data>
-  <data name="columnHeader13.Width" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="columnHeader14.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="columnHeader14.Width" type="System.Int32, mscorlib">
-    <value>103</value>
-  </data>
-  <data name="columnHeader15.Text" xml:space="preserve">
-    <value>End</value>
-  </data>
-  <data name="columnHeader15.Width" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="columnHeader16.Text" xml:space="preserve">
-    <value>Fee</value>
-  </data>
-  <data name="columnHeader16.Width" type="System.Int32, mscorlib">
-    <value>92</value>
   </data>
   <data name="m_gtiListViewTracker.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -2851,7 +2779,7 @@
     <value>m_gtiListViewTracker</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewTracker.Type" xml:space="preserve">
-    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewTracker.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -3115,7 +3043,7 @@
     <value>m_removeButtonExplorer</value>
   </data>
   <data name="&gt;&gt;m_removeButtonExplorer.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_removeButtonExplorer.Parent" xml:space="preserve">
     <value>groupBox10</value>
@@ -3148,37 +3076,13 @@
     <value>m_AddButtonExplorer</value>
   </data>
   <data name="&gt;&gt;m_AddButtonExplorer.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_AddButtonExplorer.Parent" xml:space="preserve">
     <value>groupBox10</value>
   </data>
   <data name="&gt;&gt;m_AddButtonExplorer.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="columnHeader17.Text" xml:space="preserve">
-    <value>Tier Level</value>
-  </data>
-  <data name="columnHeader17.Width" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="columnHeader18.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="columnHeader18.Width" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="columnHeader19.Text" xml:space="preserve">
-    <value>End</value>
-  </data>
-  <data name="columnHeader19.Width" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="columnHeader20.Text" xml:space="preserve">
-    <value>Fee</value>
-  </data>
-  <data name="columnHeader20.Width" type="System.Int32, mscorlib">
-    <value>92</value>
   </data>
   <data name="m_gtiListViewExplorer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -3196,7 +3100,7 @@
     <value>m_gtiListViewExplorer</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewExplorer.Type" xml:space="preserve">
-    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_gtiListViewExplorer.Parent" xml:space="preserve">
     <value>groupBox10</value>
@@ -3648,6 +3552,375 @@
   <data name="&gt;&gt;m_tabPageMini.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;m_labelCurrencyInventoryTedE.Name" xml:space="preserve">
+    <value>m_labelCurrencyInventoryTedE</value>
+  </data>
+  <data name="&gt;&gt;m_labelCurrencyInventoryTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_labelCurrencyInventoryTedE.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;m_labelCurrencyInventoryTedE.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_textFeeInventoryTedE.Name" xml:space="preserve">
+    <value>m_textFeeInventoryTedE</value>
+  </data>
+  <data name="&gt;&gt;m_textFeeInventoryTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_textFeeInventoryTedE.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;m_textFeeInventoryTedE.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_rdoInventoryTedE.Name" xml:space="preserve">
+    <value>m_rdoInventoryTedE</value>
+  </data>
+  <data name="&gt;&gt;m_rdoInventoryTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_rdoInventoryTedE.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;m_rdoInventoryTedE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeeInventoryTedE.Name" xml:space="preserve">
+    <value>m_labelFeeInventoryTedE</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeeInventoryTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeeInventoryTedE.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeeInventoryTedE.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_labelFrequencyTedE.Name" xml:space="preserve">
+    <value>m_labelFrequencyTedE</value>
+  </data>
+  <data name="&gt;&gt;m_labelFrequencyTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_labelFrequencyTedE.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;m_labelFrequencyTedE.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;m_cboFrequencyTedE.Name" xml:space="preserve">
+    <value>m_cboFrequencyTedE</value>
+  </data>
+  <data name="&gt;&gt;m_cboFrequencyTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_cboFrequencyTedE.Parent" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;m_cboFrequencyTedE.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 313</value>
+  </data>
+  <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 88</value>
+  </data>
+  <data name="groupBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.Name" xml:space="preserve">
+    <value>groupBox11</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.Parent" xml:space="preserve">
+    <value>m_tabpageTedE</value>
+  </data>
+  <data name="&gt;&gt;groupBox11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_removeButtonTedE.Name" xml:space="preserve">
+    <value>m_removeButtonTedE</value>
+  </data>
+  <data name="&gt;&gt;m_removeButtonTedE.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;m_removeButtonTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_removeButtonTedE.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_AddButtonTedE.Name" xml:space="preserve">
+    <value>m_AddButtonTedE</value>
+  </data>
+  <data name="&gt;&gt;m_AddButtonTedE.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;m_AddButtonTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_AddButtonTedE.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;m_gtiListViewTedE.Name" xml:space="preserve">
+    <value>m_gtiListViewTedE</value>
+  </data>
+  <data name="&gt;&gt;m_gtiListViewTedE.Type" xml:space="preserve">
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;m_gtiListViewTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_gtiListViewTedE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;m_rdoPerUseTedE.Name" xml:space="preserve">
+    <value>m_rdoPerUseTedE</value>
+  </data>
+  <data name="&gt;&gt;m_rdoPerUseTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_rdoPerUseTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_rdoPerUseTedE.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeeCurrencyPerUseTedE.Name" xml:space="preserve">
+    <value>m_labelFeeCurrencyPerUseTedE</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeeCurrencyPerUseTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeeCurrencyPerUseTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeeCurrencyPerUseTedE.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeePerUseTedE.Name" xml:space="preserve">
+    <value>m_labelFeePerUseTedE</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeePerUseTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeePerUseTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_labelFeePerUseTedE.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;m_textFeePerUseTedE.Name" xml:space="preserve">
+    <value>m_textFeePerUseTedE</value>
+  </data>
+  <data name="&gt;&gt;m_textFeePerUseTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_textFeePerUseTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_textFeePerUseTedE.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;m_labelStartValueTedE.Name" xml:space="preserve">
+    <value>m_labelStartValueTedE</value>
+  </data>
+  <data name="&gt;&gt;m_labelStartValueTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_labelStartValueTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_labelStartValueTedE.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;m_TextStartPerUseTedE.Name" xml:space="preserve">
+    <value>m_TextStartPerUseTedE</value>
+  </data>
+  <data name="&gt;&gt;m_TextStartPerUseTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_TextStartPerUseTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_TextStartPerUseTedE.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 15</value>
+  </data>
+  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 280</value>
+  </data>
+  <data name="groupBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;groupBox12.Name" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;groupBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox12.Parent" xml:space="preserve">
+    <value>m_tabpageTedE</value>
+  </data>
+  <data name="&gt;&gt;groupBox12.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_tabpageTedE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="m_tabpageTedE.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="m_tabpageTedE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>628, 455</value>
+  </data>
+  <data name="m_tabpageTedE.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="m_tabpageTedE.Text" xml:space="preserve">
+    <value>TedE</value>
+  </data>
+  <data name="&gt;&gt;m_tabpageTedE.Name" xml:space="preserve">
+    <value>m_tabpageTedE</value>
+  </data>
+  <data name="&gt;&gt;m_tabpageTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_tabpageTedE.Parent" xml:space="preserve">
+    <value>m_tabControl</value>
+  </data>
+  <data name="&gt;&gt;m_tabpageTedE.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="m_tabControl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="m_tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 36</value>
+  </data>
+  <data name="m_tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>636, 490</value>
+  </data>
+  <data name="m_tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;m_tabControl.Name" xml:space="preserve">
+    <value>m_tabControl</value>
+  </data>
+  <data name="&gt;&gt;m_tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_tabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Tier Level</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="columnHeader7.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>Fee</value>
+  </data>
+  <data name="columnHeader8.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="columnHeader9.Text" xml:space="preserve">
+    <value>Tier Level</value>
+  </data>
+  <data name="columnHeader9.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="columnHeader10.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="columnHeader11.Text" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="columnHeader11.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="columnHeader12.Text" xml:space="preserve">
+    <value>Fee</value>
+  </data>
+  <data name="columnHeader12.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="columnHeader13.Text" xml:space="preserve">
+    <value>Tier Level</value>
+  </data>
+  <data name="columnHeader13.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="columnHeader14.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="columnHeader14.Width" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="columnHeader15.Text" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="columnHeader15.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="columnHeader16.Text" xml:space="preserve">
+    <value>Fee</value>
+  </data>
+  <data name="columnHeader16.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="columnHeader17.Text" xml:space="preserve">
+    <value>Tier Level</value>
+  </data>
+  <data name="columnHeader17.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="columnHeader18.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="columnHeader18.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="columnHeader19.Text" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="columnHeader19.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="columnHeader20.Text" xml:space="preserve">
+    <value>Fee</value>
+  </data>
+  <data name="columnHeader20.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
   <data name="m_labelCurrencyInventoryTedE.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3840,27 +4113,6 @@
   <data name="&gt;&gt;m_cboFrequencyTedE.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 313</value>
-  </data>
-  <data name="groupBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 88</value>
-  </data>
-  <data name="groupBox11.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.Name" xml:space="preserve">
-    <value>groupBox11</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.Parent" xml:space="preserve">
-    <value>m_tabpageTedE</value>
-  </data>
-  <data name="&gt;&gt;groupBox11.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="m_removeButtonTedE.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
   </data>
@@ -3886,7 +4138,7 @@
     <value>m_removeButtonTedE</value>
   </data>
   <data name="&gt;&gt;m_removeButtonTedE.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_removeButtonTedE.Parent" xml:space="preserve">
     <value>groupBox12</value>
@@ -3919,13 +4171,37 @@
     <value>m_AddButtonTedE</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTedE.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTedE.Parent" xml:space="preserve">
     <value>groupBox12</value>
   </data>
   <data name="&gt;&gt;m_AddButtonTedE.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="m_gtiListViewTedE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="m_gtiListViewTedE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 135</value>
+  </data>
+  <data name="m_gtiListViewTedE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>411, 124</value>
+  </data>
+  <data name="m_gtiListViewTedE.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;m_gtiListViewTedE.Name" xml:space="preserve">
+    <value>m_gtiListViewTedE</value>
+  </data>
+  <data name="&gt;&gt;m_gtiListViewTedE.Type" xml:space="preserve">
+    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;m_gtiListViewTedE.Parent" xml:space="preserve">
+    <value>groupBox12</value>
+  </data>
+  <data name="&gt;&gt;m_gtiListViewTedE.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="columnHeader29.Text" xml:space="preserve">
     <value>Tier Level</value>
@@ -3950,30 +4226,6 @@
   </data>
   <data name="columnHeader32.Width" type="System.Int32, mscorlib">
     <value>92</value>
-  </data>
-  <data name="m_gtiListViewTedE.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="m_gtiListViewTedE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 135</value>
-  </data>
-  <data name="m_gtiListViewTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 124</value>
-  </data>
-  <data name="m_gtiListViewTedE.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;m_gtiListViewTedE.Name" xml:space="preserve">
-    <value>m_gtiListViewTedE</value>
-  </data>
-  <data name="&gt;&gt;m_gtiListViewTedE.Type" xml:space="preserve">
-    <value>GTI.Controls.GTIListView, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
-  </data>
-  <data name="&gt;&gt;m_gtiListViewTedE.Parent" xml:space="preserve">
-    <value>groupBox12</value>
-  </data>
-  <data name="&gt;&gt;m_gtiListViewTedE.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="m_rdoPerUseTedE.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4158,78 +4410,6 @@
   <data name="&gt;&gt;m_TextStartPerUseTedE.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="groupBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 15</value>
-  </data>
-  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 280</value>
-  </data>
-  <data name="groupBox12.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;groupBox12.Name" xml:space="preserve">
-    <value>groupBox12</value>
-  </data>
-  <data name="&gt;&gt;groupBox12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox12.Parent" xml:space="preserve">
-    <value>m_tabpageTedE</value>
-  </data>
-  <data name="&gt;&gt;groupBox12.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="m_tabpageTedE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="m_tabpageTedE.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="m_tabpageTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>628, 455</value>
-  </data>
-  <data name="m_tabpageTedE.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="m_tabpageTedE.Text" xml:space="preserve">
-    <value>TedE</value>
-  </data>
-  <data name="&gt;&gt;m_tabpageTedE.Name" xml:space="preserve">
-    <value>m_tabpageTedE</value>
-  </data>
-  <data name="&gt;&gt;m_tabpageTedE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_tabpageTedE.Parent" xml:space="preserve">
-    <value>m_tabControl</value>
-  </data>
-  <data name="&gt;&gt;m_tabpageTedE.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="m_tabControl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="m_tabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 36</value>
-  </data>
-  <data name="m_tabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>636, 490</value>
-  </data>
-  <data name="m_tabControl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;m_tabControl.Name" xml:space="preserve">
-    <value>m_tabControl</value>
-  </data>
-  <data name="&gt;&gt;m_tabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_tabControl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;m_tabControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="m_errorValidator.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -4264,7 +4444,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -4297,7 +4477,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.315, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -4510,6 +4690,6 @@
     <value>DistributorFeesSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.9, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.10.0.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

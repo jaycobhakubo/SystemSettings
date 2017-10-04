@@ -382,7 +382,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.GetString("cbFilter.Items6"),
             resources.GetString("cbFilter.Items7"),
             resources.GetString("cbFilter.Items8"),
-            resources.GetString("cbFilter.Items9")});
+            resources.GetString("cbFilter.Items9"),
+            resources.GetString("cbFilter.Items10")});
             this.cbFilter.Name = "cbFilter";
             this.cbFilter.SelectedIndexChanged += new System.EventHandler(this.cbFilter_SelectedIndexChanged);
             this.cbFilter.TextUpdate += new System.EventHandler(this.cbFilter_TextUpdate);
