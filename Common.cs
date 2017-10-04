@@ -197,6 +197,7 @@ namespace GTI.Modules.SystemSettings
         public static GetSettingsMessage m_GetSystemSettingsMessage;
         public static GetLicenseFileSettingsMessage m_GetLicenseFileMessage;
         public static GetHallSettingsMessage m_GetHallSettingsMessage;
+        public static GetDeviceSettingsMessage m_GetDeviceSettingsMessage;
 
         public static bool MultipleCharites
         {
@@ -428,6 +429,35 @@ namespace GTI.Modules.SystemSettings
                 return false;
             }
         }
+
+        public static bool GetDeviceSettings()
+        {
+            if (m_GetDeviceSettingsMessage != null)
+            {
+                return true;
+            }
+
+            m_GetDeviceSettingsMessage = new GetDeviceSettingsMessage(0, 0);
+
+            try
+            {
+                m_GetDeviceSettingsMessage.Send();
+
+                if (m_GetDeviceSettingsMessage.ReturnCode != 0)
+                {
+                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetDeviceSettingsFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetDeviceSettingsFailed, e));
+                return false;
+            }
+        }
+
 
         public static bool GetSystemSettings()
         {
@@ -741,6 +771,30 @@ namespace GTI.Modules.SystemSettings
                 return false;
             }
         }
+
+        public static bool SaveDeviceSettings(int DeviceId, SettingValue[] arrSettings, byte isDelete)
+        {
+            SetDeviceSettings msg = new SetDeviceSettings(DeviceId, arrSettings, isDelete);
+
+            try
+            {
+                msg.Send();
+
+                if (msg.ServerReturnCode != GTIServerReturnCode.Success)
+                {
+                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdSystemSettingsFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)), Properties.Resources.ModuleName);
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdSystemSettingsFailed, e), Properties.Resources.ModuleName);
+                return false;
+            }
+        }
+
 
         public static bool GetOpSettingValue(Setting setting, out SettingValue val)
         {
