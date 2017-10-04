@@ -12,15 +12,15 @@ using GTI.Modules.SystemSettings.Data;
 
 namespace GTI.Modules.SystemSettings
 {
-    /// <summary>
-    /// Common class
-    /// </summary>
-    class Common
-    {
-        // Private constructor
-        static Common()
+	/// <summary>
+	/// Common class
+	/// </summary>
+	 class Common
+	{
+		// Private constructor
+		static Common() 
         {
-            m_GlobalSettings = new SortedSet<int>
+            m_GlobalSettings  = new SortedSet<int>
             {
                 (int)Setting.MaxCreditWinAmount , 
                 (int)Setting.TaxFormMinWinAmount ,
@@ -144,59 +144,37 @@ namespace GTI.Modules.SystemSettings
                 (int)Setting.ThirdPartyPlayerInterfaceNeedPINForRedemptionVoid,
 	            (int)Setting.EnableValidation,
     	        (int)Setting.ProductValidationCardCount,
-        	    (int)Setting.MaxValidationPerTransaction,
-                (int)Setting.ProtocolAdapterEnabled,
-                (int)Setting.ProtocolAdapterStreamIdx,
-                (int)Setting.ProtocolAdapterSendFreq,
-                (int)Setting.ProtocolAdapterCommPort,
-                (int)Setting.LEDAdapterEnabled,
-                (int)Setting.LEDAdapterStreamIdx,
-                (int)Setting.LEDAdapterSendFreq,
-                (int)Setting.LEDBingoFlashOff,
-                (int)Setting.LEDBingoFlashOn,
-                (int)Setting.LEDBingoNormal,
-                (int)Setting.LEDCountSign,
-                (int)Setting.LEDCallColorOff,
-                (int)Setting.LEDCallColor,
-                (int)Setting.LEDCallFlashOn,
-                (int)Setting.LEDCallFlashOff,
-                (int)Setting.LEDHotball,
-                (int)Setting.LEDHotballCall,
-                (int)Setting.LEDHotballFlashOn,
-                (int)Setting.LEDHotballFlashOff,
-                (int)Setting.LEDGameSign,
-                (int)Setting.LEDLastCallSign,
-                (int)Setting.LEDPatternOff,
-                (int)Setting.LEDPatternOn
+        	    (int)Setting.MaxValidationPerTransaction
             };
         }
 
-        // Constants
-        const int ADMIN_STAFF_ID = 2;
+		// Constants
+		const int ADMIN_STAFF_ID = 2;
 
-        private static readonly SortedSet<int> m_GlobalSettings;
-        // Public Properties
-        #region "Public Properties"
-        private static int m_nOperatorId = 0;
+        private static readonly SortedSet<int> m_GlobalSettings; 
+		// Public Properties
+		#region "Public Properties"
+		private static int m_nOperatorId = 0;
         private static int m_nCompanyId = 0;
         private static int m_nStaffId = 0;
         private static int m_nMachineId = 0;
         private static int m_nDeviceId = 0;
-        private static bool m_bInitialized = false;
-        private static bool m_bCreditEnabled = false;
+		private static bool m_bInitialized = false;
+		private static bool m_bCreditEnabled = false;
         private static bool m_bTXPayoutsEnabled = false;
         private static bool m_bMultipleCharities;
-        private static string m_sOperatorName;
-        private static int m_nCurrentOperatorId = 0;
-        private static bool m_bCBBEnabled = false;//RALLY TA 6095 disable CBB
+	    private static string m_sOperatorName;
+	    private static int m_nCurrentOperatorId = 0;
+	    private static bool m_bCBBEnabled = false;//RALLY TA 6095 disable CBB
 
-        // Operator / Machine data
-        public static GetOperatorCompleteMessage m_GetOperatorCompleteMessage;
-        public static GetSettingsOperatorMessage m_GetSettingsOperatorMessage;
-        public static GetMachineDataMessage m_GetMachineDataMessage;
-        public static GetSettingsMessage m_GetSystemSettingsMessage;
-        public static GetLicenseFileSettingsMessage m_GetLicenseFileMessage;
-        public static GetHallSettingsMessage m_GetHallSettingsMessage;
+		// Operator / Machine data
+		public static GetOperatorCompleteMessage m_GetOperatorCompleteMessage;
+		public static GetSettingsOperatorMessage m_GetSettingsOperatorMessage;
+		public static GetMachineDataMessage m_GetMachineDataMessage;
+		public static GetSettingsMessage m_GetSystemSettingsMessage;
+	    public static GetLicenseFileSettingsMessage m_GetLicenseFileMessage;
+	    public static GetHallSettingsMessage m_GetHallSettingsMessage;
+        public static GetDeviceSettingsMessage m_GetDeviceSettingsMessage;
 
         public static bool MultipleCharites
         {
@@ -205,17 +183,17 @@ namespace GTI.Modules.SystemSettings
         }
 
         //START RALLY TA 6095 -- check CBB enableability in license file
-        public static bool CBBEnabled
-        {
+	    public static bool CBBEnabled
+	    {
             get { return Common.m_bCBBEnabled; }
-            set { Common.m_bCBBEnabled = value; }
-        }
+            set { Common.m_bCBBEnabled = value;}
+	    }
         //END RALLY TA 6095
-        public static string OperatorName
-        {
+	    public static string OperatorName
+	    {
             set { m_sOperatorName = value; }
             get { return m_sOperatorName; }
-        }
+	    }
 
         public static int OperatorId
         {
@@ -223,61 +201,61 @@ namespace GTI.Modules.SystemSettings
             get { return m_nOperatorId; }
         }
 
-        public static int CompanyId
+		public static int CompanyId
         {
             set { m_nCompanyId = value; }
             get { return m_nCompanyId; }
         }
 
-        public static int StaffId
+		public static int StaffId
         {
-            set { m_nStaffId = value; }
-            get { return m_nStaffId; }
+			set { m_nStaffId = value; }
+			get { return m_nStaffId; }
         }
 
-        public static int DeviceId
+		public static int DeviceId
         {
-            set { m_nDeviceId = value; }
-            get { return m_nDeviceId; }
+			set { m_nDeviceId = value; }
+			get { return m_nDeviceId; }
         }
 
-        public static int MachineId
+		public static int MachineId
         {
-            set { m_nMachineId = value; }
-            get { return m_nMachineId; }
+			set { m_nMachineId = value; }
+			get { return m_nMachineId; }
         }
 
-        public static bool IsInitialized
-        {
-            get { return m_bInitialized; }
-        }
+		public static bool IsInitialized
+		{
+			get { return m_bInitialized; }
+		}
 
-        public static bool IsAdmin
-        {
-            get { return (StaffId == ADMIN_STAFF_ID); }
-        }
+		public static bool IsAdmin
+		{
+			get { return (StaffId == ADMIN_STAFF_ID); }
+		}
 
-        public static bool IsCreditEnabled
-        {
-            get { return m_bCreditEnabled; }
-        }
+		public static bool IsCreditEnabled
+		{
+			get { return m_bCreditEnabled; }
+		}
 
         public static bool AreTXPayoutsEnabled
         {
             get { return m_bTXPayoutsEnabled; }
         }
 
-        #endregion // Member properties
+		#endregion // Member properties
 
 
-        // Public Static Methods
-        #region Public static methods
+		// Public Static Methods
+		#region Public static methods
 
 
-        public static bool InitModuleData(int OperatorIDParameter)
-        {
-            try
-            {
+		public static bool InitModuleData(int OperatorIDParameter)
+		{
+			try
+			{
                 ModuleComm modComm = null;
 
                 modComm = new ModuleComm();
@@ -289,40 +267,41 @@ namespace GTI.Modules.SystemSettings
                 else
                 {
                     m_nOperatorId = OperatorIDParameter;
-                }
+                } 
                 m_nDeviceId = modComm.GetDeviceId();
                 m_nMachineId = modComm.GetMachineId();
                 m_nStaffId = modComm.GetStaffId();
 
-                if (!GetHallSettings())
-                {
-                    return false;
-                }
-                // Get the operator table data
-                if (!GetOperatorData())
-                {
-                    return false;
-                }
+				if (!GetHallSettings())
+				{
+				    return false;
+				}
+				// Get the operator table data
+				if (!GetOperatorData())
+				{
+					return false;
+				}
 
-                // Get the operator settings
-                if (!GetOperatorSettings())
-                {
-                    return false;
-                }
+				// Get the operator settings
+				if (!GetOperatorSettings())
+				{
+					return false;
+				}
 
-                // Get the machine arrMachines
-                if (!GetMachineData())
-                {
-                    return false;
-                }
+				// Get the machine arrMachines
+				if (!GetMachineData())
+				{
+					return false;
+				}
 
-                // Get the global settings
-                if (!GetSystemSettings())
-                {
-                    return false;
-                }
+				// Get the global settings
+				if (!GetSystemSettings())
+				{
+					return false;
+				}
 
-                if (!GetLicenseFile())
+               
+                if (! GetLicenseFile())
                 {
                     return false;
                 }
@@ -335,44 +314,44 @@ namespace GTI.Modules.SystemSettings
 
                 //START RALLY TA 6095 -- set CBB enabled
                 SetCBBSetting();
-
+			    
                 //END RALLY TA 6095
 
-                // Set the company id
-                m_nCompanyId = m_GetOperatorCompleteMessage.OperatorList[0].CompanyID;
+				// Set the company id
+			    m_nCompanyId = m_GetOperatorCompleteMessage.OperatorList[0].CompanyID;
 
                 // Set the current operator name
-                m_sOperatorName = GetCurrentOperatorName();
+			    m_sOperatorName = GetCurrentOperatorName();
 
-                // Set the flag
-                m_bInitialized = true;
+				// Set the flag
+				m_bInitialized = true;
 
-                return true;
-            }
-            catch (Exception e)
-            {
-                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.ModuleInitFailed, e));
-                return false;
-            }
-        }
+				return true;
+			}
+			catch (Exception e)
+			{
+				MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.ModuleInitFailed, e));
+				return false;
+			}
+		}
 
         private static string GetCurrentOperatorName()
         {
             Operator currentOperator = m_GetOperatorCompleteMessage.OperatorList.Find(i => i.Id == m_nOperatorId);
-
-            if (currentOperator != null)
+            
+            if(currentOperator != null)
             {
                 return currentOperator.Name;
             }
             else
             {
                 return "";
-            }
+            }           
         }
 
-        private static bool GetLicenseFile()
+        private  static bool GetLicenseFile()
         {
-
+            
             //this is just loaded for testing
             //algorithm:
             //get message
@@ -413,10 +392,10 @@ namespace GTI.Modules.SystemSettings
             try
             {
                 m_GetHallSettingsMessage.Send();
-                if (m_GetHallSettingsMessage.ServerReturnCode != GTIServerReturnCode.Success)
+                if(m_GetHallSettingsMessage.ServerReturnCode != GTIServerReturnCode.Success)
                 {
                     MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetSystemSettingsFailed, GTIClient.GetServerErrorString(m_GetHallSettingsMessage.ServerReturnCode)));
-                    return false;
+                    return false;   
                 }
                 return true;
             }
@@ -429,93 +408,121 @@ namespace GTI.Modules.SystemSettings
             }
         }
 
-        public static bool GetSystemSettings()
+        public static bool GetDeviceSettings()
         {
-            if (m_GetSystemSettingsMessage != null)
+            if (m_GetDeviceSettingsMessage != null)
             {
                 return true;
             }
 
-            m_GetSystemSettingsMessage = new GetSettingsMessage();
+            m_GetDeviceSettingsMessage = new GetDeviceSettingsMessage(0, 0);
 
             try
             {
-                m_GetSystemSettingsMessage.Send();
+                m_GetDeviceSettingsMessage.Send();
+
+                if (m_GetDeviceSettingsMessage.ReturnCode != 0)
+                {
+                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetDeviceSettingsFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetDeviceSettingsFailed, e));
+                return false;
+            }             
+        }
+
+		public static bool GetSystemSettings()
+		{
+		    if (m_GetSystemSettingsMessage != null)
+		    {
+		        return true;
+		    }
+
+		    m_GetSystemSettingsMessage = new GetSettingsMessage();
+
+			try
+			{
+				m_GetSystemSettingsMessage.Send();
                 if (m_GetSystemSettingsMessage.ServerReturnCode != GTIServerReturnCode.Success)
-                {
-                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetSystemSettingsFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
-                    return false;
-                }
+				{
+					MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetSystemSettingsFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
+					return false;
+				}
+			   
+				return true;
+			}
+			catch (Exception e)
+			{
+				MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetSystemSettingsFailed, e));
+				return false;
+			}   
+		}
 
-                return true;
-            }
-            catch (Exception e)
-            {
-                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetSystemSettingsFailed, e));
-                return false;
-            }
-        }
+		public static bool GetMachineData()
+		{
+			try
+			{
+				// Get the active machine arrMachines
+				m_GetMachineDataMessage = new GetMachineDataMessage(0);
+				m_GetMachineDataMessage.Send();
+				if (m_GetMachineDataMessage.ServerReturnCode != GTIServerReturnCode.Success)
+				{
+					MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetMachineDataFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
+					return false;
+				}
 
-        public static bool GetMachineData()
-        {
-            try
-            {
-                // Get the active machine arrMachines
-                m_GetMachineDataMessage = new GetMachineDataMessage(0);
-                m_GetMachineDataMessage.Send();
-                if (m_GetMachineDataMessage.ServerReturnCode != GTIServerReturnCode.Success)
-                {
-                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetMachineDataFailed, GTIClient.GetServerErrorString(m_GetMachineDataMessage.ServerReturnCode)));
-                    return false;
-                }
+				return true;
+			}
+			catch (Exception e)
+			{
+				MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetMachineDataFailed, e));
+				return false;
+			}
+		}
 
-                return true;
-            }
-            catch (Exception e)
-            {
-                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetMachineDataFailed, e));
-                return false;
-            }
-        }
+		public static SMachineData[] GetMachineList(int nDeviceId)
+		{
+			List<SMachineData>  machineList = new List<SMachineData>();
 
-        public static SMachineData[] GetMachineList(int nDeviceId)
-        {
-            List<SMachineData> machineList = new List<SMachineData>();
+			int nCount = m_GetMachineDataMessage.MachineDataList.Length;
+			for (int i = 0; i < nCount; i++)
+			{
+				if (m_GetMachineDataMessage.MachineDataList[i].nDeviceId == nDeviceId)
+				{
+					machineList.Add(m_GetMachineDataMessage.MachineDataList[i]);
+				}
+			}
 
-            int nCount = m_GetMachineDataMessage.MachineDataList.Length;
-            for (int i = 0; i < nCount; i++)
-            {
-                if (m_GetMachineDataMessage.MachineDataList[i].nDeviceId == nDeviceId)
-                {
-                    machineList.Add(m_GetMachineDataMessage.MachineDataList[i]);
-                }
-            }
+			return machineList.ToArray();
+		}
 
-            return machineList.ToArray();
-        }
-
-        public static bool GetOperatorData()
-        {
-            try
-            {
-                // Get the operator table data
-                m_GetOperatorCompleteMessage = new GetOperatorCompleteMessage(m_nOperatorId);
-
+		public static bool GetOperatorData()
+		{
+			try
+			{
+				// Get the operator table data
+				m_GetOperatorCompleteMessage = new GetOperatorCompleteMessage(m_nOperatorId);
+              
                 m_GetOperatorCompleteMessage.Send();
-                if (m_GetOperatorCompleteMessage.ServerReturnCode != GTIServerReturnCode.Success)
-                {
-                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetOperatorDataFailed, GTIClient.GetServerErrorString(m_GetOperatorCompleteMessage.ServerReturnCode)));
-                    return false;
-                }
+				if (m_GetOperatorCompleteMessage.ServerReturnCode != GTIServerReturnCode.Success)
+				{
+					MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetOperatorDataFailed, GTIClient.GetServerErrorString(m_GetOperatorCompleteMessage.ServerReturnCode)));
+					return false;
+				}
 
-                return true;
-            }
-            catch (Exception e)
-            {
-                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetOperatorDataFailed, e), Properties.Resources.ModuleName);
-                return false;
-            }
-        }
+				return true;
+			}
+			catch (Exception e)
+			{
+				MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetOperatorDataFailed, e), Properties.Resources.ModuleName);
+				return false;
+			}
+		}
 
         public static bool GetOperatorSettings(int operatorID)
         {
@@ -530,7 +537,7 @@ namespace GTI.Modules.SystemSettings
             if (m_GetOperatorCompleteMessage != null && m_GetOperatorCompleteMessage.OperatorList.Count > 0)
             {
                 OperatorFee operatorFee = m_GetOperatorCompleteMessage.OperatorList[0].OperatorFeeList.Find(i => i.DeviceId == deviceId);
-                if (operatorFee != null && decimal.TryParse(operatorFee.Fee, out returnValue))
+                if (operatorFee != null &&  decimal.TryParse(operatorFee.Fee, out returnValue))
                 {
                     return returnValue;
                 }
@@ -576,37 +583,37 @@ namespace GTI.Modules.SystemSettings
             return true;
         }
         //END RALLY 2018
-        public static bool GetOperatorSettings()
-        {
-            try
-            {
-                // Get the operator table data
-                m_GetSettingsOperatorMessage = new GetSettingsOperatorMessage(m_nOperatorId);
-                m_GetSettingsOperatorMessage.Send();
-                if (m_GetSettingsOperatorMessage.ServerReturnCode != GTIServerReturnCode.Success)
-                {
-                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetOperatorSettingsFailed, GTIClient.GetServerErrorString(m_GetOperatorCompleteMessage.ServerReturnCode)), Properties.Resources.ModuleName);
-                    return false;
-                }
+		public static bool GetOperatorSettings()
+		{
+			try
+			{
+				// Get the operator table data
+				m_GetSettingsOperatorMessage = new GetSettingsOperatorMessage(m_nOperatorId);
+				m_GetSettingsOperatorMessage.Send();
+				if (m_GetSettingsOperatorMessage.ServerReturnCode != GTIServerReturnCode.Success)
+				{
+					MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetOperatorSettingsFailed, GTIClient.GetServerErrorString(m_GetOperatorCompleteMessage.ServerReturnCode)), Properties.Resources.ModuleName);
+					return false;
+				}
 
-                return true;
-            }
-            catch (Exception e)
-            {
-                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetOperatorSettingsFailed, e), Properties.Resources.ModuleName);
-                return false;
-            }
-        }
+				return true;
+			}
+			catch (Exception e)
+			{
+				MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.GetOperatorSettingsFailed, e), Properties.Resources.ModuleName);
+				return false;
+			}
+		}
 
-        public static bool GetCreditEnabled()
-        {
+		public static bool GetCreditEnabled()
+		{
             //START RALLY DE 6755
             m_bCreditEnabled = false;
             string creditEnabled = GetLicenseSettingValue(LicenseSetting.CreditEnabled);
             m_bCreditEnabled = ParseBool(creditEnabled);
             return true;
             //END RALLY DE 6755
-        }
+		}
 
         public static bool GetTXPayoutsEnabled()
         {
@@ -618,37 +625,37 @@ namespace GTI.Modules.SystemSettings
             //end TA11876
         }
 
-        public static bool SaveOperatorData()
-        {
-            try
-            {
-                // Create a new message to save off the current operator settings
-                SetOperatorCompleteMessage msg = new SetOperatorCompleteMessage(m_GetOperatorCompleteMessage.OperatorList[0]);
-                msg.Send();
-                if (msg.ServerReturnCode != GTIServerReturnCode.Success)
-                {
-                    MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdOperatorDataFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)), Properties.Resources.ModuleName);
-                    return false;
-                }
+		public static bool SaveOperatorData()
+		{
+			try
+			{
+				// Create a new message to save off the current operator settings
+				SetOperatorCompleteMessage msg = new SetOperatorCompleteMessage(m_GetOperatorCompleteMessage.OperatorList[0]);
+				msg.Send();
+				if (msg.ServerReturnCode != GTIServerReturnCode.Success)
+				{
+					MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdOperatorDataFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)), Properties.Resources.ModuleName);
+					return false;
+				}
 
-                return true;
-            }
-            catch (Exception e)
-            {
-                MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdOperatorDataFailed, e), Properties.Resources.ModuleName);
-                return false;
-            }
-        }
+				return true;
+			}
+			catch (Exception e)
+			{
+				MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdOperatorDataFailed, e), Properties.Resources.ModuleName);
+				return false;
+			}
+		}
 
-        public static bool SaveOperatorSettings()
-        {
+		public static bool SaveOperatorSettings()
+		{
             return true;
-        }
+		}
 
-        public static bool IsGlobalSetting(SettingValue val)
-        {
+	    public static bool IsGlobalSetting(SettingValue val)
+	    {
             return m_GlobalSettings.Contains((int)val.Id);
-
+           
             //FIX RALLY DE 3258 added play type setting and allow play type toggle setting (134 and 146)
             //FIX RALLY DE 3290 added settings 145 and 180 share player points and player credits 
             //TASK RALLY TA 5745 added setting 196 Play with paper
@@ -678,11 +685,12 @@ namespace GTI.Modules.SystemSettings
             //RALLY US1942 Password lockout attempts
             //RALLY US1944 Automatic unlock time
             //RALLY DE10419 use hardware acceleration should be a global setting
-        }
+	    }
 
-        public static bool SaveSystemSettings(SettingValue[] arrSettings)
+
+        public static bool SaveDeviceSettings(int DeviceId, SettingValue[] arrSettings, byte isDelete)
         {
-            SetSystemSettingsMessage msg = new SetSystemSettingsMessage(arrSettings);
+            SetDeviceSettings msg = new SetDeviceSettings(DeviceId, arrSettings, isDelete);
 
             try
             {
@@ -695,14 +703,14 @@ namespace GTI.Modules.SystemSettings
                 }
 
                 //DEFECT RALLY DE 4008 START -- global settings not updated in operator settings table
-                foreach (SettingValue settingValue in arrSettings)
-                {
-                    Setting tempSetting = (Setting)Enum.ToObject(typeof(Setting), settingValue.Id);
-                    SetOpSettingValue(tempSetting, settingValue.Value);
-                    //START RALLY US1572
-                    SetSystemSettingValue(tempSetting, settingValue.Value);
-                    //END RALLY US1572
-                }
+                //foreach (SettingValue settingValue in arrSettings)
+                //{
+                //    Setting tempSetting = (Setting)Enum.ToObject(typeof(Setting), settingValue.Id);
+                //    SetOpSettingValue(tempSetting, settingValue.Value);
+                //    //START RALLY US1572
+                //    SetSystemSettingValue(tempSetting, settingValue.Value);
+                //    //END RALLY US1572
+                //}
                 //END DEFECT RALLY DE 4008
                 return true;
             }
@@ -713,10 +721,44 @@ namespace GTI.Modules.SystemSettings
             }
         }
 
+
+	    public static bool SaveSystemSettings( SettingValue[] arrSettings )
+		{
+			SetSystemSettingsMessage msg = new SetSystemSettingsMessage(arrSettings);
+
+			try
+			{
+				msg.Send();
+
+				if (msg.ServerReturnCode != GTIServerReturnCode.Success)
+				{
+					MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdSystemSettingsFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)), Properties.Resources.ModuleName);
+					return false;
+				}
+
+                //DEFECT RALLY DE 4008 START -- global settings not updated in operator settings table
+                foreach (SettingValue settingValue in arrSettings)
+                {
+                    Setting tempSetting = (Setting)Enum.ToObject(typeof(Setting), settingValue.Id);
+                    SetOpSettingValue(tempSetting, settingValue.Value);
+                    //START RALLY US1572
+                    SetSystemSettingValue(tempSetting, settingValue.Value);
+                    //END RALLY US1572
+                }
+                //END DEFECT RALLY DE 4008
+				return true;
+			}
+			catch (Exception e)
+			{
+				MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdSystemSettingsFailed, e), Properties.Resources.ModuleName);
+				return false;
+			}
+		}
+
         public static bool SaveHallSettings()
         {
             SetHallSettings msg = new SetHallSettings();
-
+            
             //These settings should be set by the module
             msg.HallId = m_GetHallSettingsMessage.HallId;
             msg.HallName = m_GetHallSettingsMessage.HallName;
@@ -739,32 +781,32 @@ namespace GTI.Modules.SystemSettings
             {
                 MessageForm.Show(Common.ActiveWnd, string.Format(Properties.Resources.UpdSystemSettingsFailed, e), Properties.Resources.ModuleName);
                 return false;
-            }
+            }           
         }
 
-        public static bool GetOpSettingValue(Setting setting, out SettingValue val)
-        {
-            int nSettingId = (int)setting;
+		public static bool GetOpSettingValue(Setting setting, out SettingValue val)
+		{
+			int nSettingId = (int)setting;
 
-            return m_GetSettingsOperatorMessage.SettingsDictionary.TryGetValue(nSettingId, out val);
-        }
+			return m_GetSettingsOperatorMessage.SettingsDictionary.TryGetValue(nSettingId, out val);
+		}
 
-        public static string GetOpSetting(Setting s, bool returnSystemSettingIfNoOpSetting = false)
-        {
-            SettingValue tempSettingValue;
+		public static string GetOpSetting(Setting s, bool returnSystemSettingIfNoOpSetting = false)
+		{
+			SettingValue tempSettingValue;
 
-            if (m_GetSettingsOperatorMessage.SettingsDictionary.TryGetValue((int)s, out tempSettingValue))
-            {
-                return tempSettingValue.Value;
-            }
-            else
-            {
+			if (m_GetSettingsOperatorMessage.SettingsDictionary.TryGetValue((int)s, out tempSettingValue))
+			{
+				return tempSettingValue.Value;
+			}
+			else
+			{
                 if (returnSystemSettingIfNoOpSetting)
                     return GetSystemSetting(s);
                 else
-                    return "";
-            }
-        }
+				    return "";
+			}
+		}
 
         public static bool UpdateOperatorSetting(Setting setting, string strValue)
         {
@@ -786,11 +828,11 @@ namespace GTI.Modules.SystemSettings
             return true;
         }
 
-        public static bool SetOpSettingValue(Setting setting, string value)
-        {
+		public static bool SetOpSettingValue(Setting setting, string value)
+		{
             if (UpdateOperatorSetting(setting, value))
             {
-
+                
                 try
                 {
                     ArrayList settings = new ArrayList();
@@ -816,7 +858,7 @@ namespace GTI.Modules.SystemSettings
             {
                 return false;
             }
-        }
+		}
 
         //US4434
         public static bool SetOpSettingValue(int operatorId, Setting setting, string value)
@@ -850,26 +892,20 @@ namespace GTI.Modules.SystemSettings
         }
 
 
-        public static string GetSystemSetting(Setting s)
-        {
-            int nCount = m_GetSystemSettingsMessage.Settings.Length;
-            for (int i = 0; i < nCount; i++)
-            {
-                if (m_GetSystemSettingsMessage.Settings[i].Id == (int)s)
-                {
-                    return m_GetSystemSettingsMessage.Settings[i].Value;
-                }
-            }
+	    public static string GetSystemSetting(Setting s)
+		{
+			int nCount = m_GetSystemSettingsMessage.Settings.Length;
+			for (int i = 0; i < nCount; i++)
+			{
+				if (m_GetSystemSettingsMessage.Settings[i].Id == (int)s)
+				{
+					return m_GetSystemSettingsMessage.Settings[i].Value;
+				}
+			}
+			// Setting not found
+			return "";
+		}
 
-            // Setting not found
-            return "";
-        }
-
-        /// <summary>
-        /// Returns whether or not the user can edit the sent in setting
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
         public static bool GetSettingEnabled(Setting s)
         {
             LicenseFileItem item = m_GetLicenseFileMessage.LicenseFileItems.Find(i => i.settingID == (int)s);
@@ -926,13 +962,13 @@ namespace GTI.Modules.SystemSettings
         public static bool GetSettingEnabled(LicenseSetting s)
         {
             LicenseFileItem item = m_GetLicenseFileMessage.LicenseFileItems.Find(i => i.settingID == (int)s);
-
-            if (item == null)
+            
+            if(item == null)
                 return true;
-
+            
             else
             {
-                if (item.settingPermission > 0)
+                if(item.settingPermission > 0)
                 {
                     return true;
                 }
@@ -954,7 +990,7 @@ namespace GTI.Modules.SystemSettings
                 if (item.value == null)
                     return "";
                 else
-                    return item.value;
+                return item.value;
             }
         }
 
@@ -987,172 +1023,172 @@ namespace GTI.Modules.SystemSettings
                 return item.settingRange;
             }
         }
+        
+		public static bool SetSystemSettingValue(Setting s, string strValue)
+		{
+			int nCount = m_GetSystemSettingsMessage.Settings.Length;
+			for (int i = 0; i < nCount; i++)
+			{
+				if (m_GetSystemSettingsMessage.Settings[i].Id == (int)s)
+				{
+					m_GetSystemSettingsMessage.Settings[i].Value = strValue;
+					return true;
+				}
+			}
 
-        public static bool SetSystemSettingValue(Setting s, string strValue)
-        {
-            int nCount = m_GetSystemSettingsMessage.Settings.Length;
-            for (int i = 0; i < nCount; i++)
-            {
-                if (m_GetSystemSettingsMessage.Settings[i].Id == (int)s)
-                {
-                    m_GetSystemSettingsMessage.Settings[i].Value = strValue;
-                    return true;
-                }
-            }
+			// Setting not found
+			return false;
+		}
 
-            // Setting not found
-            return false;
-        }
+      
 
+		public static bool CompareByteArrays(byte[] arr1, byte[] arr2)
+		{
+			if (arr1.Length != arr2.Length)
+			{
+				return false;
+			}
 
+			for (int i = 0; i < arr1.Length; i++)
+			{
+				if (arr1[i] != arr2[i])
+				{
+					return false;
+				}
+			}
 
-        public static bool CompareByteArrays(byte[] arr1, byte[] arr2)
-        {
-            if (arr1.Length != arr2.Length)
-            {
-                return false;
-            }
+			return true;
+		}
 
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                if (arr1[i] != arr2[i])
-                {
-                    return false;
-                }
-            }
+		// Properties
+		public static IWin32Window ActiveWnd
+		{
+			// Return the active window if it exists
+			get
+			{
+				if (Application.OpenForms.Count > 0)
+				{
+					return Application.OpenForms[Application.OpenForms.Count - 1];
+				}
+				else
+				{
+					return null;
+				}
+			}
+		}
 
-            return true;
-        }
+	    public static int CurrentOperatorId
+	    {
+	        get { return m_nCurrentOperatorId; }
+	        set { m_nCurrentOperatorId = value; }
+	    }
 
-        // Properties
-        public static IWin32Window ActiveWnd
-        {
-            // Return the active window if it exists
-            get
-            {
-                if (Application.OpenForms.Count > 0)
-                {
-                    return Application.OpenForms[Application.OpenForms.Count - 1];
-                }
-                else
-                {
-                    return null;
-                }
-            }
-        }
+	    public static void BeginWait()
+		{
+			Cursor.Current = Cursors.WaitCursor;
+		}
 
-        public static int CurrentOperatorId
-        {
-            get { return m_nCurrentOperatorId; }
-            set { m_nCurrentOperatorId = value; }
-        }
+		public static void EndWait()
+		{
+			Cursor.Current = Cursors.Default;
+		}
 
-        public static void BeginWait()
-        {
-            Cursor.Current = Cursors.WaitCursor;
-        }
-
-        public static void EndWait()
-        {
-            Cursor.Current = Cursors.Default;
-        }
-
-        // Check for an existing mutex
-        public static bool MutexExists(string strName)
-        {
-            try
-            {
-                Mutex m = Mutex.OpenExisting(strName);
-
-                return true;
-            }
-            catch (WaitHandleCannotBeOpenedException)
-            {
-                return false;
-            }
-            catch (Exception e)
-            {
-                MessageForm.Show(Common.ActiveWnd, "An unexpected error occurred while opening mutex : " + e);
-                return true;
-            }
-        }
+		// Check for an existing mutex
+		public static bool MutexExists(string strName)
+		{
+			try
+			{
+				Mutex m = Mutex.OpenExisting(strName);
+                
+				return true;
+			}
+			catch (WaitHandleCannotBeOpenedException)
+			{
+				return false;
+			}
+			catch (Exception e)
+			{
+				MessageForm.Show(Common.ActiveWnd, "An unexpected error occurred while opening mutex : " + e);
+				return true;
+			}
+		}
 
 
-        // The following routines were added to avoid Parse() from throwing exceptions for null values
-        public static bool ParseBool(string s)
-        {
-            // Try to parse the value
-            bool result;
-            bool default_value = false;
-            if (bool.TryParse(s, out result))
-            {
-                return result;
-            }
-            else
-            {
-                return default_value;
-            }
-        }
+		// The following routines were added to avoid Parse() from throwing exceptions for null values
+		public static bool ParseBool(string s)
+		{
+			// Try to parse the value
+			bool result;
+			bool default_value = false;
+			if (bool.TryParse(s, out result))
+			{
+				return result;
+			}
+			else
+			{
+				return default_value;
+			}
+		}
 
-        public static DateTime ParseDateTime(string s)
-        {
-            // Try to parse the value
-            DateTime result;
-            DateTime default_value = DateTime.Now;
-            if (DateTime.TryParse(s, out result))
-            {
-                return result;
-            }
-            else
-            {
-                return default_value;
-            }
-        }
+		public static DateTime ParseDateTime(string s)
+		{
+			// Try to parse the value
+			DateTime result;
+			DateTime default_value = DateTime.Now;
+			if (DateTime.TryParse(s, out result))
+			{
+				return result;
+			}
+			else
+			{
+				return default_value;
+			}
+		}
 
-        public static int ParseInt(string s)
-        {
-            // Try to parse the value
-            int result;
-            int default_value = 0;
-            if (int.TryParse(s, out result))
-            {
-                return result;
-            }
-            else
-            {
-                return default_value;
-            }
-        }
+		public static int ParseInt(string s)
+		{
+			// Try to parse the value
+			int result;
+			int default_value = 0;
+			if (int.TryParse(s, out result))
+			{
+				return result;
+			}
+			else
+			{
+				return default_value;
+			}
+		}
 
-        public static decimal ParseDecimal(string s)
-        {
-            // Try to parse the value
-            decimal result;
-            decimal default_value = 0;
-            if (decimal.TryParse(s, out result))
-            {
-                return result;
-            }
-            else
-            {
-                return default_value;
-            }
-        }
+		public static decimal ParseDecimal(string s)
+		{
+			// Try to parse the value
+			decimal result;
+			decimal default_value = 0;
+			if (decimal.TryParse(s, out result))
+			{
+				return result;
+			}
+			else
+			{
+				return default_value;
+			}
+		}
 
-        public static int GetDeviceCount(Device device)
-        {
-            int nDeviceCount = 0;
-            int nCount = m_GetMachineDataMessage.MachineDataList.Length;
-            for (int i = 0; i < nCount; i++)
-            {
-                if (m_GetMachineDataMessage.MachineDataList[i].nDeviceId == device.Id)
-                {
-                    nDeviceCount++;
-                }
-            }
+		public static int GetDeviceCount(Device device)
+		{
+			int nDeviceCount = 0;
+			int nCount = m_GetMachineDataMessage.MachineDataList.Length;
+			for (int i = 0; i < nCount; i++)
+			{
+				if (m_GetMachineDataMessage.MachineDataList[i].nDeviceId == device.Id)
+				{
+					nDeviceCount++;
+				}
+			}
 
-            return nDeviceCount;
-        }
+			return nDeviceCount;
+		}
 
         //START RALLY US1833
         internal static string GetLicenseFileExpriationDate()
@@ -1164,6 +1200,6 @@ namespace GTI.Modules.SystemSettings
         #endregion	// "Public Static Methods"
     }
 
-
+    
 }
 

@@ -30,6 +30,8 @@ namespace GTI.Modules.SystemSettings.UI
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RaffleSettings));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numMonetaryRaffleDuration = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             this.chkDisplayPlayerImage = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboRunFromLocation = new System.Windows.Forms.ComboBox();
@@ -44,6 +46,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonetaryRaffleDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRaffleDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayersNeededForRaffle)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +67,23 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // numMonetaryRaffleDuration
+            // 
+            resources.ApplyResources(this.numMonetaryRaffleDuration, "numMonetaryRaffleDuration");
+            this.numMonetaryRaffleDuration.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.numMonetaryRaffleDuration.Name = "numMonetaryRaffleDuration";
+            this.numMonetaryRaffleDuration.ValueChanged += new System.EventHandler(this.OnModified);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // chkDisplayPlayerImage
             // 
@@ -190,6 +210,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.Name = "RaffleSettings";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonetaryRaffleDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRaffleDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayersNeededForRaffle)).EndInit();
             this.ResumeLayout(false);

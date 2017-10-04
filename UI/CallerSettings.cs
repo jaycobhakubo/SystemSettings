@@ -223,7 +223,7 @@ namespace GTI.Modules.SystemSettings.UI
             }
             //END RALLY DE 6442
             //license file
-		    chkPrintWinners.Enabled = ParseBool(Common.GetOpSetting(Setting.PrintWinners, true));
+		    chkPrintWinners.Enabled = Common.GetSettingEnabled(Setting.PrintWinners);
 
             chkAllowPlayTypeToggle.Checked = ParseBool(Common.GetOpSetting(Setting.AllowPlayTypeToggle, true));  //RALLY DE9427
 

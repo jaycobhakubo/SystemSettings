@@ -32,24 +32,24 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtprimarySendFreq = new System.Windows.Forms.NumericUpDown();
             this.cbobxprimaryCommPort = new System.Windows.Forms.ComboBox();
-            this.txtprimarySendFreq = new System.Windows.Forms.TextBox();
             this.cbobxprimaryStreamSubIdx = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chkprimaryAdapterEnabled = new System.Windows.Forms.CheckBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txtsecondarySendFreq = new System.Windows.Forms.NumericUpDown();
             this.cbobxsecondaryCommPort = new System.Windows.Forms.ComboBox();
-            this.txtsecondarySendFreq = new System.Windows.Forms.TextBox();
             this.cbobxsecondaryStreamSubIdx = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.chksecondaryAdapterEnabled = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txttertiarySendFreq = new System.Windows.Forms.NumericUpDown();
             this.cbobxtertiaryCommPort = new System.Windows.Forms.ComboBox();
-            this.txttertiarySendFreq = new System.Windows.Forms.TextBox();
             this.cbobxtertiaryStreamSubIdx = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -60,12 +60,17 @@
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtprimarySendFreq)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsecondarySendFreq)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txttertiarySendFreq)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
             this.groupBox1.Controls.Add(this.tabControl1);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
@@ -82,8 +87,10 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.cbobxprimaryCommPort);
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
             this.tabPage1.Controls.Add(this.txtprimarySendFreq);
+            this.tabPage1.Controls.Add(this.cbobxprimaryCommPort);
             this.tabPage1.Controls.Add(this.cbobxprimaryStreamSubIdx);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
@@ -91,24 +98,32 @@
             this.tabPage1.Controls.Add(this.chkprimaryAdapterEnabled);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // cbobxprimaryCommPort
-            // 
-            this.cbobxprimaryCommPort.FormattingEnabled = true;
-            resources.ApplyResources(this.cbobxprimaryCommPort, "cbobxprimaryCommPort");
-            this.cbobxprimaryCommPort.Name = "cbobxprimaryCommPort";
             // 
             // txtprimarySendFreq
             // 
             resources.ApplyResources(this.txtprimarySendFreq, "txtprimarySendFreq");
+            this.txtprimarySendFreq.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.txtprimarySendFreq.Name = "txtprimarySendFreq";
+            this.txtprimarySendFreq.ValueChanged += new System.EventHandler(this.numericUpDowns_ValueChanged);
+            this.txtprimarySendFreq.LostFocus += new System.EventHandler(this.numericUpDowns_CheckEmpty);
+            // 
+            // cbobxprimaryCommPort
+            // 
+            resources.ApplyResources(this.cbobxprimaryCommPort, "cbobxprimaryCommPort");
+            this.cbobxprimaryCommPort.FormattingEnabled = true;
+            this.cbobxprimaryCommPort.Name = "cbobxprimaryCommPort";
+            this.cbobxprimaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxprimaryStreamSubIdx
             // 
-            this.cbobxprimaryStreamSubIdx.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxprimaryStreamSubIdx, "cbobxprimaryStreamSubIdx");
+            this.cbobxprimaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxprimaryStreamSubIdx.Name = "cbobxprimaryStreamSubIdx";
+            this.cbobxprimaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -130,12 +145,14 @@
             resources.ApplyResources(this.chkprimaryAdapterEnabled, "chkprimaryAdapterEnabled");
             this.chkprimaryAdapterEnabled.Name = "chkprimaryAdapterEnabled";
             this.chkprimaryAdapterEnabled.UseVisualStyleBackColor = true;
-            this.chkprimaryAdapterEnabled.CheckedChanged += new System.EventHandler(chkprimaryAdapterEnabled_CheckedChanged);
+            this.chkprimaryAdapterEnabled.CheckedChanged += new System.EventHandler(this.chkprimaryAdapterEnabled_CheckedChanged);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.cbobxsecondaryCommPort);
+            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
             this.tabPage2.Controls.Add(this.txtsecondarySendFreq);
+            this.tabPage2.Controls.Add(this.cbobxsecondaryCommPort);
             this.tabPage2.Controls.Add(this.cbobxsecondaryStreamSubIdx);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label5);
@@ -143,24 +160,32 @@
             this.tabPage2.Controls.Add(this.chksecondaryAdapterEnabled);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // cbobxsecondaryCommPort
-            // 
-            this.cbobxsecondaryCommPort.FormattingEnabled = true;
-            resources.ApplyResources(this.cbobxsecondaryCommPort, "cbobxsecondaryCommPort");
-            this.cbobxsecondaryCommPort.Name = "cbobxsecondaryCommPort";
             // 
             // txtsecondarySendFreq
             // 
             resources.ApplyResources(this.txtsecondarySendFreq, "txtsecondarySendFreq");
+            this.txtsecondarySendFreq.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.txtsecondarySendFreq.Name = "txtsecondarySendFreq";
+            this.txtsecondarySendFreq.ValueChanged += new System.EventHandler(this.numericUpDowns_ValueChanged);
+            this.txtsecondarySendFreq.LostFocus += new System.EventHandler(this.numericUpDowns_CheckEmpty);
+            // 
+            // cbobxsecondaryCommPort
+            // 
+            resources.ApplyResources(this.cbobxsecondaryCommPort, "cbobxsecondaryCommPort");
+            this.cbobxsecondaryCommPort.FormattingEnabled = true;
+            this.cbobxsecondaryCommPort.Name = "cbobxsecondaryCommPort";
+            this.cbobxsecondaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxsecondaryStreamSubIdx
             // 
-            this.cbobxsecondaryStreamSubIdx.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxsecondaryStreamSubIdx, "cbobxsecondaryStreamSubIdx");
+            this.cbobxsecondaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxsecondaryStreamSubIdx.Name = "cbobxsecondaryStreamSubIdx";
+            this.cbobxsecondaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -182,12 +207,14 @@
             resources.ApplyResources(this.chksecondaryAdapterEnabled, "chksecondaryAdapterEnabled");
             this.chksecondaryAdapterEnabled.Name = "chksecondaryAdapterEnabled";
             this.chksecondaryAdapterEnabled.UseVisualStyleBackColor = true;
-            this.chksecondaryAdapterEnabled.CheckedChanged += new System.EventHandler(chksecondaryAdapterEnabled_CheckedChanged);
+            this.chksecondaryAdapterEnabled.CheckedChanged += new System.EventHandler(this.chksecondaryAdapterEnabled_CheckedChanged);
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.cbobxtertiaryCommPort);
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage3.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
             this.tabPage3.Controls.Add(this.txttertiarySendFreq);
+            this.tabPage3.Controls.Add(this.cbobxtertiaryCommPort);
             this.tabPage3.Controls.Add(this.cbobxtertiaryStreamSubIdx);
             this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Controls.Add(this.label8);
@@ -195,24 +222,32 @@
             this.tabPage3.Controls.Add(this.chktertiaryAdapterEnabled);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // cbobxtertiaryCommPort
-            // 
-            this.cbobxtertiaryCommPort.FormattingEnabled = true;
-            resources.ApplyResources(this.cbobxtertiaryCommPort, "cbobxtertiaryCommPort");
-            this.cbobxtertiaryCommPort.Name = "cbobxtertiaryCommPort";
             // 
             // txttertiarySendFreq
             // 
             resources.ApplyResources(this.txttertiarySendFreq, "txttertiarySendFreq");
+            this.txttertiarySendFreq.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.txttertiarySendFreq.Name = "txttertiarySendFreq";
+            this.txttertiarySendFreq.ValueChanged += new System.EventHandler(this.numericUpDowns_ValueChanged);
+            this.txttertiarySendFreq.LostFocus += new System.EventHandler(this.numericUpDowns_CheckEmpty);
+            // 
+            // cbobxtertiaryCommPort
+            // 
+            resources.ApplyResources(this.cbobxtertiaryCommPort, "cbobxtertiaryCommPort");
+            this.cbobxtertiaryCommPort.FormattingEnabled = true;
+            this.cbobxtertiaryCommPort.Name = "cbobxtertiaryCommPort";
+            this.cbobxtertiaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxtertiaryStreamSubIdx
             // 
-            this.cbobxtertiaryStreamSubIdx.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxtertiaryStreamSubIdx, "cbobxtertiaryStreamSubIdx");
+            this.cbobxtertiaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxtertiaryStreamSubIdx.Name = "cbobxtertiaryStreamSubIdx";
+            this.cbobxtertiaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -234,7 +269,7 @@
             resources.ApplyResources(this.chktertiaryAdapterEnabled, "chktertiaryAdapterEnabled");
             this.chktertiaryAdapterEnabled.Name = "chktertiaryAdapterEnabled";
             this.chktertiaryAdapterEnabled.UseVisualStyleBackColor = true;
-            this.chktertiaryAdapterEnabled.CheckedChanged += new System.EventHandler(chktertiaryAdapterEnabled_CheckedChanged);
+            this.chktertiaryAdapterEnabled.CheckedChanged += new System.EventHandler(this.chktertiaryAdapterEnabled_CheckedChanged);
             // 
             // btnReset
             // 
@@ -246,8 +281,9 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(btnReset_Click);
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
@@ -259,12 +295,14 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(btnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // ProtocolAdapterSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
@@ -275,10 +313,13 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtprimarySendFreq)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsecondarySendFreq)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txttertiarySendFreq)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -298,20 +339,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbobxprimaryStreamSubIdx;
         private System.Windows.Forms.ComboBox cbobxprimaryCommPort;
-        private System.Windows.Forms.TextBox txtprimarySendFreq;
         private System.Windows.Forms.ComboBox cbobxsecondaryCommPort;
-        private System.Windows.Forms.TextBox txtsecondarySendFreq;
         private System.Windows.Forms.ComboBox cbobxsecondaryStreamSubIdx;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox chksecondaryAdapterEnabled;
         private System.Windows.Forms.ComboBox cbobxtertiaryCommPort;
-        private System.Windows.Forms.TextBox txttertiarySendFreq;
         private System.Windows.Forms.ComboBox cbobxtertiaryStreamSubIdx;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox chktertiaryAdapterEnabled;
+        private System.Windows.Forms.NumericUpDown txtprimarySendFreq;
+        private System.Windows.Forms.NumericUpDown txtsecondarySendFreq;
+        private System.Windows.Forms.NumericUpDown txttertiarySendFreq;
     }
 }
