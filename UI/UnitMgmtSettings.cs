@@ -396,7 +396,7 @@ namespace GTI.Modules.SystemSettings.UI
             m_bTabletEnabled = false;//TA12156
 
              //Get device types
-            GetDeviceTypeDataMessage msg = new GetDeviceTypeDataMessage();//knc_1
+            GetDeviceTypeDataMessage msg = new GetDeviceTypeDataMessage();
            
             try
             {
