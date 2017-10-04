@@ -31,8 +31,10 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
+
             LoadTab();
             LoadDefaultTab();
+
             this.ResumeLayout(true);
             Common.EndWait();
             return true;
@@ -139,11 +141,17 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         private void tabCtrl_AudioDevice_SelectedIndexChanged(object sender, EventArgs e)
-        {         
+        {
+            Common.BeginWait();
+            this.SuspendLayout();
+
             var tabCrtrl = (TabControl)sender;
             TabPage tTabPageSelected = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTabPageSelected.Tag);
-            SetSelectedDevice(DeviceId);                           
+            SetSelectedDevice(DeviceId);
+
+            this.ResumeLayout(true);
+            Common.EndWait();
         }
     }
 }

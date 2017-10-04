@@ -17,6 +17,7 @@ namespace GTI.Modules.SystemSettings.UI
 
 		public AudioSettings()
 		{
+
 			InitializeComponent();
             audioCheckBoxList = new List<CheckBox>{chkPlayBallCallSoundEnabled,  //FIX START RALLY DE 2645 added all audio settings to global variable
             chkPlayKeyClickEnabled,chkPlayModeOneAwaySound,chkPlayWinningSoundEnabled};            //FIX END RALLY DE 2645 added all audio settings to global variable

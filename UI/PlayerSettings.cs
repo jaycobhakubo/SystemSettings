@@ -30,17 +30,14 @@ namespace GTI.Modules.SystemSettings.UI
 
         public PlayerSettings()
         {
-            InitializeComponent();
 
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             SetStyle(ControlStyles.UserPaint, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             SetStyle(ControlStyles.DoubleBuffer, true);
 
-            this.SuspendLayout();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.DoubleBuffered = true;
-            this.ResumeLayout(false);
+            InitializeComponent();
+
         }
 
         // Public Methods

@@ -20,12 +20,11 @@ namespace GTI.Modules.SystemSettings.UI
 
         public PlayerDeviceSettings()
         {
-            InitializeComponent();
-            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            SetStyle(ControlStyles.UserPaint, true);
-            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            SetStyle(ControlStyles.DoubleBuffer, true);
-
+            //SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            //SetStyle(ControlStyles.UserPaint, true);
+            //SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            //SetStyle(ControlStyles.DoubleBuffer, true);
+            InitializeComponent();         
         }
 
         public override void OnActivate(object o)
@@ -38,8 +37,10 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
+
             LoadTab();
             LoadDefaultTab();
+
             this.ResumeLayout(true);
             Common.EndWait();
             return true;
@@ -163,40 +164,20 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
+
             var tabCrtrl = (TabControl)sender;
             TabPage tTabPage = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTabPage.Tag);
-            SetSelectedDevice(DeviceId);             
+            SetSelectedDevice(DeviceId);     
+        
             this.ResumeLayout(true);
-            Common.EndWait();
-
-                                 
+            Common.EndWait();                                
         }
 
         public Device[] Devices
         {
             get { return m_devices; }
             set { m_devices = value; }
-        }
-
-        //private TabPage tbPageInit(string DeviceName, int DeviceId)
-        //{       
-        //    var tSelectedPage = new TabPage();
-        //    tSelectedPage.Text = DeviceName;
-        //    tSelectedPage.Name = DeviceName;
-        //    tSelectedPage.Tag = DeviceId;
-
-        //    if (tabCtrl_PlayerSettingDevice.TabPages.Count == 0)
-        //    {
-        //        tSelectedPage.BackColor = Color.Transparent;
-        //        tSelectedPage.BackgroundImage = Properties.Resources.GradientFull;
-        //        PlayerSettings plyrSetting = new PlayerSettings();
-        //        plyrSetting.DeviceId = DeviceId;
-        //        plyrSetting.Dock = DockStyle.Fill;
-        //        plyrSetting.LoadSettings();
-        //        tSelectedPage.Controls.Add(plyrSetting);
-        //    }
-        //    return tSelectedPage;
-        //}
+        }   
     }
 }

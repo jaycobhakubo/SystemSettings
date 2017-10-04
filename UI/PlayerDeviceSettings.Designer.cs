@@ -72,6 +72,7 @@
             // tbpgDefault
             // 
             this.tbpgDefault.BackColor = System.Drawing.SystemColors.Control;
+            this.tbpgDefault.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull5;
             this.tbpgDefault.Controls.Add(this.plyrSettingDefault);
             resources.ApplyResources(this.tbpgDefault, "tbpgDefault");
             this.tbpgDefault.Name = "tbpgDefault";
@@ -80,9 +81,9 @@
             // plyrSettingDefault
             // 
             this.plyrSettingDefault.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.plyrSettingDefault.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.plyrSettingDefault, "plyrSettingDefault");
+            this.plyrSettingDefault.BackColor = System.Drawing.Color.Transparent;
             this.plyrSettingDefault.DeviceId = 0;
+            resources.ApplyResources(this.plyrSettingDefault, "plyrSettingDefault");
             this.plyrSettingDefault.Name = "plyrSettingDefault";
             // 
             // tbpgFixedBase

@@ -681,6 +681,46 @@ namespace GTI.Modules.SystemSettings.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GradientFull2 {
+            get {
+                object obj = ResourceManager.GetObject("GradientFull2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GradientFull3 {
+            get {
+                object obj = ResourceManager.GetObject("GradientFull3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GradientFull4 {
+            get {
+                object obj = ResourceManager.GetObject("GradientFull4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GradientFull5 {
+            get {
+                object obj = ResourceManager.GetObject("GradientFull5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GradientPanel {
             get {
                 object obj = ResourceManager.GetObject("GradientPanel", resourceCulture);

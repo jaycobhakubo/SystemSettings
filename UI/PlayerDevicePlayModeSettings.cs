@@ -20,9 +20,6 @@ namespace GTI.Modules.SystemSettings.UI
         public PlayerDevicePlayModeSettings()
         {
             InitializeComponent();
-            SetStyle(ControlStyles.UserPaint, true);
-            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            SetStyle(ControlStyles.DoubleBuffer, true);
         }
 
         public override bool LoadSettings()
@@ -30,8 +27,10 @@ namespace GTI.Modules.SystemSettings.UI
       
             Common.BeginWait();
             this.SuspendLayout();
+
             LoadTab();
             LoadDefaultTab();
+
             this.ResumeLayout(true);
             Common.EndWait();
             return true;
@@ -138,10 +137,16 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void tabCtrl_PlayMode_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Common.BeginWait();
+            this.SuspendLayout();
+
             var tabCrtrl = (TabControl)sender;
             TabPage tTablPageSelected = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTablPageSelected.Tag);
-            SetSelectedDevice(DeviceId);       
+            SetSelectedDevice(DeviceId);
+
+            this.ResumeLayout(true);
+            Common.EndWait();
         }
 
         public Device[] Devices

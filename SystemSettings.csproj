@@ -706,6 +706,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyRef\TextFile1.txt" />
+    <None Include="Resources\GradientFull5.png" />
+    <None Include="Resources\GradientFull4.png" />
+    <None Include="Resources\GradientFull3.png" />
+    <None Include="Resources\GradientFull2.png" />
     <None Include="Resources\GradientFull.png" />
   </ItemGroup>
   <ItemGroup />
