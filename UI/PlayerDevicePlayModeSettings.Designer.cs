@@ -85,11 +85,11 @@
             // 
             // tbpgFixedBase
             // 
+            this.tbpgFixedBase.BackColor = System.Drawing.SystemColors.Control;
             this.tbpgFixedBase.Controls.Add(this.playModeSettingsFixedBase);
             resources.ApplyResources(this.tbpgFixedBase, "tbpgFixedBase");
             this.tbpgFixedBase.Name = "tbpgFixedBase";
             this.tbpgFixedBase.Tag = "3";
-            this.tbpgFixedBase.UseVisualStyleBackColor = true;
             // 
             // playModeSettingsFixedBase
             // 

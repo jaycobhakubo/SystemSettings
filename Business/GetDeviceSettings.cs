@@ -34,12 +34,13 @@ namespace GTI.Modules.SystemSettings.Business
             requestWriter.Close();
         }
 
-        public int ReturnCode { get; set;}
+        public int ReturnCode_ { get; set;}
+
         protected override void UnpackResponse()
         {
             MemoryStream responseStream = new MemoryStream(m_responsePayload);
             BinaryReader responseReader = new BinaryReader(responseStream, Encoding.Unicode);
-            ReturnCode = responseReader.ReadInt32();
+            ReturnCode_ = responseReader.ReadInt32();
 
 
             if (responseStream.Length < MinResponseMessageLength)

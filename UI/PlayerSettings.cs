@@ -49,8 +49,8 @@ namespace GTI.Modules.SystemSettings.UI
             return m_bModified;
         }
 
-        //public override void OnActivate(object o)
-        public void OnActivate(object o)
+        public override void OnActivate(object o)
+        //public ovoid OnActivate(object o)
         {
         }
 
