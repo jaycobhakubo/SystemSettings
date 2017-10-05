@@ -113,6 +113,11 @@ namespace GTI.Modules.SystemSettings.UI
             //set the local text
 		    string raffleText = this.cboDisplayedText.SelectedItem.ToString();
 		    SetRaffleText(raffleText);
+            
+            //US5414
+            globalSettingValue = Common.GetSystemSetting(Setting.MonetaryRaffleDisplayDuration);
+            numMonetaryRaffleDuration.Value = ParseInt(globalSettingValue);
+
 			// Set the flag
 			m_bModified = false;
 
@@ -159,6 +164,13 @@ namespace GTI.Modules.SystemSettings.UI
             s.Value = numRaffleDuration.Value.ToString();
             arrSettings.Add(s);
             //END RALLY DE 6611
+
+            
+            //US5414
+            s = new SettingValue();
+            s.Id = (int)Setting.MonetaryRaffleDisplayDuration;
+            s.Value = numMonetaryRaffleDuration.Value.ToString();
+            arrSettings.Add(s);            
 
             if (!Common.SaveSystemSettings(arrSettings.ToArray()))
             {

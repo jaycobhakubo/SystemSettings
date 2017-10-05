@@ -39,6 +39,11 @@ namespace GTI.Modules.SystemSettings.UI
             System.Windows.Forms.Label receiptLine2Label;
             System.Windows.Forms.Label receiptLine3Label;
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtIncompleteSale2 = new System.Windows.Forms.TextBox();
+            this.txtIncompleteSale1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtDisclaimer3 = new System.Windows.Forms.TextBox();
             this.txtDisclaimer2 = new System.Windows.Forms.TextBox();
             this.txtDisclaimer1 = new System.Windows.Forms.TextBox();
@@ -51,6 +56,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkPrintIncompleteTransactionReceipts = new System.Windows.Forms.CheckBox();
             this.chkPrintAccount = new System.Windows.Forms.CheckBox();
             this.chkPrintOperatorInfo = new System.Windows.Forms.CheckBox();
             this.chkCompactPaperInfo = new System.Windows.Forms.CheckBox();
@@ -85,6 +91,7 @@ namespace GTI.Modules.SystemSettings.UI
             receiptLine2Label = new System.Windows.Forms.Label();
             receiptLine3Label = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numVoidSignatureLines)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPayoutCopies)).BeginInit();
@@ -143,6 +150,7 @@ namespace GTI.Modules.SystemSettings.UI
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.groupBox2);
             this.groupBox4.Controls.Add(this.txtDisclaimer3);
             this.groupBox4.Controls.Add(this.txtDisclaimer2);
             this.groupBox4.Controls.Add(this.txtDisclaimer1);
@@ -164,6 +172,38 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtIncompleteSale2);
+            this.groupBox2.Controls.Add(this.txtIncompleteSale1);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label8);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // txtIncompleteSale2
+            // 
+            resources.ApplyResources(this.txtIncompleteSale2, "txtIncompleteSale2");
+            this.txtIncompleteSale2.Name = "txtIncompleteSale2";
+            this.txtIncompleteSale2.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtIncompleteSale1
+            // 
+            resources.ApplyResources(this.txtIncompleteSale1, "txtIncompleteSale1");
+            this.txtIncompleteSale1.Name = "txtIncompleteSale1";
+            this.txtIncompleteSale1.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
             // 
             // txtDisclaimer3
             // 
@@ -253,6 +293,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkPrintIncompleteTransactionReceipts);
             this.groupBox1.Controls.Add(this.chkPrintAccount);
             this.groupBox1.Controls.Add(this.chkPrintOperatorInfo);
             this.groupBox1.Controls.Add(this.chkCompactPaperInfo);
@@ -280,6 +321,13 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // chkPrintIncompleteTransactionReceipts
+            // 
+            resources.ApplyResources(this.chkPrintIncompleteTransactionReceipts, "chkPrintIncompleteTransactionReceipts");
+            this.chkPrintIncompleteTransactionReceipts.Name = "chkPrintIncompleteTransactionReceipts";
+            this.chkPrintIncompleteTransactionReceipts.UseVisualStyleBackColor = true;
+            this.chkPrintIncompleteTransactionReceipts.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkPrintAccount
             // 
@@ -496,6 +544,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.Name = "ReceiptSettings";
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numVoidSignatureLines)).EndInit();
@@ -545,5 +595,11 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkCompactPaperInfo;
         private System.Windows.Forms.CheckBox chkPrintOperatorInfo;
         private System.Windows.Forms.CheckBox chkPrintAccount;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtIncompleteSale2;
+        private System.Windows.Forms.TextBox txtIncompleteSale1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox chkPrintIncompleteTransactionReceipts;
 	}
 }

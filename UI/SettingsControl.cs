@@ -17,21 +17,16 @@ namespace GTI.Modules.SystemSettings.UI
 
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsControl));
-
-            this.SuspendLayout();
-
-            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            SetStyle(ControlStyles.UserPaint, true);
-            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            SetStyle(ControlStyles.DoubleBuffer, true);
-
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            //this.DoubleBuffered = true;   
-            resources.ApplyResources(this, "$this");
-            this.Name = "SettingsControl";
-
-            this.ResumeLayout(false);
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsControl));
+			this.SuspendLayout();
+			// 
+			// SettingsControl
+			// 
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+			this.DoubleBuffered = true;
+			resources.ApplyResources(this, "$this");
+			this.Name = "SettingsControl";
+			this.ResumeLayout(false);
 
 		}
 

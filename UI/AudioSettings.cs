@@ -7,18 +7,18 @@ using GTI.Modules.SystemSettings.Business;
 
 namespace GTI.Modules.SystemSettings.UI
 {
-	public partial class AudioSettings : SettingsControl
-	{
-		// Members
-		bool m_bModified = false;
+    public partial class AudioSettings : SettingsControl
+    {
+        // Members
+        bool m_bModified = false;
         bool m_needsSave = false;
-	    private List<CheckBox> audioCheckBoxList;//FIX RALLY DE 2645 added all audio settings to global variable
+        private List<CheckBox> audioCheckBoxList;//FIX RALLY DE 2645 added all audio settings to global variable
         GetDeviceSettingsMessage DeviceSettingmsg;
 
-		public AudioSettings()
-		{
+        public AudioSettings()
+        {
 
-			InitializeComponent();
+            InitializeComponent();
             audioCheckBoxList = new List<CheckBox>{chkPlayBallCallSoundEnabled,  //FIX START RALLY DE 2645 added all audio settings to global variable
             chkPlayKeyClickEnabled,chkPlayModeOneAwaySound,chkPlayWinningSoundEnabled};            //FIX END RALLY DE 2645 added all audio settings to global variable
             InitializeTagsForCheckboxes();
@@ -33,41 +33,41 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
-		// Public Methods
-		#region Public Methods
-		public override bool IsModified()
-		{
-			return m_bModified;
-		}
+        // Public Methods
+        #region Public Methods
+        public override bool IsModified()
+        {
+            return m_bModified;
+        }
 
-		public override void OnActivate(object o)
-		{
-		}
+        public override void OnActivate(object o)
+        {
+        }
 
-		public override bool LoadSettings()
-		{
-			Common.BeginWait();
-			this.SuspendLayout();
-			bool bResult = LoadAudioSettings();
-			this.ResumeLayout(true);
-			Common.EndWait();
-			return bResult;
-		}
-
-		public override bool SaveSettings()
-		{
-			Common.BeginWait();
+        public override bool LoadSettings()
+        {
+            Common.BeginWait();
             this.SuspendLayout();
-			bool bResult = SavePlayerSettings();
+            bool bResult = LoadAudioSettings();
             this.ResumeLayout(true);
-			Common.EndWait();
-			return bResult;
-		}
+            Common.EndWait();
+            return bResult;
+        }
 
-		#endregion  // Public Methods
+        public override bool SaveSettings()
+        {
+            Common.BeginWait();
+            this.SuspendLayout();
+            bool bResult = SavePlayerSettings();
+            this.ResumeLayout(true);
+            Common.EndWait();
+            return bResult;
+        }
 
-		// Private Routines
-		#region Private Routines
+        #endregion  // Public Methods
+
+        // Private Routines
+        #region Private Routines
 
         private bool SetValueToDefault()
         {
@@ -75,7 +75,7 @@ namespace GTI.Modules.SystemSettings.UI
             bool boolResult;
             SettingValue tempSettingValue;
 
-            Common.GetOpSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue);  
+            Common.GetOpSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue);
             chkPlayAllSoundEnabled.Checked = ParseBool(tempSettingValue.Value); //RALLY DE9427
             chkPlayAllSoundEnabled.Enabled = Common.GetSettingEnabled(Setting.PlayAllSoundEnabled); //license file
 
@@ -116,8 +116,8 @@ namespace GTI.Modules.SystemSettings.UI
             if (Common.GetSettingEnabled(Setting.PlayBallCallSoundEnabled) == false)
             {
                 chkPlayBallCallSoundEnabled.Tag = "Disabled";
-            }      
-            Common.GetOpSettingValue(Setting.PlayKeyClickEnabled, out tempSettingValue);      
+            }
+            Common.GetOpSettingValue(Setting.PlayKeyClickEnabled, out tempSettingValue);
             chkPlayKeyClickEnabled.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427
 
             //license file
@@ -172,7 +172,7 @@ namespace GTI.Modules.SystemSettings.UI
                 SavePlayerSettings();
                 m_needsSave = false;
             }
-         
+
             m_bModified = false;
             return true;
         }
@@ -181,16 +181,16 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool SetUIValue()
         {
-          //  string settingValue = "";
+            //  string settingValue = "";
             int intNumber;
             bool boolResult;
             SettingValue tempSettingValue;
 
-     
+
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue))
             {
-                Common.GetOpSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue);           
-                    return false;             
+                Common.GetOpSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue);
+                return false;
             }
             chkPlayAllSoundEnabled.Checked = ParseBool(tempSettingValue.Value); //RALLY DE9427
             chkPlayAllSoundEnabled.Enabled = Common.GetSettingEnabled(Setting.PlayAllSoundEnabled); //license file
@@ -208,7 +208,7 @@ namespace GTI.Modules.SystemSettings.UI
             }
             chkPlayModeOneAwaySound.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427
             chkPlayModeOneAwaySound.Enabled = Common.GetSettingEnabled(Setting.PlayModeOneAwaySound);  //license file
-          
+
             //set the tag from the license file if it is disabled
             if (Common.GetSettingEnabled(Setting.PlayModeOneAwaySound) == false)
             {
@@ -220,7 +220,7 @@ namespace GTI.Modules.SystemSettings.UI
                 Common.GetOpSettingValue(Setting.PlayWinningSoundEnabled, out tempSettingValue);
             }
             chkPlayWinningSoundEnabled.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427
-           
+
             //license file
             chkPlayWinningSoundEnabled.Enabled = Common.GetSettingEnabled(Setting.PlayWinningSoundEnabled);
             //set the tag from the license file if it is disabled
@@ -234,7 +234,7 @@ namespace GTI.Modules.SystemSettings.UI
                 Common.GetOpSettingValue(Setting.PlayBallCallSoundEnabled, out tempSettingValue);
             }
             chkPlayBallCallSoundEnabled.Checked = ParseBool(tempSettingValue.Value); //RALLY DE9427
-                  
+
             //license file
             chkPlayBallCallSoundEnabled.Enabled = Common.GetSettingEnabled(Setting.PlayBallCallSoundEnabled);
             //set the tag from the license file if it is disabled
@@ -246,7 +246,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayKeyClickEnabled, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayKeyClickEnabled, out tempSettingValue);
-            }        
+            }
             chkPlayKeyClickEnabled.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427
 
             //license file
@@ -261,7 +261,7 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 Common.GetOpSettingValue(Setting.MaxVolume, out tempSettingValue);
             }
-          //  chkPlayKeyClickEnabled.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427         
+            //  chkPlayKeyClickEnabled.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427         
             boolResult = Int32.TryParse(tempSettingValue.Value, out intNumber);
             if (boolResult)
             {
@@ -311,8 +311,8 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-		private bool LoadAudioSettings()
-		{
+        private bool LoadAudioSettings()
+        {
             bool tResult = false;
             if (DeviceId != 0)
             {
@@ -326,7 +326,7 @@ namespace GTI.Modules.SystemSettings.UI
                 tResult = SetUIValue();
 
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0 || tResult == false)//if zero then default is set
-                {                         
+                {
                     if (chkbxUseDefault.Checked != true)
                     {
                         chkbxUseDefault.Checked = true;
@@ -339,8 +339,8 @@ namespace GTI.Modules.SystemSettings.UI
                 else
                 {
                     chkbxUseDefault.Checked = false;
-                }          
-            }   
+                }
+            }
             else
             {
                 SetValueToDefault();
@@ -348,13 +348,13 @@ namespace GTI.Modules.SystemSettings.UI
                 chkbxUseDefault.Visible = false;
             }
 
-			m_bModified = false;     
-			return true;
-		}
+            m_bModified = false;
+            return true;
+        }
 
-		private bool SavePlayerSettings()
-		{
-			// Update the operator global settings
+        private bool SavePlayerSettings()
+        {
+            // Update the operator global settings
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
 
@@ -364,22 +364,22 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(Setting.PlayAllSoundEnabled, chkPlayAllSoundEnabled.Checked.ToString());
-                }             
-                    s.Id = (int)Setting.PlayAllSoundEnabled;
-                    s.Value = chkPlayAllSoundEnabled.Checked.ToString();
-                    arrSettings.Add(s);     
+                }
+                s.Id = (int)Setting.PlayAllSoundEnabled;
+                s.Value = chkPlayAllSoundEnabled.Checked.ToString();
+                arrSettings.Add(s);
             }
 
             //license file
             if (chkPlayModeOneAwaySound.Tag.ToString() == "Enabled" || m_needsSave)
-            {              
-                 if (chkbxUseDefault.Checked == true || DeviceId == 0)
+            {
+                if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
-                  Common.SetOpSettingValue(Setting.PlayModeOneAwaySound, chkPlayModeOneAwaySound.Checked.ToString());
-                }           
-                    s.Id = (int)Setting.PlayModeOneAwaySound;
-                    s.Value = chkPlayModeOneAwaySound.Checked.ToString();
-                    arrSettings.Add(s);       
+                    Common.SetOpSettingValue(Setting.PlayModeOneAwaySound, chkPlayModeOneAwaySound.Checked.ToString());
+                }
+                s.Id = (int)Setting.PlayModeOneAwaySound;
+                s.Value = chkPlayModeOneAwaySound.Checked.ToString();
+                arrSettings.Add(s);
             }
 
             //license file
@@ -388,10 +388,10 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(Setting.PlayWinningSoundEnabled, chkPlayWinningSoundEnabled.Checked.ToString());
-                }         
-                    s.Id = (int)Setting.PlayWinningSoundEnabled;
-                    s.Value = chkPlayWinningSoundEnabled.Checked.ToString();
-                    arrSettings.Add(s);               
+                }
+                s.Id = (int)Setting.PlayWinningSoundEnabled;
+                s.Value = chkPlayWinningSoundEnabled.Checked.ToString();
+                arrSettings.Add(s);
             }
 
             //license file
@@ -400,10 +400,10 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(Setting.PlayBallCallSoundEnabled, chkPlayBallCallSoundEnabled.Checked.ToString());
-                }         
-                    s.Id = (int)Setting.PlayBallCallSoundEnabled;
-                    s.Value = chkPlayBallCallSoundEnabled.Checked.ToString();
-                    arrSettings.Add(s);                      
+                }
+                s.Id = (int)Setting.PlayBallCallSoundEnabled;
+                s.Value = chkPlayBallCallSoundEnabled.Checked.ToString();
+                arrSettings.Add(s);
             }
 
             //license file
@@ -412,31 +412,31 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(Setting.PlayKeyClickEnabled, chkPlayKeyClickEnabled.Checked.ToString());
-                }         
-                    s.Id = (int)Setting.PlayKeyClickEnabled;
-                    s.Value = chkPlayKeyClickEnabled.Checked.ToString();
-                    arrSettings.Add(s);                       
+                }
+                s.Id = (int)Setting.PlayKeyClickEnabled;
+                s.Value = chkPlayKeyClickEnabled.Checked.ToString();
+                arrSettings.Add(s);
             }
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 Common.SetOpSettingValue(Setting.MaxVolume, numMaxGameVolume.Value.ToString());
-            }          
-                s.Id = (int)Setting.MaxVolume;
-                s.Value = numMaxGameVolume.Value.ToString();
-                arrSettings.Add(s);
-         
-           
-		    //RALLY 
+            }
+            s.Id = (int)Setting.MaxVolume;
+            s.Value = numMaxGameVolume.Value.ToString();
+            arrSettings.Add(s);
+
+
+            //RALLY 
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 Common.SetOpSettingValue(Setting.MaxtvVolume, numMaxTVVolume.Value.ToString());
-            }   
-                s.Id = (int)Setting.MaxtvVolume;
-                s.Value = numMaxTVVolume.Value.ToString();
-                arrSettings.Add(s);
-        
+            }
+            s.Id = (int)Setting.MaxtvVolume;
+            s.Value = numMaxTVVolume.Value.ToString();
+            arrSettings.Add(s);
+
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
@@ -451,27 +451,27 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 0);
             }
-			// Set the flag
-			m_bModified = false;
-			return true;
-		}
+            // Set the flag
+            m_bModified = false;
+            return true;
+        }
 
-		private void btnSave_Click(object sender, EventArgs e)
-		{
-			SaveSettings();
-		}
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveSettings();
+        }
 
-		private void btnReset_Click(object sender, EventArgs e)
-		{
-			LoadSettings();
-		}
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            LoadSettings();
+        }
 
-		private void OnModified(object sender, EventArgs e)
-		{            
-			m_bModified = true;
-		}
+        private void OnModified(object sender, EventArgs e)
+        {
+            m_bModified = true;
+        }
 
-		#endregion //Private Routines
+        #endregion //Private Routines
         //FIX START RALLY DE 2645 added all audio settings to global variable
         private void chkPlayAllSoundEnabled_CheckedChanged(object sender, EventArgs e)
         {
@@ -490,7 +490,7 @@ namespace GTI.Modules.SystemSettings.UI
                 }
             }
             maxVolumeLabel.Enabled = chkPlayAllSoundEnabled.Checked;
-            numMaxGameVolume.Enabled = chkPlayAllSoundEnabled.Checked;           
+            numMaxGameVolume.Enabled = chkPlayAllSoundEnabled.Checked;
         }
 
         private void btnReset_Leave(object sender, EventArgs e)
@@ -509,11 +509,11 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 groupBox5.Enabled = true;
                 SetUIValue();
-            }      
+            }
         }
 
         public int DeviceId { get; set; }
         //FIX END RALLY DE 2645 added all audio settings to global variable
-        
-	} // end class
+
+    } // end class
 } // end namespace

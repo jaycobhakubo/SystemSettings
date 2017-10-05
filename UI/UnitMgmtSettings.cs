@@ -36,6 +36,7 @@ namespace GTI.Modules.SystemSettings.UI
         private int m_POSDefaultDevice;
         private bool m_bRipPacks;
 
+
         private Device[] m_devices;
         public Device[] Devices
         {
@@ -47,7 +48,7 @@ namespace GTI.Modules.SystemSettings.UI
         public UnitMgmtSettings()
 		{
 			InitializeComponent();
-            
+
 			// Add an event handler
 			this.chkEnableUnitAssignment.CheckedChanged += new System.EventHandler(this.chkEnableUnitAssignment_CheckedChanged);
 
@@ -395,27 +396,26 @@ namespace GTI.Modules.SystemSettings.UI
             m_bTraveler2Enabled = false;
             m_bTabletEnabled = false;//TA12156
 
-             //Get device types
-            GetDeviceTypeDataMessage msg = new GetDeviceTypeDataMessage();
-           
-            try
-            {
-                msg.Send();
-            }
-            catch (Exception ex)
-            {
-                MessageForm.Show(this, string.Format(Properties.Resources.GetDeviceTypesFailed, ex.Message));
-                return false;
-            }
-
-            // Check return code
-            if (msg.ServerReturnCode != GTIServerReturnCode.Success)
-            {
-                MessageForm.Show(this, string.Format(Properties.Resources.GetDeviceTypesFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)));
-                return false;
-            }
-
+			// Get device types
+			GetDeviceTypeDataMessage msg = new GetDeviceTypeDataMessage();
+			try
+			{
+				msg.Send();
+			}
+			catch (Exception ex)
+			{
+				MessageForm.Show(this, string.Format(Properties.Resources.GetDeviceTypesFailed, ex.Message));
+				return false;
+			}
             m_devices = msg.Devices;
+			// Check return code
+			if (msg.ServerReturnCode != GTIServerReturnCode.Success)
+			{
+				MessageForm.Show(this, string.Format(Properties.Resources.GetDeviceTypesFailed, GTIClient.GetServerErrorString(msg.ServerReturnCode)));
+				return false;
+            }
+
+
 
             // Add rows for all of the possible device types 
 			if (gridDeviceFees.Rows.Count == 0)
@@ -427,14 +427,14 @@ namespace GTI.Modules.SystemSettings.UI
 				gridDeviceRanges.Rows.Add(NUM_DEVICES);
 			}
 
-           
+
 			// Determine which device types are valid for this operator
 			int tempID;
-            for (int iDevice = 0; iDevice < msg.Devices.Length; iDevice++)
+			for (int iDevice = 0; iDevice < msg.Devices.Length; iDevice++)
 			{
-                if (msg.Devices[iDevice].LoginConnectionType == DeviceLoginConnectionType.Player)
+				if (msg.Devices[iDevice].LoginConnectionType == DeviceLoginConnectionType.Player)
 				{
-                    tempID = msg.Devices[iDevice].Id;
+					tempID = msg.Devices[iDevice].Id;
 					if (tempID == Device.Traveler.Id)
 					{
 						m_bTravelerEnabled = true;

@@ -129,8 +129,8 @@
   <data name="ErrorNoAuth" xml:space="preserve">
     <value>Unauthorized Action</value>
   </data>
-  <data name="ErrorStringLen" xml:space="preserve">
-    <value>String Length Error</value>
+  <data name="RefundInCash" xml:space="preserve">
+    <value>Refund In Cash</value>
   </data>
   <data name="EnterCharity" xml:space="preserve">
     <value>Please enter a valid charity name.</value>
@@ -138,11 +138,12 @@
   <data name="ErrorLessThanPreviousStartValue" xml:space="preserve">
     <value>The start value has to be greater than the previous start value</value>
   </data>
-  <data name="GetSystemSettingsFailed" xml:space="preserve">
-    <value>Failed to retrieve system settings from the server.  Reason: {0}</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RedButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UpdAddressDataFailed" xml:space="preserve">
-    <value>Failed to save address information from the server.  Reason: {0}</value>
+  <data name="LogFailed" xml:space="preserve">
+    <value>Failed to create the log. Reason: {0}</value>
   </data>
   <data name="MultipleMachineEditError" xml:space="preserve">
     <value>All machines selected to edit must be of the same type</value>
@@ -156,14 +157,20 @@
   <data name="EnterZip" xml:space="preserve">
     <value>Please enter a valid Zip Code.</value>
   </data>
+  <data name="Tracker" xml:space="preserve">
+    <value>Tracker</value>
+  </data>
   <data name="GetDeviceTypesFailed" xml:space="preserve">
     <value>Failed to retrieve device information from the server.  Reason: {0}</value>
   </data>
   <data name="GetFunGameDataFailed" xml:space="preserve">
     <value>Failed to retrieve fun game information from the server.  Reason: {0}</value>
   </data>
-  <data name="RefundInCash" xml:space="preserve">
-    <value>Refund In Cash</value>
+  <data name="ModuleError" xml:space="preserve">
+    <value>An error has occurred.  The System Settings module will now shutdown.  Error: {0}</value>
+  </data>
+  <data name="LoadingStaffInfo" xml:space="preserve">
+    <value>Retrieving your information.</value>
   </data>
   <data name="GetDeviceFeesFailed" xml:space="preserve">
     <value>Failed to retrieve device fees from the server.  Reason: {0}</value>
@@ -183,18 +190,20 @@
   <data name="GetCreditEnabledFailed" xml:space="preserve">
     <value>Failed to retrieve credit settings from the server. Reason: {0}</value>
   </data>
+  <data name="SaveChangesHeader" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
   <data name="Tablet" xml:space="preserve">
     <value>Ted-E</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PurpleButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PurpleButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ArrowRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ArrowRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GreenButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GreenButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EnterCountry" xml:space="preserve">
-    <value>Please enter a valid country.</value>
   </data>
   <data name="EnterOperatorName" xml:space="preserve">
     <value>Please enter a valid operator name.</value>
@@ -217,8 +226,8 @@
   <data name="ErrorMoney" xml:space="preserve">
     <value>The value entered must be in the form of a decimal</value>
   </data>
-  <data name="PurpleButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PurpleButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnterCode" xml:space="preserve">
+    <value>Please enter a valid code.</value>
   </data>
   <data name="ErrorLicenseFile" xml:space="preserve">
     <value>The Value in the database for {0} is out of bounds.  The value will be set to {1}</value>
@@ -238,9 +247,6 @@
   <data name="ModuleInitFailed" xml:space="preserve">
     <value>Module intialization failed. Reason: {0}</value>
   </data>
-  <data name="GetDeviceSettingsFailed" xml:space="preserve">
-    <value>Failed to retrieve device settings from the server.  Reason: {0}</value>
-  </data>
   <data name="GetSettingsFailed" xml:space="preserve">
     <value>Failed to get this machine's information from the server.  Reason: {0}</value>
   </data>
@@ -249,12 +255,6 @@
   </data>
   <data name="GetDeviceInfoFailed" xml:space="preserve">
     <value>Failed to retrieve the device and/or machine id.  Reason: {0}</value>
-  </data>
-  <data name="GradientPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GradientPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ErrorGeneral" xml:space="preserve">
-    <value>General Error</value>
   </data>
   <data name="Explorer" xml:space="preserve">
     <value>Explorer2</value>
@@ -267,9 +267,6 @@
   </data>
   <data name="DupSentinels" xml:space="preserve">
     <value>This sentinel pair is already in the list.</value>
-  </data>
-  <data name="LoadingStaffInfo" xml:space="preserve">
-    <value>Retrieving your information.</value>
   </data>
   <data name="BlueButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BlueButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,23 +289,23 @@
   <data name="StaffNotFound" xml:space="preserve">
     <value>Staff not found.</value>
   </data>
-  <data name="GradientFull4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GradientFull4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ErrorServer" xml:space="preserve">
     <value>Invalid Server Response</value>
   </data>
-  <data name="SaveChangesHeader" xml:space="preserve">
-    <value>Save Changes</value>
+  <data name="ErrorStringLen" xml:space="preserve">
+    <value>String Length Error</value>
   </data>
   <data name="GetLocationDataFailed" xml:space="preserve">
     <value>Failed to retrieve location information from the server.  Reason: {0}</value>
   </data>
-  <data name="EnterAddress" xml:space="preserve">
-    <value>Please enter a valid address.</value>
+  <data name="EnterCity" xml:space="preserve">
+    <value>Please enter a valid city.</value>
   </data>
   <data name="GetAddressDataFailed" xml:space="preserve">
     <value>Failed to retrieve address information from the server.  Reason: {0}</value>
+  </data>
+  <data name="ErrorSql" xml:space="preserve">
+    <value>SQL Error</value>
   </data>
   <data name="Success" xml:space="preserve">
     <value>Success</value>
@@ -324,9 +321,6 @@
   </data>
   <data name="ErrorUnknown" xml:space="preserve">
     <value>Unknown error code : {0}</value>
-  </data>
-  <data name="ErrorGreaterThanEndValue" xml:space="preserve">
-    <value>The start value cannot be greater than the end value</value>
   </data>
   <data name="MagCardModeCPCLTCP" xml:space="preserve">
     <value>Keyboard &amp; CPCL Printer (TCP)</value>
@@ -346,8 +340,8 @@
   <data name="Version" xml:space="preserve">
     <value>Version </value>
   </data>
-  <data name="GradientFull3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GradientFull3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ErrorGeneral" xml:space="preserve">
+    <value>General Error</value>
   </data>
   <data name="RedButtonDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedButtonDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,8 +352,11 @@
   <data name="UpdOperatorSettingsFailed" xml:space="preserve">
     <value>Failed to save operator settings to the server.  Reason: {0}</value>
   </data>
-  <data name="EnterCode" xml:space="preserve">
-    <value>Please enter a valid code.</value>
+  <data name="YellowButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YellowButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="256colour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\256colour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AllowZeroSales" xml:space="preserve">
     <value>Allow zero dollar sales</value>
@@ -367,8 +364,8 @@
   <data name="InvalidFee" xml:space="preserve">
     <value>Invalid fee entered for device '{0}'.</value>
   </data>
-  <data name="ModuleError" xml:space="preserve">
-    <value>An error has occurred.  The System Settings module will now shutdown.  Error: {0}</value>
+  <data name="ErrorGreaterThanEndValue" xml:space="preserve">
+    <value>The start value cannot be greater than the end value</value>
   </data>
   <data name="DisallowVoid" xml:space="preserve">
     <value>Disallow Void</value>
@@ -412,23 +409,17 @@
   <data name="EnterCompanyName" xml:space="preserve">
     <value>Please enter a valid company name.</value>
   </data>
-  <data name="GradientFull2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GradientFull2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="InitFailed" xml:space="preserve">
+    <value>The System Settings module failed to initialize properly, and will now shut down. Check that GTI Server is running.</value>
   </data>
   <data name="EnterLicense" xml:space="preserve">
     <value>Please enter a valid license.</value>
-  </data>
-  <data name="InitFailed" xml:space="preserve">
-    <value>The System Settings module failed to initialize properly, and will now shut down. Check that GTI Server is running.</value>
   </data>
   <data name="ErrorLicenseFileHeader" xml:space="preserve">
     <value>License File Error</value>
   </data>
   <data name="InvalidMagCardPort" xml:space="preserve">
     <value>Invalid TCP port!</value>
-  </data>
-  <data name="GradientFull" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GradientFull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GetCharityDataFailed" xml:space="preserve">
     <value>Failed to retrieve charity information from the server.  Reason: {0}</value>
@@ -439,11 +430,14 @@
   <data name="TenderModeWarn" xml:space="preserve">
     <value>Warn If Negative Change</value>
   </data>
+  <data name="ErrorPercent" xml:space="preserve">
+    <value>The value entered must be a valid percentage between 0 and 100</value>
+  </data>
   <data name="MessageError" xml:space="preserve">
     <value>Error sending message '{0}' : {1}</value>
   </data>
-  <data name="ErrorSql" xml:space="preserve">
-    <value>SQL Error</value>
+  <data name="GetChannelDataFailed" xml:space="preserve">
+    <value>Failed to retrieve channel information from the server.  Reason: {0}</value>
   </data>
   <data name="UpdCompanyDataFailed" xml:space="preserve">
     <value>Failed to save company information from the server.  Reason: {0}</value>
@@ -454,23 +448,17 @@
   <data name="ArrowUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ArrowUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GetChannelDataFailed" xml:space="preserve">
-    <value>Failed to retrieve channel information from the server.  Reason: {0}</value>
-  </data>
   <data name="ArrowDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ArrowDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LogFailed" xml:space="preserve">
-    <value>Failed to create the log. Reason: {0}</value>
+  <data name="UpdAddressDataFailed" xml:space="preserve">
+    <value>Failed to save address information from the server.  Reason: {0}</value>
   </data>
-  <data name="ErrorPercent" xml:space="preserve">
-    <value>The value entered must be a valid percentage between 0 and 100</value>
+  <data name="EnterCountry" xml:space="preserve">
+    <value>Please enter a valid country.</value>
   </data>
-  <data name="Tracker" xml:space="preserve">
-    <value>Tracker</value>
-  </data>
-  <data name="OrangeButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OrangeButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EnterAddress" xml:space="preserve">
+    <value>Please enter a valid address.</value>
   </data>
   <data name="EnterPhone" xml:space="preserve">
     <value>Please enter a valid phone number.</value>
@@ -478,8 +466,8 @@
   <data name="LoadingPlayerCenter" xml:space="preserve">
     <value>Loading Player Center.</value>
   </data>
-  <data name="RedButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RedButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OrangeButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OrangeButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GetStaffPermsFailed" xml:space="preserve">
     <value>Failed to retrieve your permissions from the server. Reason: {0}</value>
@@ -487,11 +475,11 @@
   <data name="OrangeButtonDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OrangeButtonDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EnterCity" xml:space="preserve">
-    <value>Please enter a valid city.</value>
+  <data name="SetChannelDataFailed" xml:space="preserve">
+    <value>Failed to save the channel information to the server.  Reason: {0}</value>
   </data>
-  <data name="YellowButtonUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\YellowButtonUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GetSystemSettingsFailed" xml:space="preserve">
+    <value>Failed to retrieve system settings from the server.  Reason: {0}</value>
   </data>
   <data name="TenderModeAllow" xml:space="preserve">
     <value>Allow Negative Change</value>
@@ -499,10 +487,7 @@
   <data name="Traveler2" xml:space="preserve">
     <value>Traveler II</value>
   </data>
-  <data name="SetChannelDataFailed" xml:space="preserve">
-    <value>Failed to save the channel information to the server.  Reason: {0}</value>
-  </data>
-  <data name="GradientFull5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GradientFull5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GradientPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GradientPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -199,6 +199,18 @@
     <Compile Include="UI\POSKioskSettings.Designer.cs">
       <DependentUpon>POSKioskSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\LEDFlashboardColorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LEDFlashboardColorPicker.Designer.cs">
+      <DependentUpon>LEDFlashboardColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LEDFlashboardSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\LEDFlashboardSettings.designer.cs">
+      <DependentUpon>LEDFlashboardSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\PointOfSalePrinterSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,6 +228,12 @@
     </Compile>
     <Compile Include="UI\PaymentProcessingSettings.Designer.cs">
       <DependentUpon>PaymentProcessingSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ProtocolAdapterSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ProtocolAdapterSettings.designer.cs">
+      <DependentUpon>ProtocolAdapterSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\SecuritySettings.cs">
       <SubType>UserControl</SubType>
@@ -478,6 +496,12 @@
     <EmbeddedResource Include="UI\POSKioskSettings.resx">
       <DependentUpon>POSKioskSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\LEDFlashboardColorPicker.resx">
+      <DependentUpon>LEDFlashboardColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LEDFlashboardSettings.resx">
+      <DependentUpon>LEDFlashboardSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\PointOfSalePrinterSettings.resx">
       <DependentUpon>PointOfSalePrinterSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -487,6 +511,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PaymentProcessingSettings.resx">
       <DependentUpon>PaymentProcessingSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProtocolAdapterSettings.resx">
+      <DependentUpon>ProtocolAdapterSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SecuritySettings.resx">
       <DependentUpon>SecuritySettings.cs</DependentUpon>
@@ -706,13 +733,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyRef\TextFile1.txt" />
-    <None Include="Resources\GradientFull5.png" />
-    <None Include="Resources\GradientFull4.png" />
-    <None Include="Resources\GradientFull3.png" />
-    <None Include="Resources\GradientFull2.png" />
-    <None Include="Resources\GradientFull.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\256colour.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

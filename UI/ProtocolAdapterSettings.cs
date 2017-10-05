@@ -64,6 +64,13 @@ namespace GTI.Modules.SystemSettings.UI
             SettingValue s = new SettingValue();
             Business.GenericCBOItem priCBO, secCBO, terCBO;
 
+            if (string.IsNullOrWhiteSpace(txtprimarySendFreq.Text) || string.IsNullOrWhiteSpace(txtsecondarySendFreq.Text)
+                || string.IsNullOrWhiteSpace(txttertiarySendFreq.Text))
+            {
+                MessageBox.Show("All fields must have a value. Unable to save.", "Save Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
             s.Id = (int)Setting.ProtocolAdapterEnabled;
             int priInt = chkprimaryAdapterEnabled.Checked ? 1 : 0;
             int secInt = chksecondaryAdapterEnabled.Checked ? 1 : 0;
@@ -397,6 +404,26 @@ namespace GTI.Modules.SystemSettings.UI
             cbobxtertiaryCommPort.Enabled = chktertiaryAdapterEnabled.Checked;
             cbobxtertiaryStreamSubIdx.Enabled = chktertiaryAdapterEnabled.Checked;
 
+            m_bModified = true;
+        }
+
+        private void numericUpDowns_ValueChanged(object sender, EventArgs e)
+        {
+            m_bModified = true;
+        }
+
+        private void StreamSubIdx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            m_bModified = true;
+        }
+
+        private void CommPortIdx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            m_bModified = true;
+        }
+
+        private void numericUpDowns_CheckEmpty(object sender, EventArgs e)
+        {
             m_bModified = true;
         }
     }

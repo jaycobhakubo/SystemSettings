@@ -11,83 +11,83 @@ namespace GTI.Modules.SystemSettings.UI
     /// <summary>
     /// This Control has the Bingo Play mode Settings
     /// </summary>
- 
-	public partial class PlayModeSettings : SettingsControl
-	{
-		// Members
-		bool m_bModified = false;
-	    public List<CheckableSetting> m_settingList;
+
+    public partial class PlayModeSettings : SettingsControl
+    {
+        // Members
+        bool m_bModified = false;
+        public List<CheckableSetting> m_settingList;
         public List<CheckBox> m_checkBoxList;
-	    private int m_playMode;
+        private int m_playMode;
         GetDeviceSettingsMessage DeviceSettingmsg;
         //FIX: RALLY DE2390 Updated Play Modes Start:
         /// <summary>
         /// Initializes the PlayModeSettings Control
         /// </summary>
         public PlayModeSettings()
-		{
-			InitializeComponent();
+        {
+            InitializeComponent();
             SetStyle(ControlStyles.UserPaint, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             SetStyle(ControlStyles.DoubleBuffer, true);
             m_settingList = new List<CheckableSetting>();
             m_checkBoxList = new List<CheckBox>{m_chkAllowCatchUp,m_chkAllowDaubOnImage, //RALLY DE 6346 remove green button daub 
             m_chkAllowPreCallErrors,m_chkAllowPreDaubing};//RALLY DE 6346 remove green button daub 
-		}
+        }
 
-		// Public Methods
-		#region Public Methods
-		public override bool IsModified()
-		{
-			return m_bModified;
-		}
+        // Public Methods
+        #region Public Methods
+        public override bool IsModified()
+        {
+            return m_bModified;
+        }
 
-		public override void OnActivate(object o)
-		{
-		}
+        public override void OnActivate(object o)
+        {
+        }
 
-		public override bool LoadSettings()
-		{
-			Common.BeginWait();
-			SuspendLayout();
-			bool bResult = LoadPlayerSettings();
-			ResumeLayout(true);
-			Common.EndWait();
-			return bResult;
-		}
-        
-		public override bool SaveSettings()
-		{
-			Common.BeginWait();
-			bool bResult = SavePlayerSettings();
-			Common.EndWait();
-			return bResult;
-		}
+        public override bool LoadSettings()
+        {
+            Common.BeginWait();
+            SuspendLayout();
+            bool bResult = LoadPlayerSettings();
+            ResumeLayout(true);
+            Common.EndWait();
+            return bResult;
+        }
 
-		#endregion  // Public Methods
+        public override bool SaveSettings()
+        {
+            Common.BeginWait();
+            bool bResult = SavePlayerSettings();
+            Common.EndWait();
+            return bResult;
+        }
 
-		// Private Routines
-		#region Private Routines
+        #endregion  // Public Methods
+
+        // Private Routines
+        #region Private Routines
 
         private void DisplayCheckableSettings()
         {
             //clear check boxes
-            foreach(CheckBox checkBox in m_checkBoxList)
+            foreach (CheckBox checkBox in m_checkBoxList)
             {
                 checkBox.Visible = false;
             }
 
-            foreach(CheckableSetting setting in m_settingList)
+            foreach (CheckableSetting setting in m_settingList)
             {
                 CheckBox currentCheckBox =
                 m_checkBoxList.Find(i => ((CheckableSetting)i.Tag).settingName == setting.settingName);
                 currentCheckBox.Visible = true;
                 currentCheckBox.Checked = setting.value.Value.Equals(bool.TrueString);
                 currentCheckBox.Enabled = false;
-                
-                foreach(int visibilitySetting in setting.settingVisibility)
+
+                foreach (int visibilitySetting in setting.settingVisibility)
                 {
-                    if(visibilitySetting == m_playMode)
+                    if (visibilitySetting == m_playMode)
                     {
                         if (setting.isGreyed || setting.licenseEnabled == false)
                         {
@@ -103,7 +103,7 @@ namespace GTI.Modules.SystemSettings.UI
                 }
             }
         }
-        
+
         private CheckableSetting AddSettingToList(Setting settingId, SettingValue value, string name, List<int> playMode, bool licenseEnabled)
         {
             CheckableSetting newSetting = new CheckableSetting();
@@ -111,11 +111,11 @@ namespace GTI.Modules.SystemSettings.UI
             newSetting.value = value;
             newSetting.settingName = name;
             newSetting.settingVisibility = playMode;
-            if(newSetting.value.Value == "False")
+            if (newSetting.value.Value == "False")
                 newSetting.isGreyed = true;
             newSetting.licenseEnabled = licenseEnabled;
-            m_settingList.Add(newSetting);    
-            
+            m_settingList.Add(newSetting);
+
             return newSetting;
         }
 
@@ -129,7 +129,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             //Get the play Mode
             //the play mode comes from the operator settings        
-            Common.GetOpSettingValue(Setting.RFMode, out tempSettingValue);        
+            Common.GetOpSettingValue(Setting.RFMode, out tempSettingValue);
             licenseValue = Common.GetSettingEnabled(Setting.RFMode);
 
             if (licenseValue == false)
@@ -199,7 +199,7 @@ namespace GTI.Modules.SystemSettings.UI
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);
             m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);
             Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
-           
+
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubErrorsEnabled);
             m_chkAllowPreCallErrors.Tag = AddSettingToList(Setting.PlayModePreDaubErrorsEnabled, tempSettingValue, "Allow Pre Call Daub Errors", semiAuto, licenseValue);
@@ -217,7 +217,7 @@ namespace GTI.Modules.SystemSettings.UI
             //m_chkAllowGreenButtonDaub.Tag = AddSettingToList(Setting.PlayModeGreenDaubEnabled, tempSettingValue, "Allow Green Button Daub", semiAuto,licenseValue);
             //((CheckableSetting) m_chkAllowGreenButtonDaub.Tag).isGreyed = false;
             //RALLY DE 6346 END
-            Common.GetOpSettingValue(Setting.PlayDaubLocation, out tempSettingValue);     
+            Common.GetOpSettingValue(Setting.PlayDaubLocation, out tempSettingValue);
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayDaubLocation);
 
@@ -300,7 +300,7 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 string value;
                 byte minMax = Common.GetSettingMinMax(Setting.RFMode, out value);
-                            
+
                 if (value != null)
                 {
                     if (minMax == 1)
@@ -350,7 +350,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModeCatchUpEnabled, out tempSettingValue);
-            }      
+            }
 
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeCatchUpEnabled);
@@ -359,8 +359,8 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue);
-            }      
-          
+            }
+
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);
             m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);
@@ -368,8 +368,8 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
-            }    
-           
+            }
+
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubErrorsEnabled);
             m_chkAllowPreCallErrors.Tag = AddSettingToList(Setting.PlayModePreDaubErrorsEnabled, tempSettingValue, "Allow Pre Call Daub Errors", semiAuto, licenseValue);
@@ -384,8 +384,8 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModeDaubOnImageEnabled, out tempSettingValue);
-            }   
-          
+            }
+
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeDaubOnImageEnabled);
             m_chkAllowDaubOnImage.Tag = AddSettingToList(Setting.PlayModeDaubOnImageEnabled, tempSettingValue, "Allow Daub on Ball Image", semiAutoManual, licenseValue);
@@ -394,7 +394,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModeGreenDaubEnabled, out tempSettingValue);
-            }   
+            }
 
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeGreenDaubEnabled);
             //RALLY START DE 6346 Deleted
@@ -404,8 +404,8 @@ namespace GTI.Modules.SystemSettings.UI
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayDaubLocation, out tempSettingValue);
-            }   
-           
+            }
+
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayDaubLocation);
 
@@ -455,8 +455,8 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-		private bool LoadPlayerSettings()
-		{
+        private bool LoadPlayerSettings()
+        {
             if (DeviceId != 0)
             {
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
@@ -478,7 +478,7 @@ namespace GTI.Modules.SystemSettings.UI
                 else
                 {
                     chkbxUseDefault.Checked = false;
-                }          
+                }
             }
             else
             {
@@ -486,17 +486,17 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked != false) { chkbxUseDefault.Checked = false; }
                 chkbxUseDefault.Visible = false;
             }
-           
 
-           
-			// Set the flag
-			m_bModified = false;
-			return true;
-		}
 
-		private bool SavePlayerSettings()
-		{
-			// Update the operator global settings
+
+            // Set the flag
+            m_bModified = false;
+            return true;
+        }
+
+        private bool SavePlayerSettings()
+        {
+            // Update the operator global settings
 
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
@@ -506,11 +506,11 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 Common.SetOpSettingValue(Setting.RFMode, m_playMode.ToString());
             }
-       
-                s.Id = (int)Setting.RFMode;
-                s.Value = m_playMode.ToString();
-                arrSettings.Add(s);
-       
+
+            s.Id = (int)Setting.RFMode;
+            s.Value = m_playMode.ToString();
+            arrSettings.Add(s);
+
 
             //save all the checkable settings
             foreach (CheckableSetting setting in m_settingList)
@@ -518,24 +518,24 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked == true || DeviceId == 0)
                 {
                     Common.SetOpSettingValue(setting.settingId, setting.value.Value);
-                }        
-                    s.Id = (int)setting.settingId;
-                    s.Value = setting.value.Value;
-                    arrSettings.Add(s);                            
+                }
+                s.Id = (int)setting.settingId;
+                s.Value = setting.value.Value;
+                arrSettings.Add(s);
             }
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 Common.SetOpSettingValue(Setting.PlayDaubLocation, Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1));
             }
-                s.Id = (int)Setting.PlayDaubLocation;
-                s.Value = Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1);
-                arrSettings.Add(s);
+            s.Id = (int)Setting.PlayDaubLocation;
+            s.Value = Convert.ToString(m_cboPlayDaubLocation.SelectedIndex + 1);
+            arrSettings.Add(s);
 
             //save the unique settings that are not checkable
-        
-            
-		    if (chkbxUseDefault.Checked == true || DeviceId == 0)
+
+
+            if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 // Save the operator settings
                 if (!Common.SaveOperatorSettings())
@@ -547,32 +547,32 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 Common.SaveDeviceSettings(DeviceId, arrSettings.ToArray(), 0);
-            }		
+            }
 
-			// Set the flag
-			m_bModified = false;
+            // Set the flag
+            m_bModified = false;
 
-			return true;
-		}
+            return true;
+        }
 
-		private void btnSave_Click(object sender, EventArgs e)
-		{
-			SaveSettings();
-		}
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveSettings();
+        }
 
-		private void btnReset_Click(object sender, EventArgs e)
-		{
-			LoadSettings();
-		}
-        
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            LoadSettings();
+        }
+
         private static void ToggleSettingValue(CheckableSetting setting)
         {
-            if(setting.value.Value == "False")
+            if (setting.value.Value == "False")
             {
                 setting.value.Value = "True";
             }
 
-            else if(setting.value.Value == "True")
+            else if (setting.value.Value == "True")
             {
                 setting.value.Value = "False";
             }
@@ -583,26 +583,26 @@ namespace GTI.Modules.SystemSettings.UI
             CheckableSetting allowPreDaubSetting = m_settingList.Find(i => i.settingId == Setting.PlayModePreDaubEnabled);
             CheckableSetting allowPreDaubErrors = m_settingList.Find(i => i.settingId == Setting.PlayModePreDaubErrorsEnabled);
             CheckableSetting allowCatchUp = m_settingList.Find(i => i.settingId == Setting.PlayModeCatchUpEnabled);
-            
-            if(allowPreDaubErrors.licenseEnabled == true)
+
+            if (allowPreDaubErrors.licenseEnabled == true)
             {
                 allowPreDaubErrors.value.Value = "False";
             }
-            
+
             allowPreDaubErrors.isGreyed = true;
-            
-            if(allowCatchUp.licenseEnabled == true)
+
+            if (allowCatchUp.licenseEnabled == true)
             {
                 allowCatchUp.value.Value = "False";
             }
-            
+
             allowCatchUp.isGreyed = true;
-            
-            if(allowPreDaubSetting.licenseEnabled == true)
+
+            if (allowPreDaubSetting.licenseEnabled == true)
             {
                 allowPreDaubSetting.value.Value = "False";
             }
-            
+
             allowPreDaubSetting.isGreyed = true;
         }
 
@@ -612,26 +612,26 @@ namespace GTI.Modules.SystemSettings.UI
                     m_settingList.Find(i => Setting.PlayModePreDaubErrorsEnabled == i.settingId);
             CheckableSetting preDaubSetting =
                        m_settingList.Find(i => Setting.PlayModePreDaubEnabled == i.settingId);
-            
+
             if (setting.settingId == Setting.PlayModeCatchUpEnabled)
             {
-              
+
 
                 if (setting.value.Value == "True")
                 {
                     preDaubSetting.isGreyed = true;
-                    if(preDaubSetting.licenseEnabled == true)
+                    if (preDaubSetting.licenseEnabled == true)
                     {
                         preDaubSetting.value.Value = "False";
                     }
                     preDaubErrors.isGreyed = true;
-                    
-                    if(preDaubErrors.licenseEnabled == true)
+
+                    if (preDaubErrors.licenseEnabled == true)
                     {
                         preDaubErrors.value.Value = "False";
                     }
-                    
-                    if(m_cboPlayDaubLocation.Tag.ToString() == "True")
+
+                    if (m_cboPlayDaubLocation.Tag.ToString() == "True")
                     {
                         m_cboPlayDaubLocation.SelectedIndex = 0;
                     }
@@ -649,7 +649,7 @@ namespace GTI.Modules.SystemSettings.UI
 
                 else
                 {
-                    if(preDaubSetting.licenseEnabled == true)
+                    if (preDaubSetting.licenseEnabled == true)
                     {
                         preDaubSetting.isGreyed = false;
                     }
@@ -683,11 +683,11 @@ namespace GTI.Modules.SystemSettings.UI
                 if (setting.value.Value == "True")
                 {
                     catchUpSetting.isGreyed = true;
-                    if(catchUpSetting.licenseEnabled == true)
+                    if (catchUpSetting.licenseEnabled == true)
                     {
                         catchUpSetting.value.Value = "False";
                     }
-                    if(preDaubErrors.licenseEnabled == true)
+                    if (preDaubErrors.licenseEnabled == true)
                     {
                         preDaubErrors.isGreyed = false;
                     }
@@ -696,8 +696,8 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         m_cboPlayDaubLocation.SelectedIndex = 2;
                     }
-                        m_cboPlayDaubLocation.Enabled = false;
-                        m_daubLocationTextBox.Enabled = false;
+                    m_cboPlayDaubLocation.Enabled = false;
+                    m_daubLocationTextBox.Enabled = false;
                     //END RALLY DE 5485
                 }
 
@@ -705,7 +705,7 @@ namespace GTI.Modules.SystemSettings.UI
                 {
                     preDaubErrors.isGreyed = true;
 
-                    if(preDaubErrors.licenseEnabled)
+                    if (preDaubErrors.licenseEnabled)
                     {
                         preDaubErrors.value.Value = "False";
                     }
@@ -728,29 +728,29 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         catchUpSetting.isGreyed = false;
                     }
-                }              
+                }
             }
         }
         #endregion //Private Routines
-        
+
         //Events
         #region Events
-        
+
         private void OnRadioCheckButton(object sender, EventArgs e)
         {
             m_bModified = true;
             //updates the global play mode and updates the checkbox view if 
             //neccessary
 
-          
+
             if (m_rdoButtonAuto.Checked && m_playMode != 1)
             {
                 m_playMode = 1;
                 setSettingsToFalse();
                 m_cboPlayDaubLocation.Enabled = false;
                 m_daubLocationTextBox.Enabled = false;
-                
-                ((CheckableSetting) m_chkAllowDaubOnImage.Tag).isGreyed = true;
+
+                ((CheckableSetting)m_chkAllowDaubOnImage.Tag).isGreyed = true;
                 DisplayCheckableSettings();
             }
 
@@ -758,12 +758,12 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 m_playMode = 2;
 
-                if (m_cboPlayDaubLocation.Tag.ToString() == "True" && m_chkAllowPreDaubing.Checked  != true)//RALLY DE 5485
+                if (m_cboPlayDaubLocation.Tag.ToString() == "True" && m_chkAllowPreDaubing.Checked != true)//RALLY DE 5485
                 {
                     m_cboPlayDaubLocation.Enabled = true;
                     m_daubLocationTextBox.Enabled = true;
                 }
-                if(((CheckableSetting)m_chkAllowDaubOnImage.Tag).licenseEnabled)
+                if (((CheckableSetting)m_chkAllowDaubOnImage.Tag).licenseEnabled)
                 {
                     ((CheckableSetting)m_chkAllowDaubOnImage.Tag).isGreyed = false;
                 }
@@ -780,34 +780,34 @@ namespace GTI.Modules.SystemSettings.UI
                 if (((CheckableSetting)m_chkAllowDaubOnImage.Tag).licenseEnabled)
                 {
                     ((CheckableSetting)m_chkAllowDaubOnImage.Tag).isGreyed = false;
-                } 
+                }
                 DisplayCheckableSettings();
             }
-            
+
             OnModified(m_cboPlayDaubLocation, new EventArgs());
         }
 
-		private void OnModified(object sender, EventArgs e)
-		{
-            if(sender.Equals(m_cboPlayDaubLocation))
+        private void OnModified(object sender, EventArgs e)
+        {
+            if (sender.Equals(m_cboPlayDaubLocation))
             {
                 CheckableSetting preDaubSetting =
                    m_settingList.Find(i => Setting.PlayModePreDaubEnabled == i.settingId);
-                
+
                 CheckableSetting preDaubErrors =
                    m_settingList.Find(i => Setting.PlayModePreDaubErrorsEnabled == i.settingId);
-                
+
                 CheckableSetting catchUpSetting =
                    m_settingList.Find(i => Setting.PlayModeCatchUpEnabled == i.settingId);
-                
-                if(m_cboPlayDaubLocation.SelectedIndex == 0)
+
+                if (m_cboPlayDaubLocation.SelectedIndex == 0)
                 {
-                    if(catchUpSetting.licenseEnabled)
+                    if (catchUpSetting.licenseEnabled)
                     {
                         catchUpSetting.isGreyed = false;
                     }
 
-                    if(preDaubSetting.licenseEnabled)
+                    if (preDaubSetting.licenseEnabled)
                     {
                         preDaubSetting.isGreyed = false;
                     }
@@ -820,14 +820,14 @@ namespace GTI.Modules.SystemSettings.UI
                     }
                 }
 
-                else if(m_cboPlayDaubLocation.SelectedIndex == 1)
+                else if (m_cboPlayDaubLocation.SelectedIndex == 1)
                 {
                     catchUpSetting.isGreyed = true;
-                    if(catchUpSetting.licenseEnabled)
+                    if (catchUpSetting.licenseEnabled)
                     {
                         catchUpSetting.value.Value = "False";
                     }
-                    if(preDaubSetting.licenseEnabled)
+                    if (preDaubSetting.licenseEnabled)
                     {
                         preDaubSetting.isGreyed = false;
                     }
@@ -836,15 +836,15 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         preDaubErrors.isGreyed = false;
                     }
-                    
+
                 }
 
-                else if(m_cboPlayDaubLocation.SelectedIndex == 2)
+                else if (m_cboPlayDaubLocation.SelectedIndex == 2)
                 {
                     catchUpSetting.isGreyed = true;
                     catchUpSetting.value.Value = "False";
 
-                    if(preDaubSetting.licenseEnabled)
+                    if (preDaubSetting.licenseEnabled)
                     {
                         preDaubSetting.isGreyed = false;
                     }
@@ -875,8 +875,8 @@ namespace GTI.Modules.SystemSettings.UI
 
                 DisplayCheckableSettings();
             }
-			m_bModified = true;
-		}
+            m_bModified = true;
+        }
 
         private void m_SettingCheckedBox_AfterSelect(object sender, EventArgs e)
         {
@@ -888,8 +888,8 @@ namespace GTI.Modules.SystemSettings.UI
             CheckableSetting setting = checkBox.Tag as CheckableSetting;
             ToggleSettingValue(setting);
             UpdateModel(setting);
-            
-            DisplayCheckableSettings();        
+
+            DisplayCheckableSettings();
         }
 
         private void m_SettingCheckedBox_AfterSelect_Others(object sender, EventArgs e)
@@ -936,7 +936,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         //FIX: RALLY DE2390 Updated Play Modes End:
     } // end class
-    
+
     //A data transfer object 
     public class CheckableSetting
     {
@@ -946,7 +946,7 @@ namespace GTI.Modules.SystemSettings.UI
         public List<int> settingVisibility;
         public bool isGreyed;
         public bool licenseEnabled;
-        
+
     }
 
 

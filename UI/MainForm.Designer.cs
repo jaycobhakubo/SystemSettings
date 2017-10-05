@@ -40,10 +40,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
+            this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
             this.playerDevicePlayModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDevicePlayModeSettings();
             this.playerDeviceAudioSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceAudioSettings();
-            this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
-            this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
             this.raffleSettings2 = new GTI.Modules.SystemSettings.UI.RaffleSettings();
             this.receiptSettings2 = new GTI.Modules.SystemSettings.UI.ReceiptSettings();
             this.securitySettings3 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
@@ -94,6 +94,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.channelSettings1 = new GTI.Modules.SystemSettings.UI.ChannelSettings();
             this.tenderSettings = new GTI.Modules.SystemSettings.UI.TenderSettings();
             this.paymentProcessingSettings = new GTI.Modules.SystemSettings.UI.PaymentProcessingSettings();
+            this.ledFlashboardSettings = new GTI.Modules.SystemSettings.UI.LEDFlashboardSettings();
+            this.protocolAdapterSettings = new GTI.Modules.SystemSettings.UI.ProtocolAdapterSettings();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -116,11 +118,11 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.playerDevicePlayModeSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.playerDeviceAudioSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.raffleSettings2);
+            this.splitContainer1.Panel2.Controls.Add(this.playerDevicePlayModeSettings1);
+            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.kioskSalesSettings1);
+            this.splitContainer1.Panel2.Controls.Add(this.raffleSettings2);
             this.splitContainer1.Panel2.Controls.Add(this.receiptSettings2);
             this.splitContainer1.Panel2.Controls.Add(this.securitySettings3);
             this.splitContainer1.Panel2.Controls.Add(this.sessionSummarySettings5);
@@ -170,6 +172,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.splitContainer1.Panel2.Controls.Add(this.channelSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.tenderSettings);
             this.splitContainer1.Panel2.Controls.Add(this.paymentProcessingSettings);
+            this.splitContainer1.Panel2.Controls.Add(this.ledFlashboardSettings);
+            this.splitContainer1.Panel2.Controls.Add(this.protocolAdapterSettings);
             // 
             // treeView1
             // 
@@ -238,19 +242,10 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // playerDevicePlayModeSettings1
+            // kioskSalesSettings1
             // 
-            this.playerDevicePlayModeSettings1.BackColor = System.Drawing.SystemColors.Control;
-            this.playerDevicePlayModeSettings1.Devices = null;
-            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
-            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
-            // 
-            // playerDeviceAudioSettings1
-            // 
-            this.playerDeviceAudioSettings1.BackColor = System.Drawing.SystemColors.Control;
-            this.playerDeviceAudioSettings1.Devices = null;
-            resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
-            this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
+            resources.ApplyResources(this.kioskSalesSettings1, "kioskSalesSettings1");
+            this.kioskSalesSettings1.Name = "kioskSalesSettings1";
             // 
             // playerDeviceSettings1
             // 
@@ -259,11 +254,23 @@ namespace GTI.Modules.SystemSettings.UI
             this.playerDeviceSettings1.Devices = null;
             resources.ApplyResources(this.playerDeviceSettings1, "playerDeviceSettings1");
             this.playerDeviceSettings1.Name = "playerDeviceSettings1";
+            this.playerDeviceSettings1.Tag = "PlayerDevice";
             // 
-            // kioskSalesSettings1
+            // playerDevicePlayModeSettings1
             // 
-            resources.ApplyResources(this.kioskSalesSettings1, "kioskSalesSettings1");
-            this.kioskSalesSettings1.Name = "kioskSalesSettings1";
+            this.playerDevicePlayModeSettings1.BackColor = System.Drawing.SystemColors.Control;
+            this.playerDevicePlayModeSettings1.Devices = null;
+            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
+            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
+            this.playerDevicePlayModeSettings1.Tag = "PlayerDevice";
+            // 
+            // playerDeviceAudioSettings1
+            // 
+            this.playerDeviceAudioSettings1.BackColor = System.Drawing.SystemColors.Control;
+            this.playerDeviceAudioSettings1.Devices = null;
+            resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
+            this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
+            this.playerDeviceAudioSettings1.Tag = "PlayerDevice";
             // 
             // raffleSettings2
             // 
@@ -531,6 +538,18 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.paymentProcessingSettings, "paymentProcessingSettings");
             this.paymentProcessingSettings.Name = "paymentProcessingSettings";
             // 
+            // ledFlashboardSettings
+            // 
+            this.ledFlashboardSettings.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ledFlashboardSettings, "ledFlashboardSettings");
+            this.ledFlashboardSettings.Name = "ledFlashboardSettings";
+            // 
+            // protocolAdapterSettings
+            // 
+            this.protocolAdapterSettings.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.protocolAdapterSettings, "protocolAdapterSettings");
+            this.protocolAdapterSettings.Name = "protocolAdapterSettings";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -607,6 +626,8 @@ namespace GTI.Modules.SystemSettings.UI
         private PointOfSalePrinterSettings pointOfSalePrinterSettings;
         private RaffleSettings raffleSettings2;
         private ReceiptSettings receiptSettings2;
+        private LEDFlashboardSettings ledFlashboardSettings;
+        private ProtocolAdapterSettings protocolAdapterSettings;
         private SecuritySettings securitySettings3;
         private SessionSummarySettings sessionSummarySettings5;
         private SessionSummarySettings sessionSummarySettings4;

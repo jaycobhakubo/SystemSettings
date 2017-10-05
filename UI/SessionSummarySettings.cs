@@ -136,6 +136,11 @@ namespace GTI.Modules.SystemSettings.UI
             s.Value = chkbxSetBankToEndBank.Checked.ToString();
             arrSettings.Add(s);
 
+            s = new SettingValue();
+            s.Id = (int)Setting.SessionSummaryBankActualCash;
+            s.Value = chkbxSetEndingBankToActualCash.Checked.ToString();
+            arrSettings.Add(s);
+
             if (cboUIDisplayMode.SelectedItem != null)
             {
                 Business.GenericCBOItem displayMode = (Business.GenericCBOItem)cboUIDisplayMode.SelectedItem;

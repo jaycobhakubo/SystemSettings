@@ -1,33 +1,33 @@
 namespace GTI.Modules.SystemSettings.UI
 {
     partial class PlayerSettings
-	{
-		/// <summary> 
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary> 
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-		#region Component Designer generated code
+        #region Component Designer generated code
 
-		/// <summary> 
-		/// Required method for Designer support - do not modify 
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerSettings));
             this.chkbxUseDefault = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -337,12 +337,12 @@ namespace GTI.Modules.SystemSettings.UI
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private GTI.Controls.ImageButton btnReset;
-		private GTI.Controls.ImageButton btnSave;
+        private GTI.Controls.ImageButton btnReset;
+        private GTI.Controls.ImageButton btnSave;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox txtPlayWinAnimationDuration;
         private System.Windows.Forms.Label label3;
@@ -374,5 +374,5 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.TextBox txtRebootTimeThreshold;
         private System.Windows.Forms.CheckBox chkBoxResetRadioOnWifiInterruptions;
         private System.Windows.Forms.CheckBox chkbxUseDefault;
-	}
+    }
 }

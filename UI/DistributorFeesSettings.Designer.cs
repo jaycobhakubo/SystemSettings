@@ -388,7 +388,6 @@
             // 
             // gtiListView1
             // 
-            this.gtiListView1.AllowEraseBackground = true;
             this.gtiListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader21,
             this.columnHeader22,
@@ -423,7 +422,6 @@
             // 
             // gtiListView2
             // 
-            this.gtiListView2.AllowEraseBackground = true;
             this.gtiListView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader25,
             this.columnHeader26,
@@ -561,9 +559,6 @@
             this.m_removeButtonFixedBase.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonFixedBase.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonFixedBase.Name = "m_removeButtonFixedBase";
-            this.m_removeButtonFixedBase.RepeatRate = 150;
-            this.m_removeButtonFixedBase.RepeatWhenHeldFor = 750;
-            this.m_removeButtonFixedBase.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_removeButtonFixedBase.UseVisualStyleBackColor = false;
             this.m_removeButtonFixedBase.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
@@ -575,15 +570,11 @@
             this.m_AddButtonFixedBase.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonFixedBase.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonFixedBase.Name = "m_AddButtonFixedBase";
-            this.m_AddButtonFixedBase.RepeatRate = 150;
-            this.m_AddButtonFixedBase.RepeatWhenHeldFor = 750;
-            this.m_AddButtonFixedBase.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_AddButtonFixedBase.UseVisualStyleBackColor = false;
             this.m_AddButtonFixedBase.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // m_gtiListViewFixedBase
             // 
-            this.m_gtiListViewFixedBase.AllowEraseBackground = true;
             this.m_gtiListViewFixedBase.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader4,
@@ -742,9 +733,6 @@
             this.m_removeButtonTraveler.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonTraveler.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonTraveler.Name = "m_removeButtonTraveler";
-            this.m_removeButtonTraveler.RepeatRate = 150;
-            this.m_removeButtonTraveler.RepeatWhenHeldFor = 750;
-            this.m_removeButtonTraveler.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_removeButtonTraveler.UseVisualStyleBackColor = false;
             this.m_removeButtonTraveler.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
@@ -756,15 +744,11 @@
             this.m_AddButtonTraveler.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonTraveler.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonTraveler.Name = "m_AddButtonTraveler";
-            this.m_AddButtonTraveler.RepeatRate = 150;
-            this.m_AddButtonTraveler.RepeatWhenHeldFor = 750;
-            this.m_AddButtonTraveler.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_AddButtonTraveler.UseVisualStyleBackColor = false;
             this.m_AddButtonTraveler.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // m_gtiListViewTraveler
             // 
-            this.m_gtiListViewTraveler.AllowEraseBackground = true;
             this.m_gtiListViewTraveler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader2,
             this.columnHeader3,
@@ -923,9 +907,6 @@
             this.m_removeButtonTraveler2.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonTraveler2.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonTraveler2.Name = "m_removeButtonTraveler2";
-            this.m_removeButtonTraveler2.RepeatRate = 150;
-            this.m_removeButtonTraveler2.RepeatWhenHeldFor = 750;
-            this.m_removeButtonTraveler2.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_removeButtonTraveler2.UseVisualStyleBackColor = false;
             this.m_removeButtonTraveler2.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
@@ -937,15 +918,11 @@
             this.m_AddButtonTraveler2.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonTraveler2.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonTraveler2.Name = "m_AddButtonTraveler2";
-            this.m_AddButtonTraveler2.RepeatRate = 150;
-            this.m_AddButtonTraveler2.RepeatWhenHeldFor = 750;
-            this.m_AddButtonTraveler2.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_AddButtonTraveler2.UseVisualStyleBackColor = false;
             this.m_AddButtonTraveler2.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // m_gtiListViewTraveler2
             // 
-            this.m_gtiListViewTraveler2.AllowEraseBackground = true;
             this.m_gtiListViewTraveler2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader9,
             this.columnHeader10,
@@ -1104,9 +1081,6 @@
             this.m_removeButtonTracker.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonTracker.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonTracker.Name = "m_removeButtonTracker";
-            this.m_removeButtonTracker.RepeatRate = 150;
-            this.m_removeButtonTracker.RepeatWhenHeldFor = 750;
-            this.m_removeButtonTracker.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_removeButtonTracker.UseVisualStyleBackColor = false;
             this.m_removeButtonTracker.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
@@ -1118,15 +1092,11 @@
             this.m_AddButtonTracker.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonTracker.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonTracker.Name = "m_AddButtonTracker";
-            this.m_AddButtonTracker.RepeatRate = 150;
-            this.m_AddButtonTracker.RepeatWhenHeldFor = 750;
-            this.m_AddButtonTracker.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_AddButtonTracker.UseVisualStyleBackColor = false;
             this.m_AddButtonTracker.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // m_gtiListViewTracker
             // 
-            this.m_gtiListViewTracker.AllowEraseBackground = true;
             this.m_gtiListViewTracker.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader13,
             this.columnHeader14,
@@ -1231,9 +1201,6 @@
             this.m_removeButtonExplorer.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonExplorer.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonExplorer.Name = "m_removeButtonExplorer";
-            this.m_removeButtonExplorer.RepeatRate = 150;
-            this.m_removeButtonExplorer.RepeatWhenHeldFor = 750;
-            this.m_removeButtonExplorer.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_removeButtonExplorer.UseVisualStyleBackColor = false;
             this.m_removeButtonExplorer.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
@@ -1245,15 +1212,11 @@
             this.m_AddButtonExplorer.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonExplorer.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonExplorer.Name = "m_AddButtonExplorer";
-            this.m_AddButtonExplorer.RepeatRate = 150;
-            this.m_AddButtonExplorer.RepeatWhenHeldFor = 750;
-            this.m_AddButtonExplorer.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_AddButtonExplorer.UseVisualStyleBackColor = false;
             this.m_AddButtonExplorer.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // m_gtiListViewExplorer
             // 
-            this.m_gtiListViewExplorer.AllowEraseBackground = true;
             this.m_gtiListViewExplorer.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader17,
             this.columnHeader18,
@@ -1464,9 +1427,6 @@
             this.m_removeButtonTedE.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonTedE.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_removeButtonTedE.Name = "m_removeButtonTedE";
-            this.m_removeButtonTedE.RepeatRate = 150;
-            this.m_removeButtonTedE.RepeatWhenHeldFor = 750;
-            this.m_removeButtonTedE.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_removeButtonTedE.UseVisualStyleBackColor = false;
             this.m_removeButtonTedE.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
@@ -1478,15 +1438,11 @@
             this.m_AddButtonTedE.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonTedE.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.m_AddButtonTedE.Name = "m_AddButtonTedE";
-            this.m_AddButtonTedE.RepeatRate = 150;
-            this.m_AddButtonTedE.RepeatWhenHeldFor = 750;
-            this.m_AddButtonTedE.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.m_AddButtonTedE.UseVisualStyleBackColor = false;
             this.m_AddButtonTedE.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // m_gtiListViewTedE
             // 
-            this.m_gtiListViewTedE.AllowEraseBackground = true;
             this.m_gtiListViewTedE.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader29,
             this.columnHeader30,
@@ -1569,9 +1525,6 @@
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
-            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -1583,9 +1536,6 @@
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
-            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 

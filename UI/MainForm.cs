@@ -4,7 +4,6 @@ using System.Windows.Forms;
 using GTI.Modules.Shared;
 using GTI.Modules.SystemSettings.Properties;
 using GTI.Modules.SystemSettings.Business;
-using GTI.Modules.SystemSettings.Data;
 
 namespace GTI.Modules.SystemSettings.UI
 {
@@ -15,6 +14,7 @@ namespace GTI.Modules.SystemSettings.UI
 		SettingsControl m_previousControl = null;
 		bool m_bResetPreviousControl = false;
 	    private int m_currentOperator = 0;
+        private bool m_UserControlOpen = false;
       
 		public MainForm()
 		{
@@ -29,7 +29,7 @@ namespace GTI.Modules.SystemSettings.UI
             InitializeComponent();
             kioskAdvanced2.SetKoiskSettings2Controller(this.GetCurrentOperator, this.SetCurrentOperator);
             licenseFileSettings1.SetLicenseFileSettingsController();
-
+            
             //if it is the admin
             if(Common.IsAdmin)
             {
@@ -43,9 +43,8 @@ namespace GTI.Modules.SystemSettings.UI
                                             Common.OperatorName);
                 m_currentOperator = Common.OperatorId;
                 LoadSettings();
-            }   
+            }
 		}
-
 
         internal void LoadComboBox()
         {
@@ -248,6 +247,16 @@ namespace GTI.Modules.SystemSettings.UI
             kioskSalesSettings1.LoadSettings();
             kioskSalesSettings1.Hide();
             kioskSalesSettings1.Enabled = false;
+            
+            //US5340
+            ledFlashboardSettings.LoadSettings();
+            ledFlashboardSettings.Hide();
+            ledFlashboardSettings.Enabled = false;
+
+            protocolAdapterSettings.LoadSettings();
+            protocolAdapterSettings.Hide();
+            protocolAdapterSettings.Enabled = false;
+
 
             playerDeviceSettings1.Devices = unitMgmtSettings1.Devices;
             playerDeviceSettings1.LoadSettings();
@@ -267,6 +276,7 @@ namespace GTI.Modules.SystemSettings.UI
             //END RALLY DE9656
 
             CreateNodes();
+
             ResumeLayout();
         }
 
@@ -448,7 +458,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             nodeParent = new TreeNode("Player Unit Settings", 0, 1);
             nodeParent.Tag = playerDeviceSettings1;
-  
+
             nodeChild = nodeParent.Nodes.Add("Audio Settings");
             nodeChild.Tag = playerDeviceAudioSettings1;
 
@@ -457,21 +467,19 @@ namespace GTI.Modules.SystemSettings.UI
 
             treeView1.Nodes.Add(nodeParent);
 
-            //Player Unit Settings
-            // Rally DE 2390 = Player Settings Settings Simplification 
+            ////Player Unit Settings
+            //// Rally DE 2390 = Player Settings Settings Simplification 
             //nodeParent = new TreeNode("Player Unit Settings", 0, 1);
             //nodeParent.Tag = playerSettings1;
 
-            // Rally DE 2390 = Player Settings Settings Simplification 
+            //// Rally DE 2390 = Player Settings Settings Simplification 
             //nodeChild = nodeParent.Nodes.Add("Audio Settings");
             //nodeChild.Tag = audioSettings1;
 
-            // Rally DE 2390 = Player Settings Settings Simplification 
+            //// Rally DE 2390 = Player Settings Settings Simplification 
             //nodeChild = nodeParent.Nodes.Add("Play Mode Settings");
             //nodeChild.Tag = playModeSettings1;
 
-
-            //treeView1.Nodes.Add(nodeParent);
 
             // POS
             // TTP 50358
@@ -581,6 +589,21 @@ namespace GTI.Modules.SystemSettings.UI
             nodeParent.Tag = sessionSummarySettings1;
             treeView1.Nodes.Add(nodeParent);
 
+            //US5340
+            if (Common.IsAdmin)
+            {
+                nodeParent = new TreeNode("LED Flashboard Settings", 0, 1);
+                nodeParent.Tag = ledFlashboardSettings;
+                treeView1.Nodes.Add(nodeParent);
+            }
+
+            if (Common.IsAdmin)
+            {
+                nodeParent = new TreeNode("Protocol Adapter Settings", 0, 1);
+                nodeParent.Tag = protocolAdapterSettings;
+                treeView1.Nodes.Add(nodeParent);
+            }
+
             //SORT by alphabetical order
             treeView1.Sort();
 
@@ -646,8 +669,6 @@ namespace GTI.Modules.SystemSettings.UI
         }
         //END RALLY DE 6756
 
-        private bool m_UserControlOpen = false;
-
 		private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             //START FIX RALLY DE2661 -- this needs to be done before the new control 
@@ -660,23 +681,20 @@ namespace GTI.Modules.SystemSettings.UI
             }
             //END FIX RALLY DE2661
 
-            if (m_activeControl != null)
+            if(m_activeControl != null)
             {
                 //m_activeControl.Enabled = false;
                 //m_activeControl.Hide();
                 //m_activeControl.Visible = false;
                 m_activeControl.SendToBack();             
-            }
           
-
+            }
 			// Get the selected node and display its panel
-        
 			m_previousControl = m_activeControl;
 			m_activeControl = (SettingsControl)(treeView1.SelectedNode.Tag);
-			m_activeControl.OnActivate(treeView1.SelectedNode);  
+			m_activeControl.OnActivate(treeView1.SelectedNode);
 
-
-            if (m_activeControl.Enabled != true)    m_activeControl.Enabled = true;
+            if (m_activeControl.Enabled != true) m_activeControl.Enabled = true;
 
             if (m_activeControl.Tag != null && m_activeControl.Tag.ToString() == "PlayerDevice")
             {
@@ -684,16 +702,13 @@ namespace GTI.Modules.SystemSettings.UI
                 {
                     m_activeControl.Show();
                     m_UserControlOpen = true;
-                }                                                    
+                }
             }
             else
             {
                 m_activeControl.Show();
             }
           
-            if (m_activeControl.Visible != true) m_activeControl.Visible = true; 	
-	 
-
             m_activeControl.BringToFront();
 			m_activeControl.Update();
             treeView1.SelectedNode = e.Node;
