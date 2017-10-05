@@ -660,18 +660,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ArrowDown1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ArrowUp1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ArrowRight1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AbortDown.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\YellowButtonUp.png" />
   </ItemGroup>
   <ItemGroup>
@@ -707,10 +695,6 @@
   <ItemGroup>
     <Content Include="MyRef\TextFile1.txt" />
     <None Include="Resources\GradientFull5.png" />
-    <None Include="Resources\GradientFull4.png" />
-    <None Include="Resources\GradientFull3.png" />
-    <None Include="Resources\GradientFull2.png" />
-    <None Include="Resources\GradientFull.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
