@@ -696,18 +696,18 @@ namespace GTI.Modules.SystemSettings.UI
 
             if (m_activeControl.Enabled != true) m_activeControl.Enabled = true;
 
-            if (m_activeControl.Tag != null && m_activeControl.Tag.ToString() == "PlayerDevice")
-            {
-                if (m_UserControlOpen == false)
-                {
+            //if (m_activeControl.Tag != null && m_activeControl.Tag.ToString() == "PlayerDevice")
+            //{
+            //    if (m_UserControlOpen == false)
+            //    {
                     m_activeControl.Show();
                     m_UserControlOpen = true;
-                }
-            }
-            else
-            {
-                m_activeControl.Show();
-            }
+            //    }
+            //}
+            //else
+            //{
+                //m_activeControl.Show();
+            //}
           
             m_activeControl.BringToFront();
 			m_activeControl.Update();
