@@ -72,25 +72,26 @@
             // tbpgDefault
             // 
             this.tbpgDefault.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.tbpgDefault, "tbpgDefault");
             this.tbpgDefault.Controls.Add(this.audioSettingDefault);
+            resources.ApplyResources(this.tbpgDefault, "tbpgDefault");
             this.tbpgDefault.Name = "tbpgDefault";
             // 
             // audioSettingDefault
             // 
-            this.audioSettingDefault.DeviceId = 0;
             resources.ApplyResources(this.audioSettingDefault, "audioSettingDefault");
+            this.audioSettingDefault.DeviceId = 0;
             this.audioSettingDefault.Name = "audioSettingDefault";
             // 
             // tbpgFixedBase
             // 
             this.tbpgFixedBase.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.tbpgFixedBase, "tbpgFixedBase");
             this.tbpgFixedBase.Controls.Add(this.audioSettingsFixedBase);
+            resources.ApplyResources(this.tbpgFixedBase, "tbpgFixedBase");
             this.tbpgFixedBase.Name = "tbpgFixedBase";
             // 
             // audioSettingsFixedBase
             // 
+            this.audioSettingsFixedBase.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientFull5;
             this.audioSettingsFixedBase.DeviceId = 0;
             resources.ApplyResources(this.audioSettingsFixedBase, "audioSettingsFixedBase");
             this.audioSettingsFixedBase.Name = "audioSettingsFixedBase";
@@ -98,66 +99,66 @@
             // tbpgExplorer2
             // 
             this.tbpgExplorer2.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.tbpgExplorer2, "tbpgExplorer2");
             this.tbpgExplorer2.Controls.Add(this.audioSettingsExplorer2);
+            resources.ApplyResources(this.tbpgExplorer2, "tbpgExplorer2");
             this.tbpgExplorer2.Name = "tbpgExplorer2";
             // 
             // audioSettingsExplorer2
             // 
-            this.audioSettingsExplorer2.DeviceId = 0;
             resources.ApplyResources(this.audioSettingsExplorer2, "audioSettingsExplorer2");
+            this.audioSettingsExplorer2.DeviceId = 0;
             this.audioSettingsExplorer2.Name = "audioSettingsExplorer2";
             // 
             // tbpgTedE
             // 
             this.tbpgTedE.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.tbpgTedE, "tbpgTedE");
             this.tbpgTedE.Controls.Add(this.audioSettingsTedE);
+            resources.ApplyResources(this.tbpgTedE, "tbpgTedE");
             this.tbpgTedE.Name = "tbpgTedE";
             // 
             // audioSettingsTedE
             // 
-            this.audioSettingsTedE.DeviceId = 0;
             resources.ApplyResources(this.audioSettingsTedE, "audioSettingsTedE");
+            this.audioSettingsTedE.DeviceId = 0;
             this.audioSettingsTedE.Name = "audioSettingsTedE";
             // 
             // tbpgTracker
             // 
             this.tbpgTracker.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.tbpgTracker, "tbpgTracker");
             this.tbpgTracker.Controls.Add(this.audioSettingsTracker);
+            resources.ApplyResources(this.tbpgTracker, "tbpgTracker");
             this.tbpgTracker.Name = "tbpgTracker";
             // 
             // audioSettingsTracker
             // 
-            this.audioSettingsTracker.DeviceId = 0;
             resources.ApplyResources(this.audioSettingsTracker, "audioSettingsTracker");
+            this.audioSettingsTracker.DeviceId = 0;
             this.audioSettingsTracker.Name = "audioSettingsTracker";
             // 
             // tbpgTraveler
             // 
             this.tbpgTraveler.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.tbpgTraveler, "tbpgTraveler");
             this.tbpgTraveler.Controls.Add(this.audioSettingsTraveler);
+            resources.ApplyResources(this.tbpgTraveler, "tbpgTraveler");
             this.tbpgTraveler.Name = "tbpgTraveler";
             // 
             // audioSettingsTraveler
             // 
-            this.audioSettingsTraveler.DeviceId = 0;
             resources.ApplyResources(this.audioSettingsTraveler, "audioSettingsTraveler");
+            this.audioSettingsTraveler.DeviceId = 0;
             this.audioSettingsTraveler.Name = "audioSettingsTraveler";
             // 
             // tbpgTraveler2
             // 
             this.tbpgTraveler2.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.tbpgTraveler2, "tbpgTraveler2");
             this.tbpgTraveler2.Controls.Add(this.audioSettingsTraveler2);
+            resources.ApplyResources(this.tbpgTraveler2, "tbpgTraveler2");
             this.tbpgTraveler2.Name = "tbpgTraveler2";
             // 
             // audioSettingsTraveler2
             // 
-            this.audioSettingsTraveler2.DeviceId = 0;
             resources.ApplyResources(this.audioSettingsTraveler2, "audioSettingsTraveler2");
+            this.audioSettingsTraveler2.DeviceId = 0;
             this.audioSettingsTraveler2.Name = "audioSettingsTraveler2";
             // 
             // PlayerDeviceAudioSettings

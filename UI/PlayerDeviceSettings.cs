@@ -20,10 +20,6 @@ namespace GTI.Modules.SystemSettings.UI
 
         public PlayerDeviceSettings()
         {
-            //SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            //SetStyle(ControlStyles.UserPaint, true);
-            //SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            //SetStyle(ControlStyles.DoubleBuffer, true);
             InitializeComponent();         
         }
 

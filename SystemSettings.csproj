@@ -687,18 +687,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ArrowDown1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ArrowUp1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ArrowRight1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AbortDown.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\YellowButtonUp.png" />
   </ItemGroup>
   <ItemGroup>
