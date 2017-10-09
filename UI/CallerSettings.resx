@@ -117,95 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;chkExtraBonus5.Name" xml:space="preserve">
-    <value>chkExtraBonus5</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus5.Parent" xml:space="preserve">
-    <value>grpExtraBalls</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus4.Name" xml:space="preserve">
-    <value>chkExtraBonus4</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus4.Parent" xml:space="preserve">
-    <value>grpExtraBalls</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus3.Name" xml:space="preserve">
-    <value>chkExtraBonus3</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus3.Parent" xml:space="preserve">
-    <value>grpExtraBalls</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus2.Name" xml:space="preserve">
-    <value>chkExtraBonus2</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus2.Parent" xml:space="preserve">
-    <value>grpExtraBalls</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus1.Name" xml:space="preserve">
-    <value>chkExtraBonus1</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus1.Parent" xml:space="preserve">
-    <value>grpExtraBalls</value>
-  </data>
-  <data name="&gt;&gt;chkExtraBonus1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="grpExtraBalls.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="grpExtraBalls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 537</value>
-  </data>
-  <data name="grpExtraBalls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>723, 64</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="grpExtraBalls.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="grpExtraBalls.Text" xml:space="preserve">
-    <value>Extra Balls</value>
-  </data>
-  <data name="&gt;&gt;grpExtraBalls.Name" xml:space="preserve">
-    <value>grpExtraBalls</value>
-  </data>
-  <data name="&gt;&gt;grpExtraBalls.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpExtraBalls.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpExtraBalls.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="chkExtraBonus5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -213,6 +125,7 @@
   <data name="chkExtraBonus5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="chkExtraBonus5.Location" type="System.Drawing.Point, System.Drawing">
     <value>358, 25</value>
   </data>
@@ -357,80 +270,32 @@
   <data name="&gt;&gt;chkExtraBonus1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;chkPlayCooldownTimerSound.Name" xml:space="preserve">
-    <value>chkPlayCooldownTimerSound</value>
-  </data>
-  <data name="&gt;&gt;chkPlayCooldownTimerSound.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPlayCooldownTimerSound.Parent" xml:space="preserve">
-    <value>grpBlower</value>
-  </data>
-  <data name="&gt;&gt;chkPlayCooldownTimerSound.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tbBlowerAddress.Name" xml:space="preserve">
-    <value>tbBlowerAddress</value>
-  </data>
-  <data name="&gt;&gt;tbBlowerAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbBlowerAddress.Parent" xml:space="preserve">
-    <value>grpBlower</value>
-  </data>
-  <data name="&gt;&gt;tbBlowerAddress.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>grpBlower</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;chkEnableBlower.Name" xml:space="preserve">
-    <value>chkEnableBlower</value>
-  </data>
-  <data name="&gt;&gt;chkEnableBlower.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkEnableBlower.Parent" xml:space="preserve">
-    <value>grpBlower</value>
-  </data>
-  <data name="&gt;&gt;chkEnableBlower.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="grpBlower.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="grpExtraBalls.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <data name="grpBlower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 424</value>
+  <data name="grpExtraBalls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 537</value>
   </data>
-  <data name="grpBlower.Size" type="System.Drawing.Size, System.Drawing">
-    <value>723, 104</value>
+  <data name="grpExtraBalls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>723, 64</value>
   </data>
-  <data name="grpBlower.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="grpExtraBalls.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="grpBlower.Text" xml:space="preserve">
-    <value>Blower Settings</value>
+  <data name="grpExtraBalls.Text" xml:space="preserve">
+    <value>Extra Balls</value>
   </data>
-  <data name="&gt;&gt;grpBlower.Name" xml:space="preserve">
-    <value>grpBlower</value>
+  <data name="&gt;&gt;grpExtraBalls.Name" xml:space="preserve">
+    <value>grpExtraBalls</value>
   </data>
-  <data name="&gt;&gt;grpBlower.Type" xml:space="preserve">
+  <data name="&gt;&gt;grpExtraBalls.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;grpBlower.Parent" xml:space="preserve">
+  <data name="&gt;&gt;grpExtraBalls.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;grpBlower.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;grpExtraBalls.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="chkPlayCooldownTimerSound.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -554,6 +419,33 @@
   </data>
   <data name="&gt;&gt;chkEnableBlower.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="grpBlower.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="grpBlower.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 424</value>
+  </data>
+  <data name="grpBlower.Size" type="System.Drawing.Size, System.Drawing">
+    <value>723, 104</value>
+  </data>
+  <data name="grpBlower.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="grpBlower.Text" xml:space="preserve">
+    <value>Blower Settings</value>
+  </data>
+  <data name="&gt;&gt;grpBlower.Name" xml:space="preserve">
+    <value>grpBlower</value>
+  </data>
+  <data name="&gt;&gt;grpBlower.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpBlower.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpBlower.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="chkEnableRNGBallCalls.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -699,6 +591,27 @@
   <data name="&gt;&gt;lblGameStateBroadcastDelay.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="chkEnableLedFB.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkEnableLedFB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkEnableLedFB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkEnableLedFB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 25</value>
+  </data>
+  <data name="chkEnableLedFB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 26</value>
+  </data>
+  <data name="chkEnableLedFB.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkEnableLedFB.Text" xml:space="preserve">
+    <value>Enable LED Flashboard</value>
+  </data>
   <data name="&gt;&gt;chkEnableLedFB.Name" xml:space="preserve">
     <value>chkEnableLedFB</value>
   </data>
@@ -711,6 +624,27 @@
   <data name="&gt;&gt;chkEnableLedFB.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 54</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 22</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Numeric Display</value>
+  </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
@@ -722,6 +656,18 @@
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="cboFbNumDisplay.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cboFbNumDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 51</value>
+  </data>
+  <data name="cboFbNumDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 30</value>
+  </data>
+  <data name="cboFbNumDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;cboFbNumDisplay.Name" xml:space="preserve">
     <value>cboFbNumDisplay</value>
@@ -786,6 +732,24 @@
   <data name="&gt;&gt;numCoolDownTimer.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="rfDelayMsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rfDelayMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rfDelayMsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 97</value>
+  </data>
+  <data name="rfDelayMsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 22</value>
+  </data>
+  <data name="rfDelayMsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="rfDelayMsLabel.Text" xml:space="preserve">
+    <value>ms</value>
+  </data>
   <data name="&gt;&gt;rfDelayMsLabel.Name" xml:space="preserve">
     <value>rfDelayMsLabel</value>
   </data>
@@ -798,6 +762,24 @@
   <data name="&gt;&gt;rfDelayMsLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 26</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Serial Port</value>
+  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
@@ -808,6 +790,18 @@
     <value>grpRF</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cboRFSerialPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cboRFSerialPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 23</value>
+  </data>
+  <data name="cboRFSerialPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 30</value>
+  </data>
+  <data name="cboRFSerialPort.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;cboRFSerialPort.Name" xml:space="preserve">
@@ -822,6 +816,18 @@
   <data name="&gt;&gt;cboRFSerialPort.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="numRfPacketSleep.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numRfPacketSleep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 96</value>
+  </data>
+  <data name="numRfPacketSleep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 26</value>
+  </data>
+  <data name="numRfPacketSleep.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;numRfPacketSleep.Name" xml:space="preserve">
     <value>numRfPacketSleep</value>
   </data>
@@ -833,6 +839,24 @@
   </data>
   <data name="&gt;&gt;numRfPacketSleep.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 62</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Transmitter Type</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -846,6 +870,24 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="rfDelayLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rfDelayLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rfDelayLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 97</value>
+  </data>
+  <data name="rfDelayLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 22</value>
+  </data>
+  <data name="rfDelayLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="rfDelayLabel.Text" xml:space="preserve">
+    <value>Delay between packets</value>
+  </data>
   <data name="&gt;&gt;rfDelayLabel.Name" xml:space="preserve">
     <value>rfDelayLabel</value>
   </data>
@@ -857,6 +899,18 @@
   </data>
   <data name="&gt;&gt;rfDelayLabel.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="cboRFTransType.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cboRFTransType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 59</value>
+  </data>
+  <data name="cboRFTransType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 30</value>
+  </data>
+  <data name="cboRFTransType.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;cboRFTransType.Name" xml:space="preserve">
     <value>cboRFTransType</value>
@@ -904,13 +958,13 @@
     <value>9, 352</value>
   </data>
   <data name="lbl_coolDownTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
+    <value>132, 22</value>
   </data>
   <data name="lbl_coolDownTimer.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="lbl_coolDownTimer.Text" xml:space="preserve">
-    <value>Cool down timer</value>
+    <value>Cooldown timer</value>
   </data>
   <data name="&gt;&gt;lbl_coolDownTimer.Name" xml:space="preserve">
     <value>lbl_coolDownTimer</value>
@@ -924,6 +978,24 @@
   <data name="&gt;&gt;lbl_coolDownTimer.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 25</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Interface Port</value>
+  </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
@@ -935,6 +1007,24 @@
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 61</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Interface Type</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -948,6 +1038,18 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="cboFBInterfacePort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cboFBInterfacePort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 22</value>
+  </data>
+  <data name="cboFBInterfacePort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 30</value>
+  </data>
+  <data name="cboFBInterfacePort.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;cboFBInterfacePort.Name" xml:space="preserve">
     <value>cboFBInterfacePort</value>
   </data>
@@ -959,6 +1061,18 @@
   </data>
   <data name="&gt;&gt;cboFBInterfacePort.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="cboFBInterfaceType.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cboFBInterfaceType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 58</value>
+  </data>
+  <data name="cboFBInterfaceType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 30</value>
+  </data>
+  <data name="cboFBInterfaceType.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;cboFBInterfaceType.Name" xml:space="preserve">
     <value>cboFBInterfaceType</value>
@@ -1263,396 +1377,6 @@
   <data name="&gt;&gt;grpCaller.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="chkEnableLedFB.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkEnableLedFB.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="chkEnableLedFB.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkEnableLedFB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 25</value>
-  </data>
-  <data name="chkEnableLedFB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 26</value>
-  </data>
-  <data name="chkEnableLedFB.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkEnableLedFB.Text" xml:space="preserve">
-    <value>Enable LED Flashboard</value>
-  </data>
-  <data name="&gt;&gt;chkEnableLedFB.Name" xml:space="preserve">
-    <value>chkEnableLedFB</value>
-  </data>
-  <data name="&gt;&gt;chkEnableLedFB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkEnableLedFB.Parent" xml:space="preserve">
-    <value>grpFlashboard</value>
-  </data>
-  <data name="&gt;&gt;chkEnableLedFB.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 54</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 22</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Numeric Display</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>grpFlashboard</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cboFbNumDisplay.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="cboFbNumDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 51</value>
-  </data>
-  <data name="cboFbNumDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 30</value>
-  </data>
-  <data name="cboFbNumDisplay.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;cboFbNumDisplay.Name" xml:space="preserve">
-    <value>cboFbNumDisplay</value>
-  </data>
-  <data name="&gt;&gt;cboFbNumDisplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboFbNumDisplay.Parent" xml:space="preserve">
-    <value>grpFlashboard</value>
-  </data>
-  <data name="&gt;&gt;cboFbNumDisplay.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="rfDelayMsLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rfDelayMsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="rfDelayMsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 97</value>
-  </data>
-  <data name="rfDelayMsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 22</value>
-  </data>
-  <data name="rfDelayMsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="rfDelayMsLabel.Text" xml:space="preserve">
-    <value>ms</value>
-  </data>
-  <data name="&gt;&gt;rfDelayMsLabel.Name" xml:space="preserve">
-    <value>rfDelayMsLabel</value>
-  </data>
-  <data name="&gt;&gt;rfDelayMsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rfDelayMsLabel.Parent" xml:space="preserve">
-    <value>grpRF</value>
-  </data>
-  <data name="&gt;&gt;rfDelayMsLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 26</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Serial Port</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>grpRF</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cboRFSerialPort.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="cboRFSerialPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 23</value>
-  </data>
-  <data name="cboRFSerialPort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 30</value>
-  </data>
-  <data name="cboRFSerialPort.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cboRFSerialPort.Name" xml:space="preserve">
-    <value>cboRFSerialPort</value>
-  </data>
-  <data name="&gt;&gt;cboRFSerialPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboRFSerialPort.Parent" xml:space="preserve">
-    <value>grpRF</value>
-  </data>
-  <data name="&gt;&gt;cboRFSerialPort.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="numRfPacketSleep.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="numRfPacketSleep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 96</value>
-  </data>
-  <data name="numRfPacketSleep.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 26</value>
-  </data>
-  <data name="numRfPacketSleep.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;numRfPacketSleep.Name" xml:space="preserve">
-    <value>numRfPacketSleep</value>
-  </data>
-  <data name="&gt;&gt;numRfPacketSleep.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numRfPacketSleep.Parent" xml:space="preserve">
-    <value>grpRF</value>
-  </data>
-  <data name="&gt;&gt;numRfPacketSleep.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 62</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Transmitter Type</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>grpRF</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="rfDelayLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rfDelayLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="rfDelayLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 97</value>
-  </data>
-  <data name="rfDelayLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 22</value>
-  </data>
-  <data name="rfDelayLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="rfDelayLabel.Text" xml:space="preserve">
-    <value>Delay between packets</value>
-  </data>
-  <data name="&gt;&gt;rfDelayLabel.Name" xml:space="preserve">
-    <value>rfDelayLabel</value>
-  </data>
-  <data name="&gt;&gt;rfDelayLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rfDelayLabel.Parent" xml:space="preserve">
-    <value>grpRF</value>
-  </data>
-  <data name="&gt;&gt;rfDelayLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="cboRFTransType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="cboRFTransType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 59</value>
-  </data>
-  <data name="cboRFTransType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 30</value>
-  </data>
-  <data name="cboRFTransType.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cboRFTransType.Name" xml:space="preserve">
-    <value>cboRFTransType</value>
-  </data>
-  <data name="&gt;&gt;cboRFTransType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboRFTransType.Parent" xml:space="preserve">
-    <value>grpRF</value>
-  </data>
-  <data name="&gt;&gt;cboRFTransType.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 25</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 22</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Interface Port</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>grpFBI</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 61</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 22</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Interface Type</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>grpFBI</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cboFBInterfacePort.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="cboFBInterfacePort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 22</value>
-  </data>
-  <data name="cboFBInterfacePort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 30</value>
-  </data>
-  <data name="cboFBInterfacePort.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cboFBInterfacePort.Name" xml:space="preserve">
-    <value>cboFBInterfacePort</value>
-  </data>
-  <data name="&gt;&gt;cboFBInterfacePort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboFBInterfacePort.Parent" xml:space="preserve">
-    <value>grpFBI</value>
-  </data>
-  <data name="&gt;&gt;cboFBInterfacePort.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="cboFBInterfaceType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="cboFBInterfaceType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 58</value>
-  </data>
-  <data name="cboFBInterfaceType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 30</value>
-  </data>
-  <data name="cboFBInterfaceType.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cboFBInterfaceType.Name" xml:space="preserve">
-    <value>cboFBInterfaceType</value>
-  </data>
-  <data name="&gt;&gt;cboFBInterfaceType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboFBInterfaceType.Parent" xml:space="preserve">
-    <value>grpFBI</value>
-  </data>
-  <data name="&gt;&gt;cboFBInterfaceType.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
   </data>
@@ -1678,7 +1402,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.877, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1711,7 +1435,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.852, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.877, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1732,6 +1456,6 @@
     <value>CallerSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.8, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.12, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>
