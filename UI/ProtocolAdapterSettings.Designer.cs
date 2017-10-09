@@ -113,38 +113,42 @@
             // 
             // cbobxprimaryCommPort
             // 
-            resources.ApplyResources(this.cbobxprimaryCommPort, "cbobxprimaryCommPort");
             this.cbobxprimaryCommPort.FormattingEnabled = true;
+            resources.ApplyResources(this.cbobxprimaryCommPort, "cbobxprimaryCommPort");
             this.cbobxprimaryCommPort.Name = "cbobxprimaryCommPort";
             this.cbobxprimaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxprimaryStreamSubIdx
             // 
-            resources.ApplyResources(this.cbobxprimaryStreamSubIdx, "cbobxprimaryStreamSubIdx");
             this.cbobxprimaryStreamSubIdx.FormattingEnabled = true;
+            resources.ApplyResources(this.cbobxprimaryStreamSubIdx, "cbobxprimaryStreamSubIdx");
             this.cbobxprimaryStreamSubIdx.Name = "cbobxprimaryStreamSubIdx";
             this.cbobxprimaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Name = "label3";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Name = "label2";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Name = "label1";
             // 
             // chkprimaryAdapterEnabled
             // 
             resources.ApplyResources(this.chkprimaryAdapterEnabled, "chkprimaryAdapterEnabled");
+            this.chkprimaryAdapterEnabled.BackColor = System.Drawing.Color.Transparent;
             this.chkprimaryAdapterEnabled.Name = "chkprimaryAdapterEnabled";
-            this.chkprimaryAdapterEnabled.UseVisualStyleBackColor = true;
+            this.chkprimaryAdapterEnabled.UseVisualStyleBackColor = false;
             this.chkprimaryAdapterEnabled.CheckedChanged += new System.EventHandler(this.chkprimaryAdapterEnabled_CheckedChanged);
             // 
             // tabPage2
@@ -175,38 +179,42 @@
             // 
             // cbobxsecondaryCommPort
             // 
-            resources.ApplyResources(this.cbobxsecondaryCommPort, "cbobxsecondaryCommPort");
             this.cbobxsecondaryCommPort.FormattingEnabled = true;
+            resources.ApplyResources(this.cbobxsecondaryCommPort, "cbobxsecondaryCommPort");
             this.cbobxsecondaryCommPort.Name = "cbobxsecondaryCommPort";
             this.cbobxsecondaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxsecondaryStreamSubIdx
             // 
-            resources.ApplyResources(this.cbobxsecondaryStreamSubIdx, "cbobxsecondaryStreamSubIdx");
             this.cbobxsecondaryStreamSubIdx.FormattingEnabled = true;
+            resources.ApplyResources(this.cbobxsecondaryStreamSubIdx, "cbobxsecondaryStreamSubIdx");
             this.cbobxsecondaryStreamSubIdx.Name = "cbobxsecondaryStreamSubIdx";
             this.cbobxsecondaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Name = "label4";
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Name = "label5";
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Name = "label6";
             // 
             // chksecondaryAdapterEnabled
             // 
             resources.ApplyResources(this.chksecondaryAdapterEnabled, "chksecondaryAdapterEnabled");
+            this.chksecondaryAdapterEnabled.BackColor = System.Drawing.Color.Transparent;
             this.chksecondaryAdapterEnabled.Name = "chksecondaryAdapterEnabled";
-            this.chksecondaryAdapterEnabled.UseVisualStyleBackColor = true;
+            this.chksecondaryAdapterEnabled.UseVisualStyleBackColor = false;
             this.chksecondaryAdapterEnabled.CheckedChanged += new System.EventHandler(this.chksecondaryAdapterEnabled_CheckedChanged);
             // 
             // tabPage3
@@ -237,38 +245,42 @@
             // 
             // cbobxtertiaryCommPort
             // 
-            resources.ApplyResources(this.cbobxtertiaryCommPort, "cbobxtertiaryCommPort");
             this.cbobxtertiaryCommPort.FormattingEnabled = true;
+            resources.ApplyResources(this.cbobxtertiaryCommPort, "cbobxtertiaryCommPort");
             this.cbobxtertiaryCommPort.Name = "cbobxtertiaryCommPort";
             this.cbobxtertiaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxtertiaryStreamSubIdx
             // 
-            resources.ApplyResources(this.cbobxtertiaryStreamSubIdx, "cbobxtertiaryStreamSubIdx");
             this.cbobxtertiaryStreamSubIdx.FormattingEnabled = true;
+            resources.ApplyResources(this.cbobxtertiaryStreamSubIdx, "cbobxtertiaryStreamSubIdx");
             this.cbobxtertiaryStreamSubIdx.Name = "cbobxtertiaryStreamSubIdx";
             this.cbobxtertiaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Name = "label7";
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Name = "label8";
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Name = "label9";
             // 
             // chktertiaryAdapterEnabled
             // 
             resources.ApplyResources(this.chktertiaryAdapterEnabled, "chktertiaryAdapterEnabled");
+            this.chktertiaryAdapterEnabled.BackColor = System.Drawing.Color.Transparent;
             this.chktertiaryAdapterEnabled.Name = "chktertiaryAdapterEnabled";
-            this.chktertiaryAdapterEnabled.UseVisualStyleBackColor = true;
+            this.chktertiaryAdapterEnabled.UseVisualStyleBackColor = false;
             this.chktertiaryAdapterEnabled.CheckedChanged += new System.EventHandler(this.chktertiaryAdapterEnabled_CheckedChanged);
             // 
             // btnReset

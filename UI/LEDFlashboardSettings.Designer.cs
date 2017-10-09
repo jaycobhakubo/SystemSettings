@@ -194,6 +194,7 @@
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.primaryLEDGroupbox);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
@@ -622,6 +623,7 @@
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage2.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.secondaryLEDGroupbox);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
@@ -980,6 +982,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox4.Controls.Add(this.txtSecondarySendFreq);
             this.groupBox4.Controls.Add(this.cbobxSecondaryStreamSubIdx);
             this.groupBox4.Controls.Add(this.label19);
@@ -1050,6 +1053,7 @@
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage3.BackgroundImage = global::GTI.Modules.SystemSettings.Properties.Resources.GradientPanel;
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.tertiaryLEDGroupbox);
             this.tabPage3.Controls.Add(this.groupBox5);
             this.tabPage3.Location = new System.Drawing.Point(4, 31);
