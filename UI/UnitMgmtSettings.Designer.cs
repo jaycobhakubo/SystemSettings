@@ -38,6 +38,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtCrateServer = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gridDeviceFees = new System.Windows.Forms.DataGridView();
+            this.deviceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DeviceFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.POSDefaultDevice = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.grpDeviceRanges = new System.Windows.Forms.GroupBox();
             this.gridDeviceRanges = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,9 +58,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rbPackInUseRip = new System.Windows.Forms.RadioButton();
             this.rbPackInUseNotify = new System.Windows.Forms.RadioButton();
-            this.deviceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DeviceFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POSDefaultDevice = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.chkForceUnitSelectionWhenNoFees = new System.Windows.Forms.CheckBox();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -122,6 +123,7 @@ namespace GTI.Modules.SystemSettings.UI
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.chkForceUnitSelectionWhenNoFees);
             this.groupBox1.Controls.Add(this.gridDeviceFees);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
@@ -145,6 +147,29 @@ namespace GTI.Modules.SystemSettings.UI
             this.gridDeviceFees.RowHeadersVisible = false;
             this.gridDeviceFees.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridDeviceFees_CellMouseUp);
             this.gridDeviceFees.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnModified);
+            // 
+            // deviceType
+            // 
+            this.deviceType.FillWeight = 300F;
+            resources.ApplyResources(this.deviceType, "deviceType");
+            this.deviceType.Name = "deviceType";
+            this.deviceType.ReadOnly = true;
+            // 
+            // DeviceFee
+            // 
+            this.DeviceFee.FillWeight = 200F;
+            resources.ApplyResources(this.DeviceFee, "DeviceFee");
+            this.DeviceFee.MaxInputLength = 8;
+            this.DeviceFee.Name = "DeviceFee";
+            // 
+            // POSDefaultDevice
+            // 
+            this.POSDefaultDevice.FalseValue = "0";
+            resources.ApplyResources(this.POSDefaultDevice, "POSDefaultDevice");
+            this.POSDefaultDevice.Name = "POSDefaultDevice";
+            this.POSDefaultDevice.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.POSDefaultDevice.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.POSDefaultDevice.TrueValue = "1";
             // 
             // grpDeviceRanges
             // 
@@ -200,6 +225,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.Name = "btnReset";
             this.btnReset.RepeatRate = 150;
             this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -214,6 +240,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.Name = "btnSave";
             this.btnSave.RepeatRate = 150;
             this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -291,28 +318,12 @@ namespace GTI.Modules.SystemSettings.UI
             this.rbPackInUseNotify.UseVisualStyleBackColor = true;
             this.rbPackInUseNotify.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
-            // deviceType
+            // chkForceUnitSelectionWhenNoFees
             // 
-            this.deviceType.FillWeight = 300F;
-            resources.ApplyResources(this.deviceType, "deviceType");
-            this.deviceType.Name = "deviceType";
-            this.deviceType.ReadOnly = true;
-            // 
-            // DeviceFee
-            // 
-            this.DeviceFee.FillWeight = 200F;
-            resources.ApplyResources(this.DeviceFee, "DeviceFee");
-            this.DeviceFee.MaxInputLength = 8;
-            this.DeviceFee.Name = "DeviceFee";
-            // 
-            // POSDefaultDevice
-            // 
-            this.POSDefaultDevice.FalseValue = "0";
-            resources.ApplyResources(this.POSDefaultDevice, "POSDefaultDevice");
-            this.POSDefaultDevice.Name = "POSDefaultDevice";
-            this.POSDefaultDevice.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.POSDefaultDevice.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.POSDefaultDevice.TrueValue = "1";
+            resources.ApplyResources(this.chkForceUnitSelectionWhenNoFees, "chkForceUnitSelectionWhenNoFees");
+            this.chkForceUnitSelectionWhenNoFees.Name = "chkForceUnitSelectionWhenNoFees";
+            this.chkForceUnitSelectionWhenNoFees.UseVisualStyleBackColor = true;
+            this.chkForceUnitSelectionWhenNoFees.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // UnitMgmtSettings
             // 
@@ -379,5 +390,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn deviceType;
         private System.Windows.Forms.DataGridViewTextBoxColumn DeviceFee;
         private System.Windows.Forms.DataGridViewCheckBoxColumn POSDefaultDevice;
+        private System.Windows.Forms.CheckBox chkForceUnitSelectionWhenNoFees;
 	}
 }

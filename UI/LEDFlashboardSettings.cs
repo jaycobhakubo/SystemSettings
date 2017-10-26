@@ -50,10 +50,27 @@ namespace GTI.Modules.SystemSettings.UI
                 return false;
             }
 
-            if (string.IsNullOrWhiteSpace(txtPrimarySendFreq.Text) || string.IsNullOrWhiteSpace(txtSecondarySendFreq.Text)
-                || string.IsNullOrWhiteSpace(txtTertiarySendFreq.Text))
+            if (string.IsNullOrWhiteSpace(txtPrimarySendFreq.Text))
             {
-                MessageBox.Show("All fields must have a value. Unable to save.", "Save Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //DE12939 Refuse save if box is empty
+                errorProvider1.Clear();
+                errorProvider1.SetError(txtPrimarySendFreq, "Value must be filled in to save");
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtSecondarySendFreq.Text))
+            {
+                //DE12939 Refuse save if box is empty
+                errorProvider1.Clear();
+                errorProvider1.SetError(txtSecondarySendFreq, "Value must be filled in to save");
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtTertiarySendFreq.Text))
+            {
+                //DE12939 Refuse save if box is empty
+                errorProvider1.Clear();
+                errorProvider1.SetError(txtTertiarySendFreq, "Value must be filled in to save");
                 return false;
             }
 

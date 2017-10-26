@@ -64,10 +64,27 @@ namespace GTI.Modules.SystemSettings.UI
             SettingValue s = new SettingValue();
             Business.GenericCBOItem priCBO, secCBO, terCBO;
 
-            if (string.IsNullOrWhiteSpace(txtprimarySendFreq.Text) || string.IsNullOrWhiteSpace(txtsecondarySendFreq.Text)
-                || string.IsNullOrWhiteSpace(txttertiarySendFreq.Text))
+            if (string.IsNullOrWhiteSpace(txtprimarySendFreq.Text))
             {
-                MessageBox.Show("All fields must have a value. Unable to save.", "Save Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //DE12939 Refuse save if box is empty
+                errorProvider1.Clear();
+                errorProvider1.SetError(txtprimarySendFreq, "Value must be filled in to save");
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtsecondarySendFreq.Text))
+            {
+                //DE12939 Refuse save if box is empty
+                errorProvider1.Clear();
+                errorProvider1.SetError(txtsecondarySendFreq, "Value must be filled in to save");
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txttertiarySendFreq.Text))
+            {
+                //DE12939 Refuse save if box is empty
+                errorProvider1.Clear();
+                errorProvider1.SetError(txttertiarySendFreq, "Value must be filled in to save");
                 return false;
             }
 
@@ -109,6 +126,7 @@ namespace GTI.Modules.SystemSettings.UI
             }
 
             m_bModified = false;
+            errorProvider1.Clear();
 
             return true;
         }
@@ -268,6 +286,7 @@ namespace GTI.Modules.SystemSettings.UI
             cbobxtertiaryStreamSubIdx.Enabled = chktertiaryAdapterEnabled.Checked;
 
             m_bModified = false;
+            errorProvider1.Clear();
 
             return true;
         }

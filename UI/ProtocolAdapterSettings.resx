@@ -118,13 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtprimarySendFreq.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="txtprimarySendFreq.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 91</value>
+  </data>
+  <data name="txtprimarySendFreq.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 26</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtprimarySendFreq.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtprimarySendFreq.Name" xml:space="preserve">
+    <value>txtprimarySendFreq</value>
+  </data>
+  <data name="&gt;&gt;txtprimarySendFreq.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtprimarySendFreq.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;txtprimarySendFreq.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbobxprimaryCommPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
   <data name="cbobxprimaryCommPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 132</value>
   </data>
   <data name="cbobxprimaryCommPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 30</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cbobxprimaryCommPort.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -138,28 +165,10 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;cbobxprimaryCommPort.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtprimarySendFreq.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 91</value>
-  </data>
-  <data name="txtprimarySendFreq.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 26</value>
-  </data>
-  <data name="txtprimarySendFreq.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txtprimarySendFreq.Name" xml:space="preserve">
-    <value>txtprimarySendFreq</value>
-  </data>
-  <data name="&gt;&gt;txtprimarySendFreq.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtprimarySendFreq.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;txtprimarySendFreq.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="cbobxprimaryStreamSubIdx.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="cbobxprimaryStreamSubIdx.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 50</value>
@@ -324,6 +333,33 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="txtsecondarySendFreq.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="txtsecondarySendFreq.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 92</value>
+  </data>
+  <data name="txtsecondarySendFreq.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 26</value>
+  </data>
+  <data name="txtsecondarySendFreq.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtsecondarySendFreq.Name" xml:space="preserve">
+    <value>txtsecondarySendFreq</value>
+  </data>
+  <data name="&gt;&gt;txtsecondarySendFreq.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtsecondarySendFreq.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;txtsecondarySendFreq.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbobxsecondaryCommPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
   <data name="cbobxsecondaryCommPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 132</value>
   </data>
@@ -343,28 +379,10 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;cbobxsecondaryCommPort.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtsecondarySendFreq.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 91</value>
-  </data>
-  <data name="txtsecondarySendFreq.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 26</value>
-  </data>
-  <data name="txtsecondarySendFreq.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;txtsecondarySendFreq.Name" xml:space="preserve">
-    <value>txtsecondarySendFreq</value>
-  </data>
-  <data name="&gt;&gt;txtsecondarySendFreq.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtsecondarySendFreq.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;txtsecondarySendFreq.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="cbobxsecondaryStreamSubIdx.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="cbobxsecondaryStreamSubIdx.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 50</value>
@@ -537,6 +555,33 @@
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="txttertiarySendFreq.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="txttertiarySendFreq.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 92</value>
+  </data>
+  <data name="txttertiarySendFreq.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 26</value>
+  </data>
+  <data name="txttertiarySendFreq.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txttertiarySendFreq.Name" xml:space="preserve">
+    <value>txttertiarySendFreq</value>
+  </data>
+  <data name="&gt;&gt;txttertiarySendFreq.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txttertiarySendFreq.Parent" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;txttertiarySendFreq.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbobxtertiaryCommPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
   <data name="cbobxtertiaryCommPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 132</value>
   </data>
@@ -556,28 +601,10 @@
     <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;cbobxtertiaryCommPort.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txttertiarySendFreq.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 91</value>
-  </data>
-  <data name="txttertiarySendFreq.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 26</value>
-  </data>
-  <data name="txttertiarySendFreq.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;txttertiarySendFreq.Name" xml:space="preserve">
-    <value>txttertiarySendFreq</value>
-  </data>
-  <data name="&gt;&gt;txttertiarySendFreq.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txttertiarySendFreq.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;txttertiarySendFreq.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="cbobxtertiaryStreamSubIdx.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="cbobxtertiaryStreamSubIdx.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 50</value>
@@ -823,7 +850,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.844, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.877, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -859,7 +886,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.844, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.877, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -867,6 +894,9 @@
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -876,10 +906,16 @@
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>762, 644</value>
   </data>
+  <data name="&gt;&gt;errorProvider1.Name" xml:space="preserve">
+    <value>errorProvider1</value>
+  </data>
+  <data name="&gt;&gt;errorProvider1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ProtocolAdapterSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.8, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.12, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

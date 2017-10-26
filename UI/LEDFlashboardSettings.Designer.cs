@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -152,6 +153,7 @@
             this.chkTertiaryEnableAdapter = new System.Windows.Forms.CheckBox();
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -166,6 +168,7 @@
             this.tertiaryLEDGroupbox.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTertiarySendFreq)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -1519,6 +1522,10 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // LEDFlashboardSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1549,6 +1556,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTertiarySendFreq)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1679,5 +1687,6 @@
         private System.Windows.Forms.NumericUpDown txtPrimarySendFreq;
         private System.Windows.Forms.NumericUpDown txtSecondarySendFreq;
         private System.Windows.Forms.NumericUpDown txtTertiarySendFreq;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProtocolAdapterSettings));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -57,6 +58,7 @@
             this.chktertiaryAdapterEnabled = new System.Windows.Forms.CheckBox();
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -65,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtsecondarySendFreq)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txttertiarySendFreq)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -113,15 +116,15 @@
             // 
             // cbobxprimaryCommPort
             // 
-            this.cbobxprimaryCommPort.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxprimaryCommPort, "cbobxprimaryCommPort");
+            this.cbobxprimaryCommPort.FormattingEnabled = true;
             this.cbobxprimaryCommPort.Name = "cbobxprimaryCommPort";
             this.cbobxprimaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxprimaryStreamSubIdx
             // 
-            this.cbobxprimaryStreamSubIdx.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxprimaryStreamSubIdx, "cbobxprimaryStreamSubIdx");
+            this.cbobxprimaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxprimaryStreamSubIdx.Name = "cbobxprimaryStreamSubIdx";
             this.cbobxprimaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
@@ -179,15 +182,15 @@
             // 
             // cbobxsecondaryCommPort
             // 
-            this.cbobxsecondaryCommPort.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxsecondaryCommPort, "cbobxsecondaryCommPort");
+            this.cbobxsecondaryCommPort.FormattingEnabled = true;
             this.cbobxsecondaryCommPort.Name = "cbobxsecondaryCommPort";
             this.cbobxsecondaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxsecondaryStreamSubIdx
             // 
-            this.cbobxsecondaryStreamSubIdx.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxsecondaryStreamSubIdx, "cbobxsecondaryStreamSubIdx");
+            this.cbobxsecondaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxsecondaryStreamSubIdx.Name = "cbobxsecondaryStreamSubIdx";
             this.cbobxsecondaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
@@ -245,15 +248,15 @@
             // 
             // cbobxtertiaryCommPort
             // 
-            this.cbobxtertiaryCommPort.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxtertiaryCommPort, "cbobxtertiaryCommPort");
+            this.cbobxtertiaryCommPort.FormattingEnabled = true;
             this.cbobxtertiaryCommPort.Name = "cbobxtertiaryCommPort";
             this.cbobxtertiaryCommPort.SelectedIndexChanged += new System.EventHandler(this.CommPortIdx_SelectedIndexChanged);
             // 
             // cbobxtertiaryStreamSubIdx
             // 
-            this.cbobxtertiaryStreamSubIdx.FormattingEnabled = true;
             resources.ApplyResources(this.cbobxtertiaryStreamSubIdx, "cbobxtertiaryStreamSubIdx");
+            this.cbobxtertiaryStreamSubIdx.FormattingEnabled = true;
             this.cbobxtertiaryStreamSubIdx.Name = "cbobxtertiaryStreamSubIdx";
             this.cbobxtertiaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
@@ -311,6 +314,10 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // ProtocolAdapterSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -332,6 +339,7 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txttertiarySendFreq)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -366,5 +374,6 @@
         private System.Windows.Forms.NumericUpDown txtprimarySendFreq;
         private System.Windows.Forms.NumericUpDown txtsecondarySendFreq;
         private System.Windows.Forms.NumericUpDown txttertiarySendFreq;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

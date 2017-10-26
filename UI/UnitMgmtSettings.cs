@@ -149,7 +149,10 @@ namespace GTI.Modules.SystemSettings.UI
 
 			Common.GetOpSettingValue(Setting.ConfirmUnitAssignment, out tempSettingValue);
             chkConfirmUnitAssignment.Checked = ParseBool(tempSettingValue.Value); //RALLY DE9427
-			
+
+            Common.GetOpSettingValue(Setting.ForceDeviceSelectionWhenNoFees, out tempSettingValue);
+            chkForceUnitSelectionWhenNoFees.Checked = ParseBool(tempSettingValue.Value);
+
 			Common.GetOpSettingValue(Setting.MaxAssignableUnits, out tempSettingValue);
 			numMaxUnits.Value = ParseInt(tempSettingValue.Value);
 
@@ -335,6 +338,8 @@ namespace GTI.Modules.SystemSettings.UI
 			Common.SetOpSettingValue(Setting.MaxAssignableUnits, numMaxUnits.Value.ToString());
 
             Common.SetOpSettingValue(Setting.WiFiOutOfRange , chkWiFiRange.Checked.ToString());
+
+            Common.SetOpSettingValue(Setting.ForceDeviceSelectionWhenNoFees, chkForceUnitSelectionWhenNoFees.Checked.ToString());
 
 			// Save the operator settings
 			if (!Common.SaveOperatorSettings())
@@ -555,6 +560,55 @@ namespace GTI.Modules.SystemSettings.UI
 			return true;
 		}
 
+        private bool WeHaveDeviceFeesOrFewerThanTwoDevices()
+        {
+            int count = 0;
+            bool travelerHasFee = false;
+            bool trackerHasFee = false;
+            bool explorerHasFee = false;
+            bool fixedHasFee = false;
+            bool traveler2HasFee = false;
+            bool tabletHasFee = false;
+
+            if (m_bTravelerEnabled)
+            {
+                travelerHasFee = Convert.ToDecimal(gridDeviceFees[1, TRAVELER].Value) != 0;
+                count++;
+            }
+
+            if (m_bTrackerEnabled)
+            {
+                trackerHasFee = Convert.ToDecimal(gridDeviceFees[1, TRACKER].Value) != 0;
+                count++;
+            }
+
+            if (m_bExplorerEnabled)
+            {
+                explorerHasFee = Convert.ToDecimal(gridDeviceFees[1, EXPLORER].Value) != 0;
+                count++;
+            }
+
+            if (m_bFixedEnabled)
+            {
+                fixedHasFee = Convert.ToDecimal(gridDeviceFees[1, FIXED].Value) != 0;
+                count++;
+            }
+
+            if (m_bTraveler2Enabled)
+            {
+                traveler2HasFee = Convert.ToDecimal(gridDeviceFees[1, TRAVELER2].Value) != 0;
+                count++;
+            }
+
+            if (m_bTabletEnabled)
+            {
+                tabletHasFee = Convert.ToDecimal(gridDeviceFees[1, TABLET].Value) != 0;
+                count++;
+            }
+
+            return count < 2 || travelerHasFee || trackerHasFee || explorerHasFee || fixedHasFee || traveler2HasFee || tabletHasFee;
+        }
+
 		private bool SaveDeviceFees()
 		{
             //START RALLY 2018
@@ -654,11 +708,21 @@ namespace GTI.Modules.SystemSettings.UI
                     m_POSDefaultDevice = 0;
                 }
             }
+
+            if (WeHaveDeviceFeesOrFewerThanTwoDevices())
+            {
+                chkForceUnitSelectionWhenNoFees.Checked = false;
+                chkForceUnitSelectionWhenNoFees.Enabled = false;
+            }
+            else
+            {
+                chkForceUnitSelectionWhenNoFees.Enabled = true;
+            }
 		}
 
         private void gridDeviceFees_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.ColumnIndex == 2 && e.RowIndex != -1)
+            if ((e.ColumnIndex == 1 || e.ColumnIndex == 2) && e.RowIndex != -1)
                 gridDeviceFees.EndEdit();
         }
 
