@@ -165,7 +165,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwwAADsMBx2+oZAAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwgAADsIBFShKgAAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -525,7 +525,7 @@
     <value>audioSettingDefault</value>
   </data>
   <data name="&gt;&gt;audioSettingDefault.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingDefault.Parent" xml:space="preserve">
     <value>tbpgDefault</value>
@@ -576,7 +576,7 @@
     <value>audioSettingsFixedBase</value>
   </data>
   <data name="&gt;&gt;audioSettingsFixedBase.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsFixedBase.Parent" xml:space="preserve">
     <value>tbpgFixedBase</value>
@@ -655,7 +655,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwwAADsMBx2+oZAAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwgAADsIBFShKgAAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -1013,7 +1013,7 @@
     <value>audioSettingsExplorer2</value>
   </data>
   <data name="&gt;&gt;audioSettingsExplorer2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsExplorer2.Parent" xml:space="preserve">
     <value>tbpgExplorer2</value>
@@ -1092,7 +1092,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwwAADsMBx2+oZAAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwgAADsIBFShKgAAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -1450,7 +1450,7 @@
     <value>audioSettingsTedE</value>
   </data>
   <data name="&gt;&gt;audioSettingsTedE.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsTedE.Parent" xml:space="preserve">
     <value>tbpgTedE</value>
@@ -1529,7 +1529,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwwAADsMBx2+oZAAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwgAADsIBFShKgAAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -1887,7 +1887,7 @@
     <value>audioSettingsTracker</value>
   </data>
   <data name="&gt;&gt;audioSettingsTracker.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsTracker.Parent" xml:space="preserve">
     <value>tbpgTracker</value>
@@ -1966,7 +1966,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwwAADsMBx2+oZAAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwgAADsIBFShKgAAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -2324,7 +2324,7 @@
     <value>audioSettingsTraveler</value>
   </data>
   <data name="&gt;&gt;audioSettingsTraveler.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsTraveler.Parent" xml:space="preserve">
     <value>tbpgTraveler</value>
@@ -2403,7 +2403,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwwAADsMBx2+oZAAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwgAADsIBFShKgAAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -2761,7 +2761,7 @@
     <value>audioSettingsTraveler2</value>
   </data>
   <data name="&gt;&gt;audioSettingsTraveler2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsTraveler2.Parent" xml:space="preserve">
     <value>tbpgTraveler2</value>
@@ -2821,7 +2821,7 @@
     <value>9, 22</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -2833,6 +2833,6 @@
     <value>PlayerDeviceAudioSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

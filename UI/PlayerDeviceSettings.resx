@@ -165,7 +165,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwwAADsMBx2+oZAAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwgAADsIBFShKgAAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -525,13 +525,16 @@
     <value>plyrSettingDefault</value>
   </data>
   <data name="&gt;&gt;plyrSettingDefault.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingDefault.Parent" xml:space="preserve">
     <value>tbpgDefault</value>
   </data>
   <data name="&gt;&gt;plyrSettingDefault.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tbpgDefault.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="tbpgDefault.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
@@ -958,13 +961,16 @@
     <value>plyrSettingFixedBase</value>
   </data>
   <data name="&gt;&gt;plyrSettingFixedBase.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingFixedBase.Parent" xml:space="preserve">
     <value>tbpgFixedBase</value>
   </data>
   <data name="&gt;&gt;plyrSettingFixedBase.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tbpgFixedBase.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="tbpgFixedBase.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
@@ -1391,13 +1397,16 @@
     <value>plyrSettingExplorer2</value>
   </data>
   <data name="&gt;&gt;plyrSettingExplorer2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingExplorer2.Parent" xml:space="preserve">
     <value>tbpgExplorer2</value>
   </data>
   <data name="&gt;&gt;plyrSettingExplorer2.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tbpgExplorer2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="tbpgExplorer2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
@@ -1824,13 +1833,16 @@
     <value>plyrSettingTedE</value>
   </data>
   <data name="&gt;&gt;plyrSettingTedE.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingTedE.Parent" xml:space="preserve">
     <value>tbpgTedE</value>
   </data>
   <data name="&gt;&gt;plyrSettingTedE.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tbpgTedE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="tbpgTedE.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
@@ -2257,13 +2269,16 @@
     <value>plyrSettingTracker</value>
   </data>
   <data name="&gt;&gt;plyrSettingTracker.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingTracker.Parent" xml:space="preserve">
     <value>tbpgTracker</value>
   </data>
   <data name="&gt;&gt;plyrSettingTracker.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tbpgTracker.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="tbpgTracker.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
@@ -2690,13 +2705,16 @@
     <value>plyeSettingTraveler</value>
   </data>
   <data name="&gt;&gt;plyeSettingTraveler.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyeSettingTraveler.Parent" xml:space="preserve">
     <value>tbpgTraveler</value>
   </data>
   <data name="&gt;&gt;plyeSettingTraveler.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tbpgTraveler.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="tbpgTraveler.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
@@ -3123,13 +3141,16 @@
     <value>plyrSettingTraveler2</value>
   </data>
   <data name="&gt;&gt;plyrSettingTraveler2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingTraveler2.Parent" xml:space="preserve">
     <value>tbpgTraveler2</value>
   </data>
   <data name="&gt;&gt;plyrSettingTraveler2.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tbpgTraveler2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="tbpgTraveler2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 31</value>
@@ -3189,6 +3210,6 @@
     <value>PlayerDeviceSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>
