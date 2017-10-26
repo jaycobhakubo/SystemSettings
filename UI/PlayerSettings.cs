@@ -520,6 +520,7 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
+
                 var tResult = SetUIValue();
 
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0 || tResult == false)//if zero then default is set
