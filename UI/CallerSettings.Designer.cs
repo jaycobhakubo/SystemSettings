@@ -42,10 +42,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkExtraBonus2 = new System.Windows.Forms.CheckBox();
             this.chkExtraBonus1 = new System.Windows.Forms.CheckBox();
             this.grpBlower = new System.Windows.Forms.GroupBox();
-            this.chkPlayCooldownTimerSound = new System.Windows.Forms.CheckBox();
             this.tbBlowerAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.chkEnableBlower = new System.Windows.Forms.CheckBox();
+            this.chkPlayCooldownTimerSound = new System.Windows.Forms.CheckBox();
             this.grpCaller = new System.Windows.Forms.GroupBox();
             this.chkEnableRNGBallCalls = new System.Windows.Forms.CheckBox();
             this.lbl_sec = new System.Windows.Forms.Label();
@@ -140,19 +140,13 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // grpBlower
             // 
-            this.grpBlower.Controls.Add(this.chkPlayCooldownTimerSound);
             this.grpBlower.Controls.Add(this.tbBlowerAddress);
             this.grpBlower.Controls.Add(this.label5);
             this.grpBlower.Controls.Add(this.chkEnableBlower);
+            this.grpBlower.Controls.Add(this.lblGameStateBroadcastDelayMs);
             resources.ApplyResources(this.grpBlower, "grpBlower");
             this.grpBlower.Name = "grpBlower";
             this.grpBlower.TabStop = false;
-            // 
-            // chkPlayCooldownTimerSound
-            // 
-            resources.ApplyResources(this.chkPlayCooldownTimerSound, "chkPlayCooldownTimerSound");
-            this.chkPlayCooldownTimerSound.Name = "chkPlayCooldownTimerSound";
-            this.chkPlayCooldownTimerSound.UseVisualStyleBackColor = true;
             // 
             // tbBlowerAddress
             // 
@@ -173,14 +167,20 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkEnableBlower.UseVisualStyleBackColor = true;
             this.chkEnableBlower.CheckedChanged += new System.EventHandler(this.chkEnableBlower_CheckedChanged);
             // 
+            // chkPlayCooldownTimerSound
+            // 
+            resources.ApplyResources(this.chkPlayCooldownTimerSound, "chkPlayCooldownTimerSound");
+            this.chkPlayCooldownTimerSound.Name = "chkPlayCooldownTimerSound";
+            this.chkPlayCooldownTimerSound.UseVisualStyleBackColor = true;
+            // 
             // grpCaller
             // 
+            this.grpCaller.Controls.Add(this.chkPlayCooldownTimerSound);
             this.grpCaller.Controls.Add(this.chkEnableRNGBallCalls);
             this.grpCaller.Controls.Add(this.lbl_sec);
-            this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelayMs);
+            this.grpCaller.Controls.Add(this.grpFlashboard);
             this.grpCaller.Controls.Add(this.numGameStateBroadcastDelay);
             this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelay);
-            this.grpCaller.Controls.Add(this.grpFlashboard);
             this.grpCaller.Controls.Add(this.numCoolDownTimer);
             this.grpCaller.Controls.Add(this.grpRF);
             this.grpCaller.Controls.Add(this.lbl_coolDownTimer);
