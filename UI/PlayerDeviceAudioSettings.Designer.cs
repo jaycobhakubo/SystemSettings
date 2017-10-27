@@ -67,9 +67,8 @@
             this.tabCtrl_AudioDevice.Name = "tabCtrl_AudioDevice";
             this.tabCtrl_AudioDevice.SelectedIndex = 0;
             this.tabCtrl_AudioDevice.Tag = "";
-            this.tabCtrl_AudioDevice.SelectedIndexChanged += new System.EventHandler(this.tabCtrl_AudioDevice_SelectedIndexChanged);
             this.tabCtrl_AudioDevice.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_AudioDevice_Selecting);
-            this.tabCtrl_AudioDevice.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabCtrl_AudioDevice_Selected);
+            this.tabCtrl_AudioDevice.Deselecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_AudioDevice_Deselecting);
             // 
             // tbpgDefault
             // 

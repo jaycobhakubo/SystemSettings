@@ -14,20 +14,18 @@ namespace GTI.Modules.SystemSettings.UI
 {
     public partial class PlayerDeviceAudioSettings : SettingsControl
     {
-        bool m_bModified = false;
         private Device[] m_devices;
-        public Device[] Devices
-        {
-            get { return m_devices; }
-            set { m_devices = value; }
-        }
+        private AudioSettings m_AudioSettingsSelected; 
 
         public PlayerDeviceAudioSettings()
         {
             InitializeComponent();
         }
 
-        private AudioSettings m_AudioSettingsSelected; 
+        public override void OnActivate(object o)
+        {
+
+        }
 
         public override bool LoadSettings()
         {
@@ -49,9 +47,6 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-        public override void OnActivate(object o)
-        {
-        }
 
         public override bool SaveSettings()
         {
@@ -72,13 +67,7 @@ namespace GTI.Modules.SystemSettings.UI
             m_AudioSettingsSelected.LoadSettings();
         }
 
-        //public override bool LoadSettings()
-        //{
-        //    bool bResult = m_AudioSettingsSelected.LoadSettings();    
-        //    return bResult;
-        //}
-
-
+      
         private void LoadTab()
         {
             int tempID;
@@ -173,44 +162,24 @@ namespace GTI.Modules.SystemSettings.UI
             return m_AudioSettingsSelected;
         }
 
-        private void tabCtrl_AudioDevice_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //Common.BeginWait();
-            //this.SuspendLayout();
-
-            ////Promp to save if modified
-            //if (m_AudioSettingsSelected != null)
-            //{
-            //    DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
-            //    this.Refresh();
-            //    if (result == DialogResult.Yes)
-            //    {
-            //        if (!m_AudioSettingsSelected.SaveSettings())
-            //        {
-                        
-            //        }
-            //    }
-            //}
-
-            //var tabCrtrl = (TabControl)sender;
-            //TabPage tTabPageSelected = tabCrtrl.SelectedTab;
-            //int DeviceId = Convert.ToInt32(tTabPageSelected.Tag);
-            //SetSelectedDevice(DeviceId);
-
-            //this.ResumeLayout(true);
-            //Common.EndWait();
-        }
-
         private void tabCtrl_AudioDevice_Selecting(object sender, TabControlCancelEventArgs e)
-        {
-       
+        {       
             Common.BeginWait();
             this.SuspendLayout();
 
-            //Promp to save if modified
-            if (m_AudioSettingsSelected != null)
-            {
+            var tabCrtrl = (TabControl)sender;
+            TabPage tTabPageSelected = tabCrtrl.SelectedTab;
+            int DeviceId = Convert.ToInt32(tTabPageSelected.Tag);
+            SetSelectedDevice(DeviceId);
 
+            this.ResumeLayout(true);
+            Common.EndWait();
+        }
+
+        private void tabCtrl_AudioDevice_Deselecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (m_AudioSettingsSelected != null)//Promp to save if modified
+            {
                 if (m_AudioSettingsSelected.IsModified())
                 {
                     DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
@@ -220,11 +189,7 @@ namespace GTI.Modules.SystemSettings.UI
                         if (!m_AudioSettingsSelected.SaveSettings())
                         {
                             e.Cancel = true;
-                        }
-                        else
-                        {
-
-                        }
+                        }                      
                     }
                     else if (result == DialogResult.Cancel)
                     {
@@ -234,25 +199,15 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         m_AudioSettingsSelected.LoadSettings();
                     }
-
                 }
-            }
-
-            if (e.Cancel == false)
-            {
-                var tabCrtrl = (TabControl)sender;
-                TabPage tTabPageSelected = tabCrtrl.SelectedTab;
-                int DeviceId = Convert.ToInt32(tTabPageSelected.Tag);
-                SetSelectedDevice(DeviceId);
-            }
-
-            this.ResumeLayout(true);
-            Common.EndWait();
+            }              
         }
 
-        private void tabCtrl_AudioDevice_Selected(object sender, TabControlEventArgs e)
+        public Device[] Devices
         {
-            
+            get { return m_devices; }
+            set { m_devices = value; }
         }
+
     }
 }

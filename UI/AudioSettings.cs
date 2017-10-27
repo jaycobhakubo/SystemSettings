@@ -501,6 +501,10 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
         {
+
+            Common.BeginWait();
+            this.SuspendLayout();
+
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 groupBox5.Enabled = false;
@@ -516,6 +520,9 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 m_bModified = true;
             }
+
+            this.ResumeLayout(true);
+            Common.EndWait();
         }
 
         public int DeviceId { get; set; }
