@@ -17,6 +17,7 @@ namespace GTI.Modules.SystemSettings.UI
     {
         private Device[] m_devices;
         private PlayerSettings selectedPlayerSettings;
+        bool m_bModified = false;
 
         public PlayerDeviceSettings()
         {
@@ -154,6 +155,11 @@ namespace GTI.Modules.SystemSettings.UI
                     selectedPlayerSettings = plyrSettingTedE;
                 }
                 return selectedPlayerSettings;
+        }
+
+        private void OnModified(object sender, EventArgs e)
+        {
+            m_bModified = true;
         }
 
         private void tabCtrl_PlayerSettingDevice_SelectedIndexChanged(object sender, EventArgs e)
