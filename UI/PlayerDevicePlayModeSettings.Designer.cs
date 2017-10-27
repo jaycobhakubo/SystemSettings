@@ -66,7 +66,8 @@
             resources.ApplyResources(this.tabCtrl_PlayMode, "tabCtrl_PlayMode");
             this.tabCtrl_PlayMode.Name = "tabCtrl_PlayMode";
             this.tabCtrl_PlayMode.SelectedIndex = 0;
-            this.tabCtrl_PlayMode.SelectedIndexChanged += new System.EventHandler(this.tabCtrl_PlayMode_SelectedIndexChanged);
+            this.tabCtrl_PlayMode.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_PlayMode_Selecting);
+            this.tabCtrl_PlayMode.Deselecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_PlayMode_Deselecting);
             // 
             // tbpgDefault
             // 

@@ -117,7 +117,285 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;playModeSettingsDefault.Name" xml:space="preserve">
+    <value>playModeSettingsDefault</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsDefault.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsDefault.Parent" xml:space="preserve">
+    <value>tbpgDefault</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tbpgDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tbpgDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbpgDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tbpgDefault.Text" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;tbpgDefault.Name" xml:space="preserve">
+    <value>tbpgDefault</value>
+  </data>
+  <data name="&gt;&gt;tbpgDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpgDefault.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayMode</value>
+  </data>
+  <data name="&gt;&gt;tbpgDefault.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsFixedBase.Name" xml:space="preserve">
+    <value>playModeSettingsFixedBase</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsFixedBase.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsFixedBase.Parent" xml:space="preserve">
+    <value>tbpgFixedBase</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsFixedBase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbpgFixedBase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tbpgFixedBase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="tbpgFixedBase.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tbpgFixedBase.Text" xml:space="preserve">
+    <value>Fixed Base</value>
+  </data>
+  <data name="&gt;&gt;tbpgFixedBase.Name" xml:space="preserve">
+    <value>tbpgFixedBase</value>
+  </data>
+  <data name="&gt;&gt;tbpgFixedBase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpgFixedBase.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayMode</value>
+  </data>
+  <data name="&gt;&gt;tbpgFixedBase.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsExplorer2.Name" xml:space="preserve">
+    <value>playModeSettingsExplorer2</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsExplorer2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsExplorer2.Parent" xml:space="preserve">
+    <value>tbpgExplorer2</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsExplorer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbpgExplorer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tbpgExplorer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="tbpgExplorer2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="tbpgExplorer2.Text" xml:space="preserve">
+    <value>Explorer 2</value>
+  </data>
+  <data name="&gt;&gt;tbpgExplorer2.Name" xml:space="preserve">
+    <value>tbpgExplorer2</value>
+  </data>
+  <data name="&gt;&gt;tbpgExplorer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpgExplorer2.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayMode</value>
+  </data>
+  <data name="&gt;&gt;tbpgExplorer2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTedE.Name" xml:space="preserve">
+    <value>playModeSettingsTedE</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTedE.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTedE.Parent" xml:space="preserve">
+    <value>tbpgTedE</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTedE.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbpgTedE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tbpgTedE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="tbpgTedE.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="tbpgTedE.Text" xml:space="preserve">
+    <value>TedE</value>
+  </data>
+  <data name="&gt;&gt;tbpgTedE.Name" xml:space="preserve">
+    <value>tbpgTedE</value>
+  </data>
+  <data name="&gt;&gt;tbpgTedE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpgTedE.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayMode</value>
+  </data>
+  <data name="&gt;&gt;tbpgTedE.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTracker.Name" xml:space="preserve">
+    <value>playModeSettingsTracker</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTracker.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTracker.Parent" xml:space="preserve">
+    <value>tbpgTracker</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTracker.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbpgTracker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tbpgTracker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="tbpgTracker.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="tbpgTracker.Text" xml:space="preserve">
+    <value>Tracker</value>
+  </data>
+  <data name="&gt;&gt;tbpgTracker.Name" xml:space="preserve">
+    <value>tbpgTracker</value>
+  </data>
+  <data name="&gt;&gt;tbpgTracker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpgTracker.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayMode</value>
+  </data>
+  <data name="&gt;&gt;tbpgTracker.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTraveler.Name" xml:space="preserve">
+    <value>playModeSettingsTraveler</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTraveler.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTraveler.Parent" xml:space="preserve">
+    <value>tbpgTraveler</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTraveler.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbpgTraveler.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tbpgTraveler.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="tbpgTraveler.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="tbpgTraveler.Text" xml:space="preserve">
+    <value>Traveler</value>
+  </data>
+  <data name="&gt;&gt;tbpgTraveler.Name" xml:space="preserve">
+    <value>tbpgTraveler</value>
+  </data>
+  <data name="&gt;&gt;tbpgTraveler.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpgTraveler.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayMode</value>
+  </data>
+  <data name="&gt;&gt;tbpgTraveler.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTraveler2.Name" xml:space="preserve">
+    <value>playModeSettingsTraveler2</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTraveler2.Type" xml:space="preserve">
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTraveler2.Parent" xml:space="preserve">
+    <value>tbpgTraveler2</value>
+  </data>
+  <data name="&gt;&gt;playModeSettingsTraveler2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tbpgTraveler2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="tbpgTraveler2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 609</value>
+  </data>
+  <data name="tbpgTraveler2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="tbpgTraveler2.Text" xml:space="preserve">
+    <value>Traveler 2</value>
+  </data>
+  <data name="&gt;&gt;tbpgTraveler2.Name" xml:space="preserve">
+    <value>tbpgTraveler2</value>
+  </data>
+  <data name="&gt;&gt;tbpgTraveler2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbpgTraveler2.Parent" xml:space="preserve">
+    <value>tabCtrl_PlayMode</value>
+  </data>
+  <data name="&gt;&gt;tbpgTraveler2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tabCtrl_PlayMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabCtrl_PlayMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="tabCtrl_PlayMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 644</value>
+  </data>
+  <data name="tabCtrl_PlayMode.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabCtrl_PlayMode.Name" xml:space="preserve">
+    <value>tabCtrl_PlayMode</value>
+  </data>
+  <data name="&gt;&gt;tabCtrl_PlayMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabCtrl_PlayMode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabCtrl_PlayMode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="playModeSettingsDefault.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvYAAAKECAYAAABsC37qAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -165,7 +443,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvgAADr4B6kKxwAAAP3FpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAP3FpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -509,7 +787,6 @@
   <data name="playModeSettingsDefault.Size" type="System.Drawing.Size, System.Drawing">
     <value>762, 644</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="playModeSettingsDefault.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -523,30 +800,6 @@
     <value>tbpgDefault</value>
   </data>
   <data name="&gt;&gt;playModeSettingsDefault.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tbpgDefault.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tbpgDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tbpgDefault.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="tbpgDefault.Text" xml:space="preserve">
-    <value>Default</value>
-  </data>
-  <data name="&gt;&gt;tbpgDefault.Name" xml:space="preserve">
-    <value>tbpgDefault</value>
-  </data>
-  <data name="&gt;&gt;tbpgDefault.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbpgDefault.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayMode</value>
-  </data>
-  <data name="&gt;&gt;tbpgDefault.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="playModeSettingsFixedBase.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -596,7 +849,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvgAADr4B6kKxwAAAP3FpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAP3FpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -955,30 +1208,6 @@
   <data name="&gt;&gt;playModeSettingsFixedBase.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tbpgFixedBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tbpgFixedBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tbpgFixedBase.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="tbpgFixedBase.Text" xml:space="preserve">
-    <value>Fixed Base</value>
-  </data>
-  <data name="&gt;&gt;tbpgFixedBase.Name" xml:space="preserve">
-    <value>tbpgFixedBase</value>
-  </data>
-  <data name="&gt;&gt;tbpgFixedBase.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbpgFixedBase.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayMode</value>
-  </data>
-  <data name="&gt;&gt;tbpgFixedBase.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="playModeSettingsExplorer2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvYAAAKECAYAAABsC37qAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -1026,7 +1255,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvgAADr4B6kKxwAAAP3FpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAP3FpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -1385,30 +1614,6 @@
   <data name="&gt;&gt;playModeSettingsExplorer2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tbpgExplorer2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tbpgExplorer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tbpgExplorer2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="tbpgExplorer2.Text" xml:space="preserve">
-    <value>Explorer 2</value>
-  </data>
-  <data name="&gt;&gt;tbpgExplorer2.Name" xml:space="preserve">
-    <value>tbpgExplorer2</value>
-  </data>
-  <data name="&gt;&gt;tbpgExplorer2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbpgExplorer2.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayMode</value>
-  </data>
-  <data name="&gt;&gt;tbpgExplorer2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="playModeSettingsTedE.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvYAAAKECAYAAABsC37qAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -1456,7 +1661,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvgAADr4B6kKxwAAAP3FpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAP3FpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -1815,30 +2020,6 @@
   <data name="&gt;&gt;playModeSettingsTedE.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tbpgTedE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tbpgTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tbpgTedE.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="tbpgTedE.Text" xml:space="preserve">
-    <value>TedE</value>
-  </data>
-  <data name="&gt;&gt;tbpgTedE.Name" xml:space="preserve">
-    <value>tbpgTedE</value>
-  </data>
-  <data name="&gt;&gt;tbpgTedE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbpgTedE.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayMode</value>
-  </data>
-  <data name="&gt;&gt;tbpgTedE.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="playModeSettingsTracker.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvYAAAKECAYAAABsC37qAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -1886,7 +2067,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvgAADr4B6kKxwAAAP3FpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAP3FpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -2245,30 +2426,6 @@
   <data name="&gt;&gt;playModeSettingsTracker.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tbpgTracker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tbpgTracker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tbpgTracker.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="tbpgTracker.Text" xml:space="preserve">
-    <value>Tracker</value>
-  </data>
-  <data name="&gt;&gt;tbpgTracker.Name" xml:space="preserve">
-    <value>tbpgTracker</value>
-  </data>
-  <data name="&gt;&gt;tbpgTracker.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbpgTracker.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayMode</value>
-  </data>
-  <data name="&gt;&gt;tbpgTracker.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="playModeSettingsTraveler.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvYAAAKECAYAAABsC37qAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -2316,7 +2473,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvgAADr4B6kKxwAAAP3FpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAP3FpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -2675,30 +2832,6 @@
   <data name="&gt;&gt;playModeSettingsTraveler.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tbpgTraveler.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tbpgTraveler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tbpgTraveler.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="tbpgTraveler.Text" xml:space="preserve">
-    <value>Traveler</value>
-  </data>
-  <data name="&gt;&gt;tbpgTraveler.Name" xml:space="preserve">
-    <value>tbpgTraveler</value>
-  </data>
-  <data name="&gt;&gt;tbpgTraveler.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbpgTraveler.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayMode</value>
-  </data>
-  <data name="&gt;&gt;tbpgTraveler.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="playModeSettingsTraveler2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvYAAAKECAYAAABsC37qAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -2746,7 +2879,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvgAADr4B6kKxwAAAP3FpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAP3FpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -3103,55 +3236,6 @@
     <value>tbpgTraveler2</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTraveler2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tbpgTraveler2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 31</value>
-  </data>
-  <data name="tbpgTraveler2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
-  </data>
-  <data name="tbpgTraveler2.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="tbpgTraveler2.Text" xml:space="preserve">
-    <value>Traveler 2</value>
-  </data>
-  <data name="&gt;&gt;tbpgTraveler2.Name" xml:space="preserve">
-    <value>tbpgTraveler2</value>
-  </data>
-  <data name="&gt;&gt;tbpgTraveler2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbpgTraveler2.Parent" xml:space="preserve">
-    <value>tabCtrl_PlayMode</value>
-  </data>
-  <data name="&gt;&gt;tbpgTraveler2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="tabCtrl_PlayMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabCtrl_PlayMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="tabCtrl_PlayMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
-  </data>
-  <data name="tabCtrl_PlayMode.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabCtrl_PlayMode.Name" xml:space="preserve">
-    <value>tabCtrl_PlayMode</value>
-  </data>
-  <data name="&gt;&gt;tabCtrl_PlayMode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabCtrl_PlayMode.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabCtrl_PlayMode.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
