@@ -83,7 +83,7 @@ namespace GTI.Modules.SystemSettings.UI
 
                     if (tempID == Device.Traveler.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbpgTraveler);
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbpgTraveler);                           
                         plyeSettingTraveler.DeviceId = Device.Traveler.Id;
                         plyeSettingTraveler.LoadSettings();
                     }
@@ -116,6 +116,7 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         tabCtrl_PlayerSettingDevice.TabPages.Add(tbpgTedE);
                         plyrSettingTedE.DeviceId = Device.Tablet.Id;
+                        plyrSettingTedE.SetTedUI();
                         plyrSettingTedE.LoadSettings();
                     }
                 }
@@ -198,7 +199,7 @@ namespace GTI.Modules.SystemSettings.UI
             TabPage tTabPageSelected = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTabPageSelected.Tag);
             SetSelectedDevice(DeviceId);
-
+            selectedPlayerSettings.LoadSettings();
             this.ResumeLayout(true);
             Common.EndWait();
         }

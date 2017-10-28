@@ -175,7 +175,7 @@ namespace GTI.Modules.SystemSettings.UI
             TabPage tTablPageSelected = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTablPageSelected.Tag);
             SetSelectedDevice(DeviceId);
-
+            selectedPlayModeSettings.LoadSettings();
             this.ResumeLayout(true);
             Common.EndWait();
         }

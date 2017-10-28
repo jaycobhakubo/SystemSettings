@@ -171,6 +171,7 @@ namespace GTI.Modules.SystemSettings.UI
             TabPage tTabPageSelected = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTabPageSelected.Tag);
             SetSelectedDevice(DeviceId);
+            m_AudioSettingsSelected.LoadSettings();
 
             this.ResumeLayout(true);
             Common.EndWait();

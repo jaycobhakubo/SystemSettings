@@ -34,6 +34,24 @@ namespace GTI.Modules.SystemSettings.UI
             InitializeComponent();
         }
 
+        public void SetTedUI()
+        {
+            chkTVwoPurchase.Visible = false;
+            label4.Visible = false;
+            txtWiredNetworkConnectionLossThreshold.Visible = false;
+            label1.Visible = false;
+
+            chkCacheSettings.Location = new System.Drawing.Point(394, 141);
+            label6.Location = new System.Drawing.Point(21, 373);
+            txtWirelessNetworkConnectionLossThreshold.Location = new System.Drawing.Point(405, 373);
+            label5.Location = new System.Drawing.Point(506, 374);
+
+            chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 204);
+            lblCrateRebootThreshold.Location = new System.Drawing.Point(21, 407);
+            txtRebootTimeThreshold.Location = new System.Drawing.Point(405, 407);
+            lblCrateRebootThresholdSeconds.Location = new System.Drawing.Point(506, 407);
+        }
+
         // Public Methods
         #region Public Methods
 
