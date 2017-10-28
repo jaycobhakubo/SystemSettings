@@ -66,8 +66,9 @@
             resources.ApplyResources(this.tabCtrl_AudioDevice, "tabCtrl_AudioDevice");
             this.tabCtrl_AudioDevice.Name = "tabCtrl_AudioDevice";
             this.tabCtrl_AudioDevice.SelectedIndex = 0;
-            this.tabCtrl_AudioDevice.Tag = "PlayerDevice";
-            this.tabCtrl_AudioDevice.SelectedIndexChanged += new System.EventHandler(this.tabCtrl_AudioDevice_SelectedIndexChanged);
+            this.tabCtrl_AudioDevice.Tag = "";
+            this.tabCtrl_AudioDevice.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_AudioDevice_Selecting);
+            this.tabCtrl_AudioDevice.Deselecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_AudioDevice_Deselecting);
             // 
             // tbpgDefault
             // 
@@ -75,6 +76,7 @@
             this.tbpgDefault.Controls.Add(this.audioSettingDefault);
             resources.ApplyResources(this.tbpgDefault, "tbpgDefault");
             this.tbpgDefault.Name = "tbpgDefault";
+            this.tbpgDefault.Tag = "0";
             // 
             // audioSettingDefault
             // 
@@ -88,6 +90,7 @@
             this.tbpgFixedBase.Controls.Add(this.audioSettingsFixedBase);
             resources.ApplyResources(this.tbpgFixedBase, "tbpgFixedBase");
             this.tbpgFixedBase.Name = "tbpgFixedBase";
+            this.tbpgFixedBase.Tag = "3";
             // 
             // audioSettingsFixedBase
             // 
@@ -102,6 +105,7 @@
             this.tbpgExplorer2.Controls.Add(this.audioSettingsExplorer2);
             resources.ApplyResources(this.tbpgExplorer2, "tbpgExplorer2");
             this.tbpgExplorer2.Name = "tbpgExplorer2";
+            this.tbpgExplorer2.Tag = "4";
             // 
             // audioSettingsExplorer2
             // 
@@ -115,6 +119,7 @@
             this.tbpgTedE.Controls.Add(this.audioSettingsTedE);
             resources.ApplyResources(this.tbpgTedE, "tbpgTedE");
             this.tbpgTedE.Name = "tbpgTedE";
+            this.tbpgTedE.Tag = "17";
             // 
             // audioSettingsTedE
             // 
@@ -128,6 +133,7 @@
             this.tbpgTracker.Controls.Add(this.audioSettingsTracker);
             resources.ApplyResources(this.tbpgTracker, "tbpgTracker");
             this.tbpgTracker.Name = "tbpgTracker";
+            this.tbpgTracker.Tag = "2";
             // 
             // audioSettingsTracker
             // 
@@ -141,6 +147,7 @@
             this.tbpgTraveler.Controls.Add(this.audioSettingsTraveler);
             resources.ApplyResources(this.tbpgTraveler, "tbpgTraveler");
             this.tbpgTraveler.Name = "tbpgTraveler";
+            this.tbpgTraveler.Tag = "1";
             // 
             // audioSettingsTraveler
             // 
@@ -154,6 +161,7 @@
             this.tbpgTraveler2.Controls.Add(this.audioSettingsTraveler2);
             resources.ApplyResources(this.tbpgTraveler2, "tbpgTraveler2");
             this.tbpgTraveler2.Name = "tbpgTraveler2";
+            this.tbpgTraveler2.Tag = "14";
             // 
             // audioSettingsTraveler2
             // 

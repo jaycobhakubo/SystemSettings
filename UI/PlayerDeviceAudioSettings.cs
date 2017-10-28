@@ -8,37 +8,57 @@ using System.Text;
 using System.Windows.Forms;
 using GTI.Modules.Shared;
 using GTI.Modules.SystemSettings.Data;
+using GTI.Modules.SystemSettings.Properties;
 
 namespace GTI.Modules.SystemSettings.UI
 {
     public partial class PlayerDeviceAudioSettings : SettingsControl
     {
         private Device[] m_devices;
-        public Device[] Devices
-        {
-            get { return m_devices; }
-            set { m_devices = value; }
-        }
+        private AudioSettings m_AudioSettingsSelected; 
 
         public PlayerDeviceAudioSettings()
         {
             InitializeComponent();
         }
 
-        private AudioSettings m_AudioSettingsSelected; 
+        public override void OnActivate(object o)
+        {
+
+        }
 
         public override bool LoadSettings()
         {
             Common.BeginWait();
             this.SuspendLayout();
 
-            LoadTab();
-            LoadDefaultTab();
+            if (m_AudioSettingsSelected != null)
+            {
+                m_AudioSettingsSelected.LoadSettings();
+            }
+            else
+            {
+                LoadTab();
+                LoadDefaultTab();
+            }
 
             this.ResumeLayout(true);
             Common.EndWait();
             return true;
         }
+
+
+        public override bool SaveSettings()
+        {
+            bool bResult = m_AudioSettingsSelected.SaveSettings();
+            return bResult;
+        }
+
+        public override bool IsModified()
+        {           
+            return m_AudioSettingsSelected.IsModified();
+        }
+
 
         private void LoadDefaultTab()
         {
@@ -47,6 +67,7 @@ namespace GTI.Modules.SystemSettings.UI
             m_AudioSettingsSelected.LoadSettings();
         }
 
+      
         private void LoadTab()
         {
             int tempID;
@@ -137,11 +158,12 @@ namespace GTI.Modules.SystemSettings.UI
                 m_AudioSettingsSelected = audioSettingsTedE;
             }
 
+            
             return m_AudioSettingsSelected;
         }
 
-        private void tabCtrl_AudioDevice_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        private void tabCtrl_AudioDevice_Selecting(object sender, TabControlCancelEventArgs e)
+        {       
             Common.BeginWait();
             this.SuspendLayout();
 
@@ -149,9 +171,44 @@ namespace GTI.Modules.SystemSettings.UI
             TabPage tTabPageSelected = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTabPageSelected.Tag);
             SetSelectedDevice(DeviceId);
+            m_AudioSettingsSelected.LoadSettings();
 
             this.ResumeLayout(true);
             Common.EndWait();
         }
+
+        private void tabCtrl_AudioDevice_Deselecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (m_AudioSettingsSelected != null)//Promp to save if modified
+            {
+                if (m_AudioSettingsSelected.IsModified())
+                {
+                    DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
+                    this.Refresh();
+                    if (result == DialogResult.Yes)
+                    {
+                        if (!m_AudioSettingsSelected.SaveSettings())
+                        {
+                            e.Cancel = true;
+                        }                      
+                    }
+                    else if (result == DialogResult.Cancel)
+                    {
+                        e.Cancel = true;
+                    }
+                    else
+                    {
+                        m_AudioSettingsSelected.LoadSettings();
+                    }
+                }
+            }              
+        }
+
+        public Device[] Devices
+        {
+            get { return m_devices; }
+            set { m_devices = value; }
+        }
+
     }
 }

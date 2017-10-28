@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using GTI.Modules.Shared;
 using GTI.Modules.SystemSettings.Data;
+using GTI.Modules.SystemSettings.Properties;
 
 
 namespace GTI.Modules.SystemSettings.UI
@@ -22,14 +23,37 @@ namespace GTI.Modules.SystemSettings.UI
             InitializeComponent();
         }
 
+        public override void OnActivate(object o)
+        {
+
+        }
+
+        public override bool IsModified()
+        {
+            return selectedPlayModeSettings.IsModified();
+        }
+        
+         public override bool SaveSettings()
+        {
+            bool bResult = selectedPlayModeSettings.SaveSettings();
+            return bResult;
+        }
+
         public override bool LoadSettings()
         {
       
             Common.BeginWait();
             this.SuspendLayout();
 
-            LoadTab();
-            LoadDefaultTab();
+            if (selectedPlayModeSettings != null)
+            {
+                selectedPlayModeSettings.LoadSettings();
+            }
+            else
+            {
+                LoadTab();
+                LoadDefaultTab();
+            }
 
             this.ResumeLayout(true);
             Common.EndWait();
@@ -135,7 +159,14 @@ namespace GTI.Modules.SystemSettings.UI
             return selectedPlayModeSettings;
         }
 
-        private void tabCtrl_PlayMode_SelectedIndexChanged(object sender, EventArgs e)
+
+        public Device[] Devices
+        {
+            get { return m_devices; }
+            set { m_devices = value; }
+        }
+
+        private void tabCtrl_PlayMode_Selecting(object sender, TabControlCancelEventArgs e)
         {
             Common.BeginWait();
             this.SuspendLayout();
@@ -144,15 +175,36 @@ namespace GTI.Modules.SystemSettings.UI
             TabPage tTablPageSelected = tabCrtrl.SelectedTab;
             int DeviceId = Convert.ToInt32(tTablPageSelected.Tag);
             SetSelectedDevice(DeviceId);
-
+            selectedPlayModeSettings.LoadSettings();
             this.ResumeLayout(true);
             Common.EndWait();
         }
 
-        public Device[] Devices
+        private void tabCtrl_PlayMode_Deselecting(object sender, TabControlCancelEventArgs e)
         {
-            get { return m_devices; }
-            set { m_devices = value; }
+            if (selectedPlayModeSettings != null)//Promp to save if modified
+            {
+                if (selectedPlayModeSettings.IsModified())
+                {
+                    DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
+                    this.Refresh();
+                    if (result == DialogResult.Yes)
+                    {
+                        if (!selectedPlayModeSettings.SaveSettings())
+                        {
+                            e.Cancel = true;
+                        }
+                    }
+                    else if (result == DialogResult.Cancel)
+                    {
+                        e.Cancel = true;
+                    }
+                    else
+                    {
+                        selectedPlayModeSettings.LoadSettings();
+                    }
+                }
+            }          
         }
     }
 }

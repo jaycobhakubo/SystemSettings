@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 using GTI.Modules.Shared;
 using GTI.Modules.SystemSettings.Data;
+using GTI.Modules.SystemSettings.Properties;
 
 
 namespace GTI.Modules.SystemSettings.UI
@@ -23,23 +24,42 @@ namespace GTI.Modules.SystemSettings.UI
             InitializeComponent();         
         }
 
+
         public override void OnActivate(object o)
         {
 
         }
-
 
         public override bool LoadSettings()
         {
             Common.BeginWait();
             this.SuspendLayout();
 
-            LoadTab();
-            LoadDefaultTab();
+            if (selectedPlayerSettings != null)
+            {
+                selectedPlayerSettings.LoadSettings();
+            }
+            else
+            {
+                LoadTab();
+                LoadDefaultTab();
+            }
 
             this.ResumeLayout(true);
             Common.EndWait();
             return true;
+        }
+
+
+        public override bool SaveSettings()
+        {
+            bool bResult = selectedPlayerSettings.SaveSettings();
+            return bResult;
+        }
+
+        public override bool IsModified()
+        {
+            return selectedPlayerSettings.IsModified();
         }
       
         private void LoadDefaultTab()
@@ -63,7 +83,7 @@ namespace GTI.Modules.SystemSettings.UI
 
                     if (tempID == Device.Traveler.Id)
                     {
-                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbpgTraveler);
+                        tabCtrl_PlayerSettingDevice.TabPages.Add(tbpgTraveler);                           
                         plyeSettingTraveler.DeviceId = Device.Traveler.Id;
                         plyeSettingTraveler.LoadSettings();
                     }
@@ -96,6 +116,7 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         tabCtrl_PlayerSettingDevice.TabPages.Add(tbpgTedE);
                         plyrSettingTedE.DeviceId = Device.Tablet.Id;
+                        plyrSettingTedE.SetTedUI();
                         plyrSettingTedE.LoadSettings();
                     }
                 }
@@ -156,24 +177,58 @@ namespace GTI.Modules.SystemSettings.UI
                 return selectedPlayerSettings;
         }
 
-        private void tabCtrl_PlayerSettingDevice_SelectedIndexChanged(object sender, EventArgs e)
+        //private void OnModified(object sender, EventArgs e)
+        //{
+        //    m_bModified = true;
+        //}
+
+      
+        public Device[] Devices
+        {
+            get { return m_devices; }
+            set { m_devices = value; }
+        }
+
+   
+        private void tabCtrl_PlayerSettingDevice_Selecting(object sender, TabControlCancelEventArgs e)
         {
             Common.BeginWait();
             this.SuspendLayout();
 
             var tabCrtrl = (TabControl)sender;
-            TabPage tTabPage = tabCrtrl.SelectedTab;
-            int DeviceId = Convert.ToInt32(tTabPage.Tag);
-            SetSelectedDevice(DeviceId);     
-        
+            TabPage tTabPageSelected = tabCrtrl.SelectedTab;
+            int DeviceId = Convert.ToInt32(tTabPageSelected.Tag);
+            SetSelectedDevice(DeviceId);
+            selectedPlayerSettings.LoadSettings();
             this.ResumeLayout(true);
-            Common.EndWait();                                
+            Common.EndWait();
         }
 
-        public Device[] Devices
+        private void tabCtrl_PlayerSettingDevice_Deselecting(object sender, TabControlCancelEventArgs e)
         {
-            get { return m_devices; }
-            set { m_devices = value; }
+            if (selectedPlayerSettings != null)//Promp to save if modified
+            {
+                if (selectedPlayerSettings.IsModified())
+                {
+                    DialogResult result = MessageForm.Show(this, Resources.SaveChangesMessage, Resources.SaveChangesHeader, MessageFormTypes.YesNoCancel);
+                    this.Refresh();
+                    if (result == DialogResult.Yes)
+                    {
+                        if (!selectedPlayerSettings.SaveSettings())
+                        {
+                            e.Cancel = true;
+                        }
+                    }
+                    else if (result == DialogResult.Cancel)
+                    {
+                        e.Cancel = true;
+                    }
+                    else
+                    {
+                        selectedPlayerSettings.LoadSettings();
+                    }
+                }
+            }            
         }   
     }
 }

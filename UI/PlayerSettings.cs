@@ -26,6 +26,7 @@ namespace GTI.Modules.SystemSettings.UI
     {
         private const int PlayerPinMaxLength = 2; // Members      
         bool m_bModified = false;
+        bool m_isDefault;
         GetDeviceSettingsMessage DeviceSettingmsg;
 
         public PlayerSettings()
@@ -33,10 +34,28 @@ namespace GTI.Modules.SystemSettings.UI
             InitializeComponent();
         }
 
+        public void SetTedUI()
+        {
+            chkTVwoPurchase.Visible = false;
+            label4.Visible = false;
+            txtWiredNetworkConnectionLossThreshold.Visible = false;
+            label1.Visible = false;
+
+            chkCacheSettings.Location = new System.Drawing.Point(394, 141);
+            label6.Location = new System.Drawing.Point(21, 373);
+            txtWirelessNetworkConnectionLossThreshold.Location = new System.Drawing.Point(405, 373);
+            label5.Location = new System.Drawing.Point(506, 374);
+
+            chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 204);
+            lblCrateRebootThreshold.Location = new System.Drawing.Point(21, 407);
+            txtRebootTimeThreshold.Location = new System.Drawing.Point(405, 407);
+            lblCrateRebootThresholdSeconds.Location = new System.Drawing.Point(506, 407);
+        }
+
         // Public Methods
         #region Public Methods
 
-        public bool IsModified()
+        public override bool IsModified()
         //  public override bool IsModified()
         {
             return m_bModified;
@@ -48,7 +67,7 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         //public override bool LoadSettings()
-        public bool LoadSettings()
+        public override bool LoadSettings()
         {
             Common.BeginWait();
             this.SuspendLayout();
@@ -59,7 +78,7 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         //public override bool SaveSettings()
-        public bool SaveSettings()
+        public override bool SaveSettings()
         {
             Common.BeginWait();
             this.SuspendLayout();
@@ -520,6 +539,7 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
+
                 var tResult = SetUIValue();
 
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0 || tResult == false)//if zero then default is set
@@ -532,10 +552,12 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         SetValueToDefault();
                     }
+                    m_isDefault = true;
                 }
                 else
                 {
                     chkbxUseDefault.Checked = false;
+                    m_isDefault = false;
                 }
 
             }
@@ -545,6 +567,7 @@ namespace GTI.Modules.SystemSettings.UI
                 if (chkbxUseDefault.Checked != false) { chkbxUseDefault.Checked = false; }
                 chkbxUseDefault.Visible = false;
             }
+
             m_bModified = false;
             return true;
         }
@@ -554,6 +577,11 @@ namespace GTI.Modules.SystemSettings.UI
         {
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
+
+            if (m_isDefault != chkbxUseDefault.Checked)
+            {
+                m_isDefault = chkbxUseDefault.Checked;
+            }
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
@@ -793,6 +821,11 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 groupBox5.Enabled = true;
                 SetUIValue();
+            }
+
+            if (chkbxUseDefault.Checked != m_isDefault)
+            {
+                m_bModified = true;
             }
 
 

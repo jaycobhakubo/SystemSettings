@@ -12,12 +12,12 @@ namespace GTI.Modules.SystemSettings.UI
         // Members
         bool m_bModified = false;
         bool m_needsSave = false;
+        bool m_isDefault;
         private List<CheckBox> audioCheckBoxList;//FIX RALLY DE 2645 added all audio settings to global variable
         GetDeviceSettingsMessage DeviceSettingmsg;
 
         public AudioSettings()
         {
-
             InitializeComponent();
             audioCheckBoxList = new List<CheckBox>{chkPlayBallCallSoundEnabled,  //FIX START RALLY DE 2645 added all audio settings to global variable
             chkPlayKeyClickEnabled,chkPlayModeOneAwaySound,chkPlayWinningSoundEnabled};            //FIX END RALLY DE 2645 added all audio settings to global variable
@@ -186,7 +186,6 @@ namespace GTI.Modules.SystemSettings.UI
             bool boolResult;
             SettingValue tempSettingValue;
 
-
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayAllSoundEnabled, out tempSettingValue);
@@ -318,27 +317,24 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
-                if (DeviceSettingmsg.ReturnCode != 0)
-                {
-                    return false;
-                }
-
                 tResult = SetUIValue();
 
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0 || tResult == false)//if zero then default is set
                 {
                     if (chkbxUseDefault.Checked != true)
                     {
-                        chkbxUseDefault.Checked = true;
+                        chkbxUseDefault.Checked = true;                     
                     }
                     else
                     {
                         SetValueToDefault();
                     }
+                    m_isDefault = true;
                 }
                 else
                 {
                     chkbxUseDefault.Checked = false;
+                    m_isDefault = false;
                 }
             }
             else
@@ -357,6 +353,11 @@ namespace GTI.Modules.SystemSettings.UI
             // Update the operator global settings
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
+
+            if (m_isDefault != chkbxUseDefault.Checked)
+            {
+                m_isDefault = chkbxUseDefault.Checked;
+            }
 
             //license file
             if (chkPlayAllSoundEnabled.Tag.ToString() == "Enabled" || m_needsSave)
@@ -500,6 +501,10 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
         {
+
+            Common.BeginWait();
+            this.SuspendLayout();
+
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 groupBox5.Enabled = false;
@@ -510,6 +515,14 @@ namespace GTI.Modules.SystemSettings.UI
                 groupBox5.Enabled = true;
                 SetUIValue();
             }
+
+            if (chkbxUseDefault.Checked != m_isDefault)
+            {
+                m_bModified = true;
+            }
+
+            this.ResumeLayout(true);
+            Common.EndWait();
         }
 
         public int DeviceId { get; set; }

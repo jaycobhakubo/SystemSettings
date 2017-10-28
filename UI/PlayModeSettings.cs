@@ -20,6 +20,8 @@ namespace GTI.Modules.SystemSettings.UI
         public List<CheckBox> m_checkBoxList;
         private int m_playMode;
         GetDeviceSettingsMessage DeviceSettingmsg;
+        bool m_isDefault;
+
         //FIX: RALLY DE2390 Updated Play Modes Start:
         /// <summary>
         /// Initializes the PlayModeSettings Control
@@ -471,10 +473,12 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         SetValueToDefault();
                     }
+                    m_isDefault = true;
                 }
                 else
                 {
                     chkbxUseDefault.Checked = false;
+                    m_isDefault = false;
                 }
             }
             else
@@ -497,6 +501,11 @@ namespace GTI.Modules.SystemSettings.UI
 
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
+
+            if (m_isDefault != chkbxUseDefault.Checked)
+            {
+                m_isDefault = chkbxUseDefault.Checked;
+            }
 
             //Save the play mode
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
@@ -913,6 +922,9 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void chkbxUseDefault_CheckedChanged(object sender, EventArgs e)
         {
+            Common.BeginWait();
+            this.SuspendLayout();
+
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 groupBox5.Enabled = false;
@@ -923,6 +935,14 @@ namespace GTI.Modules.SystemSettings.UI
                 groupBox5.Enabled = true;
                 SetUIValue();
             }
+
+            if (chkbxUseDefault.Checked != m_isDefault)
+            {
+                m_bModified = true;
+            }
+
+            this.ResumeLayout(true);
+            Common.EndWait();
         }
 
         #region Properties
