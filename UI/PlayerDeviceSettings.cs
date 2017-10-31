@@ -104,6 +104,7 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         tabCtrl_PlayerSettingDevice.TabPages.Add(tbpgFixedBase);
                         plyrSettingFixedBase.DeviceId = Device.Fixed.Id;
+                        plyrSettingFixedBase.SetUI();
                         plyrSettingFixedBase.LoadSettings();
                     }
                     else if (tempID == Device.Traveler2.Id) // Rally US765
@@ -116,7 +117,7 @@ namespace GTI.Modules.SystemSettings.UI
                     {
                         tabCtrl_PlayerSettingDevice.TabPages.Add(tbpgTedE);
                         plyrSettingTedE.DeviceId = Device.Tablet.Id;
-                        plyrSettingTedE.SetTedUI();
+                        plyrSettingTedE.SetUI();
                         plyrSettingTedE.LoadSettings();
                     }
                 }

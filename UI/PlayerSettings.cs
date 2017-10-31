@@ -34,22 +34,45 @@ namespace GTI.Modules.SystemSettings.UI
             InitializeComponent();
         }
 
-        public void SetTedUI()
+        public void SetUI()
         {
-            chkTVwoPurchase.Visible = false;
-            label4.Visible = false;
-            txtWiredNetworkConnectionLossThreshold.Visible = false;
-            label1.Visible = false;
+            if (DeviceId == 17)//TedE
+            {
+                /*Allow TV..*/
+                chkTVwoPurchase.Visible = false;
+                /*Wired Network..*/
+                label4.Visible = false; txtWiredNetworkConnectionLossThreshold.Visible = false; label1.Visible = false;
+                /*Player PIN..*/
+                chkPlayerPIN.Visible = false;
+                /*Lock Screen..*/
+                chkLockScreenOn.Visible = false;
+                /*Logout Packs..*/
+                chkLogoutPackSessionClose.Visible = false;
+                /*Player PIN..*/
+                label7.Visible = false; txtPlayerPINLength.Visible = false;
 
-            chkCacheSettings.Location = new System.Drawing.Point(394, 141);
-            label6.Location = new System.Drawing.Point(21, 373);
-            txtWirelessNetworkConnectionLossThreshold.Location = new System.Drawing.Point(405, 373);
-            label5.Location = new System.Drawing.Point(506, 374);
+                chkCacheSettings.Location = new System.Drawing.Point(394, 76);
+                label6.Location = new System.Drawing.Point(21, 373);
+                txtWirelessNetworkConnectionLossThreshold.Location = new System.Drawing.Point(405, 373);
+                label5.Location = new System.Drawing.Point(506, 374);
+                chkAutoModeOn.Location = new System.Drawing.Point(24, 44);
+                chkDisplayProgressives.Location = new System.Drawing.Point(394, 44);
+                chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 141);
+                lblCrateRebootThreshold.Location = new System.Drawing.Point(21, 407);
+                txtRebootTimeThreshold.Location = new System.Drawing.Point(405, 407);
+                lblCrateRebootThresholdSeconds.Location = new System.Drawing.Point(506, 407);
+                
+            }
+            else if (DeviceId == 3)//FBU
+            {
+                chkEnableMultiplayerOnFunGames.Visible = false;
+                chkRecoverOnReboot.Visible = false;
+                chkDisplayProgressives.Visible = false;
+                chkCacheSettings.Visible = false;
+                chkAutoModeOn.Location = new System.Drawing.Point(24, 172);
+                chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 173);
 
-            chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 204);
-            lblCrateRebootThreshold.Location = new System.Drawing.Point(21, 407);
-            txtRebootTimeThreshold.Location = new System.Drawing.Point(405, 407);
-            lblCrateRebootThresholdSeconds.Location = new System.Drawing.Point(506, 407);
+            }
         }
 
         // Public Methods
