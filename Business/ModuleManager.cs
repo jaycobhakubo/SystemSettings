@@ -78,7 +78,7 @@ namespace GTI.Modules.SystemSettings.Business
                 return;
             }
 
-            Application.EnableVisualStyles(); // allows us to do ctrl+a on textboxes... If it breaks something, remove it.
+            //Application.EnableVisualStyles(); // allows us to do ctrl+a on textboxes... If it breaks something, remove it.
 
             // Create a settings object with the default values.           
             m_settings = new ModuleSettings();

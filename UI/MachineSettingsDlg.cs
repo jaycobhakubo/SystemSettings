@@ -1000,7 +1000,6 @@ namespace GTI.Modules.SystemSettings.UI
                 rdChangeBGColor.Enabled = true;
                 rdCycleMode.Enabled = true;
             }
-
             else
             {
                 chkAnticipationDefault.Checked = true;
@@ -1345,8 +1344,11 @@ namespace GTI.Modules.SystemSettings.UI
                     m_AnticipationType = 1;
                 else if (rdNextBallOnly.Checked)
                     m_AnticipationType = 2;
-                else
+                else if (rdChangeBGColor.Checked)
                     m_AnticipationType = 0;
+                else
+                    m_AnticipationType = 3;
+
                 s.Id = (int)Setting.DisplayNextBall;
                 s.Value = m_AnticipationType.ToString();
                 arrSettings.Add(s); //US4727
