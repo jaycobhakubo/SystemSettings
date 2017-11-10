@@ -45,17 +45,17 @@ namespace GTI.Modules.SystemSettings.UI
             this.tbBlowerAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.chkEnableBlower = new System.Windows.Forms.CheckBox();
+            this.lblGameStateBroadcastDelayMs = new System.Windows.Forms.Label();
             this.chkPlayCooldownTimerSound = new System.Windows.Forms.CheckBox();
             this.grpCaller = new System.Windows.Forms.GroupBox();
             this.chkEnableRNGBallCalls = new System.Windows.Forms.CheckBox();
             this.lbl_sec = new System.Windows.Forms.Label();
-            this.lblGameStateBroadcastDelayMs = new System.Windows.Forms.Label();
-            this.numGameStateBroadcastDelay = new System.Windows.Forms.NumericUpDown();
-            this.lblGameStateBroadcastDelay = new System.Windows.Forms.Label();
             this.grpFlashboard = new System.Windows.Forms.GroupBox();
             this.chkEnableLedFB = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cboFbNumDisplay = new System.Windows.Forms.ComboBox();
+            this.numGameStateBroadcastDelay = new System.Windows.Forms.NumericUpDown();
+            this.lblGameStateBroadcastDelay = new System.Windows.Forms.Label();
             this.numCoolDownTimer = new System.Windows.Forms.NumericUpDown();
             this.grpRF = new System.Windows.Forms.GroupBox();
             this.rfDelayMsLabel = new System.Windows.Forms.Label();
@@ -84,8 +84,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpExtraBalls.SuspendLayout();
             this.grpBlower.SuspendLayout();
             this.grpCaller.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numGameStateBroadcastDelay)).BeginInit();
             this.grpFlashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numGameStateBroadcastDelay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCoolDownTimer)).BeginInit();
             this.grpRF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numRfPacketSleep)).BeginInit();
@@ -143,7 +143,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpBlower.Controls.Add(this.tbBlowerAddress);
             this.grpBlower.Controls.Add(this.label5);
             this.grpBlower.Controls.Add(this.chkEnableBlower);
-            this.grpBlower.Controls.Add(this.lblGameStateBroadcastDelayMs);
             resources.ApplyResources(this.grpBlower, "grpBlower");
             this.grpBlower.Name = "grpBlower";
             this.grpBlower.TabStop = false;
@@ -167,6 +166,11 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkEnableBlower.UseVisualStyleBackColor = true;
             this.chkEnableBlower.CheckedChanged += new System.EventHandler(this.chkEnableBlower_CheckedChanged);
             // 
+            // lblGameStateBroadcastDelayMs
+            // 
+            resources.ApplyResources(this.lblGameStateBroadcastDelayMs, "lblGameStateBroadcastDelayMs");
+            this.lblGameStateBroadcastDelayMs.Name = "lblGameStateBroadcastDelayMs";
+            // 
             // chkPlayCooldownTimerSound
             // 
             resources.ApplyResources(this.chkPlayCooldownTimerSound, "chkPlayCooldownTimerSound");
@@ -178,6 +182,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpCaller.Controls.Add(this.chkPlayCooldownTimerSound);
             this.grpCaller.Controls.Add(this.chkEnableRNGBallCalls);
             this.grpCaller.Controls.Add(this.lbl_sec);
+            this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelayMs);
             this.grpCaller.Controls.Add(this.grpFlashboard);
             this.grpCaller.Controls.Add(this.numGameStateBroadcastDelay);
             this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelay);
@@ -209,26 +214,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.lbl_sec, "lbl_sec");
             this.lbl_sec.Name = "lbl_sec";
             // 
-            // lblGameStateBroadcastDelayMs
-            // 
-            resources.ApplyResources(this.lblGameStateBroadcastDelayMs, "lblGameStateBroadcastDelayMs");
-            this.lblGameStateBroadcastDelayMs.Name = "lblGameStateBroadcastDelayMs";
-            // 
-            // numGameStateBroadcastDelay
-            // 
-            resources.ApplyResources(this.numGameStateBroadcastDelay, "numGameStateBroadcastDelay");
-            this.numGameStateBroadcastDelay.Maximum = new decimal(new int[] {
-            30000,
-            0,
-            0,
-            0});
-            this.numGameStateBroadcastDelay.Name = "numGameStateBroadcastDelay";
-            // 
-            // lblGameStateBroadcastDelay
-            // 
-            resources.ApplyResources(this.lblGameStateBroadcastDelay, "lblGameStateBroadcastDelay");
-            this.lblGameStateBroadcastDelay.Name = "lblGameStateBroadcastDelay";
-            // 
             // grpFlashboard
             // 
             this.grpFlashboard.Controls.Add(this.chkEnableLedFB);
@@ -257,6 +242,21 @@ namespace GTI.Modules.SystemSettings.UI
             this.cboFbNumDisplay.FormattingEnabled = true;
             this.cboFbNumDisplay.Name = "cboFbNumDisplay";
             this.cboFbNumDisplay.SelectedValueChanged += new System.EventHandler(this.OnModified);
+            // 
+            // numGameStateBroadcastDelay
+            // 
+            resources.ApplyResources(this.numGameStateBroadcastDelay, "numGameStateBroadcastDelay");
+            this.numGameStateBroadcastDelay.Maximum = new decimal(new int[] {
+            30000,
+            0,
+            0,
+            0});
+            this.numGameStateBroadcastDelay.Name = "numGameStateBroadcastDelay";
+            // 
+            // lblGameStateBroadcastDelay
+            // 
+            resources.ApplyResources(this.lblGameStateBroadcastDelay, "lblGameStateBroadcastDelay");
+            this.lblGameStateBroadcastDelay.Name = "lblGameStateBroadcastDelay";
             // 
             // numCoolDownTimer
             // 
@@ -436,8 +436,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -451,8 +449,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -474,9 +470,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpBlower.PerformLayout();
             this.grpCaller.ResumeLayout(false);
             this.grpCaller.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numGameStateBroadcastDelay)).EndInit();
             this.grpFlashboard.ResumeLayout(false);
             this.grpFlashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numGameStateBroadcastDelay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCoolDownTimer)).EndInit();
             this.grpRF.ResumeLayout(false);
             this.grpRF.PerformLayout();

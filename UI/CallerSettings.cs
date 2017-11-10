@@ -158,8 +158,9 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.CoolDownTimer, out tempSettingValue);
 
             //RALLY DE 6616 cool down timer setting dependant on RNG ball calls enabled
-            numCoolDownTimer.Enabled = ParseBool(Common.GetLicenseSettingValue(LicenseSetting.EnableBingoRNG)) ||     //RALLY DE9427
-                ParseBool(Common.GetSystemSetting(Setting.BlowerEnabled));
+            //20171110 knc: Removed dependency of this control
+            //numCoolDownTimer.Enabled = ParseBool(Common.GetLicenseSettingValue(LicenseSetting.EnableBingoRNG)) ||     //RALLY DE9427
+            //    ParseBool(Common.GetSystemSetting(Setting.BlowerEnabled));
 
             //END RALLY DE 6616
             int cooldownTimer;
@@ -392,7 +393,7 @@ namespace GTI.Modules.SystemSettings.UI
                 chkEnableRNGBallCalls.Visible = boolResult;
                 lbl_coolDownTimer.Visible = boolResult;
                 numCoolDownTimer.Visible = boolResult;
-                numCoolDownTimer.Enabled = chkEnableRNGBallCalls.Checked;
+                //numCoolDownTimer.Enabled = chkEnableRNGBallCalls.Checked;
                 lbl_sec.Visible = boolResult;
             }
 
@@ -908,7 +909,7 @@ namespace GTI.Modules.SystemSettings.UI
         private void chkEnableRNGBallCalls_CheckedChanged(object sender, EventArgs e)
         {
             m_bModified = true;
-            numCoolDownTimer.Enabled = chkEnableRNGBallCalls.Checked;
+            //numCoolDownTimer.Enabled = chkEnableRNGBallCalls.Checked;
         }
 
        
