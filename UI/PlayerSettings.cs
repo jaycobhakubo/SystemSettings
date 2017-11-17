@@ -55,12 +55,14 @@ namespace GTI.Modules.SystemSettings.UI
                 label6.Location = new System.Drawing.Point(21, 373);
                 txtWirelessNetworkConnectionLossThreshold.Location = new System.Drawing.Point(405, 373);
                 label5.Location = new System.Drawing.Point(506, 374);
-                chkAutoModeOn.Location = new System.Drawing.Point(24, 44);
+                
                 chkDisplayProgressives.Location = new System.Drawing.Point(394, 44);
                 chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 141);
                 lblCrateRebootThreshold.Location = new System.Drawing.Point(21, 407);
                 txtRebootTimeThreshold.Location = new System.Drawing.Point(405, 407);
                 lblCrateRebootThresholdSeconds.Location = new System.Drawing.Point(506, 407);
+
+                chkAutoModeOn.Location = new System.Drawing.Point(24, 44);
                 
             }
             else if (DeviceId == 3)//FBU
@@ -69,8 +71,12 @@ namespace GTI.Modules.SystemSettings.UI
                 chkRecoverOnReboot.Visible = false;
                 chkDisplayProgressives.Visible = false;
                 chkCacheSettings.Visible = false;
-                chkAutoModeOn.Location = new System.Drawing.Point(24, 172);
+                chkAutoModeOn.Location = new System.Drawing.Point(24, 44);
                 chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 173);
+                chkPlayerPIN.Visible = false;
+                label7.Visible = false;
+                txtPlayerPINLength.Visible = false;
+                chkClearWinnersScreen.Location = new System.Drawing.Point(24, 172);
 
             }
         }
