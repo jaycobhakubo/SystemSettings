@@ -304,7 +304,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkRecoverOnReboot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 236</value>
+    <value>24, 268</value>
   </data>
   <data name="chkRecoverOnReboot.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 26</value>
@@ -314,6 +314,9 @@
   </data>
   <data name="chkRecoverOnReboot.Text" xml:space="preserve">
     <value>Recover Pack on Reboot</value>
+  </data>
+  <data name="chkRecoverOnReboot.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;chkRecoverOnReboot.Name" xml:space="preserve">
     <value>chkRecoverOnReboot</value>
@@ -658,7 +661,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkAutoModeOn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 268</value>
+    <value>24, 236</value>
   </data>
   <data name="chkAutoModeOn.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 26</value>
@@ -1045,7 +1048,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.893, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.917, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1078,7 +1081,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.893, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.917, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1099,6 +1102,6 @@
     <value>PlayerSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

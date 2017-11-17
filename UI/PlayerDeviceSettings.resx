@@ -525,7 +525,7 @@
     <value>plyrSettingDefault</value>
   </data>
   <data name="&gt;&gt;plyrSettingDefault.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingDefault.Parent" xml:space="preserve">
     <value>tbpgDefault</value>
@@ -961,7 +961,7 @@
     <value>plyrSettingFixedBase</value>
   </data>
   <data name="&gt;&gt;plyrSettingFixedBase.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingFixedBase.Parent" xml:space="preserve">
     <value>tbpgFixedBase</value>
@@ -1397,7 +1397,7 @@
     <value>plyrSettingExplorer2</value>
   </data>
   <data name="&gt;&gt;plyrSettingExplorer2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingExplorer2.Parent" xml:space="preserve">
     <value>tbpgExplorer2</value>
@@ -1833,7 +1833,7 @@
     <value>plyrSettingTedE</value>
   </data>
   <data name="&gt;&gt;plyrSettingTedE.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingTedE.Parent" xml:space="preserve">
     <value>tbpgTedE</value>
@@ -2269,7 +2269,7 @@
     <value>plyrSettingTracker</value>
   </data>
   <data name="&gt;&gt;plyrSettingTracker.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingTracker.Parent" xml:space="preserve">
     <value>tbpgTracker</value>
@@ -2705,7 +2705,7 @@
     <value>plyeSettingTraveler</value>
   </data>
   <data name="&gt;&gt;plyeSettingTraveler.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyeSettingTraveler.Parent" xml:space="preserve">
     <value>tbpgTraveler</value>
@@ -3141,7 +3141,7 @@
     <value>plyrSettingTraveler2</value>
   </data>
   <data name="&gt;&gt;plyrSettingTraveler2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayerSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;plyrSettingTraveler2.Parent" xml:space="preserve">
     <value>tbpgTraveler2</value>
@@ -3213,6 +3213,6 @@
     <value>PlayerDeviceSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>
