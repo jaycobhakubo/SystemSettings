@@ -451,7 +451,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkPlayCooldownTimerSound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 280</value>
+    <value>8, 251</value>
   </data>
   <data name="chkPlayCooldownTimerSound.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 48</value>
@@ -481,7 +481,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkEnableRNGBallCalls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 248</value>
+    <value>9, 387</value>
   </data>
   <data name="chkEnableRNGBallCalls.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 26</value>
@@ -508,7 +508,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_sec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 280</value>
+    <value>224, 244</value>
   </data>
   <data name="lbl_sec.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 24</value>
@@ -699,14 +699,11 @@
   <data name="&gt;&gt;lblGameStateBroadcastDelay.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="numCoolDownTimer.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="numCoolDownTimer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numCoolDownTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 331</value>
+    <value>258, 306</value>
   </data>
   <data name="numCoolDownTimer.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 26</value>
@@ -949,7 +946,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_coolDownTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 336</value>
+    <value>8, 311</value>
   </data>
   <data name="lbl_coolDownTimer.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 22</value>
@@ -1261,7 +1258,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkAllowPlayTypeToggle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 376</value>
+    <value>8, 350</value>
   </data>
   <data name="chkAllowPlayTypeToggle.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 26</value>
@@ -1396,7 +1393,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.909, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.917, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1429,7 +1426,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.909, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.917, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1450,6 +1447,6 @@
     <value>CallerSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.17, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

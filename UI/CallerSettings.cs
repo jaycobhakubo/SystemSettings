@@ -391,8 +391,8 @@ namespace GTI.Modules.SystemSettings.UI
             if (bool.TryParse(staticValue, out boolResult))
             {
                 chkEnableRNGBallCalls.Visible = boolResult;
-                lbl_coolDownTimer.Visible = boolResult;
-                numCoolDownTimer.Visible = boolResult;
+                //lbl_coolDownTimer.Visible = boolResult;
+                //numCoolDownTimer.Visible = boolResult;
                 //numCoolDownTimer.Enabled = chkEnableRNGBallCalls.Checked;
                 lbl_sec.Visible = boolResult;
             }
