@@ -71,8 +71,9 @@ namespace GTI.Modules.SystemSettings.UI
                 chkRecoverOnReboot.Visible = false;
                 chkDisplayProgressives.Visible = false;
                 chkCacheSettings.Visible = false;
+                chkBoxResetRadioOnWifiInterruptions.Visible = false;
                 chkAutoModeOn.Location = new System.Drawing.Point(24, 44);
-                chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 173);
+              //  chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 173);
                 chkPlayerPIN.Visible = false;
                 label7.Visible = false;
                 txtPlayerPINLength.Visible = false;
