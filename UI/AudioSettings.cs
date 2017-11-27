@@ -526,7 +526,34 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         public int DeviceId { get; set; }
+
+        int counttest = 0;
+
+        private void chkPlayAllSoundEnabled_CheckStateChanged(object sender, EventArgs e)
+        {
+
+            if (chkPlayAllSoundEnabled.Checked == true)
+            {
+                chkPlayAllSoundEnabled.Tag = "Enabled";
+                foreach (CheckBox checkBox in audioCheckBoxList)
+                {
+                    checkBox.Tag = "Enabled";
+                    checkBox.Enabled = chkPlayAllSoundEnabled.Checked;
+                }
+            }
+            else
+            {
+                chkPlayAllSoundEnabled.Tag = "Disabled";
+                foreach (CheckBox checkBox in audioCheckBoxList)
+                {
+                    checkBox.Tag = "Disabled";
+                    checkBox.Enabled = chkPlayAllSoundEnabled.Checked;
+                    checkBox.Checked = chkPlayAllSoundEnabled.Checked;
+                }
+            }
+        }
         //FIX END RALLY DE 2645 added all audio settings to global variable
 
     } // end class
 } // end namespace
+
