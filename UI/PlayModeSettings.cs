@@ -195,8 +195,8 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue);
 
             //license file
-            licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);
-            m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);
+            licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);//knc
+            m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);//knc
             Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
 
             //license file
@@ -221,22 +221,22 @@ namespace GTI.Modules.SystemSettings.UI
             licenseValue = Common.GetSettingEnabled(Setting.PlayDaubLocation);
 
             m_cboPlayDaubLocation.SelectedIndex = Math.Min(3, Math.Max(0, ParseInt(tempSettingValue.Value) - 1));
-            m_cboPlayDaubLocation.Tag = licenseValue.ToString();
+            m_cboPlayDaubLocation.Tag = licenseValue.ToString();//Permission is always 0. Why? knc5
 
             //START DE2849
-            //START FIX RALLY DE2661 -- changed the update based on play mode
+            //START FIX RALLY DE2661 -- changed the update based on play mode//knc
             if (((CheckableSetting)m_chkAllowCatchUp.Tag).value.Value == "False" &&
-                 m_playMode == 2 && ((CheckableSetting)m_chkAllowPreDaubing.Tag).value.Value == "False" &&
-                 m_cboPlayDaubLocation.Tag.ToString() == "True")//RALLY DE 5485 Added play mode location dependancy on allow pre daub checkbox
+                 m_playMode == 2 && ((CheckableSetting)m_chkAllowPreDaubing.Tag).value.Value == "False" /*&&
+                 m_cboPlayDaubLocation.Tag.ToString() == "True"*/)//RALLY DE 5485 Added play mode location dependancy on allow pre daub checkbox
             {
                 m_daubLocationTextBox.Enabled = true;
                 m_cboPlayDaubLocation.Enabled = true;
             }
             //END DE2661
-            //END DE2849
-            if (m_cboPlayDaubLocation.Tag.ToString() == "False" &&
+            //END DE2849 //knc2
+            if (/*m_cboPlayDaubLocation.Tag.ToString() == "False" &&*/
                 m_cboPlayDaubLocation.SelectedIndex < 2)
-            {
+            {                              
                 m_chkAllowPreDaubing.Enabled = false;
                 m_chkAllowPreCallErrors.Enabled = false;
                 ((CheckableSetting)m_chkAllowPreDaubing.Tag).licenseEnabled = false;
@@ -362,7 +362,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             //license file
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);
-            m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);
+            m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);//knc
 
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
             {
@@ -412,7 +412,7 @@ namespace GTI.Modules.SystemSettings.UI
             m_cboPlayDaubLocation.Tag = licenseValue.ToString();
 
             //START DE2849
-            //START FIX RALLY DE2661 -- changed the update based on play mode
+            //START FIX RALLY DE2661 -- changed the update based on play mode//knc
             if (((CheckableSetting)m_chkAllowCatchUp.Tag).value.Value == "False" &&
                  m_playMode == 2 && ((CheckableSetting)m_chkAllowPreDaubing.Tag).value.Value == "False" &&
                  m_cboPlayDaubLocation.Tag.ToString() == "True")//RALLY DE 5485 Added play mode location dependancy on allow pre daub checkbox
@@ -421,11 +421,11 @@ namespace GTI.Modules.SystemSettings.UI
                 m_cboPlayDaubLocation.Enabled = true;
             }
             //END DE2661
-            //END DE2849
+            //END DE2849//knc
             if (m_cboPlayDaubLocation.Tag.ToString() == "False" &&
                 m_cboPlayDaubLocation.SelectedIndex < 2)
             {
-                m_chkAllowPreDaubing.Enabled = false;
+                m_chkAllowPreDaubing.Enabled = false;//knc2
                 m_chkAllowPreCallErrors.Enabled = false;
                 ((CheckableSetting)m_chkAllowPreDaubing.Tag).licenseEnabled = false;
                 ((CheckableSetting)m_chkAllowPreCallErrors.Tag).licenseEnabled = false;
@@ -454,7 +454,7 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-        private bool LoadPlayerSettings()
+        private bool LoadPlayerSettings()//knc
         {
             if (DeviceId != 0)
             {
@@ -586,7 +586,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void setSettingsToFalse()
         {
-            CheckableSetting allowPreDaubSetting = m_settingList.Find(i => i.settingId == Setting.PlayModePreDaubEnabled);
+            CheckableSetting allowPreDaubSetting = m_settingList.Find(i => i.settingId == Setting.PlayModePreDaubEnabled);//knc
             CheckableSetting allowPreDaubErrors = m_settingList.Find(i => i.settingId == Setting.PlayModePreDaubErrorsEnabled);
             CheckableSetting allowCatchUp = m_settingList.Find(i => i.settingId == Setting.PlayModeCatchUpEnabled);
 
@@ -612,7 +612,7 @@ namespace GTI.Modules.SystemSettings.UI
             allowPreDaubSetting.isGreyed = true;
         }
 
-        private void UpdateModel(CheckableSetting setting)
+        private void UpdateModel(CheckableSetting setting)//knc
         {
             CheckableSetting preDaubErrors =
                     m_settingList.Find(i => Setting.PlayModePreDaubErrorsEnabled == i.settingId);
@@ -764,7 +764,7 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 m_playMode = 2;
 
-                if (m_cboPlayDaubLocation.Tag.ToString() == "True" && m_chkAllowPreDaubing.Checked != true)//RALLY DE 5485
+                if (m_cboPlayDaubLocation.Tag.ToString() == "True" && m_chkAllowPreDaubing.Checked != true)//RALLY DE 5485//knc
                 {
                     m_cboPlayDaubLocation.Enabled = true;
                     m_daubLocationTextBox.Enabled = true;

@@ -367,7 +367,7 @@ namespace GTI.Modules.SystemSettings
                 }
 
                 // Get the operator settings
-                if (!GetOperatorSettings())
+                if (!GetOperatorSettings())//knc
                 {
                     return false;
                 }
@@ -378,7 +378,7 @@ namespace GTI.Modules.SystemSettings
                     return false;
                 }
 
-                // Get the global settings
+                // Get the global settings//knc
                 if (!GetSystemSettings())
                 {
                     return false;
@@ -452,7 +452,7 @@ namespace GTI.Modules.SystemSettings
             //157 = Setting.PlayKeyClickEnabled , operator setting, audio settings
             //180 = Setting.ShareOperatorPoints, system setting, global settings
 
-            m_GetLicenseFileMessage = new GetLicenseFileSettingsMessage(false);
+            m_GetLicenseFileMessage = new GetLicenseFileSettingsMessage(false);//knc5
             m_GetLicenseFileMessage.Send();
             return true;
         }
@@ -642,7 +642,7 @@ namespace GTI.Modules.SystemSettings
         {
             try
             {
-                // Get the operator table data
+                // Get the operator table data//knc
                 m_GetSettingsOperatorMessage = new GetSettingsOperatorMessage(m_nOperatorId);
                 m_GetSettingsOperatorMessage.Send();
                 if (m_GetSettingsOperatorMessage.ServerReturnCode != GTIServerReturnCode.Success)
@@ -932,9 +932,9 @@ namespace GTI.Modules.SystemSettings
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public static bool GetSettingEnabled(Setting s)
+        public static bool GetSettingEnabled(Setting s)//knc3
         {
-            LicenseFileItem item = m_GetLicenseFileMessage.LicenseFileItems.Find(i => i.settingID == (int)s);
+            LicenseFileItem item = m_GetLicenseFileMessage.LicenseFileItems.Find(i => i.settingID == (int)s);//knc5
             if (item == null)
                 return true;
             else
@@ -985,7 +985,7 @@ namespace GTI.Modules.SystemSettings
         }
 
 
-        public static bool GetSettingEnabled(LicenseSetting s)
+        public static bool GetSettingEnabled(LicenseSetting s)//knc3
         {
             LicenseFileItem item = m_GetLicenseFileMessage.LicenseFileItems.Find(i => i.settingID == (int)s);
 
@@ -1005,7 +1005,7 @@ namespace GTI.Modules.SystemSettings
             }
         }
 
-        public static string GetLicenseSettingValue(LicenseSetting s)
+        public static string GetLicenseSettingValue(LicenseSetting s)//knc3
         {
             LicenseFileItem item = m_GetLicenseFileMessage.LicenseFileItems.Find(i => i.settingID == (int)s);
             if (item == null)
@@ -1020,7 +1020,7 @@ namespace GTI.Modules.SystemSettings
             }
         }
 
-        public static byte GetSettingMinMax(LicenseSetting s, out string value)
+        public static byte GetSettingMinMax(LicenseSetting s, out string value)//knc3
         {
             LicenseFileItem item = m_GetLicenseFileMessage.LicenseFileItems.Find(i => i.settingID == (int)s);
             if (item == null || item.settingRange == 0)
@@ -1035,7 +1035,7 @@ namespace GTI.Modules.SystemSettings
             }
         }
 
-        public static byte GetSettingMinMax(Setting s, out string value)
+        public static byte GetSettingMinMax(Setting s, out string value)//knc3
         {
             LicenseFileItem item = m_GetLicenseFileMessage.LicenseFileItems.Find(i => i.settingID == (int)s);
             if (item == null || item.settingRange == 0)
