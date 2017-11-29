@@ -198,19 +198,25 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabCtrl_PlayMode;
-        private System.Windows.Forms.TabPage tbpgDefault;
-        private PlayModeSettings playModeSettingsDefault;
+
         private System.Windows.Forms.TabPage tbpgFixedBase;
+        private PlayModeSettings playModeSettingsFixedBase;
+
         private System.Windows.Forms.TabPage tbpgExplorer2;
         private System.Windows.Forms.TabPage tbpgTedE;
         private System.Windows.Forms.TabPage tbpgTracker;
         private System.Windows.Forms.TabPage tbpgTraveler;
-        private PlayModeSettings playModeSettingsFixedBase;
+        private System.Windows.Forms.TabPage tbpgTraveler2;
+
         private PlayModeSettings playModeSettingsExplorer2;
         private PlayModeSettings playModeSettingsTedE;
         private PlayModeSettings playModeSettingsTracker;
         private PlayModeSettings playModeSettingsTraveler;
-        private System.Windows.Forms.TabPage tbpgTraveler2;
         private PlayModeSettings playModeSettingsTraveler2;
+
+        private System.Windows.Forms.TabPage tbpgDefault;
+        private PlayModeSettings playModeSettingsDefault;
+
+
     }
 }
