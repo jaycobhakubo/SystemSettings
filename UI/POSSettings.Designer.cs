@@ -193,6 +193,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // cmbResellAuditedItem
             // 
+            this.cmbResellAuditedItem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbResellAuditedItem.FormattingEnabled = true;
             this.cmbResellAuditedItem.Items.AddRange(new object[] {
             resources.GetString("cmbResellAuditedItem.Items"),

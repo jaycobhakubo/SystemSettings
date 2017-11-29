@@ -899,19 +899,19 @@ namespace GTI.Modules.SystemSettings.UI
             DisplayCheckableSettings();
         }
 
-        private void m_SettingCheckedBox_AfterSelect_Others(object sender, EventArgs e)
-        {
-            //find the object in the List and update its status
+        //private void m_SettingCheckedBox_AfterSelect_Others(object sender, EventArgs e)
+        //{
+        //    //find the object in the List and update its status
 
-            CheckBox checkBox = sender as CheckBox;
+        //    CheckBox checkBox = sender as CheckBox;
 
-            m_bModified = true;
-            CheckableSetting setting = checkBox.Tag as CheckableSetting;
-            ToggleSettingValue(setting);
-            //UpdateModel(setting);
+        //    m_bModified = true;
+        //    CheckableSetting setting = checkBox.Tag as CheckableSetting;
+        //    ToggleSettingValue(setting);
+        //    //UpdateModel(setting);
 
-            //DisplayCheckableSettings();
-        }
+        //    //DisplayCheckableSettings();
+        //}
 
 
         #endregion//Events
