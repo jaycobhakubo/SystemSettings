@@ -120,7 +120,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool SetValueToDefault()
         {
-            SettingValue tempSettingValue;            //END RALLY DE 9171 // Fill in the operator global settings   
+            SettingValue tempSettingValue;//END RALLY DE 9171 // Fill in the operator global settings   
 
             bool licenseValue;
             // Fill in the operator global settings            
@@ -137,6 +137,7 @@ namespace GTI.Modules.SystemSettings.UI
                 m_rdoButtonManual.Enabled = false;
                 m_rdoButtonSemiAuto.Enabled = false;
             }
+
             //START RALLY DE 6624
             else
             {
@@ -346,7 +347,7 @@ namespace GTI.Modules.SystemSettings.UI
             List<int> semiAuto = new List<int>() { 2 };
             List<int> semiAutoManual = new List<int>() { 2, 3 };
 
-            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayModeCatchUpEnabled, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModeCatchUpEnabled, out tempSettingValue);
             }
@@ -355,7 +356,7 @@ namespace GTI.Modules.SystemSettings.UI
             licenseValue = Common.GetSettingEnabled(Setting.PlayModeCatchUpEnabled);
             m_chkAllowCatchUp.Tag = AddSettingToList(Setting.PlayModeCatchUpEnabled, tempSettingValue, "Allow Daub Catch Up", semiAuto, licenseValue);
 
-            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModePreDaubEnabled, out tempSettingValue);
             }
@@ -364,7 +365,7 @@ namespace GTI.Modules.SystemSettings.UI
             licenseValue = Common.GetSettingEnabled(Setting.PlayModePreDaubEnabled);
             m_chkAllowPreDaubing.Tag = AddSettingToList(Setting.PlayModePreDaubEnabled, tempSettingValue, "Allow Pre Daubing", semiAuto, licenseValue);
 
-            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModePreDaubErrorsEnabled, out tempSettingValue);
             }
@@ -380,7 +381,7 @@ namespace GTI.Modules.SystemSettings.UI
             //END FIX RALLY DE2849 -- removed combo box dependancy on allow pre daub
 
 
-            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayModeDaubOnImageEnabled, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModeDaubOnImageEnabled, out tempSettingValue);
             }
@@ -390,7 +391,7 @@ namespace GTI.Modules.SystemSettings.UI
             m_chkAllowDaubOnImage.Tag = AddSettingToList(Setting.PlayModeDaubOnImageEnabled, tempSettingValue, "Allow Daub on Ball Image", semiAutoManual, licenseValue);
             ((CheckableSetting)m_chkAllowDaubOnImage.Tag).isGreyed = false;
 
-            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayModeGreenDaubEnabled, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayModeGreenDaubEnabled, out tempSettingValue);
             }
@@ -400,7 +401,7 @@ namespace GTI.Modules.SystemSettings.UI
             //m_chkAllowGreenButtonDaub.Tag = AddSettingToList(Setting.PlayModeGreenDaubEnabled, tempSettingValue, "Allow Green Button Daub", semiAuto,licenseValue);
             //((CheckableSetting) m_chkAllowGreenButtonDaub.Tag).isGreyed = false;
             //RALLY DE 6346 END
-            if (!DeviceSettingmsg.TryGetSettingValue(Setting.RFMode, out tempSettingValue))
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayDaubLocation, out tempSettingValue))
             {
                 Common.GetOpSettingValue(Setting.PlayDaubLocation, out tempSettingValue);
             }
@@ -886,7 +887,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void m_SettingCheckedBox_AfterSelect(object sender, EventArgs e)
         {
-            //find the object in the List and update its status
+            //find the object in the List and update its status`
 
             CheckBox checkBox = sender as CheckBox;
 
