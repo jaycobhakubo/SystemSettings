@@ -30,13 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThirdPartyInterfaceSettings));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblPlayerSyncMode = new System.Windows.Forms.Label();
-            this.cbxPlayerSyncMode = new System.Windows.Forms.ComboBox();
-            this.gbFNET = new System.Windows.Forms.GroupBox();
-            this.cbPointsTransferAsDollarsForRedemptions = new System.Windows.Forms.CheckBox();
-            this.cbPointsTransferAsDollarsForSales = new System.Windows.Forms.CheckBox();
-            this.cbPointsTransferAsDollars = new System.Windows.Forms.CheckBox();
-            this.cbPlayerInfoHasPoints = new System.Windows.Forms.CheckBox();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.gbPIN = new System.Windows.Forms.GroupBox();
             this.cbGetPINAtCardSwipe = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,6 +41,20 @@
             this.cbPINForRedemption = new System.Windows.Forms.CheckBox();
             this.cbPINForRating = new System.Windows.Forms.CheckBox();
             this.cbPINForPlayerInfo = new System.Windows.Forms.CheckBox();
+            this.gbVoids = new System.Windows.Forms.GroupBox();
+            this.rbNoVoid = new System.Windows.Forms.RadioButton();
+            this.rbAutoForceVoid = new System.Windows.Forms.RadioButton();
+            this.rbVoid = new System.Windows.Forms.RadioButton();
+            this.lblPlayerSyncMode = new System.Windows.Forms.Label();
+            this.gbOasis10 = new System.Windows.Forms.GroupBox();
+            this.thirdPartyLocation = new System.Windows.Forms.TextBox();
+            this.lblOasisLocation = new System.Windows.Forms.Label();
+            this.cbxPlayerSyncMode = new System.Windows.Forms.ComboBox();
+            this.gbFNET = new System.Windows.Forms.GroupBox();
+            this.cbPointsTransferAsDollarsForRedemptions = new System.Windows.Forms.CheckBox();
+            this.cbPointsTransferAsDollarsForSales = new System.Windows.Forms.CheckBox();
+            this.cbPointsTransferAsDollars = new System.Windows.Forms.CheckBox();
+            this.cbPlayerInfoHasPoints = new System.Windows.Forms.CheckBox();
             this.gbTimeout = new System.Windows.Forms.GroupBox();
             this.lblTimeout2 = new System.Windows.Forms.Label();
             this.rbIndependentTimeouts = new System.Windows.Forms.RadioButton();
@@ -54,9 +62,6 @@
             this.rbSlaveTimeout = new System.Windows.Forms.RadioButton();
             this.thirdPartyTimeout = new System.Windows.Forms.NumericUpDown();
             this.lblTimeout1 = new System.Windows.Forms.Label();
-            this.gbOasis10 = new System.Windows.Forms.GroupBox();
-            this.thirdPartyLocation = new System.Windows.Forms.TextBox();
-            this.lblOasisLocation = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbInterface = new System.Windows.Forms.ComboBox();
             this.gbRedeemed = new System.Windows.Forms.GroupBox();
@@ -75,12 +80,14 @@
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox1.SuspendLayout();
-            this.gbFNET.SuspendLayout();
+            this.panelMain.SuspendLayout();
             this.gbPIN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPINLength)).BeginInit();
+            this.gbVoids.SuspendLayout();
+            this.gbOasis10.SuspendLayout();
+            this.gbFNET.SuspendLayout();
             this.gbTimeout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thirdPartyTimeout)).BeginInit();
-            this.gbOasis10.SuspendLayout();
             this.gbRedeemed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thirdPartyRedeemPerPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thirdPartyRedeemPennies)).BeginInit();
@@ -91,81 +98,32 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lblPlayerSyncMode);
-            this.groupBox1.Controls.Add(this.cbxPlayerSyncMode);
-            this.groupBox1.Controls.Add(this.gbFNET);
-            this.groupBox1.Controls.Add(this.gbPIN);
-            this.groupBox1.Controls.Add(this.gbTimeout);
-            this.groupBox1.Controls.Add(this.gbOasis10);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.cbInterface);
-            this.groupBox1.Controls.Add(this.gbRedeemed);
-            this.groupBox1.Controls.Add(this.gbEarned);
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.groupBox1.Controls.Add(this.panelMain);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // lblPlayerSyncMode
+            // panelMain
             // 
-            resources.ApplyResources(this.lblPlayerSyncMode, "lblPlayerSyncMode");
-            this.lblPlayerSyncMode.Name = "lblPlayerSyncMode";
-            // 
-            // cbxPlayerSyncMode
-            // 
-            this.cbxPlayerSyncMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cbxPlayerSyncMode, "cbxPlayerSyncMode");
-            this.cbxPlayerSyncMode.FormattingEnabled = true;
-            this.cbxPlayerSyncMode.Items.AddRange(new object[] {
-            resources.GetString("cbxPlayerSyncMode.Items"),
-            resources.GetString("cbxPlayerSyncMode.Items1"),
-            resources.GetString("cbxPlayerSyncMode.Items2"),
-            resources.GetString("cbxPlayerSyncMode.Items3")});
-            this.cbxPlayerSyncMode.Name = "cbxPlayerSyncMode";
-            // 
-            // gbFNET
-            // 
-            this.gbFNET.Controls.Add(this.cbPointsTransferAsDollarsForRedemptions);
-            this.gbFNET.Controls.Add(this.cbPointsTransferAsDollarsForSales);
-            this.gbFNET.Controls.Add(this.cbPointsTransferAsDollars);
-            this.gbFNET.Controls.Add(this.cbPlayerInfoHasPoints);
-            resources.ApplyResources(this.gbFNET, "gbFNET");
-            this.gbFNET.Name = "gbFNET";
-            this.gbFNET.TabStop = false;
-            // 
-            // cbPointsTransferAsDollarsForRedemptions
-            // 
-            resources.ApplyResources(this.cbPointsTransferAsDollarsForRedemptions, "cbPointsTransferAsDollarsForRedemptions");
-            this.cbPointsTransferAsDollarsForRedemptions.BackColor = System.Drawing.Color.Transparent;
-            this.cbPointsTransferAsDollarsForRedemptions.Name = "cbPointsTransferAsDollarsForRedemptions";
-            this.cbPointsTransferAsDollarsForRedemptions.UseVisualStyleBackColor = false;
-            this.cbPointsTransferAsDollarsForRedemptions.CheckedChanged += new System.EventHandler(this.cbPointsTransferAsDollarsForRedemptions_CheckedChanged);
-            // 
-            // cbPointsTransferAsDollarsForSales
-            // 
-            resources.ApplyResources(this.cbPointsTransferAsDollarsForSales, "cbPointsTransferAsDollarsForSales");
-            this.cbPointsTransferAsDollarsForSales.BackColor = System.Drawing.Color.Transparent;
-            this.cbPointsTransferAsDollarsForSales.Name = "cbPointsTransferAsDollarsForSales";
-            this.cbPointsTransferAsDollarsForSales.UseVisualStyleBackColor = false;
-            this.cbPointsTransferAsDollarsForSales.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // cbPointsTransferAsDollars
-            // 
-            resources.ApplyResources(this.cbPointsTransferAsDollars, "cbPointsTransferAsDollars");
-            this.cbPointsTransferAsDollars.BackColor = System.Drawing.Color.Transparent;
-            this.cbPointsTransferAsDollars.Name = "cbPointsTransferAsDollars";
-            this.cbPointsTransferAsDollars.UseVisualStyleBackColor = false;
-            this.cbPointsTransferAsDollars.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // cbPlayerInfoHasPoints
-            // 
-            resources.ApplyResources(this.cbPlayerInfoHasPoints, "cbPlayerInfoHasPoints");
-            this.cbPlayerInfoHasPoints.BackColor = System.Drawing.Color.Transparent;
-            this.cbPlayerInfoHasPoints.Name = "cbPlayerInfoHasPoints";
-            this.cbPlayerInfoHasPoints.UseVisualStyleBackColor = false;
-            this.cbPlayerInfoHasPoints.CheckedChanged += new System.EventHandler(this.OnModified);
+            resources.ApplyResources(this.panelMain, "panelMain");
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
+            this.panelMain.Controls.Add(this.gbPIN);
+            this.panelMain.Controls.Add(this.gbVoids);
+            this.panelMain.Controls.Add(this.lblPlayerSyncMode);
+            this.panelMain.Controls.Add(this.gbOasis10);
+            this.panelMain.Controls.Add(this.cbxPlayerSyncMode);
+            this.panelMain.Controls.Add(this.gbFNET);
+            this.panelMain.Controls.Add(this.gbTimeout);
+            this.panelMain.Controls.Add(this.label4);
+            this.panelMain.Controls.Add(this.cbInterface);
+            this.panelMain.Controls.Add(this.gbRedeemed);
+            this.panelMain.Controls.Add(this.gbEarned);
+            this.panelMain.Name = "panelMain";
             // 
             // gbPIN
             // 
+            this.gbPIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
             this.gbPIN.Controls.Add(this.cbGetPINAtCardSwipe);
             this.gbPIN.Controls.Add(this.label1);
             this.gbPIN.Controls.Add(this.nudPINLength);
@@ -254,8 +212,123 @@
             this.cbPINForPlayerInfo.UseVisualStyleBackColor = true;
             this.cbPINForPlayerInfo.CheckedChanged += new System.EventHandler(this.cbPINForPlayerInfo_CheckedChanged);
             // 
+            // gbVoids
+            // 
+            this.gbVoids.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbVoids.Controls.Add(this.rbNoVoid);
+            this.gbVoids.Controls.Add(this.rbAutoForceVoid);
+            this.gbVoids.Controls.Add(this.rbVoid);
+            resources.ApplyResources(this.gbVoids, "gbVoids");
+            this.gbVoids.Name = "gbVoids";
+            this.gbVoids.TabStop = false;
+            // 
+            // rbNoVoid
+            // 
+            resources.ApplyResources(this.rbNoVoid, "rbNoVoid");
+            this.rbNoVoid.Name = "rbNoVoid";
+            this.rbNoVoid.TabStop = true;
+            this.rbNoVoid.UseVisualStyleBackColor = true;
+            this.rbNoVoid.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // rbAutoForceVoid
+            // 
+            resources.ApplyResources(this.rbAutoForceVoid, "rbAutoForceVoid");
+            this.rbAutoForceVoid.Name = "rbAutoForceVoid";
+            this.rbAutoForceVoid.TabStop = true;
+            this.rbAutoForceVoid.UseVisualStyleBackColor = true;
+            this.rbAutoForceVoid.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // rbVoid
+            // 
+            resources.ApplyResources(this.rbVoid, "rbVoid");
+            this.rbVoid.Name = "rbVoid";
+            this.rbVoid.TabStop = true;
+            this.rbVoid.UseVisualStyleBackColor = true;
+            this.rbVoid.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblPlayerSyncMode
+            // 
+            resources.ApplyResources(this.lblPlayerSyncMode, "lblPlayerSyncMode");
+            this.lblPlayerSyncMode.Name = "lblPlayerSyncMode";
+            // 
+            // gbOasis10
+            // 
+            this.gbOasis10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbOasis10.Controls.Add(this.thirdPartyLocation);
+            this.gbOasis10.Controls.Add(this.lblOasisLocation);
+            resources.ApplyResources(this.gbOasis10, "gbOasis10");
+            this.gbOasis10.Name = "gbOasis10";
+            this.gbOasis10.TabStop = false;
+            // 
+            // thirdPartyLocation
+            // 
+            resources.ApplyResources(this.thirdPartyLocation, "thirdPartyLocation");
+            this.thirdPartyLocation.Name = "thirdPartyLocation";
+            this.thirdPartyLocation.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblOasisLocation
+            // 
+            resources.ApplyResources(this.lblOasisLocation, "lblOasisLocation");
+            this.lblOasisLocation.Name = "lblOasisLocation";
+            // 
+            // cbxPlayerSyncMode
+            // 
+            this.cbxPlayerSyncMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cbxPlayerSyncMode, "cbxPlayerSyncMode");
+            this.cbxPlayerSyncMode.FormattingEnabled = true;
+            this.cbxPlayerSyncMode.Items.AddRange(new object[] {
+            resources.GetString("cbxPlayerSyncMode.Items"),
+            resources.GetString("cbxPlayerSyncMode.Items1"),
+            resources.GetString("cbxPlayerSyncMode.Items2"),
+            resources.GetString("cbxPlayerSyncMode.Items3")});
+            this.cbxPlayerSyncMode.Name = "cbxPlayerSyncMode";
+            // 
+            // gbFNET
+            // 
+            this.gbFNET.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbFNET.Controls.Add(this.cbPointsTransferAsDollarsForRedemptions);
+            this.gbFNET.Controls.Add(this.cbPointsTransferAsDollarsForSales);
+            this.gbFNET.Controls.Add(this.cbPointsTransferAsDollars);
+            this.gbFNET.Controls.Add(this.cbPlayerInfoHasPoints);
+            resources.ApplyResources(this.gbFNET, "gbFNET");
+            this.gbFNET.Name = "gbFNET";
+            this.gbFNET.TabStop = false;
+            // 
+            // cbPointsTransferAsDollarsForRedemptions
+            // 
+            resources.ApplyResources(this.cbPointsTransferAsDollarsForRedemptions, "cbPointsTransferAsDollarsForRedemptions");
+            this.cbPointsTransferAsDollarsForRedemptions.BackColor = System.Drawing.Color.Transparent;
+            this.cbPointsTransferAsDollarsForRedemptions.Name = "cbPointsTransferAsDollarsForRedemptions";
+            this.cbPointsTransferAsDollarsForRedemptions.UseVisualStyleBackColor = false;
+            this.cbPointsTransferAsDollarsForRedemptions.CheckedChanged += new System.EventHandler(this.cbPointsTransferAsDollarsForRedemptions_CheckedChanged);
+            // 
+            // cbPointsTransferAsDollarsForSales
+            // 
+            resources.ApplyResources(this.cbPointsTransferAsDollarsForSales, "cbPointsTransferAsDollarsForSales");
+            this.cbPointsTransferAsDollarsForSales.BackColor = System.Drawing.Color.Transparent;
+            this.cbPointsTransferAsDollarsForSales.Name = "cbPointsTransferAsDollarsForSales";
+            this.cbPointsTransferAsDollarsForSales.UseVisualStyleBackColor = false;
+            this.cbPointsTransferAsDollarsForSales.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // cbPointsTransferAsDollars
+            // 
+            resources.ApplyResources(this.cbPointsTransferAsDollars, "cbPointsTransferAsDollars");
+            this.cbPointsTransferAsDollars.BackColor = System.Drawing.Color.Transparent;
+            this.cbPointsTransferAsDollars.Name = "cbPointsTransferAsDollars";
+            this.cbPointsTransferAsDollars.UseVisualStyleBackColor = false;
+            this.cbPointsTransferAsDollars.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // cbPlayerInfoHasPoints
+            // 
+            resources.ApplyResources(this.cbPlayerInfoHasPoints, "cbPlayerInfoHasPoints");
+            this.cbPlayerInfoHasPoints.BackColor = System.Drawing.Color.Transparent;
+            this.cbPlayerInfoHasPoints.Name = "cbPlayerInfoHasPoints";
+            this.cbPlayerInfoHasPoints.UseVisualStyleBackColor = false;
+            this.cbPlayerInfoHasPoints.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
             // gbTimeout
             // 
+            this.gbTimeout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
             this.gbTimeout.Controls.Add(this.lblTimeout2);
             this.gbTimeout.Controls.Add(this.rbIndependentTimeouts);
             this.gbTimeout.Controls.Add(this.rbControlTimeout);
@@ -320,25 +393,6 @@
             resources.ApplyResources(this.lblTimeout1, "lblTimeout1");
             this.lblTimeout1.Name = "lblTimeout1";
             // 
-            // gbOasis10
-            // 
-            this.gbOasis10.Controls.Add(this.thirdPartyLocation);
-            this.gbOasis10.Controls.Add(this.lblOasisLocation);
-            resources.ApplyResources(this.gbOasis10, "gbOasis10");
-            this.gbOasis10.Name = "gbOasis10";
-            this.gbOasis10.TabStop = false;
-            // 
-            // thirdPartyLocation
-            // 
-            resources.ApplyResources(this.thirdPartyLocation, "thirdPartyLocation");
-            this.thirdPartyLocation.Name = "thirdPartyLocation";
-            this.thirdPartyLocation.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // lblOasisLocation
-            // 
-            resources.ApplyResources(this.lblOasisLocation, "lblOasisLocation");
-            this.lblOasisLocation.Name = "lblOasisLocation";
-            // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
@@ -354,6 +408,7 @@
             // 
             // gbRedeemed
             // 
+            this.gbRedeemed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
             this.gbRedeemed.Controls.Add(this.label9);
             this.gbRedeemed.Controls.Add(this.thirdPartyRedeemPerPoints);
             this.gbRedeemed.Controls.Add(this.thirdPartyRedeemPennies);
@@ -419,6 +474,7 @@
             // 
             // gbEarned
             // 
+            this.gbEarned.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
             this.gbEarned.Controls.Add(this.cbExternalRating);
             this.gbEarned.Controls.Add(this.lblSpent);
             this.gbEarned.Controls.Add(this.lblEarn);
@@ -509,8 +565,7 @@
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -522,14 +577,14 @@
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // ThirdPartyInterfaceSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnReset);
@@ -537,17 +592,20 @@
             resources.ApplyResources(this, "$this");
             this.Name = "ThirdPartyInterfaceSettings";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.gbFNET.ResumeLayout(false);
-            this.gbFNET.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
             this.gbPIN.ResumeLayout(false);
             this.gbPIN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPINLength)).EndInit();
+            this.gbVoids.ResumeLayout(false);
+            this.gbVoids.PerformLayout();
+            this.gbOasis10.ResumeLayout(false);
+            this.gbOasis10.PerformLayout();
+            this.gbFNET.ResumeLayout(false);
+            this.gbFNET.PerformLayout();
             this.gbTimeout.ResumeLayout(false);
             this.gbTimeout.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thirdPartyTimeout)).EndInit();
-            this.gbOasis10.ResumeLayout(false);
-            this.gbOasis10.PerformLayout();
             this.gbRedeemed.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.thirdPartyRedeemPerPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thirdPartyRedeemPennies)).EndInit();
@@ -606,5 +664,10 @@
         private System.Windows.Forms.CheckBox cbPlayerInfoHasPoints;
         private System.Windows.Forms.Label lblPlayerSyncMode;
         private System.Windows.Forms.ComboBox cbxPlayerSyncMode;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.GroupBox gbVoids;
+        private System.Windows.Forms.RadioButton rbNoVoid;
+        private System.Windows.Forms.RadioButton rbAutoForceVoid;
+        private System.Windows.Forms.RadioButton rbVoid;
     }
 }

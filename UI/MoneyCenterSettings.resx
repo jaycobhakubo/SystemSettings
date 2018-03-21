@@ -145,7 +145,7 @@
     <value>textBoxMinPrizeWinAmount</value>
   </data>
   <data name="&gt;&gt;textBoxMinPrizeWinAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.925, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;textBoxMinPrizeWinAmount.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -184,7 +184,7 @@
     <value>1</value>
   </data>
   <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 408</value>
+    <value>404, 433</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>310, 98</value>
@@ -502,7 +502,7 @@
     <value>textBoxFeeAmount</value>
   </data>
   <data name="&gt;&gt;textBoxFeeAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.925, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;textBoxFeeAmount.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -535,7 +535,7 @@
     <value>textBoxMinimumPrizeAmount</value>
   </data>
   <data name="&gt;&gt;textBoxMinimumPrizeAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.925, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;textBoxMinimumPrizeAmount.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -834,11 +834,44 @@
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="chkGetPlayerWithVerify.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 94</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 26</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.Text" xml:space="preserve">
+    <value>Get player with verified winners</value>
+  </data>
+  <data name="&gt;&gt;chkGetPlayerWithVerify.Name" xml:space="preserve">
+    <value>chkGetPlayerWithVerify</value>
+  </data>
+  <data name="&gt;&gt;chkGetPlayerWithVerify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGetPlayerWithVerify.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkGetPlayerWithVerify.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="numPayoutSignatureLines.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numPayoutSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 153</value>
+    <value>237, 185</value>
   </data>
   <data name="numPayoutSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 26</value>
@@ -856,7 +889,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;numPayoutSignatureLines.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -865,7 +898,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 155</value>
+    <value>14, 187</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>204, 22</value>
@@ -886,7 +919,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="chkPrintWordValue.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -895,7 +928,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkPrintWordValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 126</value>
+    <value>18, 158</value>
   </data>
   <data name="chkPrintWordValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 26</value>
@@ -916,7 +949,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;chkPrintWordValue.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="chkPrintWinnersAddress.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -928,7 +961,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkPrintWinnersAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 94</value>
+    <value>18, 126</value>
   </data>
   <data name="chkPrintWinnersAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 26</value>
@@ -949,7 +982,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;chkPrintWinnersAddress.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="chkForcePlayerOnPayouts.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -982,7 +1015,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;chkForcePlayerOnPayouts.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="chkPrintAllPayoutWinners.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1015,13 +1048,13 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;chkPrintAllPayoutWinners.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 208</value>
+    <value>404, 197</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 191</value>
+    <value>310, 230</value>
   </data>
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1237,7 +1270,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.925, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1270,7 +1303,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.771, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.925, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1300,6 +1333,6 @@
     <value>MoneyCenterSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

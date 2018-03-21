@@ -78,7 +78,6 @@ namespace GTI.Modules.SystemSettings.UI
                 label7.Visible = false;
                 txtPlayerPINLength.Visible = false;
                 chkClearWinnersScreen.Location = new System.Drawing.Point(24, 172);
-
             }
         }
 

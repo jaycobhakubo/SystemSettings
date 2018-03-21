@@ -471,6 +471,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CharityDlg.resx">
       <DependentUpon>CharityDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CharitySettings.resx">
       <DependentUpon>CharitySettings.cs</DependentUpon>
@@ -498,6 +499,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\LEDFlashboardColorPicker.resx">
       <DependentUpon>LEDFlashboardColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\LEDFlashboardSettings.resx">
       <DependentUpon>LEDFlashboardSettings.cs</DependentUpon>

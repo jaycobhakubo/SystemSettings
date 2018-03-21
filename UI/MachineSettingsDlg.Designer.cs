@@ -445,8 +445,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnCancel.Location = new System.Drawing.Point(359, 646);
             this.btnCancel.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.RepeatRate = 150;
-            this.btnCancel.RepeatWhenHeldFor = 750;
+            this.btnCancel.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnCancel.Size = new System.Drawing.Size(121, 30);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "&Cancel";
@@ -465,8 +464,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.Location = new System.Drawing.Point(210, 646);
             this.btnSave.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.Size = new System.Drawing.Size(121, 30);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "&Save";
@@ -477,10 +475,10 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             this.tpHallDisplay.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.tpHallDisplay.Controls.Add(this.grpHallDisplay);
-            this.tpHallDisplay.Location = new System.Drawing.Point(4, 31);
+            this.tpHallDisplay.Location = new System.Drawing.Point(4, 22);
             this.tpHallDisplay.Name = "tpHallDisplay";
             this.tpHallDisplay.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHallDisplay.Size = new System.Drawing.Size(688, 585);
+            this.tpHallDisplay.Size = new System.Drawing.Size(688, 594);
             this.tpHallDisplay.TabIndex = 1;
             this.tpHallDisplay.Text = "Remote Display (1)";
             this.tpHallDisplay.UseVisualStyleBackColor = true;
@@ -1553,10 +1551,10 @@ namespace GTI.Modules.SystemSettings.UI
             // tpHallDisplay2
             // 
             this.tpHallDisplay2.Controls.Add(this.groupAdaptorSettings);
-            this.tpHallDisplay2.Location = new System.Drawing.Point(4, 22);
+            this.tpHallDisplay2.Location = new System.Drawing.Point(4, 31);
             this.tpHallDisplay2.Name = "tpHallDisplay2";
             this.tpHallDisplay2.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHallDisplay2.Size = new System.Drawing.Size(688, 594);
+            this.tpHallDisplay2.Size = new System.Drawing.Size(688, 585);
             this.tpHallDisplay2.TabIndex = 7;
             this.tpHallDisplay2.Text = "Remote Display (2)";
             this.tpHallDisplay2.UseVisualStyleBackColor = true;
@@ -1612,12 +1610,12 @@ namespace GTI.Modules.SystemSettings.UI
             this.buttonSetAccruals.Location = new System.Drawing.Point(376, 265);
             this.buttonSetAccruals.MinimumSize = new System.Drawing.Size(30, 30);
             this.buttonSetAccruals.Name = "buttonSetAccruals";
-            this.buttonSetAccruals.RepeatRate = 150;
-            this.buttonSetAccruals.RepeatWhenHeldFor = 750;
+            this.buttonSetAccruals.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.buttonSetAccruals.Size = new System.Drawing.Size(121, 30);
             this.buttonSetAccruals.TabIndex = 4;
             this.buttonSetAccruals.Text = "Set Progressives";
             this.buttonSetAccruals.UseVisualStyleBackColor = false;
+            this.buttonSetAccruals.Click += new System.EventHandler(this.buttonSetAccruals_Click);
             // 
             // cboVideoSettings
             // 

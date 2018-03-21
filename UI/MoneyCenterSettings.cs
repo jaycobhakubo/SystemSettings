@@ -126,6 +126,10 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.BankCloseReceiptSignatureLineCount, out tempSettingValue);
             numBankCloseSignatureLines.Value = Convert.ToDecimal(tempSettingValue.Value);
 
+            //US5426
+            Common.GetOpSettingValue(Setting.GetPlayerWithVerify, out tempSettingValue);
+            chkGetPlayerWithVerify.Checked = Common.ParseBool(tempSettingValue.Value);
+
             //START RALLY US1906
             try
             {
@@ -342,6 +346,8 @@ namespace GTI.Modules.SystemSettings.UI
             Common.SetOpSettingValue(Setting.PrintAllPayoutWinners, chkPrintAllPayoutWinners.Checked.ToString()); //RALLY US1571
 
             Common.SetOpSettingValue(Setting.PrintPayoutText, chkPrintWordValue.Checked.ToString());//US4725
+
+            Common.SetOpSettingValue(Setting.GetPlayerWithVerify, chkGetPlayerWithVerify.Checked.ToString());//US5426
 
             //US5107: Operator Settings: Set number of payout signature lines on the payout receipt
             Common.SetOpSettingValue(Setting.PayoutReceiptSignatureLineCount, numPayoutSignatureLines.Value.ToString(CultureInfo.InvariantCulture));

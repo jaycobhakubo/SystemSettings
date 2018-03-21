@@ -154,7 +154,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;salesTaxLabel.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
@@ -250,7 +250,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.844, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.925, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -260,6 +260,66 @@
   </data>
   <data name="panel1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="chkForceVoidAuth.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkForceVoidAuth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 398</value>
+  </data>
+  <data name="chkForceVoidAuth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 26</value>
+  </data>
+  <data name="chkForceVoidAuth.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="chkForceVoidAuth.Text" xml:space="preserve">
+    <value>Force authorization of voids</value>
+  </data>
+  <data name="chkForceVoidAuth.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkForceVoidAuth.Name" xml:space="preserve">
+    <value>chkForceVoidAuth</value>
+  </data>
+  <data name="&gt;&gt;chkForceVoidAuth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkForceVoidAuth.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkForceVoidAuth.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkShowFree.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkShowFree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 438</value>
+  </data>
+  <data name="chkShowFree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 50</value>
+  </data>
+  <data name="chkShowFree.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="chkShowFree.Text" xml:space="preserve">
+    <value>Show FREE on player unit buttons if device fee is zero.</value>
+  </data>
+  <data name="chkShowFree.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkShowFree.Name" xml:space="preserve">
+    <value>chkShowFree</value>
+  </data>
+  <data name="&gt;&gt;chkShowFree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkShowFree.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;chkShowFree.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="chkScanningStartsNewSale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -288,7 +348,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkScanningStartsNewSale.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="chkShowQuantityOnButtons.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -318,7 +378,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkShowQuantityOnButtons.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="chkTwoMenuPagesPerPOSPage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -348,7 +408,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkTwoMenuPagesPerPOSPage.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="chkWidescreen.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -378,7 +438,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkWidescreen.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -408,7 +468,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="cmbResellAuditedItem.Items" xml:space="preserve">
     <value>Disallow</value>
@@ -438,7 +498,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cmbResellAuditedItem.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="chkPrintRegisterClosingOnCloseBank.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -468,7 +528,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkPrintRegisterClosingOnCloseBank.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="chkEnableRegisterClosingReport.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -498,7 +558,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkEnableRegisterClosingReport.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="chkPromptForPlayerCreation.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -531,7 +591,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkPromptForPlayerCreation.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="chkPrintCloseBankReceipt.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
@@ -564,7 +624,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkPrintCloseBankReceipt.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="chkAllowPrintQuantitySales.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -597,7 +657,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkAllowPrintQuantitySales.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="chkUseToggleButtonForUnitSelection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -627,7 +687,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkUseToggleButtonForUnitSelection.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="m_playWithPaperEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -654,7 +714,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;m_playWithPaperEnabled.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="chkRemoveDiscountsFromRepeatSales.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -687,7 +747,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkRemoveDiscountsFromRepeatSales.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="chkRemovePaperFromRepeatSale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -717,7 +777,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkRemovePaperFromRepeatSale.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="chkRemoveCouponsPackageOnRepeatSale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -747,7 +807,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkRemoveCouponsPackageOnRepeatSale.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="chkReturnToPageOne.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -777,7 +837,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkReturnToPageOne.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="chkShowPaperUsageAtLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -807,7 +867,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkShowPaperUsageAtLogin.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="chkEnablePaperUsage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -837,7 +897,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkEnablePaperUsage.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="chkbxEnableValidation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -867,7 +927,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkbxEnableValidation.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="chkProductCardCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -897,7 +957,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkProductCardCount.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="txtCashDrawerEjectCode.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -924,7 +984,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;txtCashDrawerEjectCode.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="numSalesTax.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -948,7 +1008,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numSalesTax.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="chkEnableActiveSession.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -975,7 +1035,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkEnableActiveSession.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1008,7 +1068,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1044,7 +1104,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="chkEnableRegisterSalesReport.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1074,7 +1134,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkEnableRegisterSalesReport.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="lstRegisterReceipt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1104,7 +1164,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lstRegisterReceipt.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="chkUseExchangeRateOnSale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1134,7 +1194,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkUseExchangeRateOnSale.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>31</value>
   </data>
   <data name="minSaleLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1167,7 +1227,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;minSaleLabel.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>32</value>
   </data>
   <data name="numCBBQuantitySales.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1191,7 +1251,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;numCBBQuantitySales.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>33</value>
   </data>
   <data name="m_lblMaximumQuantitySales.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1224,7 +1284,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;m_lblMaximumQuantitySales.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>34</value>
   </data>
   <data name="cboMinumSales.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1248,7 +1308,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cboMinumSales.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>35</value>
   </data>
   <data name="lstTenderModes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1272,7 +1332,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lstTenderModes.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>36</value>
   </data>
   <data name="chkAllowQuantitySales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1302,7 +1362,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkAllowQuantitySales.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>37</value>
   </data>
   <data name="tenderModeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1335,7 +1395,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;tenderModeLabel.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>38</value>
   </data>
   <data name="chkSellFixedUnits.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -1365,7 +1425,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkSellFixedUnits.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>39</value>
   </data>
   <data name="chkAllowNoSale.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -1401,7 +1461,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkAllowNoSale.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>40</value>
   </data>
   <data name="chkAllowReturns.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -1437,7 +1497,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkAllowReturns.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>41</value>
   </data>
   <data name="chkbxAutoIssue.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -1470,7 +1530,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkbxAutoIssue.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>42</value>
   </data>
   <data name="chkLongDescriptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1500,7 +1560,7 @@ from the receipt</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chkLongDescriptions.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>43</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 25</value>
@@ -1644,7 +1704,7 @@ from the receipt</value>
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.844, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.925, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1668,6 +1728,6 @@ from the receipt</value>
     <value>POSSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.8, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.0.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

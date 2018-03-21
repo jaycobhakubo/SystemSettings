@@ -54,6 +54,7 @@
             this.m_lblClosedText = new System.Windows.Forms.Label();
             this.m_lblAttractText = new System.Windows.Forms.Label();
             this.txtbxKioskTicketPrinterName = new System.Windows.Forms.TextBox();
+            this.chkbxAllowScanningProducts = new System.Windows.Forms.CheckBox();
             this.grpBxKioskSales.SuspendLayout();
             this.m_grpTimeouts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudMessageTimeout)).BeginInit();
@@ -137,6 +138,7 @@
             // 
             // grpBxKioskSales
             // 
+            this.grpBxKioskSales.Controls.Add(this.chkbxAllowScanningProducts);
             this.grpBxKioskSales.Controls.Add(this.chkbxAllowCreditDebitOnKiosk);
             this.grpBxKioskSales.Controls.Add(this.chkbxIncludeUseLastPurchaseButton);
             this.grpBxKioskSales.Controls.Add(this.chkbxUseSimplePaymentForAdvancedKiosk);
@@ -311,6 +313,13 @@
             this.txtbxKioskTicketPrinterName.Name = "txtbxKioskTicketPrinterName";
             this.txtbxKioskTicketPrinterName.TextChanged += new System.EventHandler(this.OnModified);
             // 
+            // chkbxAllowScanningProducts
+            // 
+            resources.ApplyResources(this.chkbxAllowScanningProducts, "chkbxAllowScanningProducts");
+            this.chkbxAllowScanningProducts.Name = "chkbxAllowScanningProducts";
+            this.chkbxAllowScanningProducts.UseVisualStyleBackColor = true;
+            this.chkbxAllowScanningProducts.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
             // POSKioskSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -357,5 +366,6 @@
         private System.Windows.Forms.CheckBox chkbxUseSimplePaymentForAdvancedKiosk;
         private System.Windows.Forms.CheckBox chkbxIncludeUseLastPurchaseButton;
         private System.Windows.Forms.CheckBox chkbxAllowCreditDebitOnKiosk;
+        private System.Windows.Forms.CheckBox chkbxAllowScanningProducts;
     }
 }

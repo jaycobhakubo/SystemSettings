@@ -33,6 +33,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkForceVoidAuth = new System.Windows.Forms.CheckBox();
+            this.chkShowFree = new System.Windows.Forms.CheckBox();
             this.chkScanningStartsNewSale = new System.Windows.Forms.CheckBox();
             this.chkShowQuantityOnButtons = new System.Windows.Forms.CheckBox();
             this.chkTwoMenuPagesPerPOSPage = new System.Windows.Forms.CheckBox();
@@ -95,8 +97,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
             this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -114,6 +114,8 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.chkForceVoidAuth);
+            this.panel1.Controls.Add(this.chkShowFree);
             this.panel1.Controls.Add(this.chkScanningStartsNewSale);
             this.panel1.Controls.Add(this.chkShowQuantityOnButtons);
             this.panel1.Controls.Add(this.chkTwoMenuPagesPerPOSPage);
@@ -157,6 +159,20 @@ namespace GTI.Modules.SystemSettings.UI
             this.panel1.Controls.Add(this.chkbxAutoIssue);
             this.panel1.Controls.Add(this.chkLongDescriptions);
             this.panel1.Name = "panel1";
+            // 
+            // chkForceVoidAuth
+            // 
+            resources.ApplyResources(this.chkForceVoidAuth, "chkForceVoidAuth");
+            this.chkForceVoidAuth.Name = "chkForceVoidAuth";
+            this.chkForceVoidAuth.UseVisualStyleBackColor = true;
+            this.chkForceVoidAuth.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkShowFree
+            // 
+            resources.ApplyResources(this.chkShowFree, "chkShowFree");
+            this.chkShowFree.Name = "chkShowFree";
+            this.chkShowFree.UseVisualStyleBackColor = true;
+            this.chkShowFree.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkScanningStartsNewSale
             // 
@@ -467,8 +483,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
             this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -538,5 +552,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkWidescreen;
         private System.Windows.Forms.CheckBox chkShowQuantityOnButtons;
         private System.Windows.Forms.CheckBox chkScanningStartsNewSale;
+        private System.Windows.Forms.CheckBox chkForceVoidAuth;
+        private System.Windows.Forms.CheckBox chkShowFree;
 	}
 }

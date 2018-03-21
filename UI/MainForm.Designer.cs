@@ -40,10 +40,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
-            this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
-            this.playerDevicePlayModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDevicePlayModeSettings();
             this.playerDeviceAudioSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceAudioSettings();
+            this.playerDevicePlayModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDevicePlayModeSettings();
+            this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
+            this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
             this.raffleSettings2 = new GTI.Modules.SystemSettings.UI.RaffleSettings();
             this.receiptSettings2 = new GTI.Modules.SystemSettings.UI.ReceiptSettings();
             this.securitySettings3 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
@@ -242,10 +242,21 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // kioskSalesSettings1
+            // playerDeviceAudioSettings1
             // 
-            resources.ApplyResources(this.kioskSalesSettings1, "kioskSalesSettings1");
-            this.kioskSalesSettings1.Name = "kioskSalesSettings1";
+            this.playerDeviceAudioSettings1.BackColor = System.Drawing.SystemColors.Control;
+            this.playerDeviceAudioSettings1.Devices = null;
+            resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
+            this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
+            this.playerDeviceAudioSettings1.Tag = "PlayerDevice";
+            // 
+            // playerDevicePlayModeSettings1
+            // 
+            this.playerDevicePlayModeSettings1.BackColor = System.Drawing.SystemColors.Control;
+            this.playerDevicePlayModeSettings1.Devices = null;
+            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
+            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
+            this.playerDevicePlayModeSettings1.Tag = "PlayerDevice";
             // 
             // playerDeviceSettings1
             // 
@@ -256,21 +267,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.playerDeviceSettings1.Name = "playerDeviceSettings1";
             this.playerDeviceSettings1.Tag = "PlayerDevice";
             // 
-            // playerDevicePlayModeSettings1
+            // kioskSalesSettings1
             // 
-            this.playerDevicePlayModeSettings1.BackColor = System.Drawing.SystemColors.Control;
-            this.playerDevicePlayModeSettings1.Devices = null;
-            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
-            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
-            this.playerDevicePlayModeSettings1.Tag = "PlayerDevice";
-            // 
-            // playerDeviceAudioSettings1
-            // 
-            this.playerDeviceAudioSettings1.BackColor = System.Drawing.SystemColors.Control;
-            this.playerDeviceAudioSettings1.Devices = null;
-            resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
-            this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
-            this.playerDeviceAudioSettings1.Tag = "PlayerDevice";
+            resources.ApplyResources(this.kioskSalesSettings1, "kioskSalesSettings1");
+            this.kioskSalesSettings1.Name = "kioskSalesSettings1";
             // 
             // raffleSettings2
             // 
@@ -314,11 +314,13 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // thirdPartyInterfaceSettings3
             // 
+            this.thirdPartyInterfaceSettings3.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.thirdPartyInterfaceSettings3, "thirdPartyInterfaceSettings3");
             this.thirdPartyInterfaceSettings3.Name = "thirdPartyInterfaceSettings3";
             // 
             // thirdPartyInterfaceSettings2
             // 
+            this.thirdPartyInterfaceSettings2.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.thirdPartyInterfaceSettings2, "thirdPartyInterfaceSettings2");
             this.thirdPartyInterfaceSettings2.Name = "thirdPartyInterfaceSettings2";
             // 

@@ -112,15 +112,15 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="identifierColumnHeader.Text" xml:space="preserve">
     <value>Identifier</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="identifierColumnHeader.Width" type="System.Int32, mscorlib">
     <value>122</value>
   </data>
@@ -136,7 +136,7 @@
   <data name="descriptionColumnHeader.Width" type="System.Int32, mscorlib">
     <value>335</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lstStations.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
@@ -153,7 +153,7 @@
     <value>lstStations</value>
   </data>
   <data name="&gt;&gt;lstStations.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lstStations.Parent" xml:space="preserve">
     <value>stationGroupBox</value>
@@ -180,7 +180,7 @@
     <value>stationGroupBox</value>
   </data>
   <data name="&gt;&gt;stationGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;stationGroupBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -236,6 +236,30 @@
   <data name="cboFilter.Items15" xml:space="preserve">
     <value>UK Socket Server</value>
   </data>
+  <data name="cboFilter.Items16" xml:space="preserve">
+    <value>3rd Party Device</value>
+  </data>
+  <data name="cboFilter.Items17" xml:space="preserve">
+    <value>Ted-E</value>
+  </data>
+  <data name="cboFilter.Items18" xml:space="preserve">
+    <value>Fixed (Android)</value>
+  </data>
+  <data name="cboFilter.Items19" xml:space="preserve">
+    <value>VLT Bingo Kiosk</value>
+  </data>
+  <data name="cboFilter.Items20" xml:space="preserve">
+    <value>POS Kiosk (Advanced)</value>
+  </data>
+  <data name="cboFilter.Items21" xml:space="preserve">
+    <value>POS Kiosk (Buy-Again)</value>
+  </data>
+  <data name="cboFilter.Items22" xml:space="preserve">
+    <value>POS Kiosk (Simple)</value>
+  </data>
+  <data name="cboFilter.Items23" xml:space="preserve">
+    <value>POS Kiosk (Hybrid)</value>
+  </data>
   <data name="cboFilter.Location" type="System.Drawing.Point, System.Drawing">
     <value>246, 20</value>
   </data>
@@ -249,7 +273,7 @@
     <value>cboFilter</value>
   </data>
   <data name="&gt;&gt;cboFilter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cboFilter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -263,7 +287,7 @@
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -283,7 +307,7 @@
     <value>label1</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -300,6 +324,9 @@
   <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
     <value>395, 567</value>
   </data>
+  <data name="btnRefresh.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
   <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 30</value>
   </data>
@@ -313,7 +340,7 @@
     <value>btnRefresh</value>
   </data>
   <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.4.0, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.885, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
     <value>$this</value>
@@ -330,6 +357,9 @@
   <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
     <value>246, 567</value>
   </data>
+  <data name="btnEdit.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
   <data name="btnEdit.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 30</value>
   </data>
@@ -343,7 +373,7 @@
     <value>btnEdit</value>
   </data>
   <data name="&gt;&gt;btnEdit.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.4.0, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.885, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnEdit.Parent" xml:space="preserve">
     <value>$this</value>
@@ -351,7 +381,7 @@
   <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
@@ -364,24 +394,24 @@
     <value>identifierColumnHeader</value>
   </data>
   <data name="&gt;&gt;identifierColumnHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;deviceTypeColumnHeader.Name" xml:space="preserve">
     <value>deviceTypeColumnHeader</value>
   </data>
   <data name="&gt;&gt;deviceTypeColumnHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;descriptionColumnHeader.Name" xml:space="preserve">
     <value>descriptionColumnHeader</value>
   </data>
   <data name="&gt;&gt;descriptionColumnHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MachineSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.3.29.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.13, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

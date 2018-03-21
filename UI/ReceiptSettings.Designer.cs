@@ -38,24 +38,9 @@ namespace GTI.Modules.SystemSettings.UI
             System.Windows.Forms.Label receiptLine1Label;
             System.Windows.Forms.Label receiptLine2Label;
             System.Windows.Forms.Label receiptLine3Label;
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtIncompleteSale2 = new System.Windows.Forms.TextBox();
-            this.txtIncompleteSale1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDisclaimer3 = new System.Windows.Forms.TextBox();
-            this.txtDisclaimer2 = new System.Windows.Forms.TextBox();
-            this.txtDisclaimer1 = new System.Windows.Forms.TextBox();
-            this.txtFooter1 = new System.Windows.Forms.TextBox();
-            this.txtFooter2 = new System.Windows.Forms.TextBox();
-            this.txtFooter3 = new System.Windows.Forms.TextBox();
-            this.txtHeader1 = new System.Windows.Forms.TextBox();
-            this.txtHeader2 = new System.Windows.Forms.TextBox();
-            this.txtHeader3 = new System.Windows.Forms.TextBox();
-            this.btnReset = new GTI.Controls.ImageButton();
-            this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.m_cboClosedSessionVoidMode = new System.Windows.Forms.ComboBox();
+            this.lblVoidMode = new System.Windows.Forms.Label();
             this.chkPrintIncompleteTransactionReceipts = new System.Windows.Forms.CheckBox();
             this.chkPrintAccount = new System.Windows.Forms.CheckBox();
             this.chkPrintOperatorInfo = new System.Windows.Forms.CheckBox();
@@ -81,6 +66,23 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkPrintPointInfo = new System.Windows.Forms.CheckBox();
             this.chkPrintFacesToGlobalPrinter = new System.Windows.Forms.CheckBox();
             this.chkPrintNonelecReceipts = new System.Windows.Forms.CheckBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtIncompleteSale2 = new System.Windows.Forms.TextBox();
+            this.txtIncompleteSale1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtDisclaimer3 = new System.Windows.Forms.TextBox();
+            this.txtDisclaimer2 = new System.Windows.Forms.TextBox();
+            this.txtDisclaimer1 = new System.Windows.Forms.TextBox();
+            this.txtFooter1 = new System.Windows.Forms.TextBox();
+            this.txtFooter2 = new System.Windows.Forms.TextBox();
+            this.txtFooter3 = new System.Windows.Forms.TextBox();
+            this.txtHeader1 = new System.Windows.Forms.TextBox();
+            this.txtHeader2 = new System.Windows.Forms.TextBox();
+            this.txtHeader3 = new System.Windows.Forms.TextBox();
+            this.btnReset = new GTI.Controls.ImageButton();
+            this.btnSave = new GTI.Controls.ImageButton();
             lbl_mDisclaimerLine1 = new System.Windows.Forms.Label();
             lbl_mDisclaimerLine2 = new System.Windows.Forms.Label();
             lbl_mDisclaimerLine3 = new System.Windows.Forms.Label();
@@ -90,13 +92,13 @@ namespace GTI.Modules.SystemSettings.UI
             receiptLine1Label = new System.Windows.Forms.Label();
             receiptLine2Label = new System.Windows.Forms.Label();
             receiptLine3Label = new System.Windows.Forms.Label();
-            this.groupBox4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numVoidSignatureLines)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPayoutCopies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCardFacePointSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCopies)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_mDisclaimerLine1
@@ -147,152 +149,10 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(receiptLine3Label, "receiptLine3Label");
             receiptLine3Label.Name = "receiptLine3Label";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.groupBox2);
-            this.groupBox4.Controls.Add(this.txtDisclaimer3);
-            this.groupBox4.Controls.Add(this.txtDisclaimer2);
-            this.groupBox4.Controls.Add(this.txtDisclaimer1);
-            this.groupBox4.Controls.Add(lbl_mDisclaimerLine1);
-            this.groupBox4.Controls.Add(lbl_mDisclaimerLine2);
-            this.groupBox4.Controls.Add(lbl_mDisclaimerLine3);
-            this.groupBox4.Controls.Add(this.txtFooter1);
-            this.groupBox4.Controls.Add(label1);
-            this.groupBox4.Controls.Add(this.txtFooter2);
-            this.groupBox4.Controls.Add(label2);
-            this.groupBox4.Controls.Add(this.txtFooter3);
-            this.groupBox4.Controls.Add(label3);
-            this.groupBox4.Controls.Add(this.txtHeader1);
-            this.groupBox4.Controls.Add(receiptLine1Label);
-            this.groupBox4.Controls.Add(this.txtHeader2);
-            this.groupBox4.Controls.Add(receiptLine2Label);
-            this.groupBox4.Controls.Add(this.txtHeader3);
-            this.groupBox4.Controls.Add(receiptLine3Label);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtIncompleteSale2);
-            this.groupBox2.Controls.Add(this.txtIncompleteSale1);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label8);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
-            // 
-            // txtIncompleteSale2
-            // 
-            resources.ApplyResources(this.txtIncompleteSale2, "txtIncompleteSale2");
-            this.txtIncompleteSale2.Name = "txtIncompleteSale2";
-            this.txtIncompleteSale2.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtIncompleteSale1
-            // 
-            resources.ApplyResources(this.txtIncompleteSale1, "txtIncompleteSale1");
-            this.txtIncompleteSale1.Name = "txtIncompleteSale1";
-            this.txtIncompleteSale1.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // txtDisclaimer3
-            // 
-            this.txtDisclaimer3.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.txtDisclaimer3, "txtDisclaimer3");
-            this.txtDisclaimer3.Name = "txtDisclaimer3";
-            this.txtDisclaimer3.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtDisclaimer2
-            // 
-            this.txtDisclaimer2.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.txtDisclaimer2, "txtDisclaimer2");
-            this.txtDisclaimer2.Name = "txtDisclaimer2";
-            this.txtDisclaimer2.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtDisclaimer1
-            // 
-            this.txtDisclaimer1.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.txtDisclaimer1, "txtDisclaimer1");
-            this.txtDisclaimer1.Name = "txtDisclaimer1";
-            this.txtDisclaimer1.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtFooter1
-            // 
-            resources.ApplyResources(this.txtFooter1, "txtFooter1");
-            this.txtFooter1.Name = "txtFooter1";
-            this.txtFooter1.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtFooter2
-            // 
-            resources.ApplyResources(this.txtFooter2, "txtFooter2");
-            this.txtFooter2.Name = "txtFooter2";
-            this.txtFooter2.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtFooter3
-            // 
-            resources.ApplyResources(this.txtFooter3, "txtFooter3");
-            this.txtFooter3.Name = "txtFooter3";
-            this.txtFooter3.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtHeader1
-            // 
-            resources.ApplyResources(this.txtHeader1, "txtHeader1");
-            this.txtHeader1.Name = "txtHeader1";
-            this.txtHeader1.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtHeader2
-            // 
-            resources.ApplyResources(this.txtHeader2, "txtHeader2");
-            this.txtHeader2.Name = "txtHeader2";
-            this.txtHeader2.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // txtHeader3
-            // 
-            resources.ApplyResources(this.txtHeader3, "txtHeader3");
-            this.txtHeader3.Name = "txtHeader3";
-            this.txtHeader3.TextChanged += new System.EventHandler(this.OnModified);
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnReset, "btnReset");
-            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
-            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
-            this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
-            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
-            this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
-            this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
-            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.m_cboClosedSessionVoidMode);
+            this.groupBox1.Controls.Add(this.lblVoidMode);
             this.groupBox1.Controls.Add(this.chkPrintIncompleteTransactionReceipts);
             this.groupBox1.Controls.Add(this.chkPrintAccount);
             this.groupBox1.Controls.Add(this.chkPrintOperatorInfo);
@@ -321,6 +181,23 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // m_cboClosedSessionVoidMode
+            // 
+            this.m_cboClosedSessionVoidMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.m_cboClosedSessionVoidMode, "m_cboClosedSessionVoidMode");
+            this.m_cboClosedSessionVoidMode.FormattingEnabled = true;
+            this.m_cboClosedSessionVoidMode.Items.AddRange(new object[] {
+            resources.GetString("m_cboClosedSessionVoidMode.Items"),
+            resources.GetString("m_cboClosedSessionVoidMode.Items1"),
+            resources.GetString("m_cboClosedSessionVoidMode.Items2")});
+            this.m_cboClosedSessionVoidMode.Name = "m_cboClosedSessionVoidMode";
+            this.m_cboClosedSessionVoidMode.SelectedIndexChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblVoidMode
+            // 
+            resources.ApplyResources(this.lblVoidMode, "lblVoidMode");
+            this.lblVoidMode.Name = "lblVoidMode";
             // 
             // chkPrintIncompleteTransactionReceipts
             // 
@@ -370,7 +247,7 @@ namespace GTI.Modules.SystemSettings.UI
             0,
             0,
             0});
-            this.numVoidSignatureLines.ValueChanged += new System.EventHandler(this.numVoidSignatureLines_ValueChanged);
+            this.numVoidSignatureLines.ValueChanged += new System.EventHandler(this.OnModified);
             // 
             // chkPrintVoidSignatureLines
             // 
@@ -532,6 +409,146 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkPrintNonelecReceipts.UseVisualStyleBackColor = false;
             this.chkPrintNonelecReceipts.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.groupBox2);
+            this.groupBox4.Controls.Add(this.txtDisclaimer3);
+            this.groupBox4.Controls.Add(this.txtDisclaimer2);
+            this.groupBox4.Controls.Add(this.txtDisclaimer1);
+            this.groupBox4.Controls.Add(lbl_mDisclaimerLine1);
+            this.groupBox4.Controls.Add(lbl_mDisclaimerLine2);
+            this.groupBox4.Controls.Add(lbl_mDisclaimerLine3);
+            this.groupBox4.Controls.Add(this.txtFooter1);
+            this.groupBox4.Controls.Add(label1);
+            this.groupBox4.Controls.Add(this.txtFooter2);
+            this.groupBox4.Controls.Add(label2);
+            this.groupBox4.Controls.Add(this.txtFooter3);
+            this.groupBox4.Controls.Add(label3);
+            this.groupBox4.Controls.Add(this.txtHeader1);
+            this.groupBox4.Controls.Add(receiptLine1Label);
+            this.groupBox4.Controls.Add(this.txtHeader2);
+            this.groupBox4.Controls.Add(receiptLine2Label);
+            this.groupBox4.Controls.Add(this.txtHeader3);
+            this.groupBox4.Controls.Add(receiptLine3Label);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtIncompleteSale2);
+            this.groupBox2.Controls.Add(this.txtIncompleteSale1);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label8);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // txtIncompleteSale2
+            // 
+            resources.ApplyResources(this.txtIncompleteSale2, "txtIncompleteSale2");
+            this.txtIncompleteSale2.Name = "txtIncompleteSale2";
+            this.txtIncompleteSale2.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtIncompleteSale1
+            // 
+            resources.ApplyResources(this.txtIncompleteSale1, "txtIncompleteSale1");
+            this.txtIncompleteSale1.Name = "txtIncompleteSale1";
+            this.txtIncompleteSale1.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // txtDisclaimer3
+            // 
+            this.txtDisclaimer3.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.txtDisclaimer3, "txtDisclaimer3");
+            this.txtDisclaimer3.Name = "txtDisclaimer3";
+            this.txtDisclaimer3.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtDisclaimer2
+            // 
+            this.txtDisclaimer2.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.txtDisclaimer2, "txtDisclaimer2");
+            this.txtDisclaimer2.Name = "txtDisclaimer2";
+            this.txtDisclaimer2.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtDisclaimer1
+            // 
+            this.txtDisclaimer1.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.txtDisclaimer1, "txtDisclaimer1");
+            this.txtDisclaimer1.Name = "txtDisclaimer1";
+            this.txtDisclaimer1.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtFooter1
+            // 
+            resources.ApplyResources(this.txtFooter1, "txtFooter1");
+            this.txtFooter1.Name = "txtFooter1";
+            this.txtFooter1.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtFooter2
+            // 
+            resources.ApplyResources(this.txtFooter2, "txtFooter2");
+            this.txtFooter2.Name = "txtFooter2";
+            this.txtFooter2.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtFooter3
+            // 
+            resources.ApplyResources(this.txtFooter3, "txtFooter3");
+            this.txtFooter3.Name = "txtFooter3";
+            this.txtFooter3.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtHeader1
+            // 
+            resources.ApplyResources(this.txtHeader1, "txtHeader1");
+            this.txtHeader1.Name = "txtHeader1";
+            this.txtHeader1.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtHeader2
+            // 
+            resources.ApplyResources(this.txtHeader2, "txtHeader2");
+            this.txtHeader2.Name = "txtHeader2";
+            this.txtHeader2.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // txtHeader3
+            // 
+            resources.ApplyResources(this.txtHeader3, "txtHeader3");
+            this.txtHeader3.Name = "txtHeader3";
+            this.txtHeader3.TextChanged += new System.EventHandler(this.OnModified);
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
+            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
+            this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
+            this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
+            this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // ReceiptSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -542,16 +559,16 @@ namespace GTI.Modules.SystemSettings.UI
             this.DoubleBuffered = true;
             resources.ApplyResources(this, "$this");
             this.Name = "ReceiptSettings";
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numVoidSignatureLines)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPayoutCopies)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCardFacePointSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCopies)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
 		}
@@ -601,5 +618,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox chkPrintIncompleteTransactionReceipts;
+        private System.Windows.Forms.ComboBox m_cboClosedSessionVoidMode;
+        private System.Windows.Forms.Label lblVoidMode;
 	}
 }

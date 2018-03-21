@@ -96,6 +96,9 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.IncompleteTransactionReceiptText2, out tempSettingValue);
             txtIncompleteSale2.Text = tempSettingValue.Value;
 
+            Common.GetOpSettingValue(Setting.VoidingWithClosedSessionMode, out tempSettingValue);
+            m_cboClosedSessionVoidMode.SelectedIndex = Common.ParseInt(tempSettingValue.Value);
+
             Common.GetOpSettingValue(Setting.PrintPlayerIdentityAsAccountNumber, out tempSettingValue);
             chkPrintAccount.Checked = Common.ParseBool(tempSettingValue.Value);
 
@@ -300,6 +303,8 @@ namespace GTI.Modules.SystemSettings.UI
             
             Common.SetOpSettingValue(Setting.IncompleteTransactionReceiptText2, txtIncompleteSale2.Text);
 
+            Common.SetOpSettingValue(Setting.VoidingWithClosedSessionMode, m_cboClosedSessionVoidMode.SelectedIndex.ToString());
+
             Common.SetOpSettingValue(Setting.PrintPlayerIdentityAsAccountNumber, chkPrintAccount.Checked.ToString());
 
             Common.SetOpSettingValue(Setting.PrintReceiptSortedByPackageType, chkSortReceipt.Checked.ToString());
@@ -431,11 +436,6 @@ namespace GTI.Modules.SystemSettings.UI
             m_bModified = true;
 
             numVoidSignatureLines.Enabled = chkPrintVoidSignatureLines.Checked;
-        }
-
-        private void numVoidSignatureLines_ValueChanged(object sender, EventArgs e)
-        {
-
         }
 	} // end class
 } // end namespace

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTIControls", "..\..\DLLs\GTIControls\GTIControls.csproj", "{A2B9C7C4-AE7E-48DC-B39C-C9442CF017F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedEliteModule", "..\..\DLLs\ManagedEliteModule\ManagedEliteModule.csproj", "{308EF933-6B4E-48B2-9C54-85318FE50C63}"

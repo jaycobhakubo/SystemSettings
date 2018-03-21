@@ -170,13 +170,6 @@ namespace GTI.Modules.SystemSettings.UI
             s.Value = flexTendering.Checked.ToString();
             tSettings.Add(s);
 
-            if(flexTendering.Checked) //make sure the tender mode is set to prevent negative change
-            {
-                s.Id = (int)Setting.TenderSales;
-                s.Value = "3";
-                tSettings.Add(s);
-            }
-
             s = new SettingValue();
             s.Id = (int)Setting.AllowSplitTendering;
             s.Value = splitTendering.Checked.ToString();

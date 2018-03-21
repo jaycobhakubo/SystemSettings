@@ -138,6 +138,17 @@ namespace GTI.Modules.SystemSettings.UI
                 saveFlag = true;
             }
 
+            tempString = Common.GetSystemSetting(Setting.AllowScanningProductsOnSimplePOSKiosk);
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkbxAllowScanningProducts.Checked = boolResult;
+            }
+            else
+            {
+                chkbxAllowScanningProducts.Checked = false;
+                saveFlag = true;
+            }
+
             tempString = Common.GetSystemSetting(Setting.AllowUseOfSimpleKioskWithoutPlayerCard);
             if (bool.TryParse(tempString, out boolResult))
             {
@@ -305,6 +316,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             setting.Id = (int)Setting.AllowBarcodedPaperToBeSoldAtSimpleKiosk;
             setting.Value = chkbxAllowBarcodedPaperSold.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.AllowScanningProductsOnSimplePOSKiosk;
+            setting.Value = chkbxAllowScanningProducts.Checked.ToString();
             arrSettings.Add(setting);
 
             setting.Id = (int)Setting.IncludeTheCouponsButtonOnTheHybridKiosk;

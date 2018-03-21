@@ -103,10 +103,14 @@ namespace GTI.Modules.SystemSettings.UI
 
             chkScanningStartsNewSale.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ScannedReceiptsStartNewSale));
 
+            chkForceVoidAuth.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ForceAuthorizationOnVoidsAtPOS));
+
+            chkShowFree.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ShowFreeOnDeviceButtonsWithFeeOfZero));
+
             chkPrintRegisterClosingOnCloseBank.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.PrintRegisterClosingOnBankClose));
 
             chkWidescreen.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.AllowWidescreenPOS));
-            
+
             chkTwoMenuPagesPerPOSPage.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.WidescreenPOSHasTwoMenuPagesPerPage));
             chkTwoMenuPagesPerPOSPage.Enabled = chkWidescreen.Checked;
 
@@ -440,6 +444,14 @@ namespace GTI.Modules.SystemSettings.UI
             s.Value = chkScanningStartsNewSale.Checked.ToString();
             arrSettings.Add(s);
 
+            s.Id = (int)Setting.ForceAuthorizationOnVoidsAtPOS;
+            s.Value = chkForceVoidAuth.Checked.ToString();
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.ShowFreeOnDeviceButtonsWithFeeOfZero;
+            s.Value = chkShowFree.Checked.ToString();
+            arrSettings.Add(s);
+
             s.Id = (int)Setting.AllowWidescreenPOS;
             s.Value = chkWidescreen.Checked.ToString();
             arrSettings.Add(s);
@@ -557,9 +569,6 @@ namespace GTI.Modules.SystemSettings.UI
             // Update the operator global settings
             // TTP 50359
             Common.SetOpSettingValue(Setting.TenderSales, lstTenderModes.SelectedIndex.ToString());
-
-            if (lstTenderModes.SelectedIndex != 3) //if tendering mode is not "prevent negative change" then turn off flex tendering
-                Common.SetOpSettingValue(Setting.EnableFlexTendering, false.ToString());
 
             Common.SetOpSettingValue(Setting.OpAllowNoSale, chkAllowNoSale.Checked.ToString());
 

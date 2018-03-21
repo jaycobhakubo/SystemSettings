@@ -128,10 +128,13 @@
   <data name="lbl_mDisclaimerLine1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbl_mDisclaimerLine1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lbl_mDisclaimerLine1.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 325</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lbl_mDisclaimerLine1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
@@ -164,6 +167,9 @@
   </data>
   <data name="lbl_mDisclaimerLine2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="lbl_mDisclaimerLine2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lbl_mDisclaimerLine2.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 375</value>
@@ -201,6 +207,9 @@
   <data name="lbl_mDisclaimerLine3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
+  <data name="lbl_mDisclaimerLine3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lbl_mDisclaimerLine3.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 425</value>
   </data>
@@ -236,6 +245,9 @@
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 175</value>
@@ -273,6 +285,9 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 225</value>
   </data>
@@ -308,6 +323,9 @@
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 275</value>
@@ -345,6 +363,9 @@
   <data name="receiptLine1Label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
+  <data name="receiptLine1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="receiptLine1Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 25</value>
   </data>
@@ -380,6 +401,9 @@
   </data>
   <data name="receiptLine2Label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="receiptLine2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="receiptLine2Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 75</value>
@@ -417,6 +441,9 @@
   <data name="receiptLine3Label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
+  <data name="receiptLine3Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="receiptLine3Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 125</value>
   </data>
@@ -443,6 +470,781 @@
   </data>
   <data name="&gt;&gt;receiptLine3Label.ZOrder" xml:space="preserve">
     <value>18</value>
+  </data>
+  <data name="m_cboClosedSessionVoidMode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="m_cboClosedSessionVoidMode.Items" xml:space="preserve">
+    <value>Allowed</value>
+  </data>
+  <data name="m_cboClosedSessionVoidMode.Items1" xml:space="preserve">
+    <value>Disallowed</value>
+  </data>
+  <data name="m_cboClosedSessionVoidMode.Items2" xml:space="preserve">
+    <value>Not at POS</value>
+  </data>
+  <data name="m_cboClosedSessionVoidMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 256</value>
+  </data>
+  <data name="m_cboClosedSessionVoidMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="m_cboClosedSessionVoidMode.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;m_cboClosedSessionVoidMode.Name" xml:space="preserve">
+    <value>m_cboClosedSessionVoidMode</value>
+  </data>
+  <data name="&gt;&gt;m_cboClosedSessionVoidMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_cboClosedSessionVoidMode.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;m_cboClosedSessionVoidMode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblVoidMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblVoidMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 259</value>
+  </data>
+  <data name="lblVoidMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 26</value>
+  </data>
+  <data name="lblVoidMode.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblVoidMode.Text" xml:space="preserve">
+    <value>Voiding receipt for closed session</value>
+  </data>
+  <data name="&gt;&gt;lblVoidMode.Name" xml:space="preserve">
+    <value>lblVoidMode</value>
+  </data>
+  <data name="&gt;&gt;lblVoidMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVoidMode.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;lblVoidMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 370</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 60</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="chkPrintIncompleteTransactionReceipts.Text" xml:space="preserve">
+    <value>Print receipt for Incomplete Transactions not tendered with credit/debit cards</value>
+  </data>
+  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Name" xml:space="preserve">
+    <value>chkPrintIncompleteTransactionReceipts</value>
+  </data>
+  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkPrintAccount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 103</value>
+  </data>
+  <data name="chkPrintAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 26</value>
+  </data>
+  <data name="chkPrintAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkPrintAccount.Text" xml:space="preserve">
+    <value>Print player identity field as account number</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccount.Name" xml:space="preserve">
+    <value>chkPrintAccount</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccount.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccount.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkPrintOperatorInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintOperatorInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 19</value>
+  </data>
+  <data name="chkPrintOperatorInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 26</value>
+  </data>
+  <data name="chkPrintOperatorInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkPrintOperatorInfo.Text" xml:space="preserve">
+    <value>Print operator name, address, and phone#</value>
+  </data>
+  <data name="&gt;&gt;chkPrintOperatorInfo.Name" xml:space="preserve">
+    <value>chkPrintOperatorInfo</value>
+  </data>
+  <data name="&gt;&gt;chkPrintOperatorInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintOperatorInfo.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintOperatorInfo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkCompactPaperInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkCompactPaperInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 145</value>
+  </data>
+  <data name="chkCompactPaperInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 26</value>
+  </data>
+  <data name="chkCompactPaperInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkCompactPaperInfo.Text" xml:space="preserve">
+    <value>Print Paper Packs Sold in compact format</value>
+  </data>
+  <data name="&gt;&gt;chkCompactPaperInfo.Name" xml:space="preserve">
+    <value>chkCompactPaperInfo</value>
+  </data>
+  <data name="&gt;&gt;chkCompactPaperInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCompactPaperInfo.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkCompactPaperInfo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chkSortReceipt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkSortReceipt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 40</value>
+  </data>
+  <data name="chkSortReceipt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 26</value>
+  </data>
+  <data name="chkSortReceipt.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkSortReceipt.Text" xml:space="preserve">
+    <value>Print receipt sorted by package type</value>
+  </data>
+  <data name="&gt;&gt;chkSortReceipt.Name" xml:space="preserve">
+    <value>chkSortReceipt</value>
+  </data>
+  <data name="&gt;&gt;chkSortReceipt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSortReceipt.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkSortReceipt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="numVoidSignatureLines.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numVoidSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 303</value>
+  </data>
+  <data name="numVoidSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="numVoidSignatureLines.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;numVoidSignatureLines.Name" xml:space="preserve">
+    <value>numVoidSignatureLines</value>
+  </data>
+  <data name="&gt;&gt;numVoidSignatureLines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numVoidSignatureLines.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;numVoidSignatureLines.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkPrintVoidSignatureLines.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintVoidSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 305</value>
+  </data>
+  <data name="chkPrintVoidSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 24</value>
+  </data>
+  <data name="chkPrintVoidSignatureLines.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="chkPrintVoidSignatureLines.Text" xml:space="preserve">
+    <value>Print void signature lines</value>
+  </data>
+  <data name="&gt;&gt;chkPrintVoidSignatureLines.Name" xml:space="preserve">
+    <value>chkPrintVoidSignatureLines</value>
+  </data>
+  <data name="&gt;&gt;chkPrintVoidSignatureLines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintVoidSignatureLines.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintVoidSignatureLines.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="m_lblPrintCardRanges.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_lblPrintCardRanges.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_lblPrintCardRanges.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 434</value>
+  </data>
+  <data name="m_lblPrintCardRanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="m_lblPrintCardRanges.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="m_lblPrintCardRanges.Text" xml:space="preserve">
+    <value>Print card ranges</value>
+  </data>
+  <data name="&gt;&gt;m_lblPrintCardRanges.Name" xml:space="preserve">
+    <value>m_lblPrintCardRanges</value>
+  </data>
+  <data name="&gt;&gt;m_lblPrintCardRanges.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_lblPrintCardRanges.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;m_lblPrintCardRanges.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="m_cboPrintCardRanges.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="m_cboPrintCardRanges.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 431</value>
+  </data>
+  <data name="m_cboPrintCardRanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 30</value>
+  </data>
+  <data name="m_cboPrintCardRanges.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;m_cboPrintCardRanges.Name" xml:space="preserve">
+    <value>m_cboPrintCardRanges</value>
+  </data>
+  <data name="&gt;&gt;m_cboPrintCardRanges.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_cboPrintCardRanges.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;m_cboPrintCardRanges.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="m_lblPlayWithPaperDependency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_lblPlayWithPaperDependency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 463</value>
+  </data>
+  <data name="m_lblPlayWithPaperDependency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 22</value>
+  </data>
+  <data name="m_lblPlayWithPaperDependency.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="m_lblPlayWithPaperDependency.Text" xml:space="preserve">
+    <value>* Disabled due to play with paper enabled</value>
+  </data>
+  <data name="m_lblPlayWithPaperDependency.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;m_lblPlayWithPaperDependency.Name" xml:space="preserve">
+    <value>m_lblPlayWithPaperDependency</value>
+  </data>
+  <data name="&gt;&gt;m_lblPlayWithPaperDependency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_lblPlayWithPaperDependency.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;m_lblPlayWithPaperDependency.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkMultipleRecieptVoiding.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkMultipleRecieptVoiding.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 230</value>
+  </data>
+  <data name="chkMultipleRecieptVoiding.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 26</value>
+  </data>
+  <data name="chkMultipleRecieptVoiding.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chkMultipleRecieptVoiding.Text" xml:space="preserve">
+    <value>Allow voiding of multiple receipts</value>
+  </data>
+  <data name="&gt;&gt;chkMultipleRecieptVoiding.Name" xml:space="preserve">
+    <value>chkMultipleRecieptVoiding</value>
+  </data>
+  <data name="&gt;&gt;chkMultipleRecieptVoiding.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkMultipleRecieptVoiding.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkMultipleRecieptVoiding.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="chkPrintProductNames.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintProductNames.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 61</value>
+  </data>
+  <data name="chkPrintProductNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 26</value>
+  </data>
+  <data name="chkPrintProductNames.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkPrintProductNames.Text" xml:space="preserve">
+    <value>Print product names</value>
+  </data>
+  <data name="&gt;&gt;chkPrintProductNames.Name" xml:space="preserve">
+    <value>chkPrintProductNames</value>
+  </data>
+  <data name="&gt;&gt;chkPrintProductNames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintProductNames.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintProductNames.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="numPayoutCopies.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numPayoutCopies.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 562</value>
+  </data>
+  <data name="numPayoutCopies.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="numPayoutCopies.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;numPayoutCopies.Name" xml:space="preserve">
+    <value>numPayoutCopies</value>
+  </data>
+  <data name="&gt;&gt;numPayoutCopies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numPayoutCopies.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;numPayoutCopies.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 563</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 22</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Number of payout copies</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="chkPrintStaffFirstNameOnly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintStaffFirstNameOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 166</value>
+  </data>
+  <data name="chkPrintStaffFirstNameOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 26</value>
+  </data>
+  <data name="chkPrintStaffFirstNameOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkPrintStaffFirstNameOnly.Text" xml:space="preserve">
+    <value>Print staff first name only</value>
+  </data>
+  <data name="&gt;&gt;chkPrintStaffFirstNameOnly.Name" xml:space="preserve">
+    <value>chkPrintStaffFirstNameOnly</value>
+  </data>
+  <data name="&gt;&gt;chkPrintStaffFirstNameOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintStaffFirstNameOnly.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintStaffFirstNameOnly.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="numCardFacePointSize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numCardFacePointSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 529</value>
+  </data>
+  <data name="numCardFacePointSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="numCardFacePointSize.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;numCardFacePointSize.Name" xml:space="preserve">
+    <value>numCardFacePointSize</value>
+  </data>
+  <data name="&gt;&gt;numCardFacePointSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numCardFacePointSize.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;numCardFacePointSize.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 529</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Card face point size</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="numCopies.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="numCopies.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 495</value>
+  </data>
+  <data name="numCopies.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="numCopies.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;numCopies.Name" xml:space="preserve">
+    <value>numCopies</value>
+  </data>
+  <data name="&gt;&gt;numCopies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numCopies.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;numCopies.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 495</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Number of copies</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="chkPrintPlayerPointsRedeemed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkPrintPlayerPointsRedeemed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintPlayerPointsRedeemed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 321</value>
+  </data>
+  <data name="chkPrintPlayerPointsRedeemed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkPrintPlayerPointsRedeemed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 59</value>
+  </data>
+  <data name="chkPrintPlayerPointsRedeemed.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="chkPrintPlayerPointsRedeemed.Text" xml:space="preserve">
+    <value>Print player points redeemed per package
+(Long descriptions if not checked)</value>
+  </data>
+  <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.Name" xml:space="preserve">
+    <value>chkPrintPlayerPointsRedeemed</value>
+  </data>
+  <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="chkPrintCardFaces.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintCardFaces.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 285</value>
+  </data>
+  <data name="chkPrintCardFaces.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 24</value>
+  </data>
+  <data name="chkPrintCardFaces.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="chkPrintCardFaces.Text" xml:space="preserve">
+    <value>Print card faces</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCardFaces.Name" xml:space="preserve">
+    <value>chkPrintCardFaces</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCardFaces.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCardFaces.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCardFaces.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="chkPrintSignatureLine.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintSignatureLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 187</value>
+  </data>
+  <data name="chkPrintSignatureLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 26</value>
+  </data>
+  <data name="chkPrintSignatureLine.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chkPrintSignatureLine.Text" xml:space="preserve">
+    <value>Print player signature line</value>
+  </data>
+  <data name="&gt;&gt;chkPrintSignatureLine.Name" xml:space="preserve">
+    <value>chkPrintSignatureLine</value>
+  </data>
+  <data name="&gt;&gt;chkPrintSignatureLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintSignatureLine.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintSignatureLine.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="chkPrintPointInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintPointInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 82</value>
+  </data>
+  <data name="chkPrintPointInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 26</value>
+  </data>
+  <data name="chkPrintPointInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chkPrintPointInfo.Text" xml:space="preserve">
+    <value>Print player point information</value>
+  </data>
+  <data name="&gt;&gt;chkPrintPointInfo.Name" xml:space="preserve">
+    <value>chkPrintPointInfo</value>
+  </data>
+  <data name="&gt;&gt;chkPrintPointInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintPointInfo.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintPointInfo.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="chkPrintFacesToGlobalPrinter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintFacesToGlobalPrinter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 208</value>
+  </data>
+  <data name="chkPrintFacesToGlobalPrinter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 24</value>
+  </data>
+  <data name="chkPrintFacesToGlobalPrinter.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chkPrintFacesToGlobalPrinter.Text" xml:space="preserve">
+    <value>Print card faces to global printer</value>
+  </data>
+  <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.Name" xml:space="preserve">
+    <value>chkPrintFacesToGlobalPrinter</value>
+  </data>
+  <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="chkPrintNonelecReceipts.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkPrintNonelecReceipts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintNonelecReceipts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 124</value>
+  </data>
+  <data name="chkPrintNonelecReceipts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="chkPrintNonelecReceipts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 27</value>
+  </data>
+  <data name="chkPrintNonelecReceipts.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="chkPrintNonelecReceipts.Text" xml:space="preserve">
+    <value>Print non-electronic receipts</value>
+  </data>
+  <data name="&gt;&gt;chkPrintNonelecReceipts.Name" xml:space="preserve">
+    <value>chkPrintNonelecReceipts</value>
+  </data>
+  <data name="&gt;&gt;chkPrintNonelecReceipts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintNonelecReceipts.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintNonelecReceipts.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 10</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 593</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Receipt Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="txtIncompleteSale2.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 63</value>
@@ -985,7 +1787,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.951, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1087,704 +1889,13 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.860, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.951, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="chkPrintIncompleteTransactionReceipts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintIncompleteTransactionReceipts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 370</value>
-  </data>
-  <data name="chkPrintIncompleteTransactionReceipts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>395, 60</value>
-  </data>
-  <data name="chkPrintIncompleteTransactionReceipts.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="chkPrintIncompleteTransactionReceipts.Text" xml:space="preserve">
-    <value>Print receipt for Incomplete Transactions not tendered with credit/debit cards</value>
-  </data>
-  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Name" xml:space="preserve">
-    <value>chkPrintIncompleteTransactionReceipts</value>
-  </data>
-  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintIncompleteTransactionReceipts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="chkPrintAccount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintAccount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 111</value>
-  </data>
-  <data name="chkPrintAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 26</value>
-  </data>
-  <data name="chkPrintAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chkPrintAccount.Text" xml:space="preserve">
-    <value>Print player identity field as account number</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccount.Name" xml:space="preserve">
-    <value>chkPrintAccount</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccount.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccount.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="chkPrintOperatorInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintOperatorInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 19</value>
-  </data>
-  <data name="chkPrintOperatorInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 26</value>
-  </data>
-  <data name="chkPrintOperatorInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkPrintOperatorInfo.Text" xml:space="preserve">
-    <value>Print operator name, address, and phone#</value>
-  </data>
-  <data name="&gt;&gt;chkPrintOperatorInfo.Name" xml:space="preserve">
-    <value>chkPrintOperatorInfo</value>
-  </data>
-  <data name="&gt;&gt;chkPrintOperatorInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintOperatorInfo.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintOperatorInfo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chkCompactPaperInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 158</value>
-  </data>
-  <data name="chkCompactPaperInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 26</value>
-  </data>
-  <data name="chkCompactPaperInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="chkCompactPaperInfo.Text" xml:space="preserve">
-    <value>Print Paper Packs Sold in compact format</value>
-  </data>
-  <data name="&gt;&gt;chkCompactPaperInfo.Name" xml:space="preserve">
-    <value>chkCompactPaperInfo</value>
-  </data>
-  <data name="&gt;&gt;chkCompactPaperInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkCompactPaperInfo.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkCompactPaperInfo.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chkSortReceipt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 42</value>
-  </data>
-  <data name="chkSortReceipt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 26</value>
-  </data>
-  <data name="chkSortReceipt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chkSortReceipt.Text" xml:space="preserve">
-    <value>Print receipt sorted by package type</value>
-  </data>
-  <data name="&gt;&gt;chkSortReceipt.Name" xml:space="preserve">
-    <value>chkSortReceipt</value>
-  </data>
-  <data name="&gt;&gt;chkSortReceipt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkSortReceipt.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkSortReceipt.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="numVoidSignatureLines.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="numVoidSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 293</value>
-  </data>
-  <data name="numVoidSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 26</value>
-  </data>
-  <data name="numVoidSignatureLines.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;numVoidSignatureLines.Name" xml:space="preserve">
-    <value>numVoidSignatureLines</value>
-  </data>
-  <data name="&gt;&gt;numVoidSignatureLines.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numVoidSignatureLines.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;numVoidSignatureLines.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="chkPrintVoidSignatureLines.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintVoidSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 295</value>
-  </data>
-  <data name="chkPrintVoidSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 24</value>
-  </data>
-  <data name="chkPrintVoidSignatureLines.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="chkPrintVoidSignatureLines.Text" xml:space="preserve">
-    <value>Print void signature lines</value>
-  </data>
-  <data name="&gt;&gt;chkPrintVoidSignatureLines.Name" xml:space="preserve">
-    <value>chkPrintVoidSignatureLines</value>
-  </data>
-  <data name="&gt;&gt;chkPrintVoidSignatureLines.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintVoidSignatureLines.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintVoidSignatureLines.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="m_lblPrintCardRanges.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="m_lblPrintCardRanges.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 434</value>
-  </data>
-  <data name="m_lblPrintCardRanges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="m_lblPrintCardRanges.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="m_lblPrintCardRanges.Text" xml:space="preserve">
-    <value>Print card ranges</value>
-  </data>
-  <data name="&gt;&gt;m_lblPrintCardRanges.Name" xml:space="preserve">
-    <value>m_lblPrintCardRanges</value>
-  </data>
-  <data name="&gt;&gt;m_lblPrintCardRanges.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_lblPrintCardRanges.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;m_lblPrintCardRanges.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="m_cboPrintCardRanges.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="m_cboPrintCardRanges.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 431</value>
-  </data>
-  <data name="m_cboPrintCardRanges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 30</value>
-  </data>
-  <data name="m_cboPrintCardRanges.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;m_cboPrintCardRanges.Name" xml:space="preserve">
-    <value>m_cboPrintCardRanges</value>
-  </data>
-  <data name="&gt;&gt;m_cboPrintCardRanges.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_cboPrintCardRanges.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;m_cboPrintCardRanges.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="m_lblPlayWithPaperDependency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 463</value>
-  </data>
-  <data name="m_lblPlayWithPaperDependency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 22</value>
-  </data>
-  <data name="m_lblPlayWithPaperDependency.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="m_lblPlayWithPaperDependency.Text" xml:space="preserve">
-    <value>* Disabled due to play with paper enabled</value>
-  </data>
-  <data name="m_lblPlayWithPaperDependency.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;m_lblPlayWithPaperDependency.Name" xml:space="preserve">
-    <value>m_lblPlayWithPaperDependency</value>
-  </data>
-  <data name="&gt;&gt;m_lblPlayWithPaperDependency.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_lblPlayWithPaperDependency.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;m_lblPlayWithPaperDependency.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="chkMultipleRecieptVoiding.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 249</value>
-  </data>
-  <data name="chkMultipleRecieptVoiding.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 26</value>
-  </data>
-  <data name="chkMultipleRecieptVoiding.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="chkMultipleRecieptVoiding.Text" xml:space="preserve">
-    <value>Allow voiding of multiple receipts</value>
-  </data>
-  <data name="&gt;&gt;chkMultipleRecieptVoiding.Name" xml:space="preserve">
-    <value>chkMultipleRecieptVoiding</value>
-  </data>
-  <data name="&gt;&gt;chkMultipleRecieptVoiding.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkMultipleRecieptVoiding.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkMultipleRecieptVoiding.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="chkPrintProductNames.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintProductNames.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 65</value>
-  </data>
-  <data name="chkPrintProductNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 26</value>
-  </data>
-  <data name="chkPrintProductNames.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chkPrintProductNames.Text" xml:space="preserve">
-    <value>Print product names</value>
-  </data>
-  <data name="&gt;&gt;chkPrintProductNames.Name" xml:space="preserve">
-    <value>chkPrintProductNames</value>
-  </data>
-  <data name="&gt;&gt;chkPrintProductNames.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintProductNames.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintProductNames.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="numPayoutCopies.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="numPayoutCopies.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 562</value>
-  </data>
-  <data name="numPayoutCopies.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 26</value>
-  </data>
-  <data name="numPayoutCopies.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;numPayoutCopies.Name" xml:space="preserve">
-    <value>numPayoutCopies</value>
-  </data>
-  <data name="&gt;&gt;numPayoutCopies.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numPayoutCopies.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;numPayoutCopies.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 563</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 22</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Number of payout copies</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="chkPrintStaffFirstNameOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 181</value>
-  </data>
-  <data name="chkPrintStaffFirstNameOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 26</value>
-  </data>
-  <data name="chkPrintStaffFirstNameOnly.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="chkPrintStaffFirstNameOnly.Text" xml:space="preserve">
-    <value>Print staff first name only</value>
-  </data>
-  <data name="&gt;&gt;chkPrintStaffFirstNameOnly.Name" xml:space="preserve">
-    <value>chkPrintStaffFirstNameOnly</value>
-  </data>
-  <data name="&gt;&gt;chkPrintStaffFirstNameOnly.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintStaffFirstNameOnly.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintStaffFirstNameOnly.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="numCardFacePointSize.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="numCardFacePointSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 529</value>
-  </data>
-  <data name="numCardFacePointSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 26</value>
-  </data>
-  <data name="numCardFacePointSize.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;numCardFacePointSize.Name" xml:space="preserve">
-    <value>numCardFacePointSize</value>
-  </data>
-  <data name="&gt;&gt;numCardFacePointSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numCardFacePointSize.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;numCardFacePointSize.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 529</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Card face point size</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="numCopies.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="numCopies.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 495</value>
-  </data>
-  <data name="numCopies.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 26</value>
-  </data>
-  <data name="numCopies.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;numCopies.Name" xml:space="preserve">
-    <value>numCopies</value>
-  </data>
-  <data name="&gt;&gt;numCopies.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numCopies.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;numCopies.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 495</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Number of copies</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="chkPrintPlayerPointsRedeemed.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="chkPrintPlayerPointsRedeemed.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintPlayerPointsRedeemed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 320</value>
-  </data>
-  <data name="chkPrintPlayerPointsRedeemed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkPrintPlayerPointsRedeemed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 59</value>
-  </data>
-  <data name="chkPrintPlayerPointsRedeemed.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="chkPrintPlayerPointsRedeemed.Text" xml:space="preserve">
-    <value>Print player points redeemed per package
-(Long descriptions if not checked)</value>
-  </data>
-  <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.Name" xml:space="preserve">
-    <value>chkPrintPlayerPointsRedeemed</value>
-  </data>
-  <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintPlayerPointsRedeemed.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="chkPrintCardFaces.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintCardFaces.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 273</value>
-  </data>
-  <data name="chkPrintCardFaces.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 24</value>
-  </data>
-  <data name="chkPrintCardFaces.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="chkPrintCardFaces.Text" xml:space="preserve">
-    <value>Print card faces</value>
-  </data>
-  <data name="&gt;&gt;chkPrintCardFaces.Name" xml:space="preserve">
-    <value>chkPrintCardFaces</value>
-  </data>
-  <data name="&gt;&gt;chkPrintCardFaces.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintCardFaces.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintCardFaces.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="chkPrintSignatureLine.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintSignatureLine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 204</value>
-  </data>
-  <data name="chkPrintSignatureLine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 26</value>
-  </data>
-  <data name="chkPrintSignatureLine.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="chkPrintSignatureLine.Text" xml:space="preserve">
-    <value>Print player signature line</value>
-  </data>
-  <data name="&gt;&gt;chkPrintSignatureLine.Name" xml:space="preserve">
-    <value>chkPrintSignatureLine</value>
-  </data>
-  <data name="&gt;&gt;chkPrintSignatureLine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintSignatureLine.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintSignatureLine.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="chkPrintPointInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintPointInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 88</value>
-  </data>
-  <data name="chkPrintPointInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 26</value>
-  </data>
-  <data name="chkPrintPointInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="chkPrintPointInfo.Text" xml:space="preserve">
-    <value>Print player point information</value>
-  </data>
-  <data name="&gt;&gt;chkPrintPointInfo.Name" xml:space="preserve">
-    <value>chkPrintPointInfo</value>
-  </data>
-  <data name="&gt;&gt;chkPrintPointInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintPointInfo.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintPointInfo.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="chkPrintFacesToGlobalPrinter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 227</value>
-  </data>
-  <data name="chkPrintFacesToGlobalPrinter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 24</value>
-  </data>
-  <data name="chkPrintFacesToGlobalPrinter.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="chkPrintFacesToGlobalPrinter.Text" xml:space="preserve">
-    <value>Print card faces to global printer</value>
-  </data>
-  <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.Name" xml:space="preserve">
-    <value>chkPrintFacesToGlobalPrinter</value>
-  </data>
-  <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintFacesToGlobalPrinter.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="chkPrintNonelecReceipts.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="chkPrintNonelecReceipts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintNonelecReceipts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 134</value>
-  </data>
-  <data name="chkPrintNonelecReceipts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="chkPrintNonelecReceipts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 27</value>
-  </data>
-  <data name="chkPrintNonelecReceipts.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="chkPrintNonelecReceipts.Text" xml:space="preserve">
-    <value>Print non-electronic receipts</value>
-  </data>
-  <data name="&gt;&gt;chkPrintNonelecReceipts.Name" xml:space="preserve">
-    <value>chkPrintNonelecReceipts</value>
-  </data>
-  <data name="&gt;&gt;chkPrintNonelecReceipts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintNonelecReceipts.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintNonelecReceipts.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 10</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>418, 593</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Receipt Settings</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1799,6 +1910,6 @@
     <value>ReceiptSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.10, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.3, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

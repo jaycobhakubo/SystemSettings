@@ -57,6 +57,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkMasterBankUsePreviousClose = new System.Windows.Forms.CheckBox();
             this.chkUsePreviousBankClosingAmount = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.chkGetPlayerWithVerify = new System.Windows.Forms.CheckBox();
             this.numPayoutSignatureLines = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.chkPrintWordValue = new System.Windows.Forms.CheckBox();
@@ -298,6 +299,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.chkGetPlayerWithVerify);
             this.groupBox4.Controls.Add(this.numPayoutSignatureLines);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.chkPrintWordValue);
@@ -307,6 +309,12 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            // 
+            // chkGetPlayerWithVerify
+            // 
+            resources.ApplyResources(this.chkGetPlayerWithVerify, "chkGetPlayerWithVerify");
+            this.chkGetPlayerWithVerify.Name = "chkGetPlayerWithVerify";
+            this.chkGetPlayerWithVerify.UseVisualStyleBackColor = true;
             // 
             // numPayoutSignatureLines
             // 
@@ -407,8 +415,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -421,8 +428,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -505,5 +511,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numBankCloseSignatureLines;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox chkGetPlayerWithVerify;
 	}
 }

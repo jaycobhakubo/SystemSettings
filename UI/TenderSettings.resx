@@ -276,13 +276,13 @@
     <value>23, 228</value>
   </data>
   <data name="flexTendering.Size" type="System.Drawing.Size, System.Drawing">
-    <value>634, 26</value>
+    <value>221, 26</value>
   </data>
   <data name="flexTendering.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="flexTendering.Text" xml:space="preserve">
-    <value>Enable Flexible Tendering (Tender mode will be set to Prevent Negative Change)</value>
+    <value>Enable Flexible Tendering</value>
   </data>
   <data name="&gt;&gt;flexTendering.Name" xml:space="preserve">
     <value>flexTendering</value>
@@ -466,7 +466,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.691, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.943, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -568,7 +568,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.691, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.943, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -589,6 +589,6 @@
     <value>TenderSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.11.3.13, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.2, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

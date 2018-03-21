@@ -31,9 +31,9 @@ namespace GTI.Modules.SystemSettings.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MachineSettings));
             this.stationGroupBox = new System.Windows.Forms.GroupBox();
             this.lstStations = new System.Windows.Forms.ListView();
-            this.identifierColumnHeader = new System.Windows.Forms.ColumnHeader();
-            this.deviceTypeColumnHeader = new System.Windows.Forms.ColumnHeader();
-            this.descriptionColumnHeader = new System.Windows.Forms.ColumnHeader();
+            this.identifierColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.deviceTypeColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.descriptionColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cboFilter = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRefresh = new GTI.Controls.ImageButton();
@@ -99,7 +99,15 @@ namespace GTI.Modules.SystemSettings.UI
             resources.GetString("cboFilter.Items12"),
             resources.GetString("cboFilter.Items13"),
             resources.GetString("cboFilter.Items14"),
-            resources.GetString("cboFilter.Items15")});
+            resources.GetString("cboFilter.Items15"),
+            resources.GetString("cboFilter.Items16"),
+            resources.GetString("cboFilter.Items17"),
+            resources.GetString("cboFilter.Items18"),
+            resources.GetString("cboFilter.Items19"),
+            resources.GetString("cboFilter.Items20"),
+            resources.GetString("cboFilter.Items21"),
+            resources.GetString("cboFilter.Items22"),
+            resources.GetString("cboFilter.Items23")});
             resources.ApplyResources(this.cboFilter, "cboFilter");
             this.cboFilter.Name = "cboFilter";
             this.cboFilter.SelectedIndexChanged += new System.EventHandler(this.cboFilter_SelectedIndexChanged);
@@ -116,8 +124,10 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnRefresh, "btnRefresh");
             this.btnRefresh.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnRefresh.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnRefresh.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.RepeatRate = 150;
+            this.btnRefresh.RepeatWhenHeldFor = 750;
+            this.btnRefresh.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             this.btnRefresh.Leave += new System.EventHandler(this.btnRefresh_Leave);
@@ -129,8 +139,10 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnEdit, "btnEdit");
             this.btnEdit.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnEdit.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnEdit.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnEdit.Name = "btnEdit";
+            this.btnEdit.RepeatRate = 150;
+            this.btnEdit.RepeatWhenHeldFor = 750;
+            this.btnEdit.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 

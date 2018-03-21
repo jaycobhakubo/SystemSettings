@@ -192,6 +192,38 @@ namespace GTI.Modules.SystemSettings.UI
 
             internalInterface = cbInterface.SelectedIndex == GetIndexForInterface(InterfaceFor.InternalEdgeTracking);
 
+            Common.GetOpSettingValue(Setting.ThirdPartyVoidMode, out tempSettingValue);
+
+            rbVoid.Checked = false;
+            rbAutoForceVoid.Checked = false;
+            rbNoVoid.Checked = false;
+
+            if (Int32.TryParse(tempSettingValue.Value, out tempInt))
+            {
+                switch ((ThirdPartyVoidMode)tempInt)
+                {
+                    case ThirdPartyVoidMode.NormalVoid:
+                        rbVoid.Checked = true;
+                        break;
+                    
+                    case ThirdPartyVoidMode.AutoForce:
+                        rbAutoForceVoid.Checked = true;
+                        break;
+                    
+                    case ThirdPartyVoidMode.NeverVoid:
+                        rbNoVoid.Checked = true;
+                        break;
+
+                    default:
+                        rbVoid.Checked = true;
+                        break;
+                }
+            }
+            else
+            {
+                rbVoid.Checked = true;
+            }
+            
             Common.GetOpSettingValue(Setting.ThirdPartyTimeout, out tempSettingValue);
             if(Int32.TryParse(tempSettingValue.Value, out tempInt))
                 thirdPartyTimeout.Value = tempInt/1000;
@@ -399,7 +431,17 @@ namespace GTI.Modules.SystemSettings.UI
             s.Id = (int)Setting.ThirdPartyLocation;
             s.Value = thirdPartyLocation.Text;
             tpiSettings.Add(s);
-            
+
+            if (GetTheInterface() == InterfaceFor.KonamiSYNKROS)
+            {
+                thirdPartyEarnPoints = thirdPartyRedeemPerPoints;
+                thirdPartyEarnPerPennies = thirdPartyRedeemPennies;
+            }
+
+            s.Id = (int)Setting.ThirdPartyVoidMode;
+            s.Value = rbVoid.Checked? "0" : rbNoVoid.Checked? "2" : "1";
+            tpiSettings.Add(s);
+
             s.Id = (int)Setting.ThirdPartyPointScaleNumerator;
             s.Value = thirdPartyEarnPoints.Value.ToString();
             tpiSettings.Add(s);
@@ -573,6 +615,11 @@ namespace GTI.Modules.SystemSettings.UI
             cbxPlayerSyncMode.SelectedIndex = 0; //real-time or use points in database
             cbxPlayerSyncMode.Enabled = Common.IsAdmin;
 
+            gbVoids.Visible = true;
+            rbVoid.Checked = true;
+            rbAutoForceVoid.Checked = false;
+            rbNoVoid.Checked = false;
+
             switch (ourInterface)
             {
                 case InterfaceFor.InternalEdgeTracking:
@@ -589,6 +636,7 @@ namespace GTI.Modules.SystemSettings.UI
                     cbGetPINAtCardSwipe.Checked = false;
 
                     gbTimeout.Visible = false;
+                    gbVoids.Visible = false;
 
                     gbEarned.Visible = true;
                     cbExternalRating_CheckedChanged(null, new EventArgs());
@@ -687,9 +735,9 @@ namespace GTI.Modules.SystemSettings.UI
 
                     gbFNET.Visible = false;
                     cbPlayerInfoHasPoints.Checked = false;
-                    cbPointsTransferAsDollars.Checked = false;
-                    cbPointsTransferAsDollarsForSales.Checked = false;
-                    cbPointsTransferAsDollarsForRedemptions.Checked = false;
+                    cbPointsTransferAsDollars.Checked = true;
+                    cbPointsTransferAsDollarsForSales.Checked = true;
+                    cbPointsTransferAsDollarsForRedemptions.Checked = true;
                 }
                 break;
 
@@ -768,7 +816,7 @@ namespace GTI.Modules.SystemSettings.UI
                     cbPlayerInfoHasPoints.Checked = false;
                     cbPointsTransferAsDollars.Checked = false;
                     cbPointsTransferAsDollarsForSales.Checked = false;
-                    cbPointsTransferAsDollarsForRedemptions.Checked = false;
+                    cbPointsTransferAsDollarsForRedemptions.Checked = true;
                 }
                 break;
 
@@ -879,11 +927,11 @@ namespace GTI.Modules.SystemSettings.UI
                     gbEarned.Visible = true;
                     cbExternalRating.Checked = true;
                     cbExternalRating_CheckedChanged(null, new EventArgs());
-                    thirdPartyEarnPoints.Value = 0;
+                    thirdPartyEarnPoints.Value = 1;
                     thirdPartyEarnPerPennies.Value = 1M;
                     thirdPartyEarnPoints_ValueChanged(null, new EventArgs());
 
-                    gbRedeemed.Visible = false;
+                    gbRedeemed.Visible = true;
                     thirdPartyRedeemPerPoints.Value = 1;
                     thirdPartyRedeemPennies.Value = 1M;
                     thirdPartyRedeemPerPoints_ValueChanged(null, new EventArgs());
@@ -891,8 +939,8 @@ namespace GTI.Modules.SystemSettings.UI
                     gbFNET.Visible = false;
                     cbPlayerInfoHasPoints.Checked = false;
                     cbPointsTransferAsDollars.Checked = false;
-                    cbPointsTransferAsDollarsForSales.Checked = false;
-                    cbPointsTransferAsDollarsForRedemptions.Checked = false;
+                    cbPointsTransferAsDollarsForSales.Checked = true;
+                    cbPointsTransferAsDollarsForRedemptions.Checked = true;
 
                     cbPointsTransferAsDollarsForRedemptions_CheckedChanged(sender, e);
                 }
@@ -978,9 +1026,9 @@ namespace GTI.Modules.SystemSettings.UI
 
                     gbFNET.Visible = false;
                     cbPlayerInfoHasPoints.Checked = false;
-                    cbPointsTransferAsDollars.Checked = false;
-                    cbPointsTransferAsDollarsForSales.Checked = false;
-                    cbPointsTransferAsDollarsForRedemptions.Checked = false;
+                    cbPointsTransferAsDollars.Checked = true;
+                    cbPointsTransferAsDollarsForSales.Checked = true;
+                    cbPointsTransferAsDollarsForRedemptions.Checked = true;
                 }
                 break;
             }

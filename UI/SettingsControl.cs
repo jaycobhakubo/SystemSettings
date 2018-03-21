@@ -4,6 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Linq;
 using System.ComponentModel;
+using GTI.Modules.Shared;
 
 namespace GTI.Modules.SystemSettings.UI
 {

@@ -693,20 +693,13 @@ namespace GTI.Modules.SystemSettings.UI
 			m_activeControl = (SettingsControl)(treeView1.SelectedNode.Tag);
 			m_activeControl.OnActivate(treeView1.SelectedNode);
 
-            if (m_activeControl.Enabled != true) m_activeControl.Enabled = true;
+            if (m_activeControl.Enabled != true)
+                m_activeControl.Enabled = true;
 
-            //if (m_activeControl.Tag != null && m_activeControl.Tag.ToString() == "PlayerDevice")
-            //{
-            //    if (m_UserControlOpen == false)
-            //    {
-                    m_activeControl.Show();
-                    m_UserControlOpen = true;
-            //    }
-            //}
-            //else
-            //{
-                //m_activeControl.Show();
-            //}
+            m_activeControl.Location = new System.Drawing.Point(0, 0);
+            m_activeControl.Size = new System.Drawing.Size(splitContainer1.Width - splitContainer1.SplitterDistance, splitContainer1.Height);
+            m_activeControl.Show();
+            m_UserControlOpen = true;
           
             m_activeControl.BringToFront();
 			m_activeControl.Update();
