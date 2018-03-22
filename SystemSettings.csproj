@@ -235,6 +235,12 @@
     <Compile Include="UI\ProtocolAdapterSettings.designer.cs">
       <DependentUpon>ProtocolAdapterSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\RNGConfigurationSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\RNGConfigurationSettings.Designer.cs">
+      <DependentUpon>RNGConfigurationSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\SecuritySettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -516,6 +522,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ProtocolAdapterSettings.resx">
       <DependentUpon>ProtocolAdapterSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RNGConfigurationSettings.resx">
+      <DependentUpon>RNGConfigurationSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SecuritySettings.resx">
       <DependentUpon>SecuritySettings.cs</DependentUpon>

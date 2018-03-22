@@ -603,6 +603,13 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
+            if (Common.IsAdmin)
+            {
+                //nodeParent = new TreeNode("RNG Coniguration Settings", 0, 1);
+                //nodeParent.Tag = protocolAdapterSettings;
+                //treeView1.Nodes.Add(nodeParent);
+            }
+
             //SORT by alphabetical order
             treeView1.Sort();
 
