@@ -273,6 +273,12 @@ namespace GTI.Modules.SystemSettings.UI
             //playerDevicePlayModeSettings1.Hide();
             //playerDevicePlayModeSettings1.Enabled = false;
 
+
+            rngConfigurationSettings1.LoadSettings();
+            rngConfigurationSettings1.Hide();
+            rngConfigurationSettings1.Enabled = false;
+
+
             //END RALLY DE9656
 
             CreateNodes();
@@ -603,12 +609,12 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
-            if (Common.IsAdmin)
-            {
+            //if (Common.IsAdmin)
+            //{
                 nodeParent = new TreeNode("RNG Coniguration Settings", 0, 1);
                 nodeParent.Tag = rngConfigurationSettings1;
                 treeView1.Nodes.Add(nodeParent);
-            }
+            //}
 
             //SORT by alphabetical order
             treeView1.Sort();

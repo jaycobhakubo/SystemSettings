@@ -30,10 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RNGConfigurationSettings));
             this.grpBxRNGConfigurationSettings = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbxRNGTypes = new System.Windows.Forms.ComboBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.m_chkCheckForDuplicates = new System.Windows.Forms.CheckBox();
             this.chkPrintReconcileReceipt = new System.Windows.Forms.CheckBox();
-            this.m_chkAutoRetire = new System.Windows.Forms.CheckBox();
             this.m_chkAllowIssuesToExceed = new System.Windows.Forms.CheckBox();
             this.btnSave = new GTI.Controls.ImageButton();
             this.btnReset = new GTI.Controls.ImageButton();
@@ -42,14 +43,27 @@
             // 
             // grpBxRNGConfigurationSettings
             // 
+            this.grpBxRNGConfigurationSettings.Controls.Add(this.label7);
+            this.grpBxRNGConfigurationSettings.Controls.Add(this.cbxRNGTypes);
             this.grpBxRNGConfigurationSettings.Controls.Add(this.checkBox1);
             this.grpBxRNGConfigurationSettings.Controls.Add(this.m_chkCheckForDuplicates);
             this.grpBxRNGConfigurationSettings.Controls.Add(this.chkPrintReconcileReceipt);
-            this.grpBxRNGConfigurationSettings.Controls.Add(this.m_chkAutoRetire);
             this.grpBxRNGConfigurationSettings.Controls.Add(this.m_chkAllowIssuesToExceed);
             resources.ApplyResources(this.grpBxRNGConfigurationSettings, "grpBxRNGConfigurationSettings");
             this.grpBxRNGConfigurationSettings.Name = "grpBxRNGConfigurationSettings";
             this.grpBxRNGConfigurationSettings.TabStop = false;
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // cbxRNGTypes
+            // 
+            this.cbxRNGTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cbxRNGTypes, "cbxRNGTypes");
+            this.cbxRNGTypes.FormattingEnabled = true;
+            this.cbxRNGTypes.Name = "cbxRNGTypes";
             // 
             // checkBox1
             // 
@@ -68,12 +82,6 @@
             resources.ApplyResources(this.chkPrintReconcileReceipt, "chkPrintReconcileReceipt");
             this.chkPrintReconcileReceipt.Name = "chkPrintReconcileReceipt";
             this.chkPrintReconcileReceipt.UseVisualStyleBackColor = true;
-            // 
-            // m_chkAutoRetire
-            // 
-            resources.ApplyResources(this.m_chkAutoRetire, "m_chkAutoRetire");
-            this.m_chkAutoRetire.Name = "m_chkAutoRetire";
-            this.m_chkAutoRetire.UseVisualStyleBackColor = true;
             // 
             // m_chkAllowIssuesToExceed
             // 
@@ -113,6 +121,7 @@
             resources.ApplyResources(this, "$this");
             this.Name = "RNGConfigurationSettings";
             this.grpBxRNGConfigurationSettings.ResumeLayout(false);
+            this.grpBxRNGConfigurationSettings.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -123,10 +132,11 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox m_chkCheckForDuplicates;
         private System.Windows.Forms.CheckBox chkPrintReconcileReceipt;
-        private System.Windows.Forms.CheckBox m_chkAutoRetire;
         private System.Windows.Forms.CheckBox m_chkAllowIssuesToExceed;
         private Controls.ImageButton btnSave;
         private Controls.ImageButton btnReset;
+        private System.Windows.Forms.ComboBox cbxRNGTypes;
+        private System.Windows.Forms.Label label7;
 
     }
 }

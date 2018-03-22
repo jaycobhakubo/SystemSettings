@@ -117,104 +117,77 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
-    <value>checkBox1</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
-    <value>grpBxRNGConfigurationSettings</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;m_chkCheckForDuplicates.Name" xml:space="preserve">
-    <value>m_chkCheckForDuplicates</value>
-  </data>
-  <data name="&gt;&gt;m_chkCheckForDuplicates.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_chkCheckForDuplicates.Parent" xml:space="preserve">
-    <value>grpBxRNGConfigurationSettings</value>
-  </data>
-  <data name="&gt;&gt;m_chkCheckForDuplicates.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintReconcileReceipt.Name" xml:space="preserve">
-    <value>chkPrintReconcileReceipt</value>
-  </data>
-  <data name="&gt;&gt;chkPrintReconcileReceipt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintReconcileReceipt.Parent" xml:space="preserve">
-    <value>grpBxRNGConfigurationSettings</value>
-  </data>
-  <data name="&gt;&gt;chkPrintReconcileReceipt.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;m_chkAutoRetire.Name" xml:space="preserve">
-    <value>m_chkAutoRetire</value>
-  </data>
-  <data name="&gt;&gt;m_chkAutoRetire.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_chkAutoRetire.Parent" xml:space="preserve">
-    <value>grpBxRNGConfigurationSettings</value>
-  </data>
-  <data name="&gt;&gt;m_chkAutoRetire.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;m_chkAllowIssuesToExceed.Name" xml:space="preserve">
-    <value>m_chkAllowIssuesToExceed</value>
-  </data>
-  <data name="&gt;&gt;m_chkAllowIssuesToExceed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_chkAllowIssuesToExceed.Parent" xml:space="preserve">
-    <value>grpBxRNGConfigurationSettings</value>
-  </data>
-  <data name="&gt;&gt;m_chkAllowIssuesToExceed.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="grpBxRNGConfigurationSettings.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="grpBxRNGConfigurationSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 28</value>
-  </data>
-  <data name="grpBxRNGConfigurationSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>732, 548</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="grpBxRNGConfigurationSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="grpBxRNGConfigurationSettings.Text" xml:space="preserve">
-    <value>RNG Configuration Settings</value>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;grpBxRNGConfigurationSettings.Name" xml:space="preserve">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 216</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 22</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>RNG Types</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>grpBxRNGConfigurationSettings</value>
   </data>
-  <data name="&gt;&gt;grpBxRNGConfigurationSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;grpBxRNGConfigurationSettings.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="cbxRNGTypes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
   </data>
-  <data name="&gt;&gt;grpBxRNGConfigurationSettings.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="cbxRNGTypes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 208</value>
+  </data>
+  <data name="cbxRNGTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 30</value>
+  </data>
+  <data name="cbxRNGTypes.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbxRNGTypes.Name" xml:space="preserve">
+    <value>cbxRNGTypes</value>
+  </data>
+  <data name="&gt;&gt;cbxRNGTypes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbxRNGTypes.Parent" xml:space="preserve">
+    <value>grpBxRNGConfigurationSettings</value>
+  </data>
+  <data name="&gt;&gt;cbxRNGTypes.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="checkBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="checkBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 200</value>
+    <value>46, 168</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>
@@ -235,7 +208,7 @@
     <value>grpBxRNGConfigurationSettings</value>
   </data>
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="m_chkCheckForDuplicates.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -244,7 +217,7 @@
     <value>NoControl</value>
   </data>
   <data name="m_chkCheckForDuplicates.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 162</value>
+    <value>46, 128</value>
   </data>
   <data name="m_chkCheckForDuplicates.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>
@@ -265,7 +238,7 @@
     <value>grpBxRNGConfigurationSettings</value>
   </data>
   <data name="&gt;&gt;m_chkCheckForDuplicates.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="chkPrintReconcileReceipt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -274,7 +247,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkPrintReconcileReceipt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 49</value>
+    <value>28, 48</value>
   </data>
   <data name="chkPrintReconcileReceipt.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>
@@ -295,37 +268,7 @@
     <value>grpBxRNGConfigurationSettings</value>
   </data>
   <data name="&gt;&gt;chkPrintReconcileReceipt.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="m_chkAutoRetire.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="m_chkAutoRetire.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="m_chkAutoRetire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 86</value>
-  </data>
-  <data name="m_chkAutoRetire.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 32</value>
-  </data>
-  <data name="m_chkAutoRetire.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="m_chkAutoRetire.Text" xml:space="preserve">
-    <value>RNG Type</value>
-  </data>
-  <data name="&gt;&gt;m_chkAutoRetire.Name" xml:space="preserve">
-    <value>m_chkAutoRetire</value>
-  </data>
-  <data name="&gt;&gt;m_chkAutoRetire.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_chkAutoRetire.Parent" xml:space="preserve">
-    <value>grpBxRNGConfigurationSettings</value>
-  </data>
-  <data name="&gt;&gt;m_chkAutoRetire.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="m_chkAllowIssuesToExceed.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -334,7 +277,7 @@
     <value>NoControl</value>
   </data>
   <data name="m_chkAllowIssuesToExceed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 124</value>
+    <value>46, 88</value>
   </data>
   <data name="m_chkAllowIssuesToExceed.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>
@@ -355,7 +298,34 @@
     <value>grpBxRNGConfigurationSettings</value>
   </data>
   <data name="&gt;&gt;m_chkAllowIssuesToExceed.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
+  </data>
+  <data name="grpBxRNGConfigurationSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="grpBxRNGConfigurationSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 28</value>
+  </data>
+  <data name="grpBxRNGConfigurationSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>732, 548</value>
+  </data>
+  <data name="grpBxRNGConfigurationSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="grpBxRNGConfigurationSettings.Text" xml:space="preserve">
+    <value>RNG Configuration Settings</value>
+  </data>
+  <data name="&gt;&gt;grpBxRNGConfigurationSettings.Name" xml:space="preserve">
+    <value>grpBxRNGConfigurationSettings</value>
+  </data>
+  <data name="&gt;&gt;grpBxRNGConfigurationSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpBxRNGConfigurationSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpBxRNGConfigurationSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
