@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace GTI.Modules.SystemSettings.UI
 {
-    public partial class RNGConfigurationSettings : UserControl
+    public partial class RNGConfigurationSettings : SettingsControl
     {
         public RNGConfigurationSettings()
         {

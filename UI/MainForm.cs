@@ -605,9 +605,9 @@ namespace GTI.Modules.SystemSettings.UI
 
             if (Common.IsAdmin)
             {
-                //nodeParent = new TreeNode("RNG Coniguration Settings", 0, 1);
-                //nodeParent.Tag = protocolAdapterSettings;
-                //treeView1.Nodes.Add(nodeParent);
+                nodeParent = new TreeNode("RNG Coniguration Settings", 0, 1);
+                nodeParent.Tag = rngConfigurationSettings1;
+                treeView1.Nodes.Add(nodeParent);
             }
 
             //SORT by alphabetical order

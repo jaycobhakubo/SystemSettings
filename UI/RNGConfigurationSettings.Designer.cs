@@ -29,55 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RNGConfigurationSettings));
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.grpBxRNGConfigurationSettings = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.m_chkCheckForDuplicates = new System.Windows.Forms.CheckBox();
             this.chkPrintReconcileReceipt = new System.Windows.Forms.CheckBox();
             this.m_chkAutoRetire = new System.Windows.Forms.CheckBox();
             this.m_chkAllowIssuesToExceed = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnSave = new GTI.Controls.ImageButton();
             this.btnReset = new GTI.Controls.ImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
             this.grpBxRNGConfigurationSettings.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // splitContainer2
-            // 
-            resources.ApplyResources(this.splitContainer2, "splitContainer2");
-            this.splitContainer2.Name = "splitContainer2";
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.Controls.Add(this.btnSave);
-            resources.ApplyResources(this.splitContainer2.Panel1, "splitContainer2.Panel1");
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.btnReset);
-            resources.ApplyResources(this.splitContainer2.Panel2, "splitContainer2.Panel2");
-            // 
-            // splitContainer1
-            // 
-            resources.ApplyResources(this.splitContainer1, "splitContainer1");
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.grpBxRNGConfigurationSettings);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             // 
             // grpBxRNGConfigurationSettings
             // 
@@ -120,16 +81,11 @@
             this.m_chkAllowIssuesToExceed.Name = "m_chkAllowIssuesToExceed";
             this.m_chkAllowIssuesToExceed.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
@@ -139,8 +95,8 @@
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnReset, "btnReset");
             this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
@@ -150,19 +106,12 @@
             // RNGConfigurationSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.grpBxRNGConfigurationSettings);
             this.DoubleBuffered = true;
             resources.ApplyResources(this, "$this");
             this.Name = "RNGConfigurationSettings";
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
             this.grpBxRNGConfigurationSettings.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -170,16 +119,14 @@
 
         #endregion
 
-        private Controls.ImageButton btnReset;
-        private Controls.ImageButton btnSave;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.GroupBox grpBxRNGConfigurationSettings;
+        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox m_chkCheckForDuplicates;
         private System.Windows.Forms.CheckBox chkPrintReconcileReceipt;
         private System.Windows.Forms.CheckBox m_chkAutoRetire;
         private System.Windows.Forms.CheckBox m_chkAllowIssuesToExceed;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private Controls.ImageButton btnSave;
+        private Controls.ImageButton btnReset;
+
     }
 }
