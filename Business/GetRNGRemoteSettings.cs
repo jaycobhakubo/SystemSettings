@@ -43,16 +43,16 @@ namespace GTI.Modules.SystemSettings.Business
             for (int iType = 0; iType < Count; iType++)
             {
                 var tempValue = new RNGRemoteSettingsData();
-                tempValue.RNGTypeID = responseReader.ReadInt32();//1
-                tempLength = responseReader.ReadUInt16();//2
-                tempValue.RNGIpAddress = new string(responseReader.ReadChars(tempLength));
-                tempValue.RNGServerPort = responseReader.ReadInt32();//3
+                tempValue.RNGTypeID = responseReader.ReadInt32();//TypeId
+                tempLength = responseReader.ReadUInt16();//IpAddress(unsigned)
+                tempValue.RNGIpAddress = new string(responseReader.ReadChars(tempLength));//IpAddress(string)
+                tempValue.RNGServerPort = responseReader.ReadInt32();//Server Port
                 byte SSLConnection = 0;
-                SSLConnection = responseReader.ReadByte();//2
+                SSLConnection = responseReader.ReadByte();//SSL COnnection
                 tempValue.RNGSSLConnection = SSLConnection == 0 ? false : true;
-                byte RemoveSettings = 0;
-                RemoveSettings = responseReader.ReadByte();//2
-                tempValue.RNGRemoveSettings = SSLConnection == 0 ? false : true;
+                //byte RemoveSettings = 0;
+                //RemoveSettings = responseReader.ReadByte();//Remove Settings
+                //tempValue.RNGRemoveSettings = SSLConnection == 0 ? false : true;
                 ListRNGRemoteSettings.Add(tempValue);
             }
             responseReader.Close();

@@ -86,6 +86,18 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
+        private void chkbxUseInternalRNG_CheckedChanged(object sender, EventArgs e)
+        {
+            var IsEnabled = chkbxUseInternalRNG.Checked;
+            lblRngTypes.Enabled = IsEnabled;
+            cbxRNGTypes.Enabled = IsEnabled;
+            lblRngIPAddress.Enabled = IsEnabled;
+            txtbxRNGIpAddress.Enabled = IsEnabled;
+            lblRNGPort.Enabled = IsEnabled;
+            numUDRngPort.Enabled = IsEnabled;
+            chkbxSecureConnection.Enabled = IsEnabled;
+        }
+
    
 
 
@@ -104,7 +116,7 @@ namespace GTI.Modules.SystemSettings.UI
         public string RNGIpAddress { get; set; }
         public int RNGServerPort { get; set; }
         public bool RNGSSLConnection { get; set; }
-        public bool RNGRemoveSettings { get; set; }
+       // public bool RNGRemoveSettings { get; set; }
 
     }
 }

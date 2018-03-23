@@ -39,9 +39,9 @@ namespace GTI.Modules.SystemSettings.Business
             for (int iType = 0; iType < Count; iType++)
             {
                 var tempValue = new RNGTypeData();
-                tempValue.RNGTypeID = responseReader.ReadInt32();//1
-                tempLength = responseReader.ReadUInt16();//3
-                tempValue.RNGType = new string(responseReader.ReadChars(tempLength));
+                tempValue.RNGTypeID = responseReader.ReadInt32();//TypeID
+                tempLength = responseReader.ReadUInt16();//Type Name (unsigned)
+                tempValue.RNGType = new string(responseReader.ReadChars(tempLength));//Type Name (string)
                 ListRNGType.Add(tempValue);
             }
             responseReader.Close();
