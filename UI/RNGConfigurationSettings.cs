@@ -15,6 +15,7 @@ namespace GTI.Modules.SystemSettings.UI
         #region
         private bool m_bModified = false;
         private GetRNGRemoteTypes getRNGRemoteTypes;
+        private GetRNGRemoteSettings getRNGRemoteSettings;
         #endregion
 
         public RNGConfigurationSettings()
@@ -61,11 +62,16 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool LoadRNGTypeSettings()
         {
-            getRNGRemoteTypes = new GetRNGRemoteTypes();
-            getRNGRemoteTypes.Send();
+            //getRNGRemoteTypes = new GetRNGRemoteTypes();
+            //getRNGRemoteTypes.Send();
+
+            getRNGRemoteSettings = new GetRNGRemoteSettings(1);
+            getRNGRemoteSettings.Send();
 
             return true;
         }
+
+   
 
 
     }
@@ -75,5 +81,15 @@ namespace GTI.Modules.SystemSettings.UI
     {
         public int RNGTypeID { get; set; }
         public string RNGType { get; set; }
+    }
+
+    public class RNGRemoteSettingsData
+    {
+        public int RNGTypeID { get; set; }
+        public string RNGIpAddress { get; set; }
+        public int RNGServerPort { get; set; }
+        public bool RNGSSLConnection { get; set; }
+        public bool RNGRemoveSettings { get; set; }
+
     }
 }
