@@ -40,7 +40,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.SuspendLayout();
 
             bool bResult = LoadRNGTypeSettings();
+            bResult = LoadRNGSettings();
 
+            LoadCmbxRngTypes();
 
             this.ResumeLayout(true);
             Common.EndWait();
@@ -61,13 +63,26 @@ namespace GTI.Modules.SystemSettings.UI
         #endregion  // Public Methods
 
         private bool LoadRNGTypeSettings()
-        {
-            //getRNGRemoteTypes = new GetRNGRemoteTypes();
-            //getRNGRemoteTypes.Send();
 
+        {
+            getRNGRemoteTypes = new GetRNGRemoteTypes();
+            getRNGRemoteTypes.Send();
+            return true;
+        }
+
+
+        private void LoadCmbxRngTypes()
+        {
+            foreach (RNGTypeData rngtd in getRNGRemoteTypes.ListRNGType)
+            {
+                cbxRNGTypes.Items.Add(rngtd.RNGType);
+            }
+        }
+
+        private bool LoadRNGSettings()
+        {
             getRNGRemoteSettings = new GetRNGRemoteSettings(1);
             getRNGRemoteSettings.Send();
-
             return true;
         }
 
@@ -93,3 +108,17 @@ namespace GTI.Modules.SystemSettings.UI
 
     }
 }
+
+
+//foreach (SessionSummaryViewModes value in Enum.GetValues(typeof(SessionSummaryViewModes)))
+//            {
+//                Business.GenericCBOItem cboItem = new Business.GenericCBOItem();
+//                cboItem.CBOValueMember = (int)value;
+//                cboItem.CBODisplayMember = EnumToString.GetDescription(value);
+
+//                m_UIModes.Add(cboItem);
+//            }
+//            cboUIDisplayMode.Items.Clear();
+//            cboUIDisplayMode.DataSource = m_UIModes;
+//            cboUIDisplayMode.DisplayMember = "CBODisplayMember";
+//            cboUIDisplayMode.ValueMember = "CBOValueMember";
