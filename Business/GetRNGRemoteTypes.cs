@@ -15,6 +15,7 @@ namespace GTI.Modules.SystemSettings.Business
         public GetRNGRemoteTypes()
         {
             m_id = 18254;
+            ListRNGType = new List<RNGTypeData>();
         }
 
         protected override void PackRequest()
