@@ -1,0 +1,14 @@
+﻿ NUMERIC UPDOWN
+ 
+  string tempString = Common.GetSystemSetting(Setting.MinimumPasswordLength);
+            if (int.TryParse(tempString, out result)
+                && (result <= numMinimumPasswordLength.Maximum)
+                && result >= numMinimumPasswordLength.Minimum)
+            {
+                numMinimumPasswordLength.Value = result;
+            }
+            else
+            {
+                numMinimumPasswordLength.Value = numMinimumPasswordLength.Minimum;
+                saveFlag = true;
+            }

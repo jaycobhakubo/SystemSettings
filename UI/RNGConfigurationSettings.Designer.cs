@@ -126,6 +126,7 @@
             resources.ApplyResources(this.cbxRNGTypes, "cbxRNGTypes");
             this.cbxRNGTypes.FormattingEnabled = true;
             this.cbxRNGTypes.Name = "cbxRNGTypes";
+            this.cbxRNGTypes.SelectedIndexChanged += new System.EventHandler(this.cbxRNGTypes_SelectedIndexChanged);
             // 
             // chkbxSecureConnection
             // 

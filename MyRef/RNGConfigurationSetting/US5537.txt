@@ -1,0 +1,15 @@
+﻿
+
+Add support to System Settings to allow for setting and retrieving remote RNG configuration data.
+
+Acceptance criteria Allow configuration of the following
+
+In order to be able to set the RNG settings the Tech account must be logged in
+
+- Use Internal RNG (true / false)
+If Use internal is true the following are hidden
+- Set RNG Type
+- IP Address of the RNG
+- Port of the RNG
+- Is Secure connection
+

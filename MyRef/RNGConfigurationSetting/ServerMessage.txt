@@ -1,0 +1,79 @@
+﻿Get Remote RNG Types
+
+This is a request message from the client to the GTIS app. The purpose of this message is for the user to be able to load a list of RNG Types from the server.
+
+CommandID: 18254
+
+ 
+
+Request
+
+·         None
+
+ 
+
+Response
+
+·         Return Code (int)
+
+·         Types (List) (unsigned short followed by the Remote RNG Types)
+
+o    Type Id (int)
+
+o    Type Name (string) (unsigned short followed by chars)
+Get Remote RNG Settings
+
+This is a request message from the client to the GTIS app. The purpose of this message is for the user to be able to load Remote RNG configuration settings
+
+CommandID: 18255
+
+ 
+
+Request
+
+·         RNG Type (int)
+
+o    0 – Returns all of the currently configured types
+
+ 
+
+Response
+
+·         Return Code (int)
+
+·         Remote RNG Settings (List) (unsigned short followed by the Remote RNG Settings)
+
+o    Type Id (int)
+
+o    Ip Address (string) (unsigned short followed by chars)
+
+o    Server Port (int)
+
+o    SSL Connection (byte)
+Set Remote RNG Settings
+
+This is a request message from the client to the GTIS app. The purpose of this message is for the user to be able to set the Remote RNG configuration settings
+
+CommandID: 18256
+
+ 
+
+Request
+
+·         Remote RNG Settings (List) (unsigned short followed by the Remote RNG Settings)
+
+o    Type Id (int)
+
+o    Ip Address (string) (unsigned short followed by chars)
+
+o    Server Port (int)
+
+o    SSL Connection (byte)
+
+o    Remove setting (byte)
+
+ 
+
+Response
+
+·         Return Code (int)

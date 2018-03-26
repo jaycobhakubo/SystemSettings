@@ -16,6 +16,8 @@ namespace GTI.Modules.SystemSettings.UI
         private bool m_bModified = false;
         private GetRNGRemoteTypes getRNGRemoteTypes;
         private GetRNGRemoteSettings getRNGRemoteSettings;
+        private RNGTypeData mRNGTypeData;
+
         #endregion
 
         public RNGConfigurationSettings()
@@ -39,10 +41,8 @@ namespace GTI.Modules.SystemSettings.UI
             Common.BeginWait();
             this.SuspendLayout();
 
-            bool bResult = LoadRNGTypeSettings();
-            bResult = LoadRNGSettings();
-
-            LoadCmbxRngTypes();
+            bool bResult = GetRNGTypeSettingsFSM();
+            PopulateDataToUI_CmbxRngTypes();
 
             this.ResumeLayout(true);
             Common.EndWait();
@@ -62,7 +62,23 @@ namespace GTI.Modules.SystemSettings.UI
         //}
         #endregion  // Public Methods
 
-        private bool LoadRNGTypeSettings()
+
+        private void PopulateDataToUI_CmbxRngTypes()
+        {
+            cbxRNGTypes.Items.Clear();
+            cbxRNGTypes.DataSource = getRNGRemoteTypes.ListRNGType;
+            cbxRNGTypes.DisplayMember = "RNGType";
+            cbxRNGTypes.ValueMember = "RNGTypeID";
+
+
+            if (cbxRNGTypes.Items.Count > 0)  //Since we only have one rng type setting as of now let set the rng type setting into that
+            {
+                cbxRNGTypes.SelectedIndex = 0;
+            }
+        }
+
+
+        private bool GetRNGTypeSettingsFSM()
 
         {
             getRNGRemoteTypes = new GetRNGRemoteTypes();
@@ -71,15 +87,38 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
 
-        private void LoadCmbxRngTypes()
+        private void PopulateDataToUIControls()
         {
-            foreach (RNGTypeData rngtd in getRNGRemoteTypes.ListRNGType)
+            var tempdata = new RNGRemoteSettingsData();
+            tempdata = getRNGRemoteSettings.ListRNGRemoteSettings.FirstOrDefault(l => l.RNGTypeID == mRNGTypeData.RNGTypeID);
+            txtbxRNGIpAddress.Text = tempdata.RNGIpAddress;
+
+           var stringtempData = tempdata.RNGServerPort.ToString();
+          int result;
+
+           if (int.TryParse(stringtempData, out result)
+                && (result <= numUDRngPort.Maximum)
+                && result >= numUDRngPort.Minimum)
             {
-                cbxRNGTypes.Items.Add(rngtd.RNGType);
+                numUDRngPort.Value = result;
+            }
+            else
+            {
+                numUDRngPort.Value = numUDRngPort.Minimum;               
+            }
+            if (tempdata.RNGSSLConnection == true)
+            {
+                chkbxSecureConnection.Checked = true;
+            }
+            else
+            {
+                chkbxSecureConnection.Checked = false;
             }
         }
 
-        private bool LoadRNGSettings()
+
+
+        private bool GetRNGSettingsFromServerMessage(int rngremotetypeid)
         {
             getRNGRemoteSettings = new GetRNGRemoteSettings(1);
             getRNGRemoteSettings.Send();
@@ -96,18 +135,43 @@ namespace GTI.Modules.SystemSettings.UI
             lblRNGPort.Enabled = IsEnabled;
             numUDRngPort.Enabled = IsEnabled;
             chkbxSecureConnection.Enabled = IsEnabled;
+          
+        }
+
+        private void cbxRNGTypes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            mRNGTypeData = new RNGTypeData();// = (RNGTypeData)cbxRNGTypes.SelectedItem;
+            mRNGTypeData = (RNGTypeData)cbxRNGTypes.SelectedItem;
+             GetRNGSettingsFromServerMessage (mRNGTypeData.RNGTypeID);
+             PopulateDataToUIControls();
+                          
+          
         }
 
    
-
+      
 
     }
 
 
     public class RNGTypeData
     {
-        public int RNGTypeID { get; set; }
-        public string RNGType { get; set; }
+        private int mRNGTYpeId;
+        private string mRNGType;
+
+
+        public int RNGTypeID 
+        { 
+            get{return mRNGTYpeId;}
+            set { mRNGTYpeId = value; }
+        }
+        public string RNGType
+        {
+            get { return mRNGType; }
+            set { mRNGType = value; } 
+        }
+
+
     }
 
     public class RNGRemoteSettingsData
@@ -121,16 +185,3 @@ namespace GTI.Modules.SystemSettings.UI
     }
 }
 
-
-//foreach (SessionSummaryViewModes value in Enum.GetValues(typeof(SessionSummaryViewModes)))
-//            {
-//                Business.GenericCBOItem cboItem = new Business.GenericCBOItem();
-//                cboItem.CBOValueMember = (int)value;
-//                cboItem.CBODisplayMember = EnumToString.GetDescription(value);
-
-//                m_UIModes.Add(cboItem);
-//            }
-//            cboUIDisplayMode.Items.Clear();
-//            cboUIDisplayMode.DataSource = m_UIModes;
-//            cboUIDisplayMode.DisplayMember = "CBODisplayMember";
-//            cboUIDisplayMode.ValueMember = "CBOValueMember";

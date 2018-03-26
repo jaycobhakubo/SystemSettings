@@ -1,0 +1,7 @@
+﻿byte to bool
+  byte SSLConnection = 0;
+                SSLConnection = responseReader.ReadByte();//SSL COnnection
+                 tempValue.RNGSSLConnection = SSLConnection == 0 ? false : true;
+
+
+

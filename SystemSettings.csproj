@@ -733,7 +733,11 @@
     <None Include="Resources\GradientPanel.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MyRef\TextFile1.txt" />
+    <Content Include="MyRef\RNGConfigurationSetting\ControlsDataHandler.txt" />
+    <Content Include="MyRef\RNGConfigurationSetting\RNGConfigurationSettings.txt" />
+    <Content Include="MyRef\RNGConfigurationSetting\ServerMessage.txt" />
+    <Content Include="MyRef\RNGConfigurationSetting\ServerMessageDataHandler.txt" />
+    <Content Include="MyRef\RNGConfigurationSetting\US5537.txt" />
     <None Include="Resources\GradientFull.png" />
     <None Include="Resources\GradientFull5.png" />
   </ItemGroup>
