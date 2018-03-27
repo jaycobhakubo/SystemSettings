@@ -105,6 +105,7 @@
     <Compile Include="Business\SetConfigPhotoMessage.cs" />
     <Compile Include="Business\SetDistributorFees.cs" />
     <Compile Include="Business\SetMotifMessage.cs" />
+    <Compile Include="Business\SetRNGSettings.cs" />
     <Compile Include="Business\SettingsModule.cs" />
     <Compile Include="Business\Validator.cs" />
     <Compile Include="Common.cs" />

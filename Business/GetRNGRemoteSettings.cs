@@ -27,7 +27,6 @@ namespace GTI.Modules.SystemSettings.Business
             BinaryWriter requestWriter = new BinaryWriter(requestStream, Encoding.Unicode);
             requestWriter.Write(mRNGRemoteTypeID);
             m_requestPayload = requestStream.ToArray();
-            //throw new NotImplementedException();
         }
 
         protected override void UnpackResponse()
@@ -35,9 +34,9 @@ namespace GTI.Modules.SystemSettings.Business
             base.UnpackResponse();
             MemoryStream responseStream = new MemoryStream(m_responsePayload);
             BinaryReader responseReader = new BinaryReader(responseStream, Encoding.Unicode);
+
             responseReader.BaseStream.Seek(sizeof(int), SeekOrigin.Begin);
             ushort tempLength = 0;
-
             ushort Count = responseReader.ReadUInt16();
           
             for (int iType = 0; iType < Count; iType++)
@@ -50,6 +49,7 @@ namespace GTI.Modules.SystemSettings.Business
                 byte SSLConnection = 0;
                 SSLConnection = responseReader.ReadByte();//SSL COnnection
                 tempValue.RNGSSLConnection = SSLConnection == 0 ? false : true;
+                tempValue.RNGRemoveSettings = false;
                 //byte RemoveSettings = 0;
                 //RemoveSettings = responseReader.ReadByte();//Remove Settings
                 //tempValue.RNGRemoveSettings = SSLConnection == 0 ? false : true;

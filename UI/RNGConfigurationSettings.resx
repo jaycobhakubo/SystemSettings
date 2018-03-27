@@ -187,7 +187,7 @@
     <value>1</value>
   </data>
   <data name="numUDRngPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 176</value>
+    <value>176, 130</value>
   </data>
   <data name="numUDRngPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 26</value>
@@ -211,7 +211,7 @@
     <value>True</value>
   </data>
   <data name="lblRNGPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 184</value>
+    <value>48, 138</value>
   </data>
   <data name="lblRNGPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 22</value>
@@ -235,7 +235,7 @@
     <value>1</value>
   </data>
   <data name="txtbxRNGIpAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 136</value>
+    <value>176, 90</value>
   </data>
   <data name="txtbxRNGIpAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 26</value>
@@ -262,7 +262,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblRngIPAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 144</value>
+    <value>48, 98</value>
   </data>
   <data name="lblRngIPAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 22</value>
@@ -358,7 +358,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkbxSecureConnection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 224</value>
+    <value>46, 178</value>
   </data>
   <data name="chkbxSecureConnection.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>

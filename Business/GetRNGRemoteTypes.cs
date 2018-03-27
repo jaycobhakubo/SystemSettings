@@ -23,7 +23,6 @@ namespace GTI.Modules.SystemSettings.Business
             MemoryStream requestStream = new MemoryStream();
             BinaryWriter requestWriter = new BinaryWriter(requestStream, Encoding.Unicode);
             m_requestPayload = requestStream.ToArray();
-            //throw new NotImplementedException();
         }
 
         protected override void UnpackResponse()
@@ -32,8 +31,8 @@ namespace GTI.Modules.SystemSettings.Business
             MemoryStream responseStream = new MemoryStream(m_responsePayload);
             BinaryReader responseReader = new BinaryReader(responseStream, Encoding.Unicode);
             responseReader.BaseStream.Seek(sizeof(int), SeekOrigin.Begin);
-            ushort tempLength = 0;
 
+            ushort tempLength = 0;
             ushort Count = responseReader.ReadUInt16();
           
             for (int iType = 0; iType < Count; iType++)

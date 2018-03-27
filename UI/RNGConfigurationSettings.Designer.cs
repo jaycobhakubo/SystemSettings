@@ -65,6 +65,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // grpBxRNGConfigurationSettings
             // 
