@@ -101,6 +101,7 @@
             0,
             0,
             0});
+            this.numUDRngPort.ValueChanged += new System.EventHandler(this.OnModified);
             // 
             // lblRNGPort
             // 
@@ -111,6 +112,7 @@
             // 
             resources.ApplyResources(this.txtbxRNGIpAddress, "txtbxRNGIpAddress");
             this.txtbxRNGIpAddress.Name = "txtbxRNGIpAddress";
+            this.txtbxRNGIpAddress.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // lblRngIPAddress
             // 
@@ -135,6 +137,7 @@
             resources.ApplyResources(this.chkbxSecureConnection, "chkbxSecureConnection");
             this.chkbxSecureConnection.Name = "chkbxSecureConnection";
             this.chkbxSecureConnection.UseVisualStyleBackColor = true;
+            this.chkbxSecureConnection.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkbxUseInternalRNG
             // 

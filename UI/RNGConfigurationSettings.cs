@@ -67,16 +67,21 @@ namespace GTI.Modules.SystemSettings.UI
         {
             SetRNGSettings tSetRngSettings = new  SetRNGSettings (GetNewValue());
             tSetRngSettings.Send();
+            m_bModified = false;
             return true;
         }
 
         private void PopulateDataToUI_CmbxRngTypes()
         {
-            cbxRNGTypes.Items.Clear();
+            //cbxRNGTypes.Items.Clear();
+            cbxRNGTypes.SelectedIndex = -1;
             cbxRNGTypes.DataSource = getRNGRemoteTypes.ListRNGType;
             cbxRNGTypes.DisplayMember = "RNGType";
             cbxRNGTypes.ValueMember = "RNGTypeID";
-            if (cbxRNGTypes.Items.Count > 0) cbxRNGTypes.SelectedIndex = 0;                                       
+            if (cbxRNGTypes.Items.Count > 0)
+            {
+                cbxRNGTypes.SelectedIndex = 0;
+            }
         }
 
         #region SERVER MESSAGE
@@ -159,7 +164,8 @@ namespace GTI.Modules.SystemSettings.UI
                 chkbxSecureConnection.Checked = false;
             }
 
-            UseInternalRNG(chkbxUseInternalRNG.Checked);       
+            UseInternalRNG(chkbxUseInternalRNG.Checked);
+            m_bModified = false;
         }
 
         #endregion
@@ -175,10 +181,13 @@ namespace GTI.Modules.SystemSettings.UI
         //Selecting RNG Types in combobox
         private void cbxRNGTypes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            mRNGTypeData = new RNGTypeData();// = (RNGTypeData)cbxRNGTypes.SelectedItem;
-            mRNGTypeData = (RNGTypeData)cbxRNGTypes.SelectedItem;
-            GetRNGSettingsFromServerMessage (mRNGTypeData.RNGTypeID);
-            PopulateDataToUIControls();                                    
+            if (cbxRNGTypes.SelectedIndex != -1)
+            {
+                mRNGTypeData = new RNGTypeData();// = (RNGTypeData)cbxRNGTypes.SelectedItem;
+                mRNGTypeData = (RNGTypeData)cbxRNGTypes.SelectedItem;
+                GetRNGSettingsFromServerMessage(mRNGTypeData.RNGTypeID);
+                PopulateDataToUIControls();
+            }
         }
 
         //Saving changes
@@ -190,13 +199,16 @@ namespace GTI.Modules.SystemSettings.UI
         private void btnReset_Click(object sender, EventArgs e)
         {
             PopulateDataToUIControls2();
+            m_bModified = false;
+
         }
 
-        #endregion
+        private void OnModified(object sender, EventArgs e)
+        {
+            m_bModified = true;
+        }
 
-      
-
-      
+        #endregion     
     }
 
     #region DATA HANDLERs
