@@ -142,6 +142,20 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 chkbxSecureConnection.Checked = false;
             }
+
+            UseInternalRNG(chkbxSecureConnection.Checked);       
+        }
+
+
+        private void UseInternalRNG(bool IsEnabled)
+        {
+            lblRngTypes.Enabled = IsEnabled;
+            cbxRNGTypes.Enabled = IsEnabled;
+            lblRngIPAddress.Enabled = IsEnabled;
+            txtbxRNGIpAddress.Enabled = IsEnabled;
+            lblRNGPort.Enabled = IsEnabled;
+            numUDRngPort.Enabled = IsEnabled;
+            chkbxSecureConnection.Enabled = IsEnabled;
         }
 
         #endregion
@@ -151,15 +165,7 @@ namespace GTI.Modules.SystemSettings.UI
         //Disable / enable Internal RNG
         private void chkbxUseInternalRNG_CheckedChanged(object sender, EventArgs e)
         {
-            var IsEnabled = chkbxUseInternalRNG.Checked;
-            lblRngTypes.Enabled = IsEnabled;
-            cbxRNGTypes.Enabled = IsEnabled;
-            lblRngIPAddress.Enabled = IsEnabled;
-            txtbxRNGIpAddress.Enabled = IsEnabled;
-            lblRNGPort.Enabled = IsEnabled;
-            numUDRngPort.Enabled = IsEnabled;
-            chkbxSecureConnection.Enabled = IsEnabled;
-          
+            UseInternalRNG(chkbxUseInternalRNG.Checked);        
         }
 
         //Selecting RNG Types in combobox
@@ -178,6 +184,8 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         #endregion
+
+      
     }
 
     #region DATA HANDLERs

@@ -11,6 +11,7 @@ using GTI.Modules.SystemSettings.Properties;
 using GTI.Modules.SystemSettings.Data;
 using GTI.Modules.SystemSettings.Business;
 using GTI.Modules.SystemSettings.Models;
+using GTI.Modules.Shared.Business;
 
 namespace GTI.Modules.SystemSettings.UI
 {
@@ -18,7 +19,7 @@ namespace GTI.Modules.SystemSettings.UI
     {
         #region Private Members
 
-        private SMachineData[] m_arrMachines = new SMachineData[0];
+        private Machine[] m_arrMachines = new Machine[0];
         private List<int> m_moduleIds;
         private Int32 m_nDeviceId = 0;
         private GetMachineSettingsOnlyMessage m_GetMachineSettingsMsg = new GetMachineSettingsOnlyMessage(0, 0);  // we need this for multi-select
@@ -72,7 +73,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         #endregion
 
-        public MachineSettingsDlg(SMachineData[] arrMachines, int operatorID)//RALLY US1594
+        public MachineSettingsDlg(Machine[] arrMachines, int operatorID)//RALLY US1594
         {
             InitializeComponent();
             m_operatorID = operatorID;//RALLY US1594
@@ -165,7 +166,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (m_arrMachines.Length == 1)
             {
                 // Get the machine settings from the server (single selection only)
-                m_GetMachineSettingsMsg = new GetMachineSettingsOnlyMessage(m_arrMachines[0].nMachineId, 0);  // zero will return all settings from machine settings table, regardless of category
+                m_GetMachineSettingsMsg = new GetMachineSettingsOnlyMessage(m_arrMachines[0].Id, 0);  // zero will return all settings from machine settings table, regardless of category
                 try
                 {
                     m_GetMachineSettingsMsg.Send();
@@ -185,7 +186,7 @@ namespace GTI.Modules.SystemSettings.UI
 
                 if (m_nDeviceId == (int)Device.RemoteDisplay.Id || (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(10)))
                 {
-                    m_GetMachineCapabilitiesMsg = new GetMachineCapabilites(m_arrMachines[0].nMachineId);
+                    m_GetMachineCapabilitiesMsg = new GetMachineCapabilites(m_arrMachines[0].Id);
                     try
                     {
                         m_GetMachineCapabilitiesMsg.Send();
@@ -197,7 +198,7 @@ namespace GTI.Modules.SystemSettings.UI
 
 
 
-                    m_GetRemoteDisplayConfigurationsMessage = new GetMachineRemoteDisplayConfigurations(m_arrMachines[0].nMachineId, Common.OperatorId);
+                    m_GetRemoteDisplayConfigurationsMessage = new GetMachineRemoteDisplayConfigurations(m_arrMachines[0].Id, Common.OperatorId);
                     try
                     {
                         m_GetRemoteDisplayConfigurationsMessage.Send();
@@ -253,7 +254,7 @@ namespace GTI.Modules.SystemSettings.UI
                 // Fixed Base stuff goes here
                 if (m_nDeviceId == Device.Fixed.Id)
                 {
-                    m_GetMachineCapabilitiesMsg = new GetMachineCapabilites(m_arrMachines[0].nMachineId);
+                    m_GetMachineCapabilitiesMsg = new GetMachineCapabilites(m_arrMachines[0].Id);
                     try
                     {
                         m_GetMachineCapabilitiesMsg.Send();
@@ -293,12 +294,12 @@ namespace GTI.Modules.SystemSettings.UI
             int nCount = m_arrMachines.Length;
 
             // Get the first device id
-            int nDeviceId = m_arrMachines[0].nDeviceId;
+            int nDeviceId = m_arrMachines[0].DeviceType.Id;
 
             // Check if they are all the same, or return "User Defined" if not
             for (int i = 0; i < nCount; i++)
             {
-                if (m_arrMachines[i].nDeviceId != nDeviceId)
+                if (m_arrMachines[i].DeviceType.Id != nDeviceId)
                 {
                     return (int)Device.UserDefined.Id;
                 }
@@ -310,7 +311,7 @@ namespace GTI.Modules.SystemSettings.UI
         private List<int> DetermineModuleIds()
         {
             List<int> moduleIds = new List<int>();
-            GetMachineModules getMachineModulesMessage = new GetMachineModules(m_arrMachines[0].nMachineId);
+            GetMachineModules getMachineModulesMessage = new GetMachineModules(m_arrMachines[0].Id);
 
             try
             {
@@ -1446,7 +1447,7 @@ namespace GTI.Modules.SystemSettings.UI
             int nCount = m_arrMachines.Length;
             for (int i = 0; i < nCount; i++)
             {
-                arrMachineIds.Add(m_arrMachines[i].nMachineId);
+                arrMachineIds.Add(m_arrMachines[i].Id);
             }
 
             // Send a message to the server
@@ -2077,7 +2078,7 @@ namespace GTI.Modules.SystemSettings.UI
                 remoteDisplayConfiguration.AllowedScenes = string.Empty;
                 remoteDisplayConfiguration.DefaultScene = 0;
                 remoteDisplayConfiguration.EnabledAccruals = string.Empty;
-                remoteDisplayConfiguration.MachineID = m_arrMachines[0].nMachineId;
+                remoteDisplayConfiguration.MachineID = m_arrMachines[0].Id;
                 remoteDisplayConfiguration.Resolution = string.Empty;
                 m_remoteDisplayConfigurations.Add(remoteDisplayConfiguration);
             }
@@ -2189,7 +2190,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void buttonSetAccruals_Click(object sender, EventArgs e)
         {
-            int machineid = m_arrMachines[0].nMachineId;
+            int machineid = m_arrMachines[0].Id;
             int operatorId = Common.OperatorId;
             int adaptorId;
             MachineCapabilites machineCapability = cboVideoAdapter.SelectedItem as MachineCapabilites;
@@ -2208,7 +2209,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void PopulateAccrualDisplayItems()
         {
-            m_GetAccrualDisplayItemsMsg = new GetAccrualDisplayItems(m_arrMachines[0].nMachineId, Common.OperatorId);
+            m_GetAccrualDisplayItemsMsg = new GetAccrualDisplayItems(m_arrMachines[0].Id, Common.OperatorId);
             try
             {
                 m_GetAccrualDisplayItemsMsg.Send();
