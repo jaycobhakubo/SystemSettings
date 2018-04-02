@@ -115,15 +115,31 @@ namespace GTI.Modules.SystemSettings.UI
             return mListRNGSettingData;
         }
 
+        RNGRemoteSettingsData tempdata = new RNGRemoteSettingsData();
         private void PopulateDataToUIControls()
         {
-            var tempdata = new RNGRemoteSettingsData();
+            tempdata = new RNGRemoteSettingsData();
             tempdata = getRNGRemoteSettings.ListRNGRemoteSettings.FirstOrDefault(l => l.RNGTypeID == mRNGTypeData.RNGTypeID);
-            txtbxRNGIpAddress.Text = tempdata.RNGIpAddress;
+            PopulateDataToUIControls2();
+        }
 
+
+        private void UseInternalRNG(bool IsEnabled)
+        {
+            lblRngTypes.Enabled = IsEnabled;
+            cbxRNGTypes.Enabled = IsEnabled;
+            lblRngIPAddress.Enabled = IsEnabled;
+            txtbxRNGIpAddress.Enabled = IsEnabled;
+            lblRNGPort.Enabled = IsEnabled;
+            numUDRngPort.Enabled = IsEnabled;
+            chkbxSecureConnection.Enabled = IsEnabled;
+        }
+
+        private void PopulateDataToUIControls2()
+        {
+            txtbxRNGIpAddress.Text = tempdata.RNGIpAddress;
             var stringtempData = tempdata.RNGServerPort.ToString();
             int result;
-
             if (int.TryParse(stringtempData, out result)
                  && (result <= numUDRngPort.Maximum)
                  && result >= numUDRngPort.Minimum)
@@ -143,19 +159,7 @@ namespace GTI.Modules.SystemSettings.UI
                 chkbxSecureConnection.Checked = false;
             }
 
-            UseInternalRNG(chkbxSecureConnection.Checked);       
-        }
-
-
-        private void UseInternalRNG(bool IsEnabled)
-        {
-            lblRngTypes.Enabled = IsEnabled;
-            cbxRNGTypes.Enabled = IsEnabled;
-            lblRngIPAddress.Enabled = IsEnabled;
-            txtbxRNGIpAddress.Enabled = IsEnabled;
-            lblRNGPort.Enabled = IsEnabled;
-            numUDRngPort.Enabled = IsEnabled;
-            chkbxSecureConnection.Enabled = IsEnabled;
+            UseInternalRNG(chkbxUseInternalRNG.Checked);       
         }
 
         #endregion
@@ -183,7 +187,14 @@ namespace GTI.Modules.SystemSettings.UI
             SaveSettings();
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            PopulateDataToUIControls2();
+        }
+
         #endregion
+
+      
 
       
     }
