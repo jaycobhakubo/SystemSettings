@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FortuNet, Inc.")]
 [assembly: AssemblyProduct("GameTech® Edge Bingo System™")]
-[assembly: AssemblyCopyright("Copyright © 2017 FortuNet, Inc. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright © 2018 FortuNet, Inc. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -22,5 +22,5 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("7475541a-7b47-4903-927f-0f2db878b4a4")]
 
-[assembly: AssemblyVersion("1.13.2.11")]
-[assembly: AssemblyFileVersion("1.13.2.11")]
+[assembly: AssemblyVersion("1.14.0.0")]
+[assembly: AssemblyFileVersion("1.14.0.0")]
