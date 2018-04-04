@@ -12,11 +12,11 @@ namespace GTI.Modules.SystemSettings.Business
     {
         public List<RNGTypeData> ListRNGType { get; set; }
 
-        public GetRNGRemoteTypes()
+        public  GetRNGRemoteTypes()
         {
             m_id = 18254;
-            ListRNGType = new List<RNGTypeData>();
         }
+
 
         protected override void PackRequest()
         {
@@ -31,7 +31,7 @@ namespace GTI.Modules.SystemSettings.Business
             MemoryStream responseStream = new MemoryStream(m_responsePayload);
             BinaryReader responseReader = new BinaryReader(responseStream, Encoding.Unicode);
             responseReader.BaseStream.Seek(sizeof(int), SeekOrigin.Begin);
-
+            ListRNGType = new List<RNGTypeData>();
             ushort tempLength = 0;
             ushort Count = responseReader.ReadUInt16();
           

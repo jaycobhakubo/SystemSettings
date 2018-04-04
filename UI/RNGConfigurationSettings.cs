@@ -13,13 +13,17 @@ namespace GTI.Modules.SystemSettings.UI
     public partial class RNGConfigurationSettings : SettingsControl
     {
         #region MEMBER VARIABLES
-        private bool m_bModified = false;
-        private GetRNGRemoteTypes getRNGRemoteTypes;
-        private GetRNGRemoteSettings getRNGRemoteSettings;     
-        private RNGTypeData mRNGTypeData;      
+        
+        private bool                                m_bModified = false;
+        private List<RNGTypeData>                   m_listRemoteType;
+        private List<RNGRemoteSettingsData>         m_listRemoteSettings;
+        private RNGRemoteSettingsData               m_remoteSettings;
+        private RNGTypeData                         m_remoteType;      
+
         #endregion
 
         #region CONSTRUCTORS
+
         public RNGConfigurationSettings()
         {
             InitializeComponent();
@@ -27,11 +31,6 @@ namespace GTI.Modules.SystemSettings.UI
         #endregion 
 
         #region PUBLIC METHODS
-
-        public override bool IsModified()
-        {
-            return m_bModified;
-        }
 
         public override void OnActivate(object o)
         {
@@ -41,10 +40,8 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
-
-            bool bResult = GetRNGTypeSettingsFSM();
-            PopulateDataToUI_CmbxRngTypes();
-
+            bool bResult = getRemoteTypeSettings();
+            populateCmbxRngTypes();
             this.ResumeLayout(true);
             Common.EndWait();
             return bResult;
@@ -53,29 +50,31 @@ namespace GTI.Modules.SystemSettings.UI
         public override bool SaveSettings()
         {
             Common.BeginWait();
-
-            bool bResult = SaveRNGSettings();
-
+            this.SuspendLayout();
+            bool bResult = saveRemoteSettings();
+            this.ResumeLayout(true);
             Common.EndWait();
-
             return bResult;
         }
+
         #endregion  // Public Methods
 
+
         #region PRIVATE METHODS
-        private bool SaveRNGSettings()
+
+        private bool saveRemoteSettings()
         {
-            SetRNGSettings tSetRngSettings = new  SetRNGSettings (GetNewValue());
-            tSetRngSettings.Send();
+            var saveRemoteSettings = new SetRNGSettings(getNewListRemoteSettings());
+            saveRemoteSettings.Send();
             m_bModified = false;
             return true;
         }
 
-        private void PopulateDataToUI_CmbxRngTypes()
+        private void populateCmbxRngTypes()
         {
             //cbxRNGTypes.Items.Clear();
             cbxRNGTypes.SelectedIndex = -1;
-            cbxRNGTypes.DataSource = getRNGRemoteTypes.ListRNGType;
+            cbxRNGTypes.DataSource = m_listRemoteType;
             cbxRNGTypes.DisplayMember = "RNGType";
             cbxRNGTypes.ValueMember = "RNGTypeID";
             if (cbxRNGTypes.Items.Count > 0)
@@ -85,65 +84,54 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         #region SERVER MESSAGE
-        private bool GetRNGTypeSettingsFSM()
+
+        private bool getRemoteTypeSettings()
         {
-            getRNGRemoteTypes = new GetRNGRemoteTypes();
-            getRNGRemoteTypes.Send();
+            var getRemoteTypes = new GetRNGRemoteTypes();
+            getRemoteTypes.Send();
+            m_listRemoteType = getRemoteTypes.ListRNGType;
             return true;
         }
 
-        private bool GetRNGSettingsFromServerMessage(int rngremotetypeid)
+        private bool getRemoteSettings(int rngremotetypeid)
         {
-            getRNGRemoteSettings = new GetRNGRemoteSettings(mRNGTypeData.RNGTypeID);
-            getRNGRemoteSettings.Send();
-            return true;
+
+           var getRemoteSettings = new GetRNGRemoteSettings(m_remoteType.RNGTypeID);
+           getRemoteSettings.Send();
+           m_listRemoteSettings = getRemoteSettings.ListRNGRemoteSettings;
+           m_remoteSettings = m_listRemoteSettings.FirstOrDefault(l => l.RNGTypeID == m_remoteType.RNGTypeID);
+           return true;
         }
 
-        private List<RNGRemoteSettingsData> GetNewValue()
+        #endregion
+
+        private List<RNGRemoteSettingsData> getNewListRemoteSettings()
         {
-            var mListRNGSettingData = new List<RNGRemoteSettingsData>();
-            var NewRNGSettings = new RNGRemoteSettingsData();
-            NewRNGSettings.RNGTypeID = mRNGTypeData.RNGTypeID; //Selected rng type
-            NewRNGSettings.RNGIpAddress = txtbxRNGIpAddress.Text;
-            NewRNGSettings.RNGServerPort = (int)numUDRngPort.Value;
+            var newListRemoteSetting = new List<RNGRemoteSettingsData>();
+            var newRemoteSettings = new RNGRemoteSettingsData();
+            newRemoteSettings.RNGTypeID = m_remoteType.RNGTypeID; //Selected rng type
+            newRemoteSettings.RNGIpAddress = txtbxRNGIpAddress.Text;
+            newRemoteSettings.RNGServerPort = (int)numUDRngPort.Value;
+
             if (chkbxSecureConnection.Checked == true)
             {
-                NewRNGSettings.RNGSSLConnection = true;
+                newRemoteSettings.RNGSSLConnection = true;
             }
             else
             {
-                NewRNGSettings.RNGSSLConnection = false;
+                newRemoteSettings.RNGSSLConnection = false;
             }
 
-            NewRNGSettings.RNGRemoveSettings = false;
-            mListRNGSettingData.Add(NewRNGSettings);
-            return mListRNGSettingData;
+            newRemoteSettings.RNGRemoveSettings = false;
+            newListRemoteSetting.Add(newRemoteSettings);
+            return newListRemoteSetting;
         }
 
-        RNGRemoteSettingsData tempdata = new RNGRemoteSettingsData();
-        private void PopulateDataToUIControls()
+       
+        private void populateControls()
         {
-            tempdata = new RNGRemoteSettingsData();
-            tempdata = getRNGRemoteSettings.ListRNGRemoteSettings.FirstOrDefault(l => l.RNGTypeID == mRNGTypeData.RNGTypeID);
-            PopulateDataToUIControls2();
-        }
-
-
-        private void UseInternalRNG(bool IsEnabled)
-        {
-            lblRngTypes.Enabled = IsEnabled;
-            cbxRNGTypes.Enabled = IsEnabled;
-            lblRngIPAddress.Enabled = IsEnabled;
-            txtbxRNGIpAddress.Enabled = IsEnabled;
-            lblRNGPort.Enabled = IsEnabled;
-            numUDRngPort.Enabled = IsEnabled;
-            chkbxSecureConnection.Enabled = IsEnabled;
-        }
-
-        private void PopulateDataToUIControls2()
-        {
-            txtbxRNGIpAddress.Text = tempdata.RNGIpAddress;
-            var stringtempData = tempdata.RNGServerPort.ToString();
+            txtbxRNGIpAddress.Text = m_remoteSettings.RNGIpAddress;
+            var stringtempData = m_remoteSettings.RNGServerPort.ToString();
             int result;
             if (int.TryParse(stringtempData, out result)
                  && (result <= numUDRngPort.Maximum)
@@ -155,7 +143,7 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 numUDRngPort.Value = numUDRngPort.Minimum;
             }
-            if (tempdata.RNGSSLConnection == true)
+            if (m_remoteSettings.RNGSSLConnection == true)
             {
                 chkbxSecureConnection.Checked = true;
             }
@@ -164,18 +152,29 @@ namespace GTI.Modules.SystemSettings.UI
                 chkbxSecureConnection.Checked = false;
             }
 
-            UseInternalRNG(chkbxUseInternalRNG.Checked);
+            useInternalRNG(chkbxUseInternalRNG.Checked);
             m_bModified = false;
         }
 
-        #endregion
+        private void useInternalRNG(bool IsEnabled)
+        {
+            lblRngTypes.Enabled = IsEnabled;
+            cbxRNGTypes.Enabled = IsEnabled;
+            lblRngIPAddress.Enabled = IsEnabled;
+            txtbxRNGIpAddress.Enabled = IsEnabled;
+            lblRNGPort.Enabled = IsEnabled;
+            numUDRngPort.Enabled = IsEnabled;
+            chkbxSecureConnection.Enabled = IsEnabled;
+        }
+
         #endregion
 
         #region EVENTS
+
         //Disable / enable Internal RNG
         private void chkbxUseInternalRNG_CheckedChanged(object sender, EventArgs e)
         {
-            UseInternalRNG(chkbxUseInternalRNG.Checked);        
+            useInternalRNG(chkbxUseInternalRNG.Checked);        
         }
 
         //Selecting RNG Types in combobox
@@ -183,10 +182,10 @@ namespace GTI.Modules.SystemSettings.UI
         {
             if (cbxRNGTypes.SelectedIndex != -1)
             {
-                mRNGTypeData = new RNGTypeData();// = (RNGTypeData)cbxRNGTypes.SelectedItem;
-                mRNGTypeData = (RNGTypeData)cbxRNGTypes.SelectedItem;
-                GetRNGSettingsFromServerMessage(mRNGTypeData.RNGTypeID);
-                PopulateDataToUIControls();
+               // m_remoteType = new RNGTypeData();// = (RNGTypeData)cbxRNGTypes.SelectedItem;
+                m_remoteType = (RNGTypeData)cbxRNGTypes.SelectedItem;
+                getRemoteSettings(m_remoteType.RNGTypeID);
+                populateControls();
             }
         }
 
@@ -196,19 +195,30 @@ namespace GTI.Modules.SystemSettings.UI
             SaveSettings();
         }
 
+        //Reset changes
         private void btnReset_Click(object sender, EventArgs e)
         {
-            PopulateDataToUIControls2();
+            populateControls();
             m_bModified = false;
-
         }
 
+        //Set control modify = true
         private void OnModified(object sender, EventArgs e)
         {
             m_bModified = true;
         }
 
-        #endregion     
+        #endregion    
+ 
+
+        #region PROPERTIES
+
+        public override bool IsModified()
+        {
+            return m_bModified;
+        }
+
+        #endregion
     }
 
     #region DATA HANDLERs
@@ -233,11 +243,11 @@ namespace GTI.Modules.SystemSettings.UI
     //RNG Settings
     public class RNGRemoteSettingsData
     {
-        public int RNGTypeID { get; set; }
-        public string RNGIpAddress { get; set; }
-        public int RNGServerPort { get; set; }
-        public bool RNGSSLConnection { get; set; }
-        public bool RNGRemoveSettings { get; set; }
+        public int      RNGTypeID { get; set; }
+        public string   RNGIpAddress { get; set; }
+        public int      RNGServerPort { get; set; }
+        public bool     RNGSSLConnection { get; set; }
+        public bool     RNGRemoveSettings { get; set; }
 
     }
     #endregion
