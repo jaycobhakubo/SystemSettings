@@ -75,13 +75,25 @@ namespace GTI.Modules.SystemSettings.UI
         {
             var isRemoteRNG = Common.GetSystemSetting(Setting.RemoteRNG);
             m_isRemoteRNG = (isRemoteRNG == "True") ? true : false;
-            chkbxUseInternalRNG.Checked = m_isRemoteRNG;;
+            //chkbxUseInternalRNG.Checked = m_isRemoteRNG;;
         }
 
         private bool saveRemoteSettings()
         {
             var saveRemoteSettings = new SetRNGSettings(getNewListRemoteSettings());
             saveRemoteSettings.Send();
+
+            List<SettingValue> arrSettings = new List<SettingValue>();
+            SettingValue s = new SettingValue();
+            s.Id = (int)Setting.RemoteRNG;
+            s.Value = m_isRemoteRNG.ToString();
+            arrSettings.Add(s);
+            // Update the server
+            if (!Common.SaveSystemSettings(arrSettings.ToArray()))
+            {
+                return false;
+            }
+
             m_bModified = false;
             return true;
         }
@@ -120,6 +132,7 @@ namespace GTI.Modules.SystemSettings.UI
             }
 
             m_remoteSettings.RNGRemoveSettings = false;
+            m_isRemoteRNG = chkbxUseInternalRNG.Checked;
             newListRemoteSetting.Add(m_remoteSettings);
             m_listRemoteSettings = newListRemoteSetting;
             return newListRemoteSetting;
@@ -150,7 +163,16 @@ namespace GTI.Modules.SystemSettings.UI
                 chkbxSecureConnection.Checked = false;
             }
 
-            useInternalRNG(chkbxUseInternalRNG.Checked);
+            if (chkbxUseInternalRNG.Checked == m_isRemoteRNG)
+            {
+                useInternalRNG(m_isRemoteRNG);
+            }
+            else
+            {
+                chkbxUseInternalRNG.Checked = m_isRemoteRNG;
+            }
+           
+   
             m_bModified = false;
         }
 
