@@ -609,12 +609,12 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
-            //if (Common.IsAdmin)
-            //{
+            if (Common.IsAdmin)
+            {
                 nodeParent = new TreeNode("RNG Configuration Settings", 0, 1);
                 nodeParent.Tag = rngConfigurationSettings1;
                 treeView1.Nodes.Add(nodeParent);
-            //}
+            }
 
             //SORT by alphabetical order
             treeView1.Sort();
