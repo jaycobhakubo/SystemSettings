@@ -397,7 +397,7 @@
     <value>3</value>
   </data>
   <data name="chkbxUseInternalRNG.Text" xml:space="preserve">
-    <value>Use Internal RNG</value>
+    <value>Use Remote RNG</value>
   </data>
   <data name="&gt;&gt;chkbxUseInternalRNG.Name" xml:space="preserve">
     <value>chkbxUseInternalRNG</value>
@@ -451,6 +451,6 @@
     <value>RNGConfigurationSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.14.0.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

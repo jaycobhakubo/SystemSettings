@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GTI.Modules.SystemSettings.Business;
+using GTI.Modules.Shared;
 
 namespace GTI.Modules.SystemSettings.UI
 {
@@ -18,7 +19,8 @@ namespace GTI.Modules.SystemSettings.UI
         private List<RNGTypeData>                   m_listRemoteType;
         private List<RNGRemoteSettingsData>         m_listRemoteSettings;
         private RNGRemoteSettingsData               m_remoteSettings;
-        private RNGTypeData                         m_remoteType;      
+        private RNGTypeData                         m_remoteType;
+        private bool                                m_isRemoteRNG;
 
         #endregion
 
@@ -40,8 +42,7 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
-            bool bResult = getRemoteTypeSettings();
-            populateCmbxRngTypes();
+            bool bResult = loadRemoteRNGSettings();
             this.ResumeLayout(true);
             Common.EndWait();
             return bResult;
@@ -61,6 +62,21 @@ namespace GTI.Modules.SystemSettings.UI
 
 
         #region PRIVATE METHODS
+
+        private bool loadRemoteRNGSettings()
+        {         
+            populatechkbxUseInternalRNG();
+            bool bResult = getRemoteTypeSettings();
+            populateCmbxRngTypes();
+            return true;
+        }
+
+        private void populatechkbxUseInternalRNG()
+        {
+            var isRemoteRNG = Common.GetSystemSetting(Setting.RemoteRNG);
+            m_isRemoteRNG = (isRemoteRNG == "True") ? true : false;
+            chkbxUseInternalRNG.Checked = m_isRemoteRNG;;
+        }
 
         private bool saveRemoteSettings()
         {
@@ -83,47 +99,29 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
-        #region SERVER MESSAGE
 
-        private bool getRemoteTypeSettings()
-        {
-            var getRemoteTypes = new GetRNGRemoteTypes();
-            getRemoteTypes.Send();
-            m_listRemoteType = getRemoteTypes.ListRNGType;
-            return true;
-        }
-
-        private bool getRemoteSettings(int rngremotetypeid)
-        {
-
-           var getRemoteSettings = new GetRNGRemoteSettings(m_remoteType.RNGTypeID);
-           getRemoteSettings.Send();
-           m_listRemoteSettings = getRemoteSettings.ListRNGRemoteSettings;
-           m_remoteSettings = m_listRemoteSettings.FirstOrDefault(l => l.RNGTypeID == m_remoteType.RNGTypeID);
-           return true;
-        }
-
-        #endregion
 
         private List<RNGRemoteSettingsData> getNewListRemoteSettings()
         {
             var newListRemoteSetting = new List<RNGRemoteSettingsData>();
-            var newRemoteSettings = new RNGRemoteSettingsData();
-            newRemoteSettings.RNGTypeID = m_remoteType.RNGTypeID; //Selected rng type
-            newRemoteSettings.RNGIpAddress = txtbxRNGIpAddress.Text;
-            newRemoteSettings.RNGServerPort = (int)numUDRngPort.Value;
+            //var newRemoteSettings = new RNGRemoteSettingsData();
+
+            m_remoteSettings.RNGTypeID = m_remoteType.RNGTypeID; //Selected rng type
+            m_remoteSettings.RNGIpAddress = txtbxRNGIpAddress.Text;
+            m_remoteSettings.RNGServerPort = (int)numUDRngPort.Value;
 
             if (chkbxSecureConnection.Checked == true)
             {
-                newRemoteSettings.RNGSSLConnection = true;
+                m_remoteSettings.RNGSSLConnection = true;
             }
             else
             {
-                newRemoteSettings.RNGSSLConnection = false;
+                m_remoteSettings.RNGSSLConnection = false;
             }
 
-            newRemoteSettings.RNGRemoveSettings = false;
-            newListRemoteSetting.Add(newRemoteSettings);
+            m_remoteSettings.RNGRemoveSettings = false;
+            newListRemoteSetting.Add(m_remoteSettings);
+            m_listRemoteSettings = newListRemoteSetting;
             return newListRemoteSetting;
         }
 
@@ -166,6 +164,28 @@ namespace GTI.Modules.SystemSettings.UI
             numUDRngPort.Enabled = IsEnabled;
             chkbxSecureConnection.Enabled = IsEnabled;
         }
+
+        #region SERVER MESSAGE
+
+        private bool getRemoteTypeSettings()
+        {
+            var getRemoteTypes = new GetRNGRemoteTypes();
+            getRemoteTypes.Send();
+            m_listRemoteType = getRemoteTypes.ListRNGType;
+            return true;
+        }
+
+        private bool getRemoteSettings(int rngremotetypeid)
+        {
+
+            var getRemoteSettings = new GetRNGRemoteSettings(m_remoteType.RNGTypeID);
+            getRemoteSettings.Send();
+            m_listRemoteSettings = getRemoteSettings.ListRNGRemoteSettings;
+            m_remoteSettings = m_listRemoteSettings.FirstOrDefault(l => l.RNGTypeID == m_remoteType.RNGTypeID);
+            return true;
+        }
+
+        #endregion
 
         #endregion
 
@@ -225,18 +245,18 @@ namespace GTI.Modules.SystemSettings.UI
     //RNG TYpes
     public class RNGTypeData
     {
-        private int mRNGTYpeId;
-        private string mRNGType;
+        private int m_RNGTYpeId;
+        private string m_RNGType;
 
         public int RNGTypeID 
         { 
-            get{return mRNGTYpeId;}
-            set { mRNGTYpeId = value; }
+            get{return m_RNGTYpeId;}
+            set { m_RNGTYpeId = value; }
         }
         public string RNGType
         {
-            get { return mRNGType; }
-            set { mRNGType = value; } 
+            get { return m_RNGType; }
+            set { m_RNGType = value; } 
         }
     }
 

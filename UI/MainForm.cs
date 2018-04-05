@@ -611,7 +611,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             //if (Common.IsAdmin)
             //{
-                nodeParent = new TreeNode("RNG Coniguration Settings", 0, 1);
+                nodeParent = new TreeNode("RNG Configuration Settings", 0, 1);
                 nodeParent.Tag = rngConfigurationSettings1;
                 treeView1.Nodes.Add(nodeParent);
             //}
