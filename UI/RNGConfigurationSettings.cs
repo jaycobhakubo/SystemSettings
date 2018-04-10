@@ -42,7 +42,7 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
-            bool bResult = loadRemoteRNGSettings();
+            bool bResult = LoadRemoteRNGSettings();
             this.ResumeLayout(true);
             Common.EndWait();
             return bResult;
@@ -52,7 +52,7 @@ namespace GTI.Modules.SystemSettings.UI
         {
             Common.BeginWait();
             this.SuspendLayout();
-            bool bResult = saveRemoteSettings();
+            bool bResult = SaveRemoteSettings();
             this.ResumeLayout(true);
             Common.EndWait();
             return bResult;
@@ -60,14 +60,13 @@ namespace GTI.Modules.SystemSettings.UI
 
         #endregion  // Public Methods
 
-
         #region PRIVATE METHODS
 
-        private bool loadRemoteRNGSettings()
+        private bool LoadRemoteRNGSettings()
         {         
             populatechkbxUseInternalRNG();
-            bool bResult = getRemoteTypeSettings();
-            populateCmbxRngTypes();
+            bool bResult = GetRemoteTypeSettings();
+            PopulateCmbxRngTypes();
             return true;
         }
 
@@ -78,9 +77,9 @@ namespace GTI.Modules.SystemSettings.UI
             //chkbxUseInternalRNG.Checked = m_isRemoteRNG;;
         }
 
-        private bool saveRemoteSettings()
+        private bool SaveRemoteSettings()
         {
-            var saveRemoteSettings = new SetRNGSettings(getNewListRemoteSettings());
+            var saveRemoteSettings = new SetRNGSettings(GetNewListRemoteSettings());
             saveRemoteSettings.Send();
 
             List<SettingValue> arrSettings = new List<SettingValue>();
@@ -98,7 +97,7 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-        private void populateCmbxRngTypes()
+        private void PopulateCmbxRngTypes()
         {
             //cbxRNGTypes.Items.Clear();
             cbxRNGTypes.SelectedIndex = -1;
@@ -113,7 +112,7 @@ namespace GTI.Modules.SystemSettings.UI
 
 
 
-        private List<RNGRemoteSettingsData> getNewListRemoteSettings()
+        private List<RNGRemoteSettingsData> GetNewListRemoteSettings()
         {
             var newListRemoteSetting = new List<RNGRemoteSettingsData>();
             //var newRemoteSettings = new RNGRemoteSettingsData();
@@ -139,7 +138,7 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
        
-        private void populateControls()
+        private void PopulateControls()
         {
             txtbxRNGIpAddress.Text = m_remoteSettings.RNGIpAddress;
             var stringtempData = m_remoteSettings.RNGServerPort.ToString();
@@ -165,7 +164,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             if (chkbxUseInternalRNG.Checked == m_isRemoteRNG)
             {
-                useInternalRNG(m_isRemoteRNG);
+                UseInternalRNG(m_isRemoteRNG);
             }
             else
             {
@@ -176,20 +175,20 @@ namespace GTI.Modules.SystemSettings.UI
             m_bModified = false;
         }
 
-        private void useInternalRNG(bool IsEnabled)
+        private void UseInternalRNG(bool isEnabled)
         {
-            lblRngTypes.Enabled = IsEnabled;
-            cbxRNGTypes.Enabled = IsEnabled;
-            lblRngIPAddress.Enabled = IsEnabled;
-            txtbxRNGIpAddress.Enabled = IsEnabled;
-            lblRNGPort.Enabled = IsEnabled;
-            numUDRngPort.Enabled = IsEnabled;
-            chkbxSecureConnection.Enabled = IsEnabled;
+            lblRngTypes.Enabled = isEnabled;
+            cbxRNGTypes.Enabled = isEnabled;
+            lblRngIPAddress.Enabled = isEnabled;
+            txtbxRNGIpAddress.Enabled = isEnabled;
+            lblRNGPort.Enabled = isEnabled;
+            numUDRngPort.Enabled = isEnabled;
+            chkbxSecureConnection.Enabled = isEnabled;
         }
 
         #region SERVER MESSAGE
 
-        private bool getRemoteTypeSettings()
+        private bool GetRemoteTypeSettings()
         {
             var getRemoteTypes = new GetRNGRemoteTypes();
             getRemoteTypes.Send();
@@ -197,7 +196,7 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-        private bool getRemoteSettings(int rngremotetypeid)
+        private bool GetRemoteSettings(/*int rngremotetypeid*/)
         {
 
             var getRemoteSettings = new GetRNGRemoteSettings(m_remoteType.RNGTypeID);
@@ -216,7 +215,7 @@ namespace GTI.Modules.SystemSettings.UI
         //Disable / enable Internal RNG
         private void chkbxUseInternalRNG_CheckedChanged(object sender, EventArgs e)
         {
-            useInternalRNG(chkbxUseInternalRNG.Checked);        
+            UseInternalRNG(chkbxUseInternalRNG.Checked);        
         }
 
         //Selecting RNG Types in combobox
@@ -226,8 +225,8 @@ namespace GTI.Modules.SystemSettings.UI
             {
                // m_remoteType = new RNGTypeData();// = (RNGTypeData)cbxRNGTypes.SelectedItem;
                 m_remoteType = (RNGTypeData)cbxRNGTypes.SelectedItem;
-                getRemoteSettings(m_remoteType.RNGTypeID);
-                populateControls();
+                GetRemoteSettings(/*m_remoteType.RNGTypeID*/);
+                PopulateControls();
             }
         }
 
@@ -240,7 +239,7 @@ namespace GTI.Modules.SystemSettings.UI
         //Reset changes
         private void btnReset_Click(object sender, EventArgs e)
         {
-            populateControls();
+            PopulateControls();
             m_bModified = false;
         }
 
