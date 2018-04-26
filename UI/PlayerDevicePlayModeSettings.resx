@@ -507,7 +507,7 @@
     <value>0, 0</value>
   </data>
   <data name="playModeSettingsDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>755, 609</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="playModeSettingsDefault.TabIndex" type="System.Int32, mscorlib">
@@ -517,7 +517,7 @@
     <value>playModeSettingsDefault</value>
   </data>
   <data name="&gt;&gt;playModeSettingsDefault.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;playModeSettingsDefault.Parent" xml:space="preserve">
     <value>tbpgDefault</value>
@@ -529,7 +529,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgDefault.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -938,7 +938,7 @@
     <value>0, 0</value>
   </data>
   <data name="playModeSettingsFixedBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>755, 609</value>
   </data>
   <data name="playModeSettingsFixedBase.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -947,7 +947,7 @@
     <value>playModeSettingsFixedBase</value>
   </data>
   <data name="&gt;&gt;playModeSettingsFixedBase.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;playModeSettingsFixedBase.Parent" xml:space="preserve">
     <value>tbpgFixedBase</value>
@@ -959,7 +959,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgFixedBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgFixedBase.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1368,7 +1368,7 @@
     <value>0, 0</value>
   </data>
   <data name="playModeSettingsExplorer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>755, 609</value>
   </data>
   <data name="playModeSettingsExplorer2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1377,7 +1377,7 @@
     <value>playModeSettingsExplorer2</value>
   </data>
   <data name="&gt;&gt;playModeSettingsExplorer2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;playModeSettingsExplorer2.Parent" xml:space="preserve">
     <value>tbpgExplorer2</value>
@@ -1389,7 +1389,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgExplorer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgExplorer2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1798,7 +1798,7 @@
     <value>0, 0</value>
   </data>
   <data name="playModeSettingsTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>755, 609</value>
   </data>
   <data name="playModeSettingsTedE.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1807,7 +1807,7 @@
     <value>playModeSettingsTedE</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTedE.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTedE.Parent" xml:space="preserve">
     <value>tbpgTedE</value>
@@ -1819,7 +1819,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgTedE.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2228,7 +2228,7 @@
     <value>0, 0</value>
   </data>
   <data name="playModeSettingsTracker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>755, 609</value>
   </data>
   <data name="playModeSettingsTracker.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2237,7 +2237,7 @@
     <value>playModeSettingsTracker</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTracker.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTracker.Parent" xml:space="preserve">
     <value>tbpgTracker</value>
@@ -2249,7 +2249,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgTracker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgTracker.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -2658,7 +2658,7 @@
     <value>0, 0</value>
   </data>
   <data name="playModeSettingsTraveler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>755, 609</value>
   </data>
   <data name="playModeSettingsTraveler.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2667,7 +2667,7 @@
     <value>playModeSettingsTraveler</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTraveler.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTraveler.Parent" xml:space="preserve">
     <value>tbpgTraveler</value>
@@ -2679,7 +2679,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgTraveler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgTraveler.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -3088,7 +3088,7 @@
     <value>0, 0</value>
   </data>
   <data name="playModeSettingsTraveler2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>755, 609</value>
   </data>
   <data name="playModeSettingsTraveler2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3097,7 +3097,7 @@
     <value>playModeSettingsTraveler2</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTraveler2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.PlayModeSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;playModeSettingsTraveler2.Parent" xml:space="preserve">
     <value>tbpgTraveler2</value>
@@ -3109,7 +3109,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgTraveler2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>666, 610</value>
   </data>
   <data name="tbpgTraveler2.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -3140,7 +3140,7 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="tabCtrl_PlayMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="tabCtrl_PlayMode.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3160,9 +3160,6 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 22</value>
-  </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
@@ -3170,12 +3167,12 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PlayerDevicePlayModeSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

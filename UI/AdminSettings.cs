@@ -235,7 +235,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            txtDbServer.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
 

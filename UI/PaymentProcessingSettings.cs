@@ -357,5 +357,15 @@ namespace GTI.Modules.SystemSettings.UI
             cmbProcessor.Enabled = Action;
             panelMain.Enabled = Action;
         }
+
+        private void btnReset_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
+        }
+
+        private void panelMain_Scroll(object sender, ScrollEventArgs e)
+        {
+            Application.DoEvents();
+        }
     }
 }

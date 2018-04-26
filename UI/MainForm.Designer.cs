@@ -33,18 +33,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rngConfigurationSettings1 = new GTI.Modules.SystemSettings.UI.RNGConfigurationSettings();
-            this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
-            this.playerDevicePlayModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDevicePlayModeSettings();
-            this.playerDeviceAudioSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceAudioSettings();
-            this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
-            this.raffleSettings2 = new GTI.Modules.SystemSettings.UI.RaffleSettings();
-            this.receiptSettings2 = new GTI.Modules.SystemSettings.UI.ReceiptSettings();
-            this.securitySettings3 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
-            this.sessionSummarySettings5 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
-            this.sessionSummarySettings4 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
+            this.cbOperator = new System.Windows.Forms.ComboBox();
+            this.lblCurrentOperator = new System.Windows.Forms.Label();
             this.securitySettings2 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
             this.sessionSummarySettings3 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
             this.tenderSettings1 = new GTI.Modules.SystemSettings.UI.TenderSettings();
@@ -92,6 +82,15 @@ namespace GTI.Modules.SystemSettings.UI
             this.paymentProcessingSettings = new GTI.Modules.SystemSettings.UI.PaymentProcessingSettings();
             this.ledFlashboardSettings = new GTI.Modules.SystemSettings.UI.LEDFlashboardSettings();
             this.protocolAdapterSettings = new GTI.Modules.SystemSettings.UI.ProtocolAdapterSettings();
+            this.playerDeviceAudioSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceAudioSettings();
+            this.playerDevicePlayModeSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDevicePlayModeSettings();
+            this.playerDeviceSettings1 = new GTI.Modules.SystemSettings.UI.PlayerDeviceSettings();
+            this.kioskSalesSettings1 = new GTI.Modules.SystemSettings.UI.POSKioskSettings();
+            this.raffleSettings2 = new GTI.Modules.SystemSettings.UI.RaffleSettings();
+            this.receiptSettings2 = new GTI.Modules.SystemSettings.UI.ReceiptSettings();
+            this.securitySettings3 = new GTI.Modules.SystemSettings.UI.SecuritySettings();
+            this.sessionSummarySettings5 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
+            this.sessionSummarySettings4 = new GTI.Modules.SystemSettings.UI.SessionSummarySettings();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -114,21 +113,11 @@ namespace GTI.Modules.SystemSettings.UI
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.treeView1);
-            this.splitContainer1.Panel1.Controls.Add(this.comboBox1);
-            this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.Controls.Add(this.cbOperator);
+            this.splitContainer1.Panel1.Controls.Add(this.lblCurrentOperator);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.rngConfigurationSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.kioskSalesSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.playerDevicePlayModeSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceAudioSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
-            this.splitContainer1.Panel2.Controls.Add(this.raffleSettings2);
-            this.splitContainer1.Panel2.Controls.Add(this.receiptSettings2);
-            this.splitContainer1.Panel2.Controls.Add(this.securitySettings3);
-            this.splitContainer1.Panel2.Controls.Add(this.sessionSummarySettings5);
-            this.splitContainer1.Panel2.Controls.Add(this.sessionSummarySettings4);
             this.splitContainer1.Panel2.Controls.Add(this.securitySettings2);
             this.splitContainer1.Panel2.Controls.Add(this.sessionSummarySettings3);
             this.splitContainer1.Panel2.Controls.Add(this.tenderSettings1);
@@ -176,6 +165,15 @@ namespace GTI.Modules.SystemSettings.UI
             this.splitContainer1.Panel2.Controls.Add(this.paymentProcessingSettings);
             this.splitContainer1.Panel2.Controls.Add(this.ledFlashboardSettings);
             this.splitContainer1.Panel2.Controls.Add(this.protocolAdapterSettings);
+            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceAudioSettings1);
+            this.splitContainer1.Panel2.Controls.Add(this.playerDevicePlayModeSettings1);
+            this.splitContainer1.Panel2.Controls.Add(this.playerDeviceSettings1);
+            this.splitContainer1.Panel2.Controls.Add(this.kioskSalesSettings1);
+            this.splitContainer1.Panel2.Controls.Add(this.raffleSettings2);
+            this.splitContainer1.Panel2.Controls.Add(this.receiptSettings2);
+            this.splitContainer1.Panel2.Controls.Add(this.securitySettings3);
+            this.splitContainer1.Panel2.Controls.Add(this.sessionSummarySettings5);
+            this.splitContainer1.Panel2.Controls.Add(this.sessionSummarySettings4);
             // 
             // treeView1
             // 
@@ -183,7 +181,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.treeView1, "treeView1");
             this.treeView1.ImageList = this.imageList1;
             this.treeView1.Name = "treeView1";
-            this.treeView1.TabStop = false;
             this.treeView1.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeView1_BeforeSelect);
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
@@ -194,79 +191,20 @@ namespace GTI.Modules.SystemSettings.UI
             this.imageList1.Images.SetKeyName(0, "EliteMCP.ico");
             this.imageList1.Images.SetKeyName(1, "EliteMCP.ico");
             // 
-            // comboBox1
+            // cbOperator
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.TabStop = false;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cbOperator.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperator.FormattingEnabled = true;
+            resources.ApplyResources(this.cbOperator, "cbOperator");
+            this.cbOperator.Name = "cbOperator";
+            this.cbOperator.TabStop = false;
+            this.cbOperator.SelectedIndexChanged += new System.EventHandler(this.cbOperator_SelectedIndexChanged);
             // 
-            // label1
+            // lblCurrentOperator
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // rngConfigurationSettings1
-            // 
-            resources.ApplyResources(this.rngConfigurationSettings1, "rngConfigurationSettings1");
-            this.rngConfigurationSettings1.Name = "rngConfigurationSettings1";
-            // 
-            // kioskSalesSettings1
-            // 
-            resources.ApplyResources(this.kioskSalesSettings1, "kioskSalesSettings1");
-            this.kioskSalesSettings1.Name = "kioskSalesSettings1";
-            // 
-            // playerDevicePlayModeSettings1
-            // 
-            this.playerDevicePlayModeSettings1.BackColor = System.Drawing.SystemColors.Control;
-            this.playerDevicePlayModeSettings1.Devices = null;
-            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
-            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
-            this.playerDevicePlayModeSettings1.Tag = "PlayerDevice";
-            // 
-            // playerDeviceAudioSettings1
-            // 
-            this.playerDeviceAudioSettings1.BackColor = System.Drawing.SystemColors.Control;
-            this.playerDeviceAudioSettings1.Devices = null;
-            resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
-            this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
-            this.playerDeviceAudioSettings1.Tag = "PlayerDevice";
-            // 
-            // playerDeviceSettings1
-            // 
-            this.playerDeviceSettings1.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.playerDeviceSettings1.BackColor = System.Drawing.SystemColors.Control;
-            this.playerDeviceSettings1.Devices = null;
-            resources.ApplyResources(this.playerDeviceSettings1, "playerDeviceSettings1");
-            this.playerDeviceSettings1.Name = "playerDeviceSettings1";
-            this.playerDeviceSettings1.Tag = "PlayerDevice";
-            // 
-            // raffleSettings2
-            // 
-            resources.ApplyResources(this.raffleSettings2, "raffleSettings2");
-            this.raffleSettings2.Name = "raffleSettings2";
-            // 
-            // receiptSettings2
-            // 
-            resources.ApplyResources(this.receiptSettings2, "receiptSettings2");
-            this.receiptSettings2.Name = "receiptSettings2";
-            // 
-            // securitySettings3
-            // 
-            resources.ApplyResources(this.securitySettings3, "securitySettings3");
-            this.securitySettings3.Name = "securitySettings3";
-            // 
-            // sessionSummarySettings5
-            // 
-            resources.ApplyResources(this.sessionSummarySettings5, "sessionSummarySettings5");
-            this.sessionSummarySettings5.Name = "sessionSummarySettings5";
-            // 
-            // sessionSummarySettings4
-            // 
-            resources.ApplyResources(this.sessionSummarySettings4, "sessionSummarySettings4");
-            this.sessionSummarySettings4.Name = "sessionSummarySettings4";
+            resources.ApplyResources(this.lblCurrentOperator, "lblCurrentOperator");
+            this.lblCurrentOperator.Name = "lblCurrentOperator";
+            this.lblCurrentOperator.Click += new System.EventHandler(this.label1_Click);
             // 
             // securitySettings2
             // 
@@ -285,13 +223,13 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // thirdPartyInterfaceSettings3
             // 
-            this.thirdPartyInterfaceSettings3.BackColor = System.Drawing.Color.Transparent;
+            this.thirdPartyInterfaceSettings3.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.thirdPartyInterfaceSettings3, "thirdPartyInterfaceSettings3");
             this.thirdPartyInterfaceSettings3.Name = "thirdPartyInterfaceSettings3";
             // 
             // thirdPartyInterfaceSettings2
             // 
-            this.thirdPartyInterfaceSettings2.BackColor = System.Drawing.Color.Transparent;
+            this.thirdPartyInterfaceSettings2.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.thirdPartyInterfaceSettings2, "thirdPartyInterfaceSettings2");
             this.thirdPartyInterfaceSettings2.Name = "thirdPartyInterfaceSettings2";
             // 
@@ -523,6 +461,61 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.protocolAdapterSettings, "protocolAdapterSettings");
             this.protocolAdapterSettings.Name = "protocolAdapterSettings";
             // 
+            // playerDeviceAudioSettings1
+            // 
+            this.playerDeviceAudioSettings1.BackColor = System.Drawing.SystemColors.Control;
+            this.playerDeviceAudioSettings1.Devices = null;
+            resources.ApplyResources(this.playerDeviceAudioSettings1, "playerDeviceAudioSettings1");
+            this.playerDeviceAudioSettings1.Name = "playerDeviceAudioSettings1";
+            this.playerDeviceAudioSettings1.Tag = "PlayerDevice";
+            // 
+            // playerDevicePlayModeSettings1
+            // 
+            this.playerDevicePlayModeSettings1.BackColor = System.Drawing.SystemColors.Control;
+            this.playerDevicePlayModeSettings1.Devices = null;
+            resources.ApplyResources(this.playerDevicePlayModeSettings1, "playerDevicePlayModeSettings1");
+            this.playerDevicePlayModeSettings1.Name = "playerDevicePlayModeSettings1";
+            this.playerDevicePlayModeSettings1.Tag = "PlayerDevice";
+            // 
+            // playerDeviceSettings1
+            // 
+            this.playerDeviceSettings1.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.playerDeviceSettings1.BackColor = System.Drawing.SystemColors.Control;
+            this.playerDeviceSettings1.Devices = null;
+            resources.ApplyResources(this.playerDeviceSettings1, "playerDeviceSettings1");
+            this.playerDeviceSettings1.Name = "playerDeviceSettings1";
+            this.playerDeviceSettings1.Tag = "PlayerDevice";
+            // 
+            // kioskSalesSettings1
+            // 
+            resources.ApplyResources(this.kioskSalesSettings1, "kioskSalesSettings1");
+            this.kioskSalesSettings1.Name = "kioskSalesSettings1";
+            // 
+            // raffleSettings2
+            // 
+            resources.ApplyResources(this.raffleSettings2, "raffleSettings2");
+            this.raffleSettings2.Name = "raffleSettings2";
+            // 
+            // receiptSettings2
+            // 
+            resources.ApplyResources(this.receiptSettings2, "receiptSettings2");
+            this.receiptSettings2.Name = "receiptSettings2";
+            // 
+            // securitySettings3
+            // 
+            resources.ApplyResources(this.securitySettings3, "securitySettings3");
+            this.securitySettings3.Name = "securitySettings3";
+            // 
+            // sessionSummarySettings5
+            // 
+            resources.ApplyResources(this.sessionSummarySettings5, "sessionSummarySettings5");
+            this.sessionSummarySettings5.Name = "sessionSummarySettings5";
+            // 
+            // sessionSummarySettings4
+            // 
+            resources.ApplyResources(this.sessionSummarySettings4, "sessionSummarySettings4");
+            this.sessionSummarySettings4.Name = "sessionSummarySettings4";
+            // 
             // menuStrip
             // 
             this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(222)))), ((int)(((byte)(237)))));
@@ -531,7 +524,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.fileMenu,
             this.helpMenu});
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.TabStop = true;
             // 
             // fileMenu
             // 
@@ -567,12 +559,14 @@ namespace GTI.Modules.SystemSettings.UI
             this.Controls.Add(this.splitContainer1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
@@ -615,8 +609,8 @@ namespace GTI.Modules.SystemSettings.UI
         private AdminSettings adminSettings1;
         private OperatorManagement operatorManagement1;
         private OperatorSettings operatorSettings1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblCurrentOperator;
+        private System.Windows.Forms.ComboBox cbOperator;
         private DistributorFeesSettings distributorFeesSettings1;
         private InventorySettings inventorySettings1;
         private LicenseFileSettings licenseFileSettings1;
@@ -653,6 +647,5 @@ namespace GTI.Modules.SystemSettings.UI
         private PlayerDeviceSettings playerDeviceSettings1;
         private PlayerDeviceAudioSettings playerDeviceAudioSettings1;
         private PlayerDevicePlayModeSettings playerDevicePlayModeSettings1;
-        private RNGConfigurationSettings rngConfigurationSettings1;
 	}
 }

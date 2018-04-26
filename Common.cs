@@ -9,7 +9,6 @@ using GTI.Modules.Shared;
 using GTI.Modules.SystemSettings.Business;
 using GTI.Modules.SystemSettings.Properties;
 using GTI.Modules.SystemSettings.Data;
-using GTI.Modules.Shared.Business;
 
 namespace GTI.Modules.SystemSettings
 {
@@ -541,14 +540,14 @@ namespace GTI.Modules.SystemSettings
             }
         }
 
-        public static Machine[] GetMachineList(int nDeviceId)
+        public static SMachineData[] GetMachineList(int nDeviceId)
         {
-            List<Machine> machineList = new List<Machine>();
+            List<SMachineData> machineList = new List<SMachineData>();
 
             int nCount = m_GetMachineDataMessage.MachineDataList.Length;
             for (int i = 0; i < nCount; i++)
             {
-                if (m_GetMachineDataMessage.MachineDataList[i].DeviceType.Id == nDeviceId)
+                if (m_GetMachineDataMessage.MachineDataList[i].nDeviceId == nDeviceId)
                 {
                     machineList.Add(m_GetMachineDataMessage.MachineDataList[i]);
                 }
@@ -1208,7 +1207,7 @@ namespace GTI.Modules.SystemSettings
             int nCount = m_GetMachineDataMessage.MachineDataList.Length;
             for (int i = 0; i < nCount; i++)
             {
-                if (m_GetMachineDataMessage.MachineDataList[i].DeviceType.Id == device.Id)
+                if (m_GetMachineDataMessage.MachineDataList[i].nDeviceId == device.Id)
                 {
                     nDeviceCount++;
                 }

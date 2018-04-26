@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TenderSettings));
+            this.btnReset = new GTI.Controls.ImageButton();
             this.paymentSettings = new System.Windows.Forms.GroupBox();
             this.panelFlexTendering = new System.Windows.Forms.Panel();
             this.clbAllowedTenders = new System.Windows.Forms.CheckedListBox();
@@ -40,10 +41,22 @@
             this.clbActiveTenders = new System.Windows.Forms.CheckedListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new GTI.Controls.ImageButton();
-            this.btnReset = new GTI.Controls.ImageButton();
             this.paymentSettings.SuspendLayout();
             this.panelFlexTendering.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
+            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
+            this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // paymentSettings
             // 
@@ -130,18 +143,6 @@
             this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnReset, "btnReset");
-            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
-            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
-            this.btnReset.Name = "btnReset";
-            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // TenderSettings
             // 

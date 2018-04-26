@@ -38,6 +38,7 @@ namespace GTI.Modules.SystemSettings.UI
             lstTenderModes.Items.Add(Resources.TenderModeAllow);
             lstTenderModes.Items.Add(Resources.TenderModeWarn);
             lstTenderModes.Items.Add(Resources.TenderModePrevent);
+            lstTenderModes.Items.Add(Resources.TenderModeQuick);
 
             bool modified = m_bModified;
             lstTenderModes.SelectedIndex = 0;
@@ -687,7 +688,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            chkAllowNoSale.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
         private void chkEnablePaperUsage_CheckedChanged(object sender, EventArgs e)
@@ -708,6 +709,11 @@ namespace GTI.Modules.SystemSettings.UI
                 chkTwoMenuPagesPerPOSPage.Checked = false;
 
             OnModified(sender, e);
+        }
+
+        private void panel1_Scroll(object sender, ScrollEventArgs e)
+        {
+            Application.DoEvents();
         }
     } // end class
 } // end namespace

@@ -100,9 +100,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
             this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
             this.btnReset.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnReset.Location = new System.Drawing.Point(395, 590);
+            this.btnReset.Location = new System.Drawing.Point(422, 609);
             this.btnReset.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.Size = new System.Drawing.Size(121, 30);
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "&Reset";
@@ -118,9 +119,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
             this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
             this.btnSave.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSave.Location = new System.Drawing.Point(246, 590);
+            this.btnSave.Location = new System.Drawing.Point(218, 609);
             this.btnSave.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.Size = new System.Drawing.Size(121, 30);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "&Save";
@@ -138,7 +140,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox1.Controls.Add(companyNameLabel);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(87, 24);
+            this.groupBox1.Location = new System.Drawing.Point(86, 24);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(588, 258);
             this.groupBox1.TabIndex = 0;
@@ -211,7 +213,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.Location = new System.Drawing.Point(87, 303);
+            this.groupBox2.Location = new System.Drawing.Point(86, 303);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(588, 267);
             this.groupBox2.TabIndex = 1;
@@ -348,7 +350,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.Name = "CompanySettings";
-            this.Size = new System.Drawing.Size(762, 644);
+            this.Size = new System.Drawing.Size(760, 645);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

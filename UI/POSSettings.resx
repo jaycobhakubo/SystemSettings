@@ -232,7 +232,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 611</value>
+    <value>422, 609</value>
   </data>
   <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -963,13 +963,13 @@ from the receipt</value>
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="txtCashDrawerEjectCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 114</value>
+    <value>451, 121</value>
   </data>
   <data name="txtCashDrawerEjectCode.MaxLength" type="System.Int32, mscorlib">
     <value>200</value>
   </data>
   <data name="txtCashDrawerEjectCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 26</value>
+    <value>238, 26</value>
   </data>
   <data name="txtCashDrawerEjectCode.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1047,7 +1047,7 @@ from the receipt</value>
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 78</value>
+    <value>269, 85</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 22</value>
@@ -1080,7 +1080,7 @@ from the receipt</value>
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 114</value>
+    <value>252, 121</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 22</value>
@@ -1146,10 +1146,10 @@ from the receipt</value>
     <value>Print by package</value>
   </data>
   <data name="lstRegisterReceipt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 75</value>
+    <value>451, 82</value>
   </data>
   <data name="lstRegisterReceipt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 30</value>
+    <value>238, 30</value>
   </data>
   <data name="lstRegisterReceipt.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1206,7 +1206,7 @@ from the receipt</value>
     <value>NoControl</value>
   </data>
   <data name="minSaleLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 4</value>
+    <value>333, 11</value>
   </data>
   <data name="minSaleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 22</value>
@@ -1290,10 +1290,10 @@ from the receipt</value>
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="cboMinumSales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 1</value>
+    <value>451, 8</value>
   </data>
   <data name="cboMinumSales.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 30</value>
+    <value>238, 30</value>
   </data>
   <data name="cboMinumSales.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -1314,10 +1314,10 @@ from the receipt</value>
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="lstTenderModes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 37</value>
+    <value>451, 44</value>
   </data>
   <data name="lstTenderModes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 30</value>
+    <value>238, 30</value>
   </data>
   <data name="lstTenderModes.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1374,7 +1374,7 @@ from the receipt</value>
     <value>NoControl</value>
   </data>
   <data name="tenderModeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 40</value>
+    <value>337, 47</value>
   </data>
   <data name="tenderModeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 22</value>
@@ -1587,7 +1587,7 @@ from the receipt</value>
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 3</value>
+    <value>16, 3</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>728, 602</value>
@@ -1686,7 +1686,7 @@ from the receipt</value>
     <value>NoControl</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 611</value>
+    <value>218, 609</value>
   </data>
   <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -1722,12 +1722,12 @@ from the receipt</value>
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>POSSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.0.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

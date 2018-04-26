@@ -18,28 +18,72 @@ namespace GTI.Modules.SystemSettings.UI
 
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsControl));
-			this.SuspendLayout();
-			// 
-			// SettingsControl
-			// 
-
-            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            SetStyle(ControlStyles.UserPaint, true);
-            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            SetStyle(ControlStyles.DoubleBuffer, true);
-
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			//this.DoubleBuffered = true;
-			resources.ApplyResources(this, "$this");
-			this.Name = "SettingsControl";
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsControl));
+            this.SuspendLayout();
+            // 
+            // SettingsControl
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(179)))), ((int)(((byte)(213)))));
+            this.DoubleBuffered = true;
+            resources.ApplyResources(this, "$this");
+            this.Name = "SettingsControl";
+            this.ResumeLayout(false);
 
 		}
 
-     
+        public void LeaveLastTab(object sender, EventArgs e)
+        {
+            try
+            {
+                FindFirstControl(this.Controls).Item1.Focus();
+            }
+            catch (Exception)
+            {
+            }
+        }
 
-		// The following routines were added to avoid Parse() frzom throwing exceptions for null values
+        private Tuple<Control, System.Drawing.Point> FindFirstControl(ControlCollection ctrlCollection)
+        {
+            Control firstCtrl = null;
+            System.Drawing.Point firstCtrlOverallLocation = new System.Drawing.Point(10000, 10000);
+
+            foreach (Control ctrl in ctrlCollection)
+            {
+                if (ctrl as Label == null && ctrl.Enabled && ctrl.Visible && (ctrl as Panel != null || ctrl as GroupBox != null || ctrl.TabStop) && (firstCtrl == null || (PointToScreen(ctrl.Location).Y < PointToScreen(firstCtrlOverallLocation).Y || (PointToScreen(ctrl.Location).Y <= PointToScreen(firstCtrlOverallLocation).Y && PointToScreen(ctrl.Location).X <= PointToScreen(firstCtrlOverallLocation).X))))
+                {
+                    if (ctrl as GroupBox != null)
+                    {
+                        Control gc = FindFirstControl(((GroupBox)ctrl).Controls).Item1;
+
+                        if (gc != null)
+                        {
+                            firstCtrl = gc;
+                            firstCtrlOverallLocation = new System.Drawing.Point(ctrl.Location.X, ctrl.Location.Y);
+                        }
+                    }
+                    else if (ctrl as Panel != null)
+                    {
+                        Control pc = FindFirstControl(((Panel)ctrl).Controls).Item1;
+
+                        if (pc != null)
+                        {
+                            firstCtrl = pc;
+                            firstCtrlOverallLocation = new System.Drawing.Point(ctrl.Location.X, ctrl.Location.Y);
+                        }
+                    }
+                    else
+                    {
+                        firstCtrl = ctrl;
+                        firstCtrlOverallLocation = new System.Drawing.Point(ctrl.Location.X, ctrl.Location.Y);
+                    }
+                }
+            }
+
+            return new Tuple<Control, System.Drawing.Point>(firstCtrl, firstCtrlOverallLocation);
+        }
+
+		// The following routines were added to avoid Parse() from throwing exceptions for null values
 		public bool ParseBool(string s)
 		{
 			// Try to parse the value

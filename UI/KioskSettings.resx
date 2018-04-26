@@ -126,7 +126,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 590</value>
+    <value>422, 609</value>
   </data>
   <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -145,7 +145,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.259, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -190,7 +190,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 590</value>
+    <value>218, 609</value>
   </data>
   <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -208,7 +208,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.259, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -253,7 +253,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 17</value>
+    <value>44, 17</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 22</value>
@@ -334,7 +334,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="titleMessgeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 322</value>
+    <value>32, 322</value>
   </data>
   <data name="titleMessgeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>696, 155</value>
@@ -361,7 +361,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="numTimeout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 17</value>
+    <value>266, 17</value>
   </data>
   <data name="numTimeout.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 26</value>
@@ -589,7 +589,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="grpSwipe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 187</value>
+    <value>32, 187</value>
   </data>
   <data name="grpSwipe.Size" type="System.Drawing.Size, System.Drawing">
     <value>696, 120</value>
@@ -721,7 +721,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="grpBillCoinAcceptor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 491</value>
+    <value>32, 491</value>
   </data>
   <data name="grpBillCoinAcceptor.Size" type="System.Drawing.Size, System.Drawing">
     <value>696, 59</value>
@@ -745,7 +745,7 @@
     <value>6</value>
   </data>
   <data name="cboFont.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 55</value>
+    <value>266, 55</value>
   </data>
   <data name="cboFont.Size" type="System.Drawing.Size, System.Drawing">
     <value>298, 27</value>
@@ -775,7 +775,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 58</value>
+    <value>168, 58</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 22</value>
@@ -805,7 +805,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 92</value>
+    <value>137, 92</value>
   </data>
   <data name="btnColor.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -823,7 +823,7 @@
     <value>btnColor</value>
   </data>
   <data name="&gt;&gt;btnColor.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.259, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnColor.Parent" xml:space="preserve">
     <value>$this</value>
@@ -832,7 +832,7 @@
     <value>3</value>
   </data>
   <data name="txtColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 94</value>
+    <value>266, 94</value>
   </data>
   <data name="txtColor.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
@@ -862,7 +862,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnLineColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 133</value>
+    <value>137, 133</value>
   </data>
   <data name="btnLineColor.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -880,7 +880,7 @@
     <value>btnLineColor</value>
   </data>
   <data name="&gt;&gt;btnLineColor.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.259, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnLineColor.Parent" xml:space="preserve">
     <value>$this</value>
@@ -889,7 +889,7 @@
     <value>1</value>
   </data>
   <data name="txtLineColor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 135</value>
+    <value>266, 135</value>
   </data>
   <data name="txtLineColor.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
@@ -919,7 +919,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="&gt;&gt;colorDialog1.Name" xml:space="preserve">
     <value>colorDialog1</value>
@@ -931,6 +931,6 @@
     <value>KioskSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.10.0.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

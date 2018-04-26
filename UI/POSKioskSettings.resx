@@ -118,172 +118,811 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 10pt, style=Bold</value>
+  <data name="nudVideoVolume.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 317</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 606</value>
-  </data>
-  <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 30</value>
+  <data name="nudVideoVolume.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 26</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="nudVideoVolume.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="btnReset.Text" xml:space="preserve">
-    <value>&amp;Reset</value>
+  <data name="&gt;&gt;nudVideoVolume.Name" xml:space="preserve">
+    <value>nudVideoVolume</value>
   </data>
-  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
-    <value>btnReset</value>
+  <data name="&gt;&gt;nudVideoVolume.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.868, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
-  </data>
-  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 10pt, style=Bold</value>
-  </data>
-  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 606</value>
-  </data>
-  <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 30</value>
-  </data>
-  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>&amp;Save</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
-    <value>btnSave</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.868, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblTicketPrinterName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTicketPrinterName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="lblTicketPrinterName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTicketPrinterName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 238</value>
-  </data>
-  <data name="lblTicketPrinterName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
-  </data>
-  <data name="lblTicketPrinterName.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="lblTicketPrinterName.Text" xml:space="preserve">
-    <value>Bill Acceptor Com Port:</value>
-  </data>
-  <data name="&gt;&gt;lblTicketPrinterName.Name" xml:space="preserve">
-    <value>lblTicketPrinterName</value>
-  </data>
-  <data name="&gt;&gt;lblTicketPrinterName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTicketPrinterName.Parent" xml:space="preserve">
+  <data name="&gt;&gt;nudVideoVolume.Parent" xml:space="preserve">
     <value>grpBxKioskSales</value>
   </data>
-  <data name="&gt;&gt;lblTicketPrinterName.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="chkbxAutomaticApplyCouponToSales.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkbxAutomaticApplyCouponToSales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkbxAutomaticApplyCouponToSales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 25</value>
-  </data>
-  <data name="chkbxAutomaticApplyCouponToSales.Size" type="System.Drawing.Size, System.Drawing">
-    <value>442, 26</value>
-  </data>
-  <data name="chkbxAutomaticApplyCouponToSales.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;nudVideoVolume.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="chkbxAutomaticApplyCouponToSales.Text" xml:space="preserve">
-    <value>Automatically apply coupons to sales on simple kiosks.</value>
+  <data name="lblVideoVolume.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 319</value>
   </data>
-  <data name="chkbxAutomaticApplyCouponToSales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="lblVideoVolume.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 25</value>
   </data>
-  <data name="&gt;&gt;chkbxAutomaticApplyCouponToSales.Name" xml:space="preserve">
-    <value>chkbxAutomaticApplyCouponToSales</value>
+  <data name="lblVideoVolume.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;chkbxAutomaticApplyCouponToSales.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblVideoVolume.Text" xml:space="preserve">
+    <value>Video volume:</value>
   </data>
-  <data name="&gt;&gt;chkbxAutomaticApplyCouponToSales.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblVideoVolume.Name" xml:space="preserve">
+    <value>lblVideoVolume</value>
+  </data>
+  <data name="&gt;&gt;lblVideoVolume.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoVolume.Parent" xml:space="preserve">
     <value>grpBxKioskSales</value>
   </data>
-  <data name="&gt;&gt;chkbxAutomaticApplyCouponToSales.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;lblVideoVolume.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.AutoSize" type="System.Boolean, mscorlib">
+  <data name="chkbxUseKeyClickSounds.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkbxUseKeyClickSounds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 102</value>
+  <data name="chkbxUseKeyClickSounds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 318</value>
   </data>
-  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 26</value>
+  <data name="chkbxUseKeyClickSounds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 26</value>
   </data>
-  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="chkbxUseKeyClickSounds.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Text" xml:space="preserve">
-    <value>Allow use of a simple kiosk without a player card.</value>
+  <data name="chkbxUseKeyClickSounds.Text" xml:space="preserve">
+    <value>Use key click sounds.</value>
   </data>
-  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="chkbxUseKeyClickSounds.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Name" xml:space="preserve">
-    <value>chkbxAllowUseOfSimpleKioskWithoutPlayerCard</value>
+  <data name="&gt;&gt;chkbxUseKeyClickSounds.Name" xml:space="preserve">
+    <value>chkbxUseKeyClickSounds</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Type" xml:space="preserve">
+  <data name="&gt;&gt;chkbxUseKeyClickSounds.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkbxUseKeyClickSounds.Parent" xml:space="preserve">
     <value>grpBxKioskSales</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowUseOfSimpleKioskWithoutPlayerCard.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;chkbxUseKeyClickSounds.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkbxAllowCBBSheets.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxAllowCBBSheets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 286</value>
+  </data>
+  <data name="chkbxAllowCBBSheets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>471, 26</value>
+  </data>
+  <data name="chkbxAllowCBBSheets.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="chkbxAllowCBBSheets.Text" xml:space="preserve">
+    <value>Allow kiosks to print CBB Play-It-Sheets from main screen.</value>
+  </data>
+  <data name="chkbxAllowCBBSheets.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowCBBSheets.Name" xml:space="preserve">
+    <value>chkbxAllowCBBSheets</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowCBBSheets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowCBBSheets.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowCBBSheets.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblChangeMethod.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblChangeMethod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 367</value>
+  </data>
+  <data name="lblChangeMethod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 30</value>
+  </data>
+  <data name="lblChangeMethod.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
+  </data>
+  <data name="lblChangeMethod.Text" xml:space="preserve">
+    <value>Change dispensing method:</value>
+  </data>
+  <data name="&gt;&gt;lblChangeMethod.Name" xml:space="preserve">
+    <value>lblChangeMethod</value>
+  </data>
+  <data name="&gt;&gt;lblChangeMethod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblChangeMethod.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;lblChangeMethod.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboChangeMethod.Items" xml:space="preserve">
+    <value>Normal (cash or ticket) - Default if no B3</value>
+  </data>
+  <data name="comboChangeMethod.Items1" xml:space="preserve">
+    <value>B3 Credit </value>
+  </data>
+  <data name="comboChangeMethod.Items2" xml:space="preserve">
+    <value>Normal or B3 Credit (asks user)</value>
+  </data>
+  <data name="comboChangeMethod.Items3" xml:space="preserve">
+    <value>B3 Credit with add on (enters a B3 sale to give change)</value>
+  </data>
+  <data name="comboChangeMethod.Items4" xml:space="preserve">
+    <value>Normal or B3 Credit with add on (asks user)</value>
+  </data>
+  <data name="comboChangeMethod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 364</value>
+  </data>
+  <data name="comboChangeMethod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 30</value>
+  </data>
+  <data name="comboChangeMethod.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;comboChangeMethod.Name" xml:space="preserve">
+    <value>comboChangeMethod</value>
+  </data>
+  <data name="&gt;&gt;comboChangeMethod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboChangeMethod.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;comboChangeMethod.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtbxGuardianAddressAndPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 398</value>
+  </data>
+  <data name="txtbxGuardianAddressAndPort.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="txtbxGuardianAddressAndPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 26</value>
+  </data>
+  <data name="txtbxGuardianAddressAndPort.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtbxGuardianAddressAndPort.Name" xml:space="preserve">
+    <value>txtbxGuardianAddressAndPort</value>
+  </data>
+  <data name="&gt;&gt;txtbxGuardianAddressAndPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtbxGuardianAddressAndPort.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;txtbxGuardianAddressAndPort.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chkbxOnlySellFromButtons.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxOnlySellFromButtons.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxOnlySellFromButtons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 259</value>
+  </data>
+  <data name="chkbxOnlySellFromButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 26</value>
+  </data>
+  <data name="chkbxOnlySellFromButtons.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chkbxOnlySellFromButtons.Text" xml:space="preserve">
+    <value>Kiosks can only sell from their buttons.</value>
+  </data>
+  <data name="chkbxOnlySellFromButtons.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkbxOnlySellFromButtons.Name" xml:space="preserve">
+    <value>chkbxOnlySellFromButtons</value>
+  </data>
+  <data name="&gt;&gt;chkbxOnlySellFromButtons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxOnlySellFromButtons.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;chkbxOnlySellFromButtons.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkbxAllowB3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxAllowB3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxAllowB3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 207</value>
+  </data>
+  <data name="chkbxAllowB3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>270, 26</value>
+  </data>
+  <data name="chkbxAllowB3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkbxAllowB3.Text" xml:space="preserve">
+    <value>Allow B3 sales on non-B3 kiosk.</value>
+  </data>
+  <data name="chkbxAllowB3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowB3.Name" xml:space="preserve">
+    <value>chkbxAllowB3</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowB3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowB3.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowB3.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkbxAllowScanningProducts.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxAllowScanningProducts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxAllowScanningProducts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 155</value>
+  </data>
+  <data name="chkbxAllowScanningProducts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>462, 26</value>
+  </data>
+  <data name="chkbxAllowScanningProducts.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="chkbxAllowScanningProducts.Text" xml:space="preserve">
+    <value>Allow purchasing products by scan code at a basic kiosk.</value>
+  </data>
+  <data name="chkbxAllowScanningProducts.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowScanningProducts.Name" xml:space="preserve">
+    <value>chkbxAllowScanningProducts</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowScanningProducts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowScanningProducts.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowScanningProducts.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="chkbxAllowCreditDebitOnKiosk.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxAllowCreditDebitOnKiosk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxAllowCreditDebitOnKiosk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 233</value>
+  </data>
+  <data name="chkbxAllowCreditDebitOnKiosk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 26</value>
+  </data>
+  <data name="chkbxAllowCreditDebitOnKiosk.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chkbxAllowCreditDebitOnKiosk.Text" xml:space="preserve">
+    <value>Allow credit/debit cards.</value>
+  </data>
+  <data name="chkbxAllowCreditDebitOnKiosk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowCreditDebitOnKiosk.Name" xml:space="preserve">
+    <value>chkbxAllowCreditDebitOnKiosk</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowCreditDebitOnKiosk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowCreditDebitOnKiosk.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowCreditDebitOnKiosk.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="chkbxIncludeUseLastPurchaseButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxIncludeUseLastPurchaseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxIncludeUseLastPurchaseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 77</value>
+  </data>
+  <data name="chkbxIncludeUseLastPurchaseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>451, 26</value>
+  </data>
+  <data name="chkbxIncludeUseLastPurchaseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkbxIncludeUseLastPurchaseButton.Text" xml:space="preserve">
+    <value>Include the USE LAST PURCHASE button on basic kiosks.</value>
+  </data>
+  <data name="chkbxIncludeUseLastPurchaseButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkbxIncludeUseLastPurchaseButton.Name" xml:space="preserve">
+    <value>chkbxIncludeUseLastPurchaseButton</value>
+  </data>
+  <data name="&gt;&gt;chkbxIncludeUseLastPurchaseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxIncludeUseLastPurchaseButton.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;chkbxIncludeUseLastPurchaseButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="chkbxUseSimplePaymentForAdvancedKiosk.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxUseSimplePaymentForAdvancedKiosk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxUseSimplePaymentForAdvancedKiosk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 181</value>
+  </data>
+  <data name="chkbxUseSimplePaymentForAdvancedKiosk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 26</value>
+  </data>
+  <data name="chkbxUseSimplePaymentForAdvancedKiosk.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkbxUseSimplePaymentForAdvancedKiosk.Text" xml:space="preserve">
+    <value>Use simple payment form for advanced kiosk.</value>
+  </data>
+  <data name="chkbxUseSimplePaymentForAdvancedKiosk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkbxUseSimplePaymentForAdvancedKiosk.Name" xml:space="preserve">
+    <value>chkbxUseSimplePaymentForAdvancedKiosk</value>
+  </data>
+  <data name="&gt;&gt;chkbxUseSimplePaymentForAdvancedKiosk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxUseSimplePaymentForAdvancedKiosk.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;chkbxUseSimplePaymentForAdvancedKiosk.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 22</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>(in seconds)</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>m_grpTimeouts</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="m_lblTimeout.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_lblTimeout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_lblTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 71</value>
+  </data>
+  <data name="m_lblTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 22</value>
+  </data>
+  <data name="m_lblTimeout.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="m_lblTimeout.Text" xml:space="preserve">
+    <value>Main:</value>
+  </data>
+  <data name="&gt;&gt;m_lblTimeout.Name" xml:space="preserve">
+    <value>m_lblTimeout</value>
+  </data>
+  <data name="&gt;&gt;m_lblTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_lblTimeout.Parent" xml:space="preserve">
+    <value>m_grpTimeouts</value>
+  </data>
+  <data name="&gt;&gt;m_lblTimeout.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="m_nudMessageTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 146</value>
+  </data>
+  <data name="m_nudMessageTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 26</value>
+  </data>
+  <data name="m_nudMessageTimeout.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="m_nudMessageTimeout.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;m_nudMessageTimeout.Name" xml:space="preserve">
+    <value>m_nudMessageTimeout</value>
+  </data>
+  <data name="&gt;&gt;m_nudMessageTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_nudMessageTimeout.Parent" xml:space="preserve">
+    <value>m_grpTimeouts</value>
+  </data>
+  <data name="&gt;&gt;m_nudMessageTimeout.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="m_nudTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 69</value>
+  </data>
+  <data name="m_nudTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 26</value>
+  </data>
+  <data name="m_nudTimeout.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="m_nudTimeout.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;m_nudTimeout.Name" xml:space="preserve">
+    <value>m_nudTimeout</value>
+  </data>
+  <data name="&gt;&gt;m_nudTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_nudTimeout.Parent" xml:space="preserve">
+    <value>m_grpTimeouts</value>
+  </data>
+  <data name="&gt;&gt;m_nudTimeout.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="m_messageTimeout.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_messageTimeout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_messageTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 148</value>
+  </data>
+  <data name="m_messageTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="m_messageTimeout.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="m_messageTimeout.Text" xml:space="preserve">
+    <value>Message boxes:</value>
+  </data>
+  <data name="&gt;&gt;m_messageTimeout.Name" xml:space="preserve">
+    <value>m_messageTimeout</value>
+  </data>
+  <data name="&gt;&gt;m_messageTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_messageTimeout.Parent" xml:space="preserve">
+    <value>m_grpTimeouts</value>
+  </data>
+  <data name="&gt;&gt;m_messageTimeout.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="m_nudShortTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 108</value>
+  </data>
+  <data name="m_nudShortTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 26</value>
+  </data>
+  <data name="m_nudShortTimeout.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="m_nudShortTimeout.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;m_nudShortTimeout.Name" xml:space="preserve">
+    <value>m_nudShortTimeout</value>
+  </data>
+  <data name="&gt;&gt;m_nudShortTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_nudShortTimeout.Parent" xml:space="preserve">
+    <value>m_grpTimeouts</value>
+  </data>
+  <data name="&gt;&gt;m_nudShortTimeout.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="m_lblShortInactivityTimeout.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_lblShortInactivityTimeout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_lblShortInactivityTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 110</value>
+  </data>
+  <data name="m_lblShortInactivityTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 22</value>
+  </data>
+  <data name="m_lblShortInactivityTimeout.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="m_lblShortInactivityTimeout.Text" xml:space="preserve">
+    <value>Simple tasks:</value>
+  </data>
+  <data name="&gt;&gt;m_lblShortInactivityTimeout.Name" xml:space="preserve">
+    <value>m_lblShortInactivityTimeout</value>
+  </data>
+  <data name="&gt;&gt;m_lblShortInactivityTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_lblShortInactivityTimeout.Parent" xml:space="preserve">
+    <value>m_grpTimeouts</value>
+  </data>
+  <data name="&gt;&gt;m_lblShortInactivityTimeout.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="m_grpTimeouts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>506, 25</value>
+  </data>
+  <data name="m_grpTimeouts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 196</value>
+  </data>
+  <data name="m_grpTimeouts.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="m_grpTimeouts.Text" xml:space="preserve">
+    <value>Inactivity Timeouts</value>
+  </data>
+  <data name="&gt;&gt;m_grpTimeouts.Name" xml:space="preserve">
+    <value>m_grpTimeouts</value>
+  </data>
+  <data name="&gt;&gt;m_grpTimeouts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_grpTimeouts.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;m_grpTimeouts.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="m_closedText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 512</value>
+  </data>
+  <data name="m_closedText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_closedText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 56</value>
+  </data>
+  <data name="m_closedText.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;m_closedText.Name" xml:space="preserve">
+    <value>m_closedText</value>
+  </data>
+  <data name="&gt;&gt;m_closedText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_closedText.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;m_closedText.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="m_IdleText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 458</value>
+  </data>
+  <data name="m_IdleText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_IdleText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>444, 50</value>
+  </data>
+  <data name="m_IdleText.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;m_IdleText.Name" xml:space="preserve">
+    <value>m_IdleText</value>
+  </data>
+  <data name="&gt;&gt;m_IdleText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_IdleText.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;m_IdleText.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="m_lblClosedText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_lblClosedText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_lblClosedText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 515</value>
+  </data>
+  <data name="m_lblClosedText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 22</value>
+  </data>
+  <data name="m_lblClosedText.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="m_lblClosedText.Text" xml:space="preserve">
+    <value>Text above video when kiosk is closed:</value>
+  </data>
+  <data name="&gt;&gt;m_lblClosedText.Name" xml:space="preserve">
+    <value>m_lblClosedText</value>
+  </data>
+  <data name="&gt;&gt;m_lblClosedText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_lblClosedText.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;m_lblClosedText.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="m_lblAttractText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_lblAttractText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_lblAttractText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 461</value>
+  </data>
+  <data name="m_lblAttractText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="m_lblAttractText.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="m_lblAttractText.Text" xml:space="preserve">
+    <value>Text above inactivity video:</value>
+  </data>
+  <data name="&gt;&gt;m_lblAttractText.Name" xml:space="preserve">
+    <value>m_lblAttractText</value>
+  </data>
+  <data name="&gt;&gt;m_lblAttractText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_lblAttractText.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;m_lblAttractText.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txtbxKioskTicketPrinterName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="txtbxKioskTicketPrinterName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 428</value>
+  </data>
+  <data name="txtbxKioskTicketPrinterName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 26</value>
+  </data>
+  <data name="txtbxKioskTicketPrinterName.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txtbxKioskTicketPrinterName.Name" xml:space="preserve">
+    <value>txtbxKioskTicketPrinterName</value>
+  </data>
+  <data name="&gt;&gt;txtbxKioskTicketPrinterName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtbxKioskTicketPrinterName.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;txtbxKioskTicketPrinterName.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 431</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 22</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Ticket Printer Name:</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="chkbxAllowBarcodedPaperSold.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkbxAllowBarcodedPaperSold.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkbxAllowBarcodedPaperSold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 129</value>
+  </data>
+  <data name="chkbxAllowBarcodedPaperSold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>404, 26</value>
+  </data>
+  <data name="chkbxAllowBarcodedPaperSold.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkbxAllowBarcodedPaperSold.Text" xml:space="preserve">
+    <value>Allow barcoded paper to be sold at a basic kiosk.</value>
+  </data>
+  <data name="chkbxAllowBarcodedPaperSold.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Name" xml:space="preserve">
+    <value>chkbxAllowBarcodedPaperSold</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Parent" xml:space="preserve">
+    <value>grpBxKioskSales</value>
+  </data>
+  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="chkbxIncludeCouponsButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -292,7 +931,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkbxIncludeCouponsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 52</value>
+    <value>29, 51</value>
   </data>
   <data name="chkbxIncludeCouponsButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>399, 26</value>
@@ -316,541 +955,118 @@
     <value>grpBxKioskSales</value>
   </data>
   <data name="&gt;&gt;chkbxIncludeCouponsButton.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>21</value>
   </data>
-  <data name="chkbxAllowBarcodedPaperSold.AutoSize" type="System.Boolean, mscorlib">
+  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="chkbxAllowBarcodedPaperSold.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="chkbxAllowBarcodedPaperSold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 127</value>
+  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 103</value>
   </data>
-  <data name="chkbxAllowBarcodedPaperSold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 26</value>
+  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 26</value>
   </data>
-  <data name="chkbxAllowBarcodedPaperSold.TabIndex" type="System.Int32, mscorlib">
+  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="chkbxAllowBarcodedPaperSold.Text" xml:space="preserve">
-    <value>Allow barcoded paper to be sold at a simple kiosk.</value>
+  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Text" xml:space="preserve">
+    <value>Allow use of a basic kiosk without a player card.</value>
   </data>
-  <data name="chkbxAllowBarcodedPaperSold.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="chkbxAllowUseOfSimpleKioskWithoutPlayerCard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Name" xml:space="preserve">
-    <value>chkbxAllowBarcodedPaperSold</value>
+  <data name="&gt;&gt;chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Name" xml:space="preserve">
+    <value>chkbxAllowUseOfSimpleKioskWithoutPlayerCard</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Type" xml:space="preserve">
+  <data name="&gt;&gt;chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Parent" xml:space="preserve">
     <value>grpBxKioskSales</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowBarcodedPaperSold.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;chkbxAllowUseOfSimpleKioskWithoutPlayerCard.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="chkbxAutomaticApplyCouponToSales.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="chkbxAutomaticApplyCouponToSales.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 279</value>
+  <data name="chkbxAutomaticApplyCouponToSales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 25</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 22</value>
+  <data name="chkbxAutomaticApplyCouponToSales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>433, 26</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="chkbxAutomaticApplyCouponToSales.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Ticket Printer Name:</value>
+  <data name="chkbxAutomaticApplyCouponToSales.Text" xml:space="preserve">
+    <value>Automatically apply coupons to sales on basic kiosks.</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="chkbxAutomaticApplyCouponToSales.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;chkbxAutomaticApplyCouponToSales.Name" xml:space="preserve">
+    <value>chkbxAutomaticApplyCouponToSales</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkbxAutomaticApplyCouponToSales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxAutomaticApplyCouponToSales.Parent" xml:space="preserve">
     <value>grpBxKioskSales</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;chkbxAutomaticApplyCouponToSales.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
-  <data name="cboKioskBillAcceptorComPort.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblTicketPrinterName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTicketPrinterName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <data name="cboKioskBillAcceptorComPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 235</value>
-  </data>
-  <data name="cboKioskBillAcceptorComPort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 30</value>
-  </data>
-  <data name="cboKioskBillAcceptorComPort.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;cboKioskBillAcceptorComPort.Name" xml:space="preserve">
-    <value>cboKioskBillAcceptorComPort</value>
-  </data>
-  <data name="&gt;&gt;cboKioskBillAcceptorComPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cboKioskBillAcceptorComPort.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;cboKioskBillAcceptorComPort.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="chkbxAllowScanningProducts.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkbxAllowScanningProducts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblTicketPrinterName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="chkbxAllowScanningProducts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 152</value>
+  <data name="lblTicketPrinterName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 401</value>
   </data>
-  <data name="chkbxAllowScanningProducts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>471, 26</value>
+  <data name="lblTicketPrinterName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
   </data>
-  <data name="chkbxAllowScanningProducts.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblTicketPrinterName.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="chkbxAllowScanningProducts.Text" xml:space="preserve">
-    <value>Allow purchasing products by scan code at a simple kiosk.</value>
+  <data name="lblTicketPrinterName.Text" xml:space="preserve">
+    <value>Guardian IP:Port:</value>
   </data>
-  <data name="chkbxAllowScanningProducts.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;lblTicketPrinterName.Name" xml:space="preserve">
+    <value>lblTicketPrinterName</value>
   </data>
-  <data name="&gt;&gt;chkbxAllowScanningProducts.Name" xml:space="preserve">
-    <value>chkbxAllowScanningProducts</value>
-  </data>
-  <data name="&gt;&gt;chkbxAllowScanningProducts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkbxAllowScanningProducts.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;chkbxAllowScanningProducts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="chkbxAllowCreditDebitOnKiosk.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkbxAllowCreditDebitOnKiosk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkbxAllowCreditDebitOnKiosk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 200</value>
-  </data>
-  <data name="chkbxAllowCreditDebitOnKiosk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 26</value>
-  </data>
-  <data name="chkbxAllowCreditDebitOnKiosk.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="chkbxAllowCreditDebitOnKiosk.Text" xml:space="preserve">
-    <value>Allow credit/debit cards.</value>
-  </data>
-  <data name="chkbxAllowCreditDebitOnKiosk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkbxAllowCreditDebitOnKiosk.Name" xml:space="preserve">
-    <value>chkbxAllowCreditDebitOnKiosk</value>
-  </data>
-  <data name="&gt;&gt;chkbxAllowCreditDebitOnKiosk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkbxAllowCreditDebitOnKiosk.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;chkbxAllowCreditDebitOnKiosk.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="chkbxIncludeUseLastPurchaseButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkbxIncludeUseLastPurchaseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkbxIncludeUseLastPurchaseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 77</value>
-  </data>
-  <data name="chkbxIncludeUseLastPurchaseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 26</value>
-  </data>
-  <data name="chkbxIncludeUseLastPurchaseButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="chkbxIncludeUseLastPurchaseButton.Text" xml:space="preserve">
-    <value>Include the USE LAST PURCHASE button on simple kiosks.</value>
-  </data>
-  <data name="chkbxIncludeUseLastPurchaseButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkbxIncludeUseLastPurchaseButton.Name" xml:space="preserve">
-    <value>chkbxIncludeUseLastPurchaseButton</value>
-  </data>
-  <data name="&gt;&gt;chkbxIncludeUseLastPurchaseButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkbxIncludeUseLastPurchaseButton.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;chkbxIncludeUseLastPurchaseButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chkbxUseSimplePaymentForAdvancedKiosk.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkbxUseSimplePaymentForAdvancedKiosk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkbxUseSimplePaymentForAdvancedKiosk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 175</value>
-  </data>
-  <data name="chkbxUseSimplePaymentForAdvancedKiosk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>375, 26</value>
-  </data>
-  <data name="chkbxUseSimplePaymentForAdvancedKiosk.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chkbxUseSimplePaymentForAdvancedKiosk.Text" xml:space="preserve">
-    <value>Use simple payment form for advanced kiosk.</value>
-  </data>
-  <data name="chkbxUseSimplePaymentForAdvancedKiosk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;chkbxUseSimplePaymentForAdvancedKiosk.Name" xml:space="preserve">
-    <value>chkbxUseSimplePaymentForAdvancedKiosk</value>
-  </data>
-  <data name="&gt;&gt;chkbxUseSimplePaymentForAdvancedKiosk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkbxUseSimplePaymentForAdvancedKiosk.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;chkbxUseSimplePaymentForAdvancedKiosk.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="m_lblTimeout.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="m_lblTimeout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 32</value>
-  </data>
-  <data name="m_lblTimeout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 22</value>
-  </data>
-  <data name="m_lblTimeout.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="m_lblTimeout.Text" xml:space="preserve">
-    <value>Main:</value>
-  </data>
-  <data name="&gt;&gt;m_lblTimeout.Name" xml:space="preserve">
-    <value>m_lblTimeout</value>
-  </data>
-  <data name="&gt;&gt;m_lblTimeout.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblTicketPrinterName.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;m_lblTimeout.Parent" xml:space="preserve">
-    <value>m_grpTimeouts</value>
-  </data>
-  <data name="&gt;&gt;m_lblTimeout.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="m_nudMessageTimeout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 107</value>
-  </data>
-  <data name="m_nudMessageTimeout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 26</value>
-  </data>
-  <data name="m_nudMessageTimeout.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="m_nudMessageTimeout.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;m_nudMessageTimeout.Name" xml:space="preserve">
-    <value>m_nudMessageTimeout</value>
-  </data>
-  <data name="&gt;&gt;m_nudMessageTimeout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_nudMessageTimeout.Parent" xml:space="preserve">
-    <value>m_grpTimeouts</value>
-  </data>
-  <data name="&gt;&gt;m_nudMessageTimeout.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="m_nudTimeout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 30</value>
-  </data>
-  <data name="m_nudTimeout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 26</value>
-  </data>
-  <data name="m_nudTimeout.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="m_nudTimeout.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;m_nudTimeout.Name" xml:space="preserve">
-    <value>m_nudTimeout</value>
-  </data>
-  <data name="&gt;&gt;m_nudTimeout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_nudTimeout.Parent" xml:space="preserve">
-    <value>m_grpTimeouts</value>
-  </data>
-  <data name="&gt;&gt;m_nudTimeout.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="m_messageTimeout.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="m_messageTimeout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 109</value>
-  </data>
-  <data name="m_messageTimeout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 22</value>
-  </data>
-  <data name="m_messageTimeout.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="m_messageTimeout.Text" xml:space="preserve">
-    <value>Message boxes:</value>
-  </data>
-  <data name="&gt;&gt;m_messageTimeout.Name" xml:space="preserve">
-    <value>m_messageTimeout</value>
-  </data>
-  <data name="&gt;&gt;m_messageTimeout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_messageTimeout.Parent" xml:space="preserve">
-    <value>m_grpTimeouts</value>
-  </data>
-  <data name="&gt;&gt;m_messageTimeout.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="m_nudShortTimeout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 69</value>
-  </data>
-  <data name="m_nudShortTimeout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 26</value>
-  </data>
-  <data name="m_nudShortTimeout.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="m_nudShortTimeout.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;m_nudShortTimeout.Name" xml:space="preserve">
-    <value>m_nudShortTimeout</value>
-  </data>
-  <data name="&gt;&gt;m_nudShortTimeout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_nudShortTimeout.Parent" xml:space="preserve">
-    <value>m_grpTimeouts</value>
-  </data>
-  <data name="&gt;&gt;m_nudShortTimeout.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="m_lblShortInactivityTimeout.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="m_lblShortInactivityTimeout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 71</value>
-  </data>
-  <data name="m_lblShortInactivityTimeout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 22</value>
-  </data>
-  <data name="m_lblShortInactivityTimeout.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="m_lblShortInactivityTimeout.Text" xml:space="preserve">
-    <value>Simple tasks:</value>
-  </data>
-  <data name="&gt;&gt;m_lblShortInactivityTimeout.Name" xml:space="preserve">
-    <value>m_lblShortInactivityTimeout</value>
-  </data>
-  <data name="&gt;&gt;m_lblShortInactivityTimeout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_lblShortInactivityTimeout.Parent" xml:space="preserve">
-    <value>m_grpTimeouts</value>
-  </data>
-  <data name="&gt;&gt;m_lblShortInactivityTimeout.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="m_grpTimeouts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 422</value>
-  </data>
-  <data name="m_grpTimeouts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 145</value>
-  </data>
-  <data name="m_grpTimeouts.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="m_grpTimeouts.Text" xml:space="preserve">
-    <value>Inactivity Timeouts in Seconds</value>
-  </data>
-  <data name="&gt;&gt;m_grpTimeouts.Name" xml:space="preserve">
-    <value>m_grpTimeouts</value>
-  </data>
-  <data name="&gt;&gt;m_grpTimeouts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_grpTimeouts.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblTicketPrinterName.Parent" xml:space="preserve">
     <value>grpBxKioskSales</value>
   </data>
-  <data name="&gt;&gt;m_grpTimeouts.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="m_closedText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 375</value>
-  </data>
-  <data name="m_closedText.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="m_closedText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 56</value>
-  </data>
-  <data name="m_closedText.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;m_closedText.Name" xml:space="preserve">
-    <value>m_closedText</value>
-  </data>
-  <data name="&gt;&gt;m_closedText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_closedText.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;m_closedText.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="m_IdleText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 313</value>
-  </data>
-  <data name="m_IdleText.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="m_IdleText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>428, 50</value>
-  </data>
-  <data name="m_IdleText.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;m_IdleText.Name" xml:space="preserve">
-    <value>m_IdleText</value>
-  </data>
-  <data name="&gt;&gt;m_IdleText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_IdleText.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;m_IdleText.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="m_lblClosedText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="m_lblClosedText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 378</value>
-  </data>
-  <data name="m_lblClosedText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 22</value>
-  </data>
-  <data name="m_lblClosedText.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="m_lblClosedText.Text" xml:space="preserve">
-    <value>Text above video when kiosk is closed:</value>
-  </data>
-  <data name="&gt;&gt;m_lblClosedText.Name" xml:space="preserve">
-    <value>m_lblClosedText</value>
-  </data>
-  <data name="&gt;&gt;m_lblClosedText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_lblClosedText.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;m_lblClosedText.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="m_lblAttractText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="m_lblAttractText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 316</value>
-  </data>
-  <data name="m_lblAttractText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 22</value>
-  </data>
-  <data name="m_lblAttractText.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="m_lblAttractText.Text" xml:space="preserve">
-    <value>Text above inactivity video:</value>
-  </data>
-  <data name="&gt;&gt;m_lblAttractText.Name" xml:space="preserve">
-    <value>m_lblAttractText</value>
-  </data>
-  <data name="&gt;&gt;m_lblAttractText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_lblAttractText.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;m_lblAttractText.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="txtbxKioskTicketPrinterName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="txtbxKioskTicketPrinterName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 276</value>
-  </data>
-  <data name="txtbxKioskTicketPrinterName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 26</value>
-  </data>
-  <data name="txtbxKioskTicketPrinterName.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;txtbxKioskTicketPrinterName.Name" xml:space="preserve">
-    <value>txtbxKioskTicketPrinterName</value>
-  </data>
-  <data name="&gt;&gt;txtbxKioskTicketPrinterName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtbxKioskTicketPrinterName.Parent" xml:space="preserve">
-    <value>grpBxKioskSales</value>
-  </data>
-  <data name="&gt;&gt;txtbxKioskTicketPrinterName.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;lblTicketPrinterName.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
   <data name="grpBxKioskSales.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="grpBxKioskSales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 20</value>
+    <value>22, 20</value>
   </data>
   <data name="grpBxKioskSales.Size" type="System.Drawing.Size, System.Drawing">
     <value>716, 575</value>
   </data>
   <data name="grpBxKioskSales.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="grpBxKioskSales.Text" xml:space="preserve">
     <value>POS Kiosk Settings</value>
@@ -867,6 +1083,72 @@
   <data name="&gt;&gt;grpBxKioskSales.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="btnReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 609</value>
+  </data>
+  <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>&amp;Reset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1015, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 10pt, style=Bold</value>
+  </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 609</value>
+  </data>
+  <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 30</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1015, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -874,12 +1156,12 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>POSKioskSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.11, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.14.0.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

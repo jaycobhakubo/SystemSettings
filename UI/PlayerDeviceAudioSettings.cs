@@ -209,6 +209,5 @@ namespace GTI.Modules.SystemSettings.UI
             get { return m_devices; }
             set { m_devices = value; }
         }
-
     }
 }

@@ -48,8 +48,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageNormal")));
             this.btnCancel.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImagePressed")));
-            this.btnCancel.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnCancel.Name = "btnCancel";
+            this.btnCancel.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -60,8 +60,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnOK, "btnOK");
             this.btnOK.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnOK.ImageNormal")));
             this.btnOK.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnOK.ImagePressed")));
-            this.btnOK.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnOK.Name = "btnOK";
+            this.btnOK.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
@@ -106,8 +106,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.ButtonUp, "ButtonUp");
             this.ButtonUp.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.ButtonUp.ImagePressed = ((System.Drawing.Image)(resources.GetObject("ButtonUp.ImagePressed")));
-            this.ButtonUp.MinimumSize = new System.Drawing.Size(30, 30);
             this.ButtonUp.Name = "ButtonUp";
+            this.ButtonUp.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.ButtonUp.UseVisualStyleBackColor = false;
             this.ButtonUp.Click += new System.EventHandler(this.ButtonUp_Click);
             // 
@@ -118,8 +118,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.ButtonDown, "ButtonDown");
             this.ButtonDown.ImageNormal = ((System.Drawing.Image)(resources.GetObject("ButtonDown.ImageNormal")));
             this.ButtonDown.ImagePressed = ((System.Drawing.Image)(resources.GetObject("ButtonDown.ImagePressed")));
-            this.ButtonDown.MinimumSize = new System.Drawing.Size(30, 30);
             this.ButtonDown.Name = "ButtonDown";
+            this.ButtonDown.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.ButtonDown.UseVisualStyleBackColor = false;
             this.ButtonDown.Click += new System.EventHandler(this.ButtonDown_Click);
             // 

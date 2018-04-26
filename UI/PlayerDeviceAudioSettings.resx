@@ -165,7 +165,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvAAADrwBlbxySQAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -504,9 +504,9 @@
         AEDQGvKH52++/+oTAAC4nWbD77x8dXE1iv56+AEAANx61y9fXVz9D+UBtPSTaTRZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="audioSettingDefault.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="audioSettingDefault.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="audioSettingDefault.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -515,9 +515,8 @@
     <value>0, 0</value>
   </data>
   <data name="audioSettingDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="audioSettingDefault.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -525,7 +524,7 @@
     <value>audioSettingDefault</value>
   </data>
   <data name="&gt;&gt;audioSettingDefault.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingDefault.Parent" xml:space="preserve">
     <value>tbpgDefault</value>
@@ -537,7 +536,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgDefault.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -557,8 +556,8 @@
   <data name="&gt;&gt;tbpgDefault.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="audioSettingsFixedBase.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="audioSettingsFixedBase.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="audioSettingsFixedBase.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -567,7 +566,7 @@
     <value>0, 0</value>
   </data>
   <data name="audioSettingsFixedBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="audioSettingsFixedBase.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -576,7 +575,7 @@
     <value>audioSettingsFixedBase</value>
   </data>
   <data name="&gt;&gt;audioSettingsFixedBase.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsFixedBase.Parent" xml:space="preserve">
     <value>tbpgFixedBase</value>
@@ -588,7 +587,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgFixedBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgFixedBase.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -655,7 +654,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvAAADrwBlbxySQAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -994,8 +993,8 @@
         AEDQGvKH52++/+oTAAC4nWbD77x8dXE1iv56+AEAANx61y9fXVz9D+UBtPSTaTRZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="audioSettingsExplorer2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="audioSettingsExplorer2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="audioSettingsExplorer2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1004,7 +1003,7 @@
     <value>0, 0</value>
   </data>
   <data name="audioSettingsExplorer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="audioSettingsExplorer2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1013,7 +1012,7 @@
     <value>audioSettingsExplorer2</value>
   </data>
   <data name="&gt;&gt;audioSettingsExplorer2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsExplorer2.Parent" xml:space="preserve">
     <value>tbpgExplorer2</value>
@@ -1025,7 +1024,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgExplorer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgExplorer2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1092,7 +1091,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvAAADrwBlbxySQAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -1431,8 +1430,8 @@
         AEDQGvKH52++/+oTAAC4nWbD77x8dXE1iv56+AEAANx61y9fXVz9D+UBtPSTaTRZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="audioSettingsTedE.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="audioSettingsTedE.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="audioSettingsTedE.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1441,7 +1440,7 @@
     <value>0, 0</value>
   </data>
   <data name="audioSettingsTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="audioSettingsTedE.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1450,7 +1449,7 @@
     <value>audioSettingsTedE</value>
   </data>
   <data name="&gt;&gt;audioSettingsTedE.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsTedE.Parent" xml:space="preserve">
     <value>tbpgTedE</value>
@@ -1462,7 +1461,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgTedE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgTedE.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1529,7 +1528,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvAAADrwBlbxySQAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -1868,8 +1867,8 @@
         AEDQGvKH52++/+oTAAC4nWbD77x8dXE1iv56+AEAANx61y9fXVz9D+UBtPSTaTRZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="audioSettingsTracker.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="audioSettingsTracker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="audioSettingsTracker.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -1878,7 +1877,7 @@
     <value>0, 0</value>
   </data>
   <data name="audioSettingsTracker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="audioSettingsTracker.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1887,7 +1886,7 @@
     <value>audioSettingsTracker</value>
   </data>
   <data name="&gt;&gt;audioSettingsTracker.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsTracker.Parent" xml:space="preserve">
     <value>tbpgTracker</value>
@@ -1899,7 +1898,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgTracker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgTracker.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1966,7 +1965,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvAAADrwBlbxySQAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -2305,8 +2304,8 @@
         AEDQGvKH52++/+oTAAC4nWbD77x8dXE1iv56+AEAANx61y9fXVz9D+UBtPSTaTRZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="audioSettingsTraveler.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="audioSettingsTraveler.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="audioSettingsTraveler.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -2315,7 +2314,7 @@
     <value>0, 0</value>
   </data>
   <data name="audioSettingsTraveler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="audioSettingsTraveler.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2324,7 +2323,7 @@
     <value>audioSettingsTraveler</value>
   </data>
   <data name="&gt;&gt;audioSettingsTraveler.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsTraveler.Parent" xml:space="preserve">
     <value>tbpgTraveler</value>
@@ -2336,7 +2335,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgTraveler.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgTraveler.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2403,7 +2402,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAQSZpVFh0WE1MOmNvbS5h
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvAAADrwBlbxySQAAQSZpVFh0WE1MOmNvbS5h
         ZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3pr
         YzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhN
         UCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4KICAg
@@ -2742,9 +2741,6 @@
         AEDQGvKH52++/+oTAAC4nWbD77x8dXE1iv56+AEAANx61y9fXVz9D+UBtPSTaTRZAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="audioSettingsTraveler2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="audioSettingsTraveler2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
@@ -2752,7 +2748,7 @@
     <value>0, 0</value>
   </data>
   <data name="audioSettingsTraveler2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="audioSettingsTraveler2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2761,7 +2757,7 @@
     <value>audioSettingsTraveler2</value>
   </data>
   <data name="&gt;&gt;audioSettingsTraveler2.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.AudioSettings, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
   <data name="&gt;&gt;audioSettingsTraveler2.Parent" xml:space="preserve">
     <value>tbpgTraveler2</value>
@@ -2773,7 +2769,7 @@
     <value>4, 31</value>
   </data>
   <data name="tbpgTraveler2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 609</value>
+    <value>752, 610</value>
   </data>
   <data name="tbpgTraveler2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2799,8 +2795,12 @@
   <data name="tabCtrl_AudioDevice.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabCtrl_AudioDevice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
   <data name="tabCtrl_AudioDevice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="tabCtrl_AudioDevice.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2820,9 +2820,6 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 22</value>
-  </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
@@ -2830,12 +2827,12 @@
     <value>4, 5, 4, 5</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PlayerDeviceAudioSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.12.2.16, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

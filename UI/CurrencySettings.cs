@@ -63,7 +63,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            currencyListView.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
         private void OnModified(object sender, EventArgs e)

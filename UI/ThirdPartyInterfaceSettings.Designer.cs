@@ -98,7 +98,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.panelMain);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
@@ -120,10 +120,11 @@
             this.panelMain.Controls.Add(this.gbRedeemed);
             this.panelMain.Controls.Add(this.gbEarned);
             this.panelMain.Name = "panelMain";
+            this.panelMain.Scroll += new System.Windows.Forms.ScrollEventHandler(this.panelMain_Scroll);
             // 
             // gbPIN
             // 
-            this.gbPIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbPIN.BackColor = System.Drawing.Color.Transparent;
             this.gbPIN.Controls.Add(this.cbGetPINAtCardSwipe);
             this.gbPIN.Controls.Add(this.label1);
             this.gbPIN.Controls.Add(this.nudPINLength);
@@ -214,7 +215,7 @@
             // 
             // gbVoids
             // 
-            this.gbVoids.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbVoids.BackColor = System.Drawing.Color.Transparent;
             this.gbVoids.Controls.Add(this.rbNoVoid);
             this.gbVoids.Controls.Add(this.rbAutoForceVoid);
             this.gbVoids.Controls.Add(this.rbVoid);
@@ -253,7 +254,7 @@
             // 
             // gbOasis10
             // 
-            this.gbOasis10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbOasis10.BackColor = System.Drawing.Color.Transparent;
             this.gbOasis10.Controls.Add(this.thirdPartyLocation);
             this.gbOasis10.Controls.Add(this.lblOasisLocation);
             resources.ApplyResources(this.gbOasis10, "gbOasis10");
@@ -285,7 +286,7 @@
             // 
             // gbFNET
             // 
-            this.gbFNET.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbFNET.BackColor = System.Drawing.Color.Transparent;
             this.gbFNET.Controls.Add(this.cbPointsTransferAsDollarsForRedemptions);
             this.gbFNET.Controls.Add(this.cbPointsTransferAsDollarsForSales);
             this.gbFNET.Controls.Add(this.cbPointsTransferAsDollars);
@@ -328,7 +329,7 @@
             // 
             // gbTimeout
             // 
-            this.gbTimeout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbTimeout.BackColor = System.Drawing.Color.Transparent;
             this.gbTimeout.Controls.Add(this.lblTimeout2);
             this.gbTimeout.Controls.Add(this.rbIndependentTimeouts);
             this.gbTimeout.Controls.Add(this.rbControlTimeout);
@@ -408,7 +409,7 @@
             // 
             // gbRedeemed
             // 
-            this.gbRedeemed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbRedeemed.BackColor = System.Drawing.Color.Transparent;
             this.gbRedeemed.Controls.Add(this.label9);
             this.gbRedeemed.Controls.Add(this.thirdPartyRedeemPerPoints);
             this.gbRedeemed.Controls.Add(this.thirdPartyRedeemPennies);
@@ -474,7 +475,7 @@
             // 
             // gbEarned
             // 
-            this.gbEarned.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(180)))), ((int)(((byte)(209)))));
+            this.gbEarned.BackColor = System.Drawing.Color.Transparent;
             this.gbEarned.Controls.Add(this.cbExternalRating);
             this.gbEarned.Controls.Add(this.lblSpent);
             this.gbEarned.Controls.Add(this.lblEarn);
@@ -568,6 +569,7 @@
             this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // btnSave
             // 

@@ -57,8 +57,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnReset, "btnReset");
             this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
             this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
-            this.btnReset.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -70,8 +70,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
             this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
-            this.btnSave.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 

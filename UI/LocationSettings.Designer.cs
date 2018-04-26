@@ -34,9 +34,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnAdd = new GTI.Controls.ImageButton();
             this.locationGroupBox = new System.Windows.Forms.GroupBox();
             this.lstLocations = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.locationGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -47,10 +47,11 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnEdit, "btnEdit");
             this.btnEdit.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageNormal")));
             this.btnEdit.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImagePressed")));
-            this.btnEdit.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnEdit.Name = "btnEdit";
+            this.btnEdit.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.toolTip1.SetToolTip(this.btnEdit, resources.GetString("btnEdit.ToolTip"));
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnEdit.Leave += new System.EventHandler(this.btnEdit_Leave);
             // 
             // btnAdd
             // 
@@ -58,8 +59,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageNormal")));
             this.btnAdd.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImagePressed")));
-            this.btnAdd.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnAdd.Name = "btnAdd";
+            this.btnAdd.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.toolTip1.SetToolTip(this.btnAdd, resources.GetString("btnAdd.ToolTip"));
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -87,8 +88,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.lstLocations.Name = "lstLocations";
             this.lstLocations.UseCompatibleStateImageBehavior = false;
             this.lstLocations.View = System.Windows.Forms.View.Details;
-            this.lstLocations.DoubleClick += new System.EventHandler(this.lstLocations_DoubleClick);
             this.lstLocations.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lstLocations_ColumnClick);
+            this.lstLocations.DoubleClick += new System.EventHandler(this.lstLocations_DoubleClick);
             // 
             // columnHeader1
             // 

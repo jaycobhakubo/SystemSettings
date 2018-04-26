@@ -10,7 +10,6 @@ using GTI.Modules.SystemSettings.Properties;
 using GTI.Modules.SystemSettings.Data;
 using System.Globalization;
 using GTI.Modules.SystemSettings.Business;
-using GTI.Modules.Shared.Business;
 
 
 namespace GTI.Modules.SystemSettings.UI
@@ -103,7 +102,7 @@ namespace GTI.Modules.SystemSettings.UI
             Common.EndWait();
 		}
 
-		private void AddToMachineList(Machine[] arrMachines)
+		private void AddToMachineList(SMachineData[] arrMachines)
 		{
             //ttp 50338
             lstStations.Items.Clear();
@@ -111,11 +110,11 @@ namespace GTI.Modules.SystemSettings.UI
 			int nCount = arrMachines.Length;
 			for (int i = 0; i < nCount; i++)
 			{
-                Machine s = arrMachines[i];
+				SMachineData s = arrMachines[i];
 
-				ListViewItem itmX = lstStations.Items.Add(s.ClientIdentifier);
-				itmX.SubItems.Add(s.DeviceType.Name); // PDTS 964
-				itmX.SubItems.Add(s.Description);
+				ListViewItem itmX = lstStations.Items.Add(s.strMacAddress);
+				itmX.SubItems.Add(Device.FromId(s.nDeviceId).Name); // PDTS 964
+				itmX.SubItems.Add(s.strDescription);
 
 				// set the tag to be the item itself
 				itmX.Tag = s;
@@ -141,11 +140,11 @@ namespace GTI.Modules.SystemSettings.UI
 			}
             
 			// Get the selected items into an array
-            List<Machine> arrSelectedMachines = new List<Machine>();
+			List<SMachineData> arrSelectedMachines = new List<SMachineData>();
 			int nCount = lstStations.SelectedItems.Count;
 			for (int i = 0; i < nCount; i++)
 			{
-                arrSelectedMachines.Add((Machine)lstStations.SelectedItems[i].Tag);
+				arrSelectedMachines.Add((SMachineData)lstStations.SelectedItems[i].Tag);
 			}
 
 			// Show the settings dialog if all machines are of the same type
@@ -173,18 +172,18 @@ namespace GTI.Modules.SystemSettings.UI
 		}
 
         //FIX: RALLY DE 2837 Start -- checked for machines of the same type
-        private bool AreMachinesOfSameType(List<Machine> machineList)
+        private bool AreMachinesOfSameType(List<SMachineData> machineList)
         {
             if (machineList.Count == 0)
                 return false;
             
                 //get the first machines type
-            Machine baseMachine = machineList[0];
-
-            foreach (Machine machine in machineList)
+                SMachineData baseMachine = machineList[0];
+                
+                foreach (SMachineData machine in machineList)
                 {
                     //if any other machine is of a different type then return false
-                    if (machine.DeviceType.Id != baseMachine.DeviceType.Id)
+                    if (machine.nDeviceId != baseMachine.nDeviceId )
                         return false;
 
                 }
@@ -193,16 +192,16 @@ namespace GTI.Modules.SystemSettings.UI
         }
         //FIX: RALLY DE 2837 End
 
-        private bool IsUserDefinedAllSame(List<Machine> selectedMachines)
+        private bool IsUserDefinedAllSame(List<SMachineData> selectedMachines)
         {
             if (selectedMachines.Count == 0)
                 return false;
             //get the first machines module list
-            Machine baseMachine = selectedMachines[0];
-            if (baseMachine.DeviceType.Id != Device.UserDefined.Id)
+            SMachineData baseMachine = selectedMachines[0];
+            if (baseMachine.nDeviceId != Device.UserDefined.Id)
                 return true;
 
-            GetMachineModules getMachineModulesMessage = new GetMachineModules(baseMachine.Id);
+            GetMachineModules getMachineModulesMessage = new GetMachineModules(baseMachine.nMachineId);
             try
             {
                 getMachineModulesMessage.Send();
@@ -213,9 +212,9 @@ namespace GTI.Modules.SystemSettings.UI
                 return false;
             }
             MachineModule baseMachineModule = getMachineModulesMessage.MachineModule;
-            foreach (Machine machine in selectedMachines)
+            foreach (SMachineData machine in selectedMachines)
             {
-                getMachineModulesMessage = new GetMachineModules(machine.Id);
+                getMachineModulesMessage = new GetMachineModules(machine.nMachineId);
                 getMachineModulesMessage.Send();
                 MachineModule machineModule = getMachineModulesMessage.MachineModule;
                 if (machineModule.ModuleIDs.Count != baseMachineModule.ModuleIDs.Count)
@@ -240,7 +239,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnRefresh_Leave(object sender, EventArgs e)
         {
-            cboFilter.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
 

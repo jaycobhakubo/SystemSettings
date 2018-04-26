@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SessionSummarySettings));
             this.grpbxSessionSettings = new System.Windows.Forms.GroupBox();
+            this.chkbxSetEndingBankToActualCash = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cboUIDisplayMode = new System.Windows.Forms.ComboBox();
             this.chkbxSetBankToEndBank = new System.Windows.Forms.CheckBox();
             this.btnSave = new GTI.Controls.ImageButton();
             this.btnReset = new GTI.Controls.ImageButton();
-            this.chkbxSetEndingBankToActualCash = new System.Windows.Forms.CheckBox();
             this.grpbxSessionSettings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +50,14 @@
             resources.ApplyResources(this.grpbxSessionSettings, "grpbxSessionSettings");
             this.grpbxSessionSettings.Name = "grpbxSessionSettings";
             this.grpbxSessionSettings.TabStop = false;
+            // 
+            // chkbxSetEndingBankToActualCash
+            // 
+            resources.ApplyResources(this.chkbxSetEndingBankToActualCash, "chkbxSetEndingBankToActualCash");
+            this.chkbxSetEndingBankToActualCash.Name = "chkbxSetEndingBankToActualCash";
+            this.chkbxSetEndingBankToActualCash.Tag = "209";
+            this.chkbxSetEndingBankToActualCash.UseVisualStyleBackColor = true;
+            this.chkbxSetEndingBankToActualCash.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // label7
             // 
@@ -79,8 +87,6 @@
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -93,19 +99,10 @@
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // chkbxSetEndingBankToActualCash
-            // 
-            resources.ApplyResources(this.chkbxSetEndingBankToActualCash, "chkbxSetEndingBankToActualCash");
-            this.chkbxSetEndingBankToActualCash.Name = "chkbxSetEndingBankToActualCash";
-            this.chkbxSetEndingBankToActualCash.Tag = "209";
-            this.chkbxSetEndingBankToActualCash.UseVisualStyleBackColor = true;
-            this.chkbxSetEndingBankToActualCash.CheckedChanged += new System.EventHandler(this.OnModified);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // SessionSummarySettings
             // 

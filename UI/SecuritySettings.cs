@@ -380,5 +380,10 @@ namespace GTI.Modules.SystemSettings.UI
                 chkAutoLogout.Enabled = false;
         }
 
+        private void btnReset_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
+        }
+
     } // end class
 } // end namespace

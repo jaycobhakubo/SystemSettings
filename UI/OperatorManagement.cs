@@ -21,11 +21,18 @@ namespace GTI.Modules.SystemSettings.UI
         private int m_currentAddressId;
         private int m_currentBillingAddressId;
         public bool m_IsModified;
-        
+        private bool m_loadingOperator = false;
+
         public bool IsModifiedBool
         {
-            get { return m_IsModified; }
-            set { m_IsModified = value;
+            get
+            {
+                return m_IsModified; 
+            }
+            
+            set
+            {
+                m_IsModified = value;
                 m_OperatorGroupBox1.Enabled = !value;
             }
         }
@@ -36,11 +43,11 @@ namespace GTI.Modules.SystemSettings.UI
         /// <returns></returns>
         public override bool LoadSettings() 
         {
-            IsModifiedBool = false;
             m_activityState = ActivityState.All;
-            rdoAllRadioButton.Checked = true;
+            comboOperatorDisplayMode.SelectedIndex = 0;
             m_operatorManagementPresenter.LoadModel(m_currentlySelectedOperatorIndex);
-            
+            IsModifiedBool = false;
+           
             return true;
         }
 
@@ -83,7 +90,6 @@ namespace GTI.Modules.SystemSettings.UI
         /// </summary>
         public OperatorManagement()
         {
-           
             InitializeComponent();
             if(!DesignMode)
             {
@@ -92,10 +98,9 @@ namespace GTI.Modules.SystemSettings.UI
             m_previousSelectedID = -1;
             m_currentlySelectedOperatorIndex = 0;
             SetOperatorDetailsEnabled(false);
-            rdoAllRadioButton.Checked = true;
+            comboOperatorDisplayMode.SelectedIndex = 0;
             m_currentAddressId = 0;
             m_currentBillingAddressId = 0;
-            
         }
         /// <summary>
         /// 
@@ -180,6 +185,7 @@ namespace GTI.Modules.SystemSettings.UI
         /// <param name="bingoOperator"></param>
         public void SetOperatorDetails(BingoOperator bingoOperator)
         {
+            m_loadingOperator = true;
             operatorNameTextBox.Text = bingoOperator.OperatorName;
             m_textBoxAddress1.Text = bingoOperator.operatorAddress1;
             m_textBoxAddress2.Text = bingoOperator.operatorAddress2;
@@ -218,13 +224,20 @@ namespace GTI.Modules.SystemSettings.UI
                 m_chkUseAddress.Checked = false;
                 SetBillingEnabled(true);
             }
+
+            IsModifiedBool = false;
+            m_loadingOperator = false;
         }
         /// <summary>
         /// 
         /// </summary>
         private void ClearOperatorDetails()
         {
+            bool savedLoadingStatus = m_loadingOperator;
+            m_loadingOperator = true;
+
             ControlCollection componentList = operatorDetailsGroupBox.Controls;
+            
             foreach (Control component in componentList)
             {
                 if (component.GetType() == typeof(TextBox))
@@ -232,7 +245,9 @@ namespace GTI.Modules.SystemSettings.UI
                     ((TextBox)component).Text = "";
                 }
             }
+            
             operatorIsActiveCheckBox.Checked = false;
+            m_loadingOperator = savedLoadingStatus;
         }
         /// <summary>
         /// 
@@ -270,7 +285,7 @@ namespace GTI.Modules.SystemSettings.UI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void imageButton5_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             
             if (!ValidateChildren(ValidationConstraints.Enabled | ValidationConstraints.Visible)
@@ -302,7 +317,6 @@ namespace GTI.Modules.SystemSettings.UI
         /// <param name="e"></param>
         private void gtiListView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (gtiListView1.SelectedItems.Count > 0 )
             {
                 var operatorId = gtiListView1.SelectedItems[0].SubItems[1].Text;
@@ -311,7 +325,6 @@ namespace GTI.Modules.SystemSettings.UI
                 m_operatorManagementPresenter.OperatorSelected(operatorId);
                 m_previousSelectedID = Convert.ToInt32(operatorId);
                 m_currentlySelectedOperatorIndex = gtiListView1.SelectedIndices[0];
-
 
                 //US4434
                 //update UI for auto issue
@@ -326,28 +339,15 @@ namespace GTI.Modules.SystemSettings.UI
                 bool.TryParse(setting.Value, out autoIssue);
                 chkbxAutoIssue.Checked = autoIssue;*/
             }
-            
             else
             {
                 ClearOperatorDetails();
                 SetOperatorDetailsEnabled(false);
                 m_previousSelectedID = -1;
                 m_currentlySelectedOperatorIndex = -1;
-                m_currentlySelectedOperatorIndex = -1;
             }
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void operatorNameTextBox_KeyUp(object sender, KeyEventArgs e)
-        {
-            IsModifiedBool = true;
-            if (m_currentlySelectedOperatorIndex != -1)
-            {
-                gtiListView1.Items[m_currentlySelectedOperatorIndex].SubItems[0].Text = operatorNameTextBox.Text;
-            }
+
+            gtiListView1.Focus();
         }
 
         /// <summary>
@@ -355,7 +355,7 @@ namespace GTI.Modules.SystemSettings.UI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void imageButton1_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             ListViewItem item = new ListViewItem(new string[] { "New Operator","0" });
 
@@ -369,93 +369,14 @@ namespace GTI.Modules.SystemSettings.UI
             item.Selected = true;
             IsModifiedBool = true;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void rdoInactiveRadioButton_Click(object sender, EventArgs e)
+
+        private void comboOperatorDisplayMode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            bool result = true;
-            
-            if(IsModifiedBool)
-            {
-                result = ShowSaveDialog();
-            }
+            ActivityState newState = (ActivityState)comboOperatorDisplayMode.SelectedIndex;
 
-            if(result)
-            {
-                m_operatorManagementPresenter.Reset(m_currentlySelectedOperatorIndex);
-                
-                m_operatorManagementPresenter.ChangeActiveState(ActivityState.Inactive, m_currentlySelectedOperatorIndex);
-                m_activityState = ActivityState.Inactive;
-            }
-
-            else
-            {
-                if (m_activityState == ActivityState.Active)
-                {
-                    rdoActiveRadioButton.Checked = true;
-                }
-                else if (m_activityState == ActivityState.All)
-                {
-                    rdoAllRadioButton.Checked = true;
-                }
-            }
-        }
-        
-        private void rdoAllRadioButton_Click(object sender, EventArgs e)
-        {
-            bool result = true;
- 
-            if (result)
-            {
-                m_operatorManagementPresenter.Reset(m_currentlySelectedOperatorIndex);
-                m_operatorManagementPresenter.ChangeActiveState(ActivityState.All,m_currentlySelectedOperatorIndex);
-                m_activityState = ActivityState.All;
-            }
-
-            else
-            {
-                if (m_activityState == ActivityState.Inactive)
-                {
-                    rdoInactiveRadioButton.Checked = true;
-                }
-
-                else if (m_activityState == ActivityState.Active)
-                {
-                    rdoActiveRadioButton.Checked = true;
-                }
-            }
-        }
-
-        private void rdoActiveRadioButton_Click(object sender, EventArgs e)
-        {
-            bool result = true;
-            
-            if(IsModifiedBool)
-            {
-                result = ShowSaveDialog();
-            }
-
-            if (result)
-            {
-                m_operatorManagementPresenter.Reset(m_currentlySelectedOperatorIndex);
-                m_operatorManagementPresenter.ChangeActiveState(ActivityState.Active,m_currentlySelectedOperatorIndex);
-                m_activityState = ActivityState.Active;
-            }
-
-            else
-            {
-                if(m_activityState == ActivityState.Inactive)
-                {
-                    rdoInactiveRadioButton.Checked = true;
-                }
-                else if(m_activityState == ActivityState.All)
-                {
-                    rdoAllRadioButton.Checked = true;
-                }
-            }
+            m_operatorManagementPresenter.Reset(m_currentlySelectedOperatorIndex);
+            m_operatorManagementPresenter.ChangeActiveState(newState, m_currentlySelectedOperatorIndex);
+            m_activityState = newState;
         }
 
         private bool ShowSaveDialog()
@@ -540,7 +461,6 @@ namespace GTI.Modules.SystemSettings.UI
         /// <param name="e"></param>
         private void PercentTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
             bool result = false;
 
             if (!char.IsControl(e.KeyChar))
@@ -556,11 +476,6 @@ namespace GTI.Modules.SystemSettings.UI
                 }
             }
 
-            if(result == false)
-            {
-                IsModifiedBool = true;
-            }
-            
             e.Handled = result;
         }
         /// <summary>
@@ -600,33 +515,18 @@ namespace GTI.Modules.SystemSettings.UI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void imageButton4_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
             //RALLY DE 6216 Reset on system settings a dialog popped up. removed
             IsModifiedBool = false;
             m_operatorManagementPresenter.Reset(m_currentlySelectedOperatorIndex);
-            rdoAllRadioButton.Checked = true;
-            rdoAllRadioButton_Click(null, null);                
-        }
-
-        private void TextBoxGeneric_KeyUp(object sender, KeyEventArgs e)
-        {
-            IsModifiedBool = true;
-        }
-
-        private void operatorIsActiveCheckBox_Click(object sender, EventArgs e)
-        {
-            IsModifiedBool = true;
-        }
-
-
-        private void operatorCashMethodIDCombo_MouseClick(object sender, MouseEventArgs e)
-        {
-            IsModifiedBool = true;
+            comboOperatorDisplayMode.SelectedIndex = 0;
         }
 
         private void operatorCashMethodIDCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            OnModified(sender, e);
+
             if (operatorCashMethodIDCombo.SelectedIndex == 2)
             {
                 //if (chkbxAutoIssue.Visible != false) chkbxAutoIssue.Visible = false;
@@ -648,8 +548,9 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void m_chkUseAddress_CheckedChanged(object sender, EventArgs e)
         {
+            OnModified(sender, e);
+
             CheckBox checkBox = sender as CheckBox;
-            IsModifiedBool = true;
 
             //if true
             if (checkBox != null && checkBox.Checked)
@@ -713,69 +614,61 @@ namespace GTI.Modules.SystemSettings.UI
             m_textBoxBillingZipCode.Enabled = enabled;
         }
 
-        private void imageButton4_Leave(object sender, EventArgs e)
+        private void btnReset_Leave(object sender, EventArgs e)
         {
-                operatorNameTextBox.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
         private void m_textBoxAddress1_KeyUp(object sender, KeyEventArgs e)
         {
-            IsModifiedBool = true;
             if(m_chkUseAddress.Checked == true)
-            {
                 m_textBoxbillingAddress1.Text = m_textBoxAddress1.Text;
-            }
         }
 
         private void m_textBoxAddress2_KeyUp(object sender, KeyEventArgs e)
         {
-            IsModifiedBool = true;
             if (m_chkUseAddress.Checked )
-            {
                 m_textBoxBillingAddress2.Text = m_textBoxAddress2.Text;
-            }
         }
 
         private void m_textBoxCity_KeyUp(object sender, KeyEventArgs e)
         {
-            IsModifiedBool = true;
             if (m_chkUseAddress.Checked )
-            {
                 m_textBoxBillingAddressCity.Text = m_textBoxCity.Text;
-            }
         }
 
         private void m_textBoxState_KeyUp(object sender, KeyEventArgs e)
         {
-            IsModifiedBool = true;
             if (m_chkUseAddress.Checked )
-            {
                 m_textBoxBillingAddressSate.Text = m_textBoxState.Text;
-            }
         }
 
         private void m_textBoxZipCode_KeyUp(object sender, KeyEventArgs e)
         {
-            IsModifiedBool = true;
             if (m_chkUseAddress.Checked )
-            {
                 m_textBoxBillingZipCode.Text = m_textBoxZipCode.Text;
-            }
         }
 
         private void m_textBoxCountry_KeyUp(object sender, KeyEventArgs e)
         {
-            IsModifiedBool = true;
-            if (m_chkUseAddress.Checked )
+             if (m_chkUseAddress.Checked )
+                 m_textBoxBillingAddressCountry.Text = m_textBoxCountry.Text;
+        }
+
+        private void operatorNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (!m_loadingOperator)
             {
-                m_textBoxBillingAddressCountry.Text = m_textBoxCountry.Text;
+                IsModifiedBool = true;
+
+                if (m_currentlySelectedOperatorIndex != -1)
+                    gtiListView1.Items[m_currentlySelectedOperatorIndex].SubItems[0].Text = operatorNameTextBox.Text;
             }
         }
 
-       
-
-        
-
-        
+        private void OnModified(object sender, EventArgs e)
+        {
+            IsModifiedBool = true;
+        }
     }
 }

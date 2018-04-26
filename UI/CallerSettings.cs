@@ -858,7 +858,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            chkPrintWinners.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
         //RALLY TA 6877

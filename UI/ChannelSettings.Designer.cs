@@ -53,7 +53,9 @@
             this.btnEdit.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageNormal")));
             this.btnEdit.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImagePressed")));
             this.btnEdit.Name = "btnEdit";
+            this.btnEdit.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnEdit.Leave += new System.EventHandler(this.btnEdit_Leave);
             // 
             // lstChannels
             // 

@@ -117,18 +117,789 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 582</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Player Tracking Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panelMain.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;cbGetPINAtCardSwipe.Name" xml:space="preserve">
+    <value>cbGetPINAtCardSwipe</value>
+  </data>
+  <data name="&gt;&gt;cbGetPINAtCardSwipe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbGetPINAtCardSwipe.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;cbGetPINAtCardSwipe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nudPINLength.Name" xml:space="preserve">
+    <value>nudPINLength</value>
+  </data>
+  <data name="&gt;&gt;nudPINLength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudPINLength.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;nudPINLength.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbPINForVoidRedemption.Name" xml:space="preserve">
+    <value>cbPINForVoidRedemption</value>
+  </data>
+  <data name="&gt;&gt;cbPINForVoidRedemption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPINForVoidRedemption.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;cbPINForVoidRedemption.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbPINForVoidRating.Name" xml:space="preserve">
+    <value>cbPINForVoidRating</value>
+  </data>
+  <data name="&gt;&gt;cbPINForVoidRating.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPINForVoidRating.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;cbPINForVoidRating.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbPINForPointInfo.Name" xml:space="preserve">
+    <value>cbPINForPointInfo</value>
+  </data>
+  <data name="&gt;&gt;cbPINForPointInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPINForPointInfo.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;cbPINForPointInfo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbPINForRedemption.Name" xml:space="preserve">
+    <value>cbPINForRedemption</value>
+  </data>
+  <data name="&gt;&gt;cbPINForRedemption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPINForRedemption.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;cbPINForRedemption.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cbPINForRating.Name" xml:space="preserve">
+    <value>cbPINForRating</value>
+  </data>
+  <data name="&gt;&gt;cbPINForRating.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPINForRating.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;cbPINForRating.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbPINForPlayerInfo.Name" xml:space="preserve">
+    <value>cbPINForPlayerInfo</value>
+  </data>
+  <data name="&gt;&gt;cbPINForPlayerInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPINForPlayerInfo.Parent" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;cbPINForPlayerInfo.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="gbPIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 396</value>
+  </data>
+  <data name="gbPIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 131</value>
+  </data>
+  <data name="gbPIN.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gbPIN.Text" xml:space="preserve">
+    <value>PIN settings</value>
+  </data>
+  <data name="&gt;&gt;gbPIN.Name" xml:space="preserve">
+    <value>gbPIN</value>
+  </data>
+  <data name="&gt;&gt;gbPIN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbPIN.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;gbPIN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbNoVoid.Name" xml:space="preserve">
+    <value>rbNoVoid</value>
+  </data>
+  <data name="&gt;&gt;rbNoVoid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbNoVoid.Parent" xml:space="preserve">
+    <value>gbVoids</value>
+  </data>
+  <data name="&gt;&gt;rbNoVoid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbAutoForceVoid.Name" xml:space="preserve">
+    <value>rbAutoForceVoid</value>
+  </data>
+  <data name="&gt;&gt;rbAutoForceVoid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbAutoForceVoid.Parent" xml:space="preserve">
+    <value>gbVoids</value>
+  </data>
+  <data name="&gt;&gt;rbAutoForceVoid.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbVoid.Name" xml:space="preserve">
+    <value>rbVoid</value>
+  </data>
+  <data name="&gt;&gt;rbVoid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbVoid.Parent" xml:space="preserve">
+    <value>gbVoids</value>
+  </data>
+  <data name="&gt;&gt;rbVoid.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gbVoids.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 605</value>
+  </data>
+  <data name="gbVoids.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 150</value>
+  </data>
+  <data name="gbVoids.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="gbVoids.Text" xml:space="preserve">
+    <value>Voiding</value>
+  </data>
+  <data name="&gt;&gt;gbVoids.Name" xml:space="preserve">
+    <value>gbVoids</value>
+  </data>
+  <data name="&gt;&gt;gbVoids.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbVoids.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;gbVoids.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblPlayerSyncMode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblPlayerSyncMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPlayerSyncMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 51</value>
+  </data>
+  <data name="lblPlayerSyncMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="lblPlayerSyncMode.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblPlayerSyncMode.Text" xml:space="preserve">
+    <value>Player sync mode:</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerSyncMode.Name" xml:space="preserve">
+    <value>lblPlayerSyncMode</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerSyncMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerSyncMode.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;lblPlayerSyncMode.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyLocation.Name" xml:space="preserve">
+    <value>thirdPartyLocation</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyLocation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyLocation.Parent" xml:space="preserve">
+    <value>gbOasis10</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyLocation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblOasisLocation.Name" xml:space="preserve">
+    <value>lblOasisLocation</value>
+  </data>
+  <data name="&gt;&gt;lblOasisLocation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOasisLocation.Parent" xml:space="preserve">
+    <value>gbOasis10</value>
+  </data>
+  <data name="&gt;&gt;lblOasisLocation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbOasis10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 396</value>
+  </data>
+  <data name="gbOasis10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 75</value>
+  </data>
+  <data name="gbOasis10.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="gbOasis10.Text" xml:space="preserve">
+    <value>Oasis 10</value>
+  </data>
+  <data name="&gt;&gt;gbOasis10.Name" xml:space="preserve">
+    <value>gbOasis10</value>
+  </data>
+  <data name="&gt;&gt;gbOasis10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbOasis10.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;gbOasis10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbxPlayerSyncMode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cbxPlayerSyncMode.Items" xml:space="preserve">
+    <value>Real-time</value>
+  </data>
+  <data name="cbxPlayerSyncMode.Items1" xml:space="preserve">
+    <value>PIN verification &amp; points</value>
+  </data>
+  <data name="cbxPlayerSyncMode.Items2" xml:space="preserve">
+    <value>PIN verification, points, &amp; updating</value>
+  </data>
+  <data name="cbxPlayerSyncMode.Items3" xml:space="preserve">
+    <value>Disconnected</value>
+  </data>
+  <data name="cbxPlayerSyncMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 50</value>
+  </data>
+  <data name="cbxPlayerSyncMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 30</value>
+  </data>
+  <data name="cbxPlayerSyncMode.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbxPlayerSyncMode.Name" xml:space="preserve">
+    <value>cbxPlayerSyncMode</value>
+  </data>
+  <data name="&gt;&gt;cbxPlayerSyncMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbxPlayerSyncMode.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;cbxPlayerSyncMode.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollarsForRedemptions.Name" xml:space="preserve">
+    <value>cbPointsTransferAsDollarsForRedemptions</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollarsForRedemptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollarsForRedemptions.Parent" xml:space="preserve">
+    <value>gbFNET</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollarsForRedemptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollarsForSales.Name" xml:space="preserve">
+    <value>cbPointsTransferAsDollarsForSales</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollarsForSales.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollarsForSales.Parent" xml:space="preserve">
+    <value>gbFNET</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollarsForSales.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollars.Name" xml:space="preserve">
+    <value>cbPointsTransferAsDollars</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollars.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollars.Parent" xml:space="preserve">
+    <value>gbFNET</value>
+  </data>
+  <data name="&gt;&gt;cbPointsTransferAsDollars.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerInfoHasPoints.Name" xml:space="preserve">
+    <value>cbPlayerInfoHasPoints</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerInfoHasPoints.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerInfoHasPoints.Parent" xml:space="preserve">
+    <value>gbFNET</value>
+  </data>
+  <data name="&gt;&gt;cbPlayerInfoHasPoints.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbFNET.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 533</value>
+  </data>
+  <data name="gbFNET.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 66</value>
+  </data>
+  <data name="gbFNET.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="gbFNET.Text" xml:space="preserve">
+    <value>Point settings</value>
+  </data>
+  <data name="&gt;&gt;gbFNET.Name" xml:space="preserve">
+    <value>gbFNET</value>
+  </data>
+  <data name="&gt;&gt;gbFNET.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbFNET.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;gbFNET.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblTimeout2.Name" xml:space="preserve">
+    <value>lblTimeout2</value>
+  </data>
+  <data name="&gt;&gt;lblTimeout2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimeout2.Parent" xml:space="preserve">
+    <value>gbTimeout</value>
+  </data>
+  <data name="&gt;&gt;lblTimeout2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbIndependentTimeouts.Name" xml:space="preserve">
+    <value>rbIndependentTimeouts</value>
+  </data>
+  <data name="&gt;&gt;rbIndependentTimeouts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbIndependentTimeouts.Parent" xml:space="preserve">
+    <value>gbTimeout</value>
+  </data>
+  <data name="&gt;&gt;rbIndependentTimeouts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbControlTimeout.Name" xml:space="preserve">
+    <value>rbControlTimeout</value>
+  </data>
+  <data name="&gt;&gt;rbControlTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbControlTimeout.Parent" xml:space="preserve">
+    <value>gbTimeout</value>
+  </data>
+  <data name="&gt;&gt;rbControlTimeout.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;rbSlaveTimeout.Name" xml:space="preserve">
+    <value>rbSlaveTimeout</value>
+  </data>
+  <data name="&gt;&gt;rbSlaveTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbSlaveTimeout.Parent" xml:space="preserve">
+    <value>gbTimeout</value>
+  </data>
+  <data name="&gt;&gt;rbSlaveTimeout.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyTimeout.Name" xml:space="preserve">
+    <value>thirdPartyTimeout</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyTimeout.Parent" xml:space="preserve">
+    <value>gbTimeout</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyTimeout.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblTimeout1.Name" xml:space="preserve">
+    <value>lblTimeout1</value>
+  </data>
+  <data name="&gt;&gt;lblTimeout1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTimeout1.Parent" xml:space="preserve">
+    <value>gbTimeout</value>
+  </data>
+  <data name="&gt;&gt;lblTimeout1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gbTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 86</value>
+  </data>
+  <data name="gbTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 135</value>
+  </data>
+  <data name="gbTimeout.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gbTimeout.Text" xml:space="preserve">
+    <value>Timeout</value>
+  </data>
+  <data name="&gt;&gt;gbTimeout.Name" xml:space="preserve">
+    <value>gbTimeout</value>
+  </data>
+  <data name="&gt;&gt;gbTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbTimeout.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;gbTimeout.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 17</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 22</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Player tracking system:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cbInterface.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="cbInterface.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 14</value>
+  </data>
+  <data name="cbInterface.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cbInterface.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 30</value>
+  </data>
+  <data name="cbInterface.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbInterface.Name" xml:space="preserve">
+    <value>cbInterface</value>
+  </data>
+  <data name="&gt;&gt;cbInterface.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbInterface.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;cbInterface.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>gbRedeemed</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyRedeemPerPoints.Name" xml:space="preserve">
+    <value>thirdPartyRedeemPerPoints</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyRedeemPerPoints.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyRedeemPerPoints.Parent" xml:space="preserve">
+    <value>gbRedeemed</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyRedeemPerPoints.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyRedeemPennies.Name" xml:space="preserve">
+    <value>thirdPartyRedeemPennies</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyRedeemPennies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyRedeemPennies.Parent" xml:space="preserve">
+    <value>gbRedeemed</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyRedeemPennies.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblPointsFor.Name" xml:space="preserve">
+    <value>lblPointsFor</value>
+  </data>
+  <data name="&gt;&gt;lblPointsFor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPointsFor.Parent" xml:space="preserve">
+    <value>gbRedeemed</value>
+  </data>
+  <data name="&gt;&gt;lblPointsFor.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbRedeemed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 321</value>
+  </data>
+  <data name="gbRedeemed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 69</value>
+  </data>
+  <data name="gbRedeemed.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="gbRedeemed.Text" xml:space="preserve">
+    <value>Point value</value>
+  </data>
+  <data name="&gt;&gt;gbRedeemed.Name" xml:space="preserve">
+    <value>gbRedeemed</value>
+  </data>
+  <data name="&gt;&gt;gbRedeemed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbRedeemed.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;gbRedeemed.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cbExternalRating.Name" xml:space="preserve">
+    <value>cbExternalRating</value>
+  </data>
+  <data name="&gt;&gt;cbExternalRating.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbExternalRating.Parent" xml:space="preserve">
+    <value>gbEarned</value>
+  </data>
+  <data name="&gt;&gt;cbExternalRating.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblSpent.Name" xml:space="preserve">
+    <value>lblSpent</value>
+  </data>
+  <data name="&gt;&gt;lblSpent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSpent.Parent" xml:space="preserve">
+    <value>gbEarned</value>
+  </data>
+  <data name="&gt;&gt;lblSpent.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblEarn.Name" xml:space="preserve">
+    <value>lblEarn</value>
+  </data>
+  <data name="&gt;&gt;lblEarn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEarn.Parent" xml:space="preserve">
+    <value>gbEarned</value>
+  </data>
+  <data name="&gt;&gt;lblEarn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblDollarSignForSpent.Name" xml:space="preserve">
+    <value>lblDollarSignForSpent</value>
+  </data>
+  <data name="&gt;&gt;lblDollarSignForSpent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDollarSignForSpent.Parent" xml:space="preserve">
+    <value>gbEarned</value>
+  </data>
+  <data name="&gt;&gt;lblDollarSignForSpent.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyEarnPerPennies.Name" xml:space="preserve">
+    <value>thirdPartyEarnPerPennies</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyEarnPerPennies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyEarnPerPennies.Parent" xml:space="preserve">
+    <value>gbEarned</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyEarnPerPennies.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyEarnPoints.Name" xml:space="preserve">
+    <value>thirdPartyEarnPoints</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyEarnPoints.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyEarnPoints.Parent" xml:space="preserve">
+    <value>gbEarned</value>
+  </data>
+  <data name="&gt;&gt;thirdPartyEarnPoints.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblPointsEarned.Name" xml:space="preserve">
+    <value>lblPointsEarned</value>
+  </data>
+  <data name="&gt;&gt;lblPointsEarned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPointsEarned.Parent" xml:space="preserve">
+    <value>gbEarned</value>
+  </data>
+  <data name="&gt;&gt;lblPointsEarned.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gbEarned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 227</value>
+  </data>
+  <data name="gbEarned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 88</value>
+  </data>
+  <data name="gbEarned.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gbEarned.Text" xml:space="preserve">
+    <value>Points earned from qualifying spend</value>
+  </data>
+  <data name="&gt;&gt;gbEarned.Name" xml:space="preserve">
+    <value>gbEarned</value>
+  </data>
+  <data name="&gt;&gt;gbEarned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbEarned.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;gbEarned.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>732, 551</value>
+  </data>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="cbGetPINAtCardSwipe.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cbGetPINAtCardSwipe.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cbGetPINAtCardSwipe.Location" type="System.Drawing.Point, System.Drawing">
     <value>279, 97</value>
   </data>
@@ -387,30 +1158,6 @@
   <data name="&gt;&gt;cbPINForPlayerInfo.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="gbPIN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 407</value>
-  </data>
-  <data name="gbPIN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 131</value>
-  </data>
-  <data name="gbPIN.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="gbPIN.Text" xml:space="preserve">
-    <value>PIN settings</value>
-  </data>
-  <data name="&gt;&gt;gbPIN.Name" xml:space="preserve">
-    <value>gbPIN</value>
-  </data>
-  <data name="&gt;&gt;gbPIN.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbPIN.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;gbPIN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="rbNoVoid.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -502,60 +1249,6 @@ does not stop void - auto FORCE)</value>
   <data name="&gt;&gt;rbVoid.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="gbVoids.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 616</value>
-  </data>
-  <data name="gbVoids.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 150</value>
-  </data>
-  <data name="gbVoids.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="gbVoids.Text" xml:space="preserve">
-    <value>Voiding</value>
-  </data>
-  <data name="&gt;&gt;gbVoids.Name" xml:space="preserve">
-    <value>gbVoids</value>
-  </data>
-  <data name="&gt;&gt;gbVoids.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbVoids.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;gbVoids.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblPlayerSyncMode.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblPlayerSyncMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblPlayerSyncMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 62</value>
-  </data>
-  <data name="lblPlayerSyncMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 22</value>
-  </data>
-  <data name="lblPlayerSyncMode.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblPlayerSyncMode.Text" xml:space="preserve">
-    <value>Player sync mode:</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerSyncMode.Name" xml:space="preserve">
-    <value>lblPlayerSyncMode</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerSyncMode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerSyncMode.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;lblPlayerSyncMode.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="thirdPartyLocation.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
@@ -615,66 +1308,6 @@ does not stop void - auto FORCE)</value>
   </data>
   <data name="&gt;&gt;lblOasisLocation.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="gbOasis10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 407</value>
-  </data>
-  <data name="gbOasis10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 75</value>
-  </data>
-  <data name="gbOasis10.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="gbOasis10.Text" xml:space="preserve">
-    <value>Oasis 10</value>
-  </data>
-  <data name="&gt;&gt;gbOasis10.Name" xml:space="preserve">
-    <value>gbOasis10</value>
-  </data>
-  <data name="&gt;&gt;gbOasis10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbOasis10.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;gbOasis10.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cbxPlayerSyncMode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="cbxPlayerSyncMode.Items" xml:space="preserve">
-    <value>Real-time</value>
-  </data>
-  <data name="cbxPlayerSyncMode.Items1" xml:space="preserve">
-    <value>PIN verification &amp; points</value>
-  </data>
-  <data name="cbxPlayerSyncMode.Items2" xml:space="preserve">
-    <value>PIN verification, points, &amp; updating</value>
-  </data>
-  <data name="cbxPlayerSyncMode.Items3" xml:space="preserve">
-    <value>Disconnected</value>
-  </data>
-  <data name="cbxPlayerSyncMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 61</value>
-  </data>
-  <data name="cbxPlayerSyncMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 30</value>
-  </data>
-  <data name="cbxPlayerSyncMode.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cbxPlayerSyncMode.Name" xml:space="preserve">
-    <value>cbxPlayerSyncMode</value>
-  </data>
-  <data name="&gt;&gt;cbxPlayerSyncMode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbxPlayerSyncMode.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;cbxPlayerSyncMode.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="cbPointsTransferAsDollarsForRedemptions.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -805,30 +1438,6 @@ contains points</value>
   </data>
   <data name="&gt;&gt;cbPlayerInfoHasPoints.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="gbFNET.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 544</value>
-  </data>
-  <data name="gbFNET.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 66</value>
-  </data>
-  <data name="gbFNET.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="gbFNET.Text" xml:space="preserve">
-    <value>Point settings</value>
-  </data>
-  <data name="&gt;&gt;gbFNET.Name" xml:space="preserve">
-    <value>gbFNET</value>
-  </data>
-  <data name="&gt;&gt;gbFNET.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbFNET.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;gbFNET.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="lblTimeout2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1004,87 +1613,6 @@ contains points</value>
   <data name="&gt;&gt;lblTimeout1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="gbTimeout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 97</value>
-  </data>
-  <data name="gbTimeout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 135</value>
-  </data>
-  <data name="gbTimeout.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="gbTimeout.Text" xml:space="preserve">
-    <value>Timeout</value>
-  </data>
-  <data name="&gt;&gt;gbTimeout.Name" xml:space="preserve">
-    <value>gbTimeout</value>
-  </data>
-  <data name="&gt;&gt;gbTimeout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbTimeout.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;gbTimeout.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 28</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 22</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Player tracking system:</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="cbInterface.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="cbInterface.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 25</value>
-  </data>
-  <data name="cbInterface.MaxDropDownItems" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="cbInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 30</value>
-  </data>
-  <data name="cbInterface.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cbInterface.Name" xml:space="preserve">
-    <value>cbInterface</value>
-  </data>
-  <data name="&gt;&gt;cbInterface.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbInterface.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;cbInterface.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1201,30 +1729,6 @@ contains points</value>
   </data>
   <data name="&gt;&gt;lblPointsFor.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="gbRedeemed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 332</value>
-  </data>
-  <data name="gbRedeemed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 69</value>
-  </data>
-  <data name="gbRedeemed.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="gbRedeemed.Text" xml:space="preserve">
-    <value>Point value</value>
-  </data>
-  <data name="&gt;&gt;gbRedeemed.Name" xml:space="preserve">
-    <value>gbRedeemed</value>
-  </data>
-  <data name="&gt;&gt;gbRedeemed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbRedeemed.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;gbRedeemed.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="cbExternalRating.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1439,78 +1943,6 @@ contains points</value>
   <data name="&gt;&gt;lblPointsEarned.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="gbEarned.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 238</value>
-  </data>
-  <data name="gbEarned.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 88</value>
-  </data>
-  <data name="gbEarned.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="gbEarned.Text" xml:space="preserve">
-    <value>Points earned from qualifying spend</value>
-  </data>
-  <data name="&gt;&gt;gbEarned.Name" xml:space="preserve">
-    <value>gbEarned</value>
-  </data>
-  <data name="&gt;&gt;gbEarned.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbEarned.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;gbEarned.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 25</value>
-  </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 551</value>
-  </data>
-  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 20</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>742, 582</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Player Tracking Settings</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
   </data>
@@ -1518,7 +1950,7 @@ contains points</value>
     <value>NoControl</value>
   </data>
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 608</value>
+    <value>422, 609</value>
   </data>
   <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -1551,7 +1983,7 @@ contains points</value>
     <value>NoControl</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 608</value>
+    <value>218, 609</value>
   </data>
   <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -1584,7 +2016,7 @@ contains points</value>
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ThirdPartyInterfaceSettings</value>

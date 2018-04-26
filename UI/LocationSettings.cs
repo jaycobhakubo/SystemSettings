@@ -181,6 +181,11 @@ namespace GTI.Modules.SystemSettings.UI
             lstLocations.Focus();
         }
 
+        private void btnEdit_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
+        }
+
 
     } // end class
 } // end namespace

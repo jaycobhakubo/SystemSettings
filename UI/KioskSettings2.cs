@@ -517,7 +517,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnDelete_Leave(object sender, EventArgs e)
         {
-            cboPhotoType.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
     } // end class

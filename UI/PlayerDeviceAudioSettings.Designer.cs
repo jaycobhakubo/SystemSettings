@@ -66,7 +66,6 @@
             resources.ApplyResources(this.tabCtrl_AudioDevice, "tabCtrl_AudioDevice");
             this.tabCtrl_AudioDevice.Name = "tabCtrl_AudioDevice";
             this.tabCtrl_AudioDevice.SelectedIndex = 0;
-            this.tabCtrl_AudioDevice.Tag = "";
             this.tabCtrl_AudioDevice.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_AudioDevice_Selecting);
             this.tabCtrl_AudioDevice.Deselecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_AudioDevice_Deselecting);
             // 
@@ -171,10 +170,10 @@
             // 
             // PlayerDeviceAudioSettings
             // 
-            resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.tabCtrl_AudioDevice);
             this.DoubleBuffered = true;
+            resources.ApplyResources(this, "$this");
             this.Name = "PlayerDeviceAudioSettings";
             this.Tag = "PlayerDevice";
             this.tabCtrl_AudioDevice.ResumeLayout(false);

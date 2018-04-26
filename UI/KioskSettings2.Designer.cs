@@ -46,8 +46,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnReset, "btnReset");
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnReset.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -58,8 +58,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnSave.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -76,8 +76,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnGetImage, "btnGetImage");
             this.btnGetImage.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnGetImage.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnGetImage.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnGetImage.Name = "btnGetImage";
+            this.btnGetImage.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnGetImage.UseVisualStyleBackColor = false;
             this.btnGetImage.Click += new System.EventHandler(this.btnGetImage_Click);
             // 
@@ -101,8 +101,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnDelete.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnDelete.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnDelete.Name = "btnDelete";
+            this.btnDelete.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             this.btnDelete.Leave += new System.EventHandler(this.btnDelete_Leave);

@@ -29,6 +29,17 @@ namespace GTI.Modules.SystemSettings.UI
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnitMgmtSettings));
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbPackInUseRip = new System.Windows.Forms.RadioButton();
+            this.rbPackInUseNotify = new System.Windows.Forms.RadioButton();
+            this.grpWiFiRange = new System.Windows.Forms.GroupBox();
+            this.chkWiFiRange = new System.Windows.Forms.CheckBox();
+            this.grpUnitAssignment = new System.Windows.Forms.GroupBox();
+            this.numMaxUnits = new System.Windows.Forms.NumericUpDown();
+            this.lblMaxUnits = new System.Windows.Forms.Label();
+            this.chkConfirmUnitAssignment = new System.Windows.Forms.CheckBox();
+            this.chkEnableUnitAssignment = new System.Windows.Forms.CheckBox();
+            this.btnReset = new GTI.Controls.ImageButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.chkAllowCrossTransfers = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -37,6 +48,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.IP_addressLabel = new System.Windows.Forms.Label();
             this.txtCrateServer = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkForceUnitSelectionWhenNoFees = new System.Windows.Forms.CheckBox();
             this.gridDeviceFees = new System.Windows.Forms.DataGridView();
             this.deviceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DeviceFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,30 +58,105 @@ namespace GTI.Modules.SystemSettings.UI
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
-            this.grpUnitAssignment = new System.Windows.Forms.GroupBox();
-            this.numMaxUnits = new System.Windows.Forms.NumericUpDown();
-            this.lblMaxUnits = new System.Windows.Forms.Label();
-            this.chkConfirmUnitAssignment = new System.Windows.Forms.CheckBox();
-            this.chkEnableUnitAssignment = new System.Windows.Forms.CheckBox();
-            this.grpWiFiRange = new System.Windows.Forms.GroupBox();
-            this.chkWiFiRange = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rbPackInUseRip = new System.Windows.Forms.RadioButton();
-            this.rbPackInUseNotify = new System.Windows.Forms.RadioButton();
-            this.chkForceUnitSelectionWhenNoFees = new System.Windows.Forms.CheckBox();
+            this.groupBox3.SuspendLayout();
+            this.grpWiFiRange.SuspendLayout();
+            this.grpUnitAssignment.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxUnits)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridDeviceFees)).BeginInit();
             this.grpDeviceRanges.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridDeviceRanges)).BeginInit();
-            this.grpUnitAssignment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxUnits)).BeginInit();
-            this.grpWiFiRange.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rbPackInUseRip);
+            this.groupBox3.Controls.Add(this.rbPackInUseNotify);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
+            // rbPackInUseRip
+            // 
+            resources.ApplyResources(this.rbPackInUseRip, "rbPackInUseRip");
+            this.rbPackInUseRip.Name = "rbPackInUseRip";
+            this.rbPackInUseRip.TabStop = true;
+            this.rbPackInUseRip.UseVisualStyleBackColor = true;
+            this.rbPackInUseRip.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // rbPackInUseNotify
+            // 
+            resources.ApplyResources(this.rbPackInUseNotify, "rbPackInUseNotify");
+            this.rbPackInUseNotify.Name = "rbPackInUseNotify";
+            this.rbPackInUseNotify.TabStop = true;
+            this.rbPackInUseNotify.UseVisualStyleBackColor = true;
+            this.rbPackInUseNotify.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // grpWiFiRange
+            // 
+            this.grpWiFiRange.BackColor = System.Drawing.Color.Transparent;
+            this.grpWiFiRange.Controls.Add(this.chkWiFiRange);
+            resources.ApplyResources(this.grpWiFiRange, "grpWiFiRange");
+            this.grpWiFiRange.Name = "grpWiFiRange";
+            this.grpWiFiRange.TabStop = false;
+            // 
+            // chkWiFiRange
+            // 
+            resources.ApplyResources(this.chkWiFiRange, "chkWiFiRange");
+            this.chkWiFiRange.Name = "chkWiFiRange";
+            this.chkWiFiRange.UseVisualStyleBackColor = true;
+            this.chkWiFiRange.Click += new System.EventHandler(this.OnModified);
+            // 
+            // grpUnitAssignment
+            // 
+            this.grpUnitAssignment.Controls.Add(this.numMaxUnits);
+            this.grpUnitAssignment.Controls.Add(this.lblMaxUnits);
+            this.grpUnitAssignment.Controls.Add(this.chkConfirmUnitAssignment);
+            this.grpUnitAssignment.Controls.Add(this.chkEnableUnitAssignment);
+            resources.ApplyResources(this.grpUnitAssignment, "grpUnitAssignment");
+            this.grpUnitAssignment.Name = "grpUnitAssignment";
+            this.grpUnitAssignment.TabStop = false;
+            // 
+            // numMaxUnits
+            // 
+            resources.ApplyResources(this.numMaxUnits, "numMaxUnits");
+            this.numMaxUnits.Name = "numMaxUnits";
+            this.numMaxUnits.ValueChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblMaxUnits
+            // 
+            resources.ApplyResources(this.lblMaxUnits, "lblMaxUnits");
+            this.lblMaxUnits.Name = "lblMaxUnits";
+            // 
+            // chkConfirmUnitAssignment
+            // 
+            resources.ApplyResources(this.chkConfirmUnitAssignment, "chkConfirmUnitAssignment");
+            this.chkConfirmUnitAssignment.Name = "chkConfirmUnitAssignment";
+            this.chkConfirmUnitAssignment.UseVisualStyleBackColor = true;
+            this.chkConfirmUnitAssignment.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkEnableUnitAssignment
+            // 
+            resources.ApplyResources(this.chkEnableUnitAssignment, "chkEnableUnitAssignment");
+            this.chkEnableUnitAssignment.Name = "chkEnableUnitAssignment";
+            this.chkEnableUnitAssignment.UseVisualStyleBackColor = true;
+            this.chkEnableUnitAssignment.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
+            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
+            this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // groupBox4
             // 
@@ -128,6 +215,13 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // chkForceUnitSelectionWhenNoFees
+            // 
+            resources.ApplyResources(this.chkForceUnitSelectionWhenNoFees, "chkForceUnitSelectionWhenNoFees");
+            this.chkForceUnitSelectionWhenNoFees.Name = "chkForceUnitSelectionWhenNoFees";
+            this.chkForceUnitSelectionWhenNoFees.UseVisualStyleBackColor = true;
+            this.chkForceUnitSelectionWhenNoFees.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // gridDeviceFees
             // 
@@ -215,21 +309,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.Column1, "Column1");
             this.Column1.Name = "Column1";
             // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnReset, "btnReset");
-            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
-            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
-            this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
-            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
-            // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
@@ -238,92 +317,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
             this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // grpUnitAssignment
-            // 
-            this.grpUnitAssignment.Controls.Add(this.numMaxUnits);
-            this.grpUnitAssignment.Controls.Add(this.lblMaxUnits);
-            this.grpUnitAssignment.Controls.Add(this.chkConfirmUnitAssignment);
-            this.grpUnitAssignment.Controls.Add(this.chkEnableUnitAssignment);
-            resources.ApplyResources(this.grpUnitAssignment, "grpUnitAssignment");
-            this.grpUnitAssignment.Name = "grpUnitAssignment";
-            this.grpUnitAssignment.TabStop = false;
-            // 
-            // numMaxUnits
-            // 
-            resources.ApplyResources(this.numMaxUnits, "numMaxUnits");
-            this.numMaxUnits.Name = "numMaxUnits";
-            this.numMaxUnits.ValueChanged += new System.EventHandler(this.OnModified);
-            // 
-            // lblMaxUnits
-            // 
-            resources.ApplyResources(this.lblMaxUnits, "lblMaxUnits");
-            this.lblMaxUnits.Name = "lblMaxUnits";
-            // 
-            // chkConfirmUnitAssignment
-            // 
-            resources.ApplyResources(this.chkConfirmUnitAssignment, "chkConfirmUnitAssignment");
-            this.chkConfirmUnitAssignment.Name = "chkConfirmUnitAssignment";
-            this.chkConfirmUnitAssignment.UseVisualStyleBackColor = true;
-            this.chkConfirmUnitAssignment.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // chkEnableUnitAssignment
-            // 
-            resources.ApplyResources(this.chkEnableUnitAssignment, "chkEnableUnitAssignment");
-            this.chkEnableUnitAssignment.Name = "chkEnableUnitAssignment";
-            this.chkEnableUnitAssignment.UseVisualStyleBackColor = true;
-            this.chkEnableUnitAssignment.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // grpWiFiRange
-            // 
-            this.grpWiFiRange.BackColor = System.Drawing.Color.Transparent;
-            this.grpWiFiRange.Controls.Add(this.chkWiFiRange);
-            resources.ApplyResources(this.grpWiFiRange, "grpWiFiRange");
-            this.grpWiFiRange.Name = "grpWiFiRange";
-            this.grpWiFiRange.TabStop = false;
-            // 
-            // chkWiFiRange
-            // 
-            resources.ApplyResources(this.chkWiFiRange, "chkWiFiRange");
-            this.chkWiFiRange.Name = "chkWiFiRange";
-            this.chkWiFiRange.UseVisualStyleBackColor = true;
-            this.chkWiFiRange.Click += new System.EventHandler(this.OnModified);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.rbPackInUseRip);
-            this.groupBox3.Controls.Add(this.rbPackInUseNotify);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
-            // rbPackInUseRip
-            // 
-            resources.ApplyResources(this.rbPackInUseRip, "rbPackInUseRip");
-            this.rbPackInUseRip.Name = "rbPackInUseRip";
-            this.rbPackInUseRip.TabStop = true;
-            this.rbPackInUseRip.UseVisualStyleBackColor = true;
-            this.rbPackInUseRip.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // rbPackInUseNotify
-            // 
-            resources.ApplyResources(this.rbPackInUseNotify, "rbPackInUseNotify");
-            this.rbPackInUseNotify.Name = "rbPackInUseNotify";
-            this.rbPackInUseNotify.TabStop = true;
-            this.rbPackInUseNotify.UseVisualStyleBackColor = true;
-            this.rbPackInUseNotify.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // chkForceUnitSelectionWhenNoFees
-            // 
-            resources.ApplyResources(this.chkForceUnitSelectionWhenNoFees, "chkForceUnitSelectionWhenNoFees");
-            this.chkForceUnitSelectionWhenNoFees.Name = "chkForceUnitSelectionWhenNoFees";
-            this.chkForceUnitSelectionWhenNoFees.UseVisualStyleBackColor = true;
-            this.chkForceUnitSelectionWhenNoFees.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // UnitMgmtSettings
             // 
@@ -340,6 +336,13 @@ namespace GTI.Modules.SystemSettings.UI
             this.DoubleBuffered = true;
             resources.ApplyResources(this, "$this");
             this.Name = "UnitMgmtSettings";
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.grpWiFiRange.ResumeLayout(false);
+            this.grpWiFiRange.PerformLayout();
+            this.grpUnitAssignment.ResumeLayout(false);
+            this.grpUnitAssignment.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMaxUnits)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -348,13 +351,6 @@ namespace GTI.Modules.SystemSettings.UI
             ((System.ComponentModel.ISupportInitialize)(this.gridDeviceFees)).EndInit();
             this.grpDeviceRanges.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridDeviceRanges)).EndInit();
-            this.grpUnitAssignment.ResumeLayout(false);
-            this.grpUnitAssignment.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMaxUnits)).EndInit();
-            this.grpWiFiRange.ResumeLayout(false);
-            this.grpWiFiRange.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
 		}

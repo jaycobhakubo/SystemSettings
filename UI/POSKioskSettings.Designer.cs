@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(POSKioskSettings));
-            this.btnReset = new GTI.Controls.ImageButton();
-            this.btnSave = new GTI.Controls.ImageButton();
-            this.lblTicketPrinterName = new System.Windows.Forms.Label();
-            this.chkbxAutomaticApplyCouponToSales = new System.Windows.Forms.CheckBox();
-            this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard = new System.Windows.Forms.CheckBox();
-            this.chkbxIncludeCouponsButton = new System.Windows.Forms.CheckBox();
-            this.chkbxAllowBarcodedPaperSold = new System.Windows.Forms.CheckBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cboKioskBillAcceptorComPort = new System.Windows.Forms.ComboBox();
             this.grpBxKioskSales = new System.Windows.Forms.GroupBox();
+            this.chkbxAllowCBBSheets = new System.Windows.Forms.CheckBox();
+            this.lblChangeMethod = new System.Windows.Forms.Label();
+            this.comboChangeMethod = new System.Windows.Forms.ComboBox();
+            this.txtbxGuardianAddressAndPort = new System.Windows.Forms.TextBox();
+            this.chkbxOnlySellFromButtons = new System.Windows.Forms.CheckBox();
+            this.chkbxAllowB3 = new System.Windows.Forms.CheckBox();
+            this.chkbxAllowScanningProducts = new System.Windows.Forms.CheckBox();
             this.chkbxAllowCreditDebitOnKiosk = new System.Windows.Forms.CheckBox();
             this.chkbxIncludeUseLastPurchaseButton = new System.Windows.Forms.CheckBox();
             this.chkbxUseSimplePaymentForAdvancedKiosk = new System.Windows.Forms.CheckBox();
             this.m_grpTimeouts = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.m_lblTimeout = new System.Windows.Forms.Label();
             this.m_nudMessageTimeout = new System.Windows.Forms.NumericUpDown();
             this.m_nudTimeout = new System.Windows.Forms.NumericUpDown();
@@ -54,90 +53,36 @@
             this.m_lblClosedText = new System.Windows.Forms.Label();
             this.m_lblAttractText = new System.Windows.Forms.Label();
             this.txtbxKioskTicketPrinterName = new System.Windows.Forms.TextBox();
-            this.chkbxAllowScanningProducts = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.chkbxAllowBarcodedPaperSold = new System.Windows.Forms.CheckBox();
+            this.chkbxIncludeCouponsButton = new System.Windows.Forms.CheckBox();
+            this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard = new System.Windows.Forms.CheckBox();
+            this.chkbxAutomaticApplyCouponToSales = new System.Windows.Forms.CheckBox();
+            this.lblTicketPrinterName = new System.Windows.Forms.Label();
+            this.btnReset = new GTI.Controls.ImageButton();
+            this.btnSave = new GTI.Controls.ImageButton();
+            this.chkbxUseKeyClickSounds = new System.Windows.Forms.CheckBox();
+            this.lblVideoVolume = new System.Windows.Forms.Label();
+            this.nudVideoVolume = new System.Windows.Forms.NumericUpDown();
             this.grpBxKioskSales.SuspendLayout();
             this.m_grpTimeouts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudMessageTimeout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudTimeout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudShortTimeout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVideoVolume)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnReset, "btnReset");
-            this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
-            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnSave, "btnSave");
-            this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
-            this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
-            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // lblTicketPrinterName
-            // 
-            resources.ApplyResources(this.lblTicketPrinterName, "lblTicketPrinterName");
-            this.lblTicketPrinterName.Name = "lblTicketPrinterName";
-            // 
-            // chkbxAutomaticApplyCouponToSales
-            // 
-            resources.ApplyResources(this.chkbxAutomaticApplyCouponToSales, "chkbxAutomaticApplyCouponToSales");
-            this.chkbxAutomaticApplyCouponToSales.Name = "chkbxAutomaticApplyCouponToSales";
-            this.chkbxAutomaticApplyCouponToSales.UseVisualStyleBackColor = true;
-            this.chkbxAutomaticApplyCouponToSales.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // chkbxAllowUseOfSimpleKioskWithoutPlayerCard
-            // 
-            resources.ApplyResources(this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard, "chkbxAllowUseOfSimpleKioskWithoutPlayerCard");
-            this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Name = "chkbxAllowUseOfSimpleKioskWithoutPlayerCard";
-            this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard.UseVisualStyleBackColor = true;
-            this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // chkbxIncludeCouponsButton
-            // 
-            resources.ApplyResources(this.chkbxIncludeCouponsButton, "chkbxIncludeCouponsButton");
-            this.chkbxIncludeCouponsButton.Name = "chkbxIncludeCouponsButton";
-            this.chkbxIncludeCouponsButton.UseVisualStyleBackColor = true;
-            this.chkbxIncludeCouponsButton.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // chkbxAllowBarcodedPaperSold
-            // 
-            resources.ApplyResources(this.chkbxAllowBarcodedPaperSold, "chkbxAllowBarcodedPaperSold");
-            this.chkbxAllowBarcodedPaperSold.Name = "chkbxAllowBarcodedPaperSold";
-            this.chkbxAllowBarcodedPaperSold.UseVisualStyleBackColor = true;
-            this.chkbxAllowBarcodedPaperSold.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // cboKioskBillAcceptorComPort
-            // 
-            this.cboKioskBillAcceptorComPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboKioskBillAcceptorComPort, "cboKioskBillAcceptorComPort");
-            this.cboKioskBillAcceptorComPort.FormattingEnabled = true;
-            this.cboKioskBillAcceptorComPort.Name = "cboKioskBillAcceptorComPort";
-            this.cboKioskBillAcceptorComPort.SelectedValueChanged += new System.EventHandler(this.OnModified);
             // 
             // grpBxKioskSales
             // 
+            this.grpBxKioskSales.Controls.Add(this.nudVideoVolume);
+            this.grpBxKioskSales.Controls.Add(this.lblVideoVolume);
+            this.grpBxKioskSales.Controls.Add(this.chkbxUseKeyClickSounds);
+            this.grpBxKioskSales.Controls.Add(this.chkbxAllowCBBSheets);
+            this.grpBxKioskSales.Controls.Add(this.lblChangeMethod);
+            this.grpBxKioskSales.Controls.Add(this.comboChangeMethod);
+            this.grpBxKioskSales.Controls.Add(this.txtbxGuardianAddressAndPort);
+            this.grpBxKioskSales.Controls.Add(this.chkbxOnlySellFromButtons);
+            this.grpBxKioskSales.Controls.Add(this.chkbxAllowB3);
             this.grpBxKioskSales.Controls.Add(this.chkbxAllowScanningProducts);
             this.grpBxKioskSales.Controls.Add(this.chkbxAllowCreditDebitOnKiosk);
             this.grpBxKioskSales.Controls.Add(this.chkbxIncludeUseLastPurchaseButton);
@@ -148,7 +93,6 @@
             this.grpBxKioskSales.Controls.Add(this.m_lblClosedText);
             this.grpBxKioskSales.Controls.Add(this.m_lblAttractText);
             this.grpBxKioskSales.Controls.Add(this.txtbxKioskTicketPrinterName);
-            this.grpBxKioskSales.Controls.Add(this.cboKioskBillAcceptorComPort);
             this.grpBxKioskSales.Controls.Add(this.label6);
             this.grpBxKioskSales.Controls.Add(this.chkbxAllowBarcodedPaperSold);
             this.grpBxKioskSales.Controls.Add(this.chkbxIncludeCouponsButton);
@@ -158,6 +102,57 @@
             resources.ApplyResources(this.grpBxKioskSales, "grpBxKioskSales");
             this.grpBxKioskSales.Name = "grpBxKioskSales";
             this.grpBxKioskSales.TabStop = false;
+            // 
+            // chkbxAllowCBBSheets
+            // 
+            resources.ApplyResources(this.chkbxAllowCBBSheets, "chkbxAllowCBBSheets");
+            this.chkbxAllowCBBSheets.Name = "chkbxAllowCBBSheets";
+            this.chkbxAllowCBBSheets.UseVisualStyleBackColor = true;
+            this.chkbxAllowCBBSheets.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblChangeMethod
+            // 
+            resources.ApplyResources(this.lblChangeMethod, "lblChangeMethod");
+            this.lblChangeMethod.Name = "lblChangeMethod";
+            // 
+            // comboChangeMethod
+            // 
+            this.comboChangeMethod.FormattingEnabled = true;
+            this.comboChangeMethod.Items.AddRange(new object[] {
+            resources.GetString("comboChangeMethod.Items"),
+            resources.GetString("comboChangeMethod.Items1"),
+            resources.GetString("comboChangeMethod.Items2"),
+            resources.GetString("comboChangeMethod.Items3"),
+            resources.GetString("comboChangeMethod.Items4")});
+            resources.ApplyResources(this.comboChangeMethod, "comboChangeMethod");
+            this.comboChangeMethod.Name = "comboChangeMethod";
+            // 
+            // txtbxGuardianAddressAndPort
+            // 
+            resources.ApplyResources(this.txtbxGuardianAddressAndPort, "txtbxGuardianAddressAndPort");
+            this.txtbxGuardianAddressAndPort.Name = "txtbxGuardianAddressAndPort";
+            this.txtbxGuardianAddressAndPort.TextChanged += new System.EventHandler(this.OnModified);
+            this.txtbxGuardianAddressAndPort.Validating += new System.ComponentModel.CancelEventHandler(this.txtbxGuardianAddressAndPort_Validating);
+            // 
+            // chkbxOnlySellFromButtons
+            // 
+            resources.ApplyResources(this.chkbxOnlySellFromButtons, "chkbxOnlySellFromButtons");
+            this.chkbxOnlySellFromButtons.Name = "chkbxOnlySellFromButtons";
+            this.chkbxOnlySellFromButtons.UseVisualStyleBackColor = true;
+            this.chkbxOnlySellFromButtons.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkbxAllowB3
+            // 
+            resources.ApplyResources(this.chkbxAllowB3, "chkbxAllowB3");
+            this.chkbxAllowB3.Name = "chkbxAllowB3";
+            this.chkbxAllowB3.UseVisualStyleBackColor = true;
+            // 
+            // chkbxAllowScanningProducts
+            // 
+            resources.ApplyResources(this.chkbxAllowScanningProducts, "chkbxAllowScanningProducts");
+            this.chkbxAllowScanningProducts.Name = "chkbxAllowScanningProducts";
+            this.chkbxAllowScanningProducts.UseVisualStyleBackColor = true;
+            this.chkbxAllowScanningProducts.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkbxAllowCreditDebitOnKiosk
             // 
@@ -182,6 +177,7 @@
             // 
             // m_grpTimeouts
             // 
+            this.m_grpTimeouts.Controls.Add(this.label1);
             this.m_grpTimeouts.Controls.Add(this.m_lblTimeout);
             this.m_grpTimeouts.Controls.Add(this.m_nudMessageTimeout);
             this.m_grpTimeouts.Controls.Add(this.m_nudTimeout);
@@ -191,6 +187,11 @@
             resources.ApplyResources(this.m_grpTimeouts, "m_grpTimeouts");
             this.m_grpTimeouts.Name = "m_grpTimeouts";
             this.m_grpTimeouts.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // m_lblTimeout
             // 
@@ -313,12 +314,91 @@
             this.txtbxKioskTicketPrinterName.Name = "txtbxKioskTicketPrinterName";
             this.txtbxKioskTicketPrinterName.TextChanged += new System.EventHandler(this.OnModified);
             // 
-            // chkbxAllowScanningProducts
+            // label6
             // 
-            resources.ApplyResources(this.chkbxAllowScanningProducts, "chkbxAllowScanningProducts");
-            this.chkbxAllowScanningProducts.Name = "chkbxAllowScanningProducts";
-            this.chkbxAllowScanningProducts.UseVisualStyleBackColor = true;
-            this.chkbxAllowScanningProducts.CheckedChanged += new System.EventHandler(this.OnModified);
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // chkbxAllowBarcodedPaperSold
+            // 
+            resources.ApplyResources(this.chkbxAllowBarcodedPaperSold, "chkbxAllowBarcodedPaperSold");
+            this.chkbxAllowBarcodedPaperSold.Name = "chkbxAllowBarcodedPaperSold";
+            this.chkbxAllowBarcodedPaperSold.UseVisualStyleBackColor = true;
+            this.chkbxAllowBarcodedPaperSold.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkbxIncludeCouponsButton
+            // 
+            resources.ApplyResources(this.chkbxIncludeCouponsButton, "chkbxIncludeCouponsButton");
+            this.chkbxIncludeCouponsButton.Name = "chkbxIncludeCouponsButton";
+            this.chkbxIncludeCouponsButton.UseVisualStyleBackColor = true;
+            this.chkbxIncludeCouponsButton.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkbxAllowUseOfSimpleKioskWithoutPlayerCard
+            // 
+            resources.ApplyResources(this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard, "chkbxAllowUseOfSimpleKioskWithoutPlayerCard");
+            this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard.Name = "chkbxAllowUseOfSimpleKioskWithoutPlayerCard";
+            this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard.UseVisualStyleBackColor = true;
+            this.chkbxAllowUseOfSimpleKioskWithoutPlayerCard.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkbxAutomaticApplyCouponToSales
+            // 
+            resources.ApplyResources(this.chkbxAutomaticApplyCouponToSales, "chkbxAutomaticApplyCouponToSales");
+            this.chkbxAutomaticApplyCouponToSales.Name = "chkbxAutomaticApplyCouponToSales";
+            this.chkbxAutomaticApplyCouponToSales.UseVisualStyleBackColor = true;
+            this.chkbxAutomaticApplyCouponToSales.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblTicketPrinterName
+            // 
+            resources.ApplyResources(this.lblTicketPrinterName, "lblTicketPrinterName");
+            this.lblTicketPrinterName.Name = "lblTicketPrinterName";
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
+            this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
+            this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
+            this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // chkbxUseKeyClickSounds
+            // 
+            resources.ApplyResources(this.chkbxUseKeyClickSounds, "chkbxUseKeyClickSounds");
+            this.chkbxUseKeyClickSounds.Name = "chkbxUseKeyClickSounds";
+            this.chkbxUseKeyClickSounds.UseVisualStyleBackColor = true;
+            this.chkbxUseKeyClickSounds.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblVideoVolume
+            // 
+            resources.ApplyResources(this.lblVideoVolume, "lblVideoVolume");
+            this.lblVideoVolume.Name = "lblVideoVolume";
+            // 
+            // nudVideoVolume
+            // 
+            resources.ApplyResources(this.nudVideoVolume, "nudVideoVolume");
+            this.nudVideoVolume.Name = "nudVideoVolume";
+            this.nudVideoVolume.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nudVideoVolume.ValueChanged += new System.EventHandler(this.OnModified);
             // 
             // POSKioskSettings
             // 
@@ -335,6 +415,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_nudMessageTimeout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudTimeout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudShortTimeout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVideoVolume)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -349,7 +430,6 @@
         private System.Windows.Forms.CheckBox chkbxIncludeCouponsButton;
         private System.Windows.Forms.CheckBox chkbxAllowBarcodedPaperSold;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cboKioskBillAcceptorComPort;
         private System.Windows.Forms.GroupBox grpBxKioskSales;
         private System.Windows.Forms.TextBox txtbxKioskTicketPrinterName;
         private System.Windows.Forms.GroupBox m_grpTimeouts;
@@ -367,5 +447,15 @@
         private System.Windows.Forms.CheckBox chkbxIncludeUseLastPurchaseButton;
         private System.Windows.Forms.CheckBox chkbxAllowCreditDebitOnKiosk;
         private System.Windows.Forms.CheckBox chkbxAllowScanningProducts;
+        private System.Windows.Forms.CheckBox chkbxAllowB3;
+        private System.Windows.Forms.CheckBox chkbxOnlySellFromButtons;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtbxGuardianAddressAndPort;
+        private System.Windows.Forms.Label lblChangeMethod;
+        private System.Windows.Forms.ComboBox comboChangeMethod;
+        private System.Windows.Forms.CheckBox chkbxAllowCBBSheets;
+        private System.Windows.Forms.NumericUpDown nudVideoVolume;
+        private System.Windows.Forms.Label lblVideoVolume;
+        private System.Windows.Forms.CheckBox chkbxUseKeyClickSounds;
     }
 }

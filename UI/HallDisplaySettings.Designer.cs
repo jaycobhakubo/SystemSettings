@@ -28,10 +28,16 @@ namespace GTI.Modules.SystemSettings.UI
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.Windows.Forms.Label winnerPollIntervalLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HallDisplaySettings));
+            System.Windows.Forms.Label winnerPollIntervalLabel;
             System.Windows.Forms.Label prevWinnerDisplayIntervalLabel;
             System.Windows.Forms.Label prevWinnerDisplayTimeLabel;
+            this.grpSceneInfo = new System.Windows.Forms.GroupBox();
+            this.cboDefaultScene = new System.Windows.Forms.ComboBox();
+            this.lvAllowableScenes = new System.Windows.Forms.ListView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnReset = new GTI.Controls.ImageButton();
             this.winnerSettingsGroupBox = new System.Windows.Forms.GroupBox();
             this.chkShowPayoutAmount = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,16 +61,11 @@ namespace GTI.Modules.SystemSettings.UI
             this.rdNextBallOnly = new System.Windows.Forms.RadioButton();
             this.rdChangeBGColor = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
-            this.grpSceneInfo = new System.Windows.Forms.GroupBox();
-            this.cboDefaultScene = new System.Windows.Forms.ComboBox();
-            this.lvAllowableScenes = new System.Windows.Forms.ListView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             winnerPollIntervalLabel = new System.Windows.Forms.Label();
             prevWinnerDisplayIntervalLabel = new System.Windows.Forms.Label();
             prevWinnerDisplayTimeLabel = new System.Windows.Forms.Label();
+            this.grpSceneInfo.SuspendLayout();
             this.winnerSettingsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numScreenSaverTimeout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPreviousWinnerDisplayTime)).BeginInit();
@@ -74,8 +75,59 @@ namespace GTI.Modules.SystemSettings.UI
             ((System.ComponentModel.ISupportInitialize)(this.numMinColorCircleTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinBallCallTime)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.grpSceneInfo.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // grpSceneInfo
+            // 
+            this.grpSceneInfo.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.grpSceneInfo.Controls.Add(this.cboDefaultScene);
+            this.grpSceneInfo.Controls.Add(this.lvAllowableScenes);
+            this.grpSceneInfo.Controls.Add(this.label2);
+            this.grpSceneInfo.Controls.Add(this.label1);
+            resources.ApplyResources(this.grpSceneInfo, "grpSceneInfo");
+            this.grpSceneInfo.Name = "grpSceneInfo";
+            this.grpSceneInfo.TabStop = false;
+            // 
+            // cboDefaultScene
+            // 
+            this.cboDefaultScene.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cboDefaultScene, "cboDefaultScene");
+            this.cboDefaultScene.FormattingEnabled = true;
+            this.cboDefaultScene.Name = "cboDefaultScene";
+            // 
+            // lvAllowableScenes
+            // 
+            this.lvAllowableScenes.CheckBoxes = true;
+            resources.ApplyResources(this.lvAllowableScenes, "lvAllowableScenes");
+            this.lvAllowableScenes.FullRowSelect = true;
+            this.lvAllowableScenes.MultiSelect = false;
+            this.lvAllowableScenes.Name = "lvAllowableScenes";
+            this.lvAllowableScenes.UseCompatibleStateImageBehavior = false;
+            this.lvAllowableScenes.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvAllowableScenes_ColumnClick);
+            this.lvAllowableScenes.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.lvAllowableScenes_ItemChecked);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
+            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
+            this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // winnerPollIntervalLabel
             // 
@@ -274,20 +326,6 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.Transparent;
-            this.btnReset.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.btnReset, "btnReset");
-            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
-            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
-            this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
-            this.btnReset.UseVisualStyleBackColor = false;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
-            // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
@@ -296,49 +334,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
             this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // grpSceneInfo
-            // 
-            this.grpSceneInfo.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.grpSceneInfo.Controls.Add(this.cboDefaultScene);
-            this.grpSceneInfo.Controls.Add(this.lvAllowableScenes);
-            this.grpSceneInfo.Controls.Add(this.label2);
-            this.grpSceneInfo.Controls.Add(this.label1);
-            resources.ApplyResources(this.grpSceneInfo, "grpSceneInfo");
-            this.grpSceneInfo.Name = "grpSceneInfo";
-            this.grpSceneInfo.TabStop = false;
-            // 
-            // cboDefaultScene
-            // 
-            this.cboDefaultScene.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cboDefaultScene, "cboDefaultScene");
-            this.cboDefaultScene.FormattingEnabled = true;
-            this.cboDefaultScene.Name = "cboDefaultScene";
-            // 
-            // lvAllowableScenes
-            // 
-            this.lvAllowableScenes.CheckBoxes = true;
-            resources.ApplyResources(this.lvAllowableScenes, "lvAllowableScenes");
-            this.lvAllowableScenes.FullRowSelect = true;
-            this.lvAllowableScenes.MultiSelect = false;
-            this.lvAllowableScenes.Name = "lvAllowableScenes";
-            this.lvAllowableScenes.UseCompatibleStateImageBehavior = false;
-            this.lvAllowableScenes.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvAllowableScenes_ColumnClick);
-            this.lvAllowableScenes.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.lvAllowableScenes_ItemChecked);
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // HallDisplaySettings
             // 
@@ -351,6 +349,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this, "$this");
             this.Name = "HallDisplaySettings";
             this.Load += new System.EventHandler(this.HallDisplaySettings_Load);
+            this.grpSceneInfo.ResumeLayout(false);
+            this.grpSceneInfo.PerformLayout();
             this.winnerSettingsGroupBox.ResumeLayout(false);
             this.winnerSettingsGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numScreenSaverTimeout)).EndInit();
@@ -363,8 +363,6 @@ namespace GTI.Modules.SystemSettings.UI
             ((System.ComponentModel.ISupportInitialize)(this.numMinBallCallTime)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.grpSceneInfo.ResumeLayout(false);
-            this.grpSceneInfo.PerformLayout();
             this.ResumeLayout(false);
 
 		}

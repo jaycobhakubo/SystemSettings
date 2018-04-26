@@ -610,7 +610,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            chkShowWinnersOnly.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
         private void rdCycleMode_CheckedChanged(object sender, EventArgs e)

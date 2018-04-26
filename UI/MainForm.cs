@@ -27,6 +27,16 @@ namespace GTI.Modules.SystemSettings.UI
             
 		    m_currentOperator = -1; //FIX RALLY DE 3581 changing setting page after edit crashed
             InitializeComponent();
+
+            foreach (Control ctrl in splitContainer1.Panel2.Controls)
+            {
+                ctrl.Hide();
+                ctrl.TabIndex = 0;
+                ctrl.TabStop = false;
+            }
+
+            Application.DoEvents();
+
             kioskAdvanced2.SetKoiskSettings2Controller(this.GetCurrentOperator, this.SetCurrentOperator);
             licenseFileSettings1.SetLicenseFileSettingsController();
             
@@ -37,10 +47,8 @@ namespace GTI.Modules.SystemSettings.UI
             }
             else
             {
-
-                comboBox1.Visible = false;
-                label1.Text = String.Format("Current Operator: {0}",
-                                            Common.OperatorName);
+                cbOperator.Visible = false;
+                lblCurrentOperator.Text = String.Format("Current Operator:\r\n{0}", Common.OperatorName);
                 m_currentOperator = Common.OperatorId;
                 LoadSettings();
             }
@@ -51,16 +59,16 @@ namespace GTI.Modules.SystemSettings.UI
             //populate the combo box with the operators
             operatorManagement1.LoadSettings();
             
-            comboBox1.Items.Clear();
+            cbOperator.Items.Clear();
             foreach(ListViewItem item in operatorManagement1.gtiListView1.Items)
             {
                 int operatorId; 
                 Int32.TryParse(item.SubItems[1].Text, out operatorId);
                 string comboBoxItem = string.Format("{1} - {0}", item.Text, operatorId.ToString());
-                int index = comboBox1.Items.Add(comboBoxItem); 
+                int index = cbOperator.Items.Add(comboBoxItem); 
                 if(Common.OperatorId == operatorId)
                 {
-                    comboBox1.SelectedIndex = index;
+                    cbOperator.SelectedIndex = index;
                     CreateNodes();
                 }
             }
@@ -260,24 +268,18 @@ namespace GTI.Modules.SystemSettings.UI
 
             playerDeviceSettings1.Devices = unitMgmtSettings1.Devices;
             playerDeviceSettings1.LoadSettings();
-            //playerDeviceSettings1.Hide();
-            //playerDeviceSettings1.Enabled = false;
+            playerDeviceSettings1.Hide();
+            playerDeviceSettings1.Enabled = false;
 
             playerDeviceAudioSettings1.Devices = unitMgmtSettings1.Devices;
             playerDeviceAudioSettings1.LoadSettings();
-            //playerDeviceAudioSettings1.Hide();
-            //playerDeviceAudioSettings1.Enabled = false;
+            playerDeviceAudioSettings1.Hide();
+            playerDeviceAudioSettings1.Enabled = false;
 
             playerDevicePlayModeSettings1.Devices = unitMgmtSettings1.Devices;
             playerDevicePlayModeSettings1.LoadSettings();
-            //playerDevicePlayModeSettings1.Hide();
-            //playerDevicePlayModeSettings1.Enabled = false;
-
-
-            rngConfigurationSettings1.LoadSettings();
-            rngConfigurationSettings1.Hide();
-            rngConfigurationSettings1.Enabled = false;
-
+            playerDevicePlayModeSettings1.Hide();
+            playerDevicePlayModeSettings1.Enabled = false;
 
             //END RALLY DE9656
 
@@ -408,13 +410,14 @@ namespace GTI.Modules.SystemSettings.UI
             if (Common.GetDeviceCount(Device.AdvancedPOSKiosk) > 0 ||
                 Common.GetDeviceCount(Device.BuyAgainKiosk) > 0 ||
                 Common.GetDeviceCount(Device.SimplePOSKiosk) > 0 ||
-                Common.GetDeviceCount(Device.HybridKiosk) > 0
+                Common.GetDeviceCount(Device.HybridKiosk) > 0 ||
+                Common.GetDeviceCount(Device.B3Kiosk) > 0
                )
-          {
+            {
                 nodeParent = new TreeNode("POS Kiosk", 0, 1);
                 nodeParent.Tag = kioskSalesSettings1;
                 treeView1.Nodes.Add(nodeParent);
-          }
+            }
     
 
             //License File Settings
@@ -609,13 +612,6 @@ namespace GTI.Modules.SystemSettings.UI
                 treeView1.Nodes.Add(nodeParent);
             }
 
-            if (Common.IsAdmin)
-            {
-                nodeParent = new TreeNode("RNG Configuration Settings", 0, 1);
-                nodeParent.Tag = rngConfigurationSettings1;
-                treeView1.Nodes.Add(nodeParent);
-            }
-
             //SORT by alphabetical order
             treeView1.Sort();
 
@@ -626,7 +622,6 @@ namespace GTI.Modules.SystemSettings.UI
                 if (tn.Text.IndexOf("Settings") != -1)           //Remove parent node  "Settings"
                 {
                     tn.Text = tn.Text.Replace("Settings", "").Trim();
-                    
                 }
 
 
@@ -641,7 +636,6 @@ namespace GTI.Modules.SystemSettings.UI
                     }
                 }
             }
-
 
             foreach (TreeNode tn in treeView1.Nodes)
             {
@@ -693,44 +687,31 @@ namespace GTI.Modules.SystemSettings.UI
             }
             //END FIX RALLY DE2661
 
+            splitContainer1.Panel2.Hide();
+
             if(m_activeControl != null)
             {
-                //m_activeControl.Enabled = false;
-                //m_activeControl.Hide();
-                //m_activeControl.Visible = false;
-                m_activeControl.SendToBack();             
-          
+                m_activeControl.Hide();
+                Application.DoEvents();
+                m_activeControl.Enabled = false;
+                m_activeControl.TabStop = false;
+                m_activeControl.TabIndex = 0;
             }
-			// Get the selected node and display its panel
+
+            // Get the selected node and display its panel
 			m_previousControl = m_activeControl;
 			m_activeControl = (SettingsControl)(treeView1.SelectedNode.Tag);
-			m_activeControl.OnActivate(treeView1.SelectedNode);
-
-            if (m_activeControl.Enabled != true)
-                m_activeControl.Enabled = true;
-
+            m_activeControl.Enabled = true;
+            m_activeControl.TabStop = true;
+            m_activeControl.TabIndex = 1;
+            m_activeControl.OnActivate(treeView1.SelectedNode);
             m_activeControl.Location = new System.Drawing.Point(0, 0);
             m_activeControl.Size = new System.Drawing.Size(splitContainer1.Width - splitContainer1.SplitterDistance, splitContainer1.Height);
             m_activeControl.Show();
             m_UserControlOpen = true;
-          
-            m_activeControl.BringToFront();
 			m_activeControl.Update();
-            treeView1.SelectedNode = e.Node;
 
-            /* This code was used to force the first child node to be selected
-             * when a parent node was clicked 
-            if (e.Node.Nodes.Count < 1)
-            {
-                treeView1.SelectedNode = e.Node;
-            }
-            else
-            {
-                treeView1.SelectedNode = e.Node.Nodes[0];
-            }
-            */
-
-            treeView1.Update();
+            splitContainer1.Panel2.Show();
 
 			Application.DoEvents();
 		}
@@ -748,10 +729,7 @@ namespace GTI.Modules.SystemSettings.UI
 					{
 						// If save fails remain on current tab
 						if (!m_activeControl.SaveSettings())
-						{
 							e.Cancel = true;
-						}
-
 					}
 					else if (result == DialogResult.Cancel)
 					{
@@ -763,16 +741,15 @@ namespace GTI.Modules.SystemSettings.UI
 						m_bResetPreviousControl = true;
 					}
 				}
-
-                if (m_activeControl == posSettings1) //Flex tendering mode may have changed
-                    tenderSettings.LoadSettings();
-
-                if (m_activeControl == tenderSettings) //Tendering mode may have changed
-                    posSettings1.LoadSettings();
 			}
 		}
-
-		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            treeView1.Focus();
+        }
+		
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			// Prompt to save if modified
 			if (m_activeControl != null)
@@ -785,9 +762,7 @@ namespace GTI.Modules.SystemSettings.UI
 					{
 						// If save fails remain on current tab
 						if (!m_activeControl.SaveSettings())
-						{
 							e.Cancel = true;
-						}
 					}
 					else if (result == DialogResult.Cancel)
 					{
@@ -923,7 +898,13 @@ namespace GTI.Modules.SystemSettings.UI
 
 		#endregion
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+            cbOperator.DroppedDown = true;
+            cbOperator.Focus();
+        }
+
+        private void cbOperator_SelectedIndexChanged(object sender, EventArgs e)
         {
             bool changeOp = true;
             if (m_activeControl != null)
@@ -937,17 +918,17 @@ namespace GTI.Modules.SystemSettings.UI
                         // If save fails remain on current tab
                         if (!m_activeControl.SaveSettings())
                         {
-                            comboBox1.SelectedIndexChanged -= comboBox1_SelectedIndexChanged;
-                            comboBox1.SelectedIndex = m_currentOperator - 1;
-                            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+                            cbOperator.SelectedIndexChanged -= cbOperator_SelectedIndexChanged;
+                            cbOperator.SelectedIndex = m_currentOperator - 1;
+                            cbOperator.SelectedIndexChanged += cbOperator_SelectedIndexChanged;
                             changeOp = false;
                         }
                     }
                     else if (result == DialogResult.Cancel)
                     {
-                        comboBox1.SelectedIndexChanged -= comboBox1_SelectedIndexChanged;
-                        comboBox1.SelectedIndex = m_currentOperator - 1;
-                        comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+                        cbOperator.SelectedIndexChanged -= cbOperator_SelectedIndexChanged;
+                        cbOperator.SelectedIndex = m_currentOperator - 1;
+                        cbOperator.SelectedIndexChanged += cbOperator_SelectedIndexChanged;
                         m_bResetPreviousControl = true; // Flag it for reset if they do not save
                         changeOp = false;
                     }
@@ -961,7 +942,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             if (changeOp == true)
             {
-                string operatorID = comboBox1.SelectedItem as string;
+                string operatorID = cbOperator.SelectedItem as string;
                 string[] operatorIDList = operatorID.Split();
                 operatorID = operatorIDList[0];
                 int oID;
@@ -982,6 +963,20 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                e.Handled = true;
+                treeView1.Focus();
+            }
+
+            if (e.Alt && e.KeyCode == Keys.O)
+            {
+                e.Handled = true;
+                label1_Click(sender, new EventArgs());
+            }
+        }
 	} // end class
 
     

@@ -255,7 +255,7 @@
             this.btnPPatternOn.Location = new System.Drawing.Point(558, 279);
             this.btnPPatternOn.Name = "btnPPatternOn";
             this.btnPPatternOn.Size = new System.Drawing.Size(121, 29);
-            this.btnPPatternOn.TabIndex = 55;
+            this.btnPPatternOn.TabIndex = 31;
             this.btnPPatternOn.UseVisualStyleBackColor = false;
             this.btnPPatternOn.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -265,7 +265,7 @@
             this.btnPLastCallSign.Location = new System.Drawing.Point(558, 244);
             this.btnPLastCallSign.Name = "btnPLastCallSign";
             this.btnPLastCallSign.Size = new System.Drawing.Size(121, 29);
-            this.btnPLastCallSign.TabIndex = 54;
+            this.btnPLastCallSign.TabIndex = 29;
             this.btnPLastCallSign.UseVisualStyleBackColor = false;
             this.btnPLastCallSign.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -275,7 +275,7 @@
             this.btnPHotballFlashOff.Location = new System.Drawing.Point(558, 209);
             this.btnPHotballFlashOff.Name = "btnPHotballFlashOff";
             this.btnPHotballFlashOff.Size = new System.Drawing.Size(121, 29);
-            this.btnPHotballFlashOff.TabIndex = 53;
+            this.btnPHotballFlashOff.TabIndex = 27;
             this.btnPHotballFlashOff.UseVisualStyleBackColor = false;
             this.btnPHotballFlashOff.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -285,7 +285,7 @@
             this.btnPHotballCall.Location = new System.Drawing.Point(558, 174);
             this.btnPHotballCall.Name = "btnPHotballCall";
             this.btnPHotballCall.Size = new System.Drawing.Size(121, 29);
-            this.btnPHotballCall.TabIndex = 52;
+            this.btnPHotballCall.TabIndex = 25;
             this.btnPHotballCall.UseVisualStyleBackColor = false;
             this.btnPHotballCall.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -295,7 +295,7 @@
             this.btnPCallFlashOff.Location = new System.Drawing.Point(558, 138);
             this.btnPCallFlashOff.Name = "btnPCallFlashOff";
             this.btnPCallFlashOff.Size = new System.Drawing.Size(121, 29);
-            this.btnPCallFlashOff.TabIndex = 51;
+            this.btnPCallFlashOff.TabIndex = 23;
             this.btnPCallFlashOff.UseVisualStyleBackColor = false;
             this.btnPCallFlashOff.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -305,7 +305,7 @@
             this.btnPCall.Location = new System.Drawing.Point(558, 103);
             this.btnPCall.Name = "btnPCall";
             this.btnPCall.Size = new System.Drawing.Size(121, 29);
-            this.btnPCall.TabIndex = 50;
+            this.btnPCall.TabIndex = 21;
             this.btnPCall.UseVisualStyleBackColor = false;
             this.btnPCall.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -315,7 +315,7 @@
             this.btnPCountSign.Location = new System.Drawing.Point(558, 68);
             this.btnPCountSign.Name = "btnPCountSign";
             this.btnPCountSign.Size = new System.Drawing.Size(121, 29);
-            this.btnPCountSign.TabIndex = 49;
+            this.btnPCountSign.TabIndex = 19;
             this.btnPCountSign.UseVisualStyleBackColor = false;
             this.btnPCountSign.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -325,7 +325,7 @@
             this.btnPBingoFlashOn.Location = new System.Drawing.Point(558, 33);
             this.btnPBingoFlashOn.Name = "btnPBingoFlashOn";
             this.btnPBingoFlashOn.Size = new System.Drawing.Size(121, 29);
-            this.btnPBingoFlashOn.TabIndex = 48;
+            this.btnPBingoFlashOn.TabIndex = 17;
             this.btnPBingoFlashOn.UseVisualStyleBackColor = false;
             this.btnPBingoFlashOn.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -335,7 +335,7 @@
             this.btnPPatternOff.Location = new System.Drawing.Point(209, 279);
             this.btnPPatternOff.Name = "btnPPatternOff";
             this.btnPPatternOff.Size = new System.Drawing.Size(121, 29);
-            this.btnPPatternOff.TabIndex = 47;
+            this.btnPPatternOff.TabIndex = 15;
             this.btnPPatternOff.UseVisualStyleBackColor = false;
             this.btnPPatternOff.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -345,7 +345,7 @@
             this.btnPGameSign.Location = new System.Drawing.Point(209, 244);
             this.btnPGameSign.Name = "btnPGameSign";
             this.btnPGameSign.Size = new System.Drawing.Size(121, 29);
-            this.btnPGameSign.TabIndex = 46;
+            this.btnPGameSign.TabIndex = 13;
             this.btnPGameSign.UseVisualStyleBackColor = false;
             this.btnPGameSign.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -355,7 +355,7 @@
             this.btnPHotballFlashOn.Location = new System.Drawing.Point(209, 209);
             this.btnPHotballFlashOn.Name = "btnPHotballFlashOn";
             this.btnPHotballFlashOn.Size = new System.Drawing.Size(121, 29);
-            this.btnPHotballFlashOn.TabIndex = 45;
+            this.btnPHotballFlashOn.TabIndex = 11;
             this.btnPHotballFlashOn.UseVisualStyleBackColor = false;
             this.btnPHotballFlashOn.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -365,7 +365,7 @@
             this.btnPHotball.Location = new System.Drawing.Point(209, 174);
             this.btnPHotball.Name = "btnPHotball";
             this.btnPHotball.Size = new System.Drawing.Size(121, 29);
-            this.btnPHotball.TabIndex = 44;
+            this.btnPHotball.TabIndex = 9;
             this.btnPHotball.UseVisualStyleBackColor = false;
             this.btnPHotball.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -375,7 +375,7 @@
             this.btnPCallFlashOn.Location = new System.Drawing.Point(209, 138);
             this.btnPCallFlashOn.Name = "btnPCallFlashOn";
             this.btnPCallFlashOn.Size = new System.Drawing.Size(121, 29);
-            this.btnPCallFlashOn.TabIndex = 43;
+            this.btnPCallFlashOn.TabIndex = 7;
             this.btnPCallFlashOn.UseVisualStyleBackColor = false;
             this.btnPCallFlashOn.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -385,7 +385,7 @@
             this.btnPCallOff.Location = new System.Drawing.Point(209, 103);
             this.btnPCallOff.Name = "btnPCallOff";
             this.btnPCallOff.Size = new System.Drawing.Size(121, 29);
-            this.btnPCallOff.TabIndex = 42;
+            this.btnPCallOff.TabIndex = 5;
             this.btnPCallOff.UseVisualStyleBackColor = false;
             this.btnPCallOff.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -395,7 +395,7 @@
             this.btnPBingoNormal.Location = new System.Drawing.Point(209, 68);
             this.btnPBingoNormal.Name = "btnPBingoNormal";
             this.btnPBingoNormal.Size = new System.Drawing.Size(121, 29);
-            this.btnPBingoNormal.TabIndex = 41;
+            this.btnPBingoNormal.TabIndex = 3;
             this.btnPBingoNormal.UseVisualStyleBackColor = false;
             this.btnPBingoNormal.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -405,7 +405,7 @@
             this.btnPBingoFlashOff.Location = new System.Drawing.Point(209, 33);
             this.btnPBingoFlashOff.Name = "btnPBingoFlashOff";
             this.btnPBingoFlashOff.Size = new System.Drawing.Size(121, 29);
-            this.btnPBingoFlashOff.TabIndex = 40;
+            this.btnPBingoFlashOff.TabIndex = 1;
             this.btnPBingoFlashOff.UseVisualStyleBackColor = false;
             this.btnPBingoFlashOff.Click += new System.EventHandler(this.colorButton_Click);
             // 
@@ -415,7 +415,7 @@
             this.label11.Location = new System.Drawing.Point(354, 209);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(180, 22);
-            this.label11.TabIndex = 39;
+            this.label11.TabIndex = 26;
             this.label11.Text = "Hotball Flash Off Color";
             // 
             // label12
@@ -424,7 +424,7 @@
             this.label12.Location = new System.Drawing.Point(354, 244);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(109, 22);
-            this.label12.TabIndex = 38;
+            this.label12.TabIndex = 28;
             this.label12.Text = "Last Call Sign";
             // 
             // label3
@@ -433,7 +433,7 @@
             this.label3.Location = new System.Drawing.Point(6, 33);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(170, 22);
-            this.label3.TabIndex = 24;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Bingo Flash Off Color";
             // 
             // label13
@@ -442,7 +442,7 @@
             this.label13.Location = new System.Drawing.Point(354, 279);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(90, 22);
-            this.label13.TabIndex = 37;
+            this.label13.TabIndex = 30;
             this.label13.Text = "Pattern On";
             // 
             // label4
@@ -451,7 +451,7 @@
             this.label4.Location = new System.Drawing.Point(6, 138);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 22);
-            this.label4.TabIndex = 25;
+            this.label4.TabIndex = 6;
             this.label4.Text = "Call Flash On Color";
             // 
             // label14
@@ -460,7 +460,7 @@
             this.label14.Location = new System.Drawing.Point(354, 174);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(141, 22);
-            this.label14.TabIndex = 36;
+            this.label14.TabIndex = 24;
             this.label14.Text = "Hotball Call Color";
             // 
             // label5
@@ -469,7 +469,7 @@
             this.label5.Location = new System.Drawing.Point(6, 103);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 22);
-            this.label5.TabIndex = 26;
+            this.label5.TabIndex = 4;
             this.label5.Text = "Call Color Off";
             // 
             // label7
@@ -478,7 +478,7 @@
             this.label7.Location = new System.Drawing.Point(354, 103);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 22);
-            this.label7.TabIndex = 31;
+            this.label7.TabIndex = 20;
             this.label7.Text = "Call Color";
             // 
             // label15
@@ -487,7 +487,7 @@
             this.label15.Location = new System.Drawing.Point(6, 174);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(109, 22);
-            this.label15.TabIndex = 35;
+            this.label15.TabIndex = 8;
             this.label15.Text = "Hotball Color";
             // 
             // label8
@@ -496,7 +496,7 @@
             this.label8.Location = new System.Drawing.Point(354, 138);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 22);
-            this.label8.TabIndex = 30;
+            this.label8.TabIndex = 22;
             this.label8.Text = "Call Flash Off Color";
             // 
             // label6
@@ -505,7 +505,7 @@
             this.label6.Location = new System.Drawing.Point(6, 68);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(159, 22);
-            this.label6.TabIndex = 27;
+            this.label6.TabIndex = 2;
             this.label6.Text = "Bingo Normal Color";
             // 
             // label9
@@ -514,7 +514,7 @@
             this.label9.Location = new System.Drawing.Point(354, 68);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(90, 22);
-            this.label9.TabIndex = 29;
+            this.label9.TabIndex = 18;
             this.label9.Text = "Count Sign";
             // 
             // label16
@@ -523,7 +523,7 @@
             this.label16.Location = new System.Drawing.Point(6, 209);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(177, 22);
-            this.label16.TabIndex = 34;
+            this.label16.TabIndex = 10;
             this.label16.Text = "Hotball Flash On Color";
             // 
             // label10
@@ -532,7 +532,7 @@
             this.label10.Location = new System.Drawing.Point(354, 33);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(167, 22);
-            this.label10.TabIndex = 28;
+            this.label10.TabIndex = 16;
             this.label10.Text = "Bingo Flash On Color";
             // 
             // label18
@@ -541,7 +541,7 @@
             this.label18.Location = new System.Drawing.Point(6, 244);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(89, 22);
-            this.label18.TabIndex = 32;
+            this.label18.TabIndex = 12;
             this.label18.Text = "Game Sign";
             // 
             // label17
@@ -550,7 +550,7 @@
             this.label17.Location = new System.Drawing.Point(6, 279);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(93, 22);
-            this.label17.TabIndex = 33;
+            this.label17.TabIndex = 14;
             this.label17.Text = "Pattern Off";
             // 
             // groupBox2
@@ -579,7 +579,7 @@
             0});
             this.txtPrimarySendFreq.Name = "txtPrimarySendFreq";
             this.txtPrimarySendFreq.Size = new System.Drawing.Size(279, 26);
-            this.txtPrimarySendFreq.TabIndex = 5;
+            this.txtPrimarySendFreq.TabIndex = 4;
             this.txtPrimarySendFreq.ValueChanged += new System.EventHandler(this.numericUpDowns_ValueChanged);
             this.txtPrimarySendFreq.LostFocus += new System.EventHandler(this.numericUpDowns_LostFocus);
             // 
@@ -590,7 +590,7 @@
             this.cbobxPrimaryStreamSubIdx.Location = new System.Drawing.Point(358, 64);
             this.cbobxPrimaryStreamSubIdx.Name = "cbobxPrimaryStreamSubIdx";
             this.cbobxPrimaryStreamSubIdx.Size = new System.Drawing.Size(279, 30);
-            this.cbobxPrimaryStreamSubIdx.TabIndex = 3;
+            this.cbobxPrimaryStreamSubIdx.TabIndex = 2;
             this.cbobxPrimaryStreamSubIdx.SelectedIndexChanged += new System.EventHandler(this.StreamSubIdx_SelectedIndexChanged);
             // 
             // label2
@@ -599,7 +599,7 @@
             this.label2.Location = new System.Drawing.Point(30, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 22);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 3;
             this.label2.Text = "Send Frequency";
             // 
             // label1
@@ -1488,18 +1488,17 @@
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnReset.Location = new System.Drawing.Point(395, 590);
+            this.btnReset.Location = new System.Drawing.Point(422, 609);
             this.btnReset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReset.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.Size = new System.Drawing.Size(121, 30);
-            this.btnReset.TabIndex = 21;
+            this.btnReset.TabIndex = 2;
             this.btnReset.Text = "&Reset";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // btnSave
             // 
@@ -1509,15 +1508,13 @@
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSave.Location = new System.Drawing.Point(246, 590);
+            this.btnSave.Location = new System.Drawing.Point(218, 609);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.Size = new System.Drawing.Size(121, 30);
-            this.btnSave.TabIndex = 20;
+            this.btnSave.TabIndex = 1;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -1535,7 +1532,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.Name = "LEDFlashboardSettings";
-            this.Size = new System.Drawing.Size(762, 644);
+            this.Size = new System.Drawing.Size(760, 645);
             this.groupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

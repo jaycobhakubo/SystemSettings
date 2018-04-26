@@ -176,11 +176,11 @@
             // 
             // PlayerDevicePlayModeSettings
             // 
-            resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.tabCtrl_PlayMode);
             this.DoubleBuffered = true;
+            resources.ApplyResources(this, "$this");
             this.Name = "PlayerDevicePlayModeSettings";
             this.Tag = "PlayerDevice";
             this.tabCtrl_PlayMode.ResumeLayout(false);

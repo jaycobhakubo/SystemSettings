@@ -754,5 +754,10 @@ namespace GTI.Modules.SystemSettings.UI
         {
             m_bModified = true;
         }
+
+        private void btnReset_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
+        }
     }
 }

@@ -159,6 +159,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.panel1.Controls.Add(this.chkbxAutoIssue);
             this.panel1.Controls.Add(this.chkLongDescriptions);
             this.panel1.Name = "panel1";
+            this.panel1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.panel1_Scroll);
             // 
             // chkForceVoidAuth
             // 

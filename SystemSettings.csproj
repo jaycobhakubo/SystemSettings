@@ -76,8 +76,6 @@
     <Compile Include="Business\AllSettingsModel.cs" />
     <Compile Include="Business\GetDeviceSettings.cs" />
     <Compile Include="Business\GetMachineModules.cs" />
-    <Compile Include="Business\GetRNGRemoteSettings.cs" />
-    <Compile Include="Business\GetRNGRemoteTypes.cs" />
     <Compile Include="Business\SetDeviceSettings.cs" />
     <Compile Include="Business\SetRemoteDisplayConfigurations.cs" />
     <Compile Include="Business\SetAccrualDisplayItems.cs" />
@@ -105,7 +103,6 @@
     <Compile Include="Business\SetConfigPhotoMessage.cs" />
     <Compile Include="Business\SetDistributorFees.cs" />
     <Compile Include="Business\SetMotifMessage.cs" />
-    <Compile Include="Business\SetRNGSettings.cs" />
     <Compile Include="Business\SettingsModule.cs" />
     <Compile Include="Business\Validator.cs" />
     <Compile Include="Common.cs" />
@@ -237,12 +234,6 @@
     </Compile>
     <Compile Include="UI\ProtocolAdapterSettings.designer.cs">
       <DependentUpon>ProtocolAdapterSettings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\RNGConfigurationSettings.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\RNGConfigurationSettings.Designer.cs">
-      <DependentUpon>RNGConfigurationSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\SecuritySettings.cs">
       <SubType>UserControl</SubType>
@@ -466,6 +457,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\BlowerSettings.resx">
       <DependentUpon>BlowerSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\CallerSettings.resx">
       <SubType>Designer</SubType>
@@ -525,9 +517,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ProtocolAdapterSettings.resx">
       <DependentUpon>ProtocolAdapterSettings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\RNGConfigurationSettings.resx">
-      <DependentUpon>RNGConfigurationSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SecuritySettings.resx">
       <DependentUpon>SecuritySettings.cs</DependentUpon>
@@ -639,6 +628,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SessionSummarySettings.resx">
       <DependentUpon>SessionSummarySettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SettingsControl.resx">
       <SubType>Designer</SubType>
@@ -646,6 +636,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\TenderSettings.resx">
       <DependentUpon>TenderSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ThirdPartyInterfaceSettings.resx">
       <DependentUpon>ThirdPartyInterfaceSettings.cs</DependentUpon>
@@ -661,6 +652,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ValidationSettings.resx">
       <DependentUpon>ValidationSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\VideoSettings.resx">
       <SubType>Designer</SubType>
@@ -734,11 +726,7 @@
     <None Include="Resources\GradientPanel.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MyRef\RNGConfigurationSetting\ControlsDataHandler.txt" />
-    <Content Include="MyRef\RNGConfigurationSetting\RNGConfigurationSettings.txt" />
-    <Content Include="MyRef\RNGConfigurationSetting\ServerMessage.txt" />
-    <Content Include="MyRef\RNGConfigurationSetting\ServerMessageDataHandler.txt" />
-    <Content Include="MyRef\RNGConfigurationSetting\US5537.txt" />
+    <Content Include="MyRef\TextFile1.txt" />
     <None Include="Resources\GradientFull.png" />
     <None Include="Resources\GradientFull5.png" />
   </ItemGroup>

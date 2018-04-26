@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OperatorManagement));
+            this.btnSave = new GTI.Controls.ImageButton();
             this.operatorDetailsGroupBox = new System.Windows.Forms.GroupBox();
             this.m_chkUseAddress = new System.Windows.Forms.CheckBox();
             this.operatorHallRentAmountTextBox = new System.Windows.Forms.MaskedTextBox();
@@ -79,21 +80,31 @@
             this.m_textBoxbillingAddress1 = new System.Windows.Forms.TextBox();
             this.m_textBoxCity = new System.Windows.Forms.TextBox();
             this.citylabel = new System.Windows.Forms.Label();
-            this.imageButton1 = new GTI.Controls.ImageButton();
+            this.btnAdd = new GTI.Controls.ImageButton();
             this.m_OperatorGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboOperatorDisplayMode = new System.Windows.Forms.ComboBox();
             this.gtiListView1 = new GTI.Controls.GTIListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.rdoInactiveRadioButton = new System.Windows.Forms.RadioButton();
-            this.rdoAllRadioButton = new System.Windows.Forms.RadioButton();
-            this.rdoActiveRadioButton = new System.Windows.Forms.RadioButton();
-            this.imageButton4 = new GTI.Controls.ImageButton();
-            this.imageButton5 = new GTI.Controls.ImageButton();
+            this.btnReset = new GTI.Controls.ImageButton();
             this.m_errorValidator = new System.Windows.Forms.ErrorProvider(this.components);
             this.operatorDetailsGroupBox.SuspendLayout();
             this.m_OperatorGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_errorValidator)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnSave, "btnSave");
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
+            this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
+            this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // operatorDetailsGroupBox
             // 
@@ -155,18 +166,19 @@
             resources.ApplyResources(this.m_chkUseAddress, "m_chkUseAddress");
             this.m_chkUseAddress.Name = "m_chkUseAddress";
             this.m_chkUseAddress.UseVisualStyleBackColor = true;
-            this.m_chkUseAddress.Click += new System.EventHandler(this.m_chkUseAddress_CheckedChanged);
+            this.m_chkUseAddress.CheckedChanged += new System.EventHandler(this.m_chkUseAddress_CheckedChanged);
             // 
             // operatorHallRentAmountTextBox
             // 
             resources.ApplyResources(this.operatorHallRentAmountTextBox, "operatorHallRentAmountTextBox");
             this.operatorHallRentAmountTextBox.Name = "operatorHallRentAmountTextBox";
+            this.operatorHallRentAmountTextBox.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // operatorModemTextBox
             // 
             resources.ApplyResources(this.operatorModemTextBox, "operatorModemTextBox");
             this.operatorModemTextBox.Name = "operatorModemTextBox";
-            this.operatorModemTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.operatorModemTextBox.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // label11
             // 
@@ -184,7 +196,6 @@
             resources.GetString("operatorCashMethodIDCombo.Items2")});
             this.operatorCashMethodIDCombo.Name = "operatorCashMethodIDCombo";
             this.operatorCashMethodIDCombo.SelectedIndexChanged += new System.EventHandler(this.operatorCashMethodIDCombo_SelectedIndexChanged);
-            this.operatorCashMethodIDCombo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.operatorCashMethodIDCombo_MouseClick);
             // 
             // cashMethodLabel
             // 
@@ -195,7 +206,7 @@
             // 
             resources.ApplyResources(this.operatorCodeTextBox, "operatorCodeTextBox");
             this.operatorCodeTextBox.Name = "operatorCodeTextBox";
-            this.operatorCodeTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.operatorCodeTextBox.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // label3
             // 
@@ -206,7 +217,7 @@
             // 
             resources.ApplyResources(this.m_textBoxBillingAddress2, "m_textBoxBillingAddress2");
             this.m_textBoxBillingAddress2.Name = "m_textBoxBillingAddress2";
-            this.m_textBoxBillingAddress2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.m_textBoxBillingAddress2.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // m_labelBillingAdress2
             // 
@@ -217,6 +228,7 @@
             // 
             resources.ApplyResources(this.m_textBoxAddress2, "m_textBoxAddress2");
             this.m_textBoxAddress2.Name = "m_textBoxAddress2";
+            this.m_textBoxAddress2.TextChanged += new System.EventHandler(this.OnModified);
             this.m_textBoxAddress2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxAddress2_KeyUp);
             // 
             // address2Label
@@ -228,13 +240,13 @@
             // 
             resources.ApplyResources(this.operatorContactNameTextBox, "operatorContactNameTextBox");
             this.operatorContactNameTextBox.Name = "operatorContactNameTextBox";
-            this.operatorContactNameTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.operatorContactNameTextBox.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // m_textBoxBillingAddressSate
             // 
             resources.ApplyResources(this.m_textBoxBillingAddressSate, "m_textBoxBillingAddressSate");
             this.m_textBoxBillingAddressSate.Name = "m_textBoxBillingAddressSate";
-            this.m_textBoxBillingAddressSate.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.m_textBoxBillingAddressSate.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // m_labelBillingState
             // 
@@ -245,7 +257,7 @@
             // 
             resources.ApplyResources(this.m_textBoxBillingAddressCity, "m_textBoxBillingAddressCity");
             this.m_textBoxBillingAddressCity.Name = "m_textBoxBillingAddressCity";
-            this.m_textBoxBillingAddressCity.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.m_textBoxBillingAddressCity.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // m_labelBillingCity
             // 
@@ -256,12 +268,14 @@
             // 
             resources.ApplyResources(this.m_textBoxZipCode, "m_textBoxZipCode");
             this.m_textBoxZipCode.Name = "m_textBoxZipCode";
+            this.m_textBoxZipCode.TextChanged += new System.EventHandler(this.OnModified);
             this.m_textBoxZipCode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxZipCode_KeyUp);
             // 
             // m_textBoxCountry
             // 
             resources.ApplyResources(this.m_textBoxCountry, "m_textBoxCountry");
             this.m_textBoxCountry.Name = "m_textBoxCountry";
+            this.m_textBoxCountry.TextChanged += new System.EventHandler(this.OnModified);
             this.m_textBoxCountry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxCountry_KeyUp);
             // 
             // label2
@@ -279,12 +293,13 @@
             resources.ApplyResources(this.operatorIsActiveCheckBox, "operatorIsActiveCheckBox");
             this.operatorIsActiveCheckBox.Name = "operatorIsActiveCheckBox";
             this.operatorIsActiveCheckBox.UseVisualStyleBackColor = true;
-            this.operatorIsActiveCheckBox.Click += new System.EventHandler(this.operatorIsActiveCheckBox_Click);
+            this.operatorIsActiveCheckBox.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // operatorStatePercentTextBox
             // 
             resources.ApplyResources(this.operatorStatePercentTextBox, "operatorStatePercentTextBox");
             this.operatorStatePercentTextBox.Name = "operatorStatePercentTextBox";
+            this.operatorStatePercentTextBox.TextChanged += new System.EventHandler(this.OnModified);
             this.operatorStatePercentTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PercentTextBox_KeyPress);
             this.operatorStatePercentTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.PercentTextBox_Validating);
             // 
@@ -297,7 +312,7 @@
             // 
             resources.ApplyResources(this.operatorTaxIDTextBox, "operatorTaxIDTextBox");
             this.operatorTaxIDTextBox.Name = "operatorTaxIDTextBox";
-            this.operatorTaxIDTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.operatorTaxIDTextBox.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // hallRentAmountLabel
             // 
@@ -308,6 +323,7 @@
             // 
             resources.ApplyResources(this.operatorProfitPercentTextBox, "operatorProfitPercentTextBox");
             this.operatorProfitPercentTextBox.Name = "operatorProfitPercentTextBox";
+            this.operatorProfitPercentTextBox.TextChanged += new System.EventHandler(this.OnModified);
             this.operatorProfitPercentTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PercentTextBox_KeyPress);
             this.operatorProfitPercentTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.PercentTextBox_Validating);
             // 
@@ -325,7 +341,7 @@
             // 
             resources.ApplyResources(this.operatorPhoneTextBox, "operatorPhoneTextBox");
             this.operatorPhoneTextBox.Name = "operatorPhoneTextBox";
-            this.operatorPhoneTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.operatorPhoneTextBox.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // fNamelabel
             // 
@@ -336,7 +352,7 @@
             // 
             resources.ApplyResources(this.m_textBoxBillingZipCode, "m_textBoxBillingZipCode");
             this.m_textBoxBillingZipCode.Name = "m_textBoxBillingZipCode";
-            this.m_textBoxBillingZipCode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.m_textBoxBillingZipCode.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // loginNumberLabel
             // 
@@ -347,7 +363,7 @@
             // 
             resources.ApplyResources(this.m_textBoxBillingAddressCountry, "m_textBoxBillingAddressCountry");
             this.m_textBoxBillingAddressCountry.Name = "m_textBoxBillingAddressCountry";
-            this.m_textBoxBillingAddressCountry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.m_textBoxBillingAddressCountry.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // label1
             // 
@@ -358,7 +374,7 @@
             // 
             resources.ApplyResources(this.operatorNameTextBox, "operatorNameTextBox");
             this.operatorNameTextBox.Name = "operatorNameTextBox";
-            this.operatorNameTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.operatorNameTextBox_KeyUp);
+            this.operatorNameTextBox.TextChanged += new System.EventHandler(this.operatorNameTextBox_TextChanged);
             // 
             // m_labelBillingCountry
             // 
@@ -374,7 +390,7 @@
             // 
             resources.ApplyResources(this.operatorLicenseNumberTextBox, "operatorLicenseNumberTextBox");
             this.operatorLicenseNumberTextBox.Name = "operatorLicenseNumberTextBox";
-            this.operatorLicenseNumberTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.operatorLicenseNumberTextBox.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // address1label
             // 
@@ -390,12 +406,14 @@
             // 
             resources.ApplyResources(this.m_textBoxAddress1, "m_textBoxAddress1");
             this.m_textBoxAddress1.Name = "m_textBoxAddress1";
+            this.m_textBoxAddress1.TextChanged += new System.EventHandler(this.OnModified);
             this.m_textBoxAddress1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxAddress1_KeyUp);
             // 
             // m_textBoxState
             // 
             resources.ApplyResources(this.m_textBoxState, "m_textBoxState");
             this.m_textBoxState.Name = "m_textBoxState";
+            this.m_textBoxState.TextChanged += new System.EventHandler(this.OnModified);
             this.m_textBoxState.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxState_KeyUp);
             // 
             // m_labelBillingAdress1
@@ -412,12 +430,13 @@
             // 
             resources.ApplyResources(this.m_textBoxbillingAddress1, "m_textBoxbillingAddress1");
             this.m_textBoxbillingAddress1.Name = "m_textBoxbillingAddress1";
-            this.m_textBoxbillingAddress1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBoxGeneric_KeyUp);
+            this.m_textBoxbillingAddress1.TextChanged += new System.EventHandler(this.OnModified);
             // 
             // m_textBoxCity
             // 
             resources.ApplyResources(this.m_textBoxCity, "m_textBoxCity");
             this.m_textBoxCity.Name = "m_textBoxCity";
+            this.m_textBoxCity.TextChanged += new System.EventHandler(this.OnModified);
             this.m_textBoxCity.KeyUp += new System.Windows.Forms.KeyEventHandler(this.m_textBoxCity_KeyUp);
             // 
             // citylabel
@@ -425,31 +444,44 @@
             resources.ApplyResources(this.citylabel, "citylabel");
             this.citylabel.Name = "citylabel";
             // 
-            // imageButton1
+            // btnAdd
             // 
-            this.imageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton1.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.imageButton1, "imageButton1");
-            this.imageButton1.ForeColor = System.Drawing.Color.Black;
-            this.imageButton1.ImageNormal = ((System.Drawing.Image)(resources.GetObject("imageButton1.ImageNormal")));
-            this.imageButton1.ImagePressed = ((System.Drawing.Image)(resources.GetObject("imageButton1.ImagePressed")));
-            this.imageButton1.Name = "imageButton1";
-            this.imageButton1.UseVisualStyleBackColor = false;
-            this.imageButton1.Click += new System.EventHandler(this.imageButton1_Click);
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnAdd, "btnAdd");
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnAdd.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageNormal")));
+            this.btnAdd.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImagePressed")));
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // m_OperatorGroupBox1
             // 
             this.m_OperatorGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.m_OperatorGroupBox1.Controls.Add(this.comboOperatorDisplayMode);
             this.m_OperatorGroupBox1.Controls.Add(this.gtiListView1);
-            this.m_OperatorGroupBox1.Controls.Add(this.rdoInactiveRadioButton);
-            this.m_OperatorGroupBox1.Controls.Add(this.rdoAllRadioButton);
-            this.m_OperatorGroupBox1.Controls.Add(this.rdoActiveRadioButton);
             resources.ApplyResources(this.m_OperatorGroupBox1, "m_OperatorGroupBox1");
             this.m_OperatorGroupBox1.Name = "m_OperatorGroupBox1";
             this.m_OperatorGroupBox1.TabStop = false;
             // 
+            // comboOperatorDisplayMode
+            // 
+            this.comboOperatorDisplayMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboOperatorDisplayMode.FormattingEnabled = true;
+            this.comboOperatorDisplayMode.Items.AddRange(new object[] {
+            resources.GetString("comboOperatorDisplayMode.Items"),
+            resources.GetString("comboOperatorDisplayMode.Items1"),
+            resources.GetString("comboOperatorDisplayMode.Items2")});
+            resources.ApplyResources(this.comboOperatorDisplayMode, "comboOperatorDisplayMode");
+            this.comboOperatorDisplayMode.Name = "comboOperatorDisplayMode";
+            this.comboOperatorDisplayMode.SelectionChangeCommitted += new System.EventHandler(this.comboOperatorDisplayMode_SelectedIndexChanged);
+            // 
             // gtiListView1
             // 
+            this.gtiListView1.AllowEraseBackground = true;
+            this.gtiListView1.AllowSelectingFromEmptySpace = false;
             this.gtiListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
@@ -459,7 +491,11 @@
             this.gtiListView1.MultiSelect = false;
             this.gtiListView1.Name = "gtiListView1";
             this.gtiListView1.OwnerDraw = true;
+            this.gtiListView1.SelectedBackgroundColorWithoutFocus = System.Drawing.SystemColors.Control;
+            this.gtiListView1.SelectedForegroundColorWithoutFocus = System.Drawing.SystemColors.ControlText;
             this.gtiListView1.SortColumn = 0;
+            this.gtiListView1.UnSelectedBackgroundColor = System.Drawing.SystemColors.Window;
+            this.gtiListView1.UnSelectedForegroundColor = System.Drawing.SystemColors.WindowText;
             this.gtiListView1.UseCompatibleStateImageBehavior = false;
             this.gtiListView1.View = System.Windows.Forms.View.Details;
             this.gtiListView1.SelectedIndexChanged += new System.EventHandler(this.gtiListView1_SelectedIndexChanged);
@@ -474,54 +510,19 @@
             this.columnHeader2.Tag = "numeric";
             resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
-            // rdoInactiveRadioButton
+            // btnReset
             // 
-            resources.ApplyResources(this.rdoInactiveRadioButton, "rdoInactiveRadioButton");
-            this.rdoInactiveRadioButton.Name = "rdoInactiveRadioButton";
-            this.rdoInactiveRadioButton.TabStop = true;
-            this.rdoInactiveRadioButton.UseVisualStyleBackColor = true;
-            this.rdoInactiveRadioButton.Click += new System.EventHandler(this.rdoInactiveRadioButton_Click);
-            // 
-            // rdoAllRadioButton
-            // 
-            resources.ApplyResources(this.rdoAllRadioButton, "rdoAllRadioButton");
-            this.rdoAllRadioButton.Name = "rdoAllRadioButton";
-            this.rdoAllRadioButton.TabStop = true;
-            this.rdoAllRadioButton.UseVisualStyleBackColor = true;
-            this.rdoAllRadioButton.Click += new System.EventHandler(this.rdoAllRadioButton_Click);
-            // 
-            // rdoActiveRadioButton
-            // 
-            resources.ApplyResources(this.rdoActiveRadioButton, "rdoActiveRadioButton");
-            this.rdoActiveRadioButton.Name = "rdoActiveRadioButton";
-            this.rdoActiveRadioButton.TabStop = true;
-            this.rdoActiveRadioButton.UseVisualStyleBackColor = true;
-            this.rdoActiveRadioButton.Click += new System.EventHandler(this.rdoActiveRadioButton_Click);
-            // 
-            // imageButton4
-            // 
-            this.imageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton4.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.imageButton4, "imageButton4");
-            this.imageButton4.ForeColor = System.Drawing.Color.Black;
-            this.imageButton4.ImageNormal = ((System.Drawing.Image)(resources.GetObject("imageButton4.ImageNormal")));
-            this.imageButton4.ImagePressed = ((System.Drawing.Image)(resources.GetObject("imageButton4.ImagePressed")));
-            this.imageButton4.Name = "imageButton4";
-            this.imageButton4.UseVisualStyleBackColor = false;
-            this.imageButton4.Click += new System.EventHandler(this.imageButton4_Click);
-            this.imageButton4.Leave += new System.EventHandler(this.imageButton4_Leave);
-            // 
-            // imageButton5
-            // 
-            this.imageButton5.BackColor = System.Drawing.Color.Transparent;
-            this.imageButton5.FocusColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.imageButton5, "imageButton5");
-            this.imageButton5.ForeColor = System.Drawing.Color.Black;
-            this.imageButton5.ImageNormal = ((System.Drawing.Image)(resources.GetObject("imageButton5.ImageNormal")));
-            this.imageButton5.ImagePressed = ((System.Drawing.Image)(resources.GetObject("imageButton5.ImagePressed")));
-            this.imageButton5.Name = "imageButton5";
-            this.imageButton5.UseVisualStyleBackColor = false;
-            this.imageButton5.Click += new System.EventHandler(this.imageButton5_Click);
+            this.btnReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnReset.FocusColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnReset, "btnReset");
+            this.btnReset.ForeColor = System.Drawing.Color.Black;
+            this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
+            this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
+            this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // m_errorValidator
             // 
@@ -532,11 +533,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.imageButton5);
-            this.Controls.Add(this.imageButton4);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.m_OperatorGroupBox1);
             this.Controls.Add(this.operatorDetailsGroupBox);
-            this.Controls.Add(this.imageButton1);
+            this.Controls.Add(this.btnAdd);
             this.DoubleBuffered = true;
             resources.ApplyResources(this, "$this");
             this.MaximumSize = new System.Drawing.Size(762, 644);
@@ -544,7 +545,6 @@
             this.operatorDetailsGroupBox.ResumeLayout(false);
             this.operatorDetailsGroupBox.PerformLayout();
             this.m_OperatorGroupBox1.ResumeLayout(false);
-            this.m_OperatorGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_errorValidator)).EndInit();
             this.ResumeLayout(false);
 
@@ -577,7 +577,7 @@
         private System.Windows.Forms.TextBox m_textBoxbillingAddress1;
         private System.Windows.Forms.TextBox m_textBoxCity;
         private System.Windows.Forms.Label citylabel;
-        private GTI.Controls.ImageButton imageButton1;
+        private GTI.Controls.ImageButton btnAdd;
         private System.Windows.Forms.CheckBox operatorIsActiveCheckBox;
         private System.Windows.Forms.TextBox operatorStatePercentTextBox;
         private System.Windows.Forms.Label label5;
@@ -590,12 +590,9 @@
         private System.Windows.Forms.TextBox m_textBoxBillingAddressCity;
         private System.Windows.Forms.Label m_labelBillingCity;
         private System.Windows.Forms.GroupBox m_OperatorGroupBox1;
-        private System.Windows.Forms.RadioButton rdoInactiveRadioButton;
-        private System.Windows.Forms.RadioButton rdoAllRadioButton;
-        private System.Windows.Forms.RadioButton rdoActiveRadioButton;
         private System.Windows.Forms.TextBox operatorContactNameTextBox;
-        private GTI.Controls.ImageButton imageButton4;
-        private GTI.Controls.ImageButton imageButton5;
+        private GTI.Controls.ImageButton btnReset;
+        private GTI.Controls.ImageButton btnSave;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ErrorProvider m_errorValidator;
@@ -612,5 +609,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.MaskedTextBox operatorHallRentAmountTextBox;
         private System.Windows.Forms.CheckBox m_chkUseAddress;
+        private System.Windows.Forms.ComboBox comboOperatorDisplayMode;
     }
 }

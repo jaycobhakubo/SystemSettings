@@ -45,8 +45,7 @@
             this.btnOK.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnOK.ImageNormal")));
             this.btnOK.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnOK.ImagePressed")));
             this.btnOK.Name = "btnOK";
-            this.btnOK.RepeatRate = 150;
-            this.btnOK.RepeatWhenHeldFor = 750;
+            this.btnOK.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
@@ -58,8 +57,7 @@
             this.btnCancel.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageNormal")));
             this.btnCancel.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImagePressed")));
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.RepeatRate = 150;
-            this.btnCancel.RepeatWhenHeldFor = 750;
+            this.btnCancel.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 

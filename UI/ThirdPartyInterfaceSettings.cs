@@ -41,12 +41,32 @@ namespace GTI.Modules.SystemSettings.UI
 
         //Members
         bool m_bModified = false;
+        Point m_firstGroupBoxLocation;
+        List<Control> m_GroupBoxesFromTopToBottom = new List<Control>();
 
         //Public Methods
         #region Public Methods
         public ThirdPartyInterfaceSettings()
         {
             InitializeComponent();
+
+            gbOasis10.Location = gbPIN.Location; //move the Oasis 10 group box over the PIN group box
+
+            foreach (Control ctrl in panelMain.Controls)
+            {
+                if (ctrl as GroupBox != null)
+                    m_GroupBoxesFromTopToBottom.Add(ctrl);
+            }
+
+            m_GroupBoxesFromTopToBottom.Sort(
+                                                delegate(Control ctrl1, Control ctrl2)
+                                                {
+                                                    return  ctrl1.Location.Y < ctrl2.Location.Y ? -1 :
+                                                            ctrl1.Location.Y == ctrl2.Location.Y ? 0 : 1;
+                                                }
+                                            );
+
+            m_firstGroupBoxLocation = new Point(m_GroupBoxesFromTopToBottom[0].Location.X, m_GroupBoxesFromTopToBottom[0].Location.Y);
 
             if (!Common.IsAdmin)
                 cbInterface.Enabled = false;
@@ -102,8 +122,6 @@ namespace GTI.Modules.SystemSettings.UI
             cbInterface.Items.Add(i);
 
             cbInterface_SelectedIndexChanged(null, new EventArgs()); //draw the screen
-
-            gbOasis10.Location = gbPIN.Location; //move the Oasis 10 group box over the PIN group box
         }
 
         public override bool IsModified()
@@ -144,6 +162,21 @@ namespace GTI.Modules.SystemSettings.UI
 
         // Private Routines
         #region Private Routines 
+
+        private void AdjustWindow()
+        {
+            int top = m_firstGroupBoxLocation.Y;
+
+            foreach (Control ctrl in m_GroupBoxesFromTopToBottom)
+            {
+                if (ctrl.Visible)
+                {
+                    ctrl.Location = new Point(ctrl.Location.X, top);
+
+                    top += ctrl.Size.Height + (m_firstGroupBoxLocation.Y - (cbxPlayerSyncMode.Location.Y + cbxPlayerSyncMode.Height));
+                }
+            }
+        }
 
         private InterfaceFor GetTheInterface(int index = -100)
         {
@@ -658,46 +691,46 @@ namespace GTI.Modules.SystemSettings.UI
                 }
                 break;
 
-                case InterfaceFor.AristocratOasis10:
-                {
-                    gbOasis10.Visible = Common.IsAdmin;
+                //case InterfaceFor.AristocratOasis10:
+                //{
+                //    gbOasis10.Visible = Common.IsAdmin;
 
-                    gbPIN.Visible = false;
-                    cbPINForPlayerInfo.Checked = false;
-                    cbPINForPointInfo.Checked = false;
-                    cbPINForRating.Checked = false;
-                    cbPINForRedemption.Checked = false;
-                    cbPINForVoidRating.Checked = false;
-                    cbPINForVoidRedemption.Checked = false;
-                    cbGetPINAtCardSwipe.Checked = false;
+                //    gbPIN.Visible = false;
+                //    cbPINForPlayerInfo.Checked = false;
+                //    cbPINForPointInfo.Checked = false;
+                //    cbPINForRating.Checked = false;
+                //    cbPINForRedemption.Checked = false;
+                //    cbPINForVoidRating.Checked = false;
+                //    cbPINForVoidRedemption.Checked = false;
+                //    cbGetPINAtCardSwipe.Checked = false;
 
-                    gbTimeout.Visible = Common.IsAdmin;
-                    rbControlTimeout.Checked = true;
-                    rbIndependentTimeouts.Checked = false;
-                    rbSlaveTimeout.Checked = false;
-                    lblTimeout1.Visible = true;
-                    lblTimeout2.Visible = true;
-                    thirdPartyTimeout.Value = 20;
+                //    gbTimeout.Visible = Common.IsAdmin;
+                //    rbControlTimeout.Checked = true;
+                //    rbIndependentTimeouts.Checked = false;
+                //    rbSlaveTimeout.Checked = false;
+                //    lblTimeout1.Visible = true;
+                //    lblTimeout2.Visible = true;
+                //    thirdPartyTimeout.Value = 20;
 
-                    gbEarned.Visible = true;
-                    cbExternalRating.Checked = false;
-                    cbExternalRating_CheckedChanged(null, new EventArgs());
-                    thirdPartyEarnPoints.Value = 0;
-                    thirdPartyEarnPerPennies.Value = 1M;
-                    thirdPartyEarnPoints_ValueChanged(null, new EventArgs());
+                //    gbEarned.Visible = true;
+                //    cbExternalRating.Checked = false;
+                //    cbExternalRating_CheckedChanged(null, new EventArgs());
+                //    thirdPartyEarnPoints.Value = 0;
+                //    thirdPartyEarnPerPennies.Value = 1M;
+                //    thirdPartyEarnPoints_ValueChanged(null, new EventArgs());
 
-                    gbRedeemed.Visible = false; //true;
-                    thirdPartyRedeemPerPoints.Value = 1;
-                    thirdPartyRedeemPennies.Value = 0M;
-                    thirdPartyRedeemPerPoints_ValueChanged(null, new EventArgs());
+                //    gbRedeemed.Visible = false; //true;
+                //    thirdPartyRedeemPerPoints.Value = 1;
+                //    thirdPartyRedeemPennies.Value = 0M;
+                //    thirdPartyRedeemPerPoints_ValueChanged(null, new EventArgs());
 
-                    gbFNET.Visible = false;
-                    cbPlayerInfoHasPoints.Checked = false;
-                    cbPointsTransferAsDollars.Checked = false;
-                    cbPointsTransferAsDollarsForSales.Checked = false;
-                    cbPointsTransferAsDollarsForRedemptions.Checked = false;
-                }
-                break;
+                //    gbFNET.Visible = false;
+                //    cbPlayerInfoHasPoints.Checked = false;
+                //    cbPointsTransferAsDollars.Checked = false;
+                //    cbPointsTransferAsDollarsForSales.Checked = false;
+                //    cbPointsTransferAsDollarsForRedemptions.Checked = false;
+                //}
+                //break;
 
                 case InterfaceFor.BoydBConnect:
                 {
@@ -820,44 +853,44 @@ namespace GTI.Modules.SystemSettings.UI
                 }
                 break;
 
-                case InterfaceFor.BallyACSC:
-                {
-                    gbOasis10.Visible = false;
+                //case InterfaceFor.BallyACSC:
+                //{
+                //    gbOasis10.Visible = false;
 
-                    gbPIN.Visible = Common.IsAdmin;
-                    cbPINForPlayerInfo.Checked = true;
-                    cbPINForPointInfo.Checked = false;
-                    cbPINForRating.Checked = false;
-                    cbPINForRedemption.Checked = false;
-                    cbPINForVoidRating.Checked = false;
-                    cbPINForVoidRedemption.Checked = false;
-                    nudPINLength.Value = 4;
-                    cbGetPINAtCardSwipe.Checked = cbPINForPlayerInfo.Checked;
+                //    gbPIN.Visible = Common.IsAdmin;
+                //    cbPINForPlayerInfo.Checked = true;
+                //    cbPINForPointInfo.Checked = false;
+                //    cbPINForRating.Checked = false;
+                //    cbPINForRedemption.Checked = false;
+                //    cbPINForVoidRating.Checked = false;
+                //    cbPINForVoidRedemption.Checked = false;
+                //    nudPINLength.Value = 4;
+                //    cbGetPINAtCardSwipe.Checked = cbPINForPlayerInfo.Checked;
 
-                    gbTimeout.Visible = Common.IsAdmin;
-                    rbControlTimeout.Checked = true;
-                    rbIndependentTimeouts.Checked = false;
-                    rbSlaveTimeout.Checked = false;
-                    lblTimeout1.Visible = true;
-                    lblTimeout2.Visible = true;
-                    thirdPartyTimeout.Value = 20;
+                //    gbTimeout.Visible = Common.IsAdmin;
+                //    rbControlTimeout.Checked = true;
+                //    rbIndependentTimeouts.Checked = false;
+                //    rbSlaveTimeout.Checked = false;
+                //    lblTimeout1.Visible = true;
+                //    lblTimeout2.Visible = true;
+                //    thirdPartyTimeout.Value = 20;
 
-                    gbEarned.Visible = true;
-                    cbExternalRating.Checked = true;
-                    cbExternalRating_CheckedChanged(null, new EventArgs());
-                    thirdPartyEarnPoints.Value = 1;
-                    thirdPartyEarnPerPennies.Value = .01M;
-                    thirdPartyEarnPoints_ValueChanged(null, new EventArgs());
+                //    gbEarned.Visible = true;
+                //    cbExternalRating.Checked = true;
+                //    cbExternalRating_CheckedChanged(null, new EventArgs());
+                //    thirdPartyEarnPoints.Value = 1;
+                //    thirdPartyEarnPerPennies.Value = .01M;
+                //    thirdPartyEarnPoints_ValueChanged(null, new EventArgs());
 
-                    gbRedeemed.Visible = false; //true;
+                //    gbRedeemed.Visible = false; //true;
 
-                    gbFNET.Visible = false;
-                    cbPlayerInfoHasPoints.Checked = false;
-                    cbPointsTransferAsDollars.Checked = false;
-                    cbPointsTransferAsDollarsForSales.Checked = false;
-                    cbPointsTransferAsDollarsForRedemptions.Checked = false;
-                }
-                break;
+                //    gbFNET.Visible = false;
+                //    cbPlayerInfoHasPoints.Checked = false;
+                //    cbPointsTransferAsDollars.Checked = false;
+                //    cbPointsTransferAsDollarsForSales.Checked = false;
+                //    cbPointsTransferAsDollarsForRedemptions.Checked = false;
+                //}
+                //break;
 
                 case InterfaceFor.FortunetFNET:
                 {
@@ -1032,6 +1065,8 @@ namespace GTI.Modules.SystemSettings.UI
                 }
                 break;
             }
+
+            AdjustWindow();
         }
 
         private void cbExternalRating_CheckedChanged(object sender, EventArgs e)
@@ -1115,6 +1150,16 @@ namespace GTI.Modules.SystemSettings.UI
                 gbRedeemed.Visible = cbPointsTransferAsDollarsForRedemptions.Checked;
 
             OnModified(sender, e);
+        }
+
+        private void btnReset_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
+        }
+
+        private void panelMain_Scroll(object sender, ScrollEventArgs e)
+        {
+            Application.DoEvents();
         }
     }
 }

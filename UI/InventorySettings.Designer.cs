@@ -57,7 +57,6 @@
             this.m_rdoTrackBySerial.Name = "m_rdoTrackBySerial";
             this.m_rdoTrackBySerial.TabStop = true;
             this.m_rdoTrackBySerial.UseVisualStyleBackColor = true;
-            this.m_rdoTrackBySerial.Click += new System.EventHandler(this.m_rdoTrackBySerial_Click);
             this.m_rdoTrackBySerial.Click += new System.EventHandler(this.OnModified);
             // 
             // m_rdoTrackByProduct
@@ -66,7 +65,6 @@
             this.m_rdoTrackByProduct.Name = "m_rdoTrackByProduct";
             this.m_rdoTrackByProduct.TabStop = true;
             this.m_rdoTrackByProduct.UseVisualStyleBackColor = true;
-            this.m_rdoTrackByProduct.Click += new System.EventHandler(this.m_rdoTrackByProduct_Click);
             this.m_rdoTrackByProduct.Click += new System.EventHandler(this.OnModified);
             // 
             // groupBox1
@@ -157,7 +155,6 @@
             resources.ApplyResources(this.m_chkAutoRetire, "m_chkAutoRetire");
             this.m_chkAutoRetire.Name = "m_chkAutoRetire";
             this.m_chkAutoRetire.UseVisualStyleBackColor = true;
-            this.m_chkAutoRetire.Click += new System.EventHandler(this.OnAutoRetireModified);
             this.m_chkAutoRetire.Click += new System.EventHandler(this.OnModified);
             // 
             // m_chkAllowIssuesToExceed
@@ -165,7 +162,6 @@
             resources.ApplyResources(this.m_chkAllowIssuesToExceed, "m_chkAllowIssuesToExceed");
             this.m_chkAllowIssuesToExceed.Name = "m_chkAllowIssuesToExceed";
             this.m_chkAllowIssuesToExceed.UseVisualStyleBackColor = true;
-            this.m_chkAllowIssuesToExceed.Click += new System.EventHandler(this.OnAllowIssuesToExceedModified);
             this.m_chkAllowIssuesToExceed.Click += new System.EventHandler(this.OnModified);
             // 
             // btnReset
@@ -176,8 +172,10 @@
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // btnSave
             // 
@@ -187,6 +185,7 @@
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 

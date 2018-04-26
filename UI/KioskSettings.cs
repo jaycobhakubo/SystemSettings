@@ -439,7 +439,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            numTimeout.Focus();
+            base.LeaveLastTab(sender, e);
         }
         //END FIX RALLY DE1639 changed text line to allow carriage returns and line feeds
 

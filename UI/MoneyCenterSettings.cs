@@ -527,7 +527,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            chkMasterBankUsePreviousClose.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
         //START RALLY US1572

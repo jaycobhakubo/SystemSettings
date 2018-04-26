@@ -100,16 +100,16 @@
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnReset.Location = new System.Drawing.Point(395, 608);
+            this.btnReset.Location = new System.Drawing.Point(422, 609);
             this.btnReset.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.Size = new System.Drawing.Size(121, 30);
             this.btnReset.TabIndex = 2;
             this.btnReset.Text = "&Reset";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
             // btnSave
             // 
@@ -119,11 +119,10 @@
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSave.Location = new System.Drawing.Point(246, 608);
+            this.btnSave.Location = new System.Drawing.Point(218, 609);
             this.btnSave.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.Size = new System.Drawing.Size(121, 30);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "&Save";
@@ -138,7 +137,7 @@
             this.groupBox1.Controls.Add(this.cmbProcessor);
             this.groupBox1.Controls.Add(this.grpSettings);
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(23, 20);
+            this.groupBox1.Location = new System.Drawing.Point(22, 20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(716, 582);
             this.groupBox1.TabIndex = 0;
@@ -195,7 +194,7 @@
             // panelMain
             // 
             this.panelMain.AutoScroll = true;
-            this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(181)))), ((int)(((byte)(206)))));
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
             this.panelMain.Controls.Add(this.panelShift4);
             this.panelMain.Controls.Add(this.grpPrecidiaSupport);
             this.panelMain.Controls.Add(this.grpPrecidiaPINPad);
@@ -205,6 +204,7 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(704, 470);
             this.panelMain.TabIndex = 0;
+            this.panelMain.Scroll += new System.Windows.Forms.ScrollEventHandler(this.panelMain_Scroll);
             // 
             // panelShift4
             // 
@@ -212,7 +212,7 @@
             this.panelShift4.Controls.Add(this.label6);
             this.panelShift4.Controls.Add(this.txtAuthToken);
             this.panelShift4.Controls.Add(this.label1);
-            this.panelShift4.Location = new System.Drawing.Point(0, 79);
+            this.panelShift4.Location = new System.Drawing.Point(2, 79);
             this.panelShift4.Name = "panelShift4";
             this.panelShift4.Size = new System.Drawing.Size(683, 68);
             this.panelShift4.TabIndex = 1;
@@ -278,7 +278,7 @@
             this.grpPrecidiaSupport.Controls.Add(this.label7);
             this.grpPrecidiaSupport.Controls.Add(this.txtPaymentAppAddress);
             this.grpPrecidiaSupport.Controls.Add(this.label14);
-            this.grpPrecidiaSupport.Location = new System.Drawing.Point(0, 502);
+            this.grpPrecidiaSupport.Location = new System.Drawing.Point(3, 502);
             this.grpPrecidiaSupport.Name = "grpPrecidiaSupport";
             this.grpPrecidiaSupport.Size = new System.Drawing.Size(680, 163);
             this.grpPrecidiaSupport.TabIndex = 3;
@@ -372,7 +372,7 @@
             this.grpPrecidiaPINPad.Controls.Add(this.txtFailedMessage);
             this.grpPrecidiaPINPad.Controls.Add(this.txtStationClosedMessage);
             this.grpPrecidiaPINPad.Controls.Add(this.txtAfterSaleMessage);
-            this.grpPrecidiaPINPad.Location = new System.Drawing.Point(-1, 156);
+            this.grpPrecidiaPINPad.Location = new System.Drawing.Point(3, 156);
             this.grpPrecidiaPINPad.Name = "grpPrecidiaPINPad";
             this.grpPrecidiaPINPad.Size = new System.Drawing.Size(680, 340);
             this.grpPrecidiaPINPad.TabIndex = 2;
@@ -557,7 +557,7 @@
             this.panelCommon.Controls.Add(this.txtProcessorAddress);
             this.panelCommon.Controls.Add(this.label2);
             this.panelCommon.Controls.Add(this.label15);
-            this.panelCommon.Location = new System.Drawing.Point(0, 12);
+            this.panelCommon.Location = new System.Drawing.Point(2, 12);
             this.panelCommon.Name = "panelCommon";
             this.panelCommon.Size = new System.Drawing.Size(683, 66);
             this.panelCommon.TabIndex = 0;
@@ -601,7 +601,7 @@
             this.grpShift4PINPad.Controls.Add(this.label5);
             this.grpShift4PINPad.Controls.Add(this.label3);
             this.grpShift4PINPad.Controls.Add(this.chkPINPadItemDetail2);
-            this.grpShift4PINPad.Location = new System.Drawing.Point(-1, 671);
+            this.grpShift4PINPad.Location = new System.Drawing.Point(3, 671);
             this.grpShift4PINPad.Name = "grpShift4PINPad";
             this.grpShift4PINPad.Size = new System.Drawing.Size(680, 138);
             this.grpShift4PINPad.TabIndex = 4;
@@ -681,7 +681,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
             this.Name = "PaymentProcessingSettings";
-            this.Size = new System.Drawing.Size(762, 644);
+            this.Size = new System.Drawing.Size(760, 645);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.grpSettings.ResumeLayout(false);

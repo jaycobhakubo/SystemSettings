@@ -426,7 +426,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            chkPrintFacesToGlobalPrinter.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
         //US4848

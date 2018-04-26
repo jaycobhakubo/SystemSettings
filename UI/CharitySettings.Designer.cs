@@ -45,10 +45,11 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnEdit, "btnEdit");
             this.btnEdit.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageNormal")));
             this.btnEdit.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImagePressed")));
-            this.btnEdit.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnEdit.Name = "btnEdit";
+            this.btnEdit.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.toolTip1.SetToolTip(this.btnEdit, resources.GetString("btnEdit.ToolTip"));
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnEdit.Leave += new System.EventHandler(this.btnEdit_Leave);
             // 
             // btnAdd
             // 
@@ -56,8 +57,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageNormal")));
             this.btnAdd.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImagePressed")));
-            this.btnAdd.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnAdd.Name = "btnAdd";
+            this.btnAdd.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.toolTip1.SetToolTip(this.btnAdd, resources.GetString("btnAdd.ToolTip"));
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 

@@ -30,7 +30,7 @@ namespace GTI.Modules.SystemSettings.UI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerSettings));
             this.chkbxUseDefault = new System.Windows.Forms.CheckBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupUnitSettings = new System.Windows.Forms.GroupBox();
             this.chkBoxResetRadioOnWifiInterruptions = new System.Windows.Forms.CheckBox();
             this.lblCrateRebootThresholdSeconds = new System.Windows.Forms.Label();
             this.lblCrateRebootThreshold = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.txtPlayWinAnimationDuration = new System.Windows.Forms.TextBox();
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
-            this.groupBox5.SuspendLayout();
+            this.groupUnitSettings.SuspendLayout();
             this.SuspendLayout();
             // 
             // chkbxUseDefault
@@ -73,41 +73,41 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkbxUseDefault.UseVisualStyleBackColor = false;
             this.chkbxUseDefault.CheckedChanged += new System.EventHandler(this.chkbxUseDefault_CheckedChanged);
             // 
-            // groupBox5
+            // groupUnitSettings
             // 
-            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.Controls.Add(this.chkBoxResetRadioOnWifiInterruptions);
-            this.groupBox5.Controls.Add(this.lblCrateRebootThresholdSeconds);
-            this.groupBox5.Controls.Add(this.lblCrateRebootThreshold);
-            this.groupBox5.Controls.Add(this.txtRebootTimeThreshold);
-            this.groupBox5.Controls.Add(this.chkCacheSettings);
-            this.groupBox5.Controls.Add(this.chkRecoverOnReboot);
-            this.groupBox5.Controls.Add(this.chkDisplayProgressives);
-            this.groupBox5.Controls.Add(this.chkClearWinnersScreen);
-            this.groupBox5.Controls.Add(this.chkTVwoPurchase);
-            this.groupBox5.Controls.Add(this.chkEnableMultiplayerOnFunGames);
-            this.groupBox5.Controls.Add(this.chkBingoPatternShading);
-            this.groupBox5.Controls.Add(this.chkLogoutPackSessionClose);
-            this.groupBox5.Controls.Add(this.chkDisplayFunGamesOnLogin);
-            this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.txtPlayerPINLength);
-            this.groupBox5.Controls.Add(this.chkDisplayVerifiedCard);
-            this.groupBox5.Controls.Add(this.chkLockScreenOn);
-            this.groupBox5.Controls.Add(this.chkAutoModeOn);
-            this.groupBox5.Controls.Add(this.chkPeekMode);
-            this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Controls.Add(this.txtWirelessNetworkConnectionLossThreshold);
-            this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Controls.Add(this.label4);
-            this.groupBox5.Controls.Add(this.txtWiredNetworkConnectionLossThreshold);
-            this.groupBox5.Controls.Add(this.chkPlayerPIN);
-            this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Controls.Add(this.txtPlayWinAnimationDuration);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.TabStop = false;
+            this.groupUnitSettings.BackColor = System.Drawing.Color.Transparent;
+            this.groupUnitSettings.Controls.Add(this.chkBoxResetRadioOnWifiInterruptions);
+            this.groupUnitSettings.Controls.Add(this.lblCrateRebootThresholdSeconds);
+            this.groupUnitSettings.Controls.Add(this.lblCrateRebootThreshold);
+            this.groupUnitSettings.Controls.Add(this.txtRebootTimeThreshold);
+            this.groupUnitSettings.Controls.Add(this.chkCacheSettings);
+            this.groupUnitSettings.Controls.Add(this.chkRecoverOnReboot);
+            this.groupUnitSettings.Controls.Add(this.chkDisplayProgressives);
+            this.groupUnitSettings.Controls.Add(this.chkClearWinnersScreen);
+            this.groupUnitSettings.Controls.Add(this.chkTVwoPurchase);
+            this.groupUnitSettings.Controls.Add(this.chkEnableMultiplayerOnFunGames);
+            this.groupUnitSettings.Controls.Add(this.chkBingoPatternShading);
+            this.groupUnitSettings.Controls.Add(this.chkLogoutPackSessionClose);
+            this.groupUnitSettings.Controls.Add(this.chkDisplayFunGamesOnLogin);
+            this.groupUnitSettings.Controls.Add(this.label7);
+            this.groupUnitSettings.Controls.Add(this.txtPlayerPINLength);
+            this.groupUnitSettings.Controls.Add(this.chkDisplayVerifiedCard);
+            this.groupUnitSettings.Controls.Add(this.chkLockScreenOn);
+            this.groupUnitSettings.Controls.Add(this.chkAutoModeOn);
+            this.groupUnitSettings.Controls.Add(this.chkPeekMode);
+            this.groupUnitSettings.Controls.Add(this.label5);
+            this.groupUnitSettings.Controls.Add(this.label6);
+            this.groupUnitSettings.Controls.Add(this.txtWirelessNetworkConnectionLossThreshold);
+            this.groupUnitSettings.Controls.Add(this.label1);
+            this.groupUnitSettings.Controls.Add(this.label4);
+            this.groupUnitSettings.Controls.Add(this.txtWiredNetworkConnectionLossThreshold);
+            this.groupUnitSettings.Controls.Add(this.chkPlayerPIN);
+            this.groupUnitSettings.Controls.Add(this.label3);
+            this.groupUnitSettings.Controls.Add(this.label2);
+            this.groupUnitSettings.Controls.Add(this.txtPlayWinAnimationDuration);
+            resources.ApplyResources(this.groupUnitSettings, "groupUnitSettings");
+            this.groupUnitSettings.Name = "groupUnitSettings";
+            this.groupUnitSettings.TabStop = false;
             // 
             // chkBoxResetRadioOnWifiInterruptions
             // 
@@ -322,14 +322,14 @@ namespace GTI.Modules.SystemSettings.UI
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.chkbxUseDefault);
-            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupUnitSettings);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
             this.DoubleBuffered = true;
             resources.ApplyResources(this, "$this");
             this.Name = "PlayerSettings";
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.groupUnitSettings.ResumeLayout(false);
+            this.groupUnitSettings.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,7 +339,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private GTI.Controls.ImageButton btnReset;
         private GTI.Controls.ImageButton btnSave;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupUnitSettings;
         private System.Windows.Forms.TextBox txtPlayWinAnimationDuration;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

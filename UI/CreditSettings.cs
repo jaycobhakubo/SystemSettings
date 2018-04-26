@@ -240,7 +240,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            numMaxCreditWin.Focus();
+            base.LeaveLastTab(sender, e);
         }
 	} // end class
 } // end namespace

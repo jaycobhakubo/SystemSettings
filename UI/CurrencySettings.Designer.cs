@@ -35,10 +35,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnEdit = new GTI.Controls.ImageButton();
             this.btnAdd = new GTI.Controls.ImageButton();
             this.currencyListView = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.numTaxFormAmt = new System.Windows.Forms.NumericUpDown();
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
@@ -70,8 +70,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageNormal")));
             this.btnDelete.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImagePressed")));
-            this.btnDelete.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnDelete.Name = "btnDelete";
+            this.btnDelete.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnEdit
@@ -81,8 +81,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnEdit, "btnEdit");
             this.btnEdit.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageNormal")));
             this.btnEdit.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImagePressed")));
-            this.btnEdit.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnEdit.Name = "btnEdit";
+            this.btnEdit.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnEdit.UseVisualStyleBackColor = false;
             // 
             // btnAdd
@@ -92,8 +92,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageNormal")));
             this.btnAdd.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImagePressed")));
-            this.btnAdd.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnAdd.Name = "btnAdd";
+            this.btnAdd.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // currencyListView
@@ -139,8 +139,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnReset, "btnReset");
             this.btnReset.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnReset.ImageNormal")));
             this.btnReset.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnReset.ImagePressed")));
-            this.btnReset.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
@@ -151,8 +151,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageNormal")));
             this.btnSave.ImagePressed = ((System.Drawing.Image)(resources.GetObject("btnSave.ImagePressed")));
-            this.btnSave.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             // 
             // CurrencySettings

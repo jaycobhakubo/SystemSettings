@@ -276,7 +276,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            lvMotif.Focus();
+            base.LeaveLastTab(sender, e);
         }
 
     } // end class

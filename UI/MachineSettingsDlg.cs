@@ -11,7 +11,6 @@ using GTI.Modules.SystemSettings.Properties;
 using GTI.Modules.SystemSettings.Data;
 using GTI.Modules.SystemSettings.Business;
 using GTI.Modules.SystemSettings.Models;
-using GTI.Modules.Shared.Business;
 
 namespace GTI.Modules.SystemSettings.UI
 {
@@ -19,7 +18,7 @@ namespace GTI.Modules.SystemSettings.UI
     {
         #region Private Members
 
-        private Machine[] m_arrMachines = new Machine[0];
+        private SMachineData[] m_arrMachines = new SMachineData[0];
         private List<int> m_moduleIds;
         private Int32 m_nDeviceId = 0;
         private GetMachineSettingsOnlyMessage m_GetMachineSettingsMsg = new GetMachineSettingsOnlyMessage(0, 0);  // we need this for multi-select
@@ -73,9 +72,10 @@ namespace GTI.Modules.SystemSettings.UI
 
         #endregion
 
-        public MachineSettingsDlg(Machine[] arrMachines, int operatorID)//RALLY US1594
+        public MachineSettingsDlg(SMachineData[] arrMachines, int operatorID)//RALLY US1594
         {
             InitializeComponent();
+
             m_operatorID = operatorID;//RALLY US1594
             //START RALLY DE 4009
             m_cardReaderLabelList.Add(lblCardReaderAddress);
@@ -95,7 +95,6 @@ namespace GTI.Modules.SystemSettings.UI
             lvAllowableScenes.MultiSelect = false;
             lvAllowableScenes.HideSelection = false;
 
-            LoadComboboxComPort();
             LoadLists();
 
             m_arrMachines = arrMachines;
@@ -166,7 +165,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (m_arrMachines.Length == 1)
             {
                 // Get the machine settings from the server (single selection only)
-                m_GetMachineSettingsMsg = new GetMachineSettingsOnlyMessage(m_arrMachines[0].Id, 0);  // zero will return all settings from machine settings table, regardless of category
+                m_GetMachineSettingsMsg = new GetMachineSettingsOnlyMessage(m_arrMachines[0].nMachineId, 0);  // zero will return all settings from machine settings table, regardless of category
                 try
                 {
                     m_GetMachineSettingsMsg.Send();
@@ -186,7 +185,7 @@ namespace GTI.Modules.SystemSettings.UI
 
                 if (m_nDeviceId == (int)Device.RemoteDisplay.Id || (m_nDeviceId == Device.UserDefined.Id && m_moduleIds.Contains(10)))
                 {
-                    m_GetMachineCapabilitiesMsg = new GetMachineCapabilites(m_arrMachines[0].Id);
+                    m_GetMachineCapabilitiesMsg = new GetMachineCapabilites(m_arrMachines[0].nMachineId);
                     try
                     {
                         m_GetMachineCapabilitiesMsg.Send();
@@ -196,9 +195,7 @@ namespace GTI.Modules.SystemSettings.UI
                         MessageForm.Show(this, string.Format(Resources.GetMachineSettingsFailed, e));
                     }
 
-
-
-                    m_GetRemoteDisplayConfigurationsMessage = new GetMachineRemoteDisplayConfigurations(m_arrMachines[0].Id, Common.OperatorId);
+                    m_GetRemoteDisplayConfigurationsMessage = new GetMachineRemoteDisplayConfigurations(m_arrMachines[0].nMachineId, Common.OperatorId);
                     try
                     {
                         m_GetRemoteDisplayConfigurationsMessage.Send();
@@ -254,7 +251,7 @@ namespace GTI.Modules.SystemSettings.UI
                 // Fixed Base stuff goes here
                 if (m_nDeviceId == Device.Fixed.Id)
                 {
-                    m_GetMachineCapabilitiesMsg = new GetMachineCapabilites(m_arrMachines[0].Id);
+                    m_GetMachineCapabilitiesMsg = new GetMachineCapabilites(m_arrMachines[0].nMachineId);
                     try
                     {
                         m_GetMachineCapabilitiesMsg.Send();
@@ -294,12 +291,12 @@ namespace GTI.Modules.SystemSettings.UI
             int nCount = m_arrMachines.Length;
 
             // Get the first device id
-            int nDeviceId = m_arrMachines[0].DeviceType.Id;
+            int nDeviceId = m_arrMachines[0].nDeviceId;
 
             // Check if they are all the same, or return "User Defined" if not
             for (int i = 0; i < nCount; i++)
             {
-                if (m_arrMachines[i].DeviceType.Id != nDeviceId)
+                if (m_arrMachines[i].nDeviceId != nDeviceId)
                 {
                     return (int)Device.UserDefined.Id;
                 }
@@ -311,7 +308,7 @@ namespace GTI.Modules.SystemSettings.UI
         private List<int> DetermineModuleIds()
         {
             List<int> moduleIds = new List<int>();
-            GetMachineModules getMachineModulesMessage = new GetMachineModules(m_arrMachines[0].Id);
+            GetMachineModules getMachineModulesMessage = new GetMachineModules(m_arrMachines[0].nMachineId);
 
             try
             {
@@ -325,32 +322,6 @@ namespace GTI.Modules.SystemSettings.UI
             }
             return moduleIds;
         }
-
-        private void LoadComboboxComPort()
-        {
-            var lstComPortKioskBillAcceptor = new List<Business.GenericCBOItem>();
-            for (int i = 0; i < 14; i++)
-            {
-                Business.GenericCBOItem cboItem = new Business.GenericCBOItem();
-                cboItem.CBOValueMember = i;
-                switch (i)
-                {
-                    case 0:
-                        cboItem.CBODisplayMember = "Disabled";
-                        break;
-                    default:
-                        cboItem.CBODisplayMember = "COM" + i.ToString();
-                        break;
-                }
-
-                lstComPortKioskBillAcceptor.Add(cboItem);
-            }
-            cboKioskBillAcceptorComPort.Items.Clear();
-            cboKioskBillAcceptorComPort.DataSource = lstComPortKioskBillAcceptor;
-            cboKioskBillAcceptorComPort.DisplayMember = "CBODisplayMember";
-            cboKioskBillAcceptorComPort.ValueMember = "CBOValueMember";
-        }
-
 
         private void FillControls()
         {
@@ -391,49 +362,26 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 grpPOS.Size = new System.Drawing.Size(672, 477);
                 string tempString = "";
-                int tempSelectedIndex = 0;
-                bool tempResult = false;
 
-                //kiosk sales - com port
-                if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.KioskPeripheralsAcceptorComPort, out s))
+                //Kiosk - Guardian address and port
+                if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.KioskGuardianAddress, out s))
                 {
-                    chkbxBillAcceptor.Checked = false;
+                    chkbxGuardianAddressAndPort.Checked = false;
                     tempString = s.Value;
                 }
                 else
                 {
-                    chkbxBillAcceptor.Checked = true;
-                    tempString = Common.GetSystemSetting(Setting.KioskPeripheralsAcceptorComPort);                  
+                    chkbxGuardianAddressAndPort.Checked = true;
+                    tempString = Common.GetSystemSetting(Setting.KioskGuardianAddress);                  
                 }
 
-
-                try//If theres any issue just set to 0
-                {
-                    tempResult = int.TryParse(tempString, out tempSelectedIndex);
-
-                    if (tempResult)//If the setting is not numeric set it  as  disable
-                    {
-                        cboKioskBillAcceptorComPort.SelectedIndex = tempSelectedIndex;
-                    }
-                    else
-                    {
-                        cboKioskBillAcceptorComPort.SelectedIndex = 0;
-                        //  saveFlag = true;
-                    }
-                }
-                catch
-                {
-                    cboKioskBillAcceptorComPort.SelectedIndex = 0;
-                    // saveFlag = true;
-                }                  
-
+                txtbxGuardianAddressAndPort.Text = tempString;
 
                 //Kiosk - sales (printer name)
                 if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.KioskPeripheralsTicketPrinterName, out s))
                 {
                     chkbxTicketPrinter.Checked = false;
                     txtbxKioskTicketPrinterName.Text = s.Value;
-
                 }
                 else
                 {
@@ -1428,10 +1376,10 @@ namespace GTI.Modules.SystemSettings.UI
                 arrSettings.Add(s);
             }
 
-            if (!chkbxBillAcceptor.Checked)
+            if (!chkbxGuardianAddressAndPort.Checked)
             {
-                s.Id = (int)Setting.KioskPeripheralsAcceptorComPort;
-                s.Value = cboKioskBillAcceptorComPort.SelectedValue.ToString();
+                s.Id = (int)Setting.KioskGuardianAddress;
+                s.Value = txtbxGuardianAddressAndPort.Text;
                 arrSettings.Add(s);
             }
 
@@ -1447,7 +1395,7 @@ namespace GTI.Modules.SystemSettings.UI
             int nCount = m_arrMachines.Length;
             for (int i = 0; i < nCount; i++)
             {
-                arrMachineIds.Add(m_arrMachines[i].Id);
+                arrMachineIds.Add(m_arrMachines[i].nMachineId);
             }
 
             // Send a message to the server
@@ -2047,7 +1995,7 @@ namespace GTI.Modules.SystemSettings.UI
         //START RALLY DE 4009
         private void btnCancel_Leave(object sender, EventArgs e)
         {
-            txtClientInstallDrive.Focus();
+            tabMachineDialog.Focus();
         }
 
         private void cboMagCardReaderMode_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -2078,7 +2026,7 @@ namespace GTI.Modules.SystemSettings.UI
                 remoteDisplayConfiguration.AllowedScenes = string.Empty;
                 remoteDisplayConfiguration.DefaultScene = 0;
                 remoteDisplayConfiguration.EnabledAccruals = string.Empty;
-                remoteDisplayConfiguration.MachineID = m_arrMachines[0].Id;
+                remoteDisplayConfiguration.MachineID = m_arrMachines[0].nMachineId;
                 remoteDisplayConfiguration.Resolution = string.Empty;
                 m_remoteDisplayConfigurations.Add(remoteDisplayConfiguration);
             }
@@ -2190,7 +2138,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void buttonSetAccruals_Click(object sender, EventArgs e)
         {
-            int machineid = m_arrMachines[0].Id;
+            int machineid = m_arrMachines[0].nMachineId;
             int operatorId = Common.OperatorId;
             int adaptorId;
             MachineCapabilites machineCapability = cboVideoAdapter.SelectedItem as MachineCapabilites;
@@ -2209,7 +2157,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void PopulateAccrualDisplayItems()
         {
-            m_GetAccrualDisplayItemsMsg = new GetAccrualDisplayItems(m_arrMachines[0].Id, Common.OperatorId);
+            m_GetAccrualDisplayItemsMsg = new GetAccrualDisplayItems(m_arrMachines[0].nMachineId, Common.OperatorId);
             try
             {
                 m_GetAccrualDisplayItemsMsg.Send();
@@ -2238,9 +2186,9 @@ namespace GTI.Modules.SystemSettings.UI
             txtbxKioskTicketPrinterName.Enabled = !chkbxTicketPrinter.Checked;
         }
 
-        private void chkbxBillAcceptor_CheckedChanged(object sender, EventArgs e)
+        private void chkbxGuardianAddressAndPort_CheckedChanged(object sender, EventArgs e)
         {
-            cboKioskBillAcceptorComPort.Enabled = !chkbxBillAcceptor.Checked;
+            txtbxGuardianAddressAndPort.Enabled = !chkbxGuardianAddressAndPort.Checked;
         }
 
         //private void chkSellElectronics_CheckedChanged(object sender, EventArgs e)
@@ -2347,9 +2295,50 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
- 
+        private void txtbxGuardianAddressAndPort_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtbxGuardianAddressAndPort.Text == string.Empty)
+            {
+                e.Cancel = false;
+                return;
+            }
 
-     
+            //parse into nnn.nnn.nnn.nnn:ppppp  where nnn=0-255 and ppppp=1024-65535
+            string[] address = txtbxGuardianAddressAndPort.Text.Split(new char[] { '.', ':' });
+            int[] part = new int[5];
+            bool failed = false;
 
+            try
+            {
+                if (address.Length != 5)
+                    failed = true;
+
+                for (int x = 0; x < 5; x++)
+                {
+                    int test = 0;
+
+                    if (!(int.TryParse(address[x], out test) && ((x < 4 && test >= 0 && test <= 255) || (x == 4 && test >= 1024 && test <= 65535))))
+                    {
+                        failed = true;
+                        break;
+                    }
+                    else
+                    {
+                        part[x] = test;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                failed = true;
+            }
+
+            e.Cancel = failed;
+
+            if (failed)
+                MessageForm.Show("Invalid IP:Port.\r\n\r\nnnn.nnn.nnn.nnn:ppppp where nnn=0-255 and ppppp=1025-65535.");
+            else
+                txtbxGuardianAddressAndPort.Text = string.Format("{0:D}.{1:D}.{2:D}.{3:D}:{4:D}", part[0], part[1], part[2], part[3], part[4]);
+        }
     }//class
 }

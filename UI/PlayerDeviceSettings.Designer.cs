@@ -66,7 +66,6 @@
             resources.ApplyResources(this.tabCtrl_PlayerSettingDevice, "tabCtrl_PlayerSettingDevice");
             this.tabCtrl_PlayerSettingDevice.Name = "tabCtrl_PlayerSettingDevice";
             this.tabCtrl_PlayerSettingDevice.SelectedIndex = 0;
-            this.tabCtrl_PlayerSettingDevice.Tag = "";
             this.tabCtrl_PlayerSettingDevice.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_PlayerSettingDevice_Selecting);
             this.tabCtrl_PlayerSettingDevice.Deselecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabCtrl_PlayerSettingDevice_Deselecting);
             // 

@@ -289,11 +289,5 @@ namespace GTI.Modules.SystemSettings.UI
             }
             
         }
-
-
-       
-
-
-        
     } // end class
 } // end namespace

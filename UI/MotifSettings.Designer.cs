@@ -42,8 +42,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnReset, "btnReset");
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnReset.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -55,8 +55,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
-            this.btnSave.MinimumSize = new System.Drawing.Size(30, 30);
             this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -66,8 +66,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.lvMotif, "lvMotif");
             this.lvMotif.Name = "lvMotif";
             this.lvMotif.UseCompatibleStateImageBehavior = false;
-            this.lvMotif.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.lvMotif_ItemCheck);
             this.lvMotif.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvMotif_ColumnClick);
+            this.lvMotif.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.lvMotif_ItemCheck);
             // 
             // label1
             // 

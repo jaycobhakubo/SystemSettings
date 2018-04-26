@@ -307,8 +307,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnAnalyze.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnAnalyze.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnAnalyze.Name = "btnAnalyze";
-            this.btnAnalyze.RepeatRate = 150;
-            this.btnAnalyze.RepeatWhenHeldFor = 750;
             this.btnAnalyze.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnAnalyze.Click += new System.EventHandler(this.btnAnalyze_Click);
             // 
@@ -324,8 +322,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnApplyFilter.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnApplyFilter.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnApplyFilter.Name = "btnApplyFilter";
-            this.btnApplyFilter.RepeatRate = 150;
-            this.btnApplyFilter.RepeatWhenHeldFor = 750;
             this.btnApplyFilter.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnApplyFilter.Click += new System.EventHandler(this.btnApplyFilter_Click);
             // 
@@ -360,8 +356,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnAccept.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnAccept.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnAccept.Name = "btnAccept";
-            this.btnAccept.RepeatRate = 150;
-            this.btnAccept.RepeatWhenHeldFor = 750;
             this.btnAccept.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnAccept.UseVisualStyleBackColor = false;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
@@ -402,8 +396,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSwipeCard.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSwipeCard.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSwipeCard.Name = "btnSwipeCard";
-            this.btnSwipeCard.RepeatRate = 150;
-            this.btnSwipeCard.RepeatWhenHeldFor = 750;
             this.btnSwipeCard.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSwipeCard.UseVisualStyleBackColor = false;
             this.btnSwipeCard.Click += new System.EventHandler(this.btnSwipeCard_Click);
@@ -444,8 +436,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnCopyFilterToLab.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnCopyFilterToLab.LineAlignment = System.Drawing.StringAlignment.Near;
             this.btnCopyFilterToLab.Name = "btnCopyFilterToLab";
-            this.btnCopyFilterToLab.RepeatRate = 150;
-            this.btnCopyFilterToLab.RepeatWhenHeldFor = 750;
             this.btnCopyFilterToLab.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnCopyFilterToLab.UseVisualStyleBackColor = false;
             this.btnCopyFilterToLab.Click += new System.EventHandler(this.btnCopyFilterToLab_Click);
@@ -458,8 +448,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnShiftFilterDown.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnShiftFilterDown.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnShiftFilterDown.Name = "btnShiftFilterDown";
-            this.btnShiftFilterDown.RepeatRate = 150;
-            this.btnShiftFilterDown.RepeatWhenHeldFor = 750;
             this.btnShiftFilterDown.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnShiftFilterDown.Click += new System.EventHandler(this.btnShiftFilterDown_Click);
             // 
@@ -471,8 +459,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnShiftFilterUp.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnShiftFilterUp.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnShiftFilterUp.Name = "btnShiftFilterUp";
-            this.btnShiftFilterUp.RepeatRate = 150;
-            this.btnShiftFilterUp.RepeatWhenHeldFor = 750;
             this.btnShiftFilterUp.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnShiftFilterUp.Click += new System.EventHandler(this.btnShiftFilterUp_Click);
             // 
@@ -511,8 +497,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnTest.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnTest.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnTest.Name = "btnTest";
-            this.btnTest.RepeatRate = 150;
-            this.btnTest.RepeatWhenHeldFor = 750;
             this.btnTest.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnTest.UseVisualStyleBackColor = false;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
@@ -525,8 +509,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnDelete.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnDelete.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.RepeatRate = 150;
-            this.btnDelete.RepeatWhenHeldFor = 750;
             this.btnDelete.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -539,8 +521,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
-            this.btnReset.RepeatRate = 150;
-            this.btnReset.RepeatWhenHeldFor = 750;
             this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -554,8 +534,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
-            this.btnSave.RepeatRate = 150;
-            this.btnSave.RepeatWhenHeldFor = 750;
             this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);

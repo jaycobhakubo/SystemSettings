@@ -40,7 +40,13 @@ namespace GTI.Modules.SystemSettings.UI
         {
             return m_bModified;
         }
-
+        
+        public override void OnActivate(object o)
+        {
+            //Show();
+            //base.LeaveLastTab(null, new EventArgs());
+        }
+        
         public override bool LoadSettings()
         {
             Common.BeginWait();
@@ -301,6 +307,11 @@ namespace GTI.Modules.SystemSettings.UI
             cboScanner2Port.ValueMember = "CBOValueMember";
             if (cboScanner2Port.SelectedIndex == cboScanner1Port.SelectedIndex)
                 ++cboScanner2Port.SelectedIndex;
+        }
+
+        private void btnReset_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
         }
     }
 }

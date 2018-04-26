@@ -74,6 +74,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnReset.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnReset.Name = "btnReset";
+            this.btnReset.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
@@ -91,6 +92,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnSave.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonDown;
             this.btnSave.Name = "btnSave";
+            this.btnSave.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -280,6 +282,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnColor.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnColor.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnColor.Name = "btnColor";
+            this.btnColor.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnColor.UseVisualStyleBackColor = false;
             this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
@@ -288,8 +291,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.txtColor, "txtColor");
             this.txtColor.Name = "txtColor";
             this.txtColor.TabStop = false;
-            this.txtColor.Enter += new System.EventHandler(this.txtColor_Enter);
             this.txtColor.TextChanged += new System.EventHandler(this.OnModified);
+            this.txtColor.Enter += new System.EventHandler(this.txtColor_Enter);
             // 
             // btnLineColor
             // 
@@ -299,6 +302,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnLineColor.ImageNormal = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnLineColor.ImagePressed = global::GTI.Modules.SystemSettings.Properties.Resources.BlueButtonUp;
             this.btnLineColor.Name = "btnLineColor";
+            this.btnLineColor.SecondaryTextPadding = new System.Windows.Forms.Padding(5);
             this.btnLineColor.UseVisualStyleBackColor = false;
             this.btnLineColor.Click += new System.EventHandler(this.btnLineColor_Click);
             // 
@@ -307,8 +311,8 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.txtLineColor, "txtLineColor");
             this.txtLineColor.Name = "txtLineColor";
             this.txtLineColor.TabStop = false;
-            this.txtLineColor.Enter += new System.EventHandler(this.txtLineColor_Enter);
             this.txtLineColor.TextChanged += new System.EventHandler(this.OnModified);
+            this.txtLineColor.Enter += new System.EventHandler(this.txtLineColor_Enter);
             // 
             // KioskSettings
             // 

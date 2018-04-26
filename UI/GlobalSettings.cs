@@ -310,17 +310,17 @@ namespace GTI.Modules.SystemSettings.UI
        
 		#endregion // Private Routines
 
-        private void btnReset_Leave(object sender, EventArgs e)
-        {
-            txtClientInstallDrive.Focus();
-        }
-
         private void chkEnableCouponManagement_CheckedChanged(object sender, EventArgs e)
         {
             // if coupon management is checked then taxable coupons is enabled
             chkCouponsTaxable.Enabled = chkEnableCouponManagement.Checked;
 
             m_bModified = true;
+        }
+
+        private void btnReset_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
         }
     } // end class
 } // end namespace

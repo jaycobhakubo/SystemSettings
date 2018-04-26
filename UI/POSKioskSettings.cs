@@ -9,6 +9,14 @@ namespace GTI.Modules.SystemSettings.UI
 {
     public partial class POSKioskSettings : SettingsControl
     {
+        public enum OptionsForGivingChange
+        {
+            Normal = 0,
+            B3Credit = 1,
+            B3CreditOrNormal = 2,
+            B3CreditWithAddOn = 3,
+            B3CreditWithAddOnOrNormal = 4
+        }
 
         #region Member Variables
 
@@ -24,35 +32,11 @@ namespace GTI.Modules.SystemSettings.UI
         {
             m_TreeNodeParent = null;
             InitializeComponent();
-            SetComboboxComPort();
         }
 
         #endregion
 
         #region Methods
-
-        private void SetComboboxComPort()
-        {
-            lstComPortKioskBillAcceptor.Clear();
-
-            for (int i = 0; i < 14; i++)
-            {
-                Business.GenericCBOItem cboItem = new Business.GenericCBOItem();
-                cboItem.CBOValueMember = i;
-                
-                if(i == 0)
-                    cboItem.CBODisplayMember = "Disabled";
-                else
-                    cboItem.CBODisplayMember = "COM" + i.ToString();
-
-                lstComPortKioskBillAcceptor.Add(cboItem);
-            }
-
-            cboKioskBillAcceptorComPort.Items.Clear();
-            cboKioskBillAcceptorComPort.DataSource = lstComPortKioskBillAcceptor;
-            cboKioskBillAcceptorComPort.DisplayMember = "CBODisplayMember";
-            cboKioskBillAcceptorComPort.ValueMember = "CBOValueMember";
-        }
 
         public void SetTreeNode(TreeNode parent)
         {
@@ -80,10 +64,9 @@ namespace GTI.Modules.SystemSettings.UI
             return bResult;
         }
 
-
         private bool LoadPOSKioskSettings()
         {
-            //int result = 0;
+            int result = 0;
             bool boolResult = false;
             decimal decimalResult = 0;
             bool saveFlag = false;
@@ -98,6 +81,59 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 chkbxAutomaticApplyCouponToSales.Checked = false;
+                saveFlag = true;
+            }
+
+            tempString = Common.GetSystemSetting(Setting.AllowKiosksToPrintCBBPlayItSheetsFromReceiptScan);
+
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkbxAllowCBBSheets.Checked = boolResult;
+            }
+            else
+            {
+                chkbxAllowCBBSheets.Checked = false;
+                saveFlag = true;
+            }
+
+            tempString = Common.GetSystemSetting(Setting.UseKeyClickSoundsOnKiosk);
+
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkbxUseKeyClickSounds.Checked = boolResult;
+            }
+            else
+            {
+                chkbxUseKeyClickSounds.Checked = false;
+                saveFlag = true;
+            }
+
+            tempString = Common.GetSystemSetting(Setting.KioskChangeDispensingMethod);
+            result = 0;
+            int.TryParse(tempString, out result);
+            comboChangeMethod.SelectedIndex = result;
+
+            tempString = Common.GetSystemSetting(Setting.KiosksCanOnlySellFromTheirButtons);
+
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkbxOnlySellFromButtons.Checked = boolResult;
+            }
+            else
+            {
+                chkbxOnlySellFromButtons.Checked = false;
+                saveFlag = true;
+            }
+
+            tempString = Common.GetSystemSetting(Setting.AllowB3SalesOnAPOSKiosk);
+
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkbxAllowB3.Checked = boolResult;
+            }
+            else
+            {
+                chkbxAllowB3.Checked = false;
                 saveFlag = true;
             }
 
@@ -185,29 +221,8 @@ namespace GTI.Modules.SystemSettings.UI
             tempString = Common.GetSystemSetting(Setting.KioskPeripheralsTicketPrinterName);
             txtbxKioskTicketPrinterName.Text = tempString;
         
-            tempString = Common.GetSystemSetting(Setting.KioskPeripheralsAcceptorComPort);
-            
-            try //If there are any issues, just set to 0
-            {
-                
-                int tempSelectedIndex = 0;
-                bool tempResult = int.TryParse(tempString, out tempSelectedIndex);
-
-                if (tempResult)//If the setting is not numeric set it as disabled
-                {
-                    cboKioskBillAcceptorComPort.SelectedIndex = tempSelectedIndex;               
-                }
-                else
-                {
-                    cboKioskBillAcceptorComPort.SelectedIndex = 0;
-                    saveFlag = true;
-                }          
-            }
-            catch
-            {
-                cboKioskBillAcceptorComPort.SelectedIndex = 0;
-                saveFlag = true;
-            }
+            tempString = Common.GetSystemSetting(Setting.KioskGuardianAddress);
+            txtbxGuardianAddressAndPort.Text = tempString;
 
             m_IdleText.Text = Common.GetSystemSetting(Setting.KioskAttractText);
 
@@ -279,6 +294,28 @@ namespace GTI.Modules.SystemSettings.UI
                 saveFlag = true;
             }
 
+            if (Decimal.TryParse(Common.GetSystemSetting(Setting.KioskVideoVolume), out decimalResult))
+            {
+                if (decimalResult < nudVideoVolume.Minimum)
+                {
+                    decimalResult = nudVideoVolume.Minimum;
+                    saveFlag = true;
+                }
+
+                if (decimalResult > nudVideoVolume.Maximum)
+                {
+                    decimalResult = nudVideoVolume.Maximum;
+                    saveFlag = true;
+                }
+
+                nudVideoVolume.Value = decimalResult;
+            }
+            else
+            {
+                nudVideoVolume.Value = 100;
+                saveFlag = true;
+            }
+
             m_bModified = false;
 
             if (saveFlag)
@@ -310,6 +347,30 @@ namespace GTI.Modules.SystemSettings.UI
             setting.Value = chkbxAutomaticApplyCouponToSales.Checked.ToString();
             arrSettings.Add(setting);
 
+            setting.Id = (int)Setting.KioskChangeDispensingMethod;
+            setting.Value = comboChangeMethod.SelectedIndex.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.AllowKiosksToPrintCBBPlayItSheetsFromReceiptScan;
+            setting.Value = chkbxAllowCBBSheets.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.UseKeyClickSoundsOnKiosk;
+            setting.Value = chkbxUseKeyClickSounds.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.KioskVideoVolume;
+            setting.Value = nudVideoVolume.Value.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.KiosksCanOnlySellFromTheirButtons;
+            setting.Value = chkbxOnlySellFromButtons.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.AllowB3SalesOnAPOSKiosk;
+            setting.Value = chkbxAllowB3.Checked.ToString();
+            arrSettings.Add(setting);
+
             setting.Id = (int)Setting.AllowCreditCardsOnKiosks;
             setting.Value = chkbxAllowCreditDebitOnKiosk.Checked.ToString();
             arrSettings.Add(setting);
@@ -338,8 +399,8 @@ namespace GTI.Modules.SystemSettings.UI
             setting.Value = chkbxUseSimplePaymentForAdvancedKiosk.Checked.ToString();
             arrSettings.Add(setting);
 
-            setting.Id = (int)Setting.KioskPeripheralsAcceptorComPort;
-            setting.Value = cboKioskBillAcceptorComPort.SelectedValue.ToString();
+            setting.Id = (int)Setting.KioskGuardianAddress;
+            setting.Value = txtbxGuardianAddressAndPort.Text;
             arrSettings.Add(setting);
 
             setting.Id = (int)Setting.KioskPeripheralsTicketPrinterName;
@@ -392,5 +453,55 @@ namespace GTI.Modules.SystemSettings.UI
             m_bModified = true;
         }
 
+        private void btnReset_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
+        }
+
+        private void txtbxGuardianAddressAndPort_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (txtbxGuardianAddressAndPort.Text == string.Empty)
+            {
+                e.Cancel = false;
+                return;
+            }
+
+            //parse into nnn.nnn.nnn.nnn:ppppp  where nnn=0-255 and ppppp=1024-65535
+            string[] address = txtbxGuardianAddressAndPort.Text.Split(new char[] { '.', ':' });
+            int[] part = new int[5];
+            bool failed = false;
+
+            try
+            {
+                if (address.Length != 5)
+                    failed = true;
+
+                for (int x = 0; x < 5; x++)
+                {
+                    int test = 0;
+
+                    if (!(int.TryParse(address[x], out test) && ((x < 4 && test >= 0 && test <= 255) || (x == 4 && test >= 1024 && test <= 65535))))
+                    {
+                        failed = true;
+                        break;
+                    }
+                    else
+                    {
+                        part[x] = test;
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                failed = true;
+            }
+
+            e.Cancel = failed;
+
+            if (failed)
+                MessageForm.Show("Invalid IP:Port.\r\n\r\nnnn.nnn.nnn.nnn:ppppp where nnn=0-255 and ppppp=1025-65535.");
+            else
+                txtbxGuardianAddressAndPort.Text = string.Format("{0:D}.{1:D}.{2:D}.{3:D}:{4:D}", part[0], part[1], part[2], part[3], part[4]);
+        }
     }
 }

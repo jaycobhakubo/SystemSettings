@@ -177,5 +177,10 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         #endregion
+
+        private void btnReset_Leave(object sender, EventArgs e)
+        {
+            base.LeaveLastTab(sender, e);
+        }
     }
 }

@@ -19,6 +19,7 @@ using GTI.Modules.Shared;
 using System.Collections.Generic;
 using GTI.Modules.SystemSettings.Properties;
 using GTI.Modules.SystemSettings.Business;
+using System.Linq;
 
 namespace GTI.Modules.SystemSettings.UI
 {
@@ -79,6 +80,71 @@ namespace GTI.Modules.SystemSettings.UI
                 txtPlayerPINLength.Visible = false;
                 chkClearWinnersScreen.Location = new System.Drawing.Point(24, 172);
             }
+
+            //the tab order may have been messed up by moving controls around.
+            FixTabs();
+        }
+
+        /// <summary>
+        /// Generate a tab order for the check boxes and text boxes in the group box.
+        /// Check boxes top to bottom and left to right and text boxes top to bottom.
+        /// </summary>
+        private void FixTabs()
+        {
+            int index = 0;
+            List<CheckBox> checkBoxes = new List<CheckBox>();
+            List<TextBox> textBoxes = new List<TextBox>();
+
+            //build lists of check boxes and text boxes and remove tabs from all controls.
+            foreach (Control ctrl in groupUnitSettings.Controls)
+            {
+                ctrl.TabIndex = 0;
+                ctrl.TabStop = false;
+
+                if (ctrl as CheckBox != null)
+                    checkBoxes.Add(ctrl as CheckBox);
+                else if (ctrl as TextBox != null)
+                    textBoxes.Add(ctrl as TextBox);
+            }
+
+            //sort check boxes top to bottom left to right
+            //     1          4
+            //     2          5  
+            //     3
+            //
+            checkBoxes.Sort(
+                            delegate(CheckBox ctrl1, CheckBox ctrl2)
+                            {
+                                return  ctrl1.Location.X < ctrl2.Location.X ? -1 :
+                                        ctrl1.Location.X > ctrl2.Location.X ? 1 : 
+                                        ctrl1.Location.Y < ctrl2.Location.Y ? -1 : 1;
+                            }
+                           );
+
+            //sort text boxes top to bottom
+            //     1
+            //     2
+            //     3
+            //
+            textBoxes.Sort(
+                            delegate(TextBox ctrl1, TextBox ctrl2)
+                            {
+                                return ctrl1.Location.Y < ctrl2.Location.Y? -1 : 1;
+                            }
+                          );
+
+            //apply the tabs
+            foreach (CheckBox cb in checkBoxes)
+            {
+                cb.TabIndex = index++;
+                cb.TabStop = true;
+            }
+
+            foreach (TextBox tb in textBoxes)
+            {
+                tb.TabIndex = index++;
+                tb.TabStop = true;
+            }
         }
 
         // Public Methods
@@ -91,7 +157,6 @@ namespace GTI.Modules.SystemSettings.UI
         }
 
         public override void OnActivate(object o)
-        //public ovoid OnActivate(object o)
         {
         }
 
@@ -789,7 +854,9 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void btnReset_Leave(object sender, EventArgs e)
         {
-            chkPlayerPIN.Focus();
+            this.Parent.Parent.Focus();
+            //this.Parent.Focus();
+            //base.LeaveLastTab(sender, e);
         }
 
         //DE12696: System Settings: Set the PIN length > Field length
@@ -843,12 +910,12 @@ namespace GTI.Modules.SystemSettings.UI
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
-                groupBox5.Enabled = false;
+                groupUnitSettings.Enabled = false;
                 SetValueToDefault();
             }
             else
             {
-                groupBox5.Enabled = true;
+                groupUnitSettings.Enabled = true;
                 SetUIValue();
             }
 

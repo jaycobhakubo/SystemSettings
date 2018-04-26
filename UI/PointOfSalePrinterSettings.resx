@@ -229,7 +229,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 611</value>
+    <value>422, 609</value>
   </data>
   <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -238,7 +238,7 @@
     <value>121, 30</value>
   </data>
   <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>2</value>
   </data>
   <data name="btnReset.Text" xml:space="preserve">
     <value>&amp;Reset</value>
@@ -247,7 +247,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.589, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -331,7 +331,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 611</value>
+    <value>218, 609</value>
   </data>
   <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -340,7 +340,7 @@
     <value>121, 30</value>
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>1</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>&amp;Save</value>
@@ -349,13 +349,76 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.589, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtGlobalPrinter.Name" xml:space="preserve">
+    <value>txtGlobalPrinter</value>
+  </data>
+  <data name="&gt;&gt;txtGlobalPrinter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtGlobalPrinter.Parent" xml:space="preserve">
+    <value>grpPrinters</value>
+  </data>
+  <data name="&gt;&gt;txtGlobalPrinter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>grpPrinters</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtReceiptPrinter.Name" xml:space="preserve">
+    <value>txtReceiptPrinter</value>
+  </data>
+  <data name="&gt;&gt;txtReceiptPrinter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtReceiptPrinter.Parent" xml:space="preserve">
+    <value>grpPrinters</value>
+  </data>
+  <data name="&gt;&gt;txtReceiptPrinter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grpPrinters.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="grpPrinters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 50</value>
+  </data>
+  <data name="grpPrinters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>728, 89</value>
+  </data>
+  <data name="grpPrinters.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpPrinters.Text" xml:space="preserve">
+    <value>Printers</value>
+  </data>
+  <data name="&gt;&gt;grpPrinters.Name" xml:space="preserve">
+    <value>grpPrinters</value>
+  </data>
+  <data name="&gt;&gt;grpPrinters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpPrinters.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpPrinters.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="txtGlobalPrinter.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -367,7 +430,7 @@
     <value>316, 26</value>
   </data>
   <data name="txtGlobalPrinter.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;txtGlobalPrinter.Name" xml:space="preserve">
     <value>txtGlobalPrinter</value>
@@ -421,7 +484,7 @@
     <value>316, 26</value>
   </data>
   <data name="txtReceiptPrinter.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txtReceiptPrinter.Name" xml:space="preserve">
     <value>txtReceiptPrinter</value>
@@ -435,33 +498,6 @@
   <data name="&gt;&gt;txtReceiptPrinter.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="grpPrinters.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="grpPrinters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 50</value>
-  </data>
-  <data name="grpPrinters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>728, 89</value>
-  </data>
-  <data name="grpPrinters.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="grpPrinters.Text" xml:space="preserve">
-    <value>Printers</value>
-  </data>
-  <data name="&gt;&gt;grpPrinters.Name" xml:space="preserve">
-    <value>grpPrinters</value>
-  </data>
-  <data name="&gt;&gt;grpPrinters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpPrinters.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpPrinters.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -469,12 +505,12 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 644</value>
+    <value>760, 645</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PointOfSalePrinterSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.11.3.1, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>
