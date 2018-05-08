@@ -265,7 +265,6 @@ namespace GTI.Modules.SystemSettings.UI
             protocolAdapterSettings.Hide();
             protocolAdapterSettings.Enabled = false;
 
-
             playerDeviceSettings1.Devices = unitMgmtSettings1.Devices;
             playerDeviceSettings1.LoadSettings();
             playerDeviceSettings1.Hide();
@@ -280,7 +279,6 @@ namespace GTI.Modules.SystemSettings.UI
             playerDevicePlayModeSettings1.LoadSettings();
             playerDevicePlayModeSettings1.Hide();
             playerDevicePlayModeSettings1.Enabled = false;
-
 
             rngConfigurationSettings1.LoadSettings();
             rngConfigurationSettings1.Hide();
