@@ -96,6 +96,18 @@ namespace GTI.Modules.SystemSettings.UI
                 saveFlag = true;
             }
 
+            tempString = Common.GetSystemSetting(Setting.KioskTimeoutPulseDefaultButton);
+
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkbxPulseDefaultTimeoutButton.Checked = boolResult;
+            }
+            else
+            {
+                chkbxPulseDefaultTimeoutButton.Checked = true;
+                saveFlag = true;
+            }
+
             tempString = Common.GetSystemSetting(Setting.UseKeyClickSoundsOnKiosk);
 
             if (bool.TryParse(tempString, out boolResult))
@@ -381,6 +393,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             setting.Id = (int)Setting.AllowScanningProductsOnSimplePOSKiosk;
             setting.Value = chkbxAllowScanningProducts.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.KioskTimeoutPulseDefaultButton;
+            setting.Value = chkbxPulseDefaultTimeoutButton.Checked.ToString();
             arrSettings.Add(setting);
 
             setting.Id = (int)Setting.IncludeTheCouponsButtonOnTheHybridKiosk;

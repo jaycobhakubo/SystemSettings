@@ -117,75 +117,87 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblSessionSummaryType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;chkbxSetEndingBankToActualCash.Name" xml:space="preserve">
+    <value>chkbxSetEndingBankToActualCash</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblSessionSummaryType.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;chkbxSetEndingBankToActualCash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblSessionSummaryType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblSessionSummaryType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 201</value>
-  </data>
-  <data name="lblSessionSummaryType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="lblSessionSummaryType.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblSessionSummaryType.Text" xml:space="preserve">
-    <value>Session Summary Type</value>
-  </data>
-  <data name="&gt;&gt;lblSessionSummaryType.Name" xml:space="preserve">
-    <value>lblSessionSummaryType</value>
-  </data>
-  <data name="&gt;&gt;lblSessionSummaryType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSessionSummaryType.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkbxSetEndingBankToActualCash.Parent" xml:space="preserve">
     <value>grpbxSessionSettings</value>
   </data>
-  <data name="&gt;&gt;lblSessionSummaryType.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;chkbxSetEndingBankToActualCash.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cmbxSessionSummaryType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
   </data>
-  <data name="cmbxSessionSummaryType.Items" xml:space="preserve">
-    <value>Default</value>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cmbxSessionSummaryType.Items1" xml:space="preserve">
-    <value>South Point</value>
-  </data>
-  <data name="cmbxSessionSummaryType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 198</value>
-  </data>
-  <data name="cmbxSessionSummaryType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 30</value>
-  </data>
-  <data name="cmbxSessionSummaryType.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;cmbxSessionSummaryType.Name" xml:space="preserve">
-    <value>cmbxSessionSummaryType</value>
-  </data>
-  <data name="&gt;&gt;cmbxSessionSummaryType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmbxSessionSummaryType.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>grpbxSessionSettings</value>
   </data>
-  <data name="&gt;&gt;cmbxSessionSummaryType.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboUIDisplayMode.Name" xml:space="preserve">
+    <value>cboUIDisplayMode</value>
+  </data>
+  <data name="&gt;&gt;cboUIDisplayMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboUIDisplayMode.Parent" xml:space="preserve">
+    <value>grpbxSessionSettings</value>
+  </data>
+  <data name="&gt;&gt;cboUIDisplayMode.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkbxSetBankToEndBank.Name" xml:space="preserve">
+    <value>chkbxSetBankToEndBank</value>
+  </data>
+  <data name="&gt;&gt;chkbxSetBankToEndBank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkbxSetBankToEndBank.Parent" xml:space="preserve">
+    <value>grpbxSessionSettings</value>
+  </data>
+  <data name="&gt;&gt;chkbxSetBankToEndBank.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="grpbxSessionSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="grpbxSessionSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 27</value>
+  </data>
+  <data name="grpbxSessionSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>728, 516</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="grpbxSessionSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpbxSessionSettings.Text" xml:space="preserve">
+    <value>Session Summary</value>
+  </data>
+  <data name="&gt;&gt;grpbxSessionSettings.Name" xml:space="preserve">
+    <value>grpbxSessionSettings</value>
+  </data>
+  <data name="&gt;&gt;grpbxSessionSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpbxSessionSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpbxSessionSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="chkbxSetEndingBankToActualCash.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="chkbxSetEndingBankToActualCash.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -211,7 +223,7 @@
     <value>grpbxSessionSettings</value>
   </data>
   <data name="&gt;&gt;chkbxSetEndingBankToActualCash.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -244,16 +256,16 @@
     <value>grpbxSessionSettings</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="cboUIDisplayMode.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="cboUIDisplayMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 144</value>
+    <value>192, 144</value>
   </data>
   <data name="cboUIDisplayMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 30</value>
+    <value>136, 30</value>
   </data>
   <data name="cboUIDisplayMode.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -268,7 +280,7 @@
     <value>grpbxSessionSettings</value>
   </data>
   <data name="&gt;&gt;cboUIDisplayMode.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="chkbxSetBankToEndBank.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -298,34 +310,7 @@
     <value>grpbxSessionSettings</value>
   </data>
   <data name="&gt;&gt;chkbxSetBankToEndBank.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="grpbxSessionSettings.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="grpbxSessionSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 27</value>
-  </data>
-  <data name="grpbxSessionSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>728, 516</value>
-  </data>
-  <data name="grpbxSessionSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="grpbxSessionSettings.Text" xml:space="preserve">
-    <value>Session Summary</value>
-  </data>
-  <data name="&gt;&gt;grpbxSessionSettings.Name" xml:space="preserve">
-    <value>grpbxSessionSettings</value>
-  </data>
-  <data name="&gt;&gt;grpbxSessionSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpbxSessionSettings.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpbxSessionSettings.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
@@ -352,7 +337,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1033, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -385,7 +370,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1033, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -403,6 +388,6 @@
     <value>SessionSummarySettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.14.0.2, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

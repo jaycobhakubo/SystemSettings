@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(POSKioskSettings));
             this.grpBxKioskSales = new System.Windows.Forms.GroupBox();
+            this.nudVideoVolume = new System.Windows.Forms.NumericUpDown();
+            this.lblVideoVolume = new System.Windows.Forms.Label();
+            this.chkbxUseKeyClickSounds = new System.Windows.Forms.CheckBox();
             this.chkbxAllowCBBSheets = new System.Windows.Forms.CheckBox();
             this.lblChangeMethod = new System.Windows.Forms.Label();
             this.comboChangeMethod = new System.Windows.Forms.ComboBox();
@@ -41,6 +44,7 @@
             this.chkbxIncludeUseLastPurchaseButton = new System.Windows.Forms.CheckBox();
             this.chkbxUseSimplePaymentForAdvancedKiosk = new System.Windows.Forms.CheckBox();
             this.m_grpTimeouts = new System.Windows.Forms.GroupBox();
+            this.chkbxPulseDefaultTimeoutButton = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.m_lblTimeout = new System.Windows.Forms.Label();
             this.m_nudMessageTimeout = new System.Windows.Forms.NumericUpDown();
@@ -61,15 +65,12 @@
             this.lblTicketPrinterName = new System.Windows.Forms.Label();
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
-            this.chkbxUseKeyClickSounds = new System.Windows.Forms.CheckBox();
-            this.lblVideoVolume = new System.Windows.Forms.Label();
-            this.nudVideoVolume = new System.Windows.Forms.NumericUpDown();
             this.grpBxKioskSales.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVideoVolume)).BeginInit();
             this.m_grpTimeouts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudMessageTimeout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudTimeout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudShortTimeout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudVideoVolume)).BeginInit();
             this.SuspendLayout();
             // 
             // grpBxKioskSales
@@ -102,6 +103,29 @@
             resources.ApplyResources(this.grpBxKioskSales, "grpBxKioskSales");
             this.grpBxKioskSales.Name = "grpBxKioskSales";
             this.grpBxKioskSales.TabStop = false;
+            // 
+            // nudVideoVolume
+            // 
+            resources.ApplyResources(this.nudVideoVolume, "nudVideoVolume");
+            this.nudVideoVolume.Name = "nudVideoVolume";
+            this.nudVideoVolume.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.nudVideoVolume.ValueChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblVideoVolume
+            // 
+            resources.ApplyResources(this.lblVideoVolume, "lblVideoVolume");
+            this.lblVideoVolume.Name = "lblVideoVolume";
+            // 
+            // chkbxUseKeyClickSounds
+            // 
+            resources.ApplyResources(this.chkbxUseKeyClickSounds, "chkbxUseKeyClickSounds");
+            this.chkbxUseKeyClickSounds.Name = "chkbxUseKeyClickSounds";
+            this.chkbxUseKeyClickSounds.UseVisualStyleBackColor = true;
+            this.chkbxUseKeyClickSounds.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkbxAllowCBBSheets
             // 
@@ -177,6 +201,7 @@
             // 
             // m_grpTimeouts
             // 
+            this.m_grpTimeouts.Controls.Add(this.chkbxPulseDefaultTimeoutButton);
             this.m_grpTimeouts.Controls.Add(this.label1);
             this.m_grpTimeouts.Controls.Add(this.m_lblTimeout);
             this.m_grpTimeouts.Controls.Add(this.m_nudMessageTimeout);
@@ -187,6 +212,12 @@
             resources.ApplyResources(this.m_grpTimeouts, "m_grpTimeouts");
             this.m_grpTimeouts.Name = "m_grpTimeouts";
             this.m_grpTimeouts.TabStop = false;
+            // 
+            // chkbxPulseDefaultTimeoutButton
+            // 
+            resources.ApplyResources(this.chkbxPulseDefaultTimeoutButton, "chkbxPulseDefaultTimeoutButton");
+            this.chkbxPulseDefaultTimeoutButton.Name = "chkbxPulseDefaultTimeoutButton";
+            this.chkbxPulseDefaultTimeoutButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -377,29 +408,6 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // chkbxUseKeyClickSounds
-            // 
-            resources.ApplyResources(this.chkbxUseKeyClickSounds, "chkbxUseKeyClickSounds");
-            this.chkbxUseKeyClickSounds.Name = "chkbxUseKeyClickSounds";
-            this.chkbxUseKeyClickSounds.UseVisualStyleBackColor = true;
-            this.chkbxUseKeyClickSounds.CheckedChanged += new System.EventHandler(this.OnModified);
-            // 
-            // lblVideoVolume
-            // 
-            resources.ApplyResources(this.lblVideoVolume, "lblVideoVolume");
-            this.lblVideoVolume.Name = "lblVideoVolume";
-            // 
-            // nudVideoVolume
-            // 
-            resources.ApplyResources(this.nudVideoVolume, "nudVideoVolume");
-            this.nudVideoVolume.Name = "nudVideoVolume";
-            this.nudVideoVolume.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.nudVideoVolume.ValueChanged += new System.EventHandler(this.OnModified);
-            // 
             // POSKioskSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -410,12 +418,12 @@
             this.Name = "POSKioskSettings";
             this.grpBxKioskSales.ResumeLayout(false);
             this.grpBxKioskSales.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVideoVolume)).EndInit();
             this.m_grpTimeouts.ResumeLayout(false);
             this.m_grpTimeouts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudMessageTimeout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudTimeout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudShortTimeout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudVideoVolume)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -457,5 +465,6 @@
         private System.Windows.Forms.NumericUpDown nudVideoVolume;
         private System.Windows.Forms.Label lblVideoVolume;
         private System.Windows.Forms.CheckBox chkbxUseKeyClickSounds;
+        private System.Windows.Forms.CheckBox chkbxPulseDefaultTimeoutButton;
     }
 }

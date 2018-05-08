@@ -38,7 +38,6 @@ namespace GTI.Modules.SystemSettings.UI
         {
             InitializeComponent();
             PopCombos();
-            cmbxSessionSummaryType.SelectedIndex = 1;
         }
 
         #endregion
