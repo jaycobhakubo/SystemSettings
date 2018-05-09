@@ -61,6 +61,7 @@
             resources.ApplyResources(this.cmbxSessionSummaryType, "cmbxSessionSummaryType");
             this.cmbxSessionSummaryType.FormattingEnabled = true;
             this.cmbxSessionSummaryType.Name = "cmbxSessionSummaryType";
+            this.cmbxSessionSummaryType.SelectedIndexChanged += new System.EventHandler(this.cmbxSessionSummaryType_SelectedIndexChanged);
             // 
             // lblSessionSummaryType
             // 

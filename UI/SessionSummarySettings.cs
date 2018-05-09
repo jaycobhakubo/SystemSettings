@@ -32,6 +32,7 @@ namespace GTI.Modules.SystemSettings.UI
         private bool m_bModified = false;
         private List<Business.GenericCBOItem> m_UIModes = new List<Business.GenericCBOItem>();
         private List<ReportData> m_listSessionSummary;
+        private ReportData m_reportData;
 
         #endregion
 
@@ -180,10 +181,22 @@ namespace GTI.Modules.SystemSettings.UI
                 return false;
             }
 
+                  
+            // update the server
+            SaveSessionSummaryReportType();
+
             // Set the flag
             m_bModified = false;
 
             return true;
+        }
+
+        private void SaveSessionSummaryReportType()
+        {
+            var listReportData = new List<ReportData>();
+            listReportData.Add(m_reportData);
+            var msg = new SetUserDefineReports(listReportData);
+            msg.Send();
         }
         
         /// <summary>
@@ -246,6 +259,14 @@ namespace GTI.Modules.SystemSettings.UI
         private void btnReset_Leave(object sender, EventArgs e)
         {
             base.LeaveLastTab(sender, e);
+        }
+
+        private void cmbxSessionSummaryType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbxSessionSummaryType.SelectedIndex != 0)
+            {
+                m_reportData = (ReportData)cmbxSessionSummaryType.SelectedItem;
+            }
         }
         
     }
