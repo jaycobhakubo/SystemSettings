@@ -17,6 +17,8 @@ using System.Windows.Forms;
 using GTI.Modules.Shared;
 using GTI.Modules.SystemSettings.Business;
 using GTI.Modules.SystemSettings.Properties;
+using GTI.Modules.Shared.Business;
+using GTI.Modules.Shared.Data;
 
 namespace GTI.Modules.SystemSettings.UI
 {
@@ -29,6 +31,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private bool m_bModified = false;
         private List<Business.GenericCBOItem> m_UIModes = new List<Business.GenericCBOItem>();
+        private List<ReportData> m_listSessionSummary;
 
         #endregion
 
@@ -90,6 +93,21 @@ namespace GTI.Modules.SystemSettings.UI
 
         #region MEMBER METHOD
 
+
+        private void PopulateDataIntoSessionSummaryCombobox()
+        {
+            m_listSessionSummary = new List<ReportData>();
+            GetAllReports getUserDefineReportsMsg = new GetAllReports((int)ReportTypes.SessionSummary);
+            getUserDefineReportsMsg.Send();
+
+            m_listSessionSummary = getUserDefineReportsMsg.mListRptData.Where(l => l.ReportTypeId == (int)ReportTypes.SessionSummary).ToList<ReportData>();
+            cmbxSessionSummaryType.Items.Clear();
+            cmbxSessionSummaryType.DataSource = m_listSessionSummary;
+            cmbxSessionSummaryType.DisplayMember = "ReportFileName";
+            cmbxSessionSummaryType.ValueMember = "ReportId";
+        }
+
+
         private bool LoadSessionSummarySettings()
         {
             if (!Common.GetSystemSettings())
@@ -117,6 +135,9 @@ namespace GTI.Modules.SystemSettings.UI
                     break;
                 }
             }
+
+            //Populate data into the combobox for Session Summary Type
+            PopulateDataIntoSessionSummaryCombobox();
 
             // Set the flag
             m_bModified = false;

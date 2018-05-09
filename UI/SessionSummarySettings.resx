@@ -125,7 +125,7 @@
     <value>248, 184</value>
   </data>
   <data name="cmbxSessionSummaryType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 30</value>
+    <value>400, 30</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cmbxSessionSummaryType.TabIndex" type="System.Int32, mscorlib">
@@ -244,10 +244,10 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="cboUIDisplayMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 144</value>
+    <value>248, 144</value>
   </data>
   <data name="cboUIDisplayMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 30</value>
+    <value>400, 30</value>
   </data>
   <data name="cboUIDisplayMode.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

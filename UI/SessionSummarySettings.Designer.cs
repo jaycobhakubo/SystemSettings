@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SessionSummarySettings));
             this.grpbxSessionSettings = new System.Windows.Forms.GroupBox();
+            this.cmbxSessionSummaryType = new System.Windows.Forms.ComboBox();
+            this.lblSessionSummaryType = new System.Windows.Forms.Label();
             this.chkbxSetEndingBankToActualCash = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cboUIDisplayMode = new System.Windows.Forms.ComboBox();
             this.chkbxSetBankToEndBank = new System.Windows.Forms.CheckBox();
             this.btnSave = new GTI.Controls.ImageButton();
             this.btnReset = new GTI.Controls.ImageButton();
-            this.lblSessionSummaryType = new System.Windows.Forms.Label();
-            this.cmbxSessionSummaryType = new System.Windows.Forms.ComboBox();
             this.grpbxSessionSettings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,18 @@
             resources.ApplyResources(this.grpbxSessionSettings, "grpbxSessionSettings");
             this.grpbxSessionSettings.Name = "grpbxSessionSettings";
             this.grpbxSessionSettings.TabStop = false;
+            // 
+            // cmbxSessionSummaryType
+            // 
+            this.cmbxSessionSummaryType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cmbxSessionSummaryType, "cmbxSessionSummaryType");
+            this.cmbxSessionSummaryType.FormattingEnabled = true;
+            this.cmbxSessionSummaryType.Name = "cmbxSessionSummaryType";
+            // 
+            // lblSessionSummaryType
+            // 
+            resources.ApplyResources(this.lblSessionSummaryType, "lblSessionSummaryType");
+            this.lblSessionSummaryType.Name = "lblSessionSummaryType";
             // 
             // chkbxSetEndingBankToActualCash
             // 
@@ -107,18 +119,6 @@
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
-            // 
-            // lblSessionSummaryType
-            // 
-            resources.ApplyResources(this.lblSessionSummaryType, "lblSessionSummaryType");
-            this.lblSessionSummaryType.Name = "lblSessionSummaryType";
-            // 
-            // cmbxSessionSummaryType
-            // 
-            this.cmbxSessionSummaryType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cmbxSessionSummaryType, "cmbxSessionSummaryType");
-            this.cmbxSessionSummaryType.FormattingEnabled = true;
-            this.cmbxSessionSummaryType.Name = "cmbxSessionSummaryType";
             // 
             // SessionSummarySettings
             // 
