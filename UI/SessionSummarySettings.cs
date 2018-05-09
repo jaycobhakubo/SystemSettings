@@ -105,6 +105,10 @@ namespace GTI.Modules.SystemSettings.UI
             cmbxSessionSummaryType.DataSource = m_listSessionSummary;
             cmbxSessionSummaryType.DisplayMember = "ReportFileName";
             cmbxSessionSummaryType.ValueMember = "ReportId";
+            if (cmbxSessionSummaryType.Items.Count > 0)
+            {
+                cmbxSessionSummaryType.SelectedItem = cmbxSessionSummaryType.Items.OfType<ReportData>().First(l => l.IsActive == true);
+            }
         }
 
 
