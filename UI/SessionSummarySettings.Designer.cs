@@ -36,6 +36,8 @@
             this.chkbxSetBankToEndBank = new System.Windows.Forms.CheckBox();
             this.btnSave = new GTI.Controls.ImageButton();
             this.btnReset = new GTI.Controls.ImageButton();
+            this.lblSessionSummaryType = new System.Windows.Forms.Label();
+            this.cmbxSessionSummaryType = new System.Windows.Forms.ComboBox();
             this.grpbxSessionSettings.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +45,8 @@
             // 
             this.grpbxSessionSettings.AccessibleRole = System.Windows.Forms.AccessibleRole.PageTabList;
             this.grpbxSessionSettings.BackColor = System.Drawing.Color.Transparent;
+            this.grpbxSessionSettings.Controls.Add(this.cmbxSessionSummaryType);
+            this.grpbxSessionSettings.Controls.Add(this.lblSessionSummaryType);
             this.grpbxSessionSettings.Controls.Add(this.chkbxSetEndingBankToActualCash);
             this.grpbxSessionSettings.Controls.Add(this.label7);
             this.grpbxSessionSettings.Controls.Add(this.cboUIDisplayMode);
@@ -104,6 +108,18 @@
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
+            // lblSessionSummaryType
+            // 
+            resources.ApplyResources(this.lblSessionSummaryType, "lblSessionSummaryType");
+            this.lblSessionSummaryType.Name = "lblSessionSummaryType";
+            // 
+            // cmbxSessionSummaryType
+            // 
+            this.cmbxSessionSummaryType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cmbxSessionSummaryType, "cmbxSessionSummaryType");
+            this.cmbxSessionSummaryType.FormattingEnabled = true;
+            this.cmbxSessionSummaryType.Name = "cmbxSessionSummaryType";
+            // 
             // SessionSummarySettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -128,6 +144,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cboUIDisplayMode;
         private System.Windows.Forms.CheckBox chkbxSetEndingBankToActualCash;
+        private System.Windows.Forms.ComboBox cmbxSessionSummaryType;
+        private System.Windows.Forms.Label lblSessionSummaryType;
 
     }
 }
