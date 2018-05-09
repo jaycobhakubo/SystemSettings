@@ -96,6 +96,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rngConfigurationSettings1 = new GTI.Modules.SystemSettings.UI.RNGConfigurationSettings();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -118,6 +119,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.rngConfigurationSettings1);
             this.splitContainer1.Panel2.Controls.Add(this.securitySettings2);
             this.splitContainer1.Panel2.Controls.Add(this.sessionSummarySettings3);
             this.splitContainer1.Panel2.Controls.Add(this.tenderSettings1);
@@ -551,6 +553,11 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // rngConfigurationSettings1
+            // 
+            resources.ApplyResources(this.rngConfigurationSettings1, "rngConfigurationSettings1");
+            this.rngConfigurationSettings1.Name = "rngConfigurationSettings1";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -647,5 +654,6 @@ namespace GTI.Modules.SystemSettings.UI
         private PlayerDeviceSettings playerDeviceSettings1;
         private PlayerDeviceAudioSettings playerDeviceAudioSettings1;
         private PlayerDevicePlayModeSettings playerDevicePlayModeSettings1;
+        private RNGConfigurationSettings rngConfigurationSettings1;
 	}
 }
