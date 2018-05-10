@@ -102,6 +102,7 @@ namespace GTI.Modules.SystemSettings.UI
             getUserDefineReportsMsg.Send();
 
             m_listSessionSummary = getUserDefineReportsMsg.mListRptData.Where(l => l.ReportTypeId == (int)ReportTypes.SessionSummary).ToList<ReportData>();
+            cmbxSessionSummaryType.DataSource = null;
             cmbxSessionSummaryType.Items.Clear();
             cmbxSessionSummaryType.DataSource = m_listSessionSummary;
             cmbxSessionSummaryType.DisplayMember = "ReportFileName";
