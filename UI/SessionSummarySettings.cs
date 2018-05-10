@@ -106,6 +106,7 @@ namespace GTI.Modules.SystemSettings.UI
             cmbxSessionSummaryType.DataSource = m_listSessionSummary;
             cmbxSessionSummaryType.DisplayMember = "ReportFileName";
             cmbxSessionSummaryType.ValueMember = "ReportId";
+
             if (cmbxSessionSummaryType.Items.Count > 0)
             {
                 cmbxSessionSummaryType.SelectedItem = cmbxSessionSummaryType.Items.OfType<ReportData>().First(l => l.IsActive == true);
@@ -193,9 +194,21 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void SaveSessionSummaryReportType()
         {
-            var listReportData = new List<ReportData>();
-            listReportData.Add(m_reportData);
-            var msg = new SetUserDefineReports(listReportData);
+            //var listReportData = new List<ReportData>();
+
+
+            foreach (ReportData rptData in m_listSessionSummary)
+            {
+                if (rptData.ReportId == m_reportData.ReportId)
+                {
+                    rptData.IsActive = true;
+                }
+                else
+                {
+                    rptData.IsActive = false;
+                }
+            }
+            var msg = new SetUserDefineReports(m_listSessionSummary);
             msg.Send();
         }
         
@@ -218,6 +231,7 @@ namespace GTI.Modules.SystemSettings.UI
             cboUIDisplayMode.DataSource = m_UIModes;
             cboUIDisplayMode.DisplayMember = "CBODisplayMember";
             cboUIDisplayMode.ValueMember = "CBOValueMember";
+
         }
 
         #endregion
@@ -263,7 +277,7 @@ namespace GTI.Modules.SystemSettings.UI
 
         private void cmbxSessionSummaryType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbxSessionSummaryType.SelectedIndex != 0)
+            if (cmbxSessionSummaryType.Items.Count != 0)
             {
                 m_reportData = (ReportData)cmbxSessionSummaryType.SelectedItem;
             }
