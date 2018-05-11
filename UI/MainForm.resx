@@ -280,7 +280,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="rngConfigurationSettings1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, -1</value>
   </data>
   <data name="rngConfigurationSettings1.Size" type="System.Drawing.Size, System.Drawing">
     <value>762, 644</value>

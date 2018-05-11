@@ -348,6 +348,7 @@ namespace GTI.Modules.SystemSettings.UI
                 || (m_nDeviceId == Device.BuyAgainKiosk.Id)
                 || (m_nDeviceId == Device.SimplePOSKiosk.Id)
                 || (m_nDeviceId == Device.HybridKiosk.Id)
+                || (m_nDeviceId == Device.B3Kiosk.Id)
                 || (m_nDeviceId == Device.POSManagement.Id);
             // Rally 	DE2837 Allow the caller to configure reciept printer
             //   || (m_nDeviceId == Device.Caller.Id);
@@ -356,12 +357,13 @@ namespace GTI.Modules.SystemSettings.UI
              ((m_nDeviceId == Device.AdvancedPOSKiosk.Id)
                 || (m_nDeviceId == Device.BuyAgainKiosk.Id)
                 || (m_nDeviceId == Device.SimplePOSKiosk.Id)
+                || (m_nDeviceId == Device.B3Kiosk.Id)
                 || (m_nDeviceId == Device.HybridKiosk.Id));
                 
             grpbxKioskSales.Visible = t_isKioskSalesActive;
             if (t_isKioskSalesActive)
             {
-                grpPOS.Size = new System.Drawing.Size(672, 477);
+//                grpPOS.Size = new System.Drawing.Size(672, 477);
                 string tempString = "";
 
                 //Kiosk - Guardian address and port
@@ -390,10 +392,23 @@ namespace GTI.Modules.SystemSettings.UI
                     tempString = Common.GetSystemSetting(Setting.KioskPeripheralsTicketPrinterName);
                     txtbxKioskTicketPrinterName.Text = tempString;
                 }
+
+                if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.AllowB3SalesOnAPOSKiosk, out s))
+                {
+                    chkbxAllowB3UseDefault.Checked = false;
+                    chkbxAllowB3.Checked = Common.ParseBool(s.Value);
+                }
+                else
+                {
+                    chkbxAllowB3UseDefault.Checked = true;
+                    tempString = Common.GetSystemSetting(Setting.AllowB3SalesOnAPOSKiosk);
+                    chkbxAllowB3.Checked = Common.ParseBool(tempString);
+                }
             }
             else
             {
-                grpPOS.Size = new System.Drawing.Size(672, 566);
+//                grpPOS.Size = new System.Drawing.Size(672, 566);
+                tabMachineDialog.TabPages.Remove(tabPagePOSKiosk);
             }
             
             grpPOS.Visible = IsPOSVisible;
@@ -663,6 +678,38 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 chkCbbScannerPort.Checked = true;
                 numCBBScannerPort.Value = Common.ParseInt(Common.GetOpSetting(Setting.CBBScannerPort));
+            }
+
+            //CBB Play It Sheet Type
+            if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.CBBPlayItSheetType, out s))
+            {
+                chkCBBPlayItSheetType.Checked = false;
+                int sheetType;
+                if (int.TryParse(s.Value, out sheetType))
+                {
+                    cboPlayItSheet.SelectedIndex = sheetType;
+                }
+            }
+            else
+            {
+                chkCBBPlayItSheetType.Checked = true;
+                cboPlayItSheet.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CBBPlayItSheetType)) + 1;
+            }
+
+            //CBB Print Play It Sheets
+            if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.PrintCBBCardsToPlayItSheet, out s))
+            {
+                chkCBBPrintPlayItSheet.Checked = false;
+                int printType;
+                if (int.TryParse(s.Value, out printType))
+                {
+                    cboPrintCBBCardsToPlayitSheet.SelectedIndex = printType;
+                }
+            }
+            else
+            {
+                chkCBBPrintPlayItSheet.Checked = true;
+                cboPrintCBBCardsToPlayitSheet.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.PrintCBBCardsToPlayItSheet)) + 1;
             }
 
             // PDTS 1064
@@ -1192,6 +1239,29 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 s.Id = (int)Setting.CBBScannerPort;
                 s.Value = numCBBScannerPort.Text;
+                arrSettings.Add(s);
+            }
+
+            //CBB Play It Sheet Type
+            if (!chkCBBPlayItSheetType.Checked)
+            {
+                s.Id = (int)Setting.CBBPlayItSheetType;
+                s.Value = (cboPlayItSheet.SelectedIndex).ToString();
+                arrSettings.Add(s);
+            }
+
+            //CBB Print Type
+            if (!chkCBBPrintPlayItSheet.Checked)
+            {
+                s.Id = (int)Setting.PrintCBBCardsToPlayItSheet;
+                s.Value = (cboPrintCBBCardsToPlayitSheet.SelectedIndex).ToString();
+                arrSettings.Add(s);
+            }
+
+            if (!chkbxAllowB3UseDefault.Checked)
+            {
+                s.Id = (int)Setting.AllowB3SalesOnAPOSKiosk;
+                s.Value = chkbxAllowB3.Checked? "True" : "False";
                 arrSettings.Add(s);
             }
 
@@ -1811,6 +1881,25 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+        private void chkCBBPlayItSheetType_CheckedChanged(object sender, EventArgs e)
+        {
+            cboPlayItSheet.Enabled = !chkCBBPlayItSheetType.Checked;
+
+            if (chkCBBPlayItSheetType.Checked)
+            {
+                cboPlayItSheet.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CBBPlayItSheetType));
+            }
+        }
+
+        private void chkCBBPrintPlayItSheet_CheckedChanged(object sender, EventArgs e)
+        {
+            cboPrintCBBCardsToPlayitSheet.Enabled = !chkCBBPrintPlayItSheet.Checked;
+
+            if (chkCBBPrintPlayItSheet.Checked)
+            {
+                cboPrintCBBCardsToPlayitSheet.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.PrintCBBCardsToPlayItSheet));
+            }
+        }
       
         private bool LoadScenes()
         {
@@ -2190,6 +2279,12 @@ namespace GTI.Modules.SystemSettings.UI
         private void chkbxGuardianAddressAndPort_CheckedChanged(object sender, EventArgs e)
         {
             txtbxGuardianAddressAndPort.Enabled = !chkbxGuardianAddressAndPort.Checked;
+        }
+
+
+        private void chkbxAllowB3UseDefault_CheckedChanged(object sender, EventArgs e)
+        {
+            chkbxAllowB3.Enabled = !chkbxAllowB3UseDefault.Checked;
         }
 
         //private void chkSellElectronics_CheckedChanged(object sender, EventArgs e)
