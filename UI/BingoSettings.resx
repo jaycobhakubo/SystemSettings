@@ -129,7 +129,7 @@
     <value>123, 22</value>
   </data>
   <data name="m_labelMaxCardLimit.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="m_labelMaxCardLimit.Text" xml:space="preserve">
     <value>Max Card Limit</value>
@@ -147,7 +147,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;m_labelMaxCardLimit.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="m_MaxBetValueLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -166,7 +166,7 @@
     <value>115, 22</value>
   </data>
   <data name="m_MaxBetValueLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="m_MaxBetValueLabel.Text" xml:space="preserve">
     <value>Max Bet Value</value>
@@ -184,7 +184,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;m_MaxBetValueLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
@@ -211,7 +211,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1024, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1228, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -244,13 +244,73 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1024, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1228, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="cbHeadcountMethod.Items" xml:space="preserve">
+    <value>Manual Count</value>
+  </data>
+  <data name="cbHeadcountMethod.Items1" xml:space="preserve">
+    <value>Count the number of transactions</value>
+  </data>
+  <data name="cbHeadcountMethod.Items2" xml:space="preserve">
+    <value>Count the number of products sold with name "Attendance"</value>
+  </data>
+  <data name="cbHeadcountMethod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 160</value>
+  </data>
+  <data name="cbHeadcountMethod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 30</value>
+  </data>
+  <data name="cbHeadcountMethod.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbHeadcountMethod.Name" xml:space="preserve">
+    <value>cbHeadcountMethod</value>
+  </data>
+  <data name="&gt;&gt;cbHeadcountMethod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbHeadcountMethod.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;cbHeadcountMethod.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblHeadcountMethod.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblHeadcountMethod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 163</value>
+  </data>
+  <data name="lblHeadcountMethod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="lblHeadcountMethod.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblHeadcountMethod.Text" xml:space="preserve">
+    <value>Headcount Method:</value>
+  </data>
+  <data name="lblHeadcountMethod.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblHeadcountMethod.Name" xml:space="preserve">
+    <value>lblHeadcountMethod</value>
+  </data>
+  <data name="&gt;&gt;lblHeadcountMethod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHeadcountMethod.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lblHeadcountMethod.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
@@ -394,7 +454,7 @@
     <value>Left</value>
   </data>
   <data name="quickDrawElecPermFileCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 43</value>
+    <value>155, 39</value>
   </data>
   <data name="quickDrawElecPermFileCombo.Size" type="System.Drawing.Size, System.Drawing">
     <value>330, 30</value>
@@ -451,7 +511,7 @@
     <value>494, 97</value>
   </data>
   <data name="quickDrawGB.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="quickDrawGB.Text" xml:space="preserve">
     <value>Quick Draw</value>
@@ -466,7 +526,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;quickDrawGB.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="chkSequentialGames.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -475,7 +535,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkSequentialGames.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 157</value>
+    <value>23, 129</value>
   </data>
   <data name="chkSequentialGames.Size" type="System.Drawing.Size, System.Drawing">
     <value>252, 26</value>
@@ -496,7 +556,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;chkSequentialGames.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="txtVoidLockGames.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -508,7 +568,7 @@
     <value>53, 26</value>
   </data>
   <data name="txtVoidLockGames.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;txtVoidLockGames.Name" xml:space="preserve">
     <value>txtVoidLockGames</value>
@@ -520,7 +580,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;txtVoidLockGames.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="lblVoidLock.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -535,7 +595,7 @@
     <value>329, 22</value>
   </data>
   <data name="lblVoidLock.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="lblVoidLock.Text" xml:space="preserve">
     <value>Lock voiding receipts at the start of game</value>
@@ -550,7 +610,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;lblVoidLock.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="m_chkForcePackToPlayer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -559,7 +619,7 @@
     <value>NoControl</value>
   </data>
   <data name="m_chkForcePackToPlayer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 61</value>
+    <value>23, 33</value>
   </data>
   <data name="m_chkForcePackToPlayer.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 26</value>
@@ -580,7 +640,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;m_chkForcePackToPlayer.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="lblCBBGamePost.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -592,7 +652,7 @@
     <value>177, 22</value>
   </data>
   <data name="lblCBBGamePost.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="lblCBBGamePost.Text" xml:space="preserve">
     <value>games before started.</value>
@@ -610,7 +670,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;lblCBBGamePost.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="lblCBBGame.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -622,7 +682,7 @@
     <value>180, 22</value>
   </data>
   <data name="lblCBBGame.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="lblCBBGame.Text" xml:space="preserve">
     <value>CBB Games are locked</value>
@@ -640,7 +700,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;lblCBBGame.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="txtLockCBBGames.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -652,7 +712,7 @@
     <value>53, 26</value>
   </data>
   <data name="txtLockCBBGames.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;txtLockCBBGames.Name" xml:space="preserve">
     <value>txtLockCBBGames</value>
@@ -664,7 +724,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;txtLockCBBGames.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="numMaxBet.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -676,7 +736,7 @@
     <value>138, 26</value>
   </data>
   <data name="numMaxBet.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;numMaxBet.Name" xml:space="preserve">
     <value>numMaxBet</value>
@@ -688,7 +748,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;numMaxBet.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="chkConsecutiveCards.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -697,7 +757,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkConsecutiveCards.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 125</value>
+    <value>23, 97</value>
   </data>
   <data name="chkConsecutiveCards.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 26</value>
@@ -718,13 +778,13 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;chkConsecutiveCards.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="chkSameCard.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="chkSameCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 93</value>
+    <value>23, 65</value>
   </data>
   <data name="chkSameCard.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 26</value>
@@ -745,7 +805,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;chkSameCard.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="numMaxCardLimit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -757,7 +817,7 @@
     <value>138, 26</value>
   </data>
   <data name="numMaxCardLimit.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;numMaxCardLimit.Name" xml:space="preserve">
     <value>numMaxCardLimit</value>
@@ -769,7 +829,7 @@
     <value>groupBox5</value>
   </data>
   <data name="&gt;&gt;numMaxCardLimit.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="groupBox5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -811,6 +871,6 @@
     <value>BingoSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.14.0.1, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.16.0.14, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

@@ -59,6 +59,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave = new GTI.Controls.ImageButton();
+            this.chkDeviceFeesQualifyForPoints = new System.Windows.Forms.CheckBox();
             this.groupBox3.SuspendLayout();
             this.grpWiFiRange.SuspendLayout();
             this.grpUnitAssignment.SuspendLayout();
@@ -210,6 +211,7 @@ namespace GTI.Modules.SystemSettings.UI
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.chkDeviceFeesQualifyForPoints);
             this.groupBox1.Controls.Add(this.chkForceUnitSelectionWhenNoFees);
             this.groupBox1.Controls.Add(this.gridDeviceFees);
             resources.ApplyResources(this.groupBox1, "groupBox1");
@@ -321,6 +323,13 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // chkcxDeviceFeesQualifyForPoints
+            // 
+            resources.ApplyResources(this.chkDeviceFeesQualifyForPoints, "chkcxDeviceFeesQualifyForPoints");
+            this.chkDeviceFeesQualifyForPoints.Name = "chkcxDeviceFeesQualifyForPoints";
+            this.chkDeviceFeesQualifyForPoints.UseVisualStyleBackColor = true;
+            this.chkDeviceFeesQualifyForPoints.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
             // UnitMgmtSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -387,5 +396,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn DeviceFee;
         private System.Windows.Forms.DataGridViewCheckBoxColumn POSDefaultDevice;
         private System.Windows.Forms.CheckBox chkForceUnitSelectionWhenNoFees;
+        private System.Windows.Forms.CheckBox chkDeviceFeesQualifyForPoints;
 	}
 }

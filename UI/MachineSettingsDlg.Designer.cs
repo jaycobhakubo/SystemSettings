@@ -52,6 +52,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.tpHallDisplay = new System.Windows.Forms.TabPage();
             this.egpDisplay1 = new GTI.Controls.EliteGradientPanel();
             this.grpHallDisplay = new System.Windows.Forms.GroupBox();
+            this.chkUseThemeDefault = new System.Windows.Forms.CheckBox();
+            this.cboThemes = new System.Windows.Forms.ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chkMinCircleTimeDefault = new System.Windows.Forms.CheckBox();
             this.numMinColorCircleTime = new System.Windows.Forms.NumericUpDown();
@@ -520,10 +523,10 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             this.tpHallDisplay.BackColor = System.Drawing.Color.Transparent;
             this.tpHallDisplay.Controls.Add(this.egpDisplay1);
-            this.tpHallDisplay.Location = new System.Drawing.Point(4, 22);
+            this.tpHallDisplay.Location = new System.Drawing.Point(4, 31);
             this.tpHallDisplay.Name = "tpHallDisplay";
             this.tpHallDisplay.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHallDisplay.Size = new System.Drawing.Size(688, 594);
+            this.tpHallDisplay.Size = new System.Drawing.Size(688, 585);
             this.tpHallDisplay.TabIndex = 1;
             this.tpHallDisplay.Text = "Remote Display (1)";
             // 
@@ -544,6 +547,9 @@ namespace GTI.Modules.SystemSettings.UI
             // grpHallDisplay
             // 
             this.grpHallDisplay.BackColor = System.Drawing.Color.Transparent;
+            this.grpHallDisplay.Controls.Add(this.chkUseThemeDefault);
+            this.grpHallDisplay.Controls.Add(this.cboThemes);
+            this.grpHallDisplay.Controls.Add(this.label37);
             this.grpHallDisplay.Controls.Add(this.groupBox1);
             this.grpHallDisplay.Controls.Add(this.chkShowPayoutAmountDefault);
             this.grpHallDisplay.Controls.Add(this.chkShowPayoutAmounts);
@@ -559,6 +565,43 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpHallDisplay.TabStop = false;
             this.grpHallDisplay.Text = "Remote Display";
             // 
+            // chkUseThemeDefault
+            // 
+            this.chkUseThemeDefault.AutoSize = true;
+            this.chkUseThemeDefault.BackColor = System.Drawing.Color.Transparent;
+            this.chkUseThemeDefault.Checked = true;
+            this.chkUseThemeDefault.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkUseThemeDefault.Location = new System.Drawing.Point(471, 123);
+            this.chkUseThemeDefault.Name = "chkUseThemeDefault";
+            this.chkUseThemeDefault.Size = new System.Drawing.Size(114, 26);
+            this.chkUseThemeDefault.TabIndex = 5;
+            this.chkUseThemeDefault.Text = "Use Default";
+            this.chkUseThemeDefault.UseVisualStyleBackColor = true;
+            this.chkUseThemeDefault.CheckedChanged += new System.EventHandler(this.chkUseThemeDefault_CheckedChanged);
+            // 
+            // cboThemes
+            // 
+            this.cboThemes.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.cboThemes.FormattingEnabled = true;
+            this.cboThemes.Items.AddRange(new object[] {
+            "S-Video",
+            "Composite",
+            "USB"});
+            this.cboThemes.Location = new System.Drawing.Point(90, 119);
+            this.cboThemes.Name = "cboThemes";
+            this.cboThemes.Size = new System.Drawing.Size(150, 30);
+            this.cboThemes.TabIndex = 24;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label37.Location = new System.Drawing.Point(12, 122);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(61, 22);
+            this.label37.TabIndex = 23;
+            this.label37.Text = "Theme";
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.chkMinCircleTimeDefault);
@@ -568,7 +611,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox1.Controls.Add(this.numMinBallCallTime);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Location = new System.Drawing.Point(6, 120);
+            this.groupBox1.Location = new System.Drawing.Point(6, 165);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(664, 222);
             this.groupBox1.TabIndex = 7;
@@ -800,10 +843,10 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             this.tpPOS.BackColor = System.Drawing.Color.Transparent;
             this.tpPOS.Controls.Add(this.egpPOS);
-            this.tpPOS.Location = new System.Drawing.Point(4, 31);
+            this.tpPOS.Location = new System.Drawing.Point(4, 22);
             this.tpPOS.Name = "tpPOS";
             this.tpPOS.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPOS.Size = new System.Drawing.Size(688, 585);
+            this.tpPOS.Size = new System.Drawing.Size(688, 594);
             this.tpPOS.TabIndex = 0;
             this.tpPOS.Text = "POS";
             // 
@@ -2309,10 +2352,10 @@ namespace GTI.Modules.SystemSettings.UI
             // tabPagePOSKiosk
             // 
             this.tabPagePOSKiosk.Controls.Add(this.egpPOSKiosk);
-            this.tabPagePOSKiosk.Location = new System.Drawing.Point(4, 31);
+            this.tabPagePOSKiosk.Location = new System.Drawing.Point(4, 22);
             this.tabPagePOSKiosk.Name = "tabPagePOSKiosk";
             this.tabPagePOSKiosk.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePOSKiosk.Size = new System.Drawing.Size(688, 585);
+            this.tabPagePOSKiosk.Size = new System.Drawing.Size(688, 594);
             this.tabPagePOSKiosk.TabIndex = 8;
             this.tabPagePOSKiosk.Text = "POS Kiosk";
             this.tabPagePOSKiosk.UseVisualStyleBackColor = true;
@@ -2571,6 +2614,9 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkCBBPrintPlayItSheet;
         private System.Windows.Forms.CheckBox chkbxAllowB3UseDefault;
         private System.Windows.Forms.CheckBox chkbxAllowB3;
+        private System.Windows.Forms.CheckBox chkUseThemeDefault;
+        private System.Windows.Forms.ComboBox cboThemes;
+        private System.Windows.Forms.Label label37;
         
 	}
 }

@@ -145,6 +145,12 @@ namespace GTI.Modules.SystemSettings.UI
             chkAllowAutoGameAdvance.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427
             //END RALLY TA 9089
 
+            Common.GetOpSettingValue(Setting.PrintWinnerReceiptForVerifiedPaper, out tempSettingValue);
+            chkPrintWinnerReceiptForVerifiedPaper.Checked = ParseBool(tempSettingValue.Value); 
+
+            Common.GetOpSettingValue(Setting.DisplayBonusBallImage, out tempSettingValue);
+            chkDisplayHotBall.Checked = ParseBool(tempSettingValue.Value);  
+
             //START RALLY TA 9169 Allow wild manual calls
             Common.GetOpSettingValue(Setting.AllowManualWildCalls, out tempSettingValue);
             chkAllowManualWildCalls.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427
@@ -189,19 +195,6 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.PrintBallCalls, out tempSettingValue);
             chkPrintBallCalls.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427
             
-            if (chkPrintWinners.Checked == false)
-            {
-                if (chkPrintBallCalls.Checked == true)
-                {
-                    chkPrintBallCalls.Checked = false;
-                    saveFlag = true;
-                }
-                chkPrintBallCalls.Enabled = false;
-            }
-            else
-            {
-                chkPrintBallCalls.Enabled = true;
-            }
             //END RALLY TA 6877
 
             //START RALLY DE 6442 disable one touch verify if static drop in mode setting is enabled
@@ -394,7 +387,7 @@ namespace GTI.Modules.SystemSettings.UI
                 //lbl_coolDownTimer.Visible = boolResult;
                 //numCoolDownTimer.Visible = boolResult;
                 //numCoolDownTimer.Enabled = chkEnableRNGBallCalls.Checked;
-                lbl_sec.Visible = boolResult;
+                //lbl_sec.Visible = boolResult;
             }
 
             // US4793
@@ -435,6 +428,10 @@ namespace GTI.Modules.SystemSettings.UI
             //START RALLY TA 9169 Allow wild manual calls
             Common.SetOpSettingValue(Setting.AllowManualWildCalls, chkAllowManualWildCalls.Checked.ToString());
             //END RALLY TA 9169
+
+            Common.SetOpSettingValue(Setting.PrintWinnerReceiptForVerifiedPaper, chkPrintWinnerReceiptForVerifiedPaper.Checked.ToString());
+
+            Common.SetOpSettingValue(Setting.DisplayBonusBallImage, chkDisplayHotBall.Checked.ToString());
 
             //license file
             if (chkPrintWinners.Enabled)
@@ -865,15 +862,6 @@ namespace GTI.Modules.SystemSettings.UI
         private void chkPrintWinners_CheckedChanged(object sender, EventArgs e)
         {
             m_bModified = true;
-            if (chkPrintWinners.Checked == false)
-            {
-                chkPrintBallCalls.Checked = false;
-                chkPrintBallCalls.Enabled = false;
-            }
-            else
-            {
-                chkPrintBallCalls.Enabled = true;
-            }
         }
 
         /// Rally US4490

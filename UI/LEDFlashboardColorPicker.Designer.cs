@@ -63,7 +63,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GTI.Modules.SystemSettings.Properties.Resources._256colour;
+            this.pictureBox1.Image = global::GTI.Modules.SystemSettings.Properties.Resources.ColorPalette256;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;

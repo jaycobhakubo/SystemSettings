@@ -123,7 +123,10 @@ namespace GTI.Modules.SystemSettings.UI
 			Common.GetOpSettingValue(Setting.AllowUnitCrossTransfers, out tempSettingValue);
             chkAllowCrossTransfers.Checked = ParseBool(tempSettingValue.Value);  //RALLY DE9427
 
-			//RALLY TA 9123 crate server port number
+            Common.GetOpSettingValue(Setting.DeviceFeesQualifyForPoints, out tempSettingValue);
+            chkDeviceFeesQualifyForPoints.Checked = ParseBool(tempSettingValue.Value);
+
+            //RALLY TA 9123 crate server port number
             string crateServerPortNumber = Common.GetSystemSetting(Setting.CrateServerPortNumber);
             m_tbCrateServerPortNumber.Text = crateServerPortNumber;
             //end rally ta 9123
@@ -341,7 +344,9 @@ namespace GTI.Modules.SystemSettings.UI
 
             Common.SetOpSettingValue(Setting.ForceDeviceSelectionWhenNoFees, chkForceUnitSelectionWhenNoFees.Checked.ToString());
 
-			// Save the operator settings
+            Common.SetOpSettingValue(Setting.DeviceFeesQualifyForPoints, chkDeviceFeesQualifyForPoints.Checked.ToString());
+            
+            // Save the operator settings
 			if (!Common.SaveOperatorSettings())
 			{
 				return false;

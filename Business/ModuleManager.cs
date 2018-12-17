@@ -219,66 +219,52 @@ namespace GTI.Modules.SystemSettings.Business
         }
 
         /// <summary>
-        /// Writes a message to the UnitMgmt's log.
+        /// Writes a message to the System Setting's log.
         /// </summary>
         /// <param name="message">The message to write to the log.</param>
         /// <param name="level">The level of the message.</param>
         /// <returns>true if success; otherwise false.</returns>
-        public bool Log(string message, LoggerLevel level)
+        internal static void Log(string message, LoggerLevel level)
         {
-            lock(m_logSync)
+            try
             {
-                StackFrame frame = new StackFrame(1, true);
-                string fileName = frame.GetFileName();
-                int lineNumber = frame.GetFileLineNumber();
-                message = SettingsManager.LogPrefix + message;
+                var frame = new StackFrame(1, true);
+                var fileName = frame.GetFileName();
+                var lineNumber = frame.GetFileLineNumber();
+                message = LogPrefix + message;
 
-                if(m_loggingEnabled)
+                switch (level)
                 {
-                    try
-                    {
-                        switch(level)
-                        {
-                            case LoggerLevel.Severe:
-                                Logger.LogSevere(message, fileName, lineNumber);
-                                break;
+                    case LoggerLevel.Severe:
+                        Logger.LogSevere(message, fileName, lineNumber);
+                        break;
 
-                            case LoggerLevel.Warning:
-                                Logger.LogWarning(message, fileName, lineNumber);
-                                break;
+                    case LoggerLevel.Warning:
+                        Logger.LogWarning(message, fileName, lineNumber);
+                        break;
 
-                            default:
-                            case LoggerLevel.Information:
-                                Logger.LogInfo(message, fileName, lineNumber);
-                                break;
+                    default:
+                        Logger.LogInfo(message, fileName, lineNumber);
+                        break;
 
-                            case LoggerLevel.Configuration:
-                                Logger.LogConfig(message, fileName, lineNumber);
-                                break;
+                    case LoggerLevel.Configuration:
+                        Logger.LogConfig(message, fileName, lineNumber);
+                        break;
 
-                            case LoggerLevel.Debug:
-                                Logger.LogDebug(message, fileName, lineNumber);
-                                break;
+                    case LoggerLevel.Debug:
+                        Logger.LogDebug(message, fileName, lineNumber);
+                        break;
 
-                            case LoggerLevel.Message:
-                                Logger.LogMessage(message, fileName, lineNumber);
-                                break;
+                    case LoggerLevel.Message:
+                        Logger.LogMessage(message, fileName, lineNumber);
+                        break;
 
-                            case LoggerLevel.SQL:
-                                Logger.LogSql(message, fileName, lineNumber);
-                                break;
-                        }
-
-                        return true;
-                    }
-                    catch
-                    {
-                        return false;
-                    }
+                    case LoggerLevel.SQL:
+                        Logger.LogSql(message, fileName, lineNumber);
+                        break;
                 }
-                else
-                    return false;
             }
+            catch (Exception) { }
         }
 
         /// <summary>

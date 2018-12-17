@@ -35,6 +35,9 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblExpireDayOrDays = new System.Windows.Forms.Label();
+            this.nudExpireDays = new System.Windows.Forms.NumericUpDown();
+            this.chkExpire = new System.Windows.Forms.CheckBox();
             this.chkCouponsTaxable = new System.Windows.Forms.CheckBox();
             this.chkEnableCouponManagement = new System.Windows.Forms.CheckBox();
             this.chkShareCreditSetting = new System.Windows.Forms.CheckBox();
@@ -53,6 +56,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudExpireDays)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numLogRecycleDays)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDownloadRecycleDays)).BeginInit();
@@ -109,6 +113,9 @@ namespace GTI.Modules.SystemSettings.UI
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblExpireDayOrDays);
+            this.groupBox1.Controls.Add(this.nudExpireDays);
+            this.groupBox1.Controls.Add(this.chkExpire);
             this.groupBox1.Controls.Add(this.chkCouponsTaxable);
             this.groupBox1.Controls.Add(this.chkEnableCouponManagement);
             this.groupBox1.Controls.Add(this.chkShareCreditSetting);
@@ -122,6 +129,36 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // lblExpireDayOrDays
+            // 
+            resources.ApplyResources(this.lblExpireDayOrDays, "lblExpireDayOrDays");
+            this.lblExpireDayOrDays.Name = "lblExpireDayOrDays";
+            // 
+            // nudExpireDays
+            // 
+            resources.ApplyResources(this.nudExpireDays, "nudExpireDays");
+            this.nudExpireDays.Maximum = new decimal(new int[] {
+            36500,
+            0,
+            0,
+            0});
+            this.nudExpireDays.Name = "nudExpireDays";
+            this.nudExpireDays.Value = new decimal(new int[] {
+            365,
+            0,
+            0,
+            0});
+            this.nudExpireDays.ValueChanged += new System.EventHandler(this.nudExpireDays_ValueChanged);
+            this.nudExpireDays.KeyUp += new System.Windows.Forms.KeyEventHandler(this.nudExpireDays_KeyUp);
+            this.nudExpireDays.Validating += new System.ComponentModel.CancelEventHandler(this.nudExpireDays_Validating);
+            // 
+            // chkExpire
+            // 
+            resources.ApplyResources(this.chkExpire, "chkExpire");
+            this.chkExpire.Name = "chkExpire";
+            this.chkExpire.UseVisualStyleBackColor = true;
+            this.chkExpire.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkCouponsTaxable
             // 
@@ -259,6 +296,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudExpireDays)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numLogRecycleDays)).EndInit();
@@ -291,5 +329,8 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkSharePointsSetting;
         private System.Windows.Forms.CheckBox chkEnableCouponManagement;
         private System.Windows.Forms.CheckBox chkCouponsTaxable;
+        private System.Windows.Forms.Label lblExpireDayOrDays;
+        private System.Windows.Forms.NumericUpDown nudExpireDays;
+        private System.Windows.Forms.CheckBox chkExpire;
 	}
 }

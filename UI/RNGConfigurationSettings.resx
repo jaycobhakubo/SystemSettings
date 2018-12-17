@@ -126,7 +126,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 590</value>
+    <value>422, 609</value>
   </data>
   <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -145,7 +145,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1015, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1033, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -160,7 +160,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 590</value>
+    <value>218, 609</value>
   </data>
   <data name="btnSave.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>30, 30</value>
@@ -178,7 +178,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1015, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1033, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -211,7 +211,7 @@
     <value>True</value>
   </data>
   <data name="lblRNGPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 138</value>
+    <value>48, 132</value>
   </data>
   <data name="lblRNGPort.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 22</value>
@@ -262,7 +262,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblRngIPAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 98</value>
+    <value>48, 93</value>
   </data>
   <data name="lblRngIPAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 22</value>
@@ -295,7 +295,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblRngTypes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 465</value>
+    <value>24, 462</value>
   </data>
   <data name="lblRngTypes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -328,7 +328,7 @@
     <value>Trebuchet MS, 12pt</value>
   </data>
   <data name="cbxRNGTypes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 459</value>
+    <value>176, 459</value>
   </data>
   <data name="cbxRNGTypes.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 30</value>
@@ -358,7 +358,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkbxSecureConnection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 178</value>
+    <value>52, 177</value>
   </data>
   <data name="chkbxSecureConnection.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>
@@ -415,10 +415,10 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="grpBxRNGConfigurationSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 28</value>
+    <value>22, 20</value>
   </data>
   <data name="grpBxRNGConfigurationSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>732, 548</value>
+    <value>716, 575</value>
   </data>
   <data name="grpBxRNGConfigurationSettings.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -451,6 +451,6 @@
     <value>RNGConfigurationSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.14.0.0, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.14.0.2, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

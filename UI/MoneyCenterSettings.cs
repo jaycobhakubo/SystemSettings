@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using GTI.Modules.Shared;
 using GTI.Modules.SystemSettings.Properties;
 using GTI.Modules.SystemSettings.Business;
+using System.Text;
 
 
 namespace GTI.Modules.SystemSettings.UI
@@ -118,9 +119,9 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.PrintPayoutText, out tempSettingValue);
             chkPrintWordValue.Checked = Common.ParseBool(tempSettingValue.Value);
 
-            //US5107: System Settings: Set number of payout signature lines on the payout receipt
             Common.GetOpSettingValue(Setting.PayoutReceiptSignatureLineCount, out tempSettingValue);
-            numPayoutSignatureLines.Text = tempSettingValue.Value;
+
+            txtPayoutSignatureLines.Lines = tempSettingValue.Value.Split(new char[] { '|' });
 
             //DE13632
             Common.GetOpSettingValue(Setting.BankCloseReceiptSignatureLineCount, out tempSettingValue);
@@ -349,8 +350,18 @@ namespace GTI.Modules.SystemSettings.UI
 
             Common.SetOpSettingValue(Setting.GetPlayerWithVerify, chkGetPlayerWithVerify.Checked.ToString());//US5426
 
-            //US5107: Operator Settings: Set number of payout signature lines on the payout receipt
-            Common.SetOpSettingValue(Setting.PayoutReceiptSignatureLineCount, numPayoutSignatureLines.Value.ToString(CultureInfo.InvariantCulture));
+            StringBuilder sigText = new StringBuilder();
+
+            foreach (string line in txtPayoutSignatureLines.Lines)
+            {
+                if (!string.IsNullOrWhiteSpace(line))
+                    sigText.Append(line + "|");
+            }
+
+            if (sigText.Length != 0 && sigText[sigText.Length - 1] == '|')
+                sigText.Remove(sigText.Length - 1, 1);
+
+            Common.SetOpSettingValue(Setting.PayoutReceiptSignatureLineCount, sigText.ToString());
 
             //DE13632: Operator Settings: Set number of bank close signature lines on the receipt
             Common.SetOpSettingValue(Setting.BankCloseReceiptSignatureLineCount, numBankCloseSignatureLines.Value.ToString(CultureInfo.InvariantCulture));
@@ -508,6 +519,35 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
+        private void txtPayoutSignatureLines_TextChanged(object sender, EventArgs e)
+        {
+            //get the text and figure out how many characters are left
+            string[] signatureLineText = txtPayoutSignatureLines.Lines;
+            int characters = 0;
+            int returns = 0;
+
+            foreach (string line in signatureLineText)
+            {
+                characters += line.Length + 1;
+                returns++;
+            }
+
+            if (characters > 0)
+            {
+                characters--;
+                returns--;
+            }
+
+            characters += returns;
+
+            int max = 200 + returns;
+
+            txtPayoutSignatureLines.MaxLength = max;
+ 
+            lblPayoutSignatureLinesCharactersLeft.Text = (max - characters).ToString();
+            OnModified(sender, e);
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             SaveSettings();
@@ -626,6 +666,18 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+        private void txtPayoutSignatureLines_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.OemPipe)
+                e.Handled = true;
+        }
+
+        private void txtPayoutSignatureLines_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '|')
+                e.Handled = true;
+        }
+
         //Start Rally DE9805
         /// <summary>
         /// Validates PrizeFee and PrizeMinAmount TextBoxes
@@ -666,6 +718,7 @@ namespace GTI.Modules.SystemSettings.UI
             }
             return result;
         }
+
         //End Rally DE 9805
 
 

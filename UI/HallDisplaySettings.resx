@@ -117,7 +117,117 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="winnerPollIntervalLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="winnerPollIntervalLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="winnerPollIntervalLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="winnerPollIntervalLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="winnerPollIntervalLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 84</value>
+  </data>
+  <data name="winnerPollIntervalLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 22</value>
+  </data>
+  <data name="winnerPollIntervalLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="winnerPollIntervalLabel.Text" xml:space="preserve">
+    <value>Winner Poll Interval (seconds)</value>
+  </data>
+  <data name="&gt;&gt;winnerPollIntervalLabel.Name" xml:space="preserve">
+    <value>winnerPollIntervalLabel</value>
+  </data>
+  <data name="&gt;&gt;winnerPollIntervalLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;winnerPollIntervalLabel.Parent" xml:space="preserve">
+    <value>winnerSettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;winnerPollIntervalLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <metadata name="prevWinnerDisplayIntervalLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="prevWinnerDisplayIntervalLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="prevWinnerDisplayIntervalLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="prevWinnerDisplayIntervalLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="prevWinnerDisplayIntervalLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 116</value>
+  </data>
+  <data name="prevWinnerDisplayIntervalLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>327, 22</value>
+  </data>
+  <data name="prevWinnerDisplayIntervalLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="prevWinnerDisplayIntervalLabel.Text" xml:space="preserve">
+    <value>Previous Winner Display Interval (seconds)</value>
+  </data>
+  <data name="&gt;&gt;prevWinnerDisplayIntervalLabel.Name" xml:space="preserve">
+    <value>prevWinnerDisplayIntervalLabel</value>
+  </data>
+  <data name="&gt;&gt;prevWinnerDisplayIntervalLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prevWinnerDisplayIntervalLabel.Parent" xml:space="preserve">
+    <value>winnerSettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;prevWinnerDisplayIntervalLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <metadata name="prevWinnerDisplayTimeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="prevWinnerDisplayTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="prevWinnerDisplayTimeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="prevWinnerDisplayTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="prevWinnerDisplayTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 148</value>
+  </data>
+  <data name="prevWinnerDisplayTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 22</value>
+  </data>
+  <data name="prevWinnerDisplayTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="prevWinnerDisplayTimeLabel.Text" xml:space="preserve">
+    <value>Previous Winner Display Time (seconds)</value>
+  </data>
+  <data name="&gt;&gt;prevWinnerDisplayTimeLabel.Name" xml:space="preserve">
+    <value>prevWinnerDisplayTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;prevWinnerDisplayTimeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prevWinnerDisplayTimeLabel.Parent" xml:space="preserve">
+    <value>winnerSettingsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;prevWinnerDisplayTimeLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
   <data name="cboDefaultScene.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
@@ -127,7 +237,6 @@
   <data name="cboDefaultScene.Size" type="System.Drawing.Size, System.Drawing">
     <value>253, 30</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cboDefaultScene.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -170,7 +279,6 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -232,7 +340,7 @@
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
   <data name="grpSceneInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 462</value>
+    <value>65, 504</value>
   </data>
   <data name="grpSceneInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>630, 99</value>
@@ -352,7 +460,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1132, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -360,113 +468,68 @@
   <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="winnerPollIntervalLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="winnerPollIntervalLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="cboThemes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
   </data>
-  <data name="winnerPollIntervalLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
+  <data name="cboThemes.Items" xml:space="preserve">
+    <value>S-Video</value>
   </data>
-  <data name="winnerPollIntervalLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cboThemes.Items1" xml:space="preserve">
+    <value>Composite</value>
   </data>
-  <data name="winnerPollIntervalLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 84</value>
+  <data name="cboThemes.Items2" xml:space="preserve">
+    <value>USB</value>
   </data>
-  <data name="winnerPollIntervalLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 22</value>
+  <data name="cboThemes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 266</value>
   </data>
-  <data name="winnerPollIntervalLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="cboThemes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 30</value>
   </data>
-  <data name="winnerPollIntervalLabel.Text" xml:space="preserve">
-    <value>Winner Poll Interval (seconds)</value>
+  <data name="cboThemes.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
-  <data name="&gt;&gt;winnerPollIntervalLabel.Name" xml:space="preserve">
-    <value>winnerPollIntervalLabel</value>
+  <data name="&gt;&gt;cboThemes.Name" xml:space="preserve">
+    <value>cboThemes</value>
   </data>
-  <data name="&gt;&gt;winnerPollIntervalLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cboThemes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;winnerPollIntervalLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cboThemes.Parent" xml:space="preserve">
     <value>winnerSettingsGroupBox</value>
   </data>
-  <data name="&gt;&gt;winnerPollIntervalLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;cboThemes.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <metadata name="prevWinnerDisplayIntervalLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="prevWinnerDisplayIntervalLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="prevWinnerDisplayIntervalLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="prevWinnerDisplayIntervalLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="prevWinnerDisplayIntervalLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 116</value>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 266</value>
   </data>
-  <data name="prevWinnerDisplayIntervalLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>327, 22</value>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
   </data>
-  <data name="prevWinnerDisplayIntervalLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="prevWinnerDisplayIntervalLabel.Text" xml:space="preserve">
-    <value>Previous Winner Display Interval (seconds)</value>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Theme</value>
   </data>
-  <data name="&gt;&gt;prevWinnerDisplayIntervalLabel.Name" xml:space="preserve">
-    <value>prevWinnerDisplayIntervalLabel</value>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
   </data>
-  <data name="&gt;&gt;prevWinnerDisplayIntervalLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;prevWinnerDisplayIntervalLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>winnerSettingsGroupBox</value>
   </data>
-  <data name="&gt;&gt;prevWinnerDisplayIntervalLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <metadata name="prevWinnerDisplayTimeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="prevWinnerDisplayTimeLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="prevWinnerDisplayTimeLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="prevWinnerDisplayTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="prevWinnerDisplayTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 148</value>
-  </data>
-  <data name="prevWinnerDisplayTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 22</value>
-  </data>
-  <data name="prevWinnerDisplayTimeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="prevWinnerDisplayTimeLabel.Text" xml:space="preserve">
-    <value>Previous Winner Display Time (seconds)</value>
-  </data>
-  <data name="&gt;&gt;prevWinnerDisplayTimeLabel.Name" xml:space="preserve">
-    <value>prevWinnerDisplayTimeLabel</value>
-  </data>
-  <data name="&gt;&gt;prevWinnerDisplayTimeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;prevWinnerDisplayTimeLabel.Parent" xml:space="preserve">
-    <value>winnerSettingsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;prevWinnerDisplayTimeLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="chkShowPayoutAmount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -496,7 +559,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;chkShowPayoutAmount.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -529,7 +592,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="cboCameraChannel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -547,7 +610,7 @@
     <value>357, 212</value>
   </data>
   <data name="cboCameraChannel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 30</value>
+    <value>150, 30</value>
   </data>
   <data name="cboCameraChannel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -562,7 +625,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;cboCameraChannel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -592,7 +655,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -622,7 +685,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="numScreenSaverTimeout.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -646,7 +709,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;numScreenSaverTimeout.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="chkFlashboardCamera.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -676,7 +739,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;chkFlashboardCamera.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="chkShowWinnersOnly.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -706,7 +769,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;chkShowWinnersOnly.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="numPreviousWinnerDisplayTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -730,7 +793,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;numPreviousWinnerDisplayTime.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="numPreviousWinnerDisplayInterval.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -754,7 +817,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;numPreviousWinnerDisplayInterval.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="numWinnerPollInterval.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -778,7 +841,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;numWinnerPollInterval.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="chkShowWinnerInfo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -811,7 +874,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;chkShowWinnerInfo.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1066,7 +1129,7 @@
     <value>4</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 277</value>
+    <value>14, 319</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>610, 159</value>
@@ -1087,7 +1150,7 @@
     <value>winnerSettingsGroupBox</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="winnerSettingsGroupBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
@@ -1096,7 +1159,7 @@
     <value>65, 14</value>
   </data>
   <data name="winnerSettingsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>630, 442</value>
+    <value>630, 484</value>
   </data>
   <data name="winnerSettingsGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1210,7 +1273,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1132, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1231,6 +1294,6 @@
     <value>HallDisplaySettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.16.0.2, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

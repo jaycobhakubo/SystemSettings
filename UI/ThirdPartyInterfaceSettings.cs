@@ -1002,8 +1002,8 @@ namespace GTI.Modules.SystemSettings.UI
 
                     gbEarned.Visible = true;
                     cbExternalRating.Enabled = Common.IsAdmin;
-                    cbExternalRating_CheckedChanged(null, new EventArgs());
                     cbExternalRating.Checked = false;
+                    cbExternalRating_CheckedChanged(null, new EventArgs());
                     thirdPartyEarnPoints.Value = 0;
                     thirdPartyEarnPerPennies.Value = 1M;
                     thirdPartyEarnPoints_ValueChanged(null, new EventArgs());

@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Business\AllSettingsModel.cs" />
     <Compile Include="Business\GetDeviceSettings.cs" />
+    <Compile Include="Business\GetFlashboardThemes.cs" />
     <Compile Include="Business\GetMachineModules.cs" />
     <Compile Include="Business\GetRNGRemoteSettings.cs" />
     <Compile Include="Business\GetRNGRemoteTypes.cs" />

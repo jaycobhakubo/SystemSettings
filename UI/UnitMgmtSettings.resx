@@ -117,59 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;rbPackInUseRip.Name" xml:space="preserve">
-    <value>rbPackInUseRip</value>
-  </data>
-  <data name="&gt;&gt;rbPackInUseRip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbPackInUseRip.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;rbPackInUseRip.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;rbPackInUseNotify.Name" xml:space="preserve">
-    <value>rbPackInUseNotify</value>
-  </data>
-  <data name="&gt;&gt;rbPackInUseNotify.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbPackInUseNotify.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;rbPackInUseNotify.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 472</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>740, 110</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Pack In Use</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="rbPackInUseRip.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -177,6 +125,7 @@
   <data name="rbPackInUseRip.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="rbPackInUseRip.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 54</value>
   </data>
@@ -232,6 +181,51 @@ and place it on the new unit automatically</value>
   <data name="&gt;&gt;rbPackInUseNotify.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 484</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 110</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Pack In Use</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkWiFiRange.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkWiFiRange.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkWiFiRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 22</value>
+  </data>
+  <data name="chkWiFiRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 26</value>
+  </data>
+  <data name="chkWiFiRange.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkWiFiRange.Text" xml:space="preserve">
+    <value>Sound alarm when unit out of range</value>
+  </data>
   <data name="&gt;&gt;chkWiFiRange.Name" xml:space="preserve">
     <value>chkWiFiRange</value>
   </data>
@@ -270,111 +264,6 @@ and place it on the new unit automatically</value>
   </data>
   <data name="&gt;&gt;grpWiFiRange.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="chkWiFiRange.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkWiFiRange.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkWiFiRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 22</value>
-  </data>
-  <data name="chkWiFiRange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 26</value>
-  </data>
-  <data name="chkWiFiRange.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkWiFiRange.Text" xml:space="preserve">
-    <value>Sound alarm when unit out of range</value>
-  </data>
-  <data name="&gt;&gt;chkWiFiRange.Name" xml:space="preserve">
-    <value>chkWiFiRange</value>
-  </data>
-  <data name="&gt;&gt;chkWiFiRange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkWiFiRange.Parent" xml:space="preserve">
-    <value>grpWiFiRange</value>
-  </data>
-  <data name="&gt;&gt;chkWiFiRange.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;numMaxUnits.Name" xml:space="preserve">
-    <value>numMaxUnits</value>
-  </data>
-  <data name="&gt;&gt;numMaxUnits.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numMaxUnits.Parent" xml:space="preserve">
-    <value>grpUnitAssignment</value>
-  </data>
-  <data name="&gt;&gt;numMaxUnits.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblMaxUnits.Name" xml:space="preserve">
-    <value>lblMaxUnits</value>
-  </data>
-  <data name="&gt;&gt;lblMaxUnits.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblMaxUnits.Parent" xml:space="preserve">
-    <value>grpUnitAssignment</value>
-  </data>
-  <data name="&gt;&gt;lblMaxUnits.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;chkConfirmUnitAssignment.Name" xml:space="preserve">
-    <value>chkConfirmUnitAssignment</value>
-  </data>
-  <data name="&gt;&gt;chkConfirmUnitAssignment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkConfirmUnitAssignment.Parent" xml:space="preserve">
-    <value>grpUnitAssignment</value>
-  </data>
-  <data name="&gt;&gt;chkConfirmUnitAssignment.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;chkEnableUnitAssignment.Name" xml:space="preserve">
-    <value>chkEnableUnitAssignment</value>
-  </data>
-  <data name="&gt;&gt;chkEnableUnitAssignment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkEnableUnitAssignment.Parent" xml:space="preserve">
-    <value>grpUnitAssignment</value>
-  </data>
-  <data name="&gt;&gt;chkEnableUnitAssignment.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="grpUnitAssignment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="grpUnitAssignment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 17</value>
-  </data>
-  <data name="grpUnitAssignment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 154</value>
-  </data>
-  <data name="grpUnitAssignment.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="grpUnitAssignment.Text" xml:space="preserve">
-    <value>Unit Assignment</value>
-  </data>
-  <data name="&gt;&gt;grpUnitAssignment.Name" xml:space="preserve">
-    <value>grpUnitAssignment</value>
-  </data>
-  <data name="&gt;&gt;grpUnitAssignment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpUnitAssignment.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpUnitAssignment.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="numMaxUnits.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -490,6 +379,33 @@ and place it on the new unit automatically</value>
   <data name="&gt;&gt;chkEnableUnitAssignment.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="grpUnitAssignment.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="grpUnitAssignment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 17</value>
+  </data>
+  <data name="grpUnitAssignment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 154</value>
+  </data>
+  <data name="grpUnitAssignment.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="grpUnitAssignment.Text" xml:space="preserve">
+    <value>Unit Assignment</value>
+  </data>
+  <data name="&gt;&gt;grpUnitAssignment.Name" xml:space="preserve">
+    <value>grpUnitAssignment</value>
+  </data>
+  <data name="&gt;&gt;grpUnitAssignment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpUnitAssignment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpUnitAssignment.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="btnReset.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
   </data>
@@ -584,13 +500,31 @@ and place it on the new unit automatically</value>
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1033, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="chkAllowCrossTransfers.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkAllowCrossTransfers.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkAllowCrossTransfers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 22</value>
+  </data>
+  <data name="chkAllowCrossTransfers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 26</value>
+  </data>
+  <data name="chkAllowCrossTransfers.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkAllowCrossTransfers.Text" xml:space="preserve">
+    <value>Allow Cross-Transfers between unit types</value>
   </data>
   <data name="&gt;&gt;chkAllowCrossTransfers.Name" xml:space="preserve">
     <value>chkAllowCrossTransfers</value>
@@ -630,111 +564,6 @@ and place it on the new unit automatically</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="chkAllowCrossTransfers.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkAllowCrossTransfers.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkAllowCrossTransfers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 22</value>
-  </data>
-  <data name="chkAllowCrossTransfers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 26</value>
-  </data>
-  <data name="chkAllowCrossTransfers.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkAllowCrossTransfers.Text" xml:space="preserve">
-    <value>Allow Cross-Transfers between unit types</value>
-  </data>
-  <data name="&gt;&gt;chkAllowCrossTransfers.Name" xml:space="preserve">
-    <value>chkAllowCrossTransfers</value>
-  </data>
-  <data name="&gt;&gt;chkAllowCrossTransfers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkAllowCrossTransfers.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkAllowCrossTransfers.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;m_tbCrateServerPortNumber.Name" xml:space="preserve">
-    <value>m_tbCrateServerPortNumber</value>
-  </data>
-  <data name="&gt;&gt;m_tbCrateServerPortNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_tbCrateServerPortNumber.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;m_tbCrateServerPortNumber.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;IP_addressLabel.Name" xml:space="preserve">
-    <value>IP_addressLabel</value>
-  </data>
-  <data name="&gt;&gt;IP_addressLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IP_addressLabel.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;IP_addressLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txtCrateServer.Name" xml:space="preserve">
-    <value>txtCrateServer</value>
-  </data>
-  <data name="&gt;&gt;txtCrateServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtCrateServer.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;txtCrateServer.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 180</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 142</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Default Crate Server </value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="m_tbCrateServerPortNumber.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
@@ -847,65 +676,68 @@ and place it on the new unit automatically</value>
   <data name="&gt;&gt;txtCrateServer.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;chkForceUnitSelectionWhenNoFees.Name" xml:space="preserve">
-    <value>chkForceUnitSelectionWhenNoFees</value>
-  </data>
-  <data name="&gt;&gt;chkForceUnitSelectionWhenNoFees.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkForceUnitSelectionWhenNoFees.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;chkForceUnitSelectionWhenNoFees.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceFees.Name" xml:space="preserve">
-    <value>gridDeviceFees</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceFees.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceFees.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceFees.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt, style=Bold</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 180</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 176</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 282</value>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 142</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Device Fees</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Default Crate Server </value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkcxDeviceFeesQualifyForPoints.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 270</value>
+  </data>
+  <data name="chkcxDeviceFeesQualifyForPoints.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 26</value>
+  </data>
+  <data name="chkcxDeviceFeesQualifyForPoints.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkcxDeviceFeesQualifyForPoints.Text" xml:space="preserve">
+    <value>Device fees qualify for points.</value>
+  </data>
+  <data name="chkcxDeviceFeesQualifyForPoints.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="&gt;&gt;chkcxDeviceFeesQualifyForPoints.Name" xml:space="preserve">
+    <value>chkcxDeviceFeesQualifyForPoints</value>
+  </data>
+  <data name="&gt;&gt;chkcxDeviceFeesQualifyForPoints.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkcxDeviceFeesQualifyForPoints.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkcxDeviceFeesQualifyForPoints.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="chkForceUnitSelectionWhenNoFees.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="chkForceUnitSelectionWhenNoFees.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 182</value>
+    <value>11, 178</value>
   </data>
   <data name="chkForceUnitSelectionWhenNoFees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 97</value>
+    <value>333, 93</value>
   </data>
   <data name="chkForceUnitSelectionWhenNoFees.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -923,39 +755,6 @@ and place it on the new unit automatically</value>
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkForceUnitSelectionWhenNoFees.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="deviceType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="DeviceFee.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="POSDefaultDevice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="gridDeviceFees.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 27</value>
-  </data>
-  <data name="gridDeviceFees.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="gridDeviceFees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 153</value>
-  </data>
-  <data name="gridDeviceFees.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceFees.Name" xml:space="preserve">
-    <value>gridDeviceFees</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceFees.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceFees.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceFees.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="deviceType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -984,6 +783,90 @@ and place it on the new unit automatically</value>
   </data>
   <data name="POSDefaultDevice.Width" type="System.Int32, mscorlib">
     <value>94</value>
+  </data>
+  <data name="gridDeviceFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 23</value>
+  </data>
+  <data name="gridDeviceFees.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="gridDeviceFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 153</value>
+  </data>
+  <data name="gridDeviceFees.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridDeviceFees.Name" xml:space="preserve">
+    <value>gridDeviceFees</value>
+  </data>
+  <data name="&gt;&gt;gridDeviceFees.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gridDeviceFees.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;gridDeviceFees.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 176</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 302</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Device Fees</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Device Type</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Begin</value>
+  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="gridDeviceRanges.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 27</value>
+  </data>
+  <data name="gridDeviceRanges.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="gridDeviceRanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 121</value>
+  </data>
+  <data name="gridDeviceRanges.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;gridDeviceRanges.Name" xml:space="preserve">
     <value>gridDeviceRanges</value>
@@ -1023,60 +906,6 @@ and place it on the new unit automatically</value>
   </data>
   <data name="&gt;&gt;grpDeviceRanges.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="gridDeviceRanges.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 27</value>
-  </data>
-  <data name="gridDeviceRanges.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="gridDeviceRanges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 121</value>
-  </data>
-  <data name="gridDeviceRanges.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceRanges.Name" xml:space="preserve">
-    <value>gridDeviceRanges</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceRanges.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceRanges.Parent" xml:space="preserve">
-    <value>grpDeviceRanges</value>
-  </data>
-  <data name="&gt;&gt;gridDeviceRanges.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Device Type</value>
-  </data>
-  <data name="dataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <metadata name="dataGridViewTextBoxColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Begin</value>
-  </data>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column1.HeaderText" xml:space="preserve">
-    <value>End</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 10pt, style=Bold</value>
@@ -1172,7 +1001,7 @@ and place it on the new unit automatically</value>
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1033, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1229,6 +1058,6 @@ and place it on the new unit automatically</value>
     <value>UnitMgmtSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.14.0.2, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

@@ -117,7 +117,6 @@ namespace GTI.Modules.SystemSettings.UI
                 numMaxBet.Enabled = false;
                 m_MaxBetValueLabel.Enabled = false;
             }
-
             else
             {
                 string value;
@@ -165,6 +164,16 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.CBBAutoLock, out tempSettingValue);
             txtLockCBBGames.Text = tempSettingValue.Value.ToString();
 
+            Common.GetOpSettingValue(Setting.HeadcountMethod, out tempSettingValue);
+            int method = 0;
+
+            Int32.TryParse(tempSettingValue.Value, out method);
+
+            if (method < 1 || method > 3)
+                method = 2;
+
+            cbHeadcountMethod.SelectedIndex = method - 1;
+            
             //US3298 Adding support for allowing the user to specify the number of games to play before 
             txtVoidLockGames.Text = Common.GetSystemSetting(Setting.VoidLockAtGameCount);
             txtVoidLockGames.Enabled = Common.GetSettingEnabled(Setting.VoidLockAtGameCount);
@@ -178,26 +187,26 @@ namespace GTI.Modules.SystemSettings.UI
 
             bool playWithPaper = ParseBool(Common.GetLicenseSettingValue(LicenseSetting.PlayWithPaper));  //RALLY DE9427
             
-                if (playWithPaper)
-                {
-                    chkSameCard.Enabled = false;
+            if (playWithPaper)
+            {
+                chkSameCard.Enabled = false;
 
-                    chkConsecutiveCards.Enabled = false;
-                    if (chkConsecutiveCards.Checked || chkSameCard.Checked)
-                    {
-                        saveFlag = true;
-                    }
-                    chkConsecutiveCards.Checked = false;
-                    chkSameCard.Checked = false;
-                }
-
-                //START RALLY DE8921, DE8922
-                else
+                chkConsecutiveCards.Enabled = false;
+                if (chkConsecutiveCards.Checked || chkSameCard.Checked)
                 {
-                    chkConsecutiveCards.Enabled = Common.GetSettingEnabled(Setting.UseConsecutiveCards);
-                    chkSameCard.Enabled = Common.GetSettingEnabled(Setting.UseSameCards);
+                    saveFlag = true;
                 }
-                //END RALLY DE8921, DE8922
+                chkConsecutiveCards.Checked = false;
+                chkSameCard.Checked = false;
+            }
+
+            //START RALLY DE8921, DE8922
+            else
+            {
+                chkConsecutiveCards.Enabled = Common.GetSettingEnabled(Setting.UseConsecutiveCards);
+                chkSameCard.Enabled = Common.GetSettingEnabled(Setting.UseSameCards);
+            }
+            //END RALLY DE8921, DE8922
             
             //END RALLY TA 5745 
 
@@ -296,6 +305,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             Common.SetOpSettingValue(Setting.CBBAutoLock, txtLockCBBGames.Text.ToString());
 
+            Common.SetOpSettingValue(Setting.HeadcountMethod, (cbHeadcountMethod.SelectedIndex + 1).ToString());
 
             //START RALLY TA 5745 Play with paper setting
             // Create a list of just these settings

@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Windows.Forms;
 using GTI.Modules.Shared;
 using GTI.Modules.SystemSettings.Properties;
 using GTI.Modules.SystemSettings.Data;
+using GTI.Modules.SystemSettings.Business;
 
 
 namespace GTI.Modules.SystemSettings.UI
@@ -24,6 +26,7 @@ namespace GTI.Modules.SystemSettings.UI
         List<string> lstAllowableScenes = new List<string>();        
         Business.GetScenesMessage objGetScenes;
         Business.ListViewSorter Sorter = new Business.ListViewSorter();
+        private BindingList<FlashboardTheme> m_themes = new BindingList<FlashboardTheme>();
 
 		public HallDisplaySettings()
 		{
@@ -99,8 +102,42 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+        /// US5625
+        /// <summary>
+        /// Loads the remote display themes and puts them into the UI
+        /// </summary>
+        private void GetThemes()
+        {
+            m_themes.Clear();
+            try
+            {
+                GetFlashboardThemes getThemes = new GetFlashboardThemes();
+                getThemes.Send();
+                foreach (var theme in getThemes.Themes)
+                {
+                    if(theme.Active)
+                        m_themes.Add(theme);
+                }
+            }
+            catch (ServerException ex)
+            {
+                string err = String.Format("Unable to get themes for flashboard. Reason: {0}", ex.ReturnCode);
+                SettingsManager.Log(err, LoggerLevel.Severe);
+                MessageForm.Show(err);
+            }
+            catch (Exception ex)
+            {
+                string err = "Unable to get themes for flashboard: " + ex.ToString();
+                SettingsManager.Log(err, LoggerLevel.Severe);
+                MessageForm.Show(err);
+            }
+            cboThemes.DataSource = m_themes;
+        }
+
 		private bool LoadHallDisplaySettings()
 		{
+            GetThemes();
+
             int intTempVal;
             m_AllowableScenes = "";
             m_DefaultScene = "";
@@ -207,6 +244,39 @@ namespace GTI.Modules.SystemSettings.UI
 			txtDefaultSceneId.Enabled = Common.IsAdmin;
             */
 
+            string themeFileName = Common.GetSystemSetting(Setting.FlashboardTheme); // US5625
+
+            if (cboThemes.Items != null)
+            {
+                if (!String.IsNullOrWhiteSpace(themeFileName))
+                {
+                    foreach (FlashboardTheme theme in cboThemes.Items)
+                    {
+                        if (String.Equals(theme.DllName, themeFileName, StringComparison.CurrentCultureIgnoreCase))
+                        {
+                            cboThemes.SelectedItem = theme;
+                            break;
+                        }
+                    }
+
+                    if (cboThemes.SelectedItem == null) // we got through them all and didn't find the setting in the current list
+                    {
+                        FlashboardTheme theme = new FlashboardTheme
+                        {
+                            DisplayName = themeFileName,
+                            DllName = themeFileName,
+                        };
+
+                        m_themes.Add(theme); // add the theme to the bound list (automatically updates the UI)
+                        cboThemes.SelectedItem = theme;
+                    }
+                }
+                else
+                {
+                    cboThemes.SelectedItem = cboThemes.Items[0];
+                }
+            }
+
 			// Set the flag
 			m_bModified = false;
 
@@ -283,6 +353,14 @@ namespace GTI.Modules.SystemSettings.UI
             s.Id = (int)Setting.DisplayNextBall;
             s.Value = m_AnticipationType.ToString();
             arrSettings.Add(s); //US4727
+            
+            s.Id = (int)Setting.FlashboardTheme;
+            FlashboardTheme temp = (cboThemes.SelectedItem as FlashboardTheme);
+            if(temp == null)
+                s.Value = cboThemes.Text; // if they manually typed something in
+            else
+                s.Value = temp.DllName;
+            arrSettings.Add(s); // US5625
 
             if (!Common.SaveSystemSettings(arrSettings.ToArray()))
             {

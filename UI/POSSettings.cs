@@ -96,6 +96,10 @@ namespace GTI.Modules.SystemSettings.UI
             bool usePrePrintedPacks = false;
 
             //START RALLY US1650 Disable register closing report
+            chkExtraDamagedPaperConfirmation.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ConfirmDamagedPaperForPaperExchange));
+
+            chkAllowSalesToBannedPlayers.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.AllowSalesToBannedPlayers));
+
             chkEnableRegisterSalesReport.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.EnableRegisterSalesReport));  //RALLY DE9427
 
             chkEnableRegisterClosingReport.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.EnableRegisterClosingReport));
@@ -105,6 +109,8 @@ namespace GTI.Modules.SystemSettings.UI
             chkScanningStartsNewSale.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ScannedReceiptsStartNewSale));
 
             chkForceVoidAuth.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ForceAuthorizationOnVoidsAtPOS));
+
+            chkAutoDiscountTextOnReceipt.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.AutoDiscountInfoGoesOnBottomOfScreenReceipt));
 
             chkShowFree.Checked = Common.ParseBool(Common.GetSystemSetting(Setting.ShowFreeOnDeviceButtonsWithFeeOfZero));
 
@@ -429,6 +435,14 @@ namespace GTI.Modules.SystemSettings.UI
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue s = new SettingValue();
 
+            s.Id = (int)Setting.ConfirmDamagedPaperForPaperExchange;
+            s.Value = chkExtraDamagedPaperConfirmation.Checked.ToString();
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.AllowSalesToBannedPlayers;
+            s.Value = chkAllowSalesToBannedPlayers.Checked.ToString();
+            arrSettings.Add(s);
+
             s.Id = (int)Setting.SellPreviouslySoldItemOption;
             s.Value = cmbResellAuditedItem.SelectedIndex.ToString();
             arrSettings.Add(s);
@@ -455,6 +469,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             s.Id = (int)Setting.AllowWidescreenPOS;
             s.Value = chkWidescreen.Checked.ToString();
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.AutoDiscountInfoGoesOnBottomOfScreenReceipt;
+            s.Value = chkAutoDiscountTextOnReceipt.Checked.ToString();
             arrSettings.Add(s);
 
             s.Id = (int)Setting.WidescreenPOSHasTwoMenuPagesPerPage;

@@ -94,21 +94,25 @@ namespace GTI.Modules.SystemSettings.Business
                 MemoryStream responseStream = new MemoryStream(mbytResponse);
                 BinaryReader responseReader = new BinaryReader(responseStream, Encoding.Unicode);
 
-                responseReader.BaseStream.Seek(sizeof(int), SeekOrigin.Begin);
-
-                // Try to unpack the data.
                 try
                 {
-                    //Get Photo Field Length
-                    intPhotoFieldLength = responseReader.ReadInt32();
-                    if (intPhotoFieldLength > 0)
+
+                    responseReader.BaseStream.Seek(sizeof(int), SeekOrigin.Begin);
+                    ushort _count = responseReader.ReadUInt16();
+
+                    for (ushort x = 0; x < _count; x++ )
                     {
-                        ImageData = responseReader.ReadBytes(intPhotoFieldLength);
-                    }
-                    else
-                    {
-                        ImageData = null;
-                    }
+                        //Get Photo Field Length
+                        intPhotoFieldLength = responseReader.ReadInt32();
+                        if (intPhotoFieldLength > 0)
+                        {
+                            ImageData = responseReader.ReadBytes(intPhotoFieldLength);
+                        }
+                        else
+                        {
+                            ImageData = null;
+                        }
+                    }                    
                 }
                 catch (EndOfStreamException e)
                 {

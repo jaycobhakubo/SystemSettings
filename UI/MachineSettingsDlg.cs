@@ -47,18 +47,19 @@ namespace GTI.Modules.SystemSettings.UI
         private int m_operatorID;//RALLY US1594
         private List<Business.GenericCBOItem> lstCboDefaultScenes = new List<Business.GenericCBOItem>();
         private List<string> lstAllowableScenes = new List<string>();
+        private BindingList<FlashboardTheme> m_themes = new BindingList<FlashboardTheme>();
 
         //For anticipation settings
         private int m_AnticipationType;
+
+        private Business.GetScenesMessage objGetScenes;
+        private Business.ListViewSorter Sorter = new Business.ListViewSorter();
 
         //START RALLY DE 4009
         private List<Label> m_cardReaderLabelList = new List<Label>();
         private List<TextBox> m_cardReaderTextBoxList = new List<TextBox>();
 
         //END RALLY DE 4009
-
-        private Business.GetScenesMessage objGetScenes;
-        private Business.ListViewSorter Sorter = new Business.ListViewSorter();
 
         private class TenderInfo
         {
@@ -160,6 +161,76 @@ namespace GTI.Modules.SystemSettings.UI
             }
         }
 
+        /// US5625
+        /// <summary>
+        /// Loads the remote display themes and puts them into the UI
+        /// </summary>
+        private void GetThemes()
+        {
+            m_themes.Clear();
+            try
+            {
+                GetFlashboardThemes getThemes = new GetFlashboardThemes();
+                getThemes.Send();
+                foreach (var theme in getThemes.Themes)
+                {
+                    if (theme.Active)
+                        m_themes.Add(theme);
+                }
+            }
+            catch (ServerException ex)
+            {
+                string err = String.Format("Unable to get themes for flashboard. Reason: {0}", ex.ReturnCode);
+                SettingsManager.Log(err, LoggerLevel.Severe);
+                MessageForm.Show(err);
+            }
+            catch (Exception ex)
+            {
+                string err = "Unable to get themes for flashboard: " + ex.ToString();
+                SettingsManager.Log(err, LoggerLevel.Severe);
+                MessageForm.Show(err);
+            }
+            cboThemes.DataSource = m_themes;
+        }
+
+        /// <summary>
+        /// Matches the selection to the theme setting
+        /// </summary>
+        /// <param name="themeFileName"></param>
+        private void MatchTheme(string themeFileName)
+        {
+            if (cboThemes.Items != null)
+            {
+                if (!String.IsNullOrWhiteSpace(themeFileName))
+                {
+                    foreach (FlashboardTheme theme in cboThemes.Items)
+                    {
+                        if (String.Equals(theme.DllName, themeFileName, StringComparison.CurrentCultureIgnoreCase))
+                        {
+                            cboThemes.SelectedItem = theme;
+                            break;
+                        }
+                    }
+
+                    if (cboThemes.SelectedItem == null) // we got through them all and didn't find the setting in the current list
+                    {
+                        FlashboardTheme theme = new FlashboardTheme
+                        {
+                            DisplayName = themeFileName,
+                            DllName = themeFileName,
+                        };
+
+                        m_themes.Add(theme); // add the theme to the bound list (automatically updates the UI)
+                        cboThemes.SelectedItem = theme;
+                    }
+                }
+                else
+                {
+                    cboThemes.SelectedItem = cboThemes.Items[0];
+                }
+            }
+        }
+
         private bool LoadMachineSettings()
         {
             // If this a multi-select, we will start with all default settings
@@ -247,6 +318,8 @@ namespace GTI.Modules.SystemSettings.UI
                         m_accrualList = new List<Accrual>();
                     }
                     m_accrualEnabled = result;   //RALLY DE9673
+
+                    GetThemes();
                 }
 
                 // Fixed Base stuff goes here
@@ -677,7 +750,7 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 chkCbbScannerPort.Checked = true;
-                numCBBScannerPort.Value = Common.ParseInt(Common.GetOpSetting(Setting.CBBScannerPort));
+                numCBBScannerPort.Value = Common.ParseInt(Common.GetOpSetting(Setting.CBBScannerPort, true));
             }
 
             //CBB Play It Sheet Type
@@ -687,13 +760,14 @@ namespace GTI.Modules.SystemSettings.UI
                 int sheetType;
                 if (int.TryParse(s.Value, out sheetType))
                 {
-                    cboPlayItSheet.SelectedIndex = sheetType;
+                    cboPlayItSheet.SelectedIndex = sheetType - 1;
                 }
             }
             else
             {
                 chkCBBPlayItSheetType.Checked = true;
-                cboPlayItSheet.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CBBPlayItSheetType)) + 1;
+                cboPlayItSheet.SelectedIndex = Common.ParseInt(Common.GetOpSetting(Setting.CBBPlayItSheetType, true)) - 1;
+                cboPlayItSheet.Enabled = false;
             }
 
             //CBB Print Play It Sheets
@@ -709,7 +783,8 @@ namespace GTI.Modules.SystemSettings.UI
             else
             {
                 chkCBBPrintPlayItSheet.Checked = true;
-                cboPrintCBBCardsToPlayitSheet.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.PrintCBBCardsToPlayItSheet)) + 1;
+                cboPrintCBBCardsToPlayitSheet.SelectedIndex = Common.ParseInt(Common.GetOpSetting(Setting.PrintCBBCardsToPlayItSheet, true));
+                cboPrintCBBCardsToPlayitSheet.Enabled = false;
             }
 
             // PDTS 1064
@@ -1077,6 +1152,24 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 btnSave.Enabled = false;
             }
+            
+            // US5625
+            if (m_GetMachineSettingsMsg.TryGetSettingValue(Setting.FlashboardTheme, out s))
+            {
+                chkUseThemeDefault.Checked = false;
+                cboThemes.Enabled = true;
+                label37.Enabled = true;
+
+                MatchTheme(s.Value);
+            }
+            else
+            {
+                chkUseThemeDefault.Checked = true;
+                cboThemes.Enabled = false;
+                label37.Enabled = false;
+
+                MatchTheme(Common.GetSystemSetting(Setting.FlashboardTheme));
+            }
         }
         //END RALLY US1594
         //START RALLY DE 4009
@@ -1246,7 +1339,7 @@ namespace GTI.Modules.SystemSettings.UI
             if (!chkCBBPlayItSheetType.Checked)
             {
                 s.Id = (int)Setting.CBBPlayItSheetType;
-                s.Value = (cboPlayItSheet.SelectedIndex).ToString();
+                s.Value = (cboPlayItSheet.SelectedIndex + 1).ToString();
                 arrSettings.Add(s);
             }
 
@@ -1400,6 +1493,18 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 s.Id = (int)Setting.RefreshRate;
                 s.Value = numRefreshRate.Value.ToString();
+                arrSettings.Add(s);
+            }
+
+            // Flashboard theme
+            if (!chkUseThemeDefault.Checked) // US5625
+            {
+                s.Id = (int)Setting.FlashboardTheme;
+                FlashboardTheme temp = (cboThemes.SelectedItem as FlashboardTheme);
+                if (temp == null)
+                    s.Value = cboThemes.Text; // if they manually typed something in
+                else
+                    s.Value = temp.DllName;
                 arrSettings.Add(s);
             }
 
@@ -1877,7 +1982,7 @@ namespace GTI.Modules.SystemSettings.UI
             cboCbbScannerType.Enabled = !chkCbbScannerType.Checked;
             if (chkCbbScannerType.Checked)
             {
-                cboCbbScannerType.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CbbScannerType));
+                cboCbbScannerType.SelectedIndex = Common.ParseInt(Common.GetOpSetting(Setting.CbbScannerType, true));
             }
         }
 
@@ -1887,7 +1992,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             if (chkCBBPlayItSheetType.Checked)
             {
-                cboPlayItSheet.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.CBBPlayItSheetType));
+                cboPlayItSheet.SelectedIndex = Common.ParseInt(Common.GetOpSetting(Setting.CBBPlayItSheetType, true)) - 1;
             }
         }
 
@@ -1897,7 +2002,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             if (chkCBBPrintPlayItSheet.Checked)
             {
-                cboPrintCBBCardsToPlayitSheet.SelectedIndex = Common.ParseInt(Common.GetSystemSetting(Setting.PrintCBBCardsToPlayItSheet));
+                cboPrintCBBCardsToPlayitSheet.SelectedIndex = Common.ParseInt(Common.GetOpSetting(Setting.PrintCBBCardsToPlayItSheet, true));
             }
         }
       
@@ -2389,6 +2494,11 @@ namespace GTI.Modules.SystemSettings.UI
             {
                 numMinColorCircleTime.Value = Common.ParseInt(Common.GetSystemSetting(Setting.ColorCircleMinDisplayTime));
             }
+        }
+
+        private void chkUseThemeDefault_CheckedChanged(object sender, EventArgs e)
+        {
+            label37.Enabled = cboThemes.Enabled = !chkUseThemeDefault.Checked;
         }
 
         private void txtbxGuardianAddressAndPort_Validating(object sender, CancelEventArgs e)

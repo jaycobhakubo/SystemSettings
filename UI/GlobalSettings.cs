@@ -144,7 +144,29 @@ namespace GTI.Modules.SystemSettings.UI
 
 			chkForceEnglish.Checked = ParseBool(Common.GetSystemSetting(Setting.ForceEnglish));
             chkShowCursor.Checked = ParseBool(Common.GetSystemSetting(Setting.ShowMouseCursor));
-            
+
+            string[] expireSettings = Common.GetOpSetting(Setting.AutomatedPlayerPointExpire).Split('|');
+
+            if (expireSettings.Length != 2)
+            {
+                chkExpire.Checked = false;
+                nudExpireDays.Value = 365;
+            }
+            else
+            {
+                try
+                {
+                    chkExpire.Checked = ParseBool(expireSettings[0]);
+                    nudExpireDays.Value = int.Parse(expireSettings[1]);
+                }
+                catch (Exception)
+                {
+                    chkExpire.Checked = false;
+                    nudExpireDays.Value = 365;
+                }
+            }
+
+            chkShowCursor.Checked = ParseBool(Common.GetSystemSetting(Setting.ShowMouseCursor));
 
 			// Toggle logging controls
 			chkEnableLogging_CheckedChanged(null, null);
@@ -234,6 +256,9 @@ namespace GTI.Modules.SystemSettings.UI
 				return false;
 			}
 
+            if (!Common.SetOpSettingValue(Setting.AutomatedPlayerPointExpire, chkExpire.Checked.ToString()+"|"+nudExpireDays.Value.ToString()))
+                return false;
+
 			// Update our local copy
 			Common.SetSystemSettingValue(Setting.ClientInstallDrive, txtClientInstallDrive.Text);
 			Common.SetSystemSettingValue(Setting.ClientInstallRootDirectory, txtClientRoot.Text);
@@ -321,6 +346,34 @@ namespace GTI.Modules.SystemSettings.UI
         private void btnReset_Leave(object sender, EventArgs e)
         {
             base.LeaveLastTab(sender, e);
+        }
+
+        private void nudExpireDays_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudExpireDays.Value == 1)
+            {
+                lblExpireDayOrDays.Text = "day.";
+            }
+            else
+            {
+                if(lblExpireDayOrDays.Text == "day.")
+                    lblExpireDayOrDays.Text = "days.";
+            }
+        }
+
+        private void nudExpireDays_KeyUp(object sender, KeyEventArgs e)
+        {
+            nudExpireDays_ValueChanged(sender, new EventArgs());
+        }
+
+        private void nudExpireDays_Validating(object sender, CancelEventArgs e)
+        {
+            string text = ((UpDownBase)nudExpireDays).Text;
+            
+            e.Cancel = string.IsNullOrWhiteSpace(text) || Convert.ToInt32(text) > nudExpireDays.Maximum || Convert.ToInt32(text) < nudExpireDays.Minimum;
+
+            if (e.Cancel)
+                MessageForm.Show("Invalid number of days.");
         }
     } // end class
 } // end namespace

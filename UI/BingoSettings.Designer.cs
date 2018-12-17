@@ -34,6 +34,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.btnSave = new GTI.Controls.ImageButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cbHeadcountMethod = new System.Windows.Forms.ComboBox();
+            this.lblHeadcountMethod = new System.Windows.Forms.Label();
             this.quickDrawGB = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.quickDrawElecPermLbl = new System.Windows.Forms.Label();
@@ -99,6 +101,8 @@ namespace GTI.Modules.SystemSettings.UI
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.cbHeadcountMethod);
+            this.groupBox5.Controls.Add(this.lblHeadcountMethod);
             this.groupBox5.Controls.Add(this.quickDrawGB);
             this.groupBox5.Controls.Add(this.chkSequentialGames);
             this.groupBox5.Controls.Add(this.txtVoidLockGames);
@@ -116,6 +120,23 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
+            // 
+            // cbHeadcountMethod
+            // 
+            this.cbHeadcountMethod.FormattingEnabled = true;
+            this.cbHeadcountMethod.Items.AddRange(new object[] {
+            resources.GetString("cbHeadcountMethod.Items"),
+            resources.GetString("cbHeadcountMethod.Items1"),
+            resources.GetString("cbHeadcountMethod.Items2")});
+            resources.ApplyResources(this.cbHeadcountMethod, "cbHeadcountMethod");
+            this.cbHeadcountMethod.Name = "cbHeadcountMethod";
+            this.cbHeadcountMethod.SelectedIndexChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lblHeadcountMethod
+            // 
+            this.lblHeadcountMethod.ForeColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.lblHeadcountMethod, "lblHeadcountMethod");
+            this.lblHeadcountMethod.Name = "lblHeadcountMethod";
             // 
             // quickDrawGB
             // 
@@ -306,5 +327,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.NumericUpDown quickDrawCardsExpireNUD;
         private System.Windows.Forms.Label quickDrawCardsExpireLbl1;
         private System.Windows.Forms.ComboBox quickDrawElecPermFileCombo;
+        private System.Windows.Forms.ComboBox cbHeadcountMethod;
+        private System.Windows.Forms.Label lblHeadcountMethod;
 	}
 }

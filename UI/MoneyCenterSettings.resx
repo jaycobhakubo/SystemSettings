@@ -117,112 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
-    <value>groupBox6</value>
-  </data>
-  <data name="&gt;&gt;groupBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;accrualGroupBox.Name" xml:space="preserve">
-    <value>accrualGroupBox</value>
-  </data>
-  <data name="&gt;&gt;accrualGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;accrualGroupBox.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;accrualGroupBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 28</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>732, 548</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Money Center Settings</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;textBoxMinPrizeWinAmount.Name" xml:space="preserve">
     <value>textBoxMinPrizeWinAmount</value>
   </data>
   <data name="&gt;&gt;textBoxMinPrizeWinAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.1236, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;textBoxMinPrizeWinAmount.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -242,12 +141,14 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 433</value>
+    <value>20, 513</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 98</value>
+    <value>373, 82</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -265,70 +166,6 @@
   </data>
   <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="textBoxMinPrizeWinAmount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="textBoxMinPrizeWinAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 58</value>
-  </data>
-  <data name="textBoxMinPrizeWinAmount.MaxLength" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="textBoxMinPrizeWinAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 26</value>
-  </data>
-  <data name="textBoxMinPrizeWinAmount.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="textBoxMinPrizeWinAmount.Text" xml:space="preserve">
-    <value>1199.99</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textBoxMinPrizeWinAmount.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;textBoxMinPrizeWinAmount.Name" xml:space="preserve">
-    <value>textBoxMinPrizeWinAmount</value>
-  </data>
-  <data name="&gt;&gt;textBoxMinPrizeWinAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
-  </data>
-  <data name="&gt;&gt;textBoxMinPrizeWinAmount.Parent" xml:space="preserve">
-    <value>groupBox6</value>
-  </data>
-  <data name="&gt;&gt;textBoxMinPrizeWinAmount.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 33</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 22</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Minimum win to trigger tax form:</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>groupBox6</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;numBankCloseSignatureLines.Name" xml:space="preserve">
     <value>numBankCloseSignatureLines</value>
@@ -460,6 +297,645 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxFeeAmount.Name" xml:space="preserve">
+    <value>textBoxFeeAmount</value>
+  </data>
+  <data name="&gt;&gt;textBoxFeeAmount.Type" xml:space="preserve">
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.1236, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;textBoxFeeAmount.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;textBoxFeeAmount.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinimumPrizeAmount.Name" xml:space="preserve">
+    <value>textBoxMinimumPrizeAmount</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinimumPrizeAmount.Type" xml:space="preserve">
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.1236, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinimumPrizeAmount.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinimumPrizeAmount.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelFeePercent.Name" xml:space="preserve">
+    <value>labelFeePercent</value>
+  </data>
+  <data name="&gt;&gt;labelFeePercent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelFeePercent.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;labelFeePercent.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelFeeType.Name" xml:space="preserve">
+    <value>labelFeeType</value>
+  </data>
+  <data name="&gt;&gt;labelFeeType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelFeeType.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;labelFeeType.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButtonFeeFixed.Name" xml:space="preserve">
+    <value>radioButtonFeeFixed</value>
+  </data>
+  <data name="&gt;&gt;radioButtonFeeFixed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonFeeFixed.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;radioButtonFeeFixed.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonFeePercent.Name" xml:space="preserve">
+    <value>radioButtonFeePercent</value>
+  </data>
+  <data name="&gt;&gt;radioButtonFeePercent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonFeePercent.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;radioButtonFeePercent.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelFeeAmount.Name" xml:space="preserve">
+    <value>labelFeeAmount</value>
+  </data>
+  <data name="&gt;&gt;labelFeeAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelFeeAmount.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;labelFeeAmount.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelMinimumPrizeAmount.Name" xml:space="preserve">
+    <value>labelMinimumPrizeAmount</value>
+  </data>
+  <data name="&gt;&gt;labelMinimumPrizeAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMinimumPrizeAmount.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;labelMinimumPrizeAmount.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 25</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 166</value>
+  </data>
+  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Prize Fees</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkMasterBankUsePreviousClose.Name" xml:space="preserve">
+    <value>chkMasterBankUsePreviousClose</value>
+  </data>
+  <data name="&gt;&gt;chkMasterBankUsePreviousClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkMasterBankUsePreviousClose.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;chkMasterBankUsePreviousClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chkUsePreviousBankClosingAmount.Name" xml:space="preserve">
+    <value>chkUsePreviousBankClosingAmount</value>
+  </data>
+  <data name="&gt;&gt;chkUsePreviousBankClosingAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUsePreviousBankClosingAmount.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;chkUsePreviousBankClosingAmount.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 387</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 120</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Bank settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 187</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 22</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Signature lines:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeft.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 9.75pt</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 377</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 15</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeft.Text" xml:space="preserve">
+    <value>200</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeft.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblPayoutSignatureLinesCharactersLeft.Name" xml:space="preserve">
+    <value>lblPayoutSignatureLinesCharactersLeft</value>
+  </data>
+  <data name="&gt;&gt;lblPayoutSignatureLinesCharactersLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPayoutSignatureLinesCharactersLeft.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;lblPayoutSignatureLinesCharactersLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeftTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 9.75pt</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeftTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 377</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeftTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 15</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeftTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeftTitle.Text" xml:space="preserve">
+    <value>Characters left:</value>
+  </data>
+  <data name="lblPayoutSignatureLinesCharactersLeftTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblPayoutSignatureLinesCharactersLeftTitle.Name" xml:space="preserve">
+    <value>lblPayoutSignatureLinesCharactersLeftTitle</value>
+  </data>
+  <data name="&gt;&gt;lblPayoutSignatureLinesCharactersLeftTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPayoutSignatureLinesCharactersLeftTitle.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;lblPayoutSignatureLinesCharactersLeftTitle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtPayoutSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 212</value>
+  </data>
+  <data name="txtPayoutSignatureLines.MaxLength" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="txtPayoutSignatureLines.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtPayoutSignatureLines.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="txtPayoutSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 162</value>
+  </data>
+  <data name="txtPayoutSignatureLines.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtPayoutSignatureLines.Text" xml:space="preserve">
+    <value>Paymaster
+Clerk
+Player</value>
+  </data>
+  <data name="txtPayoutSignatureLines.WordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtPayoutSignatureLines.Name" xml:space="preserve">
+    <value>txtPayoutSignatureLines</value>
+  </data>
+  <data name="&gt;&gt;txtPayoutSignatureLines.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPayoutSignatureLines.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;txtPayoutSignatureLines.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 94</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 26</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkGetPlayerWithVerify.Text" xml:space="preserve">
+    <value>Get player with verified winners</value>
+  </data>
+  <data name="&gt;&gt;chkGetPlayerWithVerify.Name" xml:space="preserve">
+    <value>chkGetPlayerWithVerify</value>
+  </data>
+  <data name="&gt;&gt;chkGetPlayerWithVerify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkGetPlayerWithVerify.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkGetPlayerWithVerify.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkPrintWordValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkPrintWordValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintWordValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 158</value>
+  </data>
+  <data name="chkPrintWordValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 26</value>
+  </data>
+  <data name="chkPrintWordValue.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="chkPrintWordValue.Text" xml:space="preserve">
+    <value>Print monetary value in words</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWordValue.Name" xml:space="preserve">
+    <value>chkPrintWordValue</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWordValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWordValue.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWordValue.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chkPrintWinnersAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkPrintWinnersAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkPrintWinnersAddress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintWinnersAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 126</value>
+  </data>
+  <data name="chkPrintWinnersAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 26</value>
+  </data>
+  <data name="chkPrintWinnersAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chkPrintWinnersAddress.Text" xml:space="preserve">
+    <value>Print winners address on receipt</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWinnersAddress.Name" xml:space="preserve">
+    <value>chkPrintWinnersAddress</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWinnersAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWinnersAddress.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkPrintWinnersAddress.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chkForcePlayerOnPayouts.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkForcePlayerOnPayouts.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkForcePlayerOnPayouts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkForcePlayerOnPayouts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 62</value>
+  </data>
+  <data name="chkForcePlayerOnPayouts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="chkForcePlayerOnPayouts.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkForcePlayerOnPayouts.Text" xml:space="preserve">
+    <value>Force player on payouts</value>
+  </data>
+  <data name="&gt;&gt;chkForcePlayerOnPayouts.Name" xml:space="preserve">
+    <value>chkForcePlayerOnPayouts</value>
+  </data>
+  <data name="&gt;&gt;chkForcePlayerOnPayouts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkForcePlayerOnPayouts.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkForcePlayerOnPayouts.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkPrintAllPayoutWinners.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkPrintAllPayoutWinners.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="chkPrintAllPayoutWinners.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkPrintAllPayoutWinners.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 30</value>
+  </data>
+  <data name="chkPrintAllPayoutWinners.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 26</value>
+  </data>
+  <data name="chkPrintAllPayoutWinners.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkPrintAllPayoutWinners.Text" xml:space="preserve">
+    <value>Print all winners on receipt</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAllPayoutWinners.Name" xml:space="preserve">
+    <value>chkPrintAllPayoutWinners</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAllPayoutWinners.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAllPayoutWinners.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAllPayoutWinners.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 197</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 398</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Payout settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualIncrease.Name" xml:space="preserve">
+    <value>chkPrintAccrualIncrease</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualIncrease.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualIncrease.Parent" xml:space="preserve">
+    <value>accrualGroupBox</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualIncrease.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualReseed.Name" xml:space="preserve">
+    <value>chkPrintAccrualReseed</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualReseed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualReseed.Parent" xml:space="preserve">
+    <value>accrualGroupBox</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualReseed.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualTransfer.Name" xml:space="preserve">
+    <value>chkPrintAccrualTransfer</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualTransfer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualTransfer.Parent" xml:space="preserve">
+    <value>accrualGroupBox</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualTransfer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualReset.Name" xml:space="preserve">
+    <value>chkPrintAccrualReset</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualReset.Parent" xml:space="preserve">
+    <value>accrualGroupBox</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAccrualReset.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="accrualGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 223</value>
+  </data>
+  <data name="accrualGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>373, 158</value>
+  </data>
+  <data name="accrualGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="accrualGroupBox.Text" xml:space="preserve">
+    <value>Progressive receipt settings</value>
+  </data>
+  <data name="&gt;&gt;accrualGroupBox.Name" xml:space="preserve">
+    <value>accrualGroupBox</value>
+  </data>
+  <data name="&gt;&gt;accrualGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;accrualGroupBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;accrualGroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 3</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>732, 600</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Money Center Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxMinPrizeWinAmount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt</value>
+  </data>
+  <data name="textBoxMinPrizeWinAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 48</value>
+  </data>
+  <data name="textBoxMinPrizeWinAmount.MaxLength" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="textBoxMinPrizeWinAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 26</value>
+  </data>
+  <data name="textBoxMinPrizeWinAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBoxMinPrizeWinAmount.Text" xml:space="preserve">
+    <value>1199.99</value>
+  </data>
+  <data name="textBoxMinPrizeWinAmount.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinPrizeWinAmount.Name" xml:space="preserve">
+    <value>textBoxMinPrizeWinAmount</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinPrizeWinAmount.Type" xml:space="preserve">
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.1236, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinPrizeWinAmount.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;textBoxMinPrizeWinAmount.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 28</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 46</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Minimum win to trigger tax form:</value>
+  </data>
+  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="numBankCloseSignatureLines.Font" type="System.Drawing.Font, System.Drawing">
@@ -708,126 +1184,6 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;textBoxFeeAmount.Name" xml:space="preserve">
-    <value>textBoxFeeAmount</value>
-  </data>
-  <data name="&gt;&gt;textBoxFeeAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
-  </data>
-  <data name="&gt;&gt;textBoxFeeAmount.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;textBoxFeeAmount.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxMinimumPrizeAmount.Name" xml:space="preserve">
-    <value>textBoxMinimumPrizeAmount</value>
-  </data>
-  <data name="&gt;&gt;textBoxMinimumPrizeAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
-  </data>
-  <data name="&gt;&gt;textBoxMinimumPrizeAmount.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;textBoxMinimumPrizeAmount.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelFeePercent.Name" xml:space="preserve">
-    <value>labelFeePercent</value>
-  </data>
-  <data name="&gt;&gt;labelFeePercent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelFeePercent.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;labelFeePercent.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelFeeType.Name" xml:space="preserve">
-    <value>labelFeeType</value>
-  </data>
-  <data name="&gt;&gt;labelFeeType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelFeeType.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;labelFeeType.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;radioButtonFeeFixed.Name" xml:space="preserve">
-    <value>radioButtonFeeFixed</value>
-  </data>
-  <data name="&gt;&gt;radioButtonFeeFixed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButtonFeeFixed.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;radioButtonFeeFixed.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;radioButtonFeePercent.Name" xml:space="preserve">
-    <value>radioButtonFeePercent</value>
-  </data>
-  <data name="&gt;&gt;radioButtonFeePercent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButtonFeePercent.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;radioButtonFeePercent.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelFeeAmount.Name" xml:space="preserve">
-    <value>labelFeeAmount</value>
-  </data>
-  <data name="&gt;&gt;labelFeeAmount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelFeeAmount.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;labelFeeAmount.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;labelMinimumPrizeAmount.Name" xml:space="preserve">
-    <value>labelMinimumPrizeAmount</value>
-  </data>
-  <data name="&gt;&gt;labelMinimumPrizeAmount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelMinimumPrizeAmount.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;labelMinimumPrizeAmount.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 25</value>
-  </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 166</value>
-  </data>
-  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="groupBox5.Text" xml:space="preserve">
-    <value>Prize Fees</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="textBoxFeeAmount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Trebuchet MS, 12pt</value>
   </data>
@@ -853,7 +1209,7 @@
     <value>textBoxFeeAmount</value>
   </data>
   <data name="&gt;&gt;textBoxFeeAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.1236, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;textBoxFeeAmount.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -886,7 +1242,7 @@
     <value>textBoxMinimumPrizeAmount</value>
   </data>
   <data name="&gt;&gt;textBoxMinimumPrizeAmount.Type" xml:space="preserve">
-    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.TextBoxNumeric, GTIControls, Version=1.3.11.1236, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;textBoxMinimumPrizeAmount.Parent" xml:space="preserve">
     <value>groupBox5</value>
@@ -1074,54 +1430,6 @@
   <data name="&gt;&gt;labelMinimumPrizeAmount.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;chkMasterBankUsePreviousClose.Name" xml:space="preserve">
-    <value>chkMasterBankUsePreviousClose</value>
-  </data>
-  <data name="&gt;&gt;chkMasterBankUsePreviousClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkMasterBankUsePreviousClose.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;chkMasterBankUsePreviousClose.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;chkUsePreviousBankClosingAmount.Name" xml:space="preserve">
-    <value>chkUsePreviousBankClosingAmount</value>
-  </data>
-  <data name="&gt;&gt;chkUsePreviousBankClosingAmount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkUsePreviousBankClosingAmount.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;chkUsePreviousBankClosingAmount.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 411</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 120</value>
-  </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Bank settings</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="chkMasterBankUsePreviousClose.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1184,402 +1492,6 @@
   </data>
   <data name="&gt;&gt;chkUsePreviousBankClosingAmount.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;chkGetPlayerWithVerify.Name" xml:space="preserve">
-    <value>chkGetPlayerWithVerify</value>
-  </data>
-  <data name="&gt;&gt;chkGetPlayerWithVerify.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkGetPlayerWithVerify.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkGetPlayerWithVerify.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;numPayoutSignatureLines.Name" xml:space="preserve">
-    <value>numPayoutSignatureLines</value>
-  </data>
-  <data name="&gt;&gt;numPayoutSignatureLines.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numPayoutSignatureLines.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numPayoutSignatureLines.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWordValue.Name" xml:space="preserve">
-    <value>chkPrintWordValue</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWordValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWordValue.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWordValue.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinnersAddress.Name" xml:space="preserve">
-    <value>chkPrintWinnersAddress</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinnersAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinnersAddress.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinnersAddress.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;chkForcePlayerOnPayouts.Name" xml:space="preserve">
-    <value>chkForcePlayerOnPayouts</value>
-  </data>
-  <data name="&gt;&gt;chkForcePlayerOnPayouts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkForcePlayerOnPayouts.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkForcePlayerOnPayouts.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAllPayoutWinners.Name" xml:space="preserve">
-    <value>chkPrintAllPayoutWinners</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAllPayoutWinners.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAllPayoutWinners.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAllPayoutWinners.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 197</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>310, 230</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Payout settings</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="chkGetPlayerWithVerify.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkGetPlayerWithVerify.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="chkGetPlayerWithVerify.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkGetPlayerWithVerify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 94</value>
-  </data>
-  <data name="chkGetPlayerWithVerify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 26</value>
-  </data>
-  <data name="chkGetPlayerWithVerify.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chkGetPlayerWithVerify.Text" xml:space="preserve">
-    <value>Get player with verified winners</value>
-  </data>
-  <data name="&gt;&gt;chkGetPlayerWithVerify.Name" xml:space="preserve">
-    <value>chkGetPlayerWithVerify</value>
-  </data>
-  <data name="&gt;&gt;chkGetPlayerWithVerify.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkGetPlayerWithVerify.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkGetPlayerWithVerify.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="numPayoutSignatureLines.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt</value>
-  </data>
-  <data name="numPayoutSignatureLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 185</value>
-  </data>
-  <data name="numPayoutSignatureLines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 26</value>
-  </data>
-  <data name="numPayoutSignatureLines.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;numPayoutSignatureLines.Name" xml:space="preserve">
-    <value>numPayoutSignatureLines</value>
-  </data>
-  <data name="&gt;&gt;numPayoutSignatureLines.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numPayoutSignatureLines.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;numPayoutSignatureLines.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 187</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 22</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Number of signature lines</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chkPrintWordValue.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkPrintWordValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintWordValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 158</value>
-  </data>
-  <data name="chkPrintWordValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 26</value>
-  </data>
-  <data name="chkPrintWordValue.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="chkPrintWordValue.Text" xml:space="preserve">
-    <value>Print monetary value in words</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWordValue.Name" xml:space="preserve">
-    <value>chkPrintWordValue</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWordValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWordValue.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWordValue.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="chkPrintWinnersAddress.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkPrintWinnersAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="chkPrintWinnersAddress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintWinnersAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 126</value>
-  </data>
-  <data name="chkPrintWinnersAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 26</value>
-  </data>
-  <data name="chkPrintWinnersAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="chkPrintWinnersAddress.Text" xml:space="preserve">
-    <value>Print winners address on receipt</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinnersAddress.Name" xml:space="preserve">
-    <value>chkPrintWinnersAddress</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinnersAddress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinnersAddress.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkPrintWinnersAddress.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="chkForcePlayerOnPayouts.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkForcePlayerOnPayouts.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="chkForcePlayerOnPayouts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkForcePlayerOnPayouts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 62</value>
-  </data>
-  <data name="chkForcePlayerOnPayouts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 26</value>
-  </data>
-  <data name="chkForcePlayerOnPayouts.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chkForcePlayerOnPayouts.Text" xml:space="preserve">
-    <value>Force player on payouts</value>
-  </data>
-  <data name="&gt;&gt;chkForcePlayerOnPayouts.Name" xml:space="preserve">
-    <value>chkForcePlayerOnPayouts</value>
-  </data>
-  <data name="&gt;&gt;chkForcePlayerOnPayouts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkForcePlayerOnPayouts.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkForcePlayerOnPayouts.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="chkPrintAllPayoutWinners.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkPrintAllPayoutWinners.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Trebuchet MS, 12pt, style=Bold</value>
-  </data>
-  <data name="chkPrintAllPayoutWinners.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkPrintAllPayoutWinners.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 30</value>
-  </data>
-  <data name="chkPrintAllPayoutWinners.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 26</value>
-  </data>
-  <data name="chkPrintAllPayoutWinners.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="chkPrintAllPayoutWinners.Text" xml:space="preserve">
-    <value>Print all winners on receipt</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAllPayoutWinners.Name" xml:space="preserve">
-    <value>chkPrintAllPayoutWinners</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAllPayoutWinners.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAllPayoutWinners.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAllPayoutWinners.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualIncrease.Name" xml:space="preserve">
-    <value>chkPrintAccrualIncrease</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualIncrease.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualIncrease.Parent" xml:space="preserve">
-    <value>accrualGroupBox</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualIncrease.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualReseed.Name" xml:space="preserve">
-    <value>chkPrintAccrualReseed</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualReseed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualReseed.Parent" xml:space="preserve">
-    <value>accrualGroupBox</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualReseed.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualTransfer.Name" xml:space="preserve">
-    <value>chkPrintAccrualTransfer</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualTransfer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualTransfer.Parent" xml:space="preserve">
-    <value>accrualGroupBox</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualTransfer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualReset.Name" xml:space="preserve">
-    <value>chkPrintAccrualReset</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualReset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualReset.Parent" xml:space="preserve">
-    <value>accrualGroupBox</value>
-  </data>
-  <data name="&gt;&gt;chkPrintAccrualReset.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="accrualGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 234</value>
-  </data>
-  <data name="accrualGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 158</value>
-  </data>
-  <data name="accrualGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="accrualGroupBox.Text" xml:space="preserve">
-    <value>Progressive receipt settings</value>
-  </data>
-  <data name="&gt;&gt;accrualGroupBox.Name" xml:space="preserve">
-    <value>accrualGroupBox</value>
-  </data>
-  <data name="&gt;&gt;accrualGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;accrualGroupBox.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;accrualGroupBox.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="chkPrintAccrualIncrease.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1726,7 +1638,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1236, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1759,7 +1671,7 @@
     <value>btnSave</value>
   </data>
   <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.983, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
+    <value>GTI.Controls.ImageButton, GTIControls, Version=1.3.11.1236, Culture=neutral, PublicKeyToken=8379638106a1f521</value>
   </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1789,6 +1701,6 @@
     <value>MoneyCenterSettings</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.13.2.7, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
+    <value>GTI.Modules.SystemSettings.UI.SettingsControl, GTISystemSettings, Version=1.17.0.1, Culture=neutral, PublicKeyToken=944f06aa7a517071</value>
   </data>
 </root>

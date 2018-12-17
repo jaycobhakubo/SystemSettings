@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(POSKioskSettings));
             this.grpBxKioskSales = new System.Windows.Forms.GroupBox();
+            this.chkbxStabilize = new System.Windows.Forms.CheckBox();
+            this.chkbxAllowVoiding = new System.Windows.Forms.CheckBox();
             this.nudVideoVolume = new System.Windows.Forms.NumericUpDown();
             this.lblVideoVolume = new System.Windows.Forms.Label();
             this.chkbxUseKeyClickSounds = new System.Windows.Forms.CheckBox();
@@ -44,6 +46,7 @@
             this.chkbxIncludeUseLastPurchaseButton = new System.Windows.Forms.CheckBox();
             this.chkbxUseSimplePaymentForAdvancedKiosk = new System.Windows.Forms.CheckBox();
             this.m_grpTimeouts = new System.Windows.Forms.GroupBox();
+            this.nudMinutesAfterCrash = new System.Windows.Forms.NumericUpDown();
             this.chkbxPulseDefaultTimeoutButton = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.m_lblTimeout = new System.Windows.Forms.Label();
@@ -52,6 +55,7 @@
             this.m_messageTimeout = new System.Windows.Forms.Label();
             this.m_nudShortTimeout = new System.Windows.Forms.NumericUpDown();
             this.m_lblShortInactivityTimeout = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.m_closedText = new System.Windows.Forms.TextBox();
             this.m_IdleText = new System.Windows.Forms.TextBox();
             this.m_lblClosedText = new System.Windows.Forms.Label();
@@ -68,6 +72,7 @@
             this.grpBxKioskSales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudVideoVolume)).BeginInit();
             this.m_grpTimeouts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinutesAfterCrash)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudMessageTimeout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudTimeout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudShortTimeout)).BeginInit();
@@ -75,6 +80,8 @@
             // 
             // grpBxKioskSales
             // 
+            this.grpBxKioskSales.Controls.Add(this.chkbxStabilize);
+            this.grpBxKioskSales.Controls.Add(this.chkbxAllowVoiding);
             this.grpBxKioskSales.Controls.Add(this.nudVideoVolume);
             this.grpBxKioskSales.Controls.Add(this.lblVideoVolume);
             this.grpBxKioskSales.Controls.Add(this.chkbxUseKeyClickSounds);
@@ -103,6 +110,20 @@
             resources.ApplyResources(this.grpBxKioskSales, "grpBxKioskSales");
             this.grpBxKioskSales.Name = "grpBxKioskSales";
             this.grpBxKioskSales.TabStop = false;
+            // 
+            // chkbxStabilize
+            // 
+            resources.ApplyResources(this.chkbxStabilize, "chkbxStabilize");
+            this.chkbxStabilize.Name = "chkbxStabilize";
+            this.chkbxStabilize.UseVisualStyleBackColor = true;
+            this.chkbxStabilize.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkbxAllowVoiding
+            // 
+            resources.ApplyResources(this.chkbxAllowVoiding, "chkbxAllowVoiding");
+            this.chkbxAllowVoiding.Name = "chkbxAllowVoiding";
+            this.chkbxAllowVoiding.UseVisualStyleBackColor = true;
+            this.chkbxAllowVoiding.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // nudVideoVolume
             // 
@@ -201,6 +222,7 @@
             // 
             // m_grpTimeouts
             // 
+            this.m_grpTimeouts.Controls.Add(this.nudMinutesAfterCrash);
             this.m_grpTimeouts.Controls.Add(this.chkbxPulseDefaultTimeoutButton);
             this.m_grpTimeouts.Controls.Add(this.label1);
             this.m_grpTimeouts.Controls.Add(this.m_lblTimeout);
@@ -209,9 +231,21 @@
             this.m_grpTimeouts.Controls.Add(this.m_messageTimeout);
             this.m_grpTimeouts.Controls.Add(this.m_nudShortTimeout);
             this.m_grpTimeouts.Controls.Add(this.m_lblShortInactivityTimeout);
+            this.m_grpTimeouts.Controls.Add(this.label2);
             resources.ApplyResources(this.m_grpTimeouts, "m_grpTimeouts");
             this.m_grpTimeouts.Name = "m_grpTimeouts";
             this.m_grpTimeouts.TabStop = false;
+            // 
+            // nudMinutesAfterCrash
+            // 
+            resources.ApplyResources(this.nudMinutesAfterCrash, "nudMinutesAfterCrash");
+            this.nudMinutesAfterCrash.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.nudMinutesAfterCrash.Name = "nudMinutesAfterCrash";
+            this.nudMinutesAfterCrash.ValueChanged += new System.EventHandler(this.OnModified);
             // 
             // chkbxPulseDefaultTimeoutButton
             // 
@@ -317,6 +351,11 @@
             resources.ApplyResources(this.m_lblShortInactivityTimeout, "m_lblShortInactivityTimeout");
             this.m_lblShortInactivityTimeout.Name = "m_lblShortInactivityTimeout";
             // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // m_closedText
             // 
             resources.ApplyResources(this.m_closedText, "m_closedText");
@@ -421,6 +460,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudVideoVolume)).EndInit();
             this.m_grpTimeouts.ResumeLayout(false);
             this.m_grpTimeouts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinutesAfterCrash)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudMessageTimeout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudTimeout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_nudShortTimeout)).EndInit();
@@ -466,5 +506,9 @@
         private System.Windows.Forms.Label lblVideoVolume;
         private System.Windows.Forms.CheckBox chkbxUseKeyClickSounds;
         private System.Windows.Forms.CheckBox chkbxPulseDefaultTimeoutButton;
+        private System.Windows.Forms.NumericUpDown nudMinutesAfterCrash;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkbxAllowVoiding;
+        private System.Windows.Forms.CheckBox chkbxStabilize;
     }
 }

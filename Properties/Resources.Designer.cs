@@ -61,16 +61,6 @@ namespace GTI.Modules.SystemSettings.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _256colour {
-            get {
-                object obj = ResourceManager.GetObject("256colour", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Allow all sales.
         /// </summary>
         internal static string AllowAllSales {
@@ -143,6 +133,16 @@ namespace GTI.Modules.SystemSettings.Properties {
         internal static System.Drawing.Bitmap BlueButtonUp {
             get {
                 object obj = ResourceManager.GetObject("BlueButtonUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ColorPalette256 {
+            get {
+                object obj = ResourceManager.GetObject("ColorPalette256", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

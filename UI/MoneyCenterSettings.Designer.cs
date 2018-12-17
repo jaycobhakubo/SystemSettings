@@ -57,9 +57,11 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkMasterBankUsePreviousClose = new System.Windows.Forms.CheckBox();
             this.chkUsePreviousBankClosingAmount = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.chkGetPlayerWithVerify = new System.Windows.Forms.CheckBox();
-            this.numPayoutSignatureLines = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblPayoutSignatureLinesCharactersLeft = new System.Windows.Forms.Label();
+            this.lblPayoutSignatureLinesCharactersLeftTitle = new System.Windows.Forms.Label();
+            this.txtPayoutSignatureLines = new System.Windows.Forms.TextBox();
+            this.chkGetPlayerWithVerify = new System.Windows.Forms.CheckBox();
             this.chkPrintWordValue = new System.Windows.Forms.CheckBox();
             this.chkPrintWinnersAddress = new System.Windows.Forms.CheckBox();
             this.chkForcePlayerOnPayouts = new System.Windows.Forms.CheckBox();
@@ -82,7 +84,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPayoutSignatureLines)).BeginInit();
             this.accrualGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_errorProvider)).BeginInit();
             this.SuspendLayout();
@@ -299,9 +300,11 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.chkGetPlayerWithVerify);
-            this.groupBox4.Controls.Add(this.numPayoutSignatureLines);
             this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.lblPayoutSignatureLinesCharactersLeft);
+            this.groupBox4.Controls.Add(this.lblPayoutSignatureLinesCharactersLeftTitle);
+            this.groupBox4.Controls.Add(this.txtPayoutSignatureLines);
+            this.groupBox4.Controls.Add(this.chkGetPlayerWithVerify);
             this.groupBox4.Controls.Add(this.chkPrintWordValue);
             this.groupBox4.Controls.Add(this.chkPrintWinnersAddress);
             this.groupBox4.Controls.Add(this.chkForcePlayerOnPayouts);
@@ -310,36 +313,39 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // lblPayoutSignatureLinesCharactersLeft
+            // 
+            this.lblPayoutSignatureLinesCharactersLeft.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lblPayoutSignatureLinesCharactersLeft, "lblPayoutSignatureLinesCharactersLeft");
+            this.lblPayoutSignatureLinesCharactersLeft.ForeColor = System.Drawing.Color.Black;
+            this.lblPayoutSignatureLinesCharactersLeft.Name = "lblPayoutSignatureLinesCharactersLeft";
+            // 
+            // lblPayoutSignatureLinesCharactersLeftTitle
+            // 
+            this.lblPayoutSignatureLinesCharactersLeftTitle.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lblPayoutSignatureLinesCharactersLeftTitle, "lblPayoutSignatureLinesCharactersLeftTitle");
+            this.lblPayoutSignatureLinesCharactersLeftTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblPayoutSignatureLinesCharactersLeftTitle.Name = "lblPayoutSignatureLinesCharactersLeftTitle";
+            // 
+            // txtPayoutSignatureLines
+            // 
+            this.txtPayoutSignatureLines.AcceptsReturn = true;
+            resources.ApplyResources(this.txtPayoutSignatureLines, "txtPayoutSignatureLines");
+            this.txtPayoutSignatureLines.Name = "txtPayoutSignatureLines";
+            this.txtPayoutSignatureLines.TextChanged += new System.EventHandler(this.txtPayoutSignatureLines_TextChanged);
+            this.txtPayoutSignatureLines.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPayoutSignatureLines_KeyDown);
+            this.txtPayoutSignatureLines.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPayoutSignatureLines_KeyPress);
+            // 
             // chkGetPlayerWithVerify
             // 
             resources.ApplyResources(this.chkGetPlayerWithVerify, "chkGetPlayerWithVerify");
             this.chkGetPlayerWithVerify.Name = "chkGetPlayerWithVerify";
             this.chkGetPlayerWithVerify.UseVisualStyleBackColor = true;
-            // 
-            // numPayoutSignatureLines
-            // 
-            resources.ApplyResources(this.numPayoutSignatureLines, "numPayoutSignatureLines");
-            this.numPayoutSignatureLines.Maximum = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.numPayoutSignatureLines.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numPayoutSignatureLines.Name = "numPayoutSignatureLines";
-            this.numPayoutSignatureLines.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
             // 
             // chkPrintWordValue
             // 
@@ -460,7 +466,6 @@ namespace GTI.Modules.SystemSettings.UI
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPayoutSignatureLines)).EndInit();
             this.accrualGroupBox.ResumeLayout(false);
             this.accrualGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_errorProvider)).EndInit();
@@ -507,10 +512,12 @@ namespace GTI.Modules.SystemSettings.UI
         private Controls.TextBoxNumeric textBoxMinPrizeWinAmount;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox chkPrintWordValue;
-        private System.Windows.Forms.NumericUpDown numPayoutSignatureLines;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numBankCloseSignatureLines;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox chkGetPlayerWithVerify;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblPayoutSignatureLinesCharactersLeft;
+        private System.Windows.Forms.Label lblPayoutSignatureLinesCharactersLeftTitle;
+        private System.Windows.Forms.TextBox txtPayoutSignatureLines;
 	}
 }

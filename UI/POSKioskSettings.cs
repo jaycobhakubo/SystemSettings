@@ -84,6 +84,30 @@ namespace GTI.Modules.SystemSettings.UI
                 saveFlag = true;
             }
 
+            tempString = Common.GetSystemSetting(Setting.AllowVoidingOfKioskSales);
+            
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkbxAllowVoiding.Checked = boolResult;
+            }
+            else
+            {
+                chkbxAllowVoiding.Checked = false;
+                saveFlag = true;
+            }
+
+            tempString = Common.GetSystemSetting(Setting.StabilizeCabinet);
+
+            if (bool.TryParse(tempString, out boolResult))
+            {
+                chkbxStabilize.Checked = boolResult;
+            }
+            else
+            {
+                chkbxStabilize.Checked = false;
+                saveFlag = true;
+            }
+
             tempString = Common.GetSystemSetting(Setting.AllowKiosksToPrintCBBPlayItSheetsFromReceiptScan);
 
             if (bool.TryParse(tempString, out boolResult))
@@ -124,6 +148,11 @@ namespace GTI.Modules.SystemSettings.UI
             result = 0;
             int.TryParse(tempString, out result);
             comboChangeMethod.SelectedIndex = result;
+
+            tempString = Common.GetSystemSetting(Setting.KioskCrashRecoveryNeedAttendantAfterNMinutes);
+            result = 0;
+            int.TryParse(tempString, out result);
+            nudMinutesAfterCrash.Value = result;
 
             tempString = Common.GetSystemSetting(Setting.KiosksCanOnlySellFromTheirButtons);
 
@@ -354,9 +383,17 @@ namespace GTI.Modules.SystemSettings.UI
             // Create a list of just these settings
             List<SettingValue> arrSettings = new List<SettingValue>();
             SettingValue setting = new SettingValue();
+
+            setting.Id = (int)Setting.StabilizeCabinet;
+            setting.Value = chkbxStabilize.Checked.ToString();
+            arrSettings.Add(setting);
             
             setting.Id = (int)Setting.AutomaticallyApplyCouponsToSalesOnSimpleKiosks;
             setting.Value = chkbxAutomaticApplyCouponToSales.Checked.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.AllowVoidingOfKioskSales;
+            setting.Value = chkbxAllowVoiding.Checked.ToString();
             arrSettings.Add(setting);
 
             setting.Id = (int)Setting.KioskChangeDispensingMethod;
@@ -373,6 +410,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             setting.Id = (int)Setting.KioskVideoVolume;
             setting.Value = nudVideoVolume.Value.ToString();
+            arrSettings.Add(setting);
+
+            setting.Id = (int)Setting.KioskCrashRecoveryNeedAttendantAfterNMinutes;
+            setting.Value = nudMinutesAfterCrash.Value.ToString();
             arrSettings.Add(setting);
 
             setting.Id = (int)Setting.KiosksCanOnlySellFromTheirButtons;

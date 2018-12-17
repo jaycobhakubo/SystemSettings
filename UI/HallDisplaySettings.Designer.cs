@@ -28,8 +28,8 @@ namespace GTI.Modules.SystemSettings.UI
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HallDisplaySettings));
             System.Windows.Forms.Label winnerPollIntervalLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HallDisplaySettings));
             System.Windows.Forms.Label prevWinnerDisplayIntervalLabel;
             System.Windows.Forms.Label prevWinnerDisplayTimeLabel;
             this.grpSceneInfo = new System.Windows.Forms.GroupBox();
@@ -62,6 +62,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.rdChangeBGColor = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.btnSave = new GTI.Controls.ImageButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cboThemes = new System.Windows.Forms.ComboBox();
             winnerPollIntervalLabel = new System.Windows.Forms.Label();
             prevWinnerDisplayIntervalLabel = new System.Windows.Forms.Label();
             prevWinnerDisplayTimeLabel = new System.Windows.Forms.Label();
@@ -76,6 +78,24 @@ namespace GTI.Modules.SystemSettings.UI
             ((System.ComponentModel.ISupportInitialize)(this.numMinBallCallTime)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // winnerPollIntervalLabel
+            // 
+            resources.ApplyResources(winnerPollIntervalLabel, "winnerPollIntervalLabel");
+            winnerPollIntervalLabel.BackColor = System.Drawing.Color.Transparent;
+            winnerPollIntervalLabel.Name = "winnerPollIntervalLabel";
+            // 
+            // prevWinnerDisplayIntervalLabel
+            // 
+            resources.ApplyResources(prevWinnerDisplayIntervalLabel, "prevWinnerDisplayIntervalLabel");
+            prevWinnerDisplayIntervalLabel.BackColor = System.Drawing.Color.Transparent;
+            prevWinnerDisplayIntervalLabel.Name = "prevWinnerDisplayIntervalLabel";
+            // 
+            // prevWinnerDisplayTimeLabel
+            // 
+            resources.ApplyResources(prevWinnerDisplayTimeLabel, "prevWinnerDisplayTimeLabel");
+            prevWinnerDisplayTimeLabel.BackColor = System.Drawing.Color.Transparent;
+            prevWinnerDisplayTimeLabel.Name = "prevWinnerDisplayTimeLabel";
             // 
             // grpSceneInfo
             // 
@@ -129,27 +149,11 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             this.btnReset.Leave += new System.EventHandler(this.btnReset_Leave);
             // 
-            // winnerPollIntervalLabel
-            // 
-            resources.ApplyResources(winnerPollIntervalLabel, "winnerPollIntervalLabel");
-            winnerPollIntervalLabel.BackColor = System.Drawing.Color.Transparent;
-            winnerPollIntervalLabel.Name = "winnerPollIntervalLabel";
-            // 
-            // prevWinnerDisplayIntervalLabel
-            // 
-            resources.ApplyResources(prevWinnerDisplayIntervalLabel, "prevWinnerDisplayIntervalLabel");
-            prevWinnerDisplayIntervalLabel.BackColor = System.Drawing.Color.Transparent;
-            prevWinnerDisplayIntervalLabel.Name = "prevWinnerDisplayIntervalLabel";
-            // 
-            // prevWinnerDisplayTimeLabel
-            // 
-            resources.ApplyResources(prevWinnerDisplayTimeLabel, "prevWinnerDisplayTimeLabel");
-            prevWinnerDisplayTimeLabel.BackColor = System.Drawing.Color.Transparent;
-            prevWinnerDisplayTimeLabel.Name = "prevWinnerDisplayTimeLabel";
-            // 
             // winnerSettingsGroupBox
             // 
             this.winnerSettingsGroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.winnerSettingsGroupBox.Controls.Add(this.cboThemes);
+            this.winnerSettingsGroupBox.Controls.Add(this.label8);
             this.winnerSettingsGroupBox.Controls.Add(this.chkShowPayoutAmount);
             this.winnerSettingsGroupBox.Controls.Add(this.label5);
             this.winnerSettingsGroupBox.Controls.Add(this.cboCameraChannel);
@@ -338,6 +342,21 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // cboThemes
+            // 
+            resources.ApplyResources(this.cboThemes, "cboThemes");
+            this.cboThemes.FormattingEnabled = true;
+            this.cboThemes.Items.AddRange(new object[] {
+            resources.GetString("cboThemes.Items"),
+            resources.GetString("cboThemes.Items1"),
+            resources.GetString("cboThemes.Items2")});
+            this.cboThemes.Name = "cboThemes";
+            // 
             // HallDisplaySettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -399,5 +418,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.RadioButton rdCycleMode;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numMinColorCircleTime;
+        private System.Windows.Forms.ComboBox cboThemes;
+        private System.Windows.Forms.Label label8;
 	}
 }

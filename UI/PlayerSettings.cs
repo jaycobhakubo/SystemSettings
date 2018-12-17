@@ -52,13 +52,13 @@ namespace GTI.Modules.SystemSettings.UI
                 /*Player PIN..*/
                 label7.Visible = false; txtPlayerPINLength.Visible = false;
 
-                chkCacheSettings.Location = new System.Drawing.Point(394, 76);
+                chkCacheSettings.Location = new System.Drawing.Point(388, 76);
                 label6.Location = new System.Drawing.Point(21, 373);
                 txtWirelessNetworkConnectionLossThreshold.Location = new System.Drawing.Point(405, 373);
                 label5.Location = new System.Drawing.Point(506, 374);
                 
-                chkDisplayProgressives.Location = new System.Drawing.Point(394, 44);
-                chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(394, 141);
+                chkDisplayProgressives.Location = new System.Drawing.Point(388, 44);
+                chkBoxResetRadioOnWifiInterruptions.Location = new System.Drawing.Point(388, 141);
                 lblCrateRebootThreshold.Location = new System.Drawing.Point(21, 407);
                 txtRebootTimeThreshold.Location = new System.Drawing.Point(405, 407);
                 lblCrateRebootThresholdSeconds.Location = new System.Drawing.Point(506, 407);
@@ -187,13 +187,16 @@ namespace GTI.Modules.SystemSettings.UI
         // Private Routines
         #region Private Routines
 
-        private bool SetValueToDefault()
+        private bool SetUIValuesToDefaults()
         {
             SettingValue tempSettingValue;            //END RALLY DE 9171 // Fill in the operator global settings   
             string settingValue = "";
 
             Common.GetOpSettingValue(Setting.VIPRequiresPIN, out tempSettingValue);
             chkPlayerPIN.Checked = Common.ParseBool(tempSettingValue.Value);  //RALLY DE9427
+
+            Common.GetOpSettingValue(Setting.ShowBonanzaButtonOnPlayerUnit, out tempSettingValue);
+            chkBonanzaButton.Checked = Common.ParseBool(tempSettingValue.Value);
 
             Common.GetOpSettingValue(Setting.PlayWinAnimationDuration, out tempSettingValue);
             txtPlayWinAnimationDuration.Text = tempSettingValue.Value.ToString();
@@ -352,109 +355,95 @@ namespace GTI.Modules.SystemSettings.UI
             return true;
         }
 
-        private bool SetUIValue()
+        private bool SetUIValues()
         {
             string settingValue = "";
             SettingValue tempSettingValue;            //END RALLY DE 9171 // Fill in the operator global settings   
 
-
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.VIPRequiresPIN, out tempSettingValue))
-            {
-                Common.GetOpSettingValue(Setting.VIPRequiresPIN, out tempSettingValue);
-                return false;
-            }
+                return false; //if this setting was never saved, we only have the defaults
+
             chkPlayerPIN.Checked = Common.ParseBool(tempSettingValue.Value);  //RALLY DE9427
+
+            if (!DeviceSettingmsg.TryGetSettingValue(Setting.ShowBonanzaButtonOnPlayerUnit, out tempSettingValue))
+                Common.GetOpSettingValue(Setting.ShowBonanzaButtonOnPlayerUnit, out tempSettingValue);
+
+            chkBonanzaButton.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //PlayWinAnimation
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayWinAnimationDuration, out tempSettingValue))
-            {
                 Common.GetOpSettingValue(Setting.PlayWinAnimationDuration, out tempSettingValue);
-            }
+
             txtPlayWinAnimationDuration.Text = tempSettingValue.Value.ToString();
 
             //EnablePeekMode
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.EnablePeekMode, out tempSettingValue))            //Rally US1998
-            {
                 Common.GetOpSettingValue(Setting.EnablePeekMode, out tempSettingValue);
-            }
+            
             chkPeekMode.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //WiredNetworkLossThreshold
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.WiredNetworkLossThreshold, out tempSettingValue))            //Rally US1998
-            {
                 settingValue = Common.GetSystemSetting(Setting.WiredNetworkLossThreshold);    //START RALLY TA 9171 loss threshold settings
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+            
             txtWiredNetworkConnectionLossThreshold.Text = settingValue;
 
             //WirelessNetworkLossThreshold
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.WirelessNetworkLossThreshold, out tempSettingValue))            //Rally US1998
-            {
                 settingValue = Common.GetSystemSetting(Setting.WirelessNetworkLossThreshold);
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+
             txtWirelessNetworkConnectionLossThreshold.Text = settingValue;
-
-
+            
             //END RALLY TA 9171
             //Enable Auto Mode Butoton
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.EnableAutoModeButton, out tempSettingValue))            //Rally US1998
-            {
                 Common.GetOpSettingValue(Setting.EnableAutoModeButton, out tempSettingValue);
-            }
+
             chkAutoModeOn.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //Enable Lock Screen
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.EnableLockScreenButton, out tempSettingValue))            //Rally US1998
-            {
                 Common.GetOpSettingValue(Setting.EnableLockScreenButton, out tempSettingValue);
-            }
+
             chkLockScreenOn.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //US4010  
             //Display Verified Card
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.DisplayVerifiedCard, out tempSettingValue))            //Rally US1998
-            {
                 Common.GetOpSettingValue(Setting.DisplayVerifiedCard, out tempSettingValue);
-            }
+
             chkDisplayVerifiedCard.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //US4010 
             //Display Fun Game
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.DisplayFunGamesOnLogin, out tempSettingValue))            //Rally US1998
-            {
                 Common.GetOpSettingValue(Setting.DisplayFunGamesOnLogin, out tempSettingValue);
-            }
+
             chkDisplayFunGamesOnLogin.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //US4538
             //Pattern Shading Enabled
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PatternShadingEnabled, out tempSettingValue))            //Rally US1998
-            {
                 Common.GetOpSettingValue(Setting.PatternShadingEnabled, out tempSettingValue);
-            }
+
             chkBingoPatternShading.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //US3860
             //TVWithout Purchase
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.TVWithoutPurchase, out tempSettingValue))            //Rally US1998
-            {
                 Common.GetOpSettingValue(Setting.TVWithoutPurchase, out tempSettingValue);
-            }
+
             chkTVwoPurchase.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //US4716
             //Clear winner sceen
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.ClearWinnersScreen, out tempSettingValue))            //Rally US1998
-            {
                 Common.GetOpSettingValue(Setting.ClearWinnersScreen, out tempSettingValue);
-            }
+
             chkClearWinnersScreen.Checked = Common.ParseBool(tempSettingValue.Value);
 
             //US4611
@@ -473,28 +462,23 @@ namespace GTI.Modules.SystemSettings.UI
             if (msg.funGamesAllowed == true)
             {
                 if (!DeviceSettingmsg.TryGetSettingValue(Setting.AllowFunMultiplayerGames, out tempSettingValue))            //Rally US1998
-                {
                     Common.GetOpSettingValue(Setting.AllowFunMultiplayerGames, out tempSettingValue);
-                }
+
                 chkEnableMultiplayerOnFunGames.Checked = Common.ParseBool(tempSettingValue.Value);
             }
-
             else
+            {
                 chkEnableMultiplayerOnFunGames.Enabled = false;
+            }
 
             // US4526
             //Player Pin Length        
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayerPinLength, out tempSettingValue))
-            {
                 settingValue = Common.GetSystemSetting(Setting.PlayerPinLength);
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+
             txtPlayerPINLength.Text = settingValue;
-
-
 
             //US4187 
             if (bool.Parse(Common.GetLicenseSettingValue(LicenseSetting.NDSalesMode)))
@@ -512,14 +496,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             //US4539
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.LogoutPacksOnSessionEnd, out tempSettingValue))
-            {
                 settingValue = Common.GetSystemSetting(Setting.LogoutPacksOnSessionEnd);
-
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+
             try
             {
                 chkLogoutPackSessionClose.Checked = ParseBool(settingValue);
@@ -531,13 +511,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             //US5123
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.DisplayProgressiveOnPlayerUnit, out tempSettingValue))
-            {
                 settingValue = Common.GetSystemSetting(Setting.DisplayProgressiveOnPlayerUnit);
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+
             try
             {
                 chkDisplayProgressives.Checked = ParseBool(settingValue);
@@ -549,13 +526,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             //US5137
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayerUnitRoverPackOnReboot, out tempSettingValue))
-            {
                 settingValue = Common.GetSystemSetting(Setting.PlayerUnitRoverPackOnReboot);
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+
             try
             {
                 chkRecoverOnReboot.Checked = ParseBool(settingValue);
@@ -567,13 +541,10 @@ namespace GTI.Modules.SystemSettings.UI
 
             //US5139
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayerUnitsCacheSettings, out tempSettingValue))
-            {
                 settingValue = Common.GetSystemSetting(Setting.PlayerUnitsCacheSettings);
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+
             try
             {
                 chkCacheSettings.Checked = ParseBool(settingValue);
@@ -585,25 +556,19 @@ namespace GTI.Modules.SystemSettings.UI
 
             //US5171
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.PlayerPinLength, out tempSettingValue))
-            {
                 settingValue = Common.GetSystemSetting(Setting.PlayerPinLength);
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+
             txtRebootTimeThreshold.Text = settingValue;
 
             //5175
             //US5139
             if (!DeviceSettingmsg.TryGetSettingValue(Setting.ResetTedeRadioOnWifiInterruptions, out tempSettingValue))
-            {
                 settingValue = Common.GetSystemSetting(Setting.ResetTedeRadioOnWifiInterruptions);
-            }
             else
-            {
                 settingValue = tempSettingValue.Value;
-            }
+
             try
             {
                 chkBoxResetRadioOnWifiInterruptions.Checked = ParseBool(settingValue);
@@ -622,6 +587,7 @@ namespace GTI.Modules.SystemSettings.UI
 
                 chkBoxResetRadioOnWifiInterruptions.Visible = false;
             }
+            
             // Set the flag
             m_bModified = false;
             return true;
@@ -634,18 +600,15 @@ namespace GTI.Modules.SystemSettings.UI
                 DeviceSettingmsg = new GetDeviceSettingsMessage(DeviceId, 0);  //Get the device setting if set if not then get the operator settings.
                 DeviceSettingmsg.Send();
 
-                var tResult = SetUIValue();
+                var tResult = SetUIValues();
 
                 if (DeviceSettingmsg.DeviceSettingList.Length == 0 || tResult == false)//if zero then default is set
                 {
                     if (chkbxUseDefault.Checked != true)
-                    {
                         chkbxUseDefault.Checked = true;
-                    }
                     else
-                    {
-                        SetValueToDefault();
-                    }
+                        SetUIValuesToDefaults();
+
                     m_isDefault = true;
                 }
                 else
@@ -657,8 +620,11 @@ namespace GTI.Modules.SystemSettings.UI
             }
             else
             {
-                SetValueToDefault();
-                if (chkbxUseDefault.Checked != false) { chkbxUseDefault.Checked = false; }
+                SetUIValuesToDefaults();
+
+                if (chkbxUseDefault.Checked)
+                    chkbxUseDefault.Checked = false; 
+
                 chkbxUseDefault.Visible = false;
             }
 
@@ -673,9 +639,7 @@ namespace GTI.Modules.SystemSettings.UI
             SettingValue s = new SettingValue();
 
             if (m_isDefault != chkbxUseDefault.Checked)
-            {
                 m_isDefault = chkbxUseDefault.Checked;
-            }
 
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
@@ -690,12 +654,17 @@ namespace GTI.Modules.SystemSettings.UI
                 Common.SetOpSettingValue(Setting.AllowFunMultiplayerGames, chkEnableMultiplayerOnFunGames.Checked.ToString()); //US4611
                 Common.SetOpSettingValue(Setting.TVWithoutPurchase, chkTVwoPurchase.Checked.ToString()); //US3860
                 Common.SetOpSettingValue(Setting.ClearWinnersScreen, chkClearWinnersScreen.Checked.ToString()); //US4716
+                Common.SetOpSettingValue(Setting.ShowBonanzaButtonOnPlayerUnit, chkBonanzaButton.Checked.ToString());
                 //START RALLY TA 9171 loss threshold setting values
             }
 
 
             s.Id = (int)Setting.VIPRequiresPIN;
             s.Value = chkPlayerPIN.Checked.ToString();
+            arrSettings.Add(s);
+
+            s.Id = (int)Setting.ShowBonanzaButtonOnPlayerUnit;
+            s.Value = chkBonanzaButton.Checked.ToString();
             arrSettings.Add(s);
 
             s.Id = (int)Setting.PlayWinAnimationDuration;
@@ -911,12 +880,12 @@ namespace GTI.Modules.SystemSettings.UI
             if (chkbxUseDefault.Checked == true || DeviceId == 0)
             {
                 groupUnitSettings.Enabled = false;
-                SetValueToDefault();
+                SetUIValuesToDefaults();
             }
             else
             {
                 groupUnitSettings.Enabled = true;
-                SetUIValue();
+                SetUIValues();
             }
 
             if (chkbxUseDefault.Checked != m_isDefault)

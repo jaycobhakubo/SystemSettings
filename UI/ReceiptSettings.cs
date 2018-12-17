@@ -90,6 +90,9 @@ namespace GTI.Modules.SystemSettings.UI
             Common.GetOpSettingValue(Setting.PrintIncompleteTransactionReceipt, out tempSettingValue);
             chkPrintIncompleteTransactionReceipts.Checked = Common.ParseBool(tempSettingValue.Value);
 
+            Common.GetOpSettingValue(Setting.PrintPlayerID, out tempSettingValue);
+            chkPrintPlayerID.Checked = Common.ParseBool(tempSettingValue.Value);
+
             Common.GetOpSettingValue(Setting.IncompleteTransactionReceiptText1, out tempSettingValue);
             txtIncompleteSale1.Text = tempSettingValue.Value;
 
@@ -296,6 +299,8 @@ namespace GTI.Modules.SystemSettings.UI
 			// Update the operator global settings
 
             Common.SetOpSettingValue(Setting.PrintPointInfo, chkPrintPointInfo.Checked.ToString());
+
+            Common.SetOpSettingValue(Setting.PrintPlayerID, chkPrintPlayerID.Checked.ToString());
 
             Common.SetOpSettingValue(Setting.PrintIncompleteTransactionReceipt, chkPrintIncompleteTransactionReceipts.Checked.ToString());
 

@@ -45,11 +45,13 @@ namespace GTI.Modules.SystemSettings.UI
             this.tbBlowerAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.chkEnableBlower = new System.Windows.Forms.CheckBox();
-            this.lblGameStateBroadcastDelayMs = new System.Windows.Forms.Label();
-            this.chkPlayCooldownTimerSound = new System.Windows.Forms.CheckBox();
             this.grpCaller = new System.Windows.Forms.GroupBox();
-            this.chkEnableRNGBallCalls = new System.Windows.Forms.CheckBox();
+            this.chkPrintWinnerReceiptForVerifiedPaper = new System.Windows.Forms.CheckBox();
             this.lbl_sec = new System.Windows.Forms.Label();
+            this.chkDisplayHotBall = new System.Windows.Forms.CheckBox();
+            this.chkPlayCooldownTimerSound = new System.Windows.Forms.CheckBox();
+            this.chkEnableRNGBallCalls = new System.Windows.Forms.CheckBox();
+            this.lblGameStateBroadcastDelayMs = new System.Windows.Forms.Label();
             this.grpFlashboard = new System.Windows.Forms.GroupBox();
             this.chkEnableLedFB = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -166,22 +168,13 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkEnableBlower.UseVisualStyleBackColor = true;
             this.chkEnableBlower.CheckedChanged += new System.EventHandler(this.chkEnableBlower_CheckedChanged);
             // 
-            // lblGameStateBroadcastDelayMs
-            // 
-            resources.ApplyResources(this.lblGameStateBroadcastDelayMs, "lblGameStateBroadcastDelayMs");
-            this.lblGameStateBroadcastDelayMs.Name = "lblGameStateBroadcastDelayMs";
-            // 
-            // chkPlayCooldownTimerSound
-            // 
-            resources.ApplyResources(this.chkPlayCooldownTimerSound, "chkPlayCooldownTimerSound");
-            this.chkPlayCooldownTimerSound.Name = "chkPlayCooldownTimerSound";
-            this.chkPlayCooldownTimerSound.UseVisualStyleBackColor = true;
-            // 
             // grpCaller
             // 
+            this.grpCaller.Controls.Add(this.chkPrintWinnerReceiptForVerifiedPaper);
+            this.grpCaller.Controls.Add(this.lbl_sec);
+            this.grpCaller.Controls.Add(this.chkDisplayHotBall);
             this.grpCaller.Controls.Add(this.chkPlayCooldownTimerSound);
             this.grpCaller.Controls.Add(this.chkEnableRNGBallCalls);
-            this.grpCaller.Controls.Add(this.lbl_sec);
             this.grpCaller.Controls.Add(this.lblGameStateBroadcastDelayMs);
             this.grpCaller.Controls.Add(this.grpFlashboard);
             this.grpCaller.Controls.Add(this.numGameStateBroadcastDelay);
@@ -202,6 +195,31 @@ namespace GTI.Modules.SystemSettings.UI
             this.grpCaller.Name = "grpCaller";
             this.grpCaller.TabStop = false;
             // 
+            // chkPrintWinnerReceiptForVerifiedPaper
+            // 
+            resources.ApplyResources(this.chkPrintWinnerReceiptForVerifiedPaper, "chkPrintWinnerReceiptForVerifiedPaper");
+            this.chkPrintWinnerReceiptForVerifiedPaper.Name = "chkPrintWinnerReceiptForVerifiedPaper";
+            this.chkPrintWinnerReceiptForVerifiedPaper.UseVisualStyleBackColor = true;
+            this.chkPrintWinnerReceiptForVerifiedPaper.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // lbl_sec
+            // 
+            resources.ApplyResources(this.lbl_sec, "lbl_sec");
+            this.lbl_sec.Name = "lbl_sec";
+            // 
+            // chkDisplayHotBall
+            // 
+            resources.ApplyResources(this.chkDisplayHotBall, "chkDisplayHotBall");
+            this.chkDisplayHotBall.Name = "chkDisplayHotBall";
+            this.chkDisplayHotBall.UseVisualStyleBackColor = true;
+            this.chkDisplayHotBall.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkPlayCooldownTimerSound
+            // 
+            resources.ApplyResources(this.chkPlayCooldownTimerSound, "chkPlayCooldownTimerSound");
+            this.chkPlayCooldownTimerSound.Name = "chkPlayCooldownTimerSound";
+            this.chkPlayCooldownTimerSound.UseVisualStyleBackColor = true;
+            // 
             // chkEnableRNGBallCalls
             // 
             resources.ApplyResources(this.chkEnableRNGBallCalls, "chkEnableRNGBallCalls");
@@ -209,10 +227,10 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkEnableRNGBallCalls.UseVisualStyleBackColor = true;
             this.chkEnableRNGBallCalls.CheckedChanged += new System.EventHandler(this.chkEnableRNGBallCalls_CheckedChanged);
             // 
-            // lbl_sec
+            // lblGameStateBroadcastDelayMs
             // 
-            resources.ApplyResources(this.lbl_sec, "lbl_sec");
-            this.lbl_sec.Name = "lbl_sec";
+            resources.ApplyResources(this.lblGameStateBroadcastDelayMs, "lblGameStateBroadcastDelayMs");
+            this.lblGameStateBroadcastDelayMs.Name = "lblGameStateBroadcastDelayMs";
             // 
             // grpFlashboard
             // 
@@ -531,5 +549,7 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.Label lblGameStateBroadcastDelay;
         private System.Windows.Forms.CheckBox chkEnableRNGBallCalls;
         private System.Windows.Forms.CheckBox chkPlayCooldownTimerSound;
+        private System.Windows.Forms.CheckBox chkDisplayHotBall;
+        private System.Windows.Forms.CheckBox chkPrintWinnerReceiptForVerifiedPaper;
 	}
 }

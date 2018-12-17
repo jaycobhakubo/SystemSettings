@@ -33,6 +33,8 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnReset = new GTI.Controls.ImageButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkExtraDamagedPaperConfirmation = new System.Windows.Forms.CheckBox();
+            this.chkAutoDiscountTextOnReceipt = new System.Windows.Forms.CheckBox();
             this.chkForceVoidAuth = new System.Windows.Forms.CheckBox();
             this.chkShowFree = new System.Windows.Forms.CheckBox();
             this.chkScanningStartsNewSale = new System.Windows.Forms.CheckBox();
@@ -77,6 +79,7 @@ namespace GTI.Modules.SystemSettings.UI
             this.chkbxAutoIssue = new System.Windows.Forms.CheckBox();
             this.chkLongDescriptions = new System.Windows.Forms.CheckBox();
             this.btnSave = new GTI.Controls.ImageButton();
+            this.chkAllowSalesToBannedPlayers = new System.Windows.Forms.CheckBox();
             salesTaxLabel = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -114,6 +117,9 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.chkAllowSalesToBannedPlayers);
+            this.panel1.Controls.Add(this.chkExtraDamagedPaperConfirmation);
+            this.panel1.Controls.Add(this.chkAutoDiscountTextOnReceipt);
             this.panel1.Controls.Add(this.chkForceVoidAuth);
             this.panel1.Controls.Add(this.chkShowFree);
             this.panel1.Controls.Add(this.chkScanningStartsNewSale);
@@ -160,6 +166,20 @@ namespace GTI.Modules.SystemSettings.UI
             this.panel1.Controls.Add(this.chkLongDescriptions);
             this.panel1.Name = "panel1";
             this.panel1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.panel1_Scroll);
+            // 
+            // chkExtraDamagedPaperConfirmation
+            // 
+            resources.ApplyResources(this.chkExtraDamagedPaperConfirmation, "chkExtraDamagedPaperConfirmation");
+            this.chkExtraDamagedPaperConfirmation.Name = "chkExtraDamagedPaperConfirmation";
+            this.chkExtraDamagedPaperConfirmation.UseVisualStyleBackColor = true;
+            this.chkExtraDamagedPaperConfirmation.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
+            // chkAutoDiscountTextOnReceipt
+            // 
+            resources.ApplyResources(this.chkAutoDiscountTextOnReceipt, "chkAutoDiscountTextOnReceipt");
+            this.chkAutoDiscountTextOnReceipt.Name = "chkAutoDiscountTextOnReceipt";
+            this.chkAutoDiscountTextOnReceipt.UseVisualStyleBackColor = true;
+            this.chkAutoDiscountTextOnReceipt.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkForceVoidAuth
             // 
@@ -488,6 +508,13 @@ namespace GTI.Modules.SystemSettings.UI
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // chkAllowSalesToBannedPlayers
+            // 
+            resources.ApplyResources(this.chkAllowSalesToBannedPlayers, "chkAllowSalesToBannedPlayers");
+            this.chkAllowSalesToBannedPlayers.Name = "chkAllowSalesToBannedPlayers";
+            this.chkAllowSalesToBannedPlayers.UseVisualStyleBackColor = true;
+            this.chkAllowSalesToBannedPlayers.CheckedChanged += new System.EventHandler(this.OnModified);
+            // 
             // POSSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -555,5 +582,8 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkScanningStartsNewSale;
         private System.Windows.Forms.CheckBox chkForceVoidAuth;
         private System.Windows.Forms.CheckBox chkShowFree;
+        private System.Windows.Forms.CheckBox chkAutoDiscountTextOnReceipt;
+        private System.Windows.Forms.CheckBox chkExtraDamagedPaperConfirmation;
+        private System.Windows.Forms.CheckBox chkAllowSalesToBannedPlayers;
 	}
 }

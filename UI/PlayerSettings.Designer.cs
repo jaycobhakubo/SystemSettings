@@ -31,6 +31,7 @@ namespace GTI.Modules.SystemSettings.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerSettings));
             this.chkbxUseDefault = new System.Windows.Forms.CheckBox();
             this.groupUnitSettings = new System.Windows.Forms.GroupBox();
+            this.chkBonanzaButton = new System.Windows.Forms.CheckBox();
             this.chkBoxResetRadioOnWifiInterruptions = new System.Windows.Forms.CheckBox();
             this.lblCrateRebootThresholdSeconds = new System.Windows.Forms.Label();
             this.lblCrateRebootThreshold = new System.Windows.Forms.Label();
@@ -76,6 +77,7 @@ namespace GTI.Modules.SystemSettings.UI
             // groupUnitSettings
             // 
             this.groupUnitSettings.BackColor = System.Drawing.Color.Transparent;
+            this.groupUnitSettings.Controls.Add(this.chkBonanzaButton);
             this.groupUnitSettings.Controls.Add(this.chkBoxResetRadioOnWifiInterruptions);
             this.groupUnitSettings.Controls.Add(this.lblCrateRebootThresholdSeconds);
             this.groupUnitSettings.Controls.Add(this.lblCrateRebootThreshold);
@@ -108,6 +110,13 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupUnitSettings, "groupUnitSettings");
             this.groupUnitSettings.Name = "groupUnitSettings";
             this.groupUnitSettings.TabStop = false;
+            // 
+            // chkBonanzaButton
+            // 
+            resources.ApplyResources(this.chkBonanzaButton, "chkBonanzaButton");
+            this.chkBonanzaButton.Name = "chkBonanzaButton";
+            this.chkBonanzaButton.UseVisualStyleBackColor = true;
+            this.chkBonanzaButton.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // chkBoxResetRadioOnWifiInterruptions
             // 
@@ -370,5 +379,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.TextBox txtRebootTimeThreshold;
         private System.Windows.Forms.CheckBox chkBoxResetRadioOnWifiInterruptions;
         private System.Windows.Forms.CheckBox chkbxUseDefault;
+        private System.Windows.Forms.CheckBox chkBonanzaButton;
     }
 }

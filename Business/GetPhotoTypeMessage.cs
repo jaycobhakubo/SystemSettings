@@ -96,8 +96,11 @@ namespace GTI.Modules.SystemSettings.Business
                         //Get Motif Name Length
                         shtLength = responseReader.ReadUInt16();
                         ptItem.PhotoTypeDesc = new string(responseReader.ReadChars(shtLength));
-                        
-                        listPhotoTypes.Add(ptItem);
+
+                        if (ptItem.PhotoTypeID != 13)//Exclude tier icon
+                        {
+                            listPhotoTypes.Add(ptItem);
+                        }
                     }
                 }
                 catch (EndOfStreamException e)

@@ -39,6 +39,7 @@ namespace GTI.Modules.SystemSettings.UI
             System.Windows.Forms.Label receiptLine2Label;
             System.Windows.Forms.Label receiptLine3Label;
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkPrintPlayerID = new System.Windows.Forms.CheckBox();
             this.m_cboClosedSessionVoidMode = new System.Windows.Forms.ComboBox();
             this.lblVoidMode = new System.Windows.Forms.Label();
             this.chkPrintIncompleteTransactionReceipts = new System.Windows.Forms.CheckBox();
@@ -151,6 +152,7 @@ namespace GTI.Modules.SystemSettings.UI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkPrintPlayerID);
             this.groupBox1.Controls.Add(this.m_cboClosedSessionVoidMode);
             this.groupBox1.Controls.Add(this.lblVoidMode);
             this.groupBox1.Controls.Add(this.chkPrintIncompleteTransactionReceipts);
@@ -181,6 +183,13 @@ namespace GTI.Modules.SystemSettings.UI
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // chkPrintPlayerID
+            // 
+            resources.ApplyResources(this.chkPrintPlayerID, "chkPrintPlayerID");
+            this.chkPrintPlayerID.Name = "chkPrintPlayerID";
+            this.chkPrintPlayerID.UseVisualStyleBackColor = true;
+            this.chkPrintPlayerID.CheckedChanged += new System.EventHandler(this.OnModified);
             // 
             // m_cboClosedSessionVoidMode
             // 
@@ -620,5 +629,6 @@ namespace GTI.Modules.SystemSettings.UI
         private System.Windows.Forms.CheckBox chkPrintIncompleteTransactionReceipts;
         private System.Windows.Forms.ComboBox m_cboClosedSessionVoidMode;
         private System.Windows.Forms.Label lblVoidMode;
+        private System.Windows.Forms.CheckBox chkPrintPlayerID;
 	}
 }
