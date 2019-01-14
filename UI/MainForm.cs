@@ -37,7 +37,7 @@ namespace GTI.Modules.SystemSettings.UI
 
             Application.DoEvents();
 
-            kioskAdvanced2.SetKoiskSettings2Controller(this.GetCurrentOperator, this.SetCurrentOperator);
+            kioskAdvanced2.SetKoiskSettings2Controller(this.GetCurrentOperator, this.SetCurrentOperator);//knc_d
             licenseFileSettings1.SetLicenseFileSettingsController();
             
             //if it is the admin
@@ -896,12 +896,12 @@ namespace GTI.Modules.SystemSettings.UI
             set { m_currentOperator = value;}
 	    }
 
-	    public int GetCurrentOperator()
+	    public int GetCurrentOperator()//knc
         {
 	        return CurrentOperator;
         }
 
-        public void SetCurrentOperator(int operatorId)
+        public void SetCurrentOperator(int operatorId)//knc
         {
             CurrentOperator = operatorId;
             //todo this is a bad bad call it means something broke handle it

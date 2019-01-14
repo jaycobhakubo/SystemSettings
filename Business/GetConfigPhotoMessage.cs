@@ -61,7 +61,7 @@ namespace GTI.Modules.SystemSettings.Business
 
         protected override void UnpackResponse()
         {
-            int intPhotoFieldLength;
+            int intPhotoFieldLength;//knc_d
 
             try
             {
@@ -94,25 +94,21 @@ namespace GTI.Modules.SystemSettings.Business
                 MemoryStream responseStream = new MemoryStream(mbytResponse);
                 BinaryReader responseReader = new BinaryReader(responseStream, Encoding.Unicode);
 
+                responseReader.BaseStream.Seek(sizeof(int), SeekOrigin.Begin);
+
+                // Try to unpack the data.
                 try
                 {
-
-                    responseReader.BaseStream.Seek(sizeof(int), SeekOrigin.Begin);
-                    ushort _count = responseReader.ReadUInt16();
-
-                    for (ushort x = 0; x < _count; x++ )
+                    //Get Photo Field Length
+                    intPhotoFieldLength = responseReader.ReadInt32();
+                    if (intPhotoFieldLength > 0)
                     {
-                        //Get Photo Field Length
-                        intPhotoFieldLength = responseReader.ReadInt32();
-                        if (intPhotoFieldLength > 0)
-                        {
-                            ImageData = responseReader.ReadBytes(intPhotoFieldLength);
-                        }
-                        else
-                        {
-                            ImageData = null;
-                        }
-                    }                    
+                        ImageData = responseReader.ReadBytes(intPhotoFieldLength);
+                    }
+                    else
+                    {
+                        ImageData = null;
+                    }
                 }
                 catch (EndOfStreamException e)
                 {

@@ -190,7 +190,7 @@ namespace GTI.Modules.SystemSettings.UI
             SetCurrentOperator setOperatorMessage = null;
             try
             {
-                int operatorId = m_getCurrentOperator.Invoke();
+                int operatorId = m_getCurrentOperator.Invoke();//knc
                 setOperatorMessage = new SetCurrentOperator(operatorId);
                 setOperatorMessage.Send();
             }
